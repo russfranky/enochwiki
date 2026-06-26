@@ -1,0 +1,17 @@
+What,Method,Result,Evidence
+/api/health,GET,PASS,HTTP 200; ok:false Insufficient-balance handled gracefully
+/api/scripture,GET,PASS,HTTP 200 6.5KB; 4 books incl. geezName
+/api/themes,GET,PASS,HTTP 200 3.9KB; 13 themes
+/api/glossary,GET,PASS,HTTP 200 17KB; 10 entries
+/api/daily-insight,GET,PASS,HTTP 200; today's insight 1-peter 4:14
+/api/public?list=topics,GET,PASS,HTTP 200; only approved topics returned
+/api/public?list=articles,GET,PASS,HTTP 200; approved articles only
+/api/claim-types,GET,PASS,HTTP 200; 7 claim types
+/api/perspectives,GET,PASS,HTTP 200; 10 perspective tags
+/api/cross-refs?ref=1-enoch 6:2,GET,PASS,HTTP 200; outgoing refs returned
+/api/fts?q=watchers,GET,PASS,HTTP 200 3.5KB; FTS verse matches
+/api/study-plans,GET,PASS,HTTP 200; {plans:[]} (no seed data — empty OK)
+/api/public?slug=<unapproved>,GET,PASS (fix),D-064: HTTP 404 — draft topic page correctly gated
+/api/public?slug=<approved>,GET,PASS,D-064: HTTP 200 — approved topic page served
+DB row counts,tsx,PASS,books4 chapters18 verses182 themes13 evidence13 topicPages6(approved1) reviewRecords22
+bash scripts/check.sh,gate,PASS,prisma validate + lint + next build all green post-fix

@@ -1,0 +1,59 @@
+{
+  "name": "Enoch.Wiki — The Ethiopian Bible, corroborated",
+  "short_name": "Enoch.Wiki",
+  "description": "A rigorously corroborated knowledge resource for the Ethiopian Orthodox Bible — 1 Enoch, Jubilees, Meqabyan, 4 Baruch, and the canonical gospels. Every claim is sourced, perspective-tagged, and credibility-scored.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF6EC",
+  "theme_color": "#1B2B5A",
+  "orientation": "any",
+  "categories": ["education", "religion", "reference", "books"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Topic: Harrowing of Hell",
+      "short_name": "Harrowing",
+      "url": "/topics/harrowing-of-hell",
+      "description": "Christ's descent into Hades — what the texts actually say"
+    },
+    {
+      "name": "Topic: Book of Enoch",
+      "short_name": "1 Enoch",
+      "url": "/topics/book-of-enoch",
+      "description": "Why the Ethiopian Bible contains a book most Christians have never read"
+    },
+    {
+      "name": "Topic: Resurrection",
+      "short_name": "Resurrection",
+      "url": "/topics/resurrection",
+      "description": "Canonical accounts, historical claims, and contested traditions"
+    },
+    {
+      "name": "How we vet",
+      "short_name": "Vetting",
+      "url": "/how-we-vet",
+      "description": "Our credibility model and editorial review process"
+    }
+  ]
+}

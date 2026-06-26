@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background: warm parchment -->
+  <rect width="1200" height="630" fill="#FAF6EC"/>
+
+  <!-- Left indigo band -->
+  <rect x="0" y="0" width="24" height="630" fill="#1B2B5A"/>
+
+  <!-- Gold hairline accent -->
+  <rect x="80" y="80" width="120" height="3" fill="#C8A035"/>
+
+  <!-- Logo mark (compass star + orbital ring) -->
+  <g transform="translate(80, 110) scale(0.8)">
+    <circle cx="120" cy="120" r="100" fill="none" stroke="#C8A035" stroke-width="4"/>
+    <path d="M 120 20 L 129.9 96 L 163.8 76.2 L 144 110.1 L 220 120 L 144 129.9 L 163.8 163.8 L 129.9 144 L 120 220 L 110.1 144 L 76.2 163.8 L 96 129.9 L 20 120 L 96 110.1 L 76.2 76.2 L 110.1 96 Z" fill="#C8A035"/>
+    <ellipse cx="120" cy="120" rx="112" ry="42" fill="none" stroke="#C8A035" stroke-width="5" transform="rotate(-22 120 120)"/>
+  </g>
+
+  <!-- Brand: enoch.wiki -->
+  <text x="80" y="320" font-family="Spectral, Georgia, serif" font-size="96" font-weight="600" fill="#1B2B5A" letter-spacing="-0.02em">
+    enoch.wiki
+  </text>
+
+  <!-- Tagline -->
+  <text x="80" y="380" font-family="Source Serif 4, Georgia, serif" font-size="28" fill="#1B1E27">
+    The Ethiopian Bible, corroborated.
+  </text>
+  <text x="80" y="420" font-family="Source Serif 4, Georgia, serif" font-size="20" fill="#6E6A60">
+    A scholarly-neutral study and reference resource.
+  </text>
+
+  <!-- Feature line -->
+  <text x="80" y="490" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#886D24" letter-spacing="0.1em" text-transform="uppercase">
+    1 ENOCH · JUBILEES · MEQABYAN · 4 BARUCH · THE GOSPELS
+  </text>
+  <text x="80" y="520" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#6E6A60">
+    Every claim sourced · perspective-tagged · credibility-scored
+  </text>
+
+  <!-- Bottom right -->
+  <text x="1120" y="580" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6E6A60" text-anchor="end">
+    Preparing for The Resurrection of the Christ · May 2027
+  </text>
+</svg>

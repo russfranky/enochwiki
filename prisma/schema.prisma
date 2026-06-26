@@ -1,0 +1,404 @@
+// Ethiopian Bible Study Database — Phase 1 Schema
+// Three-layer architecture: Private Engine → Editorial Gate → Public Site
+// Anchored to The Resurrection of the Christ (May 2027 / May 2028)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// LAYER 1: PRIVATE RESEARCH / INGESTION
+// ════════════════════════════════════════════════════════════════════════════
+
+// ── Scripture canon ──────────────────────────────────────────────────────────
+
+model Book {
+  id               String    @id @default(cuid())
+  slug             String    @unique // e.g. "1-enoch"
+  name             String    // English name
+  geezName         String?   // ግዕዝ name e.g. "መጽሐፈ ሄኖክ"
+  amharicName      String?
+  category         String    // "Pentateuch" | "Historical" | "Wisdom" | "Prophetic" | "Apocalyptic" | "Deuterocanonical" | "Gospel" | "Epistle" | "Apocalypse"
+  canon            String    // "Ethiopian-OT-Narrow" | "Ethiopian-OT-Broad" | "Ethiopian-NT-Narrow" | "Ethiopian-NT-Broad" | "Unique-Ethiopian"
+  canonLayer       String    @default("broad") // "narrow" | "broad" — distinguishes narrower vs broader canon
+  order            Int
+  author           String?
+  dateRange        String?   // e.g. "300 BCE - 100 BCE"
+  translation      String?   // e.g. "R.H. Charles (1917, public domain)"
+  sourceUrl        String?   // provenance
+  license          String?   @default("Public Domain")
+  summary          String?
+  filmRelevance    String?   // why this matters for the 2027-2028 audience
+  createdAt        DateTime  @default(now())
+  chapters         Chapter[]
+  verses           Verse[]
+}
+
+model Chapter {
+  id        String   @id @default(cuid())
+  bookId    String
+  book      Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  number    Int
+  title     String?
+  summary   String?  // AI-generated or editorial summary of the chapter
+  createdAt DateTime @default(now())
+  verses    Verse[]
+
+  @@unique([bookId, number])
+}
+
+model Verse {
+  id         String         @id @default(cuid())
+  bookId     String
+  book       Book           @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  chapterId  String
+  chapter    Chapter        @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  chapterNum Int
+  verseNum   Int
+  text       String
+  geezText   String?
+  footnotes  String?        // JSON array of footnote objects
+  createdAt  DateTime       @default(now())
+  themeLinks VerseTheme[]
+
+  @@unique([bookId, chapterNum, verseNum])
+  @@index([chapterId])
+}
+
+// ── Themes & cross-references ────────────────────────────────────────────────
+
+model Theme {
+  id          String       @id @default(cuid())
+  slug        String       @unique
+  name        String
+  category    String       // "Theological" | "Historical" | "Cosmological" | "Ethical" | "Eschatological" | "Angelological" | "Film-Relevant"
+  description String?
+  verseLinks  VerseTheme[]
+  createdAt   DateTime     @default(now())
+}
+
+model VerseTheme {
+  verseId String
+  verse   Verse  @relation(fields: [verseId], references: [id], onDelete: Cascade)
+  themeId String
+  theme   Theme  @relation(fields: [themeId], references: [id], onDelete: Cascade)
+  weight  Float  @default(1.0)
+
+  @@unique([verseId, themeId])
+  @@index([themeId])
+}
+
+model CrossReference {
+  id           String   @id @default(cuid())
+  sourceRef    String   // "1-enoch 6:2"
+  targetRef    String   // "genesis 6:4"
+  relationship String   // "quotes" | "alludes" | "parallels" | "fulfills" | "contradicts" | "expands"
+  note         String?
+  confidence   Float    @default(0.8)
+  createdAt    DateTime @default(now())
+
+  @@index([sourceRef])
+  @@index([targetRef])
+}
+
+// ── Glossary ─────────────────────────────────────────────────────────────────
+
+model GlossaryEntry {
+  id          String   @id @default(cuid())
+  term        String   @unique // e.g. "Azazel", "Nephilim", "Watchers"
+  geezTerm    String?
+  pronunciation String?
+  category    String   // "Person" | "Place" | "Concept" | "Angel" | "People-group" | "Object" | "Festival"
+  definition  String
+  perspectiveNotes String? // JSON: how different traditions understand this term
+  relatedTerms String?  // pipe-separated related glossary terms
+  scriptureRefs String? // pipe-separated refs where this term appears
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// ── External corroboration (upgraded to credibility model) ───────────────────
+
+model Source {
+  id               String       @id @default(cuid())
+  url              String       @unique
+  title            String
+  domain           String
+  category         String       // "archaeology" | "academic" | "science" | "museum" | "history" | "comparative-religion"
+  credibilityTier  String       @default("reputable-reference") // "peer-reviewed" | "reputable-reference" | "popular-journalistic" | "self-published"
+  credibility      Float        @default(0.5) // 0..1 numeric score derived from tier + domain
+  publishedAt      DateTime?
+  retrievedAt      DateTime     @default(now())
+  author           String?
+  publisher        String?
+  summary          String?
+  content          String?      // cleaned main text
+  rawHtml          String?
+  keywords         String?
+  imageUrl         String?
+  license          String?
+  robotsChecked    Boolean      @default(true)
+  createdAt        DateTime     @default(now())
+  evidences        Evidence[]
+  perspectiveLinks SourcePerspective[]
+}
+
+// ── Credibility model: perspectives & claim types ────────────────────────────
+
+model PerspectiveTag {
+  id          String   @id @default(cuid())
+  slug        String   @unique // "secular-academic" | "mainstream-christian" | "catholic" | "eastern-orthodox" | "ethiopian-tewahedo" | "protestant" | "jewish" | "apocryphal" | "mystical-visionary" | "fringe-speculative"
+  name        String
+  description String?
+  color       String?  // hex color for UI badges
+  sources     SourcePerspective[]
+  evidences   EvidencePerspective[]
+  publicArticles PublicArticlePerspective[]
+  createdAt   DateTime @default(now())
+}
+
+model SourcePerspective {
+  sourceId      String
+  source        Source        @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+  perspectiveId String
+  perspective   PerspectiveTag @relation(fields: [perspectiveId], references: [id], onDelete: Cascade)
+  weight        Float         @default(1.0)
+
+  @@unique([sourceId, perspectiveId])
+}
+
+// Claim type taxonomy — labels what KIND of claim a piece of content is
+// "textually-attested" | "historically-corroborated" | "scholarly-consensus"
+// "contested-minority" | "tradition-devotional" | "visionary-private-revelation" | "speculative"
+model ClaimType {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  name        String
+  description String?
+  color       String?
+  evidences   Evidence[]
+  publicArticles PublicArticle[]
+  createdAt   DateTime @default(now())
+}
+
+model Evidence {
+  id               String   @id @default(cuid())
+  sourceId         String
+  source           Source   @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+  scriptureRef     String   // "1-enoch 6:2"
+  scriptureText    String?
+  claim            String   // what the scripture asserts
+  corroboration    String   // what the evidence shows
+  alignment        String   // "supports" | "challenges" | "contextualizes" | "neutral"
+  confidence       Float    @default(0.5) // 0..1 match confidence
+  claimTypeSlug    String?  // FK-by-slug to ClaimType
+  claimType        ClaimType? @relation(fields: [claimTypeSlug], references: [slug], onDelete: SetNull)
+  notes            String?
+  blindspot        Boolean  @default(false) // single-tradition or contested — surfaced to reviewers
+  perspectiveLinks EvidencePerspective[]
+  reviewState      String   @default("draft") // "draft" | "auto-corroborated" | "in-review" | "approved" | "rejected" | "needs-revision" | "archived"
+  publishedAt      DateTime?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@index([scriptureRef])
+  @@index([sourceId])
+  @@index([reviewState])
+}
+
+model EvidencePerspective {
+  evidenceId     String
+  evidence       Evidence       @relation(fields: [evidenceId], references: [id], onDelete: Cascade)
+  perspectiveId  String
+  perspective    PerspectiveTag @relation(fields: [perspectiveId], references: [id], onDelete: Cascade)
+  weight         Float          @default(1.0)
+
+  @@unique([evidenceId, perspectiveId])
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// LAYER 2: EDITORIAL APPROVAL GATE
+// ════════════════════════════════════════════════════════════════════════════
+
+model ReviewRecord {
+  id           String   @id @default(cuid())
+  itemType     String   // "evidence" | "public-article" | "topic-page" | "source"
+  itemId       String   // FK-by-id to the item
+  state        String   // "draft" | "auto-corroborated" | "in-review" | "approved" | "rejected" | "needs-revision" | "archived"
+  reviewer     String   @default("system")
+  reviewerRole String   @default("contributor") // "contributor" | "reviewer" | "publisher"
+  checklist    String?  // JSON: { sourcesCited, credibilityTierMet, claimTypeLabeled, perspectivesRepresented, noFabrication, contestedFlagged, authorityNotOverstated }
+  notes        String?
+  version      Int      @default(1)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([itemType, itemId])
+  @@index([state])
+}
+
+model AuditLog {
+  id           String   @id @default(cuid())
+  action       String   // "create" | "update" | "approve" | "reject" | "publish" | "archive" | "delete"
+  itemType     String
+  itemId       String
+  actor        String   @default("system")
+  actorRole    String   @default("contributor")
+  details      String?  // JSON snapshot of changes
+  createdAt    DateTime @default(now())
+
+  @@index([itemType, itemId])
+  @@index([action])
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// LAYER 3: PUBLIC PRESENTATION
+// ════════════════════════════════════════════════════════════════════════════
+
+model TopicPage {
+  id              String   @id @default(cuid())
+  slug            String   @unique // "resurrection" | "harrowing-of-hell" | "book-of-enoch" | etc.
+  title           String
+  subtitle        String?
+  seoDescription  String?  // 150-160 chars for meta description
+  seoKeywords     String?  // pipe-separated
+  bodyMarkdown    String   // full article body
+  filmRelevance   String?  // why this topic matters for the 2027-2028 audience
+  canonicalRefs   String?  // pipe-separated primary scripture refs
+  featuredImage   String?
+  reviewState     String   @default("draft")
+  publishedAt     DateTime?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  publicArticles  PublicArticle[]
+}
+
+model PublicArticle {
+  id              String   @id @default(cuid())
+  topicPageId     String?
+  topicPage       TopicPage? @relation(fields: [topicPageId], references: [id], onDelete: SetNull)
+  slug            String   @unique
+  title           String
+  subtitle        String?
+  seoDescription  String?
+  seoKeywords     String?
+  bodyMarkdown    String
+  claimTypeSlug   String?
+  claimType       ClaimType? @relation(fields: [claimTypeSlug], references: [slug], onDelete: SetNull)
+  corroborationScore Float @default(0) // 0..1 — derived from # of independent sources × # of perspectives
+  confidenceScore Float   @default(0)
+  sourcesCount    Int      @default(0)
+  perspectivesCount Int   @default(0)
+  blindspot       Boolean  @default(false)
+  reviewState     String   @default("draft")
+  publishedAt     DateTime?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  perspectiveLinks PublicArticlePerspective[]
+}
+
+model PublicArticlePerspective {
+  articleId      String
+  article        PublicArticle   @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  perspectiveId  String
+  perspective    PerspectiveTag @relation(fields: [perspectiveId], references: [id], onDelete: Cascade)
+  weight         Float          @default(1.0)
+
+  @@unique([articleId, perspectiveId])
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// PILLAR 4: DAILY WISDOM
+// ════════════════════════════════════════════════════════════════════════════
+
+model DailyInsight {
+  id              String   @id @default(cuid())
+  date            DateTime @unique // the calendar day this insight is for
+  scriptureRef    String
+  scriptureText   String
+  themeSlug       String?
+  parallels       String?  // JSON array of {ref, text} parallels
+  reflection      String   // short practical reflection (~150 words)
+  lifeTheme       String?  // "Justice" | "Wisdom" | "Faithfulness" | etc.
+  reviewState     String   @default("draft")
+  publishedAt     DateTime?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// PILLAR 1: AI STUDY TOOLS — flashcards & study plans
+// ════════════════════════════════════════════════════════════════════════════
+
+model Flashcard {
+  id            String   @id @default(cuid())
+  deckSlug      String   @default("default") // grouping
+  front         String   // question or prompt
+  back          String   // answer or explanation
+  scriptureRef  String?  // grounding reference
+  themeSlug     String?
+  // SM-2 spaced repetition parameters
+  easeFactor    Float    @default(2.5)
+  interval      Int      @default(1) // days
+  repetitions   Int      @default(0)
+  dueDate       DateTime @default(now())
+  lastReviewed  DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([deckSlug])
+  @@index([dueDate])
+}
+
+model StudyPlan {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  description String?
+  durationDays Int
+  difficulty  String   @default("introductory") // "introductory" | "intermediate" | "advanced"
+  items       StudyPlanItem[]
+  createdAt   DateTime @default(now())
+}
+
+model StudyPlanItem {
+  id          String   @id @default(cuid())
+  planId      String
+  plan        StudyPlan @relation(fields: [planId], references: [id], onDelete: Cascade)
+  day         Int       // day 1, day 2, ...
+  title       String
+  description String?
+  scriptureRefs String? // pipe-separated
+  themeSlug   String?
+  reflectionPrompt String?
+
+  @@index([planId, day])
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// LEGACY (kept for backward compatibility with existing app)
+// ════════════════════════════════════════════════════════════════════════════
+
+model ChatMessage {
+  id        String   @id @default(cuid())
+  role      String   // "user" | "assistant" | "system"
+  content   String
+  context   String?
+  createdAt DateTime @default(now())
+}
+
+model Note {
+  id           String   @id @default(cuid())
+  title        String
+  content      String
+  scriptureRef String?
+  themeSlug    String?
+  tags         String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}

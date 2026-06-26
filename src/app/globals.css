@@ -1,0 +1,387 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-ui-stack);
+  --font-serif: var(--font-display-stack);
+  --font-read: var(--font-read-stack);
+  --font-mono: var(--font-mono-stack);
+  /* Brand color scales — maps to Tailwind's indigo-*, gold-*, etc. utilities */
+  --color-indigo-50: var(--indigo-50);
+  --color-indigo-100: var(--indigo-100);
+  --color-indigo-200: var(--indigo-200);
+  --color-indigo-300: var(--indigo-300);
+  --color-indigo-400: var(--indigo-400);
+  --color-indigo-500: var(--indigo-500);
+  --color-indigo-600: var(--indigo-600);
+  --color-indigo-700: var(--indigo-700);
+  --color-indigo-800: var(--indigo-800);
+  --color-indigo-900: var(--indigo-900);
+  --color-gold-50: var(--gold-50);
+  --color-gold-100: var(--gold-100);
+  --color-gold-200: var(--gold-200);
+  --color-gold-300: var(--gold-300);
+  --color-gold-400: var(--gold-400);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+  --color-gold-700: var(--gold-700);
+  --color-gold-800: var(--gold-800);
+  --color-gold-900: var(--gold-900);
+  /* Semantic neutrals */
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-hairline: var(--hairline);
+  --color-parchment: var(--parchment);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+}
+
+/* ════════════════════════════════════════════════════════════════════════════
+   ENOCH.WIKI BRAND SYSTEM v1.0
+   Midnight Indigo + Antique Gold + Parchment
+   "Illuminated manuscript meets modern research tool"
+   ════════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Brand Colors ──────────────────────────────────────────────────────── */
+  /* Indigo scale (primary ink) */
+  --indigo-50: #EFF0F3;
+  --indigo-100: #DDDFE6;
+  --indigo-200: #B6BBCA;
+  --indigo-300: #8D95AC;
+  --indigo-400: #5B6688;
+  --indigo-500: #1B2B5A;
+  --indigo-600: #17244C;
+  --indigo-700: #121D3D;
+  --indigo-800: #0E162F;
+  --indigo-900: #0A0F20;
+
+  /* Gold scale (accent only — 5% of surface, never text on light) */
+  --gold-50: #FBF8F1;
+  --gold-100: #F7F1E1;
+  --gold-200: #EDE1BE;
+  --gold-300: #E4D09A;
+  --gold-400: #D7BB6E;
+  --gold-500: #C8A035;
+  --gold-600: #A8862D;
+  --gold-700: #886D24;
+  --gold-800: #68531C;
+  --gold-900: #483A13;
+
+  /* ── Neutrals ──────────────────────────────────────────────────────────── */
+  --parchment: #FAF6EC;
+  --surface: #FFFFFF;
+  --ink: #1B1E27;
+  --text: #2A2E39;
+  --muted: #6E6A60;
+  --hairline: #E9E3D6;
+
+  /* ── Functional label colors (credibility system) ──────────────────────── */
+  --label-text-bg: #EFF0F3;        --label-text-fg: #1B2B5A;    /* Textually attested */
+  --label-corr-bg: #E6F0EA;        --label-corr-fg: #2F6B4F;    /* Historically corroborated */
+  --label-cons-bg: #EAF1F5;        --label-cons-fg: #1F5E7A;    /* Scholarly consensus */
+  --label-contested-bg: #F7ECD6;   --label-contested-fg: #9A6B16; /* Contested / minority */
+  --label-trad-bg: #EFE7F2;        --label-trad-fg: #6B4A7A;    /* Tradition / devotional */
+  --label-spec-bg: #ECEEF1;        --label-spec-fg: #566273;    /* Speculative */
+  --label-visionary-bg: #F5EDE0;   --label-visionary-fg: #8B6914; /* Visionary / private revelation */
+
+  /* ── Semantic token mapping ───────────────────────────────────────────── */
+  --radius: 10px;
+
+  /* Background — warm parchment */
+  --background: var(--parchment);
+  --foreground: var(--ink);
+
+  /* Card — surface white, intentional elevation */
+  --card: var(--surface);
+  --card-foreground: var(--ink);
+
+  --popover: var(--surface);
+  --popover-foreground: var(--ink);
+
+  /* Primary — Midnight Indigo (the workhorse) */
+  --primary: var(--indigo-500);
+  --primary-foreground: #FFFFFF;
+
+  /* Secondary — indigo wash (subtle fills) */
+  --secondary: var(--indigo-50);
+  --secondary-foreground: var(--indigo-600);
+
+  /* Muted — light parchment-adjacent background for subtle fills */
+  --muted: #F3EEDF;
+  --muted-foreground: #6E6A60;
+
+  /* Accent — Antique Gold (reserved for ONE key action per view) */
+  --accent: var(--gold-500);
+  --accent-foreground: var(--indigo-900);
+
+  --destructive: #A23B2B;
+  --border: var(--hairline);
+  --input: var(--hairline);
+  --ring: var(--indigo-400);
+
+  --chart-1: var(--indigo-500);
+  --chart-2: var(--gold-500);
+  --chart-3: #2F6B4F;
+  --chart-4: #1F5E7A;
+  --chart-5: #6B4A7A;
+
+  --sidebar: var(--surface);
+  --sidebar-foreground: var(--ink);
+  --sidebar-primary: var(--indigo-500);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: var(--indigo-50);
+  --sidebar-accent-foreground: var(--indigo-600);
+  --sidebar-border: var(--hairline);
+  --sidebar-ring: var(--indigo-400);
+}
+
+.dark {
+  --background: var(--indigo-900);
+  --foreground: var(--parchment);
+  --card: var(--indigo-800);
+  --card-foreground: var(--parchment);
+  --popover: var(--indigo-800);
+  --popover-foreground: var(--parchment);
+  --primary: var(--gold-500);
+  --primary-foreground: var(--indigo-900);
+  --secondary: var(--indigo-700);
+  --secondary-foreground: var(--parchment);
+  --muted: var(--indigo-700);
+  --muted-foreground: var(--indigo-200);
+  --accent: var(--gold-500);
+  --accent-foreground: var(--indigo-900);
+  --destructive: #C75B4A;
+  --border: rgba(255, 255, 255, 0.10);
+  --input: rgba(255, 255, 255, 0.15);
+  --ring: var(--gold-400);
+  --chart-1: var(--gold-500);
+  --chart-2: var(--indigo-300);
+  --chart-3: #6BCC8E;
+  --chart-4: #6BA8C4;
+  --chart-5: #B88BC8;
+  --sidebar: var(--indigo-800);
+  --sidebar-foreground: var(--parchment);
+  --sidebar-primary: var(--gold-500);
+  --sidebar-primary-foreground: var(--indigo-900);
+  --sidebar-accent: var(--indigo-700);
+  --sidebar-accent-foreground: var(--parchment);
+  --sidebar-border: rgba(255, 255, 255, 0.10);
+  --sidebar-ring: var(--gold-400);
+}
+
+/* ── Font stacks ──────────────────────────────────────────────────────────── */
+/* NOTE: --font-display-stack, --font-read-stack, --font-ui-stack, --font-mono-stack
+   are defined in layout.tsx via next/font CSS variables + a <style> block.
+   Do NOT redefine them here — that would override the next/font injection. */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-ui-stack);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display-stack);
+    color: var(--indigo-700);
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    transition: color 0.3s ease;
+  }
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: var(--gold-300);
+  }
+  ::selection {
+    background: var(--gold-200);
+    color: var(--indigo-800);
+  }
+  /* Visible focus rings — 2px indigo, 2px offset (brand a11y spec) */
+  *:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+}
+
+/* Custom scrollbar — subtle, gold-on-parchment */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--indigo-200);
+  border-radius: 5px;
+  border: 2px solid var(--background);
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--indigo-600);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--indigo-300);
+}
+
+/* ── Markdown prose styling (brand-aligned) ──────────────────────────────── */
+.prose-enoch {
+  font-family: var(--font-read-stack);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ink);
+}
+.prose-enoch h1, .prose-enoch h2, .prose-enoch h3, .prose-enoch h4 {
+  font-family: var(--font-display-stack);
+  color: var(--indigo-700);
+  margin-top: 1.4em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.prose-enoch h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 0.3em;
+}
+.prose-enoch h3 { font-size: 1.25rem; color: var(--indigo-600); }
+.prose-enoch p { margin: 0.6em 0; max-width: 68ch; }
+.prose-enoch ul, .prose-enoch ol { margin: 0.6em 0; padding-left: 1.5em; }
+.prose-enoch li { margin: 0.25em 0; }
+.prose-enoch strong { color: var(--indigo-600); font-weight: 600; }
+.prose-enoch em { color: var(--gold-700); font-style: italic; }
+.prose-enoch code {
+  background: var(--indigo-50);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-family: var(--font-mono-stack);
+  font-size: 0.86em;
+  color: var(--indigo-700);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+.prose-enoch blockquote {
+  border-left: 3px solid var(--gold-500);
+  padding-left: 1em;
+  margin: 1em 0;
+  color: var(--muted);
+  font-style: italic;
+  font-family: var(--font-read-stack);
+}
+.prose-enoch a {
+  color: var(--indigo-500);
+  text-decoration: none;
+  border-bottom: 1px solid var(--indigo-200);
+  transition: border-color 0.15s;
+}
+.prose-enoch a:hover {
+  border-bottom-color: var(--indigo-500);
+}
+
+/* ── Credibility tag classes (brand-specified) ───────────────────────────── */
+.tag-textually-attested { background: var(--label-text-bg); color: var(--label-text-fg); }
+.tag-historically-corroborated { background: var(--label-corr-bg); color: var(--label-corr-fg); }
+.tag-scholarly-consensus { background: var(--label-cons-bg); color: var(--label-cons-fg); }
+.tag-contested-minority { background: var(--label-contested-bg); color: var(--label-contested-fg); }
+.tag-tradition-devotional { background: var(--label-trad-bg); color: var(--label-trad-fg); }
+.tag-speculative { background: var(--label-spec-bg); color: var(--label-spec-fg); }
+.tag-visionary { background: var(--label-visionary-bg); color: var(--label-visionary-fg); }
+
+/* ── Eyebrow label (brand pattern) ───────────────────────────────────────── */
+.eyebrow {
+  font-family: var(--font-ui-stack);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-700);
+}
+
+/* ── Corroboration meter (brand component) ───────────────────────────────── */
+.corrob-meter {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.corrob-meter .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 99px;
+  background: var(--gold-500);
+}
+.corrob-meter .dot.off {
+  background: var(--gold-200);
+}
+
+/* ── Source citation block (brand component) ─────────────────────────────── */
+.cite-block {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--gold-500);
+  border-radius: 8px;
+  padding: 16px 24px;
+}
+
+/* ── Parchment texture (subtle, no image needed) ─────────────────────────── */
+.parchment-bg {
+  background-color: var(--background);
+  background-image:
+    radial-gradient(at 15% 15%, rgba(200, 160, 53, 0.03) 0px, transparent 50%),
+    radial-gradient(at 85% 85%, rgba(27, 43, 90, 0.02) 0px, transparent 50%);
+}
+.dark .parchment-bg {
+  background-color: var(--background);
+  background-image:
+    radial-gradient(at 15% 15%, rgba(200, 160, 53, 0.05) 0px, transparent 50%),
+    radial-gradient(at 85% 85%, rgba(200, 160, 53, 0.02) 0px, transparent 50%);
+}
+
+/* ── Motion (respects prefers-reduced-motion) ────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

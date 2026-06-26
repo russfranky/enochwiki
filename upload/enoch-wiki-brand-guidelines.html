@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>enoch.wiki — Brand Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* Brand */
+    --indigo-50:#EFF0F3; --indigo-100:#DDDFE6; --indigo-200:#B6BBCA; --indigo-300:#8D95AC;
+    --indigo-400:#5B6688; --indigo-500:#1B2B5A; --indigo-600:#17244C; --indigo-700:#121D3D;
+    --indigo-800:#0E162F; --indigo-900:#0A0F20;
+    --gold-50:#FBF8F1; --gold-100:#F7F1E1; --gold-200:#EDE1BE; --gold-300:#E4D09A;
+    --gold-400:#D7BB6E; --gold-500:#C8A035; --gold-600:#A8862D; --gold-700:#886D24;
+    --gold-800:#68531C; --gold-900:#483A13;
+    /* Neutrals */
+    --parchment:#FAF6EC; --surface:#FFFFFF; --ink:#1B1E27; --text:#2A2E39;
+    --muted:#6E6A60; --hairline:#E9E3D6;
+    /* Type */
+    --display:'Spectral',Georgia,'Times New Roman',serif;
+    --read:'Source Serif 4',Georgia,serif;
+    --ui:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    /* Space */
+    --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:32px; --s7:48px; --s8:64px; --s9:96px;
+    --radius:10px; --maxw:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--parchment);color:var(--text);font-family:var(--ui);
+    font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{font-family:var(--display);color:var(--indigo-700);margin:0 0 .4em;line-height:1.15;font-weight:600;letter-spacing:-.01em}
+  h2{font-size:30px;padding-bottom:var(--s3);border-bottom:1px solid var(--hairline)}
+  h3{font-size:21px;color:var(--indigo-600);margin-top:var(--s6)}
+  p{margin:0 0 var(--s4);max-width:68ch}
+  a{color:var(--indigo-500);text-decoration:none}
+  a:hover{text-decoration:underline}
+  code,.mono{font-family:'Inter',ui-monospace,monospace;font-variant-numeric:tabular-nums;
+    letter-spacing:.02em;background:var(--indigo-50);padding:2px 7px;border-radius:6px;font-size:.86em;color:var(--indigo-700)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--s5)}
+  .eyebrow{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--gold-700);margin-bottom:var(--s3)}
+
+  /* Header */
+  header.top{position:sticky;top:0;z-index:50;background:rgba(250,246,236,.85);
+    backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--hairline)}
+  .topbar{display:flex;align-items:center;gap:var(--s4);justify-content:space-between;
+    padding:var(--s3) var(--s5);max-width:var(--maxw);margin:0 auto}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--display);
+    font-size:20px;color:var(--indigo-700);font-weight:600}
+  .brand svg{width:30px;height:30px;display:block}
+  nav.sections{display:flex;gap:var(--s5);flex-wrap:wrap}
+  nav.sections a{font-size:14px;color:var(--indigo-400);font-weight:500}
+  nav.sections a:hover{color:var(--indigo-600);text-decoration:none}
+  @media(max-width:840px){nav.sections{display:none}}
+
+  /* Hero */
+  .hero{padding:var(--s9) 0 var(--s8);border-bottom:1px solid var(--hairline)}
+  .hero .logo-lockup{margin-bottom:var(--s6)}
+  .hero h1{font-size:54px;letter-spacing:-.02em}
+  .hero .lede{font-family:var(--read);font-size:21px;line-height:1.55;color:var(--ink);max-width:60ch}
+  .meta-row{display:flex;gap:var(--s6);margin-top:var(--s6);flex-wrap:wrap}
+  .meta-row div{font-size:13px;color:var(--muted)}
+  .meta-row strong{display:block;font-family:var(--ui);font-size:15px;color:var(--indigo-600);font-weight:600}
+
+  section{padding:var(--s9) 0;border-bottom:1px solid var(--hairline)}
+  section:last-of-type{border-bottom:none}
+  .lead{font-family:var(--read);font-size:19px;line-height:1.65;color:var(--ink);max-width:64ch;margin-bottom:var(--s6)}
+
+  /* Principles */
+  .grid{display:grid;gap:var(--s5)}
+  .cols-2{grid-template-columns:repeat(2,1fr)}
+  .cols-3{grid-template-columns:repeat(3,1fr)}
+  .cols-4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:840px){.cols-2,.cols-3,.cols-4{grid-template-columns:1fr}}
+  .card{background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);
+    padding:var(--s5);box-shadow:0 1px 2px rgba(20,30,60,.04)}
+  .principle .n{font-family:var(--display);font-size:15px;color:var(--gold-600);font-weight:600;margin-bottom:6px}
+  .principle h4{font-size:18px;margin-bottom:6px;color:var(--indigo-700)}
+  .principle p{font-size:15px;color:var(--muted);margin:0;line-height:1.55}
+
+  /* Logo */
+  .logo-stage{background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);
+    display:flex;align-items:center;justify-content:center;padding:var(--s8);min-height:200px}
+  .logo-stage.dark{background:var(--indigo-700);border-color:var(--indigo-700)}
+  .logo-stage.gold{background:var(--gold-500);border-color:var(--gold-500)}
+  .lockup-v{display:flex;flex-direction:column;align-items:center;gap:14px}
+  .lockup-v .word{font-family:var(--display);font-size:40px;font-weight:600;color:var(--indigo-700);letter-spacing:-.01em;line-height:1}
+  .lockup-h{display:flex;align-items:center;gap:16px}
+  .lockup-h .word{font-family:var(--display);font-size:32px;font-weight:600;color:var(--indigo-700)}
+  .on-dark .word{color:#fff}
+  .clearspace{position:relative}
+  .label-sm{font-size:12px;color:var(--muted);font-weight:500;margin-top:var(--s3);text-align:center}
+  .dont .logo-stage,.do .logo-stage{min-height:150px;padding:var(--s6)}
+  .tag-do,.tag-dont{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;
+    padding:3px 10px;border-radius:99px;margin-bottom:var(--s3)}
+  .tag-do{background:#E6F0EA;color:#2F6B4F}
+  .tag-dont{background:#F6E4E0;color:#A23B2B}
+
+  /* Color */
+  .swatch{border-radius:var(--radius);overflow:hidden;border:1px solid var(--hairline);background:var(--surface)}
+  .swatch .chip{height:96px;cursor:copy}
+  .swatch .info{padding:12px 14px}
+  .swatch .name{font-weight:600;font-size:14px;color:var(--indigo-700)}
+  .swatch .hex{font-family:'Inter',monospace;font-size:13px;color:var(--muted);letter-spacing:.03em;text-transform:uppercase}
+  .swatch .use{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.45}
+  .scale{display:grid;grid-template-columns:repeat(10,1fr);border-radius:var(--radius);overflow:hidden;border:1px solid var(--hairline);margin:var(--s3) 0 var(--s6)}
+  .scale .step{height:64px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;font-size:10.5px;font-family:monospace;cursor:copy}
+  .scale-label{font-size:13px;font-weight:600;color:var(--indigo-600);margin-bottom:4px}
+  table.contrast{width:100%;border-collapse:collapse;font-size:14px;margin-top:var(--s4);background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);overflow:hidden}
+  table.contrast th,table.contrast td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--hairline)}
+  table.contrast th{background:var(--indigo-50);font-family:var(--ui);font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--indigo-600)}
+  table.contrast tr:last-child td{border-bottom:none}
+  .pill{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:99px}
+  .pass{background:#E6F0EA;color:#2F6B4F}.fail{background:#F6E4E0;color:#A23B2B}.aa{background:#EAF1F5;color:#1F5E7A}
+
+  /* Type */
+  .specimen{background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);padding:var(--s6);margin-bottom:var(--s5)}
+  .specimen .meta{font-size:12px;color:var(--muted);font-family:var(--ui);margin-bottom:var(--s3);letter-spacing:.04em;text-transform:uppercase}
+  .t-display{font-family:var(--display);font-size:54px;line-height:1.1;color:var(--indigo-700);font-weight:600;letter-spacing:-.02em;margin:0}
+  .t-h1{font-family:var(--display);font-size:40px;line-height:1.15;color:var(--indigo-700);font-weight:600;margin:0}
+  .t-h2{font-family:var(--display);font-size:30px;line-height:1.2;color:var(--indigo-700);font-weight:600;margin:0}
+  .t-read{font-family:var(--read);font-size:19px;line-height:1.65;color:var(--ink);margin:0;max-width:60ch}
+  .t-ui{font-family:var(--ui);font-size:15px;color:var(--text);margin:0}
+  .t-label{font-family:var(--ui);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--gold-700);margin:0}
+
+  /* Components */
+  .btn{font-family:var(--ui);font-weight:600;font-size:15px;padding:11px 20px;border-radius:8px;
+    border:1px solid transparent;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:.15s}
+  .btn-primary{background:var(--indigo-500);color:#fff}
+  .btn-primary:hover{background:var(--indigo-600)}
+  .btn-secondary{background:transparent;color:var(--indigo-600);border-color:var(--indigo-200)}
+  .btn-secondary:hover{border-color:var(--indigo-400);background:var(--indigo-50)}
+  .btn-accent{background:var(--gold-500);color:var(--indigo-900)}
+  .btn-accent:hover{background:var(--gold-600);color:#fff}
+  .btn-row{display:flex;gap:var(--s3);flex-wrap:wrap;align-items:center}
+  .tag{display:inline-flex;align-items:center;gap:6px;font-family:var(--ui);font-size:12.5px;font-weight:600;
+    padding:4px 11px;border-radius:99px;line-height:1.3}
+  .tag::before{content:"";width:7px;height:7px;border-radius:99px;background:currentColor;opacity:.85}
+  .t-text{background:var(--indigo-50);color:var(--indigo-600)}
+  .t-corr{background:#E6F0EA;color:#2F6B4F}
+  .t-cons{background:#EAF1F5;color:#1F5E7A}
+  .t-contested{background:#F7ECD6;color:#9A6B16}
+  .t-trad{background:#EFE7F2;color:#6B4A7A}
+  .t-spec{background:#ECEEF1;color:#566273}
+  .cite{background:var(--surface);border:1px solid var(--hairline);border-left:3px solid var(--gold-500);
+    border-radius:8px;padding:var(--s4) var(--s5)}
+  .cite .src{font-family:var(--read);font-size:15px;color:var(--ink);margin-bottom:8px}
+  .cite .row{display:flex;gap:14px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--muted)}
+  .meter{display:inline-flex;align-items:center;gap:5px}
+  .meter .dot{width:8px;height:8px;border-radius:99px;background:var(--gold-500)}
+  .meter .dot.off{background:var(--gold-200)}
+  .article-card{display:flex;flex-direction:column;gap:10px}
+  .article-card .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-700)}
+  .article-card h4{font-family:var(--display);font-size:22px;color:var(--indigo-700);margin:0}
+  .article-card p{font-family:var(--read);font-size:15.5px;color:var(--muted);margin:0;line-height:1.55}
+  .article-card .byline{font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:center;margin-top:4px}
+
+  /* Spacing demo */
+  .space-row{display:flex;align-items:flex-end;gap:var(--s4);flex-wrap:wrap}
+  .space-box{background:var(--gold-200);border:1px solid var(--gold-400);border-radius:4px}
+  .space-cap{font-size:11px;color:var(--muted);text-align:center;margin-top:4px;font-family:monospace}
+
+  /* Voice */
+  .vt{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5)}
+  @media(max-width:840px){.vt{grid-template-columns:1fr}}
+  .vt .card h4{display:flex;align-items:center;gap:8px}
+  .vt ul{margin:0;padding-left:18px;font-size:15px;color:var(--text)}
+  .vt li{margin-bottom:8px}
+  .quote-good{border-left:3px solid #2F6B4F;background:#F3F8F4}
+  .quote-bad{border-left:3px solid #A23B2B;background:#FBF1EF}
+  .quote{padding:12px 16px;border-radius:8px;font-family:var(--read);font-size:15px;color:var(--ink);margin-top:var(--s3)}
+
+  footer{padding:var(--s8) 0;color:var(--muted);font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;gap:var(--s5);flex-wrap:wrap;align-items:center}
+  .hint{font-size:12px;color:var(--muted);margin-top:6px}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="top">
+  <div class="topbar">
+    <div class="brand">
+      <svg viewBox="0 0 240 240" aria-label="enoch.wiki mark" role="img">
+        <circle cx="120" cy="120" r="100" fill="none" stroke="#C8A035" stroke-width="4"/>
+        <path d="M 120 20 L 129.9 96 L 163.8 76.2 L 144 110.1 L 220 120 L 144 129.9 L 163.8 163.8 L 129.9 144 L 120 220 L 110.1 144 L 76.2 163.8 L 96 129.9 L 20 120 L 96 110.1 L 76.2 76.2 L 110.1 96 Z" fill="#C8A035"/>
+        <ellipse cx="120" cy="120" rx="112" ry="42" fill="none" stroke="#C8A035" stroke-width="5" transform="rotate(-22 120 120)"/>
+      </svg>
+      enoch.wiki
+    </div>
+    <nav class="sections">
+      <a href="#essence">Essence</a>
+      <a href="#logo">Logo</a>
+      <a href="#color">Color</a>
+      <a href="#type">Type</a>
+      <a href="#icon">Imagery</a>
+      <a href="#ui">Components</a>
+      <a href="#voice">Voice</a>
+      <a href="#a11y">Access</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<div class="hero">
+  <div class="wrap">
+    <div class="logo-lockup lockup-v" style="align-items:flex-start">
+      <svg viewBox="0 0 240 240" style="width:104px;height:104px" aria-label="enoch.wiki mark" role="img">
+        <circle cx="120" cy="120" r="100" fill="none" stroke="#C8A035" stroke-width="4"/>
+        <path d="M 120 20 L 129.9 96 L 163.8 76.2 L 144 110.1 L 220 120 L 144 129.9 L 163.8 163.8 L 129.9 144 L 120 220 L 110.1 144 L 76.2 163.8 L 96 129.9 L 20 120 L 96 110.1 L 76.2 76.2 L 110.1 96 Z" fill="#C8A035"/>
+        <ellipse cx="120" cy="120" rx="112" ry="42" fill="none" stroke="#C8A035" stroke-width="5" transform="rotate(-22 120 120)"/>
+      </svg>
+    </div>
+    <p class="eyebrow" style="margin-top:var(--s6)">Brand Guidelines</p>
+    <h1>enoch.wiki</h1>
+    <p class="lede">A corroborated knowledge base for the Book of Enoch and the wider scriptural canon — built to the standard of a serious editorial product: clear, warm, and trustworthy.</p>
+    <div class="meta-row">
+      <div><strong>Version 1.0</strong>Working draft</div>
+      <div><strong>Identity</strong>Navy &amp; gold · scholarly</div>
+      <div><strong>Quality bar</strong>Substack-grade craft</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ESSENCE ============ -->
+<section id="essence">
+  <div class="wrap">
+    <p class="eyebrow">01 — Foundations</p>
+    <h2>Brand essence</h2>
+    <p class="lead">We hold the craft standard of a best-in-class editorial product — Substack-level clarity, generous whitespace, one decisive accent, and type-and-color treated as a single system — and express it through a calm, scholarly, navy-and-gold identity. The feeling is an illuminated manuscript meets a modern research tool: authoritative without being cold, reverent without being mystical.</p>
+
+    <div class="grid cols-4">
+      <div class="card principle"><div class="n">01</div><h4>Content first</h4><p>The text and its evidence are the hero. Chrome recedes; reading comes first. Whitespace is a feature, not an absence.</p></div>
+      <div class="card principle"><div class="n">02</div><h4>One decisive accent</h4><p>Gold is used sparingly and meaningfully — the mark, a single key action, a highlight. Restraint is what makes it feel premium.</p></div>
+      <div class="card principle"><div class="n">03</div><h4>Credible, not cryptic</h4><p>Scholarly and luminous, never occult or sensational. Every claim shows its sources and its certainty. Trust is the product.</p></div>
+      <div class="card principle"><div class="n">04</div><h4>A true system</h4><p>Color, type, and space share one visual language. Consistency across every page is what reads as quality.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOGO ============ -->
+<section id="logo">
+  <div class="wrap">
+    <p class="eyebrow">02 — Logo</p>
+    <h2>The mark</h2>
+    <p class="lead">An eight-point compass star within an orbital ring — a nod to the Astronomical Book of Enoch (the sun, the moon, the calendar) — paired with a refined serif wordmark. The star signals knowledge and orientation; the orbit signals the cosmos the text describes.</p>
+
+    <div class="grid cols-2">
+      <div>
+        <div class="logo-stage">
+          <div class="lockup-v">
+            <svg viewBox="0 0 240 240" style="width:120px;height:120px" role="img" aria-label="primary mark">
+              <circle cx="120" cy="120" r="100" fill="none" stroke="#C8A035" stroke-width="4"/>
+              <path d="M 120 20 L 129.9 96 L 163.8 76.2 L 144 110.1 L 220 120 L 144 129.9 L 163.8 163.8 L 129.9 144 L 120 220 L 110.1 144 L 76.2 163.8 L 96 129.9 L 20 120 L 96 110.1 L 76.2 76.2 L 110.1 96 Z" fill="#C8A035"/>
+              <ellipse cx="120" cy="120" rx="112" ry="42" fill="none" stroke="#C8A035" stroke-width="5" transform="rotate(-22 120 120)"/>
+            </svg>
+            <div class="word">enoch.wiki</div>
+          </div>
+        </div>
+        <p class="label-sm">Primary lockup — stacked. Use wherever there is room (covers, about pages, splash).</p>
+      </div>
+      <div>
+        <div class="logo-stage">
+          <div class="lockup-h">
+            <svg viewBox="0 0 240 240" style="width:64px;height:64px" role="img" aria-label="horizontal mark">
+              <circle cx="120" cy="120" r="100" fill="none" stroke="#C8A035" stroke-width="4"/>
+              <path d="M 120 20 L 129.9 96 L 163.8 76.2 L 144 110.1 L 220 120 L 144 129.9 L 163.8 163.8 L 129.9 144 L 120 220 L 110.1 144 L 76.2 163.8 L 96 129.9 L 20 120 L 96 110.1 L 76.2 76.2 L 110.1 96 Z" fill="#C8A035"/>
+              <ellipse cx="120" cy="120" rx="112" ry="42" fill="none" stroke="#C8A035" stroke-width="5" transform="rotate(-22 120 120)"/>
+            </svg>
+            <div class="word">enoch.wiki</div>
+          </div>
+        </div>
+        <p class="label-sm">Horizontal lockup — for site headers and tight navigation bars.</p>
+      </div>
+    </div>
+
+    <h3>Color variants</h3>
+    <div class="grid cols-3">
+      <div>
+        <div class="logo-stage"><svg viewBox="0 0 240 240" style="width:84px;height:84px"><circle cx="120" cy="120" r="100" fill="none" stroke="#C8A035" stroke-width="4"/><path d="M 120 20 L 129.9 96 L 163.8 76.2 L 144 110.1 L 220 120 L 144 129.9 L 163.8 163.8 L 129.9 144 L 120 220 L 110.1 144 L 76.2 163.8 L 96 129.9 L 20 120 L 96 110.1 L 76.2 76.2 L 110.1 96 Z" fill="#C8A035"/><ellipse cx="120" cy="120" rx="112" ry="42" fill="none" stroke="#C8A035" stroke-width="5" transform="rotate(-22 120 120)"/></svg></div>
+        <p class="label-sm">Full color on light / parchment</p>
+      </div>
+      <div>
+        <div class="logo-stage dark on-dark"><div class="lockup-v"><svg viewBox="0 0 240 240" style="width:84px;height:84px"><circle cx="120" cy="120" r="100" fill="none" stroke="#C8A035" stroke-width="4"/><path d="M 120 20 L 129.9 96 L 163.8 76.2 L 144 110.1 L 220 120 L 144 129.9 L 163.8 163.8 L 129.9 144 L 120 220 L 110.1 144 L 76.2 163.8 L 96 129.9 L 20 120 L 96 110.1 L 76.2 76.2 L 110.1 96 Z" fill="#C8A035"/><ellipse cx="120" cy="120" rx="112" ry="42" fill="none" stroke="#C8A035" stroke-width="5" transform="rotate(-22 120 120)"/></svg></div></div>
+        <p class="label-sm">Gold mark on indigo (reversed)</p>
+      </div>
+      <div>
+        <div class="logo-stage gold"><svg viewBox="0 0 240 240" style="width:84px;height:84px"><circle cx="120" cy="120" r="100" fill="none" stroke="#0E162F" stroke-width="4"/><path d="M 120 20 L 129.9 96 L 163.8 76.2 L 144 110.1 L 220 120 L 144 129.9 L 163.8 163.8 L 129.9 144 L 120 220 L 110.1 144 L 76.2 163.8 L 96 129.9 L 20 120 L 96 110.1 L 76.2 76.2 L 110.1 96 Z" fill="#0E162F"/><ellipse cx="120" cy="120" rx="112" ry="42" fill="none" stroke="#0E162F" stroke-width="5" transform="rotate(-22 120 120)"/></svg></div>
+        <p class="label-sm">Single-color indigo (on gold / one-color print)</p>
+      </div>
+    </div>
+
+    <h3>Clear space &amp; minimum size</h3>
+    <div class="grid cols-2">
+      <div class="card">
+        <p style="font-size:15px;color:var(--muted)">Keep clear space around the mark equal to the <strong>radius of the star</strong> on all sides. Nothing — text, edges, other logos — enters this zone.</p>
+        <p style="font-size:15px;color:var(--muted);margin:0">Favicon / avatar: the <strong>icon only</strong>, legible down to <span class="mono">16px</span>. Stacked lockup: don't reproduce below <span class="mono">120px</span> wide; horizontal below <span class="mono">150px</span>.</p>
+      </div>
+      <div class="card">
+        <p style="font-size:15px;color:var(--muted);margin:0"><strong>Favicon strategy.</strong> Because this is a <span class="mono">.wiki</span>, the favicon is the most-seen asset. Use the gold star inside the orbital ring on a transparent or indigo tile. Drop the wordmark entirely below 64px.</p>
+      </div>
+    </div>
+
+    <h3>Misuse</h3>
+    <div class="grid cols-4">
+      <div class="dont"><span class="tag-dont">✕ Don't</span><div class="logo-stage" style="background:linear-gradient(120deg,#5b6688,#c8a035)"><svg viewBox="0 0 240 240" style="width:64px;height:64px"><path d="M 120 20 L 129.9 96 L 163.8 76.2 L 144 110.1 L 220 120 L 144 129.9 L 163.8 163.8 L 129.9 144 L 120 220 L 110.1 144 L 76.2 163.8 L 96 129.9 L 20 120 L 96 110.1 L 76.2 76.2 L 110.1 96 Z" fill="#fff"/></svg></div><p class="label-sm">No busy or low-contrast backgrounds</p></div>
+      <div class="dont"><span class="tag-dont">✕ Don't</span><div class="logo-stage"><svg viewBox="0 0 240 240" style="width:96px;height:50px"><path d="M 120 20 L 129.9 96 L 163.8 76.2 L 144 110.1 L 220 120 L 144 129.9 L 163.8 163.8 L 129.9 144 L 120 220 L 110.1 144 L 76.2 163.8 L 96 129.9 L 20 120 L 96 110.1 L 76.2 76.2 L 110.1 96 Z" fill="#C8A035"/></svg></div><p class="label-sm">Never stretch or distort</p></div>
+      <div class="dont"><span class="tag-dont">✕ Don't</span><div class="logo-stage"><svg viewBox="0 0 240 240" style="width:64px;height:64px"><path d="M 120 20 L 129.9 96 L 163.8 76.2 L 144 110.1 L 220 120 L 144 129.9 L 163.8 163.8 L 129.9 144 L 120 220 L 110.1 144 L 76.2 163.8 L 96 129.9 L 20 120 L 96 110.1 L 76.2 76.2 L 110.1 96 Z" fill="#138a3e"/></svg></div><p class="label-sm">No off-palette recoloring</p></div>
+      <div class="dont"><span class="tag-dont">✕ Don't</span><div class="logo-stage"><div class="lockup-v" style="transform:rotate(-12deg)"><svg viewBox="0 0 240 240" style="width:54px;height:54px;filter:drop-shadow(3px 4px 3px rgba(0,0,0,.4))"><path d="M 120 20 L 129.9 96 L 163.8 76.2 L 144 110.1 L 220 120 L 144 129.9 L 163.8 163.8 L 129.9 144 L 120 220 L 110.1 144 L 76.2 163.8 L 96 129.9 L 20 120 L 96 110.1 L 76.2 76.2 L 110.1 96 Z" fill="#C8A035"/></svg></div></div><p class="label-sm">No rotation, shadows, or effects</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COLOR ============ -->
+<section id="color">
+  <div class="wrap">
+    <p class="eyebrow">03 — Color</p>
+    <h2>Color system</h2>
+    <p class="lead">Two brand colors, a warm neutral foundation, and a small set of functional label colors. The ratio matters: roughly <strong>70% parchment &amp; white, 25% indigo, 5% gold</strong>. Gold earns its impact by being rare.</p>
+
+    <h3>Core palette</h3>
+    <div class="grid cols-4">
+      <div class="swatch"><div class="chip" style="background:#1B2B5A"></div><div class="info"><div class="name">Midnight Indigo</div><div class="hex">#1B2B5A</div><div class="use">Primary ink: headings, body, UI chrome, primary buttons.</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#C8A035"></div><div class="info"><div class="name">Antique Gold</div><div class="hex">#C8A035</div><div class="use">Accent only: the mark, one key action, highlights, rules.</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#FAF6EC;border-bottom:1px solid var(--hairline)"></div><div class="info"><div class="name">Parchment</div><div class="hex">#FAF6EC</div><div class="use">Page background. The warm base that makes white surfaces feel intentional.</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#FFFFFF;border-bottom:1px solid var(--hairline)"></div><div class="info"><div class="name">Surface White</div><div class="hex">#FFFFFF</div><div class="use">Cards, reading panels, elevated content.</div></div></div>
+    </div>
+
+    <h3>Neutrals</h3>
+    <div class="grid cols-4">
+      <div class="swatch"><div class="chip" style="background:#1B1E27"></div><div class="info"><div class="name">Ink</div><div class="hex">#1B1E27</div><div class="use">Long-form reading text (warm near-black).</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#6E6A60"></div><div class="info"><div class="name">Muted</div><div class="hex">#6E6A60</div><div class="use">Secondary text, captions, metadata.</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#E9E3D6;border-bottom:1px solid var(--hairline)"></div><div class="info"><div class="name">Hairline</div><div class="hex">#E9E3D6</div><div class="use">Borders, dividers, table rules.</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#EFF0F3;border-bottom:1px solid var(--hairline)"></div><div class="info"><div class="name">Indigo Wash</div><div class="hex">#EFF0F3</div><div class="use">Subtle fills, code, hover states.</div></div></div>
+    </div>
+
+    <h3>Tints &amp; shades</h3>
+    <div class="scale-label">Indigo 50 → 900</div>
+    <div class="scale">
+      <div class="step" style="background:#EFF0F3;color:#1B2B5A">50</div><div class="step" style="background:#DDDFE6;color:#1B2B5A">100</div><div class="step" style="background:#B6BBCA;color:#1B2B5A">200</div><div class="step" style="background:#8D95AC;color:#fff">300</div><div class="step" style="background:#5B6688;color:#fff">400</div><div class="step" style="background:#1B2B5A;color:#fff">500</div><div class="step" style="background:#17244C;color:#fff">600</div><div class="step" style="background:#121D3D;color:#fff">700</div><div class="step" style="background:#0E162F;color:#fff">800</div><div class="step" style="background:#0A0F20;color:#fff">900</div>
+    </div>
+    <div class="scale-label">Gold 50 → 900</div>
+    <div class="scale">
+      <div class="step" style="background:#FBF8F1;color:#68531C">50</div><div class="step" style="background:#F7F1E1;color:#68531C">100</div><div class="step" style="background:#EDE1BE;color:#68531C">200</div><div class="step" style="background:#E4D09A;color:#68531C">300</div><div class="step" style="background:#D7BB6E;color:#483A13">400</div><div class="step" style="background:#C8A035;color:#fff">500</div><div class="step" style="background:#A8862D;color:#fff">600</div><div class="step" style="background:#886D24;color:#fff">700</div><div class="step" style="background:#68531C;color:#fff">800</div><div class="step" style="background:#483A13;color:#fff">900</div>
+    </div>
+
+    <h3>Functional labels</h3>
+    <p style="font-size:15px;color:var(--muted)">The credibility system (how a claim is sourced) has its own muted, accessible palette so labels read instantly without competing with the brand gold.</p>
+    <div class="card" style="display:flex;gap:10px;flex-wrap:wrap">
+      <span class="tag t-text">Textually attested</span>
+      <span class="tag t-corr">Historically corroborated</span>
+      <span class="tag t-cons">Scholarly consensus</span>
+      <span class="tag t-contested">Contested / minority</span>
+      <span class="tag t-trad">Tradition / devotional</span>
+      <span class="tag t-spec">Speculative</span>
+    </div>
+
+    <h3>Contrast &amp; accessibility</h3>
+    <table class="contrast">
+      <tr><th>Pairing</th><th>Ratio</th><th>Rating</th><th>Use</th></tr>
+      <tr><td>Indigo #1B2B5A on White</td><td class="mono">13.64:1</td><td><span class="pill pass">AAA</span></td><td>Body &amp; headings ✓</td></tr>
+      <tr><td>Indigo on Parchment #FAF6EC</td><td class="mono">12.64:1</td><td><span class="pill pass">AAA</span></td><td>Default page text ✓</td></tr>
+      <tr><td>White on Indigo</td><td class="mono">13.64:1</td><td><span class="pill pass">AAA</span></td><td>Reversed UI, buttons ✓</td></tr>
+      <tr><td>Gold #C8A035 on Indigo</td><td class="mono">5.54:1</td><td><span class="pill aa">AA</span></td><td>Accent text on dark ✓</td></tr>
+      <tr><td>Gold on White</td><td class="mono">2.46:1</td><td><span class="pill fail">FAIL</span></td><td>Never for text — mark &amp; large graphics only</td></tr>
+    </table>
+    <p class="hint">Rule of thumb: text is indigo (or white on indigo). Gold is a graphic, not a font color, on light backgrounds.</p>
+  </div>
+</section>
+
+<!-- ============ TYPE ============ -->
+<section id="type">
+  <div class="wrap">
+    <p class="eyebrow">04 — Typography</p>
+    <h2>Typography</h2>
+    <p class="lead">A three-part editorial system, mirroring the way the best reading products pair a serif for voice with a sans for interface. Spectral carries the scholarly headline voice; Source Serif 4 makes long-form reading warm and effortless; Inter keeps the interface crisp and neutral.</p>
+
+    <div class="grid cols-3">
+      <div class="card"><p class="t-label">Display &amp; headings</p><p style="font-family:var(--display);font-size:34px;color:var(--indigo-700);margin:6px 0 4px">Spectral</p><p style="font-size:14px;color:var(--muted);margin:0">Serif · 400/500/600/700. Scholarly, editorial, distinctive.</p></div>
+      <div class="card"><p class="t-label">Long-form reading</p><p style="font-family:var(--read);font-size:34px;color:var(--indigo-700);margin:6px 0 4px">Source Serif 4</p><p style="font-size:14px;color:var(--muted);margin:0">Serif · 400/600. Optimised for comfortable body reading.</p></div>
+      <div class="card"><p class="t-label">Interface &amp; labels</p><p style="font-family:var(--ui);font-size:34px;color:var(--indigo-700);margin:6px 0 4px;font-weight:600">Inter</p><p style="font-size:14px;color:var(--muted);margin:0">Sans · 400–700. Navigation, buttons, tags, metadata.</p></div>
+    </div>
+
+    <h3>Type scale</h3>
+    <div class="specimen"><div class="meta">Display · Spectral 54 / 1.1 / -2% · page titles</div><p class="t-display">Enoch walked with God</p></div>
+    <div class="specimen"><div class="meta">H1 · Spectral 40 / 1.15 · article titles</div><p class="t-h1">The Astronomical Book &amp; the calendar</p></div>
+    <div class="specimen"><div class="meta">H2 · Spectral 30 / 1.2 · section headings</div><p class="t-h2">What the Watchers passages say</p></div>
+    <div class="specimen"><div class="meta">Reading · Source Serif 4 19 / 1.65 · max 60–68ch · body</div><p class="t-read">For a study resource, reading comfort is the whole game. Body copy is set in a serif at a generous size and line height, held to a measure of roughly 60 to 68 characters so the eye never loses its place — the difference between a page people skim and one they stay with.</p></div>
+    <div class="specimen"><div class="meta">UI · Inter 15 / 1.5 · interface text</div><p class="t-ui">Cross-references · 14 sources · Last reviewed 3 days ago</p></div>
+    <div class="specimen"><div class="meta">Label · Inter 13 / 600 / +12% caps · eyebrows &amp; tags</div><p class="t-label">Corroboration summary</p></div>
+  </div>
+</section>
+
+<!-- ============ IMAGERY ============ -->
+<section id="icon">
+  <div class="wrap">
+    <p class="eyebrow">05 — Iconography &amp; imagery</p>
+    <h2>Icons &amp; imagery</h2>
+    <div class="grid cols-2">
+      <div class="card">
+        <h4 style="margin-top:0">Icon style</h4>
+        <p style="font-size:15px;color:var(--muted)">Thin-to-medium line icons on a consistent stroke (≈2px at 24px). Geometric, calm, single-color (indigo, or gold for accent). Motifs drawn from the brand world: stars, orbital rings, scrolls, codices, keys, lamps.</p>
+        <div class="btn-row" style="margin-top:var(--s4)">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#1B2B5A" stroke-width="1.8"><path d="M12 3l1.6 6.4L20 11l-6.4 1.6L12 19l-1.6-6.4L4 11l6.4-1.6z"/></svg>
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#1B2B5A" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="9" ry="3.4" transform="rotate(-20 12 12)"/></svg>
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#1B2B5A" stroke-width="1.8"><path d="M5 4h11a2 2 0 012 2v14H7a2 2 0 01-2-2z"/><path d="M9 8h6M9 12h6"/></svg>
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#1B2B5A" stroke-width="1.8"><path d="M12 3a5 5 0 015 5c0 2-1 3-2.2 4.2-.8.8-1.3 1.4-1.3 2.3H10.5c0-.9-.5-1.5-1.3-2.3C8 11 7 10 7 8a5 5 0 015-5z"/><path d="M10 19h4M10.5 21h3"/></svg>
+        </div>
+      </div>
+      <div class="card">
+        <h4 style="margin-top:0">Imagery</h4>
+        <p style="font-size:15px;color:var(--muted)"><strong>Do:</strong> high-resolution manuscript folios (Ge'ez script, the Garima Gospels), archival illuminations, astronomical plates, paper and vellum textures — treated calmly, with room to breathe.</p>
+        <p style="font-size:15px;color:var(--muted);margin:0"><strong>Avoid:</strong> sensational "ancient mystery" stock, glowing aliens, zodiac kitsch, or dramatic CGI. The imagery must earn the same trust as the writing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPONENTS ============ -->
+<section id="ui">
+  <div class="wrap">
+    <p class="eyebrow">06 — Components</p>
+    <h2>Interface components</h2>
+    <p class="lead">Content-first patterns: quiet surfaces, clear hierarchy, and the credibility system surfaced everywhere a claim appears.</p>
+
+    <h3>Buttons</h3>
+    <div class="card btn-row">
+      <button class="btn btn-primary">Read the passage</button>
+      <button class="btn btn-secondary">View sources</button>
+      <button class="btn btn-accent">★ Save</button>
+    </div>
+    <p class="hint">Indigo is the workhorse action. Gold is reserved for a single, special call to action per view.</p>
+
+    <h3>Credibility tags</h3>
+    <div class="card" style="display:flex;gap:10px;flex-wrap:wrap">
+      <span class="tag t-text">Textually attested</span>
+      <span class="tag t-corr">Historically corroborated</span>
+      <span class="tag t-cons">Scholarly consensus</span>
+      <span class="tag t-contested">Contested / minority</span>
+      <span class="tag t-trad">Tradition / devotional</span>
+      <span class="tag t-spec">Speculative</span>
+    </div>
+
+    <h3>Source &amp; corroboration block</h3>
+    <div class="cite">
+      <div class="src">“The Book of the Watchers (1 Enoch 1–36) describes the descent of the angelic ‘Watchers’ and parallels fragments found among the Dead Sea Scrolls.”</div>
+      <div class="row">
+        <span class="tag t-cons">Scholarly consensus</span>
+        <span>VanderKam, <em>The Book of Enoch</em> · peer-reviewed</span>
+        <span class="meter">Corroboration <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot off"></span></span>
+      </div>
+    </div>
+    <p class="hint">Every published claim shows: a claim-type tag, its source &amp; credibility tier, and a corroboration meter. Nothing appears with authority until it has all three.</p>
+
+    <h3>Article card</h3>
+    <div class="grid cols-2">
+      <div class="card article-card">
+        <span class="kicker">The Watchers</span>
+        <h4>Who were the fallen angels of Enoch?</h4>
+        <p>A plain-language tour of 1 Enoch 6–16 — what the text says, what scholars corroborate, and what remains tradition.</p>
+        <div class="byline"><span class="tag t-cons">Reviewed</span><span>· 9 min read · 22 sources</span></div>
+      </div>
+      <div class="card article-card">
+        <span class="kicker">Canon</span>
+        <h4>Why the Ethiopian Bible keeps Enoch</h4>
+        <p>How the Ethiopian Orthodox Tewahedo canon preserved a book the West set aside — and what that means for readers today.</p>
+        <div class="byline"><span class="tag t-corr">Corroborated</span><span>· 7 min read · 15 sources</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPACING ============ -->
+<section id="space">
+  <div class="wrap">
+    <p class="eyebrow">07 — Layout &amp; space</p>
+    <h2>Layout &amp; spacing</h2>
+    <p class="lead">An 8-point spacing system and a narrow reading measure keep every page calm and consistent. Content sits in a single column up to about 720px for reading; app shells may widen, but the reading lane never does.</p>
+    <div class="card">
+      <div class="space-row">
+        <div><div class="space-box" style="width:4px;height:4px"></div><div class="space-cap">4</div></div>
+        <div><div class="space-box" style="width:8px;height:8px"></div><div class="space-cap">8</div></div>
+        <div><div class="space-box" style="width:16px;height:16px"></div><div class="space-cap">16</div></div>
+        <div><div class="space-box" style="width:24px;height:24px"></div><div class="space-cap">24</div></div>
+        <div><div class="space-box" style="width:32px;height:32px"></div><div class="space-cap">32</div></div>
+        <div><div class="space-box" style="width:48px;height:48px"></div><div class="space-cap">48</div></div>
+        <div><div class="space-box" style="width:64px;height:64px"></div><div class="space-cap">64</div></div>
+        <div><div class="space-box" style="width:96px;height:96px"></div><div class="space-cap">96</div></div>
+      </div>
+    </div>
+    <div class="grid cols-3" style="margin-top:var(--s5)">
+      <div class="card"><h4 style="margin-top:0">Reading measure</h4><p style="font-size:14.5px;color:var(--muted);margin:0">≈ 680–720px max for body. 60–68 characters per line.</p></div>
+      <div class="card"><h4 style="margin-top:0">Radius</h4><p style="font-size:14.5px;color:var(--muted);margin:0">8px on buttons &amp; tags, 10px on cards. Pills fully rounded. Never heavier.</p></div>
+      <div class="card"><h4 style="margin-top:0">Elevation</h4><p style="font-size:14.5px;color:var(--muted);margin:0">One soft shadow only. Hierarchy comes from space and hairlines, not drop shadows.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VOICE ============ -->
+<section id="voice">
+  <div class="wrap">
+    <p class="eyebrow">08 — Voice &amp; tone</p>
+    <h2>Voice &amp; tone</h2>
+    <p class="lead">Scholarly but warm. Plain-spoken, precise, and honest about uncertainty. We are a calm, well-read guide — never a hype machine, never a preacher, never a conspiracy feed.</p>
+    <div class="vt">
+      <div class="card">
+        <h4><span class="tag-do">✓ Do</span></h4>
+        <ul>
+          <li>Lead with what the text actually says, then what's corroborated.</li>
+          <li>Name the source and label the claim type, every time.</li>
+          <li>Distinguish fact, scholarship, tradition, and speculation in plain words.</li>
+          <li>Be reverent toward the material and neutral toward belief.</li>
+        </ul>
+        <div class="quote quote-good">“1 Enoch is not in most Bibles, but the Ethiopian Orthodox canon preserved it. Here's what it says — and where scholars agree.”</div>
+      </div>
+      <div class="card">
+        <h4><span class="tag-dont">✕ Don't</span></h4>
+        <ul>
+          <li>Hype, clickbait, or manufactured mystery.</li>
+          <li>Present contested or devotional claims as settled fact.</li>
+          <li>Flatten denominations or talk down to readers.</li>
+          <li>Borrow the aesthetics of the "forbidden knowledge" internet.</li>
+        </ul>
+        <div class="quote quote-bad">“The book they BANNED from the Bible reveals the SHOCKING truth they don't want you to know…”</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ A11Y ============ -->
+<section id="a11y">
+  <div class="wrap">
+    <p class="eyebrow">09 — Accessibility</p>
+    <h2>Accessibility</h2>
+    <div class="grid cols-2">
+      <div class="card"><h4 style="margin-top:0">Contrast</h4><p style="font-size:15px;color:var(--muted);margin:0">All text meets WCAG AA or better. Text is indigo on light or white on indigo. Gold never carries text on light backgrounds (2.46:1).</p></div>
+      <div class="card"><h4 style="margin-top:0">Focus &amp; targets</h4><p style="font-size:15px;color:var(--muted);margin:0">Visible focus rings (2px indigo, 2px offset). Interactive targets ≥ 44px. Never rely on color alone — tags carry text and a dot.</p></div>
+      <div class="card"><h4 style="margin-top:0">Reading</h4><p style="font-size:15px;color:var(--muted);margin:0">Body ≥ 17px, long-form 19px, line height ≥ 1.6, measure ≤ 68ch. Respect <span class="mono">prefers-reduced-motion</span>.</p></div>
+      <div class="card"><h4 style="margin-top:0">Manuscripts</h4><p style="font-size:15px;color:var(--muted);margin:0">Every folio/illustration needs descriptive alt text. Ge'ez quotations are marked with <span class="mono">lang="gez"</span> and given transliteration.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div style="font-family:var(--display);font-size:18px;color:var(--indigo-700)">enoch.wiki — Brand Guidelines v1.0</div>
+      <div class="hint">The mark shown here is a clean vector reference. Swap in your final logo file and the rest of the system holds.</div>
+    </div>
+    <div style="font-size:13px">Built to a Substack-grade craft standard · navy &amp; gold</div>
+  </div>
+</footer>
+
+<script>
+  // click-to-copy hex on swatches & scales
+  document.querySelectorAll('.chip,.scale .step,.contrast .mono').forEach(el=>{
+    el.addEventListener('click',()=>{
+      const t=(el.closest('.swatch')?.querySelector('.hex')?.textContent)||el.textContent;
+      navigator.clipboard&&navigator.clipboard.writeText(t.trim());
+      const o=el.style.outline;el.style.outline='2px solid #1B2B5A';setTimeout(()=>el.style.outline=o,250);
+    });
+  });
+</script>
+</body>
+</html>
