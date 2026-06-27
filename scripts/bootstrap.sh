@@ -73,6 +73,10 @@ if [ ! -f db/custom.db ]; then
     [ -f "scripts/$s.ts" ] && { command -v bun >/dev/null 2>&1 && bun "scripts/$s.ts" >/dev/null 2>&1 || true; }
   done
   [ -f data/corroboration-export.json ] && node --env-file=.env scripts/seed-scraped.mjs || true
+  # File restored evidence on the verifiability ladder + refresh the coverage map
+  # (both deterministic from source domain/tier — safe to re-derive every time).
+  [ -f scripts/classify-evidence.mjs ] && node --env-file=.env scripts/classify-evidence.mjs 2>/dev/null || true
+  [ -f scripts/coverage-map.mjs ] && node --env-file=.env scripts/coverage-map.mjs 2>/dev/null || true
   log "database ready: $(node --env-file=.env -e 'import("@prisma/client").then(async({PrismaClient})=>{const d=new PrismaClient();console.log(await d.source.count(),"sources,",await d.evidence.count(),"evidence");await d.$disconnect()})' 2>/dev/null)"
 else
   log "database present — skipping seed"
