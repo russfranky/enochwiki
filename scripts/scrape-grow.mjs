@@ -2,23 +2,41 @@
 // runnable from the CLI under plain Node (no tsx/bun: bun's fetch can't reach the
 // egress proxy, and tsx/esbuild can't fetch their binaries in this sandbox).
 //
-//   node --env-file=.env scripts/scrape-grow.mjs [mode] [limit]
-//     mode  = film-topics | themes | all   (default: all)
-//     limit = max work items to process     (default: 12)
+//   node --env-file=.env scripts/scrape-grow.mjs [mode] [limit] [--min-cred N] [--recency R]
+//     mode      = film-topics | themes | verses | all   (default: all)
+//     limit     = max work items to process              (default: 12)
+//     --min-cred = drop sources below this credibility    (default: 0.6)
+//     --recency  = oneDay | oneWeek | oneMonth | oneYear  (passed to web search)
 //
 // Web search uses the live Coding Plan MCP `web_search_prime` tool (same endpoint
 // as src/lib/zai-api.ts). Creates Source + Evidence + ReviewRecord + AuditLog
 // rows, deduping by URL, rate-limited ~1 search / 1.5s. Scripture-linked items get
 // an Evidence row with reviewState 'auto-corroborated' for the editorial gate.
+// Social / forum / video / user-blog domains are dropped — this pillar is for
+// scientific and historical corroboration, not discussion threads.
 
 import { PrismaClient } from '@prisma/client'
 import { readFileSync } from 'node:fs'
 import { homedir } from 'node:os'
 import { join } from 'node:path'
 
-const MODE = process.argv[2] || 'all'
-const LIMIT = parseInt(process.argv[3] || '12', 10)
+const rawArgs = process.argv.slice(2)
+let MIN_CRED = 0.6, RECENCY
+for (let i = 0; i < rawArgs.length; i++) {
+  if (rawArgs[i] === '--min-cred') { MIN_CRED = parseFloat(rawArgs[i + 1]); rawArgs.splice(i, 2); i-- }
+  else if (rawArgs[i] === '--recency') { RECENCY = rawArgs[i + 1]; rawArgs.splice(i, 2); i-- }
+}
+const MODE = rawArgs[0] || 'all'
+const LIMIT = parseInt(rawArgs[1] || '12', 10)
 const db = new PrismaClient()
+
+// Domains that are never scholarly corroboration — discussion, social, video, user blogs.
+const DOMAIN_BLOCKLIST = [
+  'facebook.com', 'reddit.com', 'quora.com', 'youtube.com', 'youtu.be', 'twitter.com', 'x.com',
+  'tiktok.com', 'instagram.com', 'pinterest.com', 'medium.com', 'substack.com', 'wordpress.com',
+  'blogspot.com', 'tumblr.com', 'linkedin.com', 'amazon.com', 'pinterest.', 'threads.net',
+]
+const isBlocked = (domain) => DOMAIN_BLOCKLIST.some((b) => domain === b || domain.endsWith('.' + b) || domain.includes(b))
 
 const KEY = process.env.ZAI_API_KEY || process.env.Z_AI_API_KEY ||
   (() => { try { return readFileSync(join(homedir(), '.config/glm/z-ai.key'), 'utf8').trim() } catch { return '' } })()
@@ -47,7 +65,9 @@ async function mcpRpc(method, params, sid, id = 1) {
 
 async function webSearch(query, num = 5) {
   const init = await mcpRpc('initialize', { protocolVersion: '2024-11-05', capabilities: {}, clientInfo: { name: 'enochwiki', version: '1' } })
-  const { json } = await mcpRpc('tools/call', { name: 'web_search_prime', arguments: { search_query: query } }, init.sid, 3)
+  const searchArgs = { search_query: query }
+  if (RECENCY) searchArgs.search_recency_filter = RECENCY
+  const { json } = await mcpRpc('tools/call', { name: 'web_search_prime', arguments: searchArgs }, init.sid, 3)
   if (!json?.result) throw new Error(`web_search_prime: ${json?.error ? JSON.stringify(json.error) : 'no result'}`)
   let parsed = json.result.content?.[0]?.text ?? ''
   for (let i = 0; i < 2; i++) { if (typeof parsed === 'string') { try { parsed = JSON.parse(parsed) } catch { break } } }
@@ -124,9 +144,25 @@ async function buildQueue() {
     for (const t of themes) {
       const v = t.verseLinks[0]?.verse
       items.push({
-        query: `${t.name} ${(t.description || '').slice(0, 80)} biblical archaeology scholarly evidence`,
+        query: `${t.name} ${(t.description || '').slice(0, 80)} biblical archaeology peer-reviewed scholarship`,
         scriptureRef: v ? `${v.book.slug} ${v.chapter.number}:${v.verseNum}` : undefined,
         scriptureText: v?.text, label: `theme: ${t.name}`,
+      })
+    }
+  }
+  if (MODE === 'verses') {
+    // Verses containing key terms that lack a scholarly source → per-verse corroboration.
+    const TERMS = ['Watchers', 'Nephilim', 'Azazel', 'Hermon', 'Son of Man', 'Sheol', 'Tartarus', 'giants']
+    const verses = await db.verse.findMany({
+      where: { OR: TERMS.map((t) => ({ text: { contains: t } })) },
+      include: { book: true, chapter: true }, take: LIMIT * 2,
+    })
+    for (const v of verses) {
+      const term = TERMS.find((t) => v.text.includes(t)) || ''
+      items.push({
+        query: `"${term}" ${v.book.name} ${v.chapter.number}:${v.verseNum} scholarly historical archaeological evidence peer-reviewed`,
+        scriptureRef: `${v.book.slug} ${v.chapter.number}:${v.verseNum}`,
+        scriptureText: v.text, label: `verse: ${v.book.slug} ${v.chapter.number}:${v.verseNum} (${term})`,
       })
     }
   }
@@ -137,7 +173,7 @@ async function buildQueue() {
 async function main() {
   if (!KEY) { console.error('no ZAI_API_KEY'); process.exit(1) }
   const queue = await buildQueue()
-  console.error(`[scrape-grow] mode=${MODE} limit=${LIMIT} → ${queue.length} work items\n`)
+  console.error(`[scrape-grow] mode=${MODE} limit=${LIMIT} min-cred=${MIN_CRED}${RECENCY ? ' recency=' + RECENCY : ''} → ${queue.length} work items\n`)
   let sourcesAdded = 0, evidenceAdded = 0, skipped = 0, processed = 0
   for (const item of queue) {
     processed++
@@ -151,6 +187,8 @@ async function main() {
       const domain = (() => { try { return new URL(r.url).hostname.replace(/^www\./, '') } catch { return 'unknown' } })()
       const snippet = r.snippet || r.name || ''
       const credibility = scoreCredibility(domain, snippet)
+      if (isBlocked(domain)) { console.error(`      ⨯ blocked ${domain}`); skipped++; continue }
+      if (credibility < MIN_CRED) { skipped++; continue }
       if (await db.source.findUnique({ where: { url: r.url } })) { skipped++; continue }
       let content = null, summary = snippet, title = r.name || r.url
       if (i === 0) {
