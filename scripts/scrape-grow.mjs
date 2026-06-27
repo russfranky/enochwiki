@@ -10,10 +10,14 @@
 //
 // Web search uses the live Coding Plan MCP `web_search_prime` tool (same endpoint
 // as src/lib/zai-api.ts). Creates Source + Evidence + ReviewRecord + AuditLog
-// rows, deduping by URL, rate-limited ~1 search / 1.5s. Scripture-linked items get
-// an Evidence row with reviewState 'auto-corroborated' for the editorial gate.
-// Social / forum / video / user-blog domains are dropped — this pillar is for
-// scientific and historical corroboration, not discussion threads.
+// rows, deduping by URL, rate-limited ~1 search / 1.5s.
+//
+// Two source classes are kept (open-minded mapping, but never conflated):
+//   • scholarly       → credibility ≥ 0.55, Evidence reviewState 'auto-corroborated'
+//   • community-lead  → social / forum / video / user blogs: low credibility,
+//                       Evidence reviewState 'draft' + blindspot=true + alignment
+//                       'neutral'. Captured as starting points to dig deeper and
+//                       corroborate — explicitly NOT treated as canon.
 
 import { PrismaClient } from '@prisma/client'
 import { readFileSync } from 'node:fs'
@@ -21,22 +25,36 @@ import { homedir } from 'node:os'
 import { join } from 'node:path'
 
 const rawArgs = process.argv.slice(2)
-let MIN_CRED = 0.6, RECENCY
+// --min-cred drops sources below a floor (default 0: keep everything, leads included).
+// --leads-only / --scholarly-only restrict a run to one class.
+let MIN_CRED = 0, RECENCY, ONLY
 for (let i = 0; i < rawArgs.length; i++) {
   if (rawArgs[i] === '--min-cred') { MIN_CRED = parseFloat(rawArgs[i + 1]); rawArgs.splice(i, 2); i-- }
   else if (rawArgs[i] === '--recency') { RECENCY = rawArgs[i + 1]; rawArgs.splice(i, 2); i-- }
+  else if (rawArgs[i] === '--scholarly-only') { ONLY = 'scholarly'; rawArgs.splice(i, 1); i-- }
+  else if (rawArgs[i] === '--leads-only') { ONLY = 'lead'; rawArgs.splice(i, 1); i-- }
 }
 const MODE = rawArgs[0] || 'all'
 const LIMIT = parseInt(rawArgs[1] || '12', 10)
 const db = new PrismaClient()
 
-// Domains that are never scholarly corroboration — discussion, social, video, user blogs.
-const DOMAIN_BLOCKLIST = [
+// Community / discussion / social / video / user-blog domains. Kept as exploratory
+// LEADS (low credibility, flagged for review) — not scholarly corroboration.
+const COMMUNITY_DOMAINS = [
   'facebook.com', 'reddit.com', 'quora.com', 'youtube.com', 'youtu.be', 'twitter.com', 'x.com',
-  'tiktok.com', 'instagram.com', 'pinterest.com', 'medium.com', 'substack.com', 'wordpress.com',
-  'blogspot.com', 'tumblr.com', 'linkedin.com', 'amazon.com', 'pinterest.', 'threads.net',
+  'tiktok.com', 'instagram.com', 'pinterest.com', 'threads.net', 'linkedin.com',
+  'medium.com', 'substack.com', 'wordpress.com', 'blogspot.com', 'tumblr.com',
 ]
-const isBlocked = (domain) => DOMAIN_BLOCKLIST.some((b) => domain === b || domain.endsWith('.' + b) || domain.includes(b))
+const isCommunity = (domain) => COMMUNITY_DOMAINS.some((b) => domain === b || domain.endsWith('.' + b))
+
+// Classify a hit into { credibility, tierName, isLead }. Community domains and
+// low-scored unknowns become leads; established scholarly domains stay corroboration.
+function classify(domain, snippet) {
+  if (isCommunity(domain)) return { credibility: 0.4, tierName: 'community-lead', isLead: true }
+  const credibility = scoreCredibility(domain, snippet)
+  const isLead = credibility < 0.55
+  return { credibility, tierName: isLead ? 'self-published' : tier(credibility), isLead }
+}
 
 const KEY = process.env.ZAI_API_KEY || process.env.Z_AI_API_KEY ||
   (() => { try { return readFileSync(join(homedir(), '.config/glm/z-ai.key'), 'utf8').trim() } catch { return '' } })()
@@ -173,8 +191,8 @@ async function buildQueue() {
 async function main() {
   if (!KEY) { console.error('no ZAI_API_KEY'); process.exit(1) }
   const queue = await buildQueue()
-  console.error(`[scrape-grow] mode=${MODE} limit=${LIMIT} min-cred=${MIN_CRED}${RECENCY ? ' recency=' + RECENCY : ''} → ${queue.length} work items\n`)
-  let sourcesAdded = 0, evidenceAdded = 0, skipped = 0, processed = 0
+  console.error(`[scrape-grow] mode=${MODE} limit=${LIMIT} min-cred=${MIN_CRED}${RECENCY ? ' recency=' + RECENCY : ''}${ONLY ? ' only=' + ONLY : ''} → ${queue.length} work items (leads kept as exploratory)\n`)
+  let sourcesAdded = 0, evidenceAdded = 0, skipped = 0, processed = 0, leadsAdded = 0
   for (const item of queue) {
     processed++
     let results
@@ -186,8 +204,9 @@ async function main() {
       if (!r.url) continue
       const domain = (() => { try { return new URL(r.url).hostname.replace(/^www\./, '') } catch { return 'unknown' } })()
       const snippet = r.snippet || r.name || ''
-      const credibility = scoreCredibility(domain, snippet)
-      if (isBlocked(domain)) { console.error(`      ⨯ blocked ${domain}`); skipped++; continue }
+      const { credibility, tierName, isLead } = classify(domain, snippet)
+      if (ONLY === 'scholarly' && isLead) { skipped++; continue }
+      if (ONLY === 'lead' && !isLead) { skipped++; continue }
       if (credibility < MIN_CRED) { skipped++; continue }
       if (await db.source.findUnique({ where: { url: r.url } })) { skipped++; continue }
       let content = null, summary = snippet, title = r.name || r.url
@@ -196,24 +215,32 @@ async function main() {
         if (page?.text) { content = page.text; if (page.title) title = page.title; const s = page.text.split(/(?<=[.!?])\s+/).slice(0, 3).join(' '); if (s.length > 80) summary = s }
       }
       const created = await db.source.create({
-        data: { url: r.url, title, domain, category: categorize(domain, snippet), credibilityTier: tier(credibility), credibility, author: null, summary, content, keywords: item.label, publishedAt: null },
+        data: { url: r.url, title, domain, category: isLead ? 'community-lead' : categorize(domain, snippet), credibilityTier: tierName, credibility, author: null, summary, content, keywords: item.label, publishedAt: null },
       })
       sourcesAdded++
-      console.error(`      + ${domain} (${(credibility * 100).toFixed(0)}%) ${r.url.slice(0, 72)}`)
+      if (isLead) leadsAdded++
+      console.error(`      + ${isLead ? '◇lead ' : '◆schol'} ${domain} (${(credibility * 100).toFixed(0)}%) ${r.url.slice(0, 66)}`)
       if (item.scriptureRef) {
+        const reviewState = isLead ? 'draft' : 'auto-corroborated'
         const ev = await db.evidence.create({
-          data: { sourceId: created.id, scriptureRef: item.scriptureRef, scriptureText: item.scriptureText || null, claim: item.scriptureText || `Theme: ${item.label}`, corroboration: summary || snippet, alignment: 'contextualizes', confidence: credibility * 0.7, notes: `Auto-grown via "${item.label}" (live MCP search).`, reviewState: 'auto-corroborated', blindspot: credibility < 0.6 },
+          data: {
+            sourceId: created.id, scriptureRef: item.scriptureRef, scriptureText: item.scriptureText || null,
+            claim: item.scriptureText || `Theme: ${item.label}`, corroboration: summary || snippet,
+            alignment: isLead ? 'neutral' : 'contextualizes', confidence: credibility * 0.7,
+            notes: isLead ? `Exploratory lead via "${item.label}" — community/discussion source, NOT corroboration. Needs digging + corroboration.` : `Auto-grown via "${item.label}" (live MCP search).`,
+            reviewState, blindspot: isLead || credibility < 0.6,
+          },
         })
-        await db.reviewRecord.create({ data: { itemType: 'evidence', itemId: ev.id, state: 'auto-corroborated', reviewer: 'scrape-grow', reviewerRole: 'contributor', notes: `Auto-grown: ${item.label}`, version: 1 } })
-        await db.auditLog.create({ data: { action: 'create', itemType: 'evidence', itemId: ev.id, actor: 'scrape-grow', actorRole: 'contributor', details: JSON.stringify({ query: item.query, sourceUrl: r.url, credibility }) } })
+        await db.reviewRecord.create({ data: { itemType: 'evidence', itemId: ev.id, state: reviewState, reviewer: 'scrape-grow', reviewerRole: 'contributor', notes: `${isLead ? 'Lead' : 'Auto-grown'}: ${item.label}`, version: 1 } })
+        await db.auditLog.create({ data: { action: 'create', itemType: 'evidence', itemId: ev.id, actor: 'scrape-grow', actorRole: 'contributor', details: JSON.stringify({ query: item.query, sourceUrl: r.url, credibility, isLead }) } })
         evidenceAdded++
       }
     }
     await sleep(1500)
   }
-  const [sources, evidence, reviews] = await Promise.all([db.source.count(), db.evidence.count(), db.reviewRecord.count()])
-  console.error(`\n[scrape-grow] done: processed=${processed} +sources=${sourcesAdded} +evidence=${evidenceAdded} skipped=${skipped}`)
-  console.error(`[scrape-grow] DB totals → sources=${sources} evidence=${evidence} reviewRecords=${reviews}`)
+  const [sources, evidence, reviews, leadSources] = await Promise.all([db.source.count(), db.evidence.count(), db.reviewRecord.count(), db.source.count({ where: { credibilityTier: 'community-lead' } })])
+  console.error(`\n[scrape-grow] done: processed=${processed} +sources=${sourcesAdded} (of which leads=${leadsAdded}) +evidence=${evidenceAdded} skipped=${skipped}`)
+  console.error(`[scrape-grow] DB totals → sources=${sources} (community-leads=${leadSources}) evidence=${evidence} reviewRecords=${reviews}`)
   await db.$disconnect()
 }
 
