@@ -76,6 +76,8 @@ if [ ! -f db/custom.db ]; then
   # File restored evidence on the verifiability ladder + refresh the coverage map
   # (both deterministic from source domain/tier — safe to re-derive every time).
   [ -f scripts/classify-evidence.mjs ] && node --env-file=.env scripts/classify-evidence.mjs 2>/dev/null || true
+  # Restore validated authorities (offline: scores from snapshot, links re-derived).
+  [ -f scripts/validate-authorities.mjs ] && [ -f data/authorities-export.json ] && node --env-file=.env scripts/validate-authorities.mjs --offline 2>/dev/null || true
   [ -f scripts/coverage-map.mjs ] && node --env-file=.env scripts/coverage-map.mjs 2>/dev/null || true
   log "database ready: $(node --env-file=.env -e 'import("@prisma/client").then(async({PrismaClient})=>{const d=new PrismaClient();console.log(await d.source.count(),"sources,",await d.evidence.count(),"evidence");await d.$disconnect()})' 2>/dev/null)"
 else

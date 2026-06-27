@@ -77,6 +77,21 @@ for (const t of topicRows) {
 md += `\n## Scripture coverage\n\n| Book | Verses | With evidence | Coverage |\n|---|---:|---:|---:|\n`
 for (const b of bookRows) md += `| ${b.name} | ${b.verses} | ${b.withEv} | ${b.verses ? Math.round((b.withEv / b.verses) * 100) : 0}% |\n`
 
+// Authorities — the people/institutions behind the evidence, validated like sources.
+const authorities = await db.authority.findMany({ include: { sourceLinks: true } }).catch(() => [])
+if (authorities.length) {
+  const people = authorities.filter((a) => a.kind === 'person').sort((a, b) => b.credibility - a.credibility)
+  const insts = authorities.filter((a) => a.kind === 'institution')
+  md += `\n## Authorities behind the evidence\n\n`
+  md += `A second axis of verifiability: not just *what* a source says but *who* stands behind it,\n`
+  md += `validated the same way sources are (credentials + affiliation + independent corroboration).\n`
+  md += `**${people.length} named figures**, **${insts.length} institutions**.\n\n`
+  md += `### Named figures (independently validated)\n\n| Person | Type | Tier | Basis | Sources |\n|---|---|---|---|---:|\n`
+  for (const p of people) md += `| ${p.name} | ${p.type} | ${p.credibilityTier} | ${p.verificationBasis} | ${p.sourceLinks.length} |\n`
+  const topInst = insts.filter((i) => i.credibilityTier === 'established-authority').sort((a, b) => b.sourceLinks.length - a.sourceLinks.length).slice(0, 8)
+  md += `\n### Top institutional backers\n\n${topInst.map((i) => `- **${i.name}** — ${i.sourceLinks.length} sources (${Math.round(i.credibility * 100)}%)`).join('\n')}\n`
+}
+
 md += `\n## Gaps to peel back next\n\nTopics currently resting only on devotional / visionary / speculative / lead sources — prime targets for deeper digging and corroboration:\n\n`
 const gaps = topicRows.filter((t) => t.gap)
 md += gaps.length ? gaps.map((t) => `- **${t.label}** (${t.total} pieces, none independently corroborated yet)`).join('\n') : '_None — every topic has at least one solid source._'

@@ -170,7 +170,7 @@ async function buildQueue() {
   }
   if (MODE === 'verses') {
     // Verses containing key terms that lack a scholarly source → per-verse corroboration.
-    const TERMS = ['Watchers', 'Nephilim', 'Azazel', 'Hermon', 'Son of Man', 'Sheol', 'Tartarus', 'giants']
+    const TERMS = ['Watchers', 'Nephilim', 'Azazel', 'Hermon', 'Son of Man', 'Sheol', 'Tartarus', 'giants', 'prison', 'preached', 'spirits']
     const verses = await db.verse.findMany({
       where: { OR: TERMS.map((t) => ({ text: { contains: t } })) },
       include: { book: true, chapter: true }, take: LIMIT * 2,

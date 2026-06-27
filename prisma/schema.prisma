@@ -146,6 +146,46 @@ model Source {
   createdAt        DateTime     @default(now())
   evidences        Evidence[]
   perspectiveLinks SourcePerspective[]
+  authorityLinks   SourceAuthority[]
+}
+
+// ── Authority model: validate the PEOPLE/INSTITUTIONS behind sources ──────────
+// A second axis of verifiability — not "what did the source say" but "who said it
+// and are *they* independently credible". Validated the same way sources are:
+// credentials + affiliation + independent corroboration (web search).
+
+model Authority {
+  id               String   @id @default(cuid())
+  slug             String   @unique
+  name             String
+  kind             String   // "person" | "institution"
+  type             String   // scholar | archaeologist | scientist | theologian | clergy | historian | journalist | visionary | witness | publisher | museum | university | community | unknown
+  credentials      String?  // degrees / title (e.g. "PhD, Second Temple Judaism")
+  affiliation      String?  // institution / employer
+  field            String?  // area of expertise
+  perspectiveSlug  String?  // FK-by-slug to PerspectiveTag — their vantage point
+  perspective      PerspectiveTag? @relation(fields: [perspectiveSlug], references: [slug], onDelete: SetNull)
+  credibility      Float    @default(0.5) // 0..1
+  credibilityTier  String   @default("recognized") // "established-authority" | "credentialed" | "recognized" | "unverified-claimant" | "anonymous-community"
+  verificationBasis String  @default("unverified") // "institutional" | "peer-cited" | "credentials-verified" | "self-claimed" | "unverified"
+  validationNotes  String?  // what the independent check found
+  homepage         String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  sourceLinks      SourceAuthority[]
+
+  @@index([credibilityTier])
+}
+
+model SourceAuthority {
+  sourceId    String
+  source      Source    @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+  authorityId String
+  authority   Authority @relation(fields: [authorityId], references: [id], onDelete: Cascade)
+  role        String    @default("author") // "author" | "publisher" | "institution"
+
+  @@unique([sourceId, authorityId, role])
+  @@index([authorityId])
 }
 
 // ── Credibility model: perspectives & claim types ────────────────────────────
@@ -159,6 +199,7 @@ model PerspectiveTag {
   sources     SourcePerspective[]
   evidences   EvidencePerspective[]
   publicArticles PublicArticlePerspective[]
+  authorities Authority[]
   createdAt   DateTime @default(now())
 }
 
