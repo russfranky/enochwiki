@@ -64,3 +64,5 @@ db/
 /download/
 /tool-results/
 /outputs/
+# npm lockfile — this project uses bun (bun.lock)
+package-lock.json

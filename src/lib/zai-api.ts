@@ -8,6 +8,13 @@ const API_KEY = process.env.ZAI_API_KEY || ''
 const BASE_URL = process.env.ZAI_BASE_URL || 'https://api.z.ai/api/paas/v4'
 const MODEL = process.env.ZAI_MODEL || 'glm-4.5'
 
+// The GLM Coding Plan exposes "Web Search / Reader / Zread" through MCP endpoints
+// (JSON-RPC over HTTP+SSE). This draws the Coding Plan quota — a different product
+// from the pay-as-you-go REST /paas/v4/web_search (which 1113s without a balance)
+// and from chat/completions (which 1308s when the 5-hour premium quota is spent).
+// Docs: https://docs.z.ai/guides/tools/web-search
+const MCP_WEB_SEARCH_URL = process.env.ZAI_MCP_WEB_SEARCH_URL || 'https://api.z.ai/api/mcp/web_search_prime/mcp'
+
 export interface SearchResult {
   url: string
   name: string
@@ -30,13 +37,101 @@ export interface PageReadResult {
   status: number
 }
 
+// ── Coding Plan MCP web search (web_search_prime) ───────────────────────────
+// Minimal JSON-RPC-over-HTTP client: initialize → grab Mcp-Session-Id → tools/call.
+// Responses can be plain JSON or SSE (`data: {...}`), so parse both shapes.
+
+async function mcpRpc(method: string, params: unknown, sid?: string, id = 1): Promise<{ sid?: string; json: any }> {
+  const res = await fetch(MCP_WEB_SEARCH_URL, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${API_KEY}`,
+      'Content-Type': 'application/json',
+      Accept: 'application/json, text/event-stream',
+      ...(sid ? { 'Mcp-Session-Id': sid } : {}),
+    },
+    body: JSON.stringify({ jsonrpc: '2.0', id, method, params }),
+  })
+  const text = await res.text()
+  if (!res.ok) throw new Error(`MCP ${method} failed: ${res.status} ${text.slice(0, 200)}`)
+  const newSid = res.headers.get('Mcp-Session-Id') || res.headers.get('mcp-session-id') || undefined
+  return { sid: newSid, json: parseSse(text) }
+}
+
+function parseSse(text: string): any {
+  for (let line of text.split('\n')) {
+    line = line.trim()
+    if (line.startsWith('data:')) line = line.slice(5).trim()
+    if (line.startsWith('{')) {
+      try {
+        return JSON.parse(line)
+      } catch {
+        /* keep scanning */
+      }
+    }
+  }
+  return null
+}
+
 /**
- * Search the web via Z.ai web-search-pro tool.
- * Correct format: POST /v4/tools with { model, request_id, tool: "web-search-pro", messages, stream }
+ * Web search via the Coding Plan MCP `web_search_prime` tool.
+ * Returns live results: each has { title, link, content, refer }.
+ */
+async function mcpWebSearch(query: string, num: number, recency?: string): Promise<SearchResult[]> {
+  const init = await mcpRpc('initialize', {
+    protocolVersion: '2024-11-05',
+    capabilities: {},
+    clientInfo: { name: 'enochwiki', version: '1' },
+  })
+  const args: Record<string, string> = { search_query: query }
+  if (recency) args.search_recency_filter = recency
+  const { json } = await mcpRpc('tools/call', { name: 'web_search_prime', arguments: args }, init.sid, 3)
+  if (!json || !json.result) {
+    throw new Error(`MCP web_search_prime: ${json?.error ? JSON.stringify(json.error) : 'no result'}`)
+  }
+  const raw = json.result.content?.[0]?.text ?? ''
+  // The result array is returned as a (sometimes double-) JSON-encoded string.
+  let parsed: any = raw
+  for (let i = 0; i < 2; i++) {
+    if (typeof parsed === 'string') {
+      try {
+        parsed = JSON.parse(parsed)
+      } catch {
+        break
+      }
+    }
+  }
+  if (!Array.isArray(parsed)) return []
+  return parsed
+    .filter((r: any) => r && typeof r === 'object' && (r.link || r.url))
+    .slice(0, num)
+    .map((r: any, i: number) => ({
+      url: r.link || r.url || '',
+      name: r.title || r.link || r.url,
+      snippet: r.content || r.snippet || '',
+      host_name: (() => { try { return new URL(r.link || r.url).hostname.replace(/^www\./, '') } catch { return '' } })(),
+      rank: i,
+      date: r.publish_date || r.date || '',
+      favicon: r.icon || r.favicon || '',
+    }))
+}
+
+/**
+ * Search the web. Order of attempts:
+ *   1. Coding Plan MCP web_search_prime (live results — the quota that works)
+ *   2. Z.ai web-search-pro tool on /v4/tools (needs pay-as-you-go balance)
+ *   3. Free curated direct-fetch fallback
  */
 export async function webSearch(query: string, num = 8): Promise<SearchResult[]> {
   // No key configured → skip the paid tool and use the free fallback.
   if (!API_KEY) return freeFallbackSearch(query, num)
+  // Try 0: Coding Plan MCP web search (live, draws the Web Search/Reader quota)
+  try {
+    const mcp = await mcpWebSearch(query, num)
+    if (mcp.length > 0) return mcp
+  } catch {
+    // fall through to the paid tool / free fallback
+  }
   // Try 1: Z.ai web-search-pro tool (requires balance)
   try {
     const res = await fetch(`${BASE_URL}/tools`, {
@@ -229,6 +324,18 @@ function extractPublishedTime(html: string): string | undefined {
  */
 export async function checkApiHealth(): Promise<{ ok: boolean; error?: string; model?: string }> {
   if (!API_KEY) return { ok: false, error: 'ZAI_API_KEY not set — using free fallbacks', model: MODEL }
+  // Primary capability for the growth pipeline is Coding Plan MCP web search.
+  // A successful initialize handshake means live search is available.
+  try {
+    const init = await mcpRpc('initialize', {
+      protocolVersion: '2024-11-05',
+      capabilities: {},
+      clientInfo: { name: 'enochwiki', version: '1' },
+    })
+    if (init.sid || init.json?.result) return { ok: true, model: 'web_search_prime (MCP)' }
+  } catch {
+    // fall through to the chat-completions probe below
+  }
   try {
     const res = await fetch(`${BASE_URL}/chat/completions`, {
       method: 'POST',
