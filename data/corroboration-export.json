@@ -1,7 +1,7 @@
 {
-  "exportedAt": "2026-06-29T05:38:14.568Z",
+  "exportedAt": "2026-06-29T05:40:10.518Z",
   "counts": {
-    "sources": 195,
+    "sources": 198,
     "evidence": 146,
     "reviews": 152
   },
@@ -42,7 +42,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.861Z",
-          "updatedAt": "2026-06-29T05:38:12.333Z"
+          "updatedAt": "2026-06-29T05:40:08.402Z"
         },
         {
           "id": "cmqwygqys009a7dcyrip4r2x4",
@@ -59,7 +59,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.868Z",
-          "updatedAt": "2026-06-29T05:38:12.340Z"
+          "updatedAt": "2026-06-29T05:40:08.409Z"
         }
       ]
     },
@@ -99,7 +99,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.882Z",
-          "updatedAt": "2026-06-29T05:38:12.345Z"
+          "updatedAt": "2026-06-29T05:40:08.414Z"
         }
       ]
     },
@@ -139,7 +139,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.900Z",
-          "updatedAt": "2026-06-29T05:38:12.351Z"
+          "updatedAt": "2026-06-29T05:40:08.419Z"
         },
         {
           "id": "cmqwygqzw009i7dcybbg06wmh",
@@ -156,7 +156,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.908Z",
-          "updatedAt": "2026-06-29T05:38:12.355Z"
+          "updatedAt": "2026-06-29T05:40:08.424Z"
         }
       ]
     },
@@ -196,7 +196,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.919Z",
-          "updatedAt": "2026-06-29T05:38:12.359Z"
+          "updatedAt": "2026-06-29T05:40:08.429Z"
         }
       ]
     },
@@ -236,7 +236,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.931Z",
-          "updatedAt": "2026-06-29T05:38:12.364Z"
+          "updatedAt": "2026-06-29T05:40:08.434Z"
         }
       ]
     },
@@ -276,7 +276,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.945Z",
-          "updatedAt": "2026-06-29T05:38:12.368Z"
+          "updatedAt": "2026-06-29T05:40:08.439Z"
         }
       ]
     },
@@ -316,7 +316,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.967Z",
-          "updatedAt": "2026-06-29T05:38:12.372Z"
+          "updatedAt": "2026-06-29T05:40:08.443Z"
         },
         {
           "id": "cmqwygr1o009w7dcyraxbrig8",
@@ -333,7 +333,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.972Z",
-          "updatedAt": "2026-06-29T05:38:12.377Z"
+          "updatedAt": "2026-06-29T05:40:08.448Z"
         }
       ]
     },
@@ -857,7 +857,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.543Z",
-          "updatedAt": "2026-06-29T05:38:12.381Z"
+          "updatedAt": "2026-06-29T05:40:08.453Z"
         }
       ]
     },
@@ -897,7 +897,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.565Z",
-          "updatedAt": "2026-06-29T05:38:12.385Z"
+          "updatedAt": "2026-06-29T05:40:08.457Z"
         }
       ]
     },
@@ -937,7 +937,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.586Z",
-          "updatedAt": "2026-06-29T05:38:12.389Z"
+          "updatedAt": "2026-06-29T05:40:08.461Z"
         }
       ]
     },
@@ -977,7 +977,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.606Z",
-          "updatedAt": "2026-06-29T05:38:12.392Z"
+          "updatedAt": "2026-06-29T05:40:08.465Z"
         }
       ]
     },
@@ -1017,7 +1017,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.626Z",
-          "updatedAt": "2026-06-29T05:38:12.396Z"
+          "updatedAt": "2026-06-29T05:40:08.470Z"
         }
       ]
     },
@@ -1057,7 +1057,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.659Z",
-          "updatedAt": "2026-06-29T05:38:12.400Z"
+          "updatedAt": "2026-06-29T05:40:08.474Z"
         }
       ]
     },
@@ -1097,7 +1097,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.683Z",
-          "updatedAt": "2026-06-29T05:38:12.406Z"
+          "updatedAt": "2026-06-29T05:40:08.480Z"
         }
       ]
     },
@@ -1137,7 +1137,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.703Z",
-          "updatedAt": "2026-06-29T05:38:12.411Z"
+          "updatedAt": "2026-06-29T05:40:08.484Z"
         }
       ]
     },
@@ -1177,7 +1177,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.722Z",
-          "updatedAt": "2026-06-29T05:38:12.414Z"
+          "updatedAt": "2026-06-29T05:40:08.488Z"
         }
       ]
     },
@@ -1217,7 +1217,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.742Z",
-          "updatedAt": "2026-06-29T05:38:12.419Z"
+          "updatedAt": "2026-06-29T05:40:08.493Z"
         }
       ]
     },
@@ -1257,7 +1257,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.766Z",
-          "updatedAt": "2026-06-29T05:38:12.423Z"
+          "updatedAt": "2026-06-29T05:40:08.497Z"
         }
       ]
     },
@@ -1297,7 +1297,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.789Z",
-          "updatedAt": "2026-06-29T05:38:12.427Z"
+          "updatedAt": "2026-06-29T05:40:08.501Z"
         }
       ]
     },
@@ -1337,7 +1337,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.810Z",
-          "updatedAt": "2026-06-29T05:38:12.432Z"
+          "updatedAt": "2026-06-29T05:40:08.505Z"
         }
       ]
     },
@@ -1377,7 +1377,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.834Z",
-          "updatedAt": "2026-06-29T05:38:12.437Z"
+          "updatedAt": "2026-06-29T05:40:08.510Z"
         }
       ]
     },
@@ -1417,7 +1417,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.856Z",
-          "updatedAt": "2026-06-29T05:38:12.441Z"
+          "updatedAt": "2026-06-29T05:40:08.516Z"
         }
       ]
     },
@@ -1457,7 +1457,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.879Z",
-          "updatedAt": "2026-06-29T05:38:12.445Z"
+          "updatedAt": "2026-06-29T05:40:08.521Z"
         }
       ]
     },
@@ -1497,7 +1497,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.900Z",
-          "updatedAt": "2026-06-29T05:38:12.450Z"
+          "updatedAt": "2026-06-29T05:40:08.526Z"
         }
       ]
     },
@@ -1537,7 +1537,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.926Z",
-          "updatedAt": "2026-06-29T05:38:12.453Z"
+          "updatedAt": "2026-06-29T05:40:08.530Z"
         }
       ]
     },
@@ -1643,7 +1643,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.980Z",
-          "updatedAt": "2026-06-29T05:38:12.457Z"
+          "updatedAt": "2026-06-29T05:40:08.535Z"
         }
       ]
     },
@@ -1683,7 +1683,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.008Z",
-          "updatedAt": "2026-06-29T05:38:12.461Z"
+          "updatedAt": "2026-06-29T05:40:08.540Z"
         }
       ]
     },
@@ -1723,7 +1723,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.036Z",
-          "updatedAt": "2026-06-29T05:38:12.465Z"
+          "updatedAt": "2026-06-29T05:40:08.545Z"
         }
       ]
     },
@@ -1763,7 +1763,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.056Z",
-          "updatedAt": "2026-06-29T05:38:12.469Z"
+          "updatedAt": "2026-06-29T05:40:08.550Z"
         }
       ]
     },
@@ -1803,7 +1803,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.075Z",
-          "updatedAt": "2026-06-29T05:38:12.473Z"
+          "updatedAt": "2026-06-29T05:40:08.555Z"
         }
       ]
     },
@@ -1843,7 +1843,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.100Z",
-          "updatedAt": "2026-06-29T05:38:12.477Z"
+          "updatedAt": "2026-06-29T05:40:08.560Z"
         }
       ]
     },
@@ -1883,7 +1883,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.122Z",
-          "updatedAt": "2026-06-29T05:38:12.481Z"
+          "updatedAt": "2026-06-29T05:40:08.565Z"
         }
       ]
     },
@@ -1923,7 +1923,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.142Z",
-          "updatedAt": "2026-06-29T05:38:12.486Z"
+          "updatedAt": "2026-06-29T05:40:08.570Z"
         }
       ]
     },
@@ -1963,7 +1963,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.170Z",
-          "updatedAt": "2026-06-29T05:38:12.490Z"
+          "updatedAt": "2026-06-29T05:40:08.575Z"
         }
       ]
     },
@@ -2003,7 +2003,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.189Z",
-          "updatedAt": "2026-06-29T05:38:12.494Z"
+          "updatedAt": "2026-06-29T05:40:08.581Z"
         }
       ]
     },
@@ -2043,7 +2043,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.208Z",
-          "updatedAt": "2026-06-29T05:38:12.498Z"
+          "updatedAt": "2026-06-29T05:40:08.586Z"
         }
       ]
     },
@@ -2083,7 +2083,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.226Z",
-          "updatedAt": "2026-06-29T05:38:12.503Z"
+          "updatedAt": "2026-06-29T05:40:08.591Z"
         }
       ]
     },
@@ -2123,7 +2123,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.247Z",
-          "updatedAt": "2026-06-29T05:38:12.507Z"
+          "updatedAt": "2026-06-29T05:40:08.597Z"
         }
       ]
     },
@@ -2163,7 +2163,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.270Z",
-          "updatedAt": "2026-06-29T05:38:12.511Z"
+          "updatedAt": "2026-06-29T05:40:08.601Z"
         }
       ]
     },
@@ -2203,7 +2203,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.289Z",
-          "updatedAt": "2026-06-29T05:38:12.515Z"
+          "updatedAt": "2026-06-29T05:40:08.605Z"
         }
       ]
     },
@@ -2243,7 +2243,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.306Z",
-          "updatedAt": "2026-06-29T05:38:12.519Z"
+          "updatedAt": "2026-06-29T05:40:08.609Z"
         }
       ]
     },
@@ -2283,7 +2283,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.326Z",
-          "updatedAt": "2026-06-29T05:38:12.524Z"
+          "updatedAt": "2026-06-29T05:40:08.614Z"
         }
       ]
     },
@@ -2345,7 +2345,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.349Z",
-          "updatedAt": "2026-06-29T05:38:12.528Z"
+          "updatedAt": "2026-06-29T05:40:08.619Z"
         }
       ]
     },
@@ -2429,7 +2429,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.385Z",
-          "updatedAt": "2026-06-29T05:38:12.533Z"
+          "updatedAt": "2026-06-29T05:40:08.623Z"
         }
       ]
     },
@@ -2843,7 +2843,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:27.513Z",
-          "updatedAt": "2026-06-29T05:38:12.538Z"
+          "updatedAt": "2026-06-29T05:40:08.629Z"
         }
       ]
     },
@@ -2883,7 +2883,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:27.542Z",
-          "updatedAt": "2026-06-29T05:38:12.542Z"
+          "updatedAt": "2026-06-29T05:40:08.633Z"
         }
       ]
     },
@@ -2923,7 +2923,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:33.894Z",
-          "updatedAt": "2026-06-29T05:38:12.546Z"
+          "updatedAt": "2026-06-29T05:40:08.637Z"
         }
       ]
     },
@@ -2963,7 +2963,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:33.925Z",
-          "updatedAt": "2026-06-29T05:38:12.551Z"
+          "updatedAt": "2026-06-29T05:40:08.642Z"
         }
       ]
     },
@@ -3003,7 +3003,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:33.950Z",
-          "updatedAt": "2026-06-29T05:38:12.555Z"
+          "updatedAt": "2026-06-29T05:40:08.646Z"
         }
       ]
     },
@@ -3043,7 +3043,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:39.431Z",
-          "updatedAt": "2026-06-29T05:38:12.559Z"
+          "updatedAt": "2026-06-29T05:40:08.650Z"
         }
       ]
     },
@@ -3083,7 +3083,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:39.465Z",
-          "updatedAt": "2026-06-29T05:38:12.564Z"
+          "updatedAt": "2026-06-29T05:40:08.655Z"
         }
       ]
     },
@@ -3123,7 +3123,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:39.490Z",
-          "updatedAt": "2026-06-29T05:38:12.568Z"
+          "updatedAt": "2026-06-29T05:40:08.659Z"
         }
       ]
     },
@@ -3163,7 +3163,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:43.977Z",
-          "updatedAt": "2026-06-29T05:38:12.572Z"
+          "updatedAt": "2026-06-29T05:40:08.664Z"
         }
       ]
     },
@@ -3203,7 +3203,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:49.645Z",
-          "updatedAt": "2026-06-29T05:38:12.576Z"
+          "updatedAt": "2026-06-29T05:40:08.668Z"
         }
       ]
     },
@@ -3243,7 +3243,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:49.675Z",
-          "updatedAt": "2026-06-29T05:38:12.581Z"
+          "updatedAt": "2026-06-29T05:40:08.673Z"
         }
       ]
     },
@@ -3283,7 +3283,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:49.703Z",
-          "updatedAt": "2026-06-29T05:38:12.585Z"
+          "updatedAt": "2026-06-29T05:40:08.677Z"
         }
       ]
     },
@@ -3323,7 +3323,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:57.732Z",
-          "updatedAt": "2026-06-29T05:38:12.589Z"
+          "updatedAt": "2026-06-29T05:40:08.681Z"
         }
       ]
     },
@@ -3363,7 +3363,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:57.757Z",
-          "updatedAt": "2026-06-29T05:38:12.593Z"
+          "updatedAt": "2026-06-29T05:40:08.686Z"
         }
       ]
     },
@@ -3403,7 +3403,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:57.783Z",
-          "updatedAt": "2026-06-29T05:38:12.598Z"
+          "updatedAt": "2026-06-29T05:40:08.690Z"
         }
       ]
     },
@@ -3443,7 +3443,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:01.917Z",
-          "updatedAt": "2026-06-29T05:38:12.603Z"
+          "updatedAt": "2026-06-29T05:40:08.695Z"
         }
       ]
     },
@@ -3483,7 +3483,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:06.450Z",
-          "updatedAt": "2026-06-29T05:38:12.607Z"
+          "updatedAt": "2026-06-29T05:40:08.701Z"
         }
       ]
     },
@@ -3523,7 +3523,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:06.477Z",
-          "updatedAt": "2026-06-29T05:38:12.612Z"
+          "updatedAt": "2026-06-29T05:40:08.705Z"
         }
       ]
     },
@@ -3563,7 +3563,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:06.502Z",
-          "updatedAt": "2026-06-29T05:38:12.616Z"
+          "updatedAt": "2026-06-29T05:40:08.709Z"
         }
       ]
     },
@@ -3603,7 +3603,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:10.799Z",
-          "updatedAt": "2026-06-29T05:38:12.621Z"
+          "updatedAt": "2026-06-29T05:40:08.714Z"
         }
       ]
     },
@@ -3643,7 +3643,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:10.829Z",
-          "updatedAt": "2026-06-29T05:38:12.626Z"
+          "updatedAt": "2026-06-29T05:40:08.719Z"
         }
       ]
     },
@@ -3727,7 +3727,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:20.671Z",
-          "updatedAt": "2026-06-29T05:38:12.631Z"
+          "updatedAt": "2026-06-29T05:40:08.724Z"
         }
       ]
     },
@@ -3767,7 +3767,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:20.706Z",
-          "updatedAt": "2026-06-29T05:38:12.636Z"
+          "updatedAt": "2026-06-29T05:40:08.729Z"
         }
       ]
     },
@@ -3807,7 +3807,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:25.561Z",
-          "updatedAt": "2026-06-29T05:38:12.641Z"
+          "updatedAt": "2026-06-29T05:40:08.735Z"
         }
       ]
     },
@@ -3847,7 +3847,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:25.588Z",
-          "updatedAt": "2026-06-29T05:38:12.645Z"
+          "updatedAt": "2026-06-29T05:40:08.740Z"
         }
       ]
     },
@@ -3887,7 +3887,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:48.975Z",
-          "updatedAt": "2026-06-29T05:38:12.649Z"
+          "updatedAt": "2026-06-29T05:40:08.744Z"
         }
       ]
     },
@@ -3927,7 +3927,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:49.015Z",
-          "updatedAt": "2026-06-29T05:38:12.653Z"
+          "updatedAt": "2026-06-29T05:40:08.749Z"
         }
       ]
     },
@@ -3967,7 +3967,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:49.051Z",
-          "updatedAt": "2026-06-29T05:38:12.658Z"
+          "updatedAt": "2026-06-29T05:40:08.753Z"
         }
       ]
     },
@@ -4007,7 +4007,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:57.328Z",
-          "updatedAt": "2026-06-29T05:38:12.663Z"
+          "updatedAt": "2026-06-29T05:40:08.759Z"
         }
       ]
     },
@@ -4047,7 +4047,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:57.362Z",
-          "updatedAt": "2026-06-29T05:38:12.667Z"
+          "updatedAt": "2026-06-29T05:40:08.764Z"
         }
       ]
     },
@@ -4087,7 +4087,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:57.411Z",
-          "updatedAt": "2026-06-29T05:38:12.671Z"
+          "updatedAt": "2026-06-29T05:40:08.769Z"
         }
       ]
     },
@@ -4127,7 +4127,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:01.846Z",
-          "updatedAt": "2026-06-29T05:38:12.675Z"
+          "updatedAt": "2026-06-29T05:40:08.774Z"
         }
       ]
     },
@@ -4167,7 +4167,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:06.010Z",
-          "updatedAt": "2026-06-29T05:38:12.679Z"
+          "updatedAt": "2026-06-29T05:40:08.778Z"
         }
       ]
     },
@@ -4207,7 +4207,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:06.036Z",
-          "updatedAt": "2026-06-29T05:38:12.684Z"
+          "updatedAt": "2026-06-29T05:40:08.782Z"
         }
       ]
     },
@@ -4247,7 +4247,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:06.067Z",
-          "updatedAt": "2026-06-29T05:38:12.688Z"
+          "updatedAt": "2026-06-29T05:40:08.786Z"
         }
       ]
     },
@@ -4287,7 +4287,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:10.517Z",
-          "updatedAt": "2026-06-29T05:38:12.692Z"
+          "updatedAt": "2026-06-29T05:40:08.790Z"
         }
       ]
     },
@@ -4327,7 +4327,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:10.546Z",
-          "updatedAt": "2026-06-29T05:38:12.696Z"
+          "updatedAt": "2026-06-29T05:40:08.794Z"
         }
       ]
     },
@@ -4367,7 +4367,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:10.574Z",
-          "updatedAt": "2026-06-29T05:38:12.701Z"
+          "updatedAt": "2026-06-29T05:40:08.798Z"
         }
       ]
     },
@@ -4407,7 +4407,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:14.745Z",
-          "updatedAt": "2026-06-29T05:38:12.705Z"
+          "updatedAt": "2026-06-29T05:40:08.803Z"
         }
       ]
     },
@@ -4447,7 +4447,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:18.899Z",
-          "updatedAt": "2026-06-29T05:38:12.710Z"
+          "updatedAt": "2026-06-29T05:40:08.807Z"
         }
       ]
     },
@@ -4487,7 +4487,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:23.151Z",
-          "updatedAt": "2026-06-29T05:38:12.714Z"
+          "updatedAt": "2026-06-29T05:40:08.811Z"
         }
       ]
     },
@@ -4527,7 +4527,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:27.047Z",
-          "updatedAt": "2026-06-29T05:38:12.719Z"
+          "updatedAt": "2026-06-29T05:40:08.816Z"
         }
       ]
     },
@@ -4567,7 +4567,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:31.101Z",
-          "updatedAt": "2026-06-29T05:38:12.724Z"
+          "updatedAt": "2026-06-29T05:40:08.820Z"
         }
       ]
     },
@@ -4607,7 +4607,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:31.169Z",
-          "updatedAt": "2026-06-29T05:38:12.728Z"
+          "updatedAt": "2026-06-29T05:40:08.824Z"
         }
       ]
     },
@@ -4647,7 +4647,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:35.593Z",
-          "updatedAt": "2026-06-29T05:38:12.732Z"
+          "updatedAt": "2026-06-29T05:40:08.828Z"
         }
       ]
     },
@@ -4687,7 +4687,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:45.188Z",
-          "updatedAt": "2026-06-29T05:38:12.736Z"
+          "updatedAt": "2026-06-29T05:40:08.832Z"
         }
       ]
     },
@@ -4727,7 +4727,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:45.218Z",
-          "updatedAt": "2026-06-29T05:38:12.740Z"
+          "updatedAt": "2026-06-29T05:40:08.836Z"
         }
       ]
     },
@@ -4767,7 +4767,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:45.247Z",
-          "updatedAt": "2026-06-29T05:38:12.744Z"
+          "updatedAt": "2026-06-29T05:40:08.840Z"
         }
       ]
     },
@@ -4807,7 +4807,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:49.465Z",
-          "updatedAt": "2026-06-29T05:38:12.749Z"
+          "updatedAt": "2026-06-29T05:40:08.844Z"
         }
       ]
     },
@@ -4847,7 +4847,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:49.492Z",
-          "updatedAt": "2026-06-29T05:38:12.753Z"
+          "updatedAt": "2026-06-29T05:40:08.847Z"
         }
       ]
     },
@@ -4887,7 +4887,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:49.519Z",
-          "updatedAt": "2026-06-29T05:38:12.758Z"
+          "updatedAt": "2026-06-29T05:40:08.851Z"
         }
       ]
     },
@@ -4927,7 +4927,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:53.417Z",
-          "updatedAt": "2026-06-29T05:38:12.761Z"
+          "updatedAt": "2026-06-29T05:40:08.855Z"
         }
       ]
     },
@@ -4967,7 +4967,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:53.442Z",
-          "updatedAt": "2026-06-29T05:38:12.765Z"
+          "updatedAt": "2026-06-29T05:40:08.859Z"
         }
       ]
     },
@@ -5007,7 +5007,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:57.540Z",
-          "updatedAt": "2026-06-29T05:38:12.770Z"
+          "updatedAt": "2026-06-29T05:40:08.863Z"
         }
       ]
     },
@@ -5047,7 +5047,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:57.571Z",
-          "updatedAt": "2026-06-29T05:38:12.775Z"
+          "updatedAt": "2026-06-29T05:40:08.867Z"
         }
       ]
     },
@@ -5087,7 +5087,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:03:02.249Z",
-          "updatedAt": "2026-06-29T05:38:12.780Z"
+          "updatedAt": "2026-06-29T05:40:08.871Z"
         }
       ]
     },
@@ -5127,7 +5127,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:03:02.278Z",
-          "updatedAt": "2026-06-29T05:38:12.784Z"
+          "updatedAt": "2026-06-29T05:40:08.874Z"
         }
       ]
     },
@@ -5167,7 +5167,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:10.248Z",
-          "updatedAt": "2026-06-29T05:38:12.789Z"
+          "updatedAt": "2026-06-29T05:40:08.879Z"
         }
       ]
     },
@@ -5207,7 +5207,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:15.026Z",
-          "updatedAt": "2026-06-29T05:38:12.793Z"
+          "updatedAt": "2026-06-29T05:40:08.883Z"
         }
       ]
     },
@@ -5247,7 +5247,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:23.992Z",
-          "updatedAt": "2026-06-29T05:38:12.798Z"
+          "updatedAt": "2026-06-29T05:40:08.887Z"
         }
       ]
     },
@@ -5287,7 +5287,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:27.793Z",
-          "updatedAt": "2026-06-29T05:38:12.802Z"
+          "updatedAt": "2026-06-29T05:40:08.891Z"
         }
       ]
     },
@@ -5327,7 +5327,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:31.877Z",
-          "updatedAt": "2026-06-29T05:38:12.806Z"
+          "updatedAt": "2026-06-29T05:40:08.896Z"
         }
       ]
     },
@@ -5367,7 +5367,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:31.902Z",
-          "updatedAt": "2026-06-29T05:38:12.810Z"
+          "updatedAt": "2026-06-29T05:40:08.899Z"
         }
       ]
     },
@@ -5407,7 +5407,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:31.927Z",
-          "updatedAt": "2026-06-29T05:38:12.814Z"
+          "updatedAt": "2026-06-29T05:40:08.903Z"
         }
       ]
     },
@@ -5447,7 +5447,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:35.939Z",
-          "updatedAt": "2026-06-29T05:38:12.818Z"
+          "updatedAt": "2026-06-29T05:40:08.906Z"
         }
       ]
     },
@@ -5487,7 +5487,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:47.754Z",
-          "updatedAt": "2026-06-29T05:38:12.821Z"
+          "updatedAt": "2026-06-29T05:40:08.910Z"
         }
       ]
     },
@@ -5527,7 +5527,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:00.421Z",
-          "updatedAt": "2026-06-29T05:38:12.826Z"
+          "updatedAt": "2026-06-29T05:40:08.914Z"
         }
       ]
     },
@@ -5567,7 +5567,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:09.264Z",
-          "updatedAt": "2026-06-29T05:38:12.830Z"
+          "updatedAt": "2026-06-29T05:40:08.918Z"
         }
       ]
     },
@@ -5607,7 +5607,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:09.295Z",
-          "updatedAt": "2026-06-29T05:38:12.835Z"
+          "updatedAt": "2026-06-29T05:40:08.921Z"
         }
       ]
     },
@@ -5647,7 +5647,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:17.318Z",
-          "updatedAt": "2026-06-29T05:38:12.839Z"
+          "updatedAt": "2026-06-29T05:40:08.926Z"
         }
       ]
     },
@@ -5687,7 +5687,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:17.353Z",
-          "updatedAt": "2026-06-29T05:38:12.843Z"
+          "updatedAt": "2026-06-29T05:40:08.929Z"
         }
       ]
     },
@@ -5727,7 +5727,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:27.494Z",
-          "updatedAt": "2026-06-29T05:38:12.847Z"
+          "updatedAt": "2026-06-29T05:40:08.933Z"
         }
       ]
     },
@@ -5767,7 +5767,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:27.519Z",
-          "updatedAt": "2026-06-29T05:38:12.851Z"
+          "updatedAt": "2026-06-29T05:40:08.937Z"
         }
       ]
     },
@@ -5807,7 +5807,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:32.976Z",
-          "updatedAt": "2026-06-29T05:38:12.856Z"
+          "updatedAt": "2026-06-29T05:40:08.941Z"
         }
       ]
     },
@@ -5847,7 +5847,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:33.001Z",
-          "updatedAt": "2026-06-29T05:38:12.860Z"
+          "updatedAt": "2026-06-29T05:40:08.944Z"
         }
       ]
     },
@@ -5887,7 +5887,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:33.030Z",
-          "updatedAt": "2026-06-29T05:38:12.864Z"
+          "updatedAt": "2026-06-29T05:40:08.948Z"
         }
       ]
     },
@@ -5927,7 +5927,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:37.401Z",
-          "updatedAt": "2026-06-29T05:38:12.869Z"
+          "updatedAt": "2026-06-29T05:40:08.952Z"
         }
       ]
     },
@@ -5967,7 +5967,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:37.440Z",
-          "updatedAt": "2026-06-29T05:38:12.874Z"
+          "updatedAt": "2026-06-29T05:40:08.956Z"
         }
       ]
     },
@@ -6007,7 +6007,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:44.014Z",
-          "updatedAt": "2026-06-29T05:38:12.879Z"
+          "updatedAt": "2026-06-29T05:40:08.959Z"
         }
       ]
     },
@@ -6047,7 +6047,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:02.459Z",
-          "updatedAt": "2026-06-29T05:38:12.884Z"
+          "updatedAt": "2026-06-29T05:40:08.963Z"
         }
       ]
     },
@@ -6087,7 +6087,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:02.484Z",
-          "updatedAt": "2026-06-29T05:38:12.889Z"
+          "updatedAt": "2026-06-29T05:40:08.967Z"
         }
       ]
     },
@@ -6127,7 +6127,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:06.659Z",
-          "updatedAt": "2026-06-29T05:38:12.894Z"
+          "updatedAt": "2026-06-29T05:40:08.970Z"
         }
       ]
     },
@@ -6167,7 +6167,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:14.716Z",
-          "updatedAt": "2026-06-29T05:38:12.899Z"
+          "updatedAt": "2026-06-29T05:40:08.974Z"
         }
       ]
     },
@@ -6207,7 +6207,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:20.232Z",
-          "updatedAt": "2026-06-29T05:38:12.903Z"
+          "updatedAt": "2026-06-29T05:40:08.978Z"
         }
       ]
     },
@@ -6247,7 +6247,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:20.258Z",
-          "updatedAt": "2026-06-29T05:38:12.907Z"
+          "updatedAt": "2026-06-29T05:40:08.981Z"
         }
       ]
     },
@@ -6287,7 +6287,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:31.803Z",
-          "updatedAt": "2026-06-29T05:38:12.911Z"
+          "updatedAt": "2026-06-29T05:40:08.984Z"
         }
       ]
     },
@@ -6327,7 +6327,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:37.133Z",
-          "updatedAt": "2026-06-29T05:38:12.916Z"
+          "updatedAt": "2026-06-29T05:40:08.989Z"
         }
       ]
     },
@@ -6367,7 +6367,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-29T05:28:40.080Z",
-          "updatedAt": "2026-06-29T05:38:12.921Z"
+          "updatedAt": "2026-06-29T05:40:08.993Z"
         }
       ]
     },
@@ -6407,7 +6407,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-29T05:28:41.000Z",
-          "updatedAt": "2026-06-29T05:38:12.925Z"
+          "updatedAt": "2026-06-29T05:40:08.996Z"
         }
       ]
     },
@@ -6557,7 +6557,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-29T05:35:56.584Z",
-          "updatedAt": "2026-06-29T05:38:12.929Z"
+          "updatedAt": "2026-06-29T05:40:09.000Z"
         }
       ]
     },
@@ -6597,7 +6597,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-29T05:35:59.021Z",
-          "updatedAt": "2026-06-29T05:38:12.938Z"
+          "updatedAt": "2026-06-29T05:40:09.004Z"
         }
       ]
     },
@@ -6637,7 +6637,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-29T05:36:31.373Z",
-          "updatedAt": "2026-06-29T05:38:12.942Z"
+          "updatedAt": "2026-06-29T05:40:09.008Z"
         }
       ]
     },
@@ -6677,7 +6677,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-29T05:36:33.132Z",
-          "updatedAt": "2026-06-29T05:38:12.950Z"
+          "updatedAt": "2026-06-29T05:40:09.012Z"
         }
       ]
     },
@@ -6717,7 +6717,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-29T05:36:34.750Z",
-          "updatedAt": "2026-06-29T05:38:12.959Z"
+          "updatedAt": "2026-06-29T05:40:09.016Z"
         }
       ]
     },
@@ -6757,7 +6757,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-29T05:36:43.100Z",
-          "updatedAt": "2026-06-29T05:38:12.967Z"
+          "updatedAt": "2026-06-29T05:40:09.020Z"
         }
       ]
     },
@@ -6797,7 +6797,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-29T05:36:43.875Z",
-          "updatedAt": "2026-06-29T05:38:12.971Z"
+          "updatedAt": "2026-06-29T05:40:09.024Z"
         }
       ]
     },
@@ -6837,7 +6837,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-29T05:37:10.081Z",
-          "updatedAt": "2026-06-29T05:38:12.975Z"
+          "updatedAt": "2026-06-29T05:40:09.028Z"
         }
       ]
     },
@@ -6877,7 +6877,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-29T05:37:11.536Z",
-          "updatedAt": "2026-06-29T05:38:12.979Z"
+          "updatedAt": "2026-06-29T05:40:09.032Z"
         }
       ]
     },
@@ -6917,9 +6917,75 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-29T05:37:23.381Z",
-          "updatedAt": "2026-06-29T05:38:12.983Z"
+          "updatedAt": "2026-06-29T05:40:09.036Z"
         }
       ]
+    },
+    {
+      "id": "cmqysfnfv00007d6bfzak74q5",
+      "url": "https://www.academia.edu/35547489/A_Newly_Reconstructed_Calendrical_Scroll_from_Qumran_in_Cryptic_Script",
+      "title": "(PDF) A Newly Reconstructed Calendrical Scroll from Qumran in Cryptic Script",
+      "domain": "academia.edu",
+      "category": "crawled",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.7,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:39:20.299Z",
+      "author": null,
+      "publisher": null,
+      "summary": "(PDF) A Newly Reconstructed Calendrical Scroll from Qumran in Cryptic Script Log In Sign Up Log In Sign Up more About Press Papers Terms Privacy Copyright We&#39;re Hiring! Help Center less Outline keyboard_arrow_down Title Abstract Key Takeaways Conclusion References FAQs All Topics Theology Religious Texts and Scriptures download Download Free PDF Download Free PDF A Newly Reconstructed Calendrical Scroll from Qumran in Cryptic Script Jonathan Ben-Dov Eshbal Ratzon 2017, JBL visibility … descr",
+      "content": "(PDF) A Newly Reconstructed Calendrical Scroll from Qumran in Cryptic Script Log In Sign Up Log In Sign Up more About Press Papers Terms Privacy Copyright We&#39;re Hiring! Help Center less Outline keyboard_arrow_down Title Abstract Key Takeaways Conclusion References FAQs All Topics Theology Religious Texts and Scriptures download Download Free PDF Download Free PDF A Newly Reconstructed Calendrical Scroll from Qumran in Cryptic Script Jonathan Ben-Dov Eshbal Ratzon 2017, JBL visibility … description 33 pages description See full PDF download Download PDF bookmark Save to Library share Share close Sign up for access to the world's latest research Sign up for free arrow_forward check Get notified about relevant papers check Save papers to use in your research check Join the discussion with peers check Track your impact Abstract In this article we offer a reconstruction and edition of one of the last unpublished Dead Sea Scrolls. It is an extremely fragmentary calendrical scroll written in the Cryptic A code. While images of 4Q324d were included in the DJD series, no formal edition of it exists. The suggested jigsaw-puzzlelike reconstruction inte- grates forty-two extremely small fragments into a stretch of five consecutive col- umns of what we consider to be one continuous scroll (pace earlier preliminary editions). In terms of its content, the calendar contained in this scroll resembles the one found at the top of 4Q394 3–7 (a copy of 4QMMT) and in 4Q394 1–2. An intriguing interlinear gloss in both shape and content offers a ruling on the Festival of Wood Offering that follows the halakic rulings of the Temple Scroll. ... Read more Key takeaways AI 4Q324d comprises one continuous calendrical scroll, contradicting previous theories of multiple fragments. The scroll&#39;s 364-day calendar is pivotal for understanding sectarian identity at Qumran. Unique interlinear glosses clarify the Festival of Wood Offering in relation to Temple Scroll halakhah. Cryptic A script serves as a prestige marker rather than a security measure within the community. Reconstruction integrates 42 fragments into five columns, revealing significant calendrical content. Related papers Dead Sea Scrolls, Revise and Repeat: New Methods and Perspectives (Oct 2020) Carmen Palmer , Eileen Schuller , John Screnock Dead Sea Scrolls, Revise and Repeat: New Methods and Perspectives, 2020 A reexamination of the people and movements associated with Qumran, their outlook on the world, and what bound them together Dead Sea Scrolls, Revise and Repeat examines the identity of the Qumran movement by reassessing former conclusions and bringing new methodologies to the study of the Dead Sea Scrolls. The collection as a whole addresses questions of identity as they relate to law, language, and literary formation; considerations of time and space; and demarcations of the body. The thirteen essays in this volume reassess the categorization of rule texts, the reuse of scripture, the significance of angelic fellowship, the varieties of calendrical use, and celibacy within the Qumran movement. Contributors consider identity in the Dead Sea Scrolls from new interdisciplinary perspectives, including spatial theory, legal theory, historical linguistics, ethnicity theory, cognitive literary theory, monster theory, and masculinity theory. Edited by C Palmer, A Krause, E Schuller, and J Screnock. download Download free PDF View PDF chevron_right RECONSTRUCTION OF A SINGLE COPY OF THE QUMRAN CAVE 4 CRYPTIC-SCRIPT SEREKH HAEDAH (1 Asaf Gayer , daniel stoekl , Jonathan Ben-Dov Herein, we offer an edition of fourteen fragments in cryptic A script, reconstructed into a single copy of the Cave 4 Serekh haEdah scroll. We assign to this scroll the designation 4Q249a pap cryptA Serekh haEdah. Together with new readings based on images kindly supplied by the Leon Levy Dead Sea Scrolls Digital Library, we suggest new joins and a fresh configuration of the fragments. The rigorous methodology whereby these fourteen fragments (4Q249a 1-14) were selected is outlined below; other fragments previously attributed to 4Q249a-i are treated as additional fragments (designated herein 4Q249a A-I). While three of the latter probably also belong to 4Q249a, we only include those whose identity is absolutely certain. Following the reconstruction of the five columns of 4QSE, we deal with the text-critical implications of the fourteen clearly-identified fragments for Serekh haEdah. download Download free PDF View PDF chevron_right Review of THE DEAD SEA SCROLLS TODAY. By James C. VanderKam Sidnie Crawford 1996 download Download free PDF View PDF chevron_right Review of Devorah Dimant and Donald W. Parry, eds. Dead Sea Scrolls Handbook. (Leiden: Brill, 2015). Blake Jurgens Review of Biblical Literature, 2016 The Dead Sea Scrolls Handbook is a transcription-only assemblage of the Hebrew, Aramaic, and Greek manuscripts discovered at Qumran. It is intended to serve as a practical and convenient resource for scholars. According to its editors, what differentiates this volume from previous publications is its easy-to-handle, single-volume format and its numerically ordered presentation of all the sizable Qumran manuscripts. As such, the Handbook abrogates translation, editorial commentary, and textual analysis in order to augment the accessibility of the transcriptions themselves. download Download free PDF View PDF chevron_right The Whole Scroll Story: Review of The Meaning of the Dead Sea Scrolls by James VanderKam and Peter Flint Sidnie Crawford 2002 download Download free PDF View PDF chevron_right the Dead Sea Scrolls in colour: Re-imag(in)ing the shape and contents of 4QM-a (4Q491) Kipp Davis In 2012 the Israel Antiquities Authority launched the new photographic digital database for Judaean Desert manuscripts, the Leon Levy Digital Dead Sea Scrolls Library (www.deadseascrolls.il). The site features new images of a large number of Qumran mss, with the promise of many more on the way, including for many of these fragments the first ever photographs in full colour. This paper illustrates how the new IAA photographs can assist efforts of manuscript identification, reconstruction and interpretation on a digital platform applied to one of the Cave 4Q copies of the War Scroll, 4QMa (4Q491). I will set special attention on the colour photographs and the usage of colour for increasing our knowledge about this scroll. First, I will very briefly introduce 4Q491, and its somewhat controversial history of scholarship. While the first editor identified and published the fragments all together as part of a single manuscript, others have since delivered persuasive arguments for the existence of two and even three separate scrolls among the fragments, and this is a matter that I will challenge directly through an investigation of the new digital images. Second, I will illustrate my study in two parts of the physical features of 4Q491, in a close examination of one set of fragment pieces—those assigned to frg. 11 i–ii. I will initially explore and identify patterns of damage in the overall shape of the fragment pieces and the composite whole, and will illustrate how these are most clearly discerned with the application of colour. Then I will use targeted colour selection of the RGB images to make digital transparencies of the fragments, which are a useful tool for precisely interpreting various types of surface damage. Third, the results of my physical examination of frg. 11 i–ii will be applied to the whole manuscript in terms of how to understand the scribal activity, how to classify its literary content, and finally how a new arrangement of the fragments affects the structure of the composition and its meaning. download Download free PDF View PDF chevron_right The Dead Sea Scrolls at Qumran and the Concept of a Library Sidnie Crawford 2015 download Download free PDF View PDF chevron_right Review of \\u3ci\\u3eThe Dead Sea Scrolls in Context: Integrating the Dead Sea Scrolls in the Study of Ancient Texts, Languages, and Cultures\\u3c/i\\u3e, edited by Armin Lange, Emanuel Tov, and Matthias Weigold, in association with Bennie H. Reynolds III Sidnie Crawford 2013 These two massive volumes comprise the proceedings of a conference of the same name held at the University of Vienna in February 2008. The purpose of the conference, and the proceedings volumes, in the words of the editors, is “to integrate the Dead Sea Scrolls fully into the various disciplines that benefit from the discovery of these very important texts” (vol. 1, p. x). As a result, the papers contained in these volumes are wideranging, written by specialists in the Dead Sea Scrolls (DSS) as well as in other disciplines. The volumes will thus appeal to scholars in a variety of disciplines, including archaeology of the ancient Near East. ... In as large a collection as the editors present here, the reader should expect essays of uneven quality. But there is much in this collection to entice scholars of the Dead Sea Scrolls as well as connected disciplines download Download free PDF View PDF chevron_right Resurrecting the Dead Sea Scrolls Communities: An Alternative Vew of Qumran and the Scrolls Nate Ramsayer Desert beginning in 1947, scholars have attempted to sift through the archaeological and textual evidence to determine what it can tell us about the owners or collectors of the scrolls. With only about 200 of the 931 manuscripts (MSS) unearthed at Qumran being found in our modern day biblical canon 2 and therefore familiar to us, the vast majority of the remaining texts, about 115 (15% of the corpus, according to Michael Wise 3 ) of them sectarian in nature 4 , might be able to provide us with clues as to why these owners collected them in the first place. download Download free PDF View PDF chevron_right &quot;Nine Dubious &#39;Dead Sea Scroll Fragments&#39; from the 21th Century,&quot; Dead Sea Discoveries 24/2 (2017): 189–228 Kipp Davis , Årstein Justnes , Michael Langlois , Torleif Elgvin In 2002 new &quot; Dead Sea Scrolls &quot; fragments began to appear on the antiquities market, most of them through the Kando-family. In this article we will present evidence that nine of these post-2002 Dead Sea Scrolls-like fragments are most likely to be forgeries. download Download free PDF View PDF chevron_right See full PDF download Download PDF A Newly Reconstructed Calendrical Scroll from Qumran in Cryptic Script Author(s): Eshbal Ratzon and Jonathan Ben-Dov Source: Journal of Biblical Literature, Vol. 136, No. 4 (Winter 2017), pp. 905-936 Published by: The Society of Biblical Literature Stable URL: http://www.jstor.org/stable/10.15699/jbl.1364.2017.290288 Accessed: 31-12-2017 14:52 UTC REFERENCES Linked references are available on JSTOR for this article: http://www.jstor.org/stable/10.15699/jbl.1364.2017.290288?seq=1&cid=pdf- reference#references_tab_contents You may need to log in to JSTOR to access the linked references. JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of content in a trusted digital archive. We use information technology and tools to increase productivity and facilitate new forms of scholarship. For more information about JSTOR, please contact [email&#160;protected] . Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at http://about.jstor.org/terms The Society of Biblical Literature is collaborating with JSTOR to digitize, preserve and extend access to Journal of Biblical Literature This content downloaded from 132.74.77.47 on Sun, 31 Dec 2017 14:52:23 UTC All use subject to http://about.jstor.org/terms JBL 136, no. 4 (2017): 905–936 doi: http://dx.doi.org/10.15699/jbl.1364.2017.290288 A Newly Reconstructed Calendrical Scroll from Qumran in Cryptic Script eshbal ratzon [email&#160;protected] University of Haifa, Haifa 3498838, Israel jonathan ben-dov [email&#160;protected] ",
+      "rawHtml": null,
+      "keywords": "crawl(d1): film: jubilees calendar",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:39:20.299Z",
+      "evidences": []
+    },
+    {
+      "id": "cmqysfvwo00017d6bkon7c74g",
+      "url": "https://library.biblicalarchaeology.org/article/when-the-sons-of-god-cavorted-with-the-daughters-of-men/",
+      "title": "When the Sons of God Cavorted with the Daughters of Men - The BAS Library",
+      "domain": "library.biblicalarchaeology.org",
+      "category": "crawled",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.8,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:39:31.273Z",
+      "author": null,
+      "publisher": null,
+      "summary": "When the Sons of God Cavorted with the Daughters of Men - The BAS Library --> Login Menu BAS Home Magazines Books Videos Special Collections More Info About Us FAQs Donate Bible History Daily Subscribe Individual Institutional Subscriptions Login Home > Magazines > Bible Review > Summer 1987 When the Sons of God Cavorted with the Daughters of Men By Ronald S. Hendel If someone asked you to name the origin of a story about gods who take human wives and then give birth to a race of semidivine hero",
+      "content": "When the Sons of God Cavorted with the Daughters of Men - The BAS Library --> Login Menu BAS Home Magazines Books Videos Special Collections More Info About Us FAQs Donate Bible History Daily Subscribe Individual Institutional Subscriptions Login Home > Magazines > Bible Review > Summer 1987 When the Sons of God Cavorted with the Daughters of Men By Ronald S. Hendel If someone asked you to name the origin of a story about gods who take human wives and then give birth to a race of semidivine heroes, you might answer: It’s a Greek myth, or perhaps a Norse legend, or maybe a folktale from Africa or India. Surely this story couldn’t come from the sacred scriptures of Judaism and Christianity. Or could it? Please join the BAS Library or become an All Access member of BAS to gain full access to this article and so much more. Join the BAS Library! Already a library member? Log in here. Institution user? Log in with your IP address or Username Footnotes 1. The Hebrew word for “God” is ÕEloµhiÆm. In other Semitic languages, and occasionally in Hebrew, this word means “gods” in the plural, The general usage in Hebrew is in the singular, referring to Yahweh, the god of Israel. The singular usage is clear in these contexts, since ÕEloµhiÆm takes a singular verb, as in this passage. Why the plural form was originally used to signify the single god, Yahweh, is unclear. Probably the shift in religious belief from the worship of a pantheon of gods to the worship of a single god is involved. In a sense we might say that, for the Israelites, Yahweh takes over the functions of the whole pantheon. Here we have the transition from “gods” to “god.” The “Sons of God” still exist in Israelite mythology but they are no longer the object of worship and of the cult. 2. The Hebrew form ÕeµliÆm is a variant form of ÕeûloµhiÆm , “God.” The &#8211; oµh &#8211; in ÕeûloµhiÆm is a particle that originally added an emphatic or particularizing quality to the plural form çeµliÆm . 3. See “An Appreciation of Claude Frederic-Armand Schaeffer-Forrer (1898–1982),” by James M. Robinson and “The Last Days of Ugarit,” by Claude F. A. Schaeffer,“ BAR 09:05. See also the review of Ugarit and the Old Testament by Peter C. Craigie in Even Briefer , BAR 09:05. 4. The crucial passage has recently been restored: “Enki opened his mouth and addressed Nintu, the birth-goddess, ‘[You], birth-goddess, creatress of destinies, [create death] for the peoples.’ ” [For the restorations in this text, see W. G. Lambert, “The Theology of Death” in Death in Mesopotamia , ed. B. Alster (Copenhagen: Akademisk, 1980), pp. 54–58. The restorations are based on the Gilgamesh Epic, tablet 10, column 6, lines 28–32, where the gods’ decree of human mortality after the flood is recalled.] 5. This double dimension of the Nephilim need not disturb us once we understand the essential fluidity of mythological traditions. Just as Goliath can be killed by Elhanan or by David in different stories, so the Nephilim can be destroyed by the Flood or by the conquest. In either case, the semidivine Nephilim are no longer here in the present world. They are “the fallen ones.” Endnotes 1. Most modern English versions translate this troublesome verb as “abide” or “remain.” This is simply a guess from the context. I read the verb (Hebrew yaµdoÆn ) as a perfectly normal formation from the root dnn , “to be strong.” It has not, I believe, been noticed that this same root appears In the name of an Israelite village in the Judean hill country, Dannah ( Joshua 15:49 ). The name of this village means “stronghold.” The root dnn is therefore attested in Biblical Hebrew, both in the place-name and in Genesis 6:3 . 2. For a more detailed discussion of what follows, with complete references, see Ronald S. Hendel, “Of Demigods and the Deluge: Toward an Interpretation of Genesis 6:1–4 , ” forthcoming in the Journal of Biblical Literature , 106 (1987), pp. 13–26. 3. Julius Wellhausen, Prolegomena to the History of Ancient Israel , transl. J. S. Black and A. Menzies (Edinburgh: Adam and Charles Black, 1885), p. 317. 4. See also ( beûneÆ ‘ elyoÆn ) and Daniel 3:25 ( bar ÕeûlaµhiÆn ). 5. The Septuagint reads literally “the angels of God” ( aggeloµn theou ); this, however, is the usual and normal Septuagint translation of the Hebrew “Sons of God.” 6. Arslan Tash ( KAI 27.11) and Karatepe ( KAI 26.A.III.19). Translations of the Karatepe inscription and one of the inscriptions from Arslan Tash may be found in Ancient Near Eastern Texts Related to the Old Testament , ed. James B. Pritchard (3rd ed; Princeton: Princeton University Press, 1969), p. 654 (Karatepe), and p. 658 (Arslan Tash). 7. Siegfried H. Horn, “The Amman Citadel Inscription,” BASOR 193 (1969) pp. 2–13. 8. For other descriptions of Yahweh’s divine assembly, see 1 Kings 22:19 , Isaiah 6 , Psalm 82 and, from a later era, Daniel 7:9–10 . References or allusions to the divine assembly are found in many texts, including Jeremiah 23:18 and the plural addresses (“let us…” or “like one of us…”) in Genesis 1:26 , 3:22 and 11:7 . For more discussion, see E. Theodore Mullen, Jr., The Assembly of the Gods , Harvard Semitic Monographs 24 (Chico, CA: Scholars Press, 1980). 9. Some of my readings in this passage diverge from the traditional translations for textual and linguistic reasons. For a discussion of this passage, see Walther Zimmerli, Ezekiel 2 , Hermeneia (Philadelphia: Fortress Press, 1983), pp. 168, 176. 10. In 2 Samuel 21 it is a warrior named Elhanan who defeats Goliath. This story is more familiar to us in 1 Samuel 17 , where David is Goliath’s opponent. This is an example of a story that “floats” in oral tradition from a lesser hero to a greater hero. 11. Moses: Joshua 12:4–6 , 13:12 . Joshua: Joshua 11:21–22 . Caleb: Joshua 15:14 ; Judges 1:20 . 12. 2 Samuel 21:18–22 1 Chronicles 20:4–8 . 13. Note that the giant aboriginal inhabitants of Seir, Ammon and Gaza are also utterly annihilated, generally by Yahweh ( Deuteronomy 2:12 , 20–23 ). See also Deuteronomy 9:1–3 ; Amos 2:9 . 14. Compare Mario Liverani’s remarks on the function of the Amorites in Israelite tradition, “The Amorites,” in Peoples of Old Testament Times , ed. D. J. Wiseman (Oxford: Clarendon, 1973). 15. W. G. Lambert and Alan R. Millard, Atrahasis: the Babylonian Story of the Flood (Oxford: Clarendon Press, 1969), pp. 66–67, 72–73. 16. Several scholars have suggested that the increase of population referred to in Genesis 6:1 is a vestige of the theme in Atrahasis of human overpopulation. See Alexander Heidel, The Gilagamesh Epic and Old Testament Parallels (Chicago: University of Chicago, 1949), pp. 225–226; Alan R. Millard, “A New Babylonian ‘Genesis’ Story,” Tyndale Bulletin 18 (1967), pp. 11–12; Claus Westermann, Genesis I/l , BKAT (Neukirchen-Vluyn: Neukirchener, 1974), pp. 500–501; see also H. Schwarzbaum, “The Overcrowded Earth,” Numen 4 (1957) pp. 59–74. The connection seems rather forced, however, since an increase of population is to be expected in myths of primeval humanity. The distinctive features of the Atrahasis myth—excess of population and its accompanying noise—are both absent in the Israelite tradition. For a nuanced view of the contrast between the Israelite and Mesopotamian traditions, see William L. Moran, “Atrahasis: The Babylonian Story of the Flood,” Biblica 52 (1971), p. 61. BAS Home My Account Contact Cust. Service Donate Subscribe Press Room Advertise Masthead Employment Terms of Use Privacy Policy Institutional Login Copyright © 1975 - 2026 Biblical Archaeology Society • 5614 Connecticut Ave NW #343, Washington DC 20015-2604 Want More Bible History? Sign up to receive our e-mail newsletter and never miss an update. SIGN ME UP",
+      "rawHtml": null,
+      "keywords": "crawl(d1): film: nephilim",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:39:31.273Z",
+      "evidences": []
+    },
+    {
+      "id": "cmqysfwnk00027d6bu4ypn4mf",
+      "url": "https://library.biblicalarchaeology.org/article/did-eve-fall-or-was-she-pushed/",
+      "title": "Did Eve Fall or Was She Pushed? - The BAS Library",
+      "domain": "library.biblicalarchaeology.org",
+      "category": "crawled",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.8,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:39:32.240Z",
+      "author": null,
+      "publisher": null,
+      "summary": "Did Eve Fall or Was She Pushed? - The BAS Library --> Login Menu BAS Home Magazines Books Videos Special Collections More Info About Us FAQs Donate Bible History Daily Subscribe Individual Institutional Subscriptions Login Home > Magazines > Bible Review > August 1999 Did Eve Fall or Was She Pushed? By Susan L.",
+      "content": "Did Eve Fall or Was She Pushed? - The BAS Library --> Login Menu BAS Home Magazines Books Videos Special Collections More Info About Us FAQs Donate Bible History Daily Subscribe Individual Institutional Subscriptions Login Home > Magazines > Bible Review > August 1999 Did Eve Fall or Was She Pushed? By Susan L. Greiner The first woman has been blamed for a host of ills—from inspiring witches to being the very source of sin. Tracing the roots of Eve’s bad reputation leads not to Genesis (as many people assume) but to an obscure set of texts known as the pseudepigrapha. Please join the BAS Library or become an All Access member of BAS to gain full access to this article and so much more. Join the BAS Library! Already a library member? Log in here. Institution user? Log in with your IP address or Username Footnotes 1. See Hershel Shanks, “Don’t Let Pseudepigrapha Scare You,” BR 03:02. 2. According to the documentary hypothesis, the Pentateuch consists of four discrete texts that have been woven together to make one continuous narrative: J, or the Yawhist (in German, Jahwist), after the personal name of God (YHWH, or Yahweh) used in this strand; E, or the Elohist, who uses a more generalized term (Elohim) for God; P, the Priestly Code, which makes up much of Leviticus; and D, which stands for the Deuteronomist and consists of much of the Book of Deuteronomy. The first Creation account ( Genesis 1:1–2:4a ) is credited to P; the second ( Genesis 2:4b–24 ) to J. 3. At some later point, a preface was added to the Greek text stating that the text had been revealed to Moses by God—thus the title for the text, which is otherwise unrelated to Moses and is not apocalyptic. 4. See Matthew Black, “The Strange Visions of Enoch,” BR 03:02. 5. See Ronald S. Hendel, “When the Sons of God Cavorted with the Daughters of Men,” BR 03:02. Endnotes 1. Heinrich Kramer and James Sprenger, Malleus Maleficarum , trans. Montague Summers (London: Pushkin Press, 1951), p. 47. 2. Phyllis Trible, “Depatriarchalizing in Biblical Interpretation,” Journal of the American Academy of Religion 40:1 (1973), p. 40. 3. All quotations from the pseudepigrapha are based on the translations found in James Charlesworth, ed., The Old Testament Pseudepigrapha , 2 vols. (Garden City, NY: Doubleday, 1983). 4. D.R. Schultz (“The Origin of Sin in Irenaeus and Jewish Pseudepigraphical Literature,” Vigiliae christianae 32 [1978], p. 184) suggested that the identification of the serpent with the devil first appeared “in the late Jewish literature [that is, the pseudepigrapha] and then passed on to the New Testament.” Further, Schultz writes, “the New Testament simply makes the identification of Satan and the serpent, with no explanation concerning the instrumentality of the serpent.” He concludes that the use of the serpent as the devil’s instrument is “almost certainly derived from pseudepigraphical sources.” 5. Phyllis Bird, “Images of Women in the Old Testament,” in Religion and Sexism , ed. Rosemary Radford Ruether (New York: Simon and Schuster, 1974), p. 47. 6. John Milton may have been familiar with this pseudepigraphic book. In Paradise Lost , Milton has Eve begging to be allowed to work by herself in the Garden. 7. Bernard Prusak, “Women: Seductive Siren and Source of Sin? Pseudepigraphical Myth and Christian Origins,” in Ruether, Religion and Sexism , p. 97. 8. Irenaeus, Adversus Haereses 3.16.6; 3.23.1–2; 5.21.1–2; 4.40.1; and Proof 32. BAS Home My Account Contact Cust. Service Donate Subscribe Press Room Advertise Masthead Employment Terms of Use Privacy Policy Institutional Login Copyright © 1975 - 2026 Biblical Archaeology Society • 5614 Connecticut Ave NW #343, Washington DC 20015-2604 Want More Bible History? Sign up to receive our e-mail newsletter and never miss an update. SIGN ME UP",
+      "rawHtml": null,
+      "keywords": "crawl(d1): film: nephilim",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:39:32.240Z",
+      "evidences": []
     }
   ]
 }

@@ -5,7 +5,7 @@
 > whole composition and decide for themselves. Lower on the ladder ≠ false; it means *less
 > independently verifiable* and a place to keep digging.
 
-**146 evidence** across **195 sources** (31 community-leads) · **49 topics**
+**146 evidence** across **198 sources** (31 community-leads) · **49 topics**
 
 ## The picture so far — verifiability ladder
 
@@ -88,20 +88,20 @@
 
 A second axis of verifiability: not just *what* a source says but *who* stands behind it,
 validated the same way sources are (credentials + affiliation + independent corroboration).
-**11 named figures**, **86 institutions**.
+**11 named figures**, **87 institutions**.
 
 ### Named figures (independently validated)
 
 | Person | Type | Tier | Basis | Sources |
 |---|---|---|---|---:|
-| R. H. Charles | scholar | established-authority | peer-cited | 15 |
+| R. H. Charles | scholar | established-authority | peer-cited | 17 |
 | George W. E. Nickelsburg | scholar | established-authority | peer-cited | 3 |
-| James H. Charlesworth | scholar | established-authority | peer-cited | 2 |
+| James H. Charlesworth | scholar | established-authority | peer-cited | 3 |
 | Annette Yoshiko Reed | scholar | established-authority | peer-cited | 5 |
 | John J. Collins | scholar | established-authority | peer-cited | 3 |
 | Michael E. Stone | scholar | established-authority | peer-cited | 4 |
 | Jacob Milgrom | scholar | established-authority | peer-cited | 1 |
-| Devorah Dimant | scholar | established-authority | peer-cited | 1 |
+| Devorah Dimant | scholar | established-authority | peer-cited | 2 |
 | Florentino García Martínez | scholar | established-authority | peer-cited | 0 |
 | Loren T. Stuckenbruck | scholar | credentialed | credentials-verified | 4 |
 | Anne Catherine Emmerich | visionary | recognized | credentials-verified | 1 |
