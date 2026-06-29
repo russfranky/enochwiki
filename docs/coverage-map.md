@@ -5,7 +5,7 @@
 > whole composition and decide for themselves. Lower on the ladder ≠ false; it means *less
 > independently verifiable* and a place to keep digging.
 
-**146 evidence** across **198 sources** (31 community-leads) · **49 topics**
+**148 evidence** across **200 sources** (31 community-leads) · **49 topics**
 
 ## The picture so far — verifiability ladder
 
@@ -13,9 +13,9 @@
 |---|---:|---|
 | Textually attested | 3 | `█·······················` |
 | Historically / archaeologically corroborated | 11 | `████····················` |
-| Scholarly consensus | 59 | `████████████████████████` |
+| Scholarly consensus | 60 | `████████████████████████` |
 | Contested / minority | 2 | `█·······················` |
-| Tradition / devotional | 47 | `███████████████████·····` |
+| Tradition / devotional | 48 | `███████████████████·····` |
 | Visionary / private revelation | 1 | `························` |
 | Speculative | 23 | `█████████···············` |
 
@@ -31,9 +31,9 @@
 | ⚠️ verse: 1-enoch 71:2 () | 0 | 2 | tradition:2 |
 | ⚠️ verse: 1-enoch 71:10 (Son of Man) | 0 | 2 | tradition:2 |
 | ⚠️ verse: jubilees 5:1 (giants) | 0 | 2 | tradition:2 |
+| ⚠️ crawl(d2): theme: book of enoch | 0 | 2 | tradition:2 |
 | ⚠️ verse: 1-enoch 15:3 (giants) | 0 | 1 | tradition:1 |
 | ⚠️ crawl(d0): theme: book of enoch | 0 | 1 | tradition:1 |
-| ⚠️ crawl(d2): theme: book of enoch | 0 | 1 | tradition:1 |
 | theme: The Watchers ( Fallen Angels) | 1 | 4 | historically:1 · tradition:1 · speculative:2 |
 | theme: Eschatological Judgment | 1 | 4 | scholarly:1 · tradition:3 |
 | theme: Solar Calendar (364 days) | 1 | 3 | scholarly:1 · tradition:1 · speculative:1 |
@@ -64,7 +64,6 @@
 | enoch|new-testament|jude|son-of-man|charlesworth | 2 | 2 | scholarly:2 |
 | verse: 1-enoch 10:8 (Azazel) | 2 | 2 | scholarly:2 |
 | verse: 1-enoch 22:3 (spirits) | 2 | 2 | scholarly:2 |
-| crawl(d1): theme: book of enoch | 3 | 7 | scholarly:3 · tradition:4 |
 | theme: The Nephilim | 3 | 6 | scholarly:3 · tradition:2 · speculative:1 |
 | theme: Covenant of Mount Hermon | 3 | 6 | textually:1 · scholarly:2 · tradition:3 |
 | theme: Enoch's Heavenly Ascension | 3 | 5 | scholarly:3 · tradition:1 · visionary:1 |
@@ -73,6 +72,7 @@
 | verse: 1-enoch 10:4 (Azazel) | 3 | 3 | scholarly:3 |
 | verse: 1-enoch 10:9 (Watchers) | 3 | 3 | scholarly:3 |
 | theme: Covenant & Noahide Laws | 4 | 8 | textually:1 · scholarly:3 · tradition:4 |
+| crawl(d1): theme: book of enoch | 4 | 8 | scholarly:4 · tradition:4 |
 | theme: Son of Man | 5 | 7 | scholarly:5 · tradition:2 |
 
 ## Scripture coverage
@@ -88,7 +88,7 @@
 
 A second axis of verifiability: not just *what* a source says but *who* stands behind it,
 validated the same way sources are (credentials + affiliation + independent corroboration).
-**11 named figures**, **87 institutions**.
+**11 named figures**, **88 institutions**.
 
 ### Named figures (independently validated)
 
@@ -97,7 +97,7 @@ validated the same way sources are (credentials + affiliation + independent corr
 | R. H. Charles | scholar | established-authority | peer-cited | 17 |
 | George W. E. Nickelsburg | scholar | established-authority | peer-cited | 3 |
 | James H. Charlesworth | scholar | established-authority | peer-cited | 3 |
-| Annette Yoshiko Reed | scholar | established-authority | peer-cited | 5 |
+| Annette Yoshiko Reed | scholar | established-authority | peer-cited | 6 |
 | John J. Collins | scholar | established-authority | peer-cited | 3 |
 | Michael E. Stone | scholar | established-authority | peer-cited | 4 |
 | Jacob Milgrom | scholar | established-authority | peer-cited | 1 |
@@ -127,6 +127,6 @@ Topics currently resting only on devotional / visionary / speculative / lead sou
 - **verse: 1-enoch 71:2 ()** (2 pieces, none independently corroborated yet)
 - **verse: 1-enoch 71:10 (Son of Man)** (2 pieces, none independently corroborated yet)
 - **verse: jubilees 5:1 (giants)** (2 pieces, none independently corroborated yet)
+- **crawl(d2): theme: book of enoch** (2 pieces, none independently corroborated yet)
 - **verse: 1-enoch 15:3 (giants)** (1 pieces, none independently corroborated yet)
 - **crawl(d0): theme: book of enoch** (1 pieces, none independently corroborated yet)
-- **crawl(d2): theme: book of enoch** (1 pieces, none independently corroborated yet)
