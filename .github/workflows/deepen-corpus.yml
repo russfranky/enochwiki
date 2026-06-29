@@ -1,0 +1,76 @@
+name: Deepen corpus (recursive hub crawl)
+
+# Continuous deepening: recursively crawl the citation-rich hubs, re-file
+# everything on the verifiability ladder, refresh the authority layer + coverage
+# map, and commit the grown snapshots back. KEY-FREE — the crawl is pure HTTP
+# (no z.ai key needed), so this keeps working regardless of the temporary API key.
+#
+# Runs on manual dispatch now; the weekly schedule activates once this file is on
+# the default branch (GitHub only schedules workflows from the default branch).
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_pages:
+        description: 'Max pages to fetch'
+        default: '80'
+  schedule:
+    - cron: '17 6 * * 1' # Mondays 06:17 UTC
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deepen-corpus
+  cancel-in-progress: false
+
+jobs:
+  deepen:
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: 'file:./db/custom.db'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Prisma generate + schema
+        run: |
+          bunx prisma generate
+          bunx prisma db push --skip-generate
+
+      - name: Seed base + restore snapshots
+        run: |
+          bun scripts/seed.ts || true
+          bun scripts/seed-extended.ts || true
+          bun scripts/seed-supplementary.ts || true
+          node scripts/seed-scraped.mjs || true
+          node scripts/validate-authorities.mjs --offline || true
+
+      - name: Recursive crawl from citation-rich hubs
+        run: node scripts/crawl.mjs --seed-hubs --depth 2 --max-pages "${{ github.event.inputs.max_pages || '80' }}" --per-domain 3 --breadth 6
+
+      - name: Re-file, validate, map, export
+        run: |
+          node scripts/classify-evidence.mjs
+          node scripts/validate-authorities.mjs --offline
+          node scripts/coverage-map.mjs
+          node scripts/export-snapshots.mjs
+
+      - name: Commit grown corpus
+        run: |
+          git config user.name 'enochwiki-bot'
+          git config user.email 'bot@users.noreply.github.com'
+          git add data/corroboration-export.json data/authorities-export.json docs/coverage-map.md
+          if git diff --cached --quiet; then
+            echo 'No corpus changes this run.'
+          else
+            git commit -m 'chore: deepen corpus via scheduled hub crawl [skip ci]'
+            git push
+          fi
