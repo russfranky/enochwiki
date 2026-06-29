@@ -1,11 +1,11 @@
 # enoch.wiki — Verifiability Coverage Map
 
-> Auto-generated 2026-06-27 by `scripts/coverage-map.mjs`. **Not a verdict — a filing system.**
+> Auto-generated 2026-06-29 by `scripts/coverage-map.mjs`. **Not a verdict — a filing system.**
 > Every fragment is shown at its honest level of verifiability so explorers can weigh the
 > whole composition and decide for themselves. Lower on the ladder ≠ false; it means *less
 > independently verifiable* and a place to keep digging.
 
-**134 evidence** across **178 sources** (31 community-leads) · **43 topics**
+**136 evidence** across **185 sources** (31 community-leads) · **44 topics**
 
 ## The picture so far — verifiability ladder
 
@@ -13,9 +13,9 @@
 |---|---:|---|
 | Textually attested | 3 | `█·······················` |
 | Historically / archaeologically corroborated | 11 | `█████···················` |
-| Scholarly consensus | 53 | `████████████████████████` |
+| Scholarly consensus | 55 | `████████████████████████` |
 | Contested / minority | 2 | `█·······················` |
-| Tradition / devotional | 41 | `███████████████████·····` |
+| Tradition / devotional | 41 | `██████████████████······` |
 | Visionary / private revelation | 1 | `························` |
 | Speculative | 23 | `██████████··············` |
 
@@ -59,6 +59,7 @@
 | enoch|new-testament|jude|son-of-man|charlesworth | 2 | 2 | scholarly:2 |
 | verse: 1-enoch 10:8 (Azazel) | 2 | 2 | scholarly:2 |
 | verse: 1-enoch 22:3 (spirits) | 2 | 2 | scholarly:2 |
+| crawl(d1): theme: book of enoch | 2 | 2 | scholarly:2 |
 | theme: The Nephilim | 3 | 6 | scholarly:3 · tradition:2 · speculative:1 |
 | theme: Covenant of Mount Hermon | 3 | 6 | textually:1 · scholarly:2 · tradition:3 |
 | theme: Enoch's Heavenly Ascension | 3 | 5 | scholarly:3 · tradition:1 · visionary:1 |
@@ -82,18 +83,18 @@
 
 A second axis of verifiability: not just *what* a source says but *who* stands behind it,
 validated the same way sources are (credentials + affiliation + independent corroboration).
-**11 named figures**, **82 institutions**.
+**11 named figures**, **83 institutions**.
 
 ### Named figures (independently validated)
 
 | Person | Type | Tier | Basis | Sources |
 |---|---|---|---|---:|
-| R. H. Charles | scholar | established-authority | peer-cited | 7 |
+| R. H. Charles | scholar | established-authority | peer-cited | 9 |
 | George W. E. Nickelsburg | scholar | established-authority | peer-cited | 2 |
 | James H. Charlesworth | scholar | established-authority | peer-cited | 2 |
 | Annette Yoshiko Reed | scholar | established-authority | peer-cited | 4 |
 | John J. Collins | scholar | established-authority | peer-cited | 2 |
-| Michael E. Stone | scholar | established-authority | peer-cited | 3 |
+| Michael E. Stone | scholar | established-authority | peer-cited | 4 |
 | Jacob Milgrom | scholar | established-authority | peer-cited | 1 |
 | Devorah Dimant | scholar | established-authority | peer-cited | 1 |
 | Florentino García Martínez | scholar | established-authority | peer-cited | 0 |

@@ -1,9 +1,9 @@
 {
-  "exportedAt": "2026-06-27T23:19:37.981Z",
+  "exportedAt": "2026-06-29T05:31:02.802Z",
   "counts": {
-    "sources": 178,
-    "evidence": 134,
-    "reviews": 140
+    "sources": 185,
+    "evidence": 136,
+    "reviews": 142
   },
   "sources": [
     {
@@ -42,7 +42,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.861Z",
-          "updatedAt": "2026-06-27T23:13:48.402Z"
+          "updatedAt": "2026-06-29T05:31:00.934Z"
         },
         {
           "id": "cmqwygqys009a7dcyrip4r2x4",
@@ -59,7 +59,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.868Z",
-          "updatedAt": "2026-06-27T23:13:48.415Z"
+          "updatedAt": "2026-06-29T05:31:00.943Z"
         }
       ]
     },
@@ -99,7 +99,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.882Z",
-          "updatedAt": "2026-06-27T23:13:48.424Z"
+          "updatedAt": "2026-06-29T05:31:00.948Z"
         }
       ]
     },
@@ -139,7 +139,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.900Z",
-          "updatedAt": "2026-06-27T23:13:48.431Z"
+          "updatedAt": "2026-06-29T05:31:00.954Z"
         },
         {
           "id": "cmqwygqzw009i7dcybbg06wmh",
@@ -156,7 +156,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.908Z",
-          "updatedAt": "2026-06-27T23:13:48.439Z"
+          "updatedAt": "2026-06-29T05:31:00.958Z"
         }
       ]
     },
@@ -196,7 +196,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.919Z",
-          "updatedAt": "2026-06-27T23:13:48.446Z"
+          "updatedAt": "2026-06-29T05:31:00.963Z"
         }
       ]
     },
@@ -236,7 +236,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.931Z",
-          "updatedAt": "2026-06-27T23:13:48.453Z"
+          "updatedAt": "2026-06-29T05:31:00.967Z"
         }
       ]
     },
@@ -276,7 +276,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.945Z",
-          "updatedAt": "2026-06-27T23:13:48.459Z"
+          "updatedAt": "2026-06-29T05:31:00.972Z"
         }
       ]
     },
@@ -316,7 +316,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.967Z",
-          "updatedAt": "2026-06-27T23:13:48.464Z"
+          "updatedAt": "2026-06-29T05:31:00.976Z"
         },
         {
           "id": "cmqwygr1o009w7dcyraxbrig8",
@@ -333,7 +333,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.972Z",
-          "updatedAt": "2026-06-27T23:13:48.470Z"
+          "updatedAt": "2026-06-29T05:31:00.980Z"
         }
       ]
     },
@@ -857,7 +857,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.543Z",
-          "updatedAt": "2026-06-27T23:13:48.476Z"
+          "updatedAt": "2026-06-29T05:31:00.984Z"
         }
       ]
     },
@@ -897,7 +897,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.565Z",
-          "updatedAt": "2026-06-27T23:13:48.483Z"
+          "updatedAt": "2026-06-29T05:31:00.989Z"
         }
       ]
     },
@@ -937,7 +937,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.586Z",
-          "updatedAt": "2026-06-27T23:13:48.488Z"
+          "updatedAt": "2026-06-29T05:31:00.993Z"
         }
       ]
     },
@@ -977,7 +977,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.606Z",
-          "updatedAt": "2026-06-27T23:13:48.493Z"
+          "updatedAt": "2026-06-29T05:31:00.997Z"
         }
       ]
     },
@@ -1017,7 +1017,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.626Z",
-          "updatedAt": "2026-06-27T23:13:48.499Z"
+          "updatedAt": "2026-06-29T05:31:01.001Z"
         }
       ]
     },
@@ -1057,7 +1057,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.659Z",
-          "updatedAt": "2026-06-27T23:13:48.504Z"
+          "updatedAt": "2026-06-29T05:31:01.006Z"
         }
       ]
     },
@@ -1097,7 +1097,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.683Z",
-          "updatedAt": "2026-06-27T23:13:48.512Z"
+          "updatedAt": "2026-06-29T05:31:01.011Z"
         }
       ]
     },
@@ -1137,7 +1137,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.703Z",
-          "updatedAt": "2026-06-27T23:13:48.519Z"
+          "updatedAt": "2026-06-29T05:31:01.017Z"
         }
       ]
     },
@@ -1177,7 +1177,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.722Z",
-          "updatedAt": "2026-06-27T23:13:48.525Z"
+          "updatedAt": "2026-06-29T05:31:01.021Z"
         }
       ]
     },
@@ -1217,7 +1217,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.742Z",
-          "updatedAt": "2026-06-27T23:13:48.533Z"
+          "updatedAt": "2026-06-29T05:31:01.026Z"
         }
       ]
     },
@@ -1257,7 +1257,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.766Z",
-          "updatedAt": "2026-06-27T23:13:48.539Z"
+          "updatedAt": "2026-06-29T05:31:01.030Z"
         }
       ]
     },
@@ -1297,7 +1297,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.789Z",
-          "updatedAt": "2026-06-27T23:13:48.545Z"
+          "updatedAt": "2026-06-29T05:31:01.034Z"
         }
       ]
     },
@@ -1337,7 +1337,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.810Z",
-          "updatedAt": "2026-06-27T23:13:48.551Z"
+          "updatedAt": "2026-06-29T05:31:01.039Z"
         }
       ]
     },
@@ -1377,7 +1377,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.834Z",
-          "updatedAt": "2026-06-27T23:13:48.559Z"
+          "updatedAt": "2026-06-29T05:31:01.043Z"
         }
       ]
     },
@@ -1417,7 +1417,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.856Z",
-          "updatedAt": "2026-06-27T23:13:48.569Z"
+          "updatedAt": "2026-06-29T05:31:01.047Z"
         }
       ]
     },
@@ -1457,7 +1457,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.879Z",
-          "updatedAt": "2026-06-27T23:13:48.576Z"
+          "updatedAt": "2026-06-29T05:31:01.051Z"
         }
       ]
     },
@@ -1497,7 +1497,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.900Z",
-          "updatedAt": "2026-06-27T23:13:48.585Z"
+          "updatedAt": "2026-06-29T05:31:01.055Z"
         }
       ]
     },
@@ -1537,7 +1537,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.926Z",
-          "updatedAt": "2026-06-27T23:13:48.591Z"
+          "updatedAt": "2026-06-29T05:31:01.059Z"
         }
       ]
     },
@@ -1643,7 +1643,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.980Z",
-          "updatedAt": "2026-06-27T23:13:48.600Z"
+          "updatedAt": "2026-06-29T05:31:01.063Z"
         }
       ]
     },
@@ -1683,7 +1683,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.008Z",
-          "updatedAt": "2026-06-27T23:13:48.610Z"
+          "updatedAt": "2026-06-29T05:31:01.067Z"
         }
       ]
     },
@@ -1723,7 +1723,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.036Z",
-          "updatedAt": "2026-06-27T23:13:48.617Z"
+          "updatedAt": "2026-06-29T05:31:01.071Z"
         }
       ]
     },
@@ -1763,7 +1763,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.056Z",
-          "updatedAt": "2026-06-27T23:13:48.624Z"
+          "updatedAt": "2026-06-29T05:31:01.075Z"
         }
       ]
     },
@@ -1803,7 +1803,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.075Z",
-          "updatedAt": "2026-06-27T23:13:48.628Z"
+          "updatedAt": "2026-06-29T05:31:01.079Z"
         }
       ]
     },
@@ -1843,7 +1843,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.100Z",
-          "updatedAt": "2026-06-27T23:13:48.639Z"
+          "updatedAt": "2026-06-29T05:31:01.083Z"
         }
       ]
     },
@@ -1883,7 +1883,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.122Z",
-          "updatedAt": "2026-06-27T23:13:48.646Z"
+          "updatedAt": "2026-06-29T05:31:01.086Z"
         }
       ]
     },
@@ -1923,7 +1923,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.142Z",
-          "updatedAt": "2026-06-27T23:13:48.652Z"
+          "updatedAt": "2026-06-29T05:31:01.090Z"
         }
       ]
     },
@@ -1963,7 +1963,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.170Z",
-          "updatedAt": "2026-06-27T23:13:48.658Z"
+          "updatedAt": "2026-06-29T05:31:01.094Z"
         }
       ]
     },
@@ -2003,7 +2003,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.189Z",
-          "updatedAt": "2026-06-27T23:13:48.664Z"
+          "updatedAt": "2026-06-29T05:31:01.099Z"
         }
       ]
     },
@@ -2043,7 +2043,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.208Z",
-          "updatedAt": "2026-06-27T23:13:48.672Z"
+          "updatedAt": "2026-06-29T05:31:01.102Z"
         }
       ]
     },
@@ -2083,7 +2083,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.226Z",
-          "updatedAt": "2026-06-27T23:13:48.678Z"
+          "updatedAt": "2026-06-29T05:31:01.106Z"
         }
       ]
     },
@@ -2123,7 +2123,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.247Z",
-          "updatedAt": "2026-06-27T23:13:48.687Z"
+          "updatedAt": "2026-06-29T05:31:01.111Z"
         }
       ]
     },
@@ -2163,7 +2163,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.270Z",
-          "updatedAt": "2026-06-27T23:13:48.693Z"
+          "updatedAt": "2026-06-29T05:31:01.114Z"
         }
       ]
     },
@@ -2203,7 +2203,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.289Z",
-          "updatedAt": "2026-06-27T23:13:48.700Z"
+          "updatedAt": "2026-06-29T05:31:01.118Z"
         }
       ]
     },
@@ -2243,7 +2243,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.306Z",
-          "updatedAt": "2026-06-27T23:13:48.707Z"
+          "updatedAt": "2026-06-29T05:31:01.122Z"
         }
       ]
     },
@@ -2283,7 +2283,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.326Z",
-          "updatedAt": "2026-06-27T23:13:48.713Z"
+          "updatedAt": "2026-06-29T05:31:01.127Z"
         }
       ]
     },
@@ -2345,7 +2345,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.349Z",
-          "updatedAt": "2026-06-27T23:13:48.720Z"
+          "updatedAt": "2026-06-29T05:31:01.132Z"
         }
       ]
     },
@@ -2429,7 +2429,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.385Z",
-          "updatedAt": "2026-06-27T23:13:48.726Z"
+          "updatedAt": "2026-06-29T05:31:01.136Z"
         }
       ]
     },
@@ -2843,7 +2843,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:27.513Z",
-          "updatedAt": "2026-06-27T23:13:48.734Z"
+          "updatedAt": "2026-06-29T05:31:01.140Z"
         }
       ]
     },
@@ -2883,7 +2883,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:27.542Z",
-          "updatedAt": "2026-06-27T23:13:48.741Z"
+          "updatedAt": "2026-06-29T05:31:01.145Z"
         }
       ]
     },
@@ -2923,7 +2923,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:33.894Z",
-          "updatedAt": "2026-06-27T23:13:48.747Z"
+          "updatedAt": "2026-06-29T05:31:01.149Z"
         }
       ]
     },
@@ -2963,7 +2963,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:33.925Z",
-          "updatedAt": "2026-06-27T23:13:48.753Z"
+          "updatedAt": "2026-06-29T05:31:01.153Z"
         }
       ]
     },
@@ -3003,7 +3003,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:33.950Z",
-          "updatedAt": "2026-06-27T23:13:48.757Z"
+          "updatedAt": "2026-06-29T05:31:01.157Z"
         }
       ]
     },
@@ -3043,7 +3043,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:39.431Z",
-          "updatedAt": "2026-06-27T23:13:48.763Z"
+          "updatedAt": "2026-06-29T05:31:01.162Z"
         }
       ]
     },
@@ -3083,7 +3083,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:39.465Z",
-          "updatedAt": "2026-06-27T23:13:48.767Z"
+          "updatedAt": "2026-06-29T05:31:01.166Z"
         }
       ]
     },
@@ -3123,7 +3123,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:39.490Z",
-          "updatedAt": "2026-06-27T23:13:48.774Z"
+          "updatedAt": "2026-06-29T05:31:01.170Z"
         }
       ]
     },
@@ -3163,7 +3163,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:43.977Z",
-          "updatedAt": "2026-06-27T23:13:48.779Z"
+          "updatedAt": "2026-06-29T05:31:01.175Z"
         }
       ]
     },
@@ -3203,7 +3203,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:49.645Z",
-          "updatedAt": "2026-06-27T23:13:48.788Z"
+          "updatedAt": "2026-06-29T05:31:01.179Z"
         }
       ]
     },
@@ -3243,7 +3243,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:49.675Z",
-          "updatedAt": "2026-06-27T23:13:48.794Z"
+          "updatedAt": "2026-06-29T05:31:01.183Z"
         }
       ]
     },
@@ -3283,7 +3283,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:49.703Z",
-          "updatedAt": "2026-06-27T23:13:48.799Z"
+          "updatedAt": "2026-06-29T05:31:01.187Z"
         }
       ]
     },
@@ -3323,7 +3323,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:57.732Z",
-          "updatedAt": "2026-06-27T23:13:48.806Z"
+          "updatedAt": "2026-06-29T05:31:01.191Z"
         }
       ]
     },
@@ -3363,7 +3363,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:57.757Z",
-          "updatedAt": "2026-06-27T23:13:48.813Z"
+          "updatedAt": "2026-06-29T05:31:01.196Z"
         }
       ]
     },
@@ -3403,7 +3403,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:57.783Z",
-          "updatedAt": "2026-06-27T23:13:48.820Z"
+          "updatedAt": "2026-06-29T05:31:01.200Z"
         }
       ]
     },
@@ -3443,7 +3443,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:01.917Z",
-          "updatedAt": "2026-06-27T23:13:48.826Z"
+          "updatedAt": "2026-06-29T05:31:01.204Z"
         }
       ]
     },
@@ -3483,7 +3483,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:06.450Z",
-          "updatedAt": "2026-06-27T23:13:48.834Z"
+          "updatedAt": "2026-06-29T05:31:01.208Z"
         }
       ]
     },
@@ -3523,7 +3523,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:06.477Z",
-          "updatedAt": "2026-06-27T23:13:48.841Z"
+          "updatedAt": "2026-06-29T05:31:01.212Z"
         }
       ]
     },
@@ -3563,7 +3563,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:06.502Z",
-          "updatedAt": "2026-06-27T23:13:48.849Z"
+          "updatedAt": "2026-06-29T05:31:01.215Z"
         }
       ]
     },
@@ -3603,7 +3603,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:10.799Z",
-          "updatedAt": "2026-06-27T23:13:48.858Z"
+          "updatedAt": "2026-06-29T05:31:01.219Z"
         }
       ]
     },
@@ -3643,7 +3643,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:10.829Z",
-          "updatedAt": "2026-06-27T23:13:48.866Z"
+          "updatedAt": "2026-06-29T05:31:01.224Z"
         }
       ]
     },
@@ -3727,7 +3727,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:20.671Z",
-          "updatedAt": "2026-06-27T23:13:48.874Z"
+          "updatedAt": "2026-06-29T05:31:01.228Z"
         }
       ]
     },
@@ -3767,7 +3767,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:20.706Z",
-          "updatedAt": "2026-06-27T23:13:48.884Z"
+          "updatedAt": "2026-06-29T05:31:01.232Z"
         }
       ]
     },
@@ -3807,7 +3807,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:25.561Z",
-          "updatedAt": "2026-06-27T23:13:48.893Z"
+          "updatedAt": "2026-06-29T05:31:01.236Z"
         }
       ]
     },
@@ -3847,7 +3847,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:25.588Z",
-          "updatedAt": "2026-06-27T23:13:48.901Z"
+          "updatedAt": "2026-06-29T05:31:01.240Z"
         }
       ]
     },
@@ -3887,7 +3887,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:48.975Z",
-          "updatedAt": "2026-06-27T23:13:48.907Z"
+          "updatedAt": "2026-06-29T05:31:01.244Z"
         }
       ]
     },
@@ -3927,7 +3927,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:49.015Z",
-          "updatedAt": "2026-06-27T23:13:48.913Z"
+          "updatedAt": "2026-06-29T05:31:01.248Z"
         }
       ]
     },
@@ -3967,7 +3967,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:49.051Z",
-          "updatedAt": "2026-06-27T23:13:48.922Z"
+          "updatedAt": "2026-06-29T05:31:01.252Z"
         }
       ]
     },
@@ -4007,7 +4007,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:57.328Z",
-          "updatedAt": "2026-06-27T23:13:48.928Z"
+          "updatedAt": "2026-06-29T05:31:01.256Z"
         }
       ]
     },
@@ -4047,7 +4047,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:57.362Z",
-          "updatedAt": "2026-06-27T23:13:48.935Z"
+          "updatedAt": "2026-06-29T05:31:01.260Z"
         }
       ]
     },
@@ -4087,7 +4087,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:57.411Z",
-          "updatedAt": "2026-06-27T23:13:48.942Z"
+          "updatedAt": "2026-06-29T05:31:01.264Z"
         }
       ]
     },
@@ -4127,7 +4127,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:01.846Z",
-          "updatedAt": "2026-06-27T23:13:48.952Z"
+          "updatedAt": "2026-06-29T05:31:01.268Z"
         }
       ]
     },
@@ -4167,7 +4167,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:06.010Z",
-          "updatedAt": "2026-06-27T23:13:48.961Z"
+          "updatedAt": "2026-06-29T05:31:01.272Z"
         }
       ]
     },
@@ -4207,7 +4207,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:06.036Z",
-          "updatedAt": "2026-06-27T23:13:48.970Z"
+          "updatedAt": "2026-06-29T05:31:01.276Z"
         }
       ]
     },
@@ -4247,7 +4247,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:06.067Z",
-          "updatedAt": "2026-06-27T23:13:48.976Z"
+          "updatedAt": "2026-06-29T05:31:01.280Z"
         }
       ]
     },
@@ -4287,7 +4287,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:10.517Z",
-          "updatedAt": "2026-06-27T23:13:48.981Z"
+          "updatedAt": "2026-06-29T05:31:01.284Z"
         }
       ]
     },
@@ -4327,7 +4327,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:10.546Z",
-          "updatedAt": "2026-06-27T23:13:48.988Z"
+          "updatedAt": "2026-06-29T05:31:01.288Z"
         }
       ]
     },
@@ -4367,7 +4367,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:10.574Z",
-          "updatedAt": "2026-06-27T23:13:48.995Z"
+          "updatedAt": "2026-06-29T05:31:01.292Z"
         }
       ]
     },
@@ -4407,7 +4407,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:14.745Z",
-          "updatedAt": "2026-06-27T23:13:49.002Z"
+          "updatedAt": "2026-06-29T05:31:01.297Z"
         }
       ]
     },
@@ -4447,7 +4447,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:18.899Z",
-          "updatedAt": "2026-06-27T23:13:49.008Z"
+          "updatedAt": "2026-06-29T05:31:01.301Z"
         }
       ]
     },
@@ -4487,7 +4487,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:23.151Z",
-          "updatedAt": "2026-06-27T23:13:49.013Z"
+          "updatedAt": "2026-06-29T05:31:01.304Z"
         }
       ]
     },
@@ -4527,7 +4527,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:27.047Z",
-          "updatedAt": "2026-06-27T23:13:49.021Z"
+          "updatedAt": "2026-06-29T05:31:01.308Z"
         }
       ]
     },
@@ -4567,7 +4567,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:31.101Z",
-          "updatedAt": "2026-06-27T23:13:49.028Z"
+          "updatedAt": "2026-06-29T05:31:01.312Z"
         }
       ]
     },
@@ -4607,7 +4607,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:31.169Z",
-          "updatedAt": "2026-06-27T23:13:49.035Z"
+          "updatedAt": "2026-06-29T05:31:01.317Z"
         }
       ]
     },
@@ -4647,7 +4647,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:35.593Z",
-          "updatedAt": "2026-06-27T23:13:49.041Z"
+          "updatedAt": "2026-06-29T05:31:01.320Z"
         }
       ]
     },
@@ -4687,7 +4687,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:45.188Z",
-          "updatedAt": "2026-06-27T23:13:49.046Z"
+          "updatedAt": "2026-06-29T05:31:01.324Z"
         }
       ]
     },
@@ -4727,7 +4727,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:45.218Z",
-          "updatedAt": "2026-06-27T23:13:49.052Z"
+          "updatedAt": "2026-06-29T05:31:01.327Z"
         }
       ]
     },
@@ -4767,7 +4767,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:45.247Z",
-          "updatedAt": "2026-06-27T23:13:49.086Z"
+          "updatedAt": "2026-06-29T05:31:01.331Z"
         }
       ]
     },
@@ -4807,7 +4807,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:49.465Z",
-          "updatedAt": "2026-06-27T23:13:49.092Z"
+          "updatedAt": "2026-06-29T05:31:01.335Z"
         }
       ]
     },
@@ -4847,7 +4847,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:49.492Z",
-          "updatedAt": "2026-06-27T23:13:49.123Z"
+          "updatedAt": "2026-06-29T05:31:01.339Z"
         }
       ]
     },
@@ -4887,7 +4887,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:49.519Z",
-          "updatedAt": "2026-06-27T23:13:49.134Z"
+          "updatedAt": "2026-06-29T05:31:01.343Z"
         }
       ]
     },
@@ -4927,7 +4927,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:53.417Z",
-          "updatedAt": "2026-06-27T23:13:49.143Z"
+          "updatedAt": "2026-06-29T05:31:01.347Z"
         }
       ]
     },
@@ -4967,7 +4967,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:53.442Z",
-          "updatedAt": "2026-06-27T23:13:49.149Z"
+          "updatedAt": "2026-06-29T05:31:01.351Z"
         }
       ]
     },
@@ -5007,7 +5007,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:57.540Z",
-          "updatedAt": "2026-06-27T23:13:49.158Z"
+          "updatedAt": "2026-06-29T05:31:01.355Z"
         }
       ]
     },
@@ -5047,7 +5047,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:57.571Z",
-          "updatedAt": "2026-06-27T23:13:49.164Z"
+          "updatedAt": "2026-06-29T05:31:01.359Z"
         }
       ]
     },
@@ -5087,7 +5087,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:03:02.249Z",
-          "updatedAt": "2026-06-27T23:13:49.172Z"
+          "updatedAt": "2026-06-29T05:31:01.363Z"
         }
       ]
     },
@@ -5127,7 +5127,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:03:02.278Z",
-          "updatedAt": "2026-06-27T23:13:49.178Z"
+          "updatedAt": "2026-06-29T05:31:01.366Z"
         }
       ]
     },
@@ -5167,7 +5167,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:10.248Z",
-          "updatedAt": "2026-06-27T23:13:49.185Z"
+          "updatedAt": "2026-06-29T05:31:01.371Z"
         }
       ]
     },
@@ -5207,7 +5207,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:15.026Z",
-          "updatedAt": "2026-06-27T23:13:49.196Z"
+          "updatedAt": "2026-06-29T05:31:01.375Z"
         }
       ]
     },
@@ -5247,7 +5247,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:23.992Z",
-          "updatedAt": "2026-06-27T23:13:49.206Z"
+          "updatedAt": "2026-06-29T05:31:01.380Z"
         }
       ]
     },
@@ -5287,7 +5287,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:27.793Z",
-          "updatedAt": "2026-06-27T23:13:49.217Z"
+          "updatedAt": "2026-06-29T05:31:01.384Z"
         }
       ]
     },
@@ -5327,7 +5327,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:31.877Z",
-          "updatedAt": "2026-06-27T23:13:49.232Z"
+          "updatedAt": "2026-06-29T05:31:01.388Z"
         }
       ]
     },
@@ -5367,7 +5367,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:31.902Z",
-          "updatedAt": "2026-06-27T23:13:49.238Z"
+          "updatedAt": "2026-06-29T05:31:01.392Z"
         }
       ]
     },
@@ -5407,7 +5407,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:31.927Z",
-          "updatedAt": "2026-06-27T23:13:49.244Z"
+          "updatedAt": "2026-06-29T05:31:01.396Z"
         }
       ]
     },
@@ -5447,7 +5447,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:35.939Z",
-          "updatedAt": "2026-06-27T23:13:49.249Z"
+          "updatedAt": "2026-06-29T05:31:01.400Z"
         }
       ]
     },
@@ -5487,7 +5487,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:47.754Z",
-          "updatedAt": "2026-06-27T23:13:49.254Z"
+          "updatedAt": "2026-06-29T05:31:01.404Z"
         }
       ]
     },
@@ -5527,7 +5527,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:00.421Z",
-          "updatedAt": "2026-06-27T23:13:49.259Z"
+          "updatedAt": "2026-06-29T05:31:01.407Z"
         }
       ]
     },
@@ -5567,7 +5567,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:09.264Z",
-          "updatedAt": "2026-06-27T23:13:49.271Z"
+          "updatedAt": "2026-06-29T05:31:01.412Z"
         }
       ]
     },
@@ -5607,7 +5607,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:09.295Z",
-          "updatedAt": "2026-06-27T23:13:49.276Z"
+          "updatedAt": "2026-06-29T05:31:01.415Z"
         }
       ]
     },
@@ -5647,7 +5647,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:17.318Z",
-          "updatedAt": "2026-06-27T23:13:49.281Z"
+          "updatedAt": "2026-06-29T05:31:01.418Z"
         }
       ]
     },
@@ -5687,7 +5687,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:17.353Z",
-          "updatedAt": "2026-06-27T23:13:49.288Z"
+          "updatedAt": "2026-06-29T05:31:01.423Z"
         }
       ]
     },
@@ -5727,7 +5727,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:27.494Z",
-          "updatedAt": "2026-06-27T23:13:49.293Z"
+          "updatedAt": "2026-06-29T05:31:01.427Z"
         }
       ]
     },
@@ -5767,7 +5767,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:27.519Z",
-          "updatedAt": "2026-06-27T23:13:49.299Z"
+          "updatedAt": "2026-06-29T05:31:01.430Z"
         }
       ]
     },
@@ -5807,7 +5807,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:32.976Z",
-          "updatedAt": "2026-06-27T23:13:49.306Z"
+          "updatedAt": "2026-06-29T05:31:01.434Z"
         }
       ]
     },
@@ -5847,7 +5847,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:33.001Z",
-          "updatedAt": "2026-06-27T23:13:49.312Z"
+          "updatedAt": "2026-06-29T05:31:01.438Z"
         }
       ]
     },
@@ -5887,7 +5887,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:33.030Z",
-          "updatedAt": "2026-06-27T23:13:49.320Z"
+          "updatedAt": "2026-06-29T05:31:01.441Z"
         }
       ]
     },
@@ -5927,7 +5927,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:37.401Z",
-          "updatedAt": "2026-06-27T23:13:49.332Z"
+          "updatedAt": "2026-06-29T05:31:01.446Z"
         }
       ]
     },
@@ -5967,7 +5967,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:37.440Z",
-          "updatedAt": "2026-06-27T23:13:49.343Z"
+          "updatedAt": "2026-06-29T05:31:01.450Z"
         }
       ]
     },
@@ -6007,7 +6007,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:44.014Z",
-          "updatedAt": "2026-06-27T23:13:49.348Z"
+          "updatedAt": "2026-06-29T05:31:01.453Z"
         }
       ]
     },
@@ -6047,7 +6047,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:02.459Z",
-          "updatedAt": "2026-06-27T23:13:49.359Z"
+          "updatedAt": "2026-06-29T05:31:01.457Z"
         }
       ]
     },
@@ -6087,7 +6087,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:02.484Z",
-          "updatedAt": "2026-06-27T23:13:49.366Z"
+          "updatedAt": "2026-06-29T05:31:01.462Z"
         }
       ]
     },
@@ -6127,7 +6127,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:06.659Z",
-          "updatedAt": "2026-06-27T23:13:49.372Z"
+          "updatedAt": "2026-06-29T05:31:01.465Z"
         }
       ]
     },
@@ -6167,7 +6167,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:14.716Z",
-          "updatedAt": "2026-06-27T23:13:49.378Z"
+          "updatedAt": "2026-06-29T05:31:01.469Z"
         }
       ]
     },
@@ -6207,7 +6207,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:20.232Z",
-          "updatedAt": "2026-06-27T23:13:49.389Z"
+          "updatedAt": "2026-06-29T05:31:01.472Z"
         }
       ]
     },
@@ -6247,7 +6247,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:20.258Z",
-          "updatedAt": "2026-06-27T23:13:49.395Z"
+          "updatedAt": "2026-06-29T05:31:01.476Z"
         }
       ]
     },
@@ -6287,7 +6287,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:31.803Z",
-          "updatedAt": "2026-06-27T23:13:49.400Z"
+          "updatedAt": "2026-06-29T05:31:01.479Z"
         }
       ]
     },
@@ -6327,9 +6327,199 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:37.133Z",
-          "updatedAt": "2026-06-27T23:13:49.410Z"
+          "updatedAt": "2026-06-29T05:31:01.483Z"
         }
       ]
+    },
+    {
+      "id": "cmqys1xfr00007d1pazlve5ps",
+      "url": "https://archive.org/details/bookenochtransl00dillgoog",
+      "title": "The book of Enoch : Dillmann, August, 1823-1894 : Free Download, Borrow, and Streaming : Internet Archive",
+      "domain": "archive.org",
+      "category": "crawled",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.8,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:28:40.071Z",
+      "author": null,
+      "publisher": null,
+      "summary": "The book of Enoch : Dillmann, August, 1823-1894 : Free Download, Borrow, and Streaming : Internet Archive Skip to main content Keep the news in the Wayback Machine. Sign Fight for the Future's letter . Hamburger icon An icon used to represent a menu that can be toggled by interacting with this icon.",
+      "content": "The book of Enoch : Dillmann, August, 1823-1894 : Free Download, Borrow, and Streaming : Internet Archive Skip to main content Keep the news in the Wayback Machine. Sign Fight for the Future's letter . Hamburger icon An icon used to represent a menu that can be toggled by interacting with this icon. Internet Archive logo A line drawing of the Internet Archive headquarters building façade. Web icon An illustration of a computer application window Wayback Machine Texts icon An illustration of an open book. Texts Video icon An illustration of two cells of a film strip. Video Audio icon An illustration of an audio speaker. Audio Software icon An illustration of a 3.5\" floppy disk. Software Images icon An illustration of two photographs. Images Donate icon An illustration of a heart shape Donate Ellipses icon An illustration of text ellipses. More Donate icon An illustration of a heart shape \"Donate to the archive\" User icon An illustration of a person's head and chest. Sign up | Log in Upload icon An illustration of a horizontal line over an up pointing arrow. Upload Search icon An illustration of a magnifying glass. Internet Archive Audio Live Music Archive Librivox Free Audio Featured All Audio Grateful Dead Netlabels Old Time Radio 78 RPMs and Cylinder Recordings Top Audio Books & Poetry Computers, Technology and Science Music, Arts & Culture News & Public Affairs Spirituality & Religion Podcasts Radio News Archive Images Metropolitan Museum Cleveland Museum of Art Featured All Images Flickr Commons Occupy Wall Street Flickr Cover Art USGS Maps Top NASA Images Solar System Collection Ames Research Center Software Internet Arcade Console Living Room Featured All Software Old School Emulation MS-DOS Games Historical Software Classic PC Games Software Library Top Kodi Archive and Support File Vintage Software APK MS-DOS CD-ROM Software CD-ROM Software Library Software Sites Tucows Software Library Shareware CD-ROMs Software Capsules Compilation CD-ROM Images ZX Spectrum DOOM Level CD Texts Open Library American Libraries Featured All Texts Smithsonian Libraries FEDLINK (US) Genealogy Lincoln Collection Top American Libraries Canadian Libraries Universal Library Project Gutenberg Children's Library Biodiversity Heritage Library Books by Language Folkscanomy Government Documents Video TV News Understanding 9/11 Featured All Video Prelinger Archives Democracy Now! Occupy Wall Street TV NSA Clip Library Top Animation & Cartoons Arts & Music Computers & Technology Cultural & Academic Films Ephemeral Films Movies News & Public Affairs Spirituality & Religion Sports Videos Television Videogame Videos Vlogs Youth Media Search the history of more than 1 trillion web pages . Search the Wayback Machine Search icon An illustration of a magnifying glass. Mobile Apps Wayback Machine (iOS) Wayback Machine (Android) Browser Extensions Chrome Firefox Safari Edge Archive-It Subscription Explore the Collections Learn More Build Collections Save Page Now Capture a web page as it appears now for use as a trusted citation in the future. Enter a URL to save Please enter a valid web address About Blog Events Projects Help Donate Contact Jobs Volunteer Sign up for free Log in About Blog Events Projects Help Donate Donate icon An illustration of a heart shape Contact Jobs Volunteer The book of Enoch Bookreader Item Preview remove-circle Internet Archive&apos;s in-browser bookreader \"theater\" requires JavaScript to be enabled. It appears your browser does not have it turned on. Please see your browser settings for this feature. remove-circle Share or Embed This Item Share to Twitter Share to Facebook Share to Reddit Share to Tumblr Share to Pinterest Share via email Copy Link EMBED EMBED (for Archive.org item Description fields) [archiveorg bookenochtransl00dillgoog width=560 height=384 frameborder=0 webkitallowfullscreen=true mozallowfullscreen=true] Want more? Advanced embedding details, examples, and help ! Favorite Share Flag Flag this item for Graphic Violence Explicit Sexual Content Hate Speech Misinformation/Disinformation Marketing/Phishing/Advertising Misleading/Inaccurate/Missing Metadata texts The book of Enoch by Dillmann, August, 1823-1894 ; Charles, R. H. (Robert Henry), 1855-1931 Publication date 1893 Publisher Oxford, Clarendon [press Collection americana Book from the collections of University of Michigan Language English ; Ancient Greek Item Size 119.6M Book digitized by Google from the library of University of Michigan and uploaded to the Internet Archive by user tpb. Mode of access: Internet Addeddate 2009-01-25 10:28:42 Copyright-region US Foldoutcount 0 Google-id vwA3AAAAMAAJ Identifier bookenochtransl00dillgoog Identifier-ark ark:/13960/t6348z67f Lccn 07002075 Ocr tesseract 5.1.0-1-ge935 Ocr_detected_lang en Ocr_detected_lang_conf 1.0000 Ocr_detected_script Latin Ocr_detected_script_conf 0.4279 Ocr_module_version 0.0.16 Ocr_parameters -l eng+grc Openlibrary_edition OL23384813M Openlibrary_work OL18051521W Page_number_confidence 97 Page_number_module_version 1.0.5 Pages 418 Pdf_module_version 0.0.25 Possible copyright status NOT_IN_COPYRIGHT Scandate 20070612000000 Scanner google Source http://books.google.com/books?id=vwA3AAAAMAAJ&oe=UTF-8 Worldcat (source edition) 02212047 Year 1893 Show More Show Less Full catalog record MARCXML plus-circle Add Review comment Reviews (1) 29,319 Views 53 Favorites 1 Review DOWNLOAD OPTIONS download 1 file CHOCR download download 1 file DAISY download For users with print-disabilities download 1 file EPUB download download 1 file FULL TEXT download download 1 file HOCR download download 1 file ITEM TILE download download 1 file OCR PAGE INDEX download download 1 file OCR SEARCH TEXT download download 1 file PAGE NUMBERS JSON download download 1 file PDF download download 1 file PDF WITH TEXT download download 1 file SINGLE PAGE PROCESSED TIFF ZIP download download 1 file TORRENT download download 22 Files download 9 Original SHOW ALL IN COLLECTIONS Uploaded by Unknown on January 25, 2009 SIMILAR ITEMS (based on metadata) Terms of Service (last updated 12/31/2014)",
+      "rawHtml": null,
+      "keywords": "crawl(d1): theme: book of enoch",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:28:40.071Z",
+      "evidences": [
+        {
+          "id": "cmqys1xfz00027d1pzrjuz85t",
+          "sourceId": "cmqys1xfr00007d1pazlve5ps",
+          "scriptureRef": "1-enoch 1:1",
+          "scriptureText": null,
+          "claim": "Crawled for theme: book of enoch",
+          "corroboration": "The book of Enoch : Dillmann, August, 1823-1894 : Free Download, Borrow, and Streaming : Internet Archive Skip to main content Keep the news in the Wayback Machine. Sign Fight for the Future's letter . Hamburger icon An icon used to represent a menu that can be toggled by interacting with this icon.",
+          "alignment": "contextualizes",
+          "confidence": 0.48,
+          "claimTypeSlug": "scholarly-consensus",
+          "notes": "Recursive crawl (depth 1) from theme: book of enoch. ",
+          "blindspot": false,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-06-29T05:28:40.080Z",
+          "updatedAt": "2026-06-29T05:31:01.487Z"
+        }
+      ]
+    },
+    {
+      "id": "cmqys1y5d00057d1py0hn55vr",
+      "url": "https://archive.org/details/bookofenochor1en00char",
+      "title": "The book of Enoch, or 1 Enoch. Translated from the editor's Ethiopic text and edited with the introd. notes and indexes of the 1st ed. wholly recast, enl. and rewritten, together with a reprint from the editor's text of the Greek fragments : Charles, R. H. (Robert Henry), 1855-1931 : Free Download, ",
+      "domain": "archive.org",
+      "category": "crawled",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.8,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:28:40.993Z",
+      "author": null,
+      "publisher": null,
+      "summary": "The book of Enoch, or 1 Enoch. Translated from the editor's Ethiopic text and edited with the introd. notes and indexes of the 1st ed.",
+      "content": "The book of Enoch, or 1 Enoch. Translated from the editor's Ethiopic text and edited with the introd. notes and indexes of the 1st ed. wholly recast, enl. and rewritten, together with a reprint from the editor's text of the Greek fragments : Charles, R. H. (Robert Henry), 1855-1931 : Free Download, Borrow, and Streaming : Internet Archive Skip to main content Keep the news in the Wayback Machine. Sign Fight for the Future's letter . Hamburger icon An icon used to represent a menu that can be toggled by interacting with this icon. Internet Archive logo A line drawing of the Internet Archive headquarters building façade. Web icon An illustration of a computer application window Wayback Machine Texts icon An illustration of an open book. Texts Video icon An illustration of two cells of a film strip. Video Audio icon An illustration of an audio speaker. Audio Software icon An illustration of a 3.5\" floppy disk. Software Images icon An illustration of two photographs. Images Donate icon An illustration of a heart shape Donate Ellipses icon An illustration of text ellipses. More Donate icon An illustration of a heart shape \"Donate to the archive\" User icon An illustration of a person's head and chest. Sign up | Log in Upload icon An illustration of a horizontal line over an up pointing arrow. Upload Search icon An illustration of a magnifying glass. Internet Archive Audio Live Music Archive Librivox Free Audio Featured All Audio Grateful Dead Netlabels Old Time Radio 78 RPMs and Cylinder Recordings Top Audio Books & Poetry Computers, Technology and Science Music, Arts & Culture News & Public Affairs Spirituality & Religion Podcasts Radio News Archive Images Metropolitan Museum Cleveland Museum of Art Featured All Images Flickr Commons Occupy Wall Street Flickr Cover Art USGS Maps Top NASA Images Solar System Collection Ames Research Center Software Internet Arcade Console Living Room Featured All Software Old School Emulation MS-DOS Games Historical Software Classic PC Games Software Library Top Kodi Archive and Support File Vintage Software APK MS-DOS CD-ROM Software CD-ROM Software Library Software Sites Tucows Software Library Shareware CD-ROMs Software Capsules Compilation CD-ROM Images ZX Spectrum DOOM Level CD Texts Open Library American Libraries Featured All Texts Smithsonian Libraries FEDLINK (US) Genealogy Lincoln Collection Top American Libraries Canadian Libraries Universal Library Project Gutenberg Children's Library Biodiversity Heritage Library Books by Language Folkscanomy Government Documents Video TV News Understanding 9/11 Featured All Video Prelinger Archives Democracy Now! Occupy Wall Street TV NSA Clip Library Top Animation & Cartoons Arts & Music Computers & Technology Cultural & Academic Films Ephemeral Films Movies News & Public Affairs Spirituality & Religion Sports Videos Television Videogame Videos Vlogs Youth Media Search the history of more than 1 trillion web pages . Search the Wayback Machine Search icon An illustration of a magnifying glass. Mobile Apps Wayback Machine (iOS) Wayback Machine (Android) Browser Extensions Chrome Firefox Safari Edge Archive-It Subscription Explore the Collections Learn More Build Collections Save Page Now Capture a web page as it appears now for use as a trusted citation in the future. Enter a URL to save Please enter a valid web address About Blog Events Projects Help Donate Contact Jobs Volunteer Sign up for free Log in About Blog Events Projects Help Donate Donate icon An illustration of a heart shape Contact Jobs Volunteer The book of Enoch, or 1 Enoch. Translated from the editor's Ethiopic text and edited with the introd. notes and indexes of the 1st ed. wholly recast, enl. and rewritten, together with a reprint from the editor's text of the Greek fragments Bookreader Item Preview remove-circle Internet Archive&apos;s in-browser bookreader \"theater\" requires JavaScript to be enabled. It appears your browser does not have it turned on. Please see your browser settings for this feature. remove-circle Share or Embed This Item Share to Twitter Share to Facebook Share to Reddit Share to Tumblr Share to Pinterest Share via email Copy Link EMBED EMBED (for Archive.org item Description fields) [archiveorg bookofenochor1en00char width=560 height=384 frameborder=0 webkitallowfullscreen=true mozallowfullscreen=true] Want more? Advanced embedding details, examples, and help ! Favorite Share Flag Flag this item for Graphic Violence Explicit Sexual Content Hate Speech Misinformation/Disinformation Marketing/Phishing/Advertising Misleading/Inaccurate/Missing Metadata texts The book of Enoch, or 1 Enoch. Translated from the editor's Ethiopic text and edited with the introd. notes and indexes of the 1st ed. wholly recast, enl. and rewritten, together with a reprint from the editor's text of the Greek fragments by Charles, R. H. (Robert Henry), 1855-1931 Publication date 1912 Publisher Oxford Clarendon Press Collection robarts ; toronto ; university_of_toronto Contributor Robarts - University of Toronto Language English ; Ancient Greek Item Size 751.1M 26 Addeddate 2009-11-27 00:38:15 Associated-names Charles, R. H. (Robert Henry), 1855-1931 Bookplateleaf 0004 Call number AFV-7918 Camera 1Ds External-identifier urn:oclc:record:697900256 Foldoutcount 0 Identifier bookofenochor1en00char Identifier-ark ark:/13960/t8rb7nc16 Lcamid 342124 Ocr tesseract 5.0.0-1-g862e Ocr_detected_lang en Ocr_detected_lang_conf 1.0000 Ocr_detected_script Latin Ocr_detected_script_conf 0.9304 Ocr_module_version 0.0.15 Ocr_parameters -l eng+grc Openlibrary_edition OL24433005M Openlibrary_work OL15467453W Page-progression lr Page_number_confidence 90 Page_number_module_version 1.0.5 Pages 458 Pdf_module_version 0.0.18 Ppi 500 Rcamid 330835 Scandate 20091127235157 Scanner iasw2.toronto.archive.org Scanningcenter uoft Show More Show Less Full catalog record MARCXML plus-circle Add Review comment Reviews 10,474 Views 41 Favorites DOWNLOAD OPTIONS download 1 file CHOCR download download 1 file CLOTH COVER DETECTION LOG download download 1 file DAISY download For users with print-disabilities download 1 file EPUB download download 1 file FULL TEXT download download 1 file HOCR download download 1 file ITEM TILE download download 1 file OCR PAGE INDEX download download 1 file OCR SEARCH TEXT download download 1 file PAGE NUMBERS JSON download download 1 file PDF download download 1 file SCRIBE SCANDATA ZIP download download 1 file SINGLE PAGE PROCESSED JP2 ZIP download download 1 file SINGLE PAGE RAW JP2 ZIP download download 1 file TORRENT download download 23 Files download 10 Original SHOW ALL IN COLLECTIONS University of Toronto - Robarts Library University of Toronto Uploaded by AlexAitken on November 27, 2009 SIMILAR ITEMS (based on metadata) Terms of Service (last updated 12/31/2014)",
+      "rawHtml": null,
+      "keywords": "crawl(d1): theme: book of enoch",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:28:40.993Z",
+      "evidences": [
+        {
+          "id": "cmqys1y5k00077d1pbnuw63mc",
+          "sourceId": "cmqys1y5d00057d1py0hn55vr",
+          "scriptureRef": "1-enoch 1:1",
+          "scriptureText": null,
+          "claim": "Crawled for theme: book of enoch",
+          "corroboration": "The book of Enoch, or 1 Enoch. Translated from the editor's Ethiopic text and edited with the introd. notes and indexes of the 1st ed.",
+          "alignment": "contextualizes",
+          "confidence": 0.48,
+          "claimTypeSlug": "scholarly-consensus",
+          "notes": "Recursive crawl (depth 1) from theme: book of enoch. ",
+          "blindspot": false,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-06-29T05:28:41.000Z",
+          "updatedAt": "2026-06-29T05:31:01.491Z"
+        }
+      ]
+    },
+    {
+      "id": "cmqys3kir00007dc4gw6xznn5",
+      "url": "https://www.thetorah.com/article/the-benei-elohim-the-watchers-and-the-origins-of-evil",
+      "title": "The Benei Elohim, the Watchers, and the Origins of Evil - TheTorah.com",
+      "domain": "thetorah.com",
+      "category": "crawled",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.78,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:29:56.644Z",
+      "author": null,
+      "publisher": null,
+      "summary": "The Benei Elohim, the Watchers, and the Origins of Evil - TheTorah.com Stay updated with the latest scholarship Subscribe Loading... Please check your email Thank you for signing up. You should be receiving a confirmation email from TheTorah.com.",
+      "content": "The Benei Elohim, the Watchers, and the Origins of Evil - TheTorah.com Stay updated with the latest scholarship Subscribe Loading... Please check your email Thank you for signing up. You should be receiving a confirmation email from TheTorah.com. Click on \"Confirm your email\" to subscribe. We rely on the support of readers like you. Please consider supporting TheTorah.com . Donate Don&rsquo;t miss the latest essays from TheTorah.com. Subscribe Don&rsquo;t miss the latest essays from TheTorah.com. Subscribe Don&rsquo;t miss the latest essays from TheTorah.com. Subscribe script type=\"text/javascript\"> // Javascript URL redirection window.location.replace(\"\"); script> Donate Newsletter Torah Portion This Week&#x27;s Torah Portion Genesis Exodus Leviticus Numbers Deuteronomy Holidays Rosh Hashanah Rosh Hashanah Yom Kippur Yom Kippur Sukkot Sukkot Simchat Torah Simchat Torah Chanukah Chanukah Purim Purim Passover Passover Shavuot Shavuot Tisha B’Av Tisha B’Av Shabbat Shabbat Yom Ha’atzmaut Yom Ha’atzmaut Yom Yerushalayim Yom Yerushalayim Yom HaZikaron Yom HaZikaron Yom HaShoah Yom HaShoah Scholarship & Faith Biblical Criticism Modern Faith Morality and Ethics Archaeology תהלים Psalms Medieval Interpretation Christianity Series and Symposia Printable Readers Current Latest Essays Israel-Hamas War Blog Op-ed Interview Featured Post Behind Every Article: What It Takes to Sustain TheTorah.com Op-ed More Browse Topics Resource Guide Our Authors Submissions About Us Contact Us TheGemara.com thetorah.co.il ProjectTABS.com Subscribe Donate עברית חומש חומש עברית Stay updated with the latest scholarship Subscribe Loading... Please check your email Thank you for signing up. You should be receiving a confirmation email from TheTorah.com. Click on \"Confirm your email\" to subscribe. Stay updated with the latest scholarship I would like to receive new essays When published Before Shabbat You have been successfully subscribed Oops! Something went wrong while submitting the form. Study the Torah with Academic Scholarship By using this site you agree to our Terms of Use SBL e-journal  Click to copy Miryam Brand ( 2016 ) . The Benei Elohim, the Watchers, and the Origins of Evil . TheTorah.com . https://thetorah.com/article/the-benei-elohim-the-watchers-and-the-origins-of-evil APA e-journal  Click to copy Miryam Brand , , , &quot; The Benei Elohim, the Watchers, and the Origins of Evil &quot; TheTorah.com ( 2016 ) . https://thetorah.com/article/the-benei-elohim-the-watchers-and-the-origins-of-evil Edit article Series The Benei Elohim, the Watchers, and the Origins of Evil The story of divine beings procreating with human women (Genesis 6) is expanded upon in the book of Enoch to tell how these angels also bring sin to humanity, causing the ancient flood as well, and this sin is the source of disease in the present day. Print Share Share Cite Dr. Miryam Brand , Dr. Miryam Brand , , , Print Share Share Cite Categories: Bereshit No items found. No items found. The Fallen Angel, by Odilon Redon 1905 The flood story begins with YHWH seeing the wickedness of humanity: בראשית ו:ה וַיַּרְא יְ־הוָה כִּי רַבָּה רָעַת הָאָדָם בָּאָרֶץ וְכָל יֵצֶר מַחְשְׁבֹת לִבּוֹ רַק רַע כָּל הַיּוֹם: ו:ו וַיִּנָּחֶם יְ־הוָה כִּי עָשָׂה אֶת הָאָדָם בָּאָרֶץ וַיִּתְעַצֵּב אֶל לִבּוֹ: Gen 6:5 And YHWH saw that the wickedness of man was great on the earth, and that the inclination of the thoughts of his heart was only evil continually. 6:6 And YHWH regretted that He had made man on the earth, and it grieved his heart. The Torah doesn&rsquo;t say anything specific about this wickedness, but early Jewish interpretation fills in the gaps. The Book of the Watchers and the Origins of Evil The earliest work addressing this issue is the Book of the Watchers (250-200 BCE), which now makes up chapters 1-36 of the book of Enoch . (For a brief description of this book, see appendix.) &ldquo;Watchers&rdquo; [1] is a translation of the Aramaic עירין (lit. the awake ones) found in Daniel (4: 10, 14, 20) that probably originates from the tradition that angels do not sleep. [2] The angels in question are those who appear as benei ha-elohim in Gen 6:1, in the story that immediately precedes the flood account. בראשית ו:א וַיְהִי כִּי הֵחֵל הָאָדָם לָרֹב עַל פְּנֵי הָאֲדָמָה וּבָנוֹת יֻלְּדוּ לָהֶם: ו:ב וַיִּרְאוּ בְנֵי הָאֱלֹהִים אֶת בְּנוֹת הָאָדָם כִּי טֹבֹת הֵנָּה וַיִּקְחוּ לָהֶם נָשִׁים מִכֹּל אֲשֶׁר בָּחָרוּ: Gen 6:1 And it was, when men began to multiply on the face of the earth, and daughters were born to them, 6:2 that the benei ha-elohim (lit. &ldquo;sons of God&rdquo;) saw the daughters of men that they were fair; and they took wives from whomever they chose. ו:ג וַיֹּאמֶר יְ־הוָה לֹא יָדוֹן רוּחִי בָאָדָם לְעֹלָם בְּשַׁגַּם הוּא בָשָׂר וְהָיוּ יָמָיו מֵאָה וְעֶשְׂרִים שָׁנָה: ו:ד הַנְּפִלִים הָיוּ בָאָרֶץ בַּיָּמִים הָהֵם וְגַם אַחֲרֵי כֵן אֲשֶׁר יָבֹאוּ בְּנֵי הָאֱלֹהִים אֶל בְּנוֹת הָאָדָם וְיָלְדוּ לָהֶם הֵמָּה הַגִּבֹּרִים אֲשֶׁר מֵעוֹלָם אַנְשֵׁי הַשֵּׁם: 6:3 And YHWH said: &ldquo;My spirit shall not abide in man forever, for that he also is flesh; and his days be a hundred and twenty years.&rdquo; [3] 6:4 The nephilim were on the earth in those days, and also after that, when the benei ha-elohim came to the daughters of men, and they bore children to them; these were the mighty men that were of old, the men of renown. This puzzling passage taken on its own appears to be meant as an explanation for the existence of mythic (but mortal) heroes in the ancient world. [4] This account gave rise to an entire cycle of stories regarding these angels and their sinful behavior, such as being the progenitors of the giant nephilim , mentioned here and in Numbers 13:33. [5] Three Versions of the Watchers&rsquo; Sin The Book of the Watchers contains three main threads regarding the sin of the angels that reflect earlier traditions: 1. Forbidden Knowledge 1: Make-up and Weapons In one account, the angel Asael [6] descends to earth and teaches forbidden knowledge to women concerning female adornment, which facilitates lust. He also teaches men how to create weapons, which enables war. [7] 8:1 And Asael taught men to make swords, and daggers, and shields and breastplates. And he showed them the things after these, and the art of making them: bracelets, and ornaments, and the art of making up the eyes and of beautifying the eyelids, and the most precious and choice stones, and all [kinds of] coloured dyes. And the world was changed . 8:2 And there was great impiety and much fornication, and they went astray, and all their ways became corrupt. This knowledge causes sin that must be wiped out in the Flood. 2. Forbidden Knowledge 2: Magic and Other Forbidden Knowledge In another thread woven into the story of the Watchers in Enoch, humans are taught magic and other forbidden knowledge: And they taught them charms and spells, and showed them the cutting of roots and trees (i.e., medicine) ( 1 Enoch 7:1b). This again results in sin and the Flood. 3. Mating and Reproducing with Women &zwj; The predominant tradition and main thread in the Book of Watchers , into which the other traditions are interwoven, focuses on the desire of the angels, led by Shemihaza, [8] to mate with human women. 6:1 And it came to pass, when the sons of men had increased, that in those days there were born to them fair and beautiful daughters. 6:2 And the angels, the sons of heaven, saw them and desired them. And they said to one another: &lsquo;Come, let us choose for ourselves wives from the children of men, and let us beget for ourselves children.&rsquo; 6:3 And Shemihaza, who was their leader, said to them: &lsquo;I fear that you may not wish this deed to be done, and [that] I alone will pay for this great sin.&rsquo; 6:4 And they all answered him and said: &lsquo;Let us all swear an oath, and bind one another with curses not to alter this plan, but to carry out this plan effectively.&rsquo; &hellip; 7:2 And they (=the human women) became pregnant and bore large giants, and their height [was] three thousand cubits. 7:3 These devoured all the toil of men, until men were unable to sustain them. 7:4 And the giants turned against them in order to devour men. 7:5 And they began to sin against birds, and against animals, and against reptiles and against fish, and they devoured one another&rsquo;s flesh and drank the blood from it. 7:6 Then the earth complained about the lawless ones. The result of this union is unnatural, as could be expected: the women bear violent giants. The giants&rsquo; violence and voracious hunger cause humans tremendous distress, as well as setting off a &ldquo;domino effect&rdquo; of violence among all creatures of the world. The final result of all this illicit angelic intervention is the Flood, either to rid the world of contamination or to end the humans&rsquo; sin. In this third version of the story, the giants themselves are killed. Their spirits, however, deriving from immortal heavenly beings (the angels), cannot be destroyed completely, but also cannot return to heaven. They remain connected to earth as evil spirits, wreaking havoc among humankind and causing both physical evil (such as disease) and moral evil (sin): 7:8 And now the giants who were born from spirits and flesh will be called evil spirits upon the earth, and on the earth will be their dwelling. 7:9 And evil spirits came out from their flesh because from above they were created; from the holy Watchers was their origin and first foundation. Evil spirits they will be on the earth, and spirits of the evil ones they will be called. 7:10 And the dwelling of the spirits of heaven is in heaven, but the dwelling of the spirits of earth, who were born on the earth, [is] on earth. 7:11 And the spirits of the giants . . . which do wrong and are corrupt, and attack and fight and break on the earth, and cause sorrow; and they eat no food and do not thirst, and are not observed. 7:12 And these spirits will rise against the sons of men and against the women because they came out [from them]. This story is developed further in the Book of Jubilees , and is reflected in Qumran prayer and incantations that deride the &ldquo;bastards,&rdquo; that is, the evil spirits who are the result of the illicit union of angels and human women (as in 4Q510-511, 4Q444, and 11Q11 V.5-11). Benefits of a Belief in the Fall of the Watchers Why did this story become so popular in the Second Temple period? When Human Sin Became Unbearable This story answers basic questions from the biblical text&mdash;not only why the Flood occurred, but also, &ldquo;Why then ?&rdquo; According to the Watchers story, human evil becomes unbearable as the result of the angels&rsquo; actions, actions that are, after all, recounted in the Bible directly before God&rsquo;s decision to flood the earth. Why People Sin &zwj; Second, this story addresses a much more basic question for Second Temple Jews, as it indicates that these evil spirits are still active in the audience&rsquo;s &ldquo;present day&rdquo;: Why do people sin? This question, never addressed directly in the Hebrew Bible, became a central issue for Jews in the Second Temple period who wished to be righteous &ndash; and even defined themselves as righteous &ndash; and yet felt the pull of sin. This tug of war with sin is reflected, for example, in the visceral struggle that underlies the sectarian Songs of the Sage in the Dead Sea Scrolls. Here the speaker calls on God to frighten the &ldquo;spirits of the bastards&rdquo; because of the battle between them and the laws of God within his person ( Songs of the Sage ; 4Q511 48&ndash;49 +51 ii.1b&ndash;6a). [9] בינתו נתן&rlm; [ב&rlm;]לב[בי&rlm; ] הודות צדקו ו֯&rlm;[--]ע֯ה ובפי֯ י֯פחד&rlm; [כול רוחות&rlm;] ממזרים להכ֯ני֯ע[--]ט֯י ט֯מ֯אה כיא̇ ב֯ת֯כ֯מי ב֯שרי יסו֯ד֯ ד֯&rlm;[ וב&rlm;]גויתי מ̇לחמ̇ו֯ת֯ חוקי אל בלבבי ואועי֯[ל&rlm; --]ע֯ל כ֯ו֯ל מופתי גבר מעשי אשמה ארשי̇ע[&rlm; ]אל ◦◦◦ו֯ת֯&rlm; vacat &hellip; [ ] His knowledge he put [in ",
+      "rawHtml": null,
+      "keywords": "crawl(d0): search: Book of Enoch Watchers Nephilim Qumran scholarship",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:29:56.644Z",
+      "evidences": []
+    },
+    {
+      "id": "cmqys44xv00017dc4hlzvgrr2",
+      "url": "https://archive.org/details/B-001-001-901",
+      "title": "The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity : James VanderKam, Peter Flint : Free Download, Borrow, and Streaming : Internet Archive",
+      "domain": "archive.org",
+      "category": "crawled",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.8,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:30:23.107Z",
+      "author": null,
+      "publisher": null,
+      "summary": "The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity : James VanderKam, Peter Flint : Free Download, Borrow, and Streaming : Internet Archive Skip to main content Keep the news in the Wayback Machine. Sign Fight for the Future's letter .",
+      "content": "The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity : James VanderKam, Peter Flint : Free Download, Borrow, and Streaming : Internet Archive Skip to main content Keep the news in the Wayback Machine. Sign Fight for the Future's letter . Hamburger icon An icon used to represent a menu that can be toggled by interacting with this icon. Internet Archive logo A line drawing of the Internet Archive headquarters building façade. Web icon An illustration of a computer application window Wayback Machine Texts icon An illustration of an open book. Texts Video icon An illustration of two cells of a film strip. Video Audio icon An illustration of an audio speaker. Audio Software icon An illustration of a 3.5\" floppy disk. Software Images icon An illustration of two photographs. Images Donate icon An illustration of a heart shape Donate Ellipses icon An illustration of text ellipses. More Donate icon An illustration of a heart shape \"Donate to the archive\" User icon An illustration of a person's head and chest. Sign up | Log in Upload icon An illustration of a horizontal line over an up pointing arrow. Upload Search icon An illustration of a magnifying glass. Internet Archive Audio Live Music Archive Librivox Free Audio Featured All Audio Grateful Dead Netlabels Old Time Radio 78 RPMs and Cylinder Recordings Top Audio Books & Poetry Computers, Technology and Science Music, Arts & Culture News & Public Affairs Spirituality & Religion Podcasts Radio News Archive Images Metropolitan Museum Cleveland Museum of Art Featured All Images Flickr Commons Occupy Wall Street Flickr Cover Art USGS Maps Top NASA Images Solar System Collection Ames Research Center Software Internet Arcade Console Living Room Featured All Software Old School Emulation MS-DOS Games Historical Software Classic PC Games Software Library Top Kodi Archive and Support File Vintage Software APK MS-DOS CD-ROM Software CD-ROM Software Library Software Sites Tucows Software Library Shareware CD-ROMs Software Capsules Compilation CD-ROM Images ZX Spectrum DOOM Level CD Texts Open Library American Libraries Featured All Texts Smithsonian Libraries FEDLINK (US) Genealogy Lincoln Collection Top American Libraries Canadian Libraries Universal Library Project Gutenberg Children's Library Biodiversity Heritage Library Books by Language Folkscanomy Government Documents Video TV News Understanding 9/11 Featured All Video Prelinger Archives Democracy Now! Occupy Wall Street TV NSA Clip Library Top Animation & Cartoons Arts & Music Computers & Technology Cultural & Academic Films Ephemeral Films Movies News & Public Affairs Spirituality & Religion Sports Videos Television Videogame Videos Vlogs Youth Media Search the history of more than 1 trillion web pages . Search the Wayback Machine Search icon An illustration of a magnifying glass. Mobile Apps Wayback Machine (iOS) Wayback Machine (Android) Browser Extensions Chrome Firefox Safari Edge Archive-It Subscription Explore the Collections Learn More Build Collections Save Page Now Capture a web page as it appears now for use as a trusted citation in the future. Enter a URL to save Please enter a valid web address About Blog Events Projects Help Donate Contact Jobs Volunteer Sign up for free Log in About Blog Events Projects Help Donate Donate icon An illustration of a heart shape Contact Jobs Volunteer The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity Bookreader Item Preview remove-circle Internet Archive&apos;s in-browser bookreader \"theater\" requires JavaScript to be enabled. It appears your browser does not have it turned on. Please see your browser settings for this feature. remove-circle Share or Embed This Item Share to Twitter Share to Facebook Share to Reddit Share to Tumblr Share to Pinterest Share via email Copy Link EMBED EMBED (for Archive.org item Description fields) [archiveorg B-001-001-901 width=560 height=384 frameborder=0 webkitallowfullscreen=true mozallowfullscreen=true] Want more? Advanced embedding details, examples, and help ! Favorite Share Flag Flag this item for Graphic Violence Explicit Sexual Content Hate Speech Misinformation/Disinformation Marketing/Phishing/Advertising Misleading/Inaccurate/Missing Metadata texts The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity by James VanderKam, Peter Flint Publication date 2002 Topics A300 Collection nicolai-woodenko-library ; patron-library-collection Language English Item Size 875.9M 2002 Harper library id removed dd0001.jpg, dd0003.jpg Addeddate 2017-05-07 11:48:46 Collection_added patron-library-collection Identifier B-001-001-901 Identifier-ark ark:/13960/t9m386j50 Ocr ABBYY FineReader 11.0 Pages 489 Scanner Internet Archive HTML5 Uploader 1.6.3 plus-circle Add Review comment Reviews 6,204 Views 26 Favorites DOWNLOAD OPTIONS download 1 file ABBYY GZ download Generate DAISY For users with print-disabilities download 1 file EPUB download download 1 file EXCEL download download 1 file FULL TEXT download download 1 file GENERIC RAW BOOK ZIP download download 1 file ITEM TILE download download 1 file PDF download download 1 file SINGLE PAGE PROCESSED JP2 ZIP download download 1 file TORRENT download download 1 file ZIP download download 15 Files download 8 Original SHOW ALL IN COLLECTIONS Nicolai Woodenko Library Patron Libraries (Libraries from Patrons) Uploaded by Nicolai Woodenko on May 7, 2017 SIMILAR ITEMS (based on metadata) Terms of Service (last updated 12/31/2014)",
+      "rawHtml": null,
+      "keywords": "crawl(d1): search: Book of Enoch Watchers Nephilim Qumran scholarship",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:30:23.107Z",
+      "evidences": []
+    },
+    {
+      "id": "cmqys45cw00027dc4vn094ww2",
+      "url": "https://archive.org/details/B-001-001-901/page/n211/mode/1up",
+      "title": "The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity : James VanderKam, Peter Flint : Free Download, Borrow, and Streaming : Internet Archive",
+      "domain": "archive.org",
+      "category": "crawled",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.8,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:30:23.648Z",
+      "author": null,
+      "publisher": null,
+      "summary": "The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity : James VanderKam, Peter Flint : Free Download, Borrow, and Streaming : Internet Archive Skip to main content Keep the news in the Wayback Machine. Sign Fight for the Future's letter .",
+      "content": "The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity : James VanderKam, Peter Flint : Free Download, Borrow, and Streaming : Internet Archive Skip to main content Keep the news in the Wayback Machine. Sign Fight for the Future's letter . Hamburger icon An icon used to represent a menu that can be toggled by interacting with this icon. Internet Archive logo A line drawing of the Internet Archive headquarters building façade. Web icon An illustration of a computer application window Wayback Machine Texts icon An illustration of an open book. Texts Video icon An illustration of two cells of a film strip. Video Audio icon An illustration of an audio speaker. Audio Software icon An illustration of a 3.5\" floppy disk. Software Images icon An illustration of two photographs. Images Donate icon An illustration of a heart shape Donate Ellipses icon An illustration of text ellipses. More Donate icon An illustration of a heart shape \"Donate to the archive\" User icon An illustration of a person's head and chest. Sign up | Log in Upload icon An illustration of a horizontal line over an up pointing arrow. Upload Search icon An illustration of a magnifying glass. Internet Archive Audio Live Music Archive Librivox Free Audio Featured All Audio Grateful Dead Netlabels Old Time Radio 78 RPMs and Cylinder Recordings Top Audio Books & Poetry Computers, Technology and Science Music, Arts & Culture News & Public Affairs Spirituality & Religion Podcasts Radio News Archive Images Metropolitan Museum Cleveland Museum of Art Featured All Images Flickr Commons Occupy Wall Street Flickr Cover Art USGS Maps Top NASA Images Solar System Collection Ames Research Center Software Internet Arcade Console Living Room Featured All Software Old School Emulation MS-DOS Games Historical Software Classic PC Games Software Library Top Kodi Archive and Support File Vintage Software APK MS-DOS CD-ROM Software CD-ROM Software Library Software Sites Tucows Software Library Shareware CD-ROMs Software Capsules Compilation CD-ROM Images ZX Spectrum DOOM Level CD Texts Open Library American Libraries Featured All Texts Smithsonian Libraries FEDLINK (US) Genealogy Lincoln Collection Top American Libraries Canadian Libraries Universal Library Project Gutenberg Children's Library Biodiversity Heritage Library Books by Language Folkscanomy Government Documents Video TV News Understanding 9/11 Featured All Video Prelinger Archives Democracy Now! Occupy Wall Street TV NSA Clip Library Top Animation & Cartoons Arts & Music Computers & Technology Cultural & Academic Films Ephemeral Films Movies News & Public Affairs Spirituality & Religion Sports Videos Television Videogame Videos Vlogs Youth Media Search the history of more than 1 trillion web pages . Search the Wayback Machine Search icon An illustration of a magnifying glass. Mobile Apps Wayback Machine (iOS) Wayback Machine (Android) Browser Extensions Chrome Firefox Safari Edge Archive-It Subscription Explore the Collections Learn More Build Collections Save Page Now Capture a web page as it appears now for use as a trusted citation in the future. Enter a URL to save Please enter a valid web address About Blog Events Projects Help Donate Contact Jobs Volunteer Sign up for free Log in About Blog Events Projects Help Donate Donate icon An illustration of a heart shape Contact Jobs Volunteer The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity Bookreader Item Preview remove-circle Internet Archive&apos;s in-browser bookreader \"theater\" requires JavaScript to be enabled. It appears your browser does not have it turned on. Please see your browser settings for this feature. remove-circle Share or Embed This Item Share to Twitter Share to Facebook Share to Reddit Share to Tumblr Share to Pinterest Share via email Copy Link EMBED EMBED (for Archive.org item Description fields) [archiveorg B-001-001-901 width=560 height=384 frameborder=0 webkitallowfullscreen=true mozallowfullscreen=true] Want more? Advanced embedding details, examples, and help ! Favorite Share Flag Flag this item for Graphic Violence Explicit Sexual Content Hate Speech Misinformation/Disinformation Marketing/Phishing/Advertising Misleading/Inaccurate/Missing Metadata texts The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity by James VanderKam, Peter Flint Publication date 2002 Topics A300 Collection nicolai-woodenko-library ; patron-library-collection Language English Item Size 875.9M 2002 Harper library id removed dd0001.jpg, dd0003.jpg Addeddate 2017-05-07 11:48:46 Collection_added patron-library-collection Identifier B-001-001-901 Identifier-ark ark:/13960/t9m386j50 Ocr ABBYY FineReader 11.0 Pages 489 Scanner Internet Archive HTML5 Uploader 1.6.3 plus-circle Add Review comment Reviews 6,204 Views 26 Favorites DOWNLOAD OPTIONS download 1 file ABBYY GZ download Generate DAISY For users with print-disabilities download 1 file EPUB download download 1 file EXCEL download download 1 file FULL TEXT download download 1 file GENERIC RAW BOOK ZIP download download 1 file ITEM TILE download download 1 file PDF download download 1 file SINGLE PAGE PROCESSED JP2 ZIP download download 1 file TORRENT download download 1 file ZIP download download 15 Files download 8 Original SHOW ALL IN COLLECTIONS Nicolai Woodenko Library Patron Libraries (Libraries from Patrons) Uploaded by Nicolai Woodenko on May 7, 2017 SIMILAR ITEMS (based on metadata) Terms of Service (last updated 12/31/2014)",
+      "rawHtml": null,
+      "keywords": "crawl(d1): search: Book of Enoch Watchers Nephilim Qumran scholarship",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:30:23.648Z",
+      "evidences": []
+    },
+    {
+      "id": "cmqys46cj00037dc4nyjh8cvt",
+      "url": "https://archive.org/details/B-001-001-901/page/n462/mode/1up",
+      "title": "The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity : James VanderKam, Peter Flint : Free Download, Borrow, and Streaming : Internet Archive",
+      "domain": "archive.org",
+      "category": "crawled",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.8,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:30:24.931Z",
+      "author": null,
+      "publisher": null,
+      "summary": "The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity : James VanderKam, Peter Flint : Free Download, Borrow, and Streaming : Internet Archive Skip to main content Keep the news in the Wayback Machine. Sign Fight for the Future's letter .",
+      "content": "The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity : James VanderKam, Peter Flint : Free Download, Borrow, and Streaming : Internet Archive Skip to main content Keep the news in the Wayback Machine. Sign Fight for the Future's letter . Hamburger icon An icon used to represent a menu that can be toggled by interacting with this icon. Internet Archive logo A line drawing of the Internet Archive headquarters building façade. Web icon An illustration of a computer application window Wayback Machine Texts icon An illustration of an open book. Texts Video icon An illustration of two cells of a film strip. Video Audio icon An illustration of an audio speaker. Audio Software icon An illustration of a 3.5\" floppy disk. Software Images icon An illustration of two photographs. Images Donate icon An illustration of a heart shape Donate Ellipses icon An illustration of text ellipses. More Donate icon An illustration of a heart shape \"Donate to the archive\" User icon An illustration of a person's head and chest. Sign up | Log in Upload icon An illustration of a horizontal line over an up pointing arrow. Upload Search icon An illustration of a magnifying glass. Internet Archive Audio Live Music Archive Librivox Free Audio Featured All Audio Grateful Dead Netlabels Old Time Radio 78 RPMs and Cylinder Recordings Top Audio Books & Poetry Computers, Technology and Science Music, Arts & Culture News & Public Affairs Spirituality & Religion Podcasts Radio News Archive Images Metropolitan Museum Cleveland Museum of Art Featured All Images Flickr Commons Occupy Wall Street Flickr Cover Art USGS Maps Top NASA Images Solar System Collection Ames Research Center Software Internet Arcade Console Living Room Featured All Software Old School Emulation MS-DOS Games Historical Software Classic PC Games Software Library Top Kodi Archive and Support File Vintage Software APK MS-DOS CD-ROM Software CD-ROM Software Library Software Sites Tucows Software Library Shareware CD-ROMs Software Capsules Compilation CD-ROM Images ZX Spectrum DOOM Level CD Texts Open Library American Libraries Featured All Texts Smithsonian Libraries FEDLINK (US) Genealogy Lincoln Collection Top American Libraries Canadian Libraries Universal Library Project Gutenberg Children's Library Biodiversity Heritage Library Books by Language Folkscanomy Government Documents Video TV News Understanding 9/11 Featured All Video Prelinger Archives Democracy Now! Occupy Wall Street TV NSA Clip Library Top Animation & Cartoons Arts & Music Computers & Technology Cultural & Academic Films Ephemeral Films Movies News & Public Affairs Spirituality & Religion Sports Videos Television Videogame Videos Vlogs Youth Media Search the history of more than 1 trillion web pages . Search the Wayback Machine Search icon An illustration of a magnifying glass. Mobile Apps Wayback Machine (iOS) Wayback Machine (Android) Browser Extensions Chrome Firefox Safari Edge Archive-It Subscription Explore the Collections Learn More Build Collections Save Page Now Capture a web page as it appears now for use as a trusted citation in the future. Enter a URL to save Please enter a valid web address About Blog Events Projects Help Donate Contact Jobs Volunteer Sign up for free Log in About Blog Events Projects Help Donate Donate icon An illustration of a heart shape Contact Jobs Volunteer The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity Bookreader Item Preview remove-circle Internet Archive&apos;s in-browser bookreader \"theater\" requires JavaScript to be enabled. It appears your browser does not have it turned on. Please see your browser settings for this feature. remove-circle Share or Embed This Item Share to Twitter Share to Facebook Share to Reddit Share to Tumblr Share to Pinterest Share via email Copy Link EMBED EMBED (for Archive.org item Description fields) [archiveorg B-001-001-901 width=560 height=384 frameborder=0 webkitallowfullscreen=true mozallowfullscreen=true] Want more? Advanced embedding details, examples, and help ! Favorite Share Flag Flag this item for Graphic Violence Explicit Sexual Content Hate Speech Misinformation/Disinformation Marketing/Phishing/Advertising Misleading/Inaccurate/Missing Metadata texts The Meaning of the Dead Sea Scrolls. Their Significance for Understanding the Bible, Judaism, Jesus, and Christianity by James VanderKam, Peter Flint Publication date 2002 Topics A300 Collection nicolai-woodenko-library ; patron-library-collection Language English Item Size 875.9M 2002 Harper library id removed dd0001.jpg, dd0003.jpg Addeddate 2017-05-07 11:48:46 Collection_added patron-library-collection Identifier B-001-001-901 Identifier-ark ark:/13960/t9m386j50 Ocr ABBYY FineReader 11.0 Pages 489 Scanner Internet Archive HTML5 Uploader 1.6.3 plus-circle Add Review comment Reviews 6,204 Views 26 Favorites DOWNLOAD OPTIONS download 1 file ABBYY GZ download Generate DAISY For users with print-disabilities download 1 file EPUB download download 1 file EXCEL download download 1 file FULL TEXT download download 1 file GENERIC RAW BOOK ZIP download download 1 file ITEM TILE download download 1 file PDF download download 1 file SINGLE PAGE PROCESSED JP2 ZIP download download 1 file TORRENT download download 1 file ZIP download download 15 Files download 8 Original SHOW ALL IN COLLECTIONS Nicolai Woodenko Library Patron Libraries (Libraries from Patrons) Uploaded by Nicolai Woodenko on May 7, 2017 SIMILAR ITEMS (based on metadata) Terms of Service (last updated 12/31/2014)",
+      "rawHtml": null,
+      "keywords": "crawl(d1): search: Book of Enoch Watchers Nephilim Qumran scholarship",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:30:24.931Z",
+      "evidences": []
+    },
+    {
+      "id": "cmqys4b7800047dc4ghg4jjz2",
+      "url": "https://www.thetorah.com/book/genesis",
+      "title": "Genesis - TheTorah.com",
+      "domain": "thetorah.com",
+      "category": "crawled",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.78,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:30:31.220Z",
+      "author": null,
+      "publisher": null,
+      "summary": "Genesis - TheTorah.com Donate Newsletter Torah Portion This Week&#x27;s Torah Portion Genesis Exodus Leviticus Numbers Deuteronomy Holidays Rosh Hashanah Rosh Hashanah Yom Kippur Yom Kippur Sukkot Sukkot Simchat Torah Simchat Torah Chanukah Chanukah Purim Purim Passover Passover Shavuot Shavuot Tisha B’Av Tisha B’Av Shabbat Shabbat Yom Ha’atzmaut Yom Ha’atzmaut Yom Yerushalayim Yom Yerushalayim Yom HaZikaron Yom HaZikaron Yom HaShoah Yom HaShoah Scholarship & Faith Biblical Criticism Modern Fait",
+      "content": "Genesis - TheTorah.com Donate Newsletter Torah Portion This Week&#x27;s Torah Portion Genesis Exodus Leviticus Numbers Deuteronomy Holidays Rosh Hashanah Rosh Hashanah Yom Kippur Yom Kippur Sukkot Sukkot Simchat Torah Simchat Torah Chanukah Chanukah Purim Purim Passover Passover Shavuot Shavuot Tisha B’Av Tisha B’Av Shabbat Shabbat Yom Ha’atzmaut Yom Ha’atzmaut Yom Yerushalayim Yom Yerushalayim Yom HaZikaron Yom HaZikaron Yom HaShoah Yom HaShoah Scholarship & Faith Biblical Criticism Modern Faith Morality and Ethics Archaeology תהלים Psalms Medieval Interpretation Christianity Series and Symposia Printable Readers Current Latest Essays Israel-Hamas War Blog Op-ed Interview Featured Post Behind Every Article: What It Takes to Sustain TheTorah.com Op-ed More Browse Topics Resource Guide Our Authors Submissions About Us Contact Us TheGemara.com thetorah.co.il ProjectTABS.com Subscribe Donate עברית חומש חומש עברית Stay updated with the latest scholarship Subscribe Loading... Please check your email Thank you for signing up. You should be receiving a confirmation email from TheTorah.com. Click on \"Confirm your email\" to subscribe. Stay updated with the latest scholarship I would like to receive new essays When published Before Shabbat You have been successfully subscribed Oops! Something went wrong while submitting the form. The Book of Genesis בראשית Bereshit Noach Lech Lecha Vayera Chayei Sarah Toledot Vayetzei Vayishlach Vayeshev Miketz Vayigash Vayechi Genesis Latest Popular Featured Who Were the Tribe of Dan? Dr. David Ilan , Proverbs in Egyptian Scribal Style Prof. Bernd U. Schipper , Noah, Ham and the Curse of Canaan: Who Did What to Whom in the Tent? Prof. Rabbi David Frankel , The Benei Elohim, the Watchers, and the Origins of Evil Dr. Miryam Brand , “He Tethers His Donkey to the Vine” - Judah Exported Soreqa Wine Dr. Tina M. Sherman , Jacob’s Funeral and Esau’s Last Stand Dr. Malka Z. Simkovich , Explore Topics: Creation and the First Generations The Flood and Tower of Babel Avraham Avinu Is My Father Matriarchs and Patriarchs Joseph and the Roots of Israel Creation and the First Generations The Flood and Tower of Babel Avraham Avinu Is My Father Series by Dr. Rabbi Zev Farber Avraham Avinu Is My Father: Thoughts on Torah, History and Judaism Matriarchs and Patriarchs Joseph and the Roots of Israel Creation and the First Generations The Flood and Tower of Babel Avraham Avinu Is My Father Avraham Avinu Is My Father: Thoughts on Torah, History and Judaism Matriarchs and Patriarchs Joseph and the Roots of Israel General About Us Ask a Rabbi Contact Us עברית Terms of Use RSS Torah Portion Genesis Exodus Leviticus Numbers Deuteronomy Holidays Rosh Hashanah Yom Kippur Sukkot Passover Shavuot Chanukah Purim Scholarship and Faith Biblical Criticism Modern Faith Morality and Ethics Archaeology Medieval Interpretation Subscribe to our newsletter Donate Launched Shavuot 5773 / 2013 | Copyright © Academic Torah Institute, All Rights Reserved",
+      "rawHtml": null,
+      "keywords": "crawl(d1): search: Book of Enoch Watchers Nephilim Qumran scholarship",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:30:31.220Z",
+      "evidences": []
     }
   ]
 }
