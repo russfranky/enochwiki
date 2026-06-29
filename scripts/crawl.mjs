@@ -154,9 +154,34 @@ async function saveSource(url, title, content, snippet, ctx, depth) {
   return { created, isLead, credibility, domain }
 }
 
+// Citation-rich hubs: topic articles + primary-text indexes whose reference
+// sections point outward to scholarly sources and primary texts. Best ROI for
+// recursive crawling. Each carries topic + scripture context for inheritance.
+const HUBS = [
+  ['https://en.wikipedia.org/wiki/Book_of_Enoch', 'theme: book of enoch', '1-enoch 1:1'],
+  ['https://en.wikipedia.org/wiki/Watcher_(angel)', 'theme: watchers', '1-enoch 6:6'],
+  ['https://en.wikipedia.org/wiki/Nephilim', 'theme: nephilim', '1-enoch 7:2'],
+  ['https://en.wikipedia.org/wiki/Azazel', 'theme: azazel', '1-enoch 8:1'],
+  ['https://en.wikipedia.org/wiki/Mount_Hermon', 'theme: hermon', '1-enoch 6:6'],
+  ['https://en.wikipedia.org/wiki/Book_of_Jubilees', 'theme: jubilees', 'jubilees 5:1'],
+  ['https://en.wikipedia.org/wiki/Son_of_Man', 'theme: son of man', '1-enoch 46:2'],
+  ['https://en.wikipedia.org/wiki/Dead_Sea_Scrolls', 'theme: qumran', '1-enoch 1:1'],
+  ['https://en.wikipedia.org/wiki/Book_of_Giants', 'theme: giants', '1-enoch 7:2'],
+  ['https://en.wikipedia.org/wiki/Sons_of_God', 'theme: nephilim', 'genesis 6:2'],
+  ['https://en.wikipedia.org/wiki/Harrowing_of_Hell', 'theme: harrowing', '1-peter 3:19'],
+  ['https://en.wikipedia.org/wiki/Sheol', 'theme: sheol', '1-enoch 22:3'],
+  ['https://en.wikipedia.org/wiki/2_Enoch', 'theme: enoch ascension', '1-enoch 71:9'],
+  ['https://en.wikipedia.org/wiki/Apocalypse_of_Weeks', 'theme: eschatology', '1-enoch 1:1'],
+  ['https://en.wikipedia.org/wiki/Anne_Catherine_Emmerich', 'theme: emmerich', null],
+  ['https://en.wikipedia.org/wiki/Orthodox_Tewahedo_biblical_canon', 'theme: ethiopian canon', null],
+  ['https://www.sacred-texts.com/bib/boe/index.htm', 'theme: book of enoch', '1-enoch 1:1'],
+  ['https://www.earlyjewishwritings.com/1enoch.html', 'theme: book of enoch', '1-enoch 1:1'],
+]
+
 // ── seeds ────────────────────────────────────────────────────────────────────
 async function buildSeeds() {
   const seeds = []
+  if (flag('--seed-hubs')) for (const [url, topic, ref] of HUBS) seeds.push({ url, depth: 0, ctx: { topic, ref } })
   if (flag('--url')) {
     seeds.push({ url: opt('--url'), depth: 0, ctx: { topic: opt('--topic', 'manual'), ref: opt('--ref', null) } })
   }

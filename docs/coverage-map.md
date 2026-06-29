@@ -5,19 +5,19 @@
 > whole composition and decide for themselves. Lower on the ladder ≠ false; it means *less
 > independently verifiable* and a place to keep digging.
 
-**136 evidence** across **185 sources** (31 community-leads) · **44 topics**
+**146 evidence** across **195 sources** (31 community-leads) · **49 topics**
 
 ## The picture so far — verifiability ladder
 
 | Level | Count | |
 |---|---:|---|
 | Textually attested | 3 | `█·······················` |
-| Historically / archaeologically corroborated | 11 | `█████···················` |
-| Scholarly consensus | 55 | `████████████████████████` |
+| Historically / archaeologically corroborated | 11 | `████····················` |
+| Scholarly consensus | 59 | `████████████████████████` |
 | Contested / minority | 2 | `█·······················` |
-| Tradition / devotional | 41 | `██████████████████······` |
+| Tradition / devotional | 47 | `███████████████████·····` |
 | Visionary / private revelation | 1 | `························` |
-| Speculative | 23 | `██████████··············` |
+| Speculative | 23 | `█████████···············` |
 
 ## By topic — where each thread stands
 
@@ -32,6 +32,8 @@
 | ⚠️ verse: 1-enoch 71:10 (Son of Man) | 0 | 2 | tradition:2 |
 | ⚠️ verse: jubilees 5:1 (giants) | 0 | 2 | tradition:2 |
 | ⚠️ verse: 1-enoch 15:3 (giants) | 0 | 1 | tradition:1 |
+| ⚠️ crawl(d0): theme: book of enoch | 0 | 1 | tradition:1 |
+| ⚠️ crawl(d2): theme: book of enoch | 0 | 1 | tradition:1 |
 | theme: The Watchers ( Fallen Angels) | 1 | 4 | historically:1 · tradition:1 · speculative:2 |
 | theme: Eschatological Judgment | 1 | 4 | scholarly:1 · tradition:3 |
 | theme: Solar Calendar (364 days) | 1 | 3 | scholarly:1 · tradition:1 · speculative:1 |
@@ -49,6 +51,9 @@
 | black-sea|flood|geology|holocene|ryan-pitman | 1 | 1 | historically:1 |
 | azazel|scapegoat|leviticus|yom-kippur|milgrom | 1 | 1 | scholarly:1 |
 | verse: 1-enoch 6:6 (Hermon) | 1 | 1 | scholarly:1 |
+| crawl(d0): theme: watchers | 1 | 1 | scholarly:1 |
+| crawl(d1): theme: watchers | 1 | 1 | scholarly:1 |
+| crawl(d1): theme: nephilim | 1 | 1 | scholarly:1 |
 | theme: The Great Flood | 2 | 5 | historically:2 · speculative:3 |
 | verse: 1-enoch 9:5 (Azazel) | 2 | 5 | scholarly:2 · tradition:1 · speculative:2 |
 | verse: 1-enoch 15:2 (Watchers) | 2 | 4 | scholarly:2 · tradition:2 |
@@ -59,7 +64,7 @@
 | enoch|new-testament|jude|son-of-man|charlesworth | 2 | 2 | scholarly:2 |
 | verse: 1-enoch 10:8 (Azazel) | 2 | 2 | scholarly:2 |
 | verse: 1-enoch 22:3 (spirits) | 2 | 2 | scholarly:2 |
-| crawl(d1): theme: book of enoch | 2 | 2 | scholarly:2 |
+| crawl(d1): theme: book of enoch | 3 | 7 | scholarly:3 · tradition:4 |
 | theme: The Nephilim | 3 | 6 | scholarly:3 · tradition:2 · speculative:1 |
 | theme: Covenant of Mount Hermon | 3 | 6 | textually:1 · scholarly:2 · tradition:3 |
 | theme: Enoch's Heavenly Ascension | 3 | 5 | scholarly:3 · tradition:1 · visionary:1 |
@@ -83,17 +88,17 @@
 
 A second axis of verifiability: not just *what* a source says but *who* stands behind it,
 validated the same way sources are (credentials + affiliation + independent corroboration).
-**11 named figures**, **83 institutions**.
+**11 named figures**, **86 institutions**.
 
 ### Named figures (independently validated)
 
 | Person | Type | Tier | Basis | Sources |
 |---|---|---|---|---:|
-| R. H. Charles | scholar | established-authority | peer-cited | 9 |
-| George W. E. Nickelsburg | scholar | established-authority | peer-cited | 2 |
+| R. H. Charles | scholar | established-authority | peer-cited | 15 |
+| George W. E. Nickelsburg | scholar | established-authority | peer-cited | 3 |
 | James H. Charlesworth | scholar | established-authority | peer-cited | 2 |
-| Annette Yoshiko Reed | scholar | established-authority | peer-cited | 4 |
-| John J. Collins | scholar | established-authority | peer-cited | 2 |
+| Annette Yoshiko Reed | scholar | established-authority | peer-cited | 5 |
+| John J. Collins | scholar | established-authority | peer-cited | 3 |
 | Michael E. Stone | scholar | established-authority | peer-cited | 4 |
 | Jacob Milgrom | scholar | established-authority | peer-cited | 1 |
 | Devorah Dimant | scholar | established-authority | peer-cited | 1 |
@@ -106,7 +111,7 @@ validated the same way sources are (credentials + affiliation + independent corr
 - **Brill Academic Publishers** — 15 sources (95%)
 - **Biblical Archaeology Society** — 8 sources (90%)
 - **JSTOR** — 4 sources (90%)
-- **Cambridge University Press** — 2 sources (93%)
+- **Cambridge University Press** — 3 sources (93%)
 - **Israel Antiquities Authority — Dead Sea Scrolls** — 1 sources (97%)
 - **The British Museum** — 1 sources (96%)
 - **Nature (Springer Nature)** — 1 sources (95%)
@@ -123,3 +128,5 @@ Topics currently resting only on devotional / visionary / speculative / lead sou
 - **verse: 1-enoch 71:10 (Son of Man)** (2 pieces, none independently corroborated yet)
 - **verse: jubilees 5:1 (giants)** (2 pieces, none independently corroborated yet)
 - **verse: 1-enoch 15:3 (giants)** (1 pieces, none independently corroborated yet)
+- **crawl(d0): theme: book of enoch** (1 pieces, none independently corroborated yet)
+- **crawl(d2): theme: book of enoch** (1 pieces, none independently corroborated yet)

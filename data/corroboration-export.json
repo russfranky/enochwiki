@@ -1,9 +1,9 @@
 {
-  "exportedAt": "2026-06-29T05:31:02.802Z",
+  "exportedAt": "2026-06-29T05:38:14.568Z",
   "counts": {
-    "sources": 185,
-    "evidence": 136,
-    "reviews": 142
+    "sources": 195,
+    "evidence": 146,
+    "reviews": 152
   },
   "sources": [
     {
@@ -42,7 +42,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.861Z",
-          "updatedAt": "2026-06-29T05:31:00.934Z"
+          "updatedAt": "2026-06-29T05:38:12.333Z"
         },
         {
           "id": "cmqwygqys009a7dcyrip4r2x4",
@@ -59,7 +59,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.868Z",
-          "updatedAt": "2026-06-29T05:31:00.943Z"
+          "updatedAt": "2026-06-29T05:38:12.340Z"
         }
       ]
     },
@@ -99,7 +99,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.882Z",
-          "updatedAt": "2026-06-29T05:31:00.948Z"
+          "updatedAt": "2026-06-29T05:38:12.345Z"
         }
       ]
     },
@@ -139,7 +139,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.900Z",
-          "updatedAt": "2026-06-29T05:31:00.954Z"
+          "updatedAt": "2026-06-29T05:38:12.351Z"
         },
         {
           "id": "cmqwygqzw009i7dcybbg06wmh",
@@ -156,7 +156,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.908Z",
-          "updatedAt": "2026-06-29T05:31:00.958Z"
+          "updatedAt": "2026-06-29T05:38:12.355Z"
         }
       ]
     },
@@ -196,7 +196,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.919Z",
-          "updatedAt": "2026-06-29T05:31:00.963Z"
+          "updatedAt": "2026-06-29T05:38:12.359Z"
         }
       ]
     },
@@ -236,7 +236,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.931Z",
-          "updatedAt": "2026-06-29T05:31:00.967Z"
+          "updatedAt": "2026-06-29T05:38:12.364Z"
         }
       ]
     },
@@ -276,7 +276,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.945Z",
-          "updatedAt": "2026-06-29T05:31:00.972Z"
+          "updatedAt": "2026-06-29T05:38:12.368Z"
         }
       ]
     },
@@ -316,7 +316,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.967Z",
-          "updatedAt": "2026-06-29T05:31:00.976Z"
+          "updatedAt": "2026-06-29T05:38:12.372Z"
         },
         {
           "id": "cmqwygr1o009w7dcyraxbrig8",
@@ -333,7 +333,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:36.972Z",
-          "updatedAt": "2026-06-29T05:31:00.980Z"
+          "updatedAt": "2026-06-29T05:38:12.377Z"
         }
       ]
     },
@@ -857,7 +857,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.543Z",
-          "updatedAt": "2026-06-29T05:31:00.984Z"
+          "updatedAt": "2026-06-29T05:38:12.381Z"
         }
       ]
     },
@@ -897,7 +897,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.565Z",
-          "updatedAt": "2026-06-29T05:31:00.989Z"
+          "updatedAt": "2026-06-29T05:38:12.385Z"
         }
       ]
     },
@@ -937,7 +937,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.586Z",
-          "updatedAt": "2026-06-29T05:31:00.993Z"
+          "updatedAt": "2026-06-29T05:38:12.389Z"
         }
       ]
     },
@@ -977,7 +977,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.606Z",
-          "updatedAt": "2026-06-29T05:31:00.997Z"
+          "updatedAt": "2026-06-29T05:38:12.392Z"
         }
       ]
     },
@@ -1017,7 +1017,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.626Z",
-          "updatedAt": "2026-06-29T05:31:01.001Z"
+          "updatedAt": "2026-06-29T05:38:12.396Z"
         }
       ]
     },
@@ -1057,7 +1057,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.659Z",
-          "updatedAt": "2026-06-29T05:31:01.006Z"
+          "updatedAt": "2026-06-29T05:38:12.400Z"
         }
       ]
     },
@@ -1097,7 +1097,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.683Z",
-          "updatedAt": "2026-06-29T05:31:01.011Z"
+          "updatedAt": "2026-06-29T05:38:12.406Z"
         }
       ]
     },
@@ -1137,7 +1137,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.703Z",
-          "updatedAt": "2026-06-29T05:31:01.017Z"
+          "updatedAt": "2026-06-29T05:38:12.411Z"
         }
       ]
     },
@@ -1177,7 +1177,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.722Z",
-          "updatedAt": "2026-06-29T05:31:01.021Z"
+          "updatedAt": "2026-06-29T05:38:12.414Z"
         }
       ]
     },
@@ -1217,7 +1217,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.742Z",
-          "updatedAt": "2026-06-29T05:31:01.026Z"
+          "updatedAt": "2026-06-29T05:38:12.419Z"
         }
       ]
     },
@@ -1257,7 +1257,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.766Z",
-          "updatedAt": "2026-06-29T05:31:01.030Z"
+          "updatedAt": "2026-06-29T05:38:12.423Z"
         }
       ]
     },
@@ -1297,7 +1297,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.789Z",
-          "updatedAt": "2026-06-29T05:31:01.034Z"
+          "updatedAt": "2026-06-29T05:38:12.427Z"
         }
       ]
     },
@@ -1337,7 +1337,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.810Z",
-          "updatedAt": "2026-06-29T05:31:01.039Z"
+          "updatedAt": "2026-06-29T05:38:12.432Z"
         }
       ]
     },
@@ -1377,7 +1377,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.834Z",
-          "updatedAt": "2026-06-29T05:31:01.043Z"
+          "updatedAt": "2026-06-29T05:38:12.437Z"
         }
       ]
     },
@@ -1417,7 +1417,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.856Z",
-          "updatedAt": "2026-06-29T05:31:01.047Z"
+          "updatedAt": "2026-06-29T05:38:12.441Z"
         }
       ]
     },
@@ -1457,7 +1457,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.879Z",
-          "updatedAt": "2026-06-29T05:31:01.051Z"
+          "updatedAt": "2026-06-29T05:38:12.445Z"
         }
       ]
     },
@@ -1497,7 +1497,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.900Z",
-          "updatedAt": "2026-06-29T05:31:01.055Z"
+          "updatedAt": "2026-06-29T05:38:12.450Z"
         }
       ]
     },
@@ -1537,7 +1537,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.926Z",
-          "updatedAt": "2026-06-29T05:31:01.059Z"
+          "updatedAt": "2026-06-29T05:38:12.453Z"
         }
       ]
     },
@@ -1643,7 +1643,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:38.980Z",
-          "updatedAt": "2026-06-29T05:31:01.063Z"
+          "updatedAt": "2026-06-29T05:38:12.457Z"
         }
       ]
     },
@@ -1683,7 +1683,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.008Z",
-          "updatedAt": "2026-06-29T05:31:01.067Z"
+          "updatedAt": "2026-06-29T05:38:12.461Z"
         }
       ]
     },
@@ -1723,7 +1723,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.036Z",
-          "updatedAt": "2026-06-29T05:31:01.071Z"
+          "updatedAt": "2026-06-29T05:38:12.465Z"
         }
       ]
     },
@@ -1763,7 +1763,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.056Z",
-          "updatedAt": "2026-06-29T05:31:01.075Z"
+          "updatedAt": "2026-06-29T05:38:12.469Z"
         }
       ]
     },
@@ -1803,7 +1803,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.075Z",
-          "updatedAt": "2026-06-29T05:31:01.079Z"
+          "updatedAt": "2026-06-29T05:38:12.473Z"
         }
       ]
     },
@@ -1843,7 +1843,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.100Z",
-          "updatedAt": "2026-06-29T05:31:01.083Z"
+          "updatedAt": "2026-06-29T05:38:12.477Z"
         }
       ]
     },
@@ -1883,7 +1883,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.122Z",
-          "updatedAt": "2026-06-29T05:31:01.086Z"
+          "updatedAt": "2026-06-29T05:38:12.481Z"
         }
       ]
     },
@@ -1923,7 +1923,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.142Z",
-          "updatedAt": "2026-06-29T05:31:01.090Z"
+          "updatedAt": "2026-06-29T05:38:12.486Z"
         }
       ]
     },
@@ -1963,7 +1963,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.170Z",
-          "updatedAt": "2026-06-29T05:31:01.094Z"
+          "updatedAt": "2026-06-29T05:38:12.490Z"
         }
       ]
     },
@@ -2003,7 +2003,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.189Z",
-          "updatedAt": "2026-06-29T05:31:01.099Z"
+          "updatedAt": "2026-06-29T05:38:12.494Z"
         }
       ]
     },
@@ -2043,7 +2043,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.208Z",
-          "updatedAt": "2026-06-29T05:31:01.102Z"
+          "updatedAt": "2026-06-29T05:38:12.498Z"
         }
       ]
     },
@@ -2083,7 +2083,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.226Z",
-          "updatedAt": "2026-06-29T05:31:01.106Z"
+          "updatedAt": "2026-06-29T05:38:12.503Z"
         }
       ]
     },
@@ -2123,7 +2123,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.247Z",
-          "updatedAt": "2026-06-29T05:31:01.111Z"
+          "updatedAt": "2026-06-29T05:38:12.507Z"
         }
       ]
     },
@@ -2163,7 +2163,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.270Z",
-          "updatedAt": "2026-06-29T05:31:01.114Z"
+          "updatedAt": "2026-06-29T05:38:12.511Z"
         }
       ]
     },
@@ -2203,7 +2203,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.289Z",
-          "updatedAt": "2026-06-29T05:31:01.118Z"
+          "updatedAt": "2026-06-29T05:38:12.515Z"
         }
       ]
     },
@@ -2243,7 +2243,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.306Z",
-          "updatedAt": "2026-06-29T05:31:01.122Z"
+          "updatedAt": "2026-06-29T05:38:12.519Z"
         }
       ]
     },
@@ -2283,7 +2283,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.326Z",
-          "updatedAt": "2026-06-29T05:31:01.127Z"
+          "updatedAt": "2026-06-29T05:38:12.524Z"
         }
       ]
     },
@@ -2345,7 +2345,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.349Z",
-          "updatedAt": "2026-06-29T05:31:01.132Z"
+          "updatedAt": "2026-06-29T05:38:12.528Z"
         }
       ]
     },
@@ -2429,7 +2429,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T22:52:39.385Z",
-          "updatedAt": "2026-06-29T05:31:01.136Z"
+          "updatedAt": "2026-06-29T05:38:12.533Z"
         }
       ]
     },
@@ -2843,7 +2843,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:27.513Z",
-          "updatedAt": "2026-06-29T05:31:01.140Z"
+          "updatedAt": "2026-06-29T05:38:12.538Z"
         }
       ]
     },
@@ -2883,7 +2883,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:27.542Z",
-          "updatedAt": "2026-06-29T05:31:01.145Z"
+          "updatedAt": "2026-06-29T05:38:12.542Z"
         }
       ]
     },
@@ -2923,7 +2923,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:33.894Z",
-          "updatedAt": "2026-06-29T05:31:01.149Z"
+          "updatedAt": "2026-06-29T05:38:12.546Z"
         }
       ]
     },
@@ -2963,7 +2963,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:33.925Z",
-          "updatedAt": "2026-06-29T05:31:01.153Z"
+          "updatedAt": "2026-06-29T05:38:12.551Z"
         }
       ]
     },
@@ -3003,7 +3003,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:33.950Z",
-          "updatedAt": "2026-06-29T05:31:01.157Z"
+          "updatedAt": "2026-06-29T05:38:12.555Z"
         }
       ]
     },
@@ -3043,7 +3043,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:39.431Z",
-          "updatedAt": "2026-06-29T05:31:01.162Z"
+          "updatedAt": "2026-06-29T05:38:12.559Z"
         }
       ]
     },
@@ -3083,7 +3083,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:39.465Z",
-          "updatedAt": "2026-06-29T05:31:01.166Z"
+          "updatedAt": "2026-06-29T05:38:12.564Z"
         }
       ]
     },
@@ -3123,7 +3123,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:39.490Z",
-          "updatedAt": "2026-06-29T05:31:01.170Z"
+          "updatedAt": "2026-06-29T05:38:12.568Z"
         }
       ]
     },
@@ -3163,7 +3163,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:43.977Z",
-          "updatedAt": "2026-06-29T05:31:01.175Z"
+          "updatedAt": "2026-06-29T05:38:12.572Z"
         }
       ]
     },
@@ -3203,7 +3203,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:49.645Z",
-          "updatedAt": "2026-06-29T05:31:01.179Z"
+          "updatedAt": "2026-06-29T05:38:12.576Z"
         }
       ]
     },
@@ -3243,7 +3243,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:49.675Z",
-          "updatedAt": "2026-06-29T05:31:01.183Z"
+          "updatedAt": "2026-06-29T05:38:12.581Z"
         }
       ]
     },
@@ -3283,7 +3283,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:49.703Z",
-          "updatedAt": "2026-06-29T05:31:01.187Z"
+          "updatedAt": "2026-06-29T05:38:12.585Z"
         }
       ]
     },
@@ -3323,7 +3323,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:57.732Z",
-          "updatedAt": "2026-06-29T05:31:01.191Z"
+          "updatedAt": "2026-06-29T05:38:12.589Z"
         }
       ]
     },
@@ -3363,7 +3363,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:57.757Z",
-          "updatedAt": "2026-06-29T05:31:01.196Z"
+          "updatedAt": "2026-06-29T05:38:12.593Z"
         }
       ]
     },
@@ -3403,7 +3403,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:00:57.783Z",
-          "updatedAt": "2026-06-29T05:31:01.200Z"
+          "updatedAt": "2026-06-29T05:38:12.598Z"
         }
       ]
     },
@@ -3443,7 +3443,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:01.917Z",
-          "updatedAt": "2026-06-29T05:31:01.204Z"
+          "updatedAt": "2026-06-29T05:38:12.603Z"
         }
       ]
     },
@@ -3483,7 +3483,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:06.450Z",
-          "updatedAt": "2026-06-29T05:31:01.208Z"
+          "updatedAt": "2026-06-29T05:38:12.607Z"
         }
       ]
     },
@@ -3523,7 +3523,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:06.477Z",
-          "updatedAt": "2026-06-29T05:31:01.212Z"
+          "updatedAt": "2026-06-29T05:38:12.612Z"
         }
       ]
     },
@@ -3563,7 +3563,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:06.502Z",
-          "updatedAt": "2026-06-29T05:31:01.215Z"
+          "updatedAt": "2026-06-29T05:38:12.616Z"
         }
       ]
     },
@@ -3603,7 +3603,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:10.799Z",
-          "updatedAt": "2026-06-29T05:31:01.219Z"
+          "updatedAt": "2026-06-29T05:38:12.621Z"
         }
       ]
     },
@@ -3643,7 +3643,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:10.829Z",
-          "updatedAt": "2026-06-29T05:31:01.224Z"
+          "updatedAt": "2026-06-29T05:38:12.626Z"
         }
       ]
     },
@@ -3727,7 +3727,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:20.671Z",
-          "updatedAt": "2026-06-29T05:31:01.228Z"
+          "updatedAt": "2026-06-29T05:38:12.631Z"
         }
       ]
     },
@@ -3767,7 +3767,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:20.706Z",
-          "updatedAt": "2026-06-29T05:31:01.232Z"
+          "updatedAt": "2026-06-29T05:38:12.636Z"
         }
       ]
     },
@@ -3807,7 +3807,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:25.561Z",
-          "updatedAt": "2026-06-29T05:31:01.236Z"
+          "updatedAt": "2026-06-29T05:38:12.641Z"
         }
       ]
     },
@@ -3847,7 +3847,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:25.588Z",
-          "updatedAt": "2026-06-29T05:31:01.240Z"
+          "updatedAt": "2026-06-29T05:38:12.645Z"
         }
       ]
     },
@@ -3887,7 +3887,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:48.975Z",
-          "updatedAt": "2026-06-29T05:31:01.244Z"
+          "updatedAt": "2026-06-29T05:38:12.649Z"
         }
       ]
     },
@@ -3927,7 +3927,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:49.015Z",
-          "updatedAt": "2026-06-29T05:31:01.248Z"
+          "updatedAt": "2026-06-29T05:38:12.653Z"
         }
       ]
     },
@@ -3967,7 +3967,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:49.051Z",
-          "updatedAt": "2026-06-29T05:31:01.252Z"
+          "updatedAt": "2026-06-29T05:38:12.658Z"
         }
       ]
     },
@@ -4007,7 +4007,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:57.328Z",
-          "updatedAt": "2026-06-29T05:31:01.256Z"
+          "updatedAt": "2026-06-29T05:38:12.663Z"
         }
       ]
     },
@@ -4047,7 +4047,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:57.362Z",
-          "updatedAt": "2026-06-29T05:31:01.260Z"
+          "updatedAt": "2026-06-29T05:38:12.667Z"
         }
       ]
     },
@@ -4087,7 +4087,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:01:57.411Z",
-          "updatedAt": "2026-06-29T05:31:01.264Z"
+          "updatedAt": "2026-06-29T05:38:12.671Z"
         }
       ]
     },
@@ -4127,7 +4127,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:01.846Z",
-          "updatedAt": "2026-06-29T05:31:01.268Z"
+          "updatedAt": "2026-06-29T05:38:12.675Z"
         }
       ]
     },
@@ -4167,7 +4167,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:06.010Z",
-          "updatedAt": "2026-06-29T05:31:01.272Z"
+          "updatedAt": "2026-06-29T05:38:12.679Z"
         }
       ]
     },
@@ -4207,7 +4207,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:06.036Z",
-          "updatedAt": "2026-06-29T05:31:01.276Z"
+          "updatedAt": "2026-06-29T05:38:12.684Z"
         }
       ]
     },
@@ -4247,7 +4247,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:06.067Z",
-          "updatedAt": "2026-06-29T05:31:01.280Z"
+          "updatedAt": "2026-06-29T05:38:12.688Z"
         }
       ]
     },
@@ -4287,7 +4287,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:10.517Z",
-          "updatedAt": "2026-06-29T05:31:01.284Z"
+          "updatedAt": "2026-06-29T05:38:12.692Z"
         }
       ]
     },
@@ -4327,7 +4327,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:10.546Z",
-          "updatedAt": "2026-06-29T05:31:01.288Z"
+          "updatedAt": "2026-06-29T05:38:12.696Z"
         }
       ]
     },
@@ -4367,7 +4367,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:10.574Z",
-          "updatedAt": "2026-06-29T05:31:01.292Z"
+          "updatedAt": "2026-06-29T05:38:12.701Z"
         }
       ]
     },
@@ -4407,7 +4407,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:14.745Z",
-          "updatedAt": "2026-06-29T05:31:01.297Z"
+          "updatedAt": "2026-06-29T05:38:12.705Z"
         }
       ]
     },
@@ -4447,7 +4447,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:18.899Z",
-          "updatedAt": "2026-06-29T05:31:01.301Z"
+          "updatedAt": "2026-06-29T05:38:12.710Z"
         }
       ]
     },
@@ -4487,7 +4487,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:23.151Z",
-          "updatedAt": "2026-06-29T05:31:01.304Z"
+          "updatedAt": "2026-06-29T05:38:12.714Z"
         }
       ]
     },
@@ -4527,7 +4527,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:27.047Z",
-          "updatedAt": "2026-06-29T05:31:01.308Z"
+          "updatedAt": "2026-06-29T05:38:12.719Z"
         }
       ]
     },
@@ -4567,7 +4567,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:31.101Z",
-          "updatedAt": "2026-06-29T05:31:01.312Z"
+          "updatedAt": "2026-06-29T05:38:12.724Z"
         }
       ]
     },
@@ -4607,7 +4607,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:31.169Z",
-          "updatedAt": "2026-06-29T05:31:01.317Z"
+          "updatedAt": "2026-06-29T05:38:12.728Z"
         }
       ]
     },
@@ -4647,7 +4647,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:35.593Z",
-          "updatedAt": "2026-06-29T05:31:01.320Z"
+          "updatedAt": "2026-06-29T05:38:12.732Z"
         }
       ]
     },
@@ -4687,7 +4687,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:45.188Z",
-          "updatedAt": "2026-06-29T05:31:01.324Z"
+          "updatedAt": "2026-06-29T05:38:12.736Z"
         }
       ]
     },
@@ -4727,7 +4727,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:45.218Z",
-          "updatedAt": "2026-06-29T05:31:01.327Z"
+          "updatedAt": "2026-06-29T05:38:12.740Z"
         }
       ]
     },
@@ -4767,7 +4767,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:45.247Z",
-          "updatedAt": "2026-06-29T05:31:01.331Z"
+          "updatedAt": "2026-06-29T05:38:12.744Z"
         }
       ]
     },
@@ -4807,7 +4807,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:49.465Z",
-          "updatedAt": "2026-06-29T05:31:01.335Z"
+          "updatedAt": "2026-06-29T05:38:12.749Z"
         }
       ]
     },
@@ -4847,7 +4847,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:49.492Z",
-          "updatedAt": "2026-06-29T05:31:01.339Z"
+          "updatedAt": "2026-06-29T05:38:12.753Z"
         }
       ]
     },
@@ -4887,7 +4887,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:49.519Z",
-          "updatedAt": "2026-06-29T05:31:01.343Z"
+          "updatedAt": "2026-06-29T05:38:12.758Z"
         }
       ]
     },
@@ -4927,7 +4927,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:53.417Z",
-          "updatedAt": "2026-06-29T05:31:01.347Z"
+          "updatedAt": "2026-06-29T05:38:12.761Z"
         }
       ]
     },
@@ -4967,7 +4967,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:53.442Z",
-          "updatedAt": "2026-06-29T05:31:01.351Z"
+          "updatedAt": "2026-06-29T05:38:12.765Z"
         }
       ]
     },
@@ -5007,7 +5007,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:57.540Z",
-          "updatedAt": "2026-06-29T05:31:01.355Z"
+          "updatedAt": "2026-06-29T05:38:12.770Z"
         }
       ]
     },
@@ -5047,7 +5047,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:02:57.571Z",
-          "updatedAt": "2026-06-29T05:31:01.359Z"
+          "updatedAt": "2026-06-29T05:38:12.775Z"
         }
       ]
     },
@@ -5087,7 +5087,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:03:02.249Z",
-          "updatedAt": "2026-06-29T05:31:01.363Z"
+          "updatedAt": "2026-06-29T05:38:12.780Z"
         }
       ]
     },
@@ -5127,7 +5127,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:03:02.278Z",
-          "updatedAt": "2026-06-29T05:31:01.366Z"
+          "updatedAt": "2026-06-29T05:38:12.784Z"
         }
       ]
     },
@@ -5167,7 +5167,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:10.248Z",
-          "updatedAt": "2026-06-29T05:31:01.371Z"
+          "updatedAt": "2026-06-29T05:38:12.789Z"
         }
       ]
     },
@@ -5207,7 +5207,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:15.026Z",
-          "updatedAt": "2026-06-29T05:31:01.375Z"
+          "updatedAt": "2026-06-29T05:38:12.793Z"
         }
       ]
     },
@@ -5247,7 +5247,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:23.992Z",
-          "updatedAt": "2026-06-29T05:31:01.380Z"
+          "updatedAt": "2026-06-29T05:38:12.798Z"
         }
       ]
     },
@@ -5287,7 +5287,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:27.793Z",
-          "updatedAt": "2026-06-29T05:31:01.384Z"
+          "updatedAt": "2026-06-29T05:38:12.802Z"
         }
       ]
     },
@@ -5327,7 +5327,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:31.877Z",
-          "updatedAt": "2026-06-29T05:31:01.388Z"
+          "updatedAt": "2026-06-29T05:38:12.806Z"
         }
       ]
     },
@@ -5367,7 +5367,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:31.902Z",
-          "updatedAt": "2026-06-29T05:31:01.392Z"
+          "updatedAt": "2026-06-29T05:38:12.810Z"
         }
       ]
     },
@@ -5407,7 +5407,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:31.927Z",
-          "updatedAt": "2026-06-29T05:31:01.396Z"
+          "updatedAt": "2026-06-29T05:38:12.814Z"
         }
       ]
     },
@@ -5447,7 +5447,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:35.939Z",
-          "updatedAt": "2026-06-29T05:31:01.400Z"
+          "updatedAt": "2026-06-29T05:38:12.818Z"
         }
       ]
     },
@@ -5487,7 +5487,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:11:47.754Z",
-          "updatedAt": "2026-06-29T05:31:01.404Z"
+          "updatedAt": "2026-06-29T05:38:12.821Z"
         }
       ]
     },
@@ -5527,7 +5527,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:00.421Z",
-          "updatedAt": "2026-06-29T05:31:01.407Z"
+          "updatedAt": "2026-06-29T05:38:12.826Z"
         }
       ]
     },
@@ -5567,7 +5567,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:09.264Z",
-          "updatedAt": "2026-06-29T05:31:01.412Z"
+          "updatedAt": "2026-06-29T05:38:12.830Z"
         }
       ]
     },
@@ -5607,7 +5607,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:09.295Z",
-          "updatedAt": "2026-06-29T05:31:01.415Z"
+          "updatedAt": "2026-06-29T05:38:12.835Z"
         }
       ]
     },
@@ -5647,7 +5647,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:17.318Z",
-          "updatedAt": "2026-06-29T05:31:01.418Z"
+          "updatedAt": "2026-06-29T05:38:12.839Z"
         }
       ]
     },
@@ -5687,7 +5687,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:17.353Z",
-          "updatedAt": "2026-06-29T05:31:01.423Z"
+          "updatedAt": "2026-06-29T05:38:12.843Z"
         }
       ]
     },
@@ -5727,7 +5727,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:27.494Z",
-          "updatedAt": "2026-06-29T05:31:01.427Z"
+          "updatedAt": "2026-06-29T05:38:12.847Z"
         }
       ]
     },
@@ -5767,7 +5767,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:27.519Z",
-          "updatedAt": "2026-06-29T05:31:01.430Z"
+          "updatedAt": "2026-06-29T05:38:12.851Z"
         }
       ]
     },
@@ -5807,7 +5807,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:32.976Z",
-          "updatedAt": "2026-06-29T05:31:01.434Z"
+          "updatedAt": "2026-06-29T05:38:12.856Z"
         }
       ]
     },
@@ -5847,7 +5847,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:33.001Z",
-          "updatedAt": "2026-06-29T05:31:01.438Z"
+          "updatedAt": "2026-06-29T05:38:12.860Z"
         }
       ]
     },
@@ -5887,7 +5887,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:33.030Z",
-          "updatedAt": "2026-06-29T05:31:01.441Z"
+          "updatedAt": "2026-06-29T05:38:12.864Z"
         }
       ]
     },
@@ -5927,7 +5927,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:37.401Z",
-          "updatedAt": "2026-06-29T05:31:01.446Z"
+          "updatedAt": "2026-06-29T05:38:12.869Z"
         }
       ]
     },
@@ -5967,7 +5967,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:37.440Z",
-          "updatedAt": "2026-06-29T05:31:01.450Z"
+          "updatedAt": "2026-06-29T05:38:12.874Z"
         }
       ]
     },
@@ -6007,7 +6007,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:12:44.014Z",
-          "updatedAt": "2026-06-29T05:31:01.453Z"
+          "updatedAt": "2026-06-29T05:38:12.879Z"
         }
       ]
     },
@@ -6047,7 +6047,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:02.459Z",
-          "updatedAt": "2026-06-29T05:31:01.457Z"
+          "updatedAt": "2026-06-29T05:38:12.884Z"
         }
       ]
     },
@@ -6087,7 +6087,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:02.484Z",
-          "updatedAt": "2026-06-29T05:31:01.462Z"
+          "updatedAt": "2026-06-29T05:38:12.889Z"
         }
       ]
     },
@@ -6127,7 +6127,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:06.659Z",
-          "updatedAt": "2026-06-29T05:31:01.465Z"
+          "updatedAt": "2026-06-29T05:38:12.894Z"
         }
       ]
     },
@@ -6167,7 +6167,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:14.716Z",
-          "updatedAt": "2026-06-29T05:31:01.469Z"
+          "updatedAt": "2026-06-29T05:38:12.899Z"
         }
       ]
     },
@@ -6207,7 +6207,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:20.232Z",
-          "updatedAt": "2026-06-29T05:31:01.472Z"
+          "updatedAt": "2026-06-29T05:38:12.903Z"
         }
       ]
     },
@@ -6247,7 +6247,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:20.258Z",
-          "updatedAt": "2026-06-29T05:31:01.476Z"
+          "updatedAt": "2026-06-29T05:38:12.907Z"
         }
       ]
     },
@@ -6287,7 +6287,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:31.803Z",
-          "updatedAt": "2026-06-29T05:31:01.479Z"
+          "updatedAt": "2026-06-29T05:38:12.911Z"
         }
       ]
     },
@@ -6327,7 +6327,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-27T23:13:37.133Z",
-          "updatedAt": "2026-06-29T05:31:01.483Z"
+          "updatedAt": "2026-06-29T05:38:12.916Z"
         }
       ]
     },
@@ -6367,7 +6367,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-29T05:28:40.080Z",
-          "updatedAt": "2026-06-29T05:31:01.487Z"
+          "updatedAt": "2026-06-29T05:38:12.921Z"
         }
       ]
     },
@@ -6407,7 +6407,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-06-29T05:28:41.000Z",
-          "updatedAt": "2026-06-29T05:31:01.491Z"
+          "updatedAt": "2026-06-29T05:38:12.925Z"
         }
       ]
     },
@@ -6520,6 +6520,406 @@
       "robotsChecked": true,
       "createdAt": "2026-06-29T05:30:31.220Z",
       "evidences": []
+    },
+    {
+      "id": "cmqysba8w00007djlwybfen2u",
+      "url": "https://en.wikipedia.org/wiki/Watcher_(angel)",
+      "title": "Watcher (angel) - Wikipedia",
+      "domain": "en.wikipedia.org",
+      "category": "crawled",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:35:56.576Z",
+      "author": null,
+      "publisher": null,
+      "summary": "Watcher (angel) - Wikipedia Jump to content Main menu Main menu move to sidebar hide Navigation Main page Contents Current events Random article About Wikipedia Contact us Contribute Help Learn to edit Community portal Recent changes Upload file Special pages Search Search Appearance Donate Create account Log in Personal tools Donate Create account Log in Contents move to sidebar hide (Top) 1 Good watchers in Daniel 2 Books of Enoch Toggle Books of Enoch subsection 2.1 Rogue watchers in the Book",
+      "content": "Watcher (angel) - Wikipedia Jump to content Main menu Main menu move to sidebar hide Navigation Main page Contents Current events Random article About Wikipedia Contact us Contribute Help Learn to edit Community portal Recent changes Upload file Special pages Search Search Appearance Donate Create account Log in Personal tools Donate Create account Log in Contents move to sidebar hide (Top) 1 Good watchers in Daniel 2 Books of Enoch Toggle Books of Enoch subsection 2.1 Rogue watchers in the Book of Enoch 2.2 Second Book of Enoch 3 Other sources and traditions Toggle Other sources and traditions subsection 3.1 The Book of Giants 3.2 The Book of Jubilees 3.3 Damascus Document 3.4 First Epistle to the Corinthians 3.5 Philo of Byblos 3.6 Kabbalah 3.7 Possible Babylonian/Aramaic origin 4 Depictions in popular culture 5 See also 6 Notes 7 References 8 General references Toggle the table of contents Watcher (angel) 16 languages Català Español Euskara فارسی Suomi Français Magyar Bahasa Indonesia Italiano 日本語 Malagasy Polski پنجابی Português اردو Tiếng Việt Edit links Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Print/export Download as PDF Printable version In other projects Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia Class of angelic beings in biblical texts \"Iyr\" redirects here. For other uses, see IYR . Watching angel on the spire of St Michael's church, Clifton Hampden , Oxfordshire, England A watcher ( Aramaic עִיר ʿiyr , plural עִירִין ʿiyrin , Greek : ἐιρ or ἐγρήγορος, egrḗgoros &#91; a &#93; ) is a type of biblical angel . The word is related to the root meaning to be awake. &#91; b &#93; It occurs in both plural and singular forms in the Book of Daniel , where reference is made to the holiness of the beings. The apocryphal Books of Enoch (2nd–1st centuries BC) refer to both good and bad Watchers, with a primary focus on the rebellious ones. &#91; 4 &#93; &#91; 5 &#93; Good watchers in Daniel [ edit ] In Daniel 4:13 , 17 , 23 there are three references to the class of \"watcher, holy one\" (\"watcher\", Aramaic ʿir ; \"holy one\", Aramaic qaddish ). The term is introduced by Nebuchadnezzar who says he saw \"a watcher, a holy one come down (singular verb) from heaven .\" He describes how in his dream the watcher says that Nebuchadnezzar will eat grass and be mad and that this punishment is \"by the decree of the watchers, the demand by the word of the holy ones\"&#160;... \"that the living may know that the Most High rules in the kingdom of men.\" After hearing the king's dream, Daniel considers for an hour and then responds: And whereas the king saw a holy watcher coming down from heaven and saying, ‘Cut down the tree and destroy it, but leave its stump and roots in the ground, with a band of iron and bronze, in the grass of the field, and let him be bathed with the dew of heaven, and let his lot be with the animals of the field, until seven times pass over him’— this is the interpretation, O king, and it is a decree of the Most High that has come upon my lord the king: You shall be driven away from human society, and your dwelling shall be with the wild animals. You shall be made to eat grass like oxen, you shall be bathed with the dew of heaven, and seven times shall pass over you, until you have learned that the Most High has sovereignty over the kingdom of mortals and gives it to whom he will. Daniel 4:23–25 (NRSVue) Lutheran Protestant reformer Johann Wigand viewed the watcher in Nebuchadnezzar's dream as either God himself, or the Son of God . He promoted Trinitarian thinking by linking verse 17 (\"The sentence is rendered by decree of the watchers\") with verse 24 (\"this is the interpretation, O king, and it is a decree of the Most High that has come upon my lord the king:\"). &#91; 6 &#93; Scholars view these \"watchers, holy ones\" as perhaps showing an influence of Babylonian religion , that is an attempt by the author of this section of Daniel to present Nebuchadnezzar's Babylonian gods recognizing the power of the god of Israel as \"Most High\". &#91; 7 &#93; The Greek Septuagint version differs from the Aramaic Masoretic Text : for example, the Aramaic text is ambiguous about who is telling the story of verse 14 , whether it is Nebuchadnezzar, or the watcher in his dream. &#91; 8 &#93; Books of Enoch [ edit ] The first Book of Enoch devotes much of its attention to the fall of the watchers . The Second Book of Enoch addresses the watchers (Gk. egrḗgoroi ) who are in fifth heaven where the fall took place. The Third Book of Enoch gives attention to the unfallen watchers. &#91; 9 &#93; The use of the term \"watchers\" is common in the Book of Enoch . The Book of the Watchers (1 Enoch 6–36) occurs in the Aramaic fragments with the phrase irin we-qadishin , \"Watchers and Holy Ones\", a reference to Aramaic Daniel. &#91; 10 &#93; The Aramaic irin \"watchers\" is rendered as \"angel\" (Greek angelos , Coptic malah ) in the Greek and Ethiopian translations, although the usual Aramaic term for angel malakha does not occur in Aramaic Enoch. &#91; 11 &#93; Some &#91; who? &#93; have attempted to date this section of 1 Enoch to around the 2nd–1st century BC and they believe this book is based on one interpretation of the Sons of God passage in Genesis 6 , according to which angels mated with human females, giving rise to a race of hybrids known as the Nephilim . The term irin is primarily applied to disobedient watchers who numbered a total of 200, and of whom their leaders are named; but equally Aramaic iri (\"watcher\" singular) is applied to the obedient archangels who chain them, such as Raphael (1 Enoch 22:6). Rogue watchers in the Book of Enoch [ edit ] Further information: Fallen angel In the Book of Enoch , the watchers ( Aramaic עִירִין, iyrin ) are angels dispatched to Earth to watch over the humans. &#91; citation needed &#93; They soon begin to lust for human women and, at the prodding of their leader Samyaza , defect to illicitly instruct mankind and procreate among them, arriving Mount Hermon . &#91; 12 &#93; The offspring of these unions are the Nephilim , savage giants who pillage the earth and endanger humanity. Samyaza and his associates further taught their human charges arts and technologies such as weaponry, cosmetics, mirrors, sorcery , and other techniques that would otherwise be discovered gradually over time by humans, not foisted upon them all at once. Eventually, God allows a Great Flood to rid the earth of the Nephilim, but first sends Uriel to warn Noah so as not to eradicate the human race. The watchers are bound \"in the valleys of the Earth\" until Judgment Day ( Jude 1:6 \"And the angels who did not keep their own position but deserted their proper dwelling, he has kept in eternal chains in deepest darkness for the judgment of the great day.\") (NRSVue). The chiefs of tens, listed in the Book of Enoch, are as follows: 7. And these are the names of their chiefs: Shemihazah —this one was their leader; Arteqoph , second to him; Remashel , third to him; Kokabel , fourth to him; Armumahel , fifth to him; Ramiel , sixth to him; Daniel , seventh to him; Ziqel , eighth to him; Baraqel , ninth to him; Asael , tenth to him; Hermani , eleventh to him; Matarel , twelfth to him; Ananel , thirteenth to him; Setawel , fourteenth to him; Samshiel , fifteenth to him; Sahriel , sixteenth to him; Tummiel , seventeenth to him; Turiel , eighteenth to him; Yomiel , nineteenth to him; Yehadiel , twentieth to him. 8. These are their chiefs of tens. &#91; 13 &#93; —&#8202;George W.E. Nickelsburg, 1 Enoch: The Hermeneia Translation , Chapter 6 The book of Enoch also lists leaders of the 200 fallen angels who married and commenced unnatural unions with human women, and who taught forbidden knowledge. Some are also listed in Book of Raziel (Sefer Raziel HaMalakh) , the Zohar , and Jubilees . Araqiel (also Arkas, Arkiel , Arakiel , Araqael , Araciel , Arqael , Sarquael ) taught humans the signs of the earth ( geomancy ). However, in the Sibylline Oracles , Araqiel is referred to not as a fallen angel , or watcher, but as one of the five angels who lead the souls of humans to judgment, the other four being Ramiel , Uriel , Samael , and Azazel . Armaros (also Amaros or Armoniel) in Enoch I taught humanity the resolving of enchantments (ambiguous but possibly spells and the undoing of them.) Azazel taught humans to make knives, swords, shields, and how to devise ornaments and cosmetics. (metallurgy, specifically in the context of war) Gadreel (or Gader'el) taught the art of cosmetics (camouflage), the use of weapons and killing blows (martial arts and weaponry). Baraqel (Baraqiel) taught the signs of the stars ( astrology ). Bezaliel mentioned in Enoch I, left out of most translations because of damaged manuscripts and problematic transmission of the text . Chazaqiel (sometimes Ezeqeel or Cambriel) taught humans the signs of the clouds ( meteorology ). Kokabiel (also Kakabel, Kochbiel, Kokbiel, Kabaiel, and Kochab), In the Book of Raziel he is a high-ranking, holy angel. In Enoch I, he is a fallen watcher, resident of the nether realms , and commands 365,000 surrogate spirits to do his bidding. Among other duties, he instructs his fellows in astrology. Penemue \"taught mankind the art of writing with ink and paper,\" and taught \"the children of men the bitter and the sweet and the secrets of wisdom.\" (I Enoch 69.8) Sariel (also Suriel ) taught humankind about the courses of the moon (at one time regarded as forbidden knowledge). Samyaza (also Shemyazaz, Shamazya, Semiaza, Shemhazi, Semyaza and Amezyarak) is one of the leaders of the fall from heaven in Vocabulaire de l'Angelologie . Shamsiel , once a guardian of Eden as stated in the Zohar , served as one of the two chief aides to the archangel Uriel (the other aide being Hasdiel) when Uriel bore his standard into battle, and is the head of 365 legions of angels and also crowns prayers , accompanying them to the 5th heaven . In Jubilees , he is referred to as one of the Watchers. He is a fallen angel who teaches the signs of the sun . Yeqon or Jeqon ( Hebrew : יָקוּם , romanized :&#160; Yaqum , lit. &#8201; ' he shall rise ' ) was the ringleader who first tempted the other Watchers into having sexual relations with humans. &#91; 14 &#93; His accomplices were Asbeel , Gadreel, Penemue, and Kasdaye (or Kasadya), who were all identified as individual \" satans \". The account of the Book of Enoch has been associated with the passage in Genesis 6:1–4, which speaks of Sons of God instead of Watchers: When men began to multiply on earth and daughters were born to them, the sons of God saw how beautiful the daughters of man were, and so they took for their wives as many of them as they chose. Then the Lord said: \"My spirit shall not remain in man forever, since he is but flesh. His days shall comprise one hundred and twenty years.\" At that time the Nephilim appeared on earth [{as well as later}], after the sons of God had intercourse with the daughters of man, who bore them sons. They were the heroes of old, the men of renown. —&#8202; Genesis 6:1–4 Second Book of Enoch [ edit ] \"Grigori (angel)\" redirects here. For the masculine given name, see Gregory (given name) . The Jewish pseudepigraphon Second Book of Enoch ( Slavonic Enoch ) refers to the Grigori , who are the same as the Watchers of 1 Enoch. &#91; 15 &#93; The Slavic word Grigori used in the book is a transcription &#91; 16 &#93; of the Greek word ἐγρήγοροι egrḗgoroi , meaning \"wakeful\". &#91; 17 &#93; The Hebrew equivalent is ערים, meaning \"waking\", \"awake\". &#91; 18 &#93; Chapter 18 presents the Grigori as countless soldiers of human appearance, \"their size being greater than that of great giants\". They are located in the fifth heaven and identified as \"the Grigori, who with their ",
+      "rawHtml": null,
+      "keywords": "crawl(d0): theme: watchers",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:35:56.576Z",
+      "evidences": [
+        {
+          "id": "cmqysba9400027djlj3cz33ob",
+          "sourceId": "cmqysba8w00007djlwybfen2u",
+          "scriptureRef": "1-enoch 6:6",
+          "scriptureText": null,
+          "claim": "Crawled for theme: watchers",
+          "corroboration": "Watcher (angel) - Wikipedia Jump to content Main menu Main menu move to sidebar hide Navigation Main page Contents Current events Random article About Wikipedia Contact us Contribute Help Learn to edit Community portal Recent changes Upload file Special pages Search Search Appearance Donate Create account Log in Personal tools Donate Create account Log in Contents move to sidebar hide (Top) 1 Good watchers in Daniel 2 Books of Enoch Toggle Books of Enoch subsection 2.1 Rogue watchers in the Book of Enoch 2.2 Second Book of Enoch 3 Other sources and traditions Toggle Other sources and traditions subsection 3.1 The Book of Giants 3.2 The Book of Jubilees 3.3 Damascus Document 3.4 First Epistle to the Corinthians 3.5 Philo of Byblos 3.6 Kabbalah 3.7 Possible Babylonian/Aramaic origin 4 Depictions in popular culture 5 See also 6 Notes 7 References 8 General references Toggle the table of contents Watcher (angel) 16 languages Català Español Euskara فارسی Suomi Français Magyar Bahasa Indonesia Italiano 日本語 Malagasy Polski پنجابی Português اردو Tiếng Việt Edit links Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Print/export Download as PDF Printable version In other projects Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia Class of angelic beings in biblical texts \"Iyr\" redirects here. For other uses, see IYR . Watching angel on the spire of St Michael's church, Clifton Hampden , Oxfordshire, England A watcher ( Aramaic עִיר ʿiyr , plural עִירִין ʿiyrin , Greek : ἐιρ or ἐγρήγορος, egrḗgoros &#91; a &#93; ) is a type of biblical angel .",
+          "alignment": "contextualizes",
+          "confidence": 0.33,
+          "claimTypeSlug": "scholarly-consensus",
+          "notes": "Recursive crawl (depth 0) from theme: watchers. ",
+          "blindspot": true,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-06-29T05:35:56.584Z",
+          "updatedAt": "2026-06-29T05:38:12.929Z"
+        }
+      ]
+    },
+    {
+      "id": "cmqysbc4l00057djlfq6wv3q8",
+      "url": "https://www.sacred-texts.com/bib/boe/index.htm",
+      "title": "The Book of Enoch Index | Internet Sacred Text Archive",
+      "domain": "sacred-texts.com",
+      "category": "crawled",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:35:59.014Z",
+      "author": null,
+      "publisher": null,
+      "summary": "The Book of Enoch Index | Internet Sacred Text Archive Sacred Texts Bible Apocrypha Buy this Book on Kindle The Book of Enoch tr. by R.H. Charles [1917] Contents Start Reading Page Index Text [Zipped] The Book of Enoch, written during the second century B.C.E., is one of the most important non-canonical apocryphal works, and probably had a huge influence on early Christian, particularly Gnostic, beliefs.",
+      "content": "The Book of Enoch Index | Internet Sacred Text Archive Sacred Texts Bible Apocrypha Buy this Book on Kindle The Book of Enoch tr. by R.H. Charles [1917] Contents Start Reading Page Index Text [Zipped] The Book of Enoch, written during the second century B.C.E., is one of the most important non-canonical apocryphal works, and probably had a huge influence on early Christian, particularly Gnostic, beliefs. Filled with hallucinatory visions of heaven and hell, angels and devils, Enoch introduced concepts such as fallen angels, the appearance of a Messiah, Resurrection, a Final Judgement, and a Heavenly Kingdom on Earth. Interspersed with this material are quasi-scientific digressions on calendrical systems, geography, cosmology, astronomy, and meteorology. This etext has been prepared specially for sacred-texts, and is a great improvement over other versions on the Internet, with the introduction, correct verse numbering, page numbers from the 1917 edition, and intact critical apparatus. Title Page Editors' Preface Introduction Abbreviations, Brackets and Symbols Specially Used in the Translation of 1 Enoch The Book of Enoch Chapter I Chapter II Chapter III. Chapter IV. Chapter V. Chapter VI. Chapter VII Chapter VIII. Chapter IX Chapter X Chapter XI Chapter XII Chapter XIII Chapter XIV Chapter XV Chapter XVI Enoch's Journeys through the Earth and Sheol Chapter XVII Chapter XVIII Chapter XIX Chapter XX Chapter XXI Chapter XXII Chapter XXIII Chapter XXIV Chapter XXV Chapter XXVI Chapter XXVII Chapter XXVIII Chapter XXIX Chapter XXX Chapter XXXI Chapter XXXII Chapter XXXIII Chapter XXXIV Chapter XXXV Chapter XXXVI The Parables Chapter XXXVII The First Parable Chapter XXXVIII Chapter XXXIX Chapter XL Chapter XLI Chapter XLII Chapter XLIII Chapter XLIV The Second Parable Chapter XLV Chapter XLVI Chapter XLVII Chapter XLVIII Chapter XLIX Chapter L Chapter LI Chapter LII Chapter LIII Chapter LIV Chapter LIV Chapter LVI Chapter LVII The Third Parable Chapter LVIII. Chapter LIX Book of Noah--a Fragment Chapter LX Chapter LXI Chapter LXII Chapter LXIII Chapter LXIV Chapter LXV Chapter LXVI Chapter LXVII Chapter LXVIII Chapter LXIX Chapter LXX Chapter LXXI The Book of the Courses of the Heavenly Luminaries Chapter LXXII. Chapter LXXIII Chapter LXXIV Chapter LXXV Chapter LXXVI Chapter LXXVII Chapter LXXVIII Chapter LXXIX Chapter LXXX Chapter LXXI Chapter LXXXII The Dream-Vision Chapter LXXXIII Chapter LXXXIV Chapter LXXXV Chapter LXXXVI Chapter LXXXVII Chapter LXXXVIII Chapter LXXXIX Chapter XC The Concluding Section of the Book Chapter XCII Chapter XCI Chapter XCIII Chapter XCI Chapter XCIV Chapter XCV Chapter XCVI Chapter XCVII Chapter XCVIII Chapter XCIX Chapter C Chapter CI Chapter CII. Chapter CIII Chapter CIV Chapter CV Fragment of the Book of Noah Chapter CVI Chapter CVII An Appendix to the Book of Enoch Chapter CVIII Sacred Texts | Bible &laquo; Previous: Errata Index Next: The Book of Enoch: Page Index &raquo;",
+      "rawHtml": null,
+      "keywords": "crawl(d0): theme: book of enoch",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:35:59.014Z",
+      "evidences": [
+        {
+          "id": "cmqysbc4s00077djlunz5c5rq",
+          "sourceId": "cmqysbc4l00057djlfq6wv3q8",
+          "scriptureRef": "1-enoch 1:1",
+          "scriptureText": null,
+          "claim": "Crawled for theme: book of enoch",
+          "corroboration": "The Book of Enoch Index | Internet Sacred Text Archive Sacred Texts Bible Apocrypha Buy this Book on Kindle The Book of Enoch tr. by R.H. Charles [1917] Contents Start Reading Page Index Text [Zipped] The Book of Enoch, written during the second century B.C.E., is one of the most important non-canonical apocryphal works, and probably had a huge influence on early Christian, particularly Gnostic, beliefs.",
+          "alignment": "contextualizes",
+          "confidence": 0.33,
+          "claimTypeSlug": "tradition-devotional",
+          "notes": "Recursive crawl (depth 0) from theme: book of enoch. ",
+          "blindspot": true,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-06-29T05:35:59.021Z",
+          "updatedAt": "2026-06-29T05:38:12.938Z"
+        }
+      ]
+    },
+    {
+      "id": "cmqysc135000a7djlepr8tkzk",
+      "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/date-of-the-parables-of-enoch-a-critical-review/8131FB5EB7548A7DB2B3ED2290C6EEC1",
+      "title": "The Date of the Parables of Enoch: A Critical Review* | New Testament Studies | Cambridge Core",
+      "domain": "cambridge.org",
+      "category": "crawled",
+      "credibilityTier": "peer-reviewed",
+      "credibility": 0.92,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:36:31.361Z",
+      "author": null,
+      "publisher": null,
+      "summary": "The Date of the Parables of Enoch: A Critical Review* | New Testament Studies | Cambridge Core Skip to main content Accessibility help Login Alert Cancel Log in × &#215; Discover Content Products and Services Register Log In (0) Cart Logo for Cambridge Core from Cambridge University Press. Click to return to homepage. Search Logo for Cambridge Core from Cambridge University Press.",
+      "content": "The Date of the Parables of Enoch: A Critical Review* | New Testament Studies | Cambridge Core Skip to main content Accessibility help Login Alert Cancel Log in × &#215; Discover Content Products and Services Register Log In (0) Cart Logo for Cambridge Core from Cambridge University Press. Click to return to homepage. Search Logo for Cambridge Core from Cambridge University Press. Click to return to homepage. Browse Services Open research Institution Login Search Menu links Browse Subjects Subjects (A-D) Anthropology Archaeology Area Studies Art Chemistry Classical Studies Computer Science Drama, Theatre, Performance Studies Subjects (E-K) Earth and Environmental Science Economics Education Engineering English Language Teaching – Resources for Teachers Film, Media, Mass Communication General Science Geography History Subjects (L-O) Language and Linguistics Law Life Sciences Literature Management Materials Science Mathematics Medicine Music Nutrition Subjects (P-Z) Philosophy Physics and Astronomy Politics and International Relations Psychiatry Psychology Religion Social Science Research Methods Sociology Statistics and Probability Open access All open access publishing Open access Open access journals Research open journals Journals containing open access Open access articles Open access books Open access Elements Journals Explore All journal subjects Search journals Open access Open access journals Research open journals Journals containing open access Open access articles Collections Cambridge Forum Cambridge Law Reports Collection Cambridge Prisms Research Directions Books Explore Books Open access books New books Flip it Open Collections Cambridge Companions Cambridge Editions Cambridge Histories Cambridge Library Collection Cambridge Shakespeare Cambridge Handbooks Collections (cont.) Dispute Settlement Reports Online Flip it Open Hemingway Letters Shakespeare Survey Stahl Online The Correspondence of Isaac Newton Elements Explore About Elements Elements series Open access Elements New Elements Subjects (A-E) Anthropology Archaeology Classical Studies Computer Science Drama, Theatre, Performance Studies Earth and Environmental Sciences Economics Education Engineering Subjects (F-O) Film, Media, Mass Communication History Language and Linguistics Law Life Sciences Literature Management Mathematics Medicine Music Subjects (P-Z) Philosophy Physics and Astronomy Politics and International Relations Psychology Religion Sociology Statistics and Probability Textbooks Explore Cambridge Higher Education Title list New titles Collections Book collections Cambridge Companions Cambridge Editions Cambridge Histories Cambridge Library Collection Cambridge Shakespeare Cambridge Handbooks Book collections (cont.) Dispute Settlement Reports Online Flip it Open Hemingway Letters Shakespeare Survey Stahl Online The Correspondence of Isaac Newton Journal collections Cambridge Forum Cambridge Law Reports Collection Cambridge Materials Cambridge Prisms Series All series Partners Partners Agenda Publishing Anthem Press ARC Humanities Press Boydell & Brewer Bristol University Press Central European University Press Edinburgh University Press Emirates Center for Strategic Studies and Research Facet Publishing Foundation Books Partners (cont.) Gerlach Press Intersentia ISEAS-Yusof Ishak Institute Jagiellonian University Press Manchester University Press Multilingual Matters Oxbow Books Royal Economic Society The University of Adelaide Press Unisa Press Partners (cont.) Wits University Press Services About About Cambridge Core About Accessibility statement CrossMark policy Ethical Standards Environment and sustainability Environment and sustainability Reducing print Journals moving to online only Guides User guides User Guides and Videos Support Videos Training Help Cambridge Core help Contact us Technical support Agents Services for agents Services for agents Journals for agents Books for agents Price list Authors Journals Journal authors Journal publishing statistics Corresponding author Seeking permission to use copyrighted material Publishing supplementary material Preparing accessible materials Journal production - FAQs Journals (cont.) Author affiliations Co-reviewing policy Anonymising your manuscript Publishing open access Convert your article to Gold Open Access Publishing Open Access - webinars Journals (cont.) Preparing and submitting your paper Publication journey Publishing agreement FAQs for journal authors Author Information Form FAQs Promoting your published paper Measuring impact Journals artwork guide Using ORCID Books Books Publishing an open access book Marketing your book Author guides for Cambridge Elements Corporates Corporates Commercial reprints Advertising Sponsorship Book special sales Contact us Editors Information Journal development Peer review for editors Open access for editors Policies and guidelines Resources The editor&#39;s role Open research for editors Engagement and promotion for editors Librarians Information Open Access for Librarians Transformative agreements Transformative Agreements - FAQs Evidence based acquisition Cambridge libraries of the world podcast Purchasing models Journals Publishing Updates Products Cambridge frontlist Cambridge journals digital archive Hot topics Other digital products Perpetual access products Price list Developing country programme New content Tools Eligibility checker Transformative agreements KBART MARC records Using MARCEdit for MARC records Inbound OpenURL specifications COUNTER usage reporting Resources Catalogues and resources Making the most of your EBA Posters Leaflets and brochures Additional resources Find my sales contact Training Read and publish resources Peer review Peer review How to peer review journal articles How to peer review book proposals How to peer review Registered Reports Peer review FAQs Ethics in peer review Online peer review systems A guide to Publons Publishing ethics Journals Publishing ethics guidelines for journals Core editorial policies for journals Authorship and contributorship for journals Affiliations for journals Research ethics for journals Competing interests and funding for journals Journals (cont.) Data and supporting evidence for journals Misconduct for journals Corrections, retractions and removals for journals Versions and adaptations for journals Libel, defamation and freedom of expression Business ethics journals Books Publishing ethics guidelines for books Core editorial policies for books Authorship and contributorship for books Affiliations for books Research ethics for books Competing interests and funding for books Books (cont.) Data and supporting evidence for books Misconduct for books Corrections, retractions and removals for books Versions and adaptations for books Libel, defamation and freedom of expression Business ethics books Publishing partners Publishing partners Publishing partnerships Book publishing partners eBook publishing partnerships Journal publishing partnerships Publishing partners (cont.) Journals publishing Customer support Membership Services Our Team Open research Open access policies Open access policies Open research Open access policies Cambridge University Press and Plan S Text and data mining Preprint policy Social sharing Journals Open access journals Gold Open Access journals Transformative journals Green Open Access policy for journals Transparent pricing policy for journals Books and Elements Open access books Gold open access books Green Open Access policy for books Open access Elements Open access publishing About open access Open research Open Access Week What is open access? Open access glossary Open access myths Hybrid Open Access FAQs Eligibility checker Open access resources Open access resources Benefits of open access Creative commons licences Funder policies and mandates Article type definitions Convert your article to Gold Open Access Open research initiatives Research transparency Transparency and openness Open Practice Badges OA organisations, initiatives & directories Registered Reports Annotation for Transparent Inquiry (ATI) Journal flips Open access journal flips OA Journal Flip FAQs Flip it Open Flip it Open Flip it Open FAQs Open access funding Open access funding Funding open access publication Cambridge Open Equity Initiative Completing a RightsLink (open access) transaction Cambridge Open Engage Cambridge Open Engage Cambridge Open Engage Partner With Us Branded Hubs Event Workspaces Partner Resources APSA Preprints APSA Preprints FAQs Hostname: page-component-5db58dd55d-mhzq2 Total loading time: 0 Render date: 2026-06-28T02:04:48.674Z Has data issue: false hasContentIssue false Home &gt; Journals &gt; New Testament Studies &gt; Volume 25 Issue 3 &gt; The Date of the Parables of Enoch: A Critical Review* English Français New Testament Studies Article contents Extract References The Date of the Parables of Enoch: A Critical Review * Published online by Cambridge University Press: 05 February 2009 M. A. KNIBB Article Metrics Article contents Extract References Get access Share Cite Rights & Permissions [Opens in a new window] Extract Amongst the many incidental issues raised by J. T. Milik in his edition of the Aramaic fragments of Enoch from Qumran 1 that of the date of the Parables of Enoch is perhaps one of the most important. Although there has never been anything approaching a consensus as to the exact date of this work, I would think it fair to say that many scholars in this century, if not the majority, have taken the view that the Parables are Jewish in origin; many have also argued that they date from before A.D. 70. 2 Milik's view that the Parables are Christian and date from around A.D. 270 has such enormous implications for our understanding of the development of intertestamental Judaism and of the use of the term ‘Son of Man’ in the gospels that it demands very careful consideration. It also suggests that the evidence on which the Jewish origin and pre-A.D. 70 dating has been based needs to be re-examined. Information Type Seminar Report Information New Testament Studies , Volume 25 , Issue 3 , April 1979 , pp. 345 - 359 DOI: https://doi.org/10.1017/S0028688500004963 [Opens in a new window] Copyright Copyright © Cambridge University Press 1979 Access options Get access to the full version of this content by using one of the access options below. (Log in options will check for institutional or personal access. Content may require purchase if you do not have access.) Article purchase Temporarily unavailable References 1 1 Milik , J. T. (with the collaboration of M. Black), The Books of Enoch. Aramaic Fragments of Qumrân Cave 4 ( Oxford , 1976 ) Google Scholar . For a review see Ullendorff , E. and Knibb , M. A. , B.S.O.A.S. 40 ( 1977 ), 601 f. Google Scholar 2 2 Typical dates that have been proposed include the early Maccabaean period (cf. Frey , J. B. , ‘ Apocryphes de l'Ancient Testament. 1. Le Livre d'Hénoch ’, Suppl. Dict. Bibles , cols. 360 –4 Google Scholar ; Frey argues that the Parables were composed shortly after the death of Antiochus Epiphanes); the reign of Alexander Jannaeus (cf. Charles , R. H. , The Book of Enoch , 2nd edn Oxford , 1912 , pp. liv, 67, 72 f., 109) Google Scholar ; the reign of Herod (cf. Sjöberg , E. , Der Menschensohn im äthiopischen Henochbuch , Lund , 1946 , pp. 35 –9 Google Scholar ; Sjöberg allows for the possibility of a slightly later date, but believes that the Parables are from before A.D. 70). Black , M. (‘ The “Parables” of Enoch (I En. 35–71) and the “Son of Man ’, Exp. T. 88 ( 1976 ), 5 – 9 ) Google Scholar apparently accepts the dating proposed by Milik. After summarizing Milik's discussion he states: ‘This is an impressive array of arguments, the result of which could lead to the total rejection of the Parables, in particular their Son of Man visions, as late secondary tradition, inspired by the gospels rather than the basis of their Son of Man Christology",
+      "rawHtml": null,
+      "keywords": "crawl(d1): theme: book of enoch",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:36:31.361Z",
+      "evidences": [
+        {
+          "id": "cmqysc13h000c7djlpquvu7m9",
+          "sourceId": "cmqysc135000a7djlepr8tkzk",
+          "scriptureRef": "1-enoch 1:1",
+          "scriptureText": null,
+          "claim": "Crawled for theme: book of enoch",
+          "corroboration": "The Date of the Parables of Enoch: A Critical Review* | New Testament Studies | Cambridge Core Skip to main content Accessibility help Login Alert Cancel Log in × &#215; Discover Content Products and Services Register Log In (0) Cart Logo for Cambridge Core from Cambridge University Press. Click to return to homepage. Search Logo for Cambridge Core from Cambridge University Press.",
+          "alignment": "contextualizes",
+          "confidence": 0.552,
+          "claimTypeSlug": "scholarly-consensus",
+          "notes": "Recursive crawl (depth 1) from theme: book of enoch. ",
+          "blindspot": false,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-06-29T05:36:31.373Z",
+          "updatedAt": "2026-06-29T05:38:12.942Z"
+        }
+      ]
+    },
+    {
+      "id": "cmqysc2g5000f7djluz7m526r",
+      "url": "https://www.academia.edu/4570714/On_the_Origin_of_Watchers_A_Comparative_Study_of_the_Antediluvian_Wisdom_in_Mesopotamian_and_Jewish_Traditions",
+      "title": "(PDF) On the Origin of Watchers: A Comparative Study of the Antediluvian Wisdom in Mesopotamian and Jewish Traditions",
+      "domain": "academia.edu",
+      "category": "crawled",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.7,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:36:33.125Z",
+      "author": null,
+      "publisher": null,
+      "summary": "(PDF) On the Origin of Watchers: A Comparative Study of the Antediluvian Wisdom in Mesopotamian and Jewish Traditions Log In Sign Up Log In Sign Up more About Press Papers Terms Privacy Copyright We&#39;re Hiring! Help Center less Outline keyboard_arrow_down Title Abstract Introduction Conclusion References All Topics Theology Religious Texts and Scriptures download Download Free PDF Download Free PDF On the Origin of Watchers: A Comparative Study of the Antediluvian Wisdom in Mesopotamian and J",
+      "content": "(PDF) On the Origin of Watchers: A Comparative Study of the Antediluvian Wisdom in Mesopotamian and Jewish Traditions Log In Sign Up Log In Sign Up more About Press Papers Terms Privacy Copyright We&#39;re Hiring! Help Center less Outline keyboard_arrow_down Title Abstract Introduction Conclusion References All Topics Theology Religious Texts and Scriptures download Download Free PDF Download Free PDF On the Origin of Watchers: A Comparative Study of the Antediluvian Wisdom in Mesopotamian and Jewish Traditions Amar Annus 2010, Journal for The Study of The Pseudepigrapha https://doi.org/10.1177/0951820710373978 visibility … description 44 pages description See full PDF download Download PDF bookmark Save to Library share Share close Sign up for access to the world's latest research Sign up for free arrow_forward check Get notified about relevant papers check Save papers to use in your research check Join the discussion with peers check Track your impact Abstract In the article, it is argued that the origin of Watchers derives from the Mesopotamian mythology of the antediluvian sages (apkallus). More precisely, it is proposed that the mythology of Watchers and their sons the giants derived from inverted versions of various Mesopotamian myths and beliefs about apkallus. On some layers of Mesopotamian mythology and ritual practices, the sages were already regarded as dangerous and potentially malicious creatures, upon which the Jewish authors could build their parody. Among other associations, the apkallus had strong ties to Mesopotamian demonology, and they were occasionally counted as evil beings, capable of witchcraft. This shows that the wickedness of antediluvian teachers of humankind in Jewish sources was not wholly an inversion of the Mesopotamian traditions by Jewish scholars, but was partly taken from already existing trends in Mesopotamian demonology. ... Read more Related papers sOme OTherwOrldly jOurneys in mesOPOTamian, jewish, mandaean and yeZidi TradiTiOns albert veenhoven aBsTracT This paper tries to demonstrate that some motifs in the descriptions of the soul&#39;s journey to the hereafter in Mandaean and Yezidi beliefs have parallels in ancient Mesopotamian texts. The same motifs are applied to heavenly ascents in Jewish apocalypticism and mysticism, and also in some Mandaean texts. The Netherworld or Paradise images in those descriptions often correspond to specific features in Babylonian mystical texts and literature. The continuity of the Mesopotamian intellectual traditions in the later world, especially in Jewish mysticism has been a favourite area of research for Simo Parpola during the last two decades. The assumption of a Mesopotamian heritage in the Jewish traditions such as Kabbala still raises considerable controversy among many scholars, and the cognate models of reconstruction are often said to belong to the methods of the &quot; Helsinki school &quot;. I am rather sceptical about the existence of such a school as a real institution either in the past or present, and moreover, the evidence seems to indicate that the influence of professor Parpola&#39;s ideas in the scholarship of ancient Near Eastern religion is more widespread than just the Helsinki area. Prof. Parpola has given a fresh impetus to comparative studies in Near Eastern religions, both ancient and modern. While reading religious and literary texts from the Middle East, irrespective of their age and origins, one is frequently struck by how similar the texts in different languages, ages and regions can be, both in style and content. The intermixture of cultures and traditions is evident in every step one takes in the study of the ancient Near East, but only much luck and scholarly open-mindedness can enlighten us to see how precisely religious ideas, the pieces of ancient wisdom spread and circulated from one culture to another. One such case was analyzed by Peter Kingsley in 1 The present paper was written by a partial support of a grant from Estonian Science Foundation, no. 6625. download Download free PDF View PDF chevron_right General Considerations on Main Concerns in the Religion of Ancient Mesopotamia Pietro Mander download Download free PDF View PDF chevron_right ’The Learned Savant Who Guards the Secrets of the Great Gods’: Evolution of the Roles and Titles of the Seventh Antediluvian Hero in Mesopotamian and Enochic Traditions: Part I: Mesopotamian Traditions Andrei Orlov download Download free PDF View PDF chevron_right Review of Helge S. Kvanvig, Primeval History: Babylonian, Biblical, and Enochic. An Intertextual Reading (Supplements to the Journal for the Study of Judaism 148; Leiden: Brill, 2011). Henryk Drawnel download Download free PDF View PDF chevron_right A Demonic Servant in Rav Papa&#39;s Household: Demons as Subjects in the Mesopotamian Talmud. Sara Ronis The Aggada of the Babylonian Talmud and its Cultural World, edited by Geoffrey Herman and Jeffrey Rubenstein, 2018 download Download free PDF View PDF chevron_right Behind the Names ʿYryn, Gbryn, Nplyn: Protagonists of the Earliest Tradition of the Watchers Ida Fröhlich The Aramaic Books of Enoch and Related Literature from Qumran, 2024 download Download free PDF View PDF chevron_right Towards a Comparative Approach to Demonology in Antiquity: The Case of Ancient Egypt and Mesopotamia Rita Lucarelli Archiv für Religionsgeschichte, Band 14, Heft 1, 2013 This essay provides a general introduction to demonology in antiquity as well as a focus on ancient Egypt and Mesopotamia. It is also meant as an introduction to those papers which were originally presented at the international conference titled “Evil Spirits, Monsters and Benevolent Protectors: Demonology in Ancient Egypt and Mesopotamia,” held on April 23, 2012 at the Institute for the Study of the Ancient World of New York University, contained in the first section of this volume. Questions of the definition and function of demons in ancient Egyptian and Mesopotamian civilizations are raised and discussed in light of a comparative approach to the study of ancient religions. download Download free PDF View PDF chevron_right 2024. Bácskay, A. - Niederreiter, Z.: Essays written in the exhibition catalogue Mesopotamia. Kingdom of Gods and Demons Zoltán Niederreiter In: Z. Niederreiter et al. (eds.), Mesopotamia: Kingdom of Gods and Demons, Budapest, 2024 The Role of Religion and Magic during the Life Path 7.1 &quot;[the offspring] came out …, a [human] creature came out promptly and saw [the light of the sun]&quot; download Download free PDF View PDF chevron_right Some Considerations about Demons in Mesopotamia Lorenzo Verderame The present article provides an analysis of general traits of those particular extra-human beings conventionally called “demons” found in ancient Mesopotamian religion. Furthermore, methodological problems on the topic are discussed according to a historical-religious point of view. download Download free PDF View PDF chevron_right Gods, Demons and Symbols of Ancient Mesopotamia, Jeremy Black, & Anthony Grün Paul Skorpen 1992 Ancient Mesopotamia was a highly complex culture whose achievements included the invention of writing. This illustrated text offers a reference guide to Mesopotamian religion, mythology and magic between about 3000 BC and the advent of the Christian era. Gods, goddesses, demons, monsters, magic, myths, religious symbolism, rituals and the spiritual world are all discussed in alphabetical entries ranging from short accounts to extended essays. download Download free PDF View PDF chevron_right See full PDF download Download PDF Journal for the study of the Pseudepigrapha Vol 19.4 (2010): 277-320 © The Author(s), 2010. Reprints and Permissions: http://www.sagepub.co.uk/JournalsPermissions.nav DOI: 10.1177/0951820710373978 http://JSP.sagepub.com On the Origin of Watchers: A Comparative Study of the Antediluvian Wisdom in Mesopotamian and Jewish Traditions* AMAR ANNUS University of Tartu, Ülikooli 18, 50090 Tartu, Estonia Abstract In the article, it is argued that the origin of Watchers derives from the Mesopotamian mythology of the antediluvian sages (apkallus). More precisely, it is proposed that the mythology of Watchers and their sons the giants derived from inverted versions of various Mesopotamian myths and beliefs about apkallus. On some layers of Meso- potamian mythology and ritual practices, the sages were already regarded as danger- ous and potentially malicious creatures, upon which the Jewish authors could build their parody. Among other associations, the apkallus had strong ties to Mesopotamian demonology, and they were occasionally counted as evil beings, capable of witch- craft. This shows that the wickedness of antediluvian teachers of humankind in Jewish sources was not wholly an inversion of the Mesopotamian traditions by Jewish schol- ars, but was partly taken from already existing trends in Mesopotamian demonology. Keywords: Watchers, book of Enoch, Book of Giants, Mesopotamian mythology, demonology, sages * This study was written during the spring of 2009, when I could enjoy the scholarly environment of the Oriental Institute of the University of Chicago, where I worked as the annual post-doctoral researcher. Various drafts of the present article were read by Tzvi Abusch, Matthew Calhoun, Alan Lenzi, and the anonymous JSP reviewer. I remain thankful to all of them for their comments and criticism. They are not responsible for any errors that remain. 278 Journal for the Study of the Pseudepigrapha 19.4 (2010) Introduction There was a broad tradition in the Babylonian scribal milieu that the seventh antediluvian \u0002gure, a king or a sage, ascended to heaven and received insights into divine wisdom. The seventh antediluvian king according to several lists was Enmeduranki, the king of Sippar, who distinguished himself with divine knowledge from the gods Adad and Shamash (see Lambert 1998). Biblical scholars generally agree that the religious-historical background of the \u0002gure of Enoch, the seventh antediluvian patriarch in Gen. 5.23-24 and subsequently the apoca- lyptic authority in Enochic literature, lies in the seventh Mesopo- tamian antediluvian king Enmeduranki. The following quotation of John J. Collins conveys the consensus view well: The \u0002gure of Enoch is to some degree modelled on Enmeduranki, founder of the guild of b\u0002rûs, or Babylonian diviners… Enoch is listed in Genesis as seventh in line from Adam. In the Sumerian King List, the seventh king is Enmeduranki or Enmeduranna. Sippar, the city ruled by this king, was a center of the cult of Shamash, the sun god. Enoch is associated with the solar calendar: his age is given as 365 years in Genesis and the Astro- nomical Book [contained in 1 Enoch] presupposes a calendar of 364 days. Enmeduranki was also the founder of a guild of diviners and a recipient of revelations… Evidently the biblical seventh man emulates the Mesopo- tamian seventh king. (Collins 1998: 26, 45-46) Besides Collins, the complexities of the historical connection between Enmeduranki and Enoch have been recently and comprehensively studied by J. VanderKam (1984) and H. Kvanvig (1988), among others.1 The recognition has well grown into maturity among schol- ars, who often also \u0002nd the traces of Enoch’s Mesopotamian back- ground even in later Enochic materials, such as the second, Old Slavic book of Enoch, and the third book of Enoch in Hebrew.2 There is nothing to challenge in this association, except that from the point of view of an Assyriologist it seems that biblical scholars should study and compare the Mesopotamian and Jewish evidence much more systematically than has been done previously. One could cast a much wider net on the Mesopotamian material, in order to glean more insight regarding antediluvian traditions and thereby enrich the comparison. For this objective, it is necessary to expand the textual 1. See the comprehensive bibliography provided by Arbel 2006: 355 n.",
+      "rawHtml": null,
+      "keywords": "crawl(d1): theme: watchers",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:36:33.125Z",
+      "evidences": [
+        {
+          "id": "cmqysc2gb000h7djl427pmzwa",
+          "sourceId": "cmqysc2g5000f7djluz7m526r",
+          "scriptureRef": "1-enoch 6:6",
+          "scriptureText": null,
+          "claim": "Crawled for theme: watchers",
+          "corroboration": "(PDF) On the Origin of Watchers: A Comparative Study of the Antediluvian Wisdom in Mesopotamian and Jewish Traditions Log In Sign Up Log In Sign Up more About Press Papers Terms Privacy Copyright We&#39;re Hiring! Help Center less Outline keyboard_arrow_down Title Abstract Introduction Conclusion References All Topics Theology Religious Texts and Scriptures download Download Free PDF Download Free PDF On the Origin of Watchers: A Comparative Study of the Antediluvian Wisdom in Mesopotamian and Jewish Traditions Amar Annus 2010, Journal for The Study of The Pseudepigrapha https://doi.org/10.1177/0951820710373978 visibility … description 44 pages description See full PDF download Download PDF bookmark Save to Library share Share close Sign up for access to the world's latest research Sign up for free arrow_forward check Get notified about relevant papers check Save papers to use in your research check Join the discussion with peers check Track your impact Abstract In the article, it is argued that the origin of Watchers derives from the Mesopotamian mythology of the antediluvian sages (apkallus). More precisely, it is proposed that the mythology of Watchers and their sons the giants derived from inverted versions of various Mesopotamian myths and beliefs about apkallus.",
+          "alignment": "contextualizes",
+          "confidence": 0.42,
+          "claimTypeSlug": "scholarly-consensus",
+          "notes": "Recursive crawl (depth 1) from theme: watchers. ",
+          "blindspot": false,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-06-29T05:36:33.132Z",
+          "updatedAt": "2026-06-29T05:38:12.950Z"
+        }
+      ]
+    },
+    {
+      "id": "cmqysc3p3000k7djlvmw9iak5",
+      "url": "https://digitalcommons.georgefox.edu/ccs/9/",
+      "title": "\"Ezekiel’s Topography of the (Un-)Heroic Dead in Ezekiel 32:17–32\" by Brian R. Doak",
+      "domain": "digitalcommons.georgefox.edu",
+      "category": "crawled",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.8,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:36:34.743Z",
+      "author": null,
+      "publisher": null,
+      "summary": "\"Ezekiel’s Topography of the (Un-)Heroic Dead in Ezekiel 32:17–32\" by Brian R. Doak --> Home Search Browse Collections My Account About Digital Commons Network™ Skip to main content Digital Commons @ George Fox University Home About FAQ My Account &lt; Previous Next &gt; Home &gt; CCS_ALL &gt; CCS &gt; 9 Faculty Publications - George Fox School of Theology Ezekiel’s Topography of the (Un-)Heroic Dead in Ezekiel 32:17–32 Authors Brian R. Doak , George Fox University Follow Document Type Article P",
+      "content": "\"Ezekiel’s Topography of the (Un-)Heroic Dead in Ezekiel 32:17–32\" by Brian R. Doak --> Home Search Browse Collections My Account About Digital Commons Network™ Skip to main content Digital Commons @ George Fox University Home About FAQ My Account &lt; Previous Next &gt; Home &gt; CCS_ALL &gt; CCS &gt; 9 Faculty Publications - George Fox School of Theology Ezekiel’s Topography of the (Un-)Heroic Dead in Ezekiel 32:17–32 Authors Brian R. Doak , George Fox University Follow Document Type Article Publication Date 2013 Abstract This essay is an attempt to address several interpretive problems in Ezek 32:17–32 in light of religious ideas prominent in ancient Mediterranean expressions of hero cult. Previous studies have not adequately dealt with the richness of Ezekiel’s striking and unusual imagery in this passage, and I contend that a reading that more fully develops the meaning of Ezekiel’s presentation vis-à-vis the history of religious ideas regarding the power of the heroic dead is the most appropriate one in terms of Ezekiel’s overarching message in this chapter. I argue that Ezekiel’s invocation of ancient Israelite heroic traditions involving the Gibborim and Nephilim are more pronounced than previous interpreters have been willing to acknowledge, and that a more complete exposition of the passage in light of Ezekiel’s (re)interpretive motif involving the role of the “heroes of old” (v. 27, with the LXX) yields nuances that have not received adequate exploration. I also demonstrate the manner in which a fuller integration of the exegesis of this passage with cognate traditions regarding the afterlife of heroes in ancient Greece and elsewhere in the Mediterranean reveals hitherto unnoticed nuances behind several enigmatic phrases in this passage. This demonstration provides a more detailed and forceful context supporting the claim already made by several commentators that the theological importance of Ezek 32:17–32 rests specifically with its rejection of heroic ideals. Finally, my analysis shows that this passage exhibits a more striking authorial unity than has typically been assumed, viz., that Ezekiel’s pervasive heroic imagery and reference to the underworld form a unified, coherent, and provocative description of an impotent and (un-)heroic foreign horde inhabiting their own ignominious places in the afterlife. Comments Originally published in Journal of Biblical Literature 132, no. 3 (2013): 607–624 Recommended Citation Doak, Brian R., \"Ezekiel’s Topography of the (Un-)Heroic Dead in Ezekiel 32:17–32\" (2013). Faculty Publications - George Fox School of Theology . 9. https://digitalcommons.georgefox.edu/ccs/9 Download DOWNLOADS Since July 30, 2014 Included in Biblical Studies Commons , Near Eastern Languages and Societies Commons Share COinS Browse Collections Disciplines Authors Search Enter search terms: Select context to search: in this series in this repository across all repositories Advanced Search Notify me via email or RSS Author Corner Why Publish in DC@George Fox? Author FAQ Links School of Theology Elsevier - Digital Commons Home | About | FAQ | My Account | Accessibility Statement | Terms of Use Privacy Copyright",
+      "rawHtml": null,
+      "keywords": "crawl(d1): theme: nephilim",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:36:34.743Z",
+      "evidences": [
+        {
+          "id": "cmqysc3p9000m7djlj8do7bkf",
+          "sourceId": "cmqysc3p3000k7djlvmw9iak5",
+          "scriptureRef": "1-enoch 7:2",
+          "scriptureText": null,
+          "claim": "Crawled for theme: nephilim",
+          "corroboration": "\"Ezekiel’s Topography of the (Un-)Heroic Dead in Ezekiel 32:17–32\" by Brian R. Doak --> Home Search Browse Collections My Account About Digital Commons Network™ Skip to main content Digital Commons @ George Fox University Home About FAQ My Account &lt; Previous Next &gt; Home &gt; CCS_ALL &gt; CCS &gt; 9 Faculty Publications - George Fox School of Theology Ezekiel’s Topography of the (Un-)Heroic Dead in Ezekiel 32:17–32 Authors Brian R. Doak , George Fox University Follow Document Type Article Publication Date 2013 Abstract This essay is an attempt to address several interpretive problems in Ezek 32:17–32 in light of religious ideas prominent in ancient Mediterranean expressions of hero cult.",
+          "alignment": "contextualizes",
+          "confidence": 0.48,
+          "claimTypeSlug": "scholarly-consensus",
+          "notes": "Recursive crawl (depth 1) from theme: nephilim. ",
+          "blindspot": false,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-06-29T05:36:34.750Z",
+          "updatedAt": "2026-06-29T05:38:12.959Z"
+        }
+      ]
+    },
+    {
+      "id": "cmqysca51000p7djlz6zxxlkc",
+      "url": "https://www.sacred-texts.com/chr/apo/index.htm",
+      "title": "The Apocrypha Index | Internet Sacred Text Archive",
+      "domain": "sacred-texts.com",
+      "category": "crawled",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:36:43.093Z",
+      "author": null,
+      "publisher": null,
+      "summary": "The Apocrypha Index | Internet Sacred Text Archive Topics Home Catalog African Age of Reason Alchemy Americana Ancient Near East Astrology Asia Atlantis Australia Basque Baha'i Bible Book of Shadows Buddhism Celtic Christianity Apocrypha Aquinas Augustine Calvin Church Fathers Luther Shakers Classics Comparative Confucianism DNA Earth Mysteries Egyptian England Esoteric/Occult Evil Fortean Freemasonry Gothic Gnosticism Grimoires Hinduism I Ching Islam Icelandic Jainism Journals Judaism Legends/S",
+      "content": "The Apocrypha Index | Internet Sacred Text Archive Topics Home Catalog African Age of Reason Alchemy Americana Ancient Near East Astrology Asia Atlantis Australia Basque Baha'i Bible Book of Shadows Buddhism Celtic Christianity Apocrypha Aquinas Augustine Calvin Church Fathers Luther Shakers Classics Comparative Confucianism DNA Earth Mysteries Egyptian England Esoteric/Occult Evil Fortean Freemasonry Gothic Gnosticism Grimoires Hinduism I Ching Islam Icelandic Jainism Journals Judaism Legends/Sagas Legendary Creatures LGBT Miscellaneous Mormonism Mysticism Native American Necronomicon New Thought Neopaganism/Wicca Nostradamus Oahspe Pacific Paleolithic Parapsychology Philosophy Piri Re'is Map Prophecy Roma Sacred Books of the East Sacred Sexuality Shakespeare Shamanism Shinto Symbolism Sikhism Sub Rosa Swedenborg Tantra Taoism Tarot Thelema Theosophy Time Tolkien UFOs Utopia Women Wisdom of the East Zoroastrianism Sacred Texts Christianity Index The Apocrypha Apocrypha means 'hidden things' in Greek. The Apocryphical books of the Bible fall into two categories: texts which were included in some canonical version of the Bible at some point, and other texts of a Biblical nature which have never been canonical. Deuterocanonical Apocrypha The Deuterocanonical Books of the Bible These are books which are included in some version of the canonical Bible, but which have been excluded at one time or another, for textual or doctrinal issues. These are called 'Deuterocanonical', which literally means 'the secondary canon.' Other Apocrypha These are other apocryphal texts which never made it into any official canon, which nevertheless shed light on the Bible and its history. The Forgotten Books of Eden [ 1926 ] A collection of OT pseudepigrapha , specifically: The First Book of Adam and Eve The Second Book of Adam and Eve The Book of the Secrets of Enoch The Psalms of Solomon The Odes of Solomon The Letter of Aristeas Fourth Book of Maccabees The Story of Ahikar The Testaments of the Twelve Patriarchs Testament of Reuben Testament of Simeon Testament of Levi The Testament of Judah The Testament of Issachar The Testament of Zebulun The Testament of Dan The Testament of Naphtali The Testament Of Gad The Testament of Asher The Testament of Joseph The Testament of Benjamin The Lost Books of the Bible edited by Rutherford H. Platt, Jr. [ 1926 ] A collection of NT apocrypha and pseudepigrapha. The Biblical Antiquities of Philo translated by M. R. James [ 1917 ] An alternative pseudepigraphal narrative of the Hebrew Bible from Genesis through 1 Samuel, written in the first century C.E. The Gospel of Thomas Reputedly the writings of the apostle 'Doubting Thomas'. This text purports to be a collection of the sayings of Jesus. Traditionally Thomas was Jesus' twin brother. This text shows strong Gnostic influence. The Didache by Charles H. Hoole [ 1894 ] A very early Christian apocryphal text. The Sibylline Oracles tr. by Milton S. Terry [ 1899 ]. The Sibylline books were oracular Roman scrolls; these are the pseudo-Sibylline Oracles. There many similarities to early Christian writings, and they were quoted by the Church Fathers. The Book of Enoch Translated by R.H. Charles [ 1917 ] An etext of a critical edition of the Book of Enoch. Enoch introduced such concepts as fallen Angels, the Messiah, the Resurrection, and others. The Book of Enoch the Prophet Translated by Richard Laurence [ 1883 ] An earlier and very influential 19th century translation of 1 Enoch. The Book of Jubilees tr. by R.H. Charles [ 1917 ] A text from the 2nd century B.C.E. which covers much of the same ground as Genesis, with some interesting additional details. It may have been an intermediate form of Genesis which was incorporated into later versions. Slavonic Life of Adam and Eve The Books of Adam and Eve This is the translation of the Books of Adam and Eve from the Oxford University Press Apocrypha and Pseudepigrapha. The Book of Jasher Excerpts from the Gospel of Mary This fragment, of disputed authenticity, puts the relationship between Mary Magdalen, Jesus and the Apostles in a radically different perspective than traditional beliefs. Hold the world's wisdom in the palm of your hand. Over 1700 books. Support the Archive. Buy it here! Sign up for sacred-texts updates by email Enter your Email Preview Powered by FeedBlitz On Twitter, follow ' sacredtexts .' Sacred-texts on Facebook search powered by sacred-texts Web Support the Archive. Buy a DVD or USB 1700+ books. Support this site. This is a quiet place in cyberspace devoted to religious tolerance and scholarship Non-public domain contents of this site not otherwise copyrighted are &copy; copyright 2023, John Bruno Hare, All Rights Reserved. See Site copyrights , Terms of Service for more information. Index | FAQ | Contact | Search | Buy Disk Open Source for the Human Soul Sacred Texts | Christianity &laquo; Previous: The Book of Enoch has moved Index Next: The Apocrypha Index &raquo;",
+      "rawHtml": null,
+      "keywords": "crawl(d1): theme: book of enoch",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:36:43.093Z",
+      "evidences": [
+        {
+          "id": "cmqysca58000r7djlwm09q80y",
+          "sourceId": "cmqysca51000p7djlz6zxxlkc",
+          "scriptureRef": "1-enoch 1:1",
+          "scriptureText": null,
+          "claim": "Crawled for theme: book of enoch",
+          "corroboration": "The Apocrypha Index | Internet Sacred Text Archive Topics Home Catalog African Age of Reason Alchemy Americana Ancient Near East Astrology Asia Atlantis Australia Basque Baha'i Bible Book of Shadows Buddhism Celtic Christianity Apocrypha Aquinas Augustine Calvin Church Fathers Luther Shakers Classics Comparative Confucianism DNA Earth Mysteries Egyptian England Esoteric/Occult Evil Fortean Freemasonry Gothic Gnosticism Grimoires Hinduism I Ching Islam Icelandic Jainism Journals Judaism Legends/Sagas Legendary Creatures LGBT Miscellaneous Mormonism Mysticism Native American Necronomicon New Thought Neopaganism/Wicca Nostradamus Oahspe Pacific Paleolithic Parapsychology Philosophy Piri Re'is Map Prophecy Roma Sacred Books of the East Sacred Sexuality Shakespeare Shamanism Shinto Symbolism Sikhism Sub Rosa Swedenborg Tantra Taoism Tarot Thelema Theosophy Time Tolkien UFOs Utopia Women Wisdom of the East Zoroastrianism Sacred Texts Christianity Index The Apocrypha Apocrypha means 'hidden things' in Greek. The Apocryphical books of the Bible fall into two categories: texts which were included in some canonical version of the Bible at some point, and other texts of a Biblical nature which have never been canonical. Deuterocanonical Apocrypha The Deuterocanonical Books of the Bible These are books which are included in some version of the canonical Bible, but which have been excluded at one time or another, for textual or doctrinal issues.",
+          "alignment": "contextualizes",
+          "confidence": 0.33,
+          "claimTypeSlug": "tradition-devotional",
+          "notes": "Recursive crawl (depth 1) from theme: book of enoch. ",
+          "blindspot": true,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-06-29T05:36:43.100Z",
+          "updatedAt": "2026-06-29T05:38:12.967Z"
+        }
+      ]
+    },
+    {
+      "id": "cmqyscaqk000u7djlcguamag5",
+      "url": "https://www.sacred-texts.com/bib/boe/boe003.htm",
+      "title": "The Book of Enoch: Abbreviations, Brackets and Symbols Sp... | Internet Sacred Text Archive",
+      "domain": "sacred-texts.com",
+      "category": "crawled",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:36:43.869Z",
+      "author": null,
+      "publisher": null,
+      "summary": "The Book of Enoch: Abbreviations, Brackets and Symbols Sp... | Internet Sacred Text Archive Sacred Texts Bible Apocrypha Index Previous Next Buy this Book on Kindle The Book of Enoch , by R.H. Charles, [1917], at sacred-texts.com p.",
+      "content": "The Book of Enoch: Abbreviations, Brackets and Symbols Sp... | Internet Sacred Text Archive Sacred Texts Bible Apocrypha Index Previous Next Buy this Book on Kindle The Book of Enoch , by R.H. Charles, [1917], at sacred-texts.com p. xxx ABBREVIATIONS, BRACKETS, AND SYMBOLS SPECIALLY USED IN THE TRANSLATION OF 1 ENOCH E denotes the Ethiopic Version. G s denotes the fragments of the Greek Version preserved In Syncellus: in the case of 8 b -9 b there are two forms of the text, G s1 G s2 . G g denotes the large fragment of the Greek Version discovered at Akhm&icirc;m, and deposited in the Gizeh Museum, Cairo. The following brackets are used in the translation of 1 Enoch: &#x2308; &#x2309; . The use of these brackets means that the words so enclosed are found in G g but not In E. &#x2308;&#x2308; &#x2309;&#x2309; . The use of these brackets means that the words so enclosed are found in E but not in G g or G s . &#x3008; &#x3009; . The use of these brackets means that the words so enclosed are restored. [ ] The use of these brackets means that the words so enclosed are interpolations. ( ). The use of these brackets means that the words so enclosed are supplied by the editor. The use of thick type denotes that the words so printed are emended. &#8224; &#8224; corruption in the text. . . . = some words which have been lost. Next: Chapter I Sacred Texts | Bible &laquo; Previous: The Book of Enoch: Introduction Index Next: The Book of Enoch: The Book of Enoch: Chapter I &raquo;",
+      "rawHtml": null,
+      "keywords": "crawl(d1): theme: book of enoch",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:36:43.869Z",
+      "evidences": [
+        {
+          "id": "cmqyscaqq000w7djls146iuzv",
+          "sourceId": "cmqyscaqk000u7djlcguamag5",
+          "scriptureRef": "1-enoch 1:1",
+          "scriptureText": null,
+          "claim": "Crawled for theme: book of enoch",
+          "corroboration": "The Book of Enoch: Abbreviations, Brackets and Symbols Sp... | Internet Sacred Text Archive Sacred Texts Bible Apocrypha Index Previous Next Buy this Book on Kindle The Book of Enoch , by R.H. Charles, [1917], at sacred-texts.com p.",
+          "alignment": "contextualizes",
+          "confidence": 0.33,
+          "claimTypeSlug": "tradition-devotional",
+          "notes": "Recursive crawl (depth 1) from theme: book of enoch. ",
+          "blindspot": true,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-06-29T05:36:43.875Z",
+          "updatedAt": "2026-06-29T05:38:12.971Z"
+        }
+      ]
+    },
+    {
+      "id": "cmqyscuyi000z7djlws2jg9fp",
+      "url": "https://www.jewishencyclopedia.com/articles/5773-enoch-books-of-ethiopic-and-slavonic",
+      "title": "ENOCH, BOOKS OF (Ethiopic and Slavonic) - JewishEncyclopedia.com",
+      "domain": "jewishencyclopedia.com",
+      "category": "crawled",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:37:10.075Z",
+      "author": null,
+      "publisher": null,
+      "summary": "ENOCH, BOOKS OF (Ethiopic and Slavonic) - JewishEncyclopedia.com JewishEncyclopedia.com A AACH - ABDI ABDI - ABRA ABRA - ABRA ABRA - ADLE ADLE - AINM AIRE - ALGA ALGE - AMOR AMOS - ANTU ANTW - ARTA ARTA - ASSE ASSE - AZZU B BAAL - BAKH BAKI - BARN BARN - BEAB BERA - BELM BELM - BENJ BENJ - BERN BERN - BIED BIEG - BLUM BLUM - BORN BORO - BROD BROD - BYZA C CABA - CANS CANS - CARP CARP - CEME CENS - CHAS CHAT - CHRI CHRI - COHE COHE - COLO COLO - CORD CORD - CREM CREM - CZYN D DABB - DANO DANO - D",
+      "content": "ENOCH, BOOKS OF (Ethiopic and Slavonic) - JewishEncyclopedia.com JewishEncyclopedia.com A AACH - ABDI ABDI - ABRA ABRA - ABRA ABRA - ADLE ADLE - AINM AIRE - ALGA ALGE - AMOR AMOS - ANTU ANTW - ARTA ARTA - ASSE ASSE - AZZU B BAAL - BAKH BAKI - BARN BARN - BEAB BERA - BELM BELM - BENJ BENJ - BERN BERN - BIED BIEG - BLUM BLUM - BORN BORO - BROD BROD - BYZA C CABA - CANS CANS - CARP CARP - CEME CENS - CHAS CHAT - CHRI CHRI - COHE COHE - COLO COLO - CORD CORD - CREM CREM - CZYN D DABB - DANO DANO - DAVI DAVI - DAVI DAVI - DEDE DEDI - DENM DENV - DEUT DEUT - DIES DIET - DLUG DLUG - DOSA DOSA - DUAL DUAR - DYVI E EAGL - EFES EFOD - EJEC EKAH - ELEA ELEA - ELIE ELIE - ELIJ ELIJ - ELTE ELVI - ENGE ENGE - EPIC EPIG - ESTE ESTE - EVIL EVIL - EZRA F FABL - FARH FARH - FELB FELD - FEUE FEUS - FISC FISC - FLEX FLIS - FORG FORG - FRAN FRAN - FRAN FRAN - FRID FRIE - FROH FROH - FURT G GABB - GAMA GAMA - GEDA GEDA - GERM GERM - GHIR GHIR - GLOG GLOG - GOLD GOLD - GORD GORD - GRAZ GRAZ - GUAR GUAR - GYMN H HAAR - HAIN HAIR - HAMN HAMN - HARA HARA - HAUS HAUS - HAZZ HAZZ - HEKS HELA - HERR HERS - HILL HILL - HOCH HOCH - HORO HORS - HYSS I I - IBNM IBNM - IBNY IBNY - ILLE ILLI - INDI INDI - INTE INTE - ISAA ISAA - ISAA ISAA - ISAB ISAI - ISPA ISRA - ISRA ISRA - ISRA ISRA - IZRA J JAAR - JACO JACO - JAFF JAGE - JEHO JEHO - JEWI JEWI - JOD JOEL - JONA JONA - JOSE JOSE - JOSE JOSE - JUDA JUDA - JUDE JUDE - JUWE K KAB - KALI KALI - KANA KANI - KASA KASH - KEMP KEMP - KIEV KIHA - KITE KITT - KNOT KNOX - KOKE KOLB - KOSM KOSS - KROC KRON - KUTT L LAPE - LAND LAND - LAZA LAZA - LEMO LEMU - LEVI LEVI - LEVI LEVI - LEWI LEWI - LILI LILI - LIVE LIVE - LOND LONG - LOWY LOWY - LYSI M MAAC - MALA MALA - MARK MARK - MEAS MEAT - MENA MENA - METE METH - MILL MILM - MOND MONE - MOSE MOSE - MOSE MOSE - MYST N NAAM - NAHU NAHU - NASI NASI - NATH NATH - NEBU NECH - NESE NESV - NEUZ NEVA - NICH NICH - NISS NISS - NOSE NOSS - NYON O OAKA - OHOL OHOL - OPFE OPHE - OREG OREN - OSTR OSTR - OZER P PABL - PAPP PAPP - PATT PAUL - PENI PENN - PESI PESS - PHIN PHIN - PINS PINS - POLA POLA - PORG PORG - PREG PREM - PROV PROV - PYKE Q QUAD - QUOR R RAAB - RABI RABI - RAME RAMI - RAUS RAVE - REGG REGG - REPT RESC - RIBA RIBA - RITT RITT - ROMI ROMI - ROSE ROSE - ROTH ROTH - RYSS S SAAD - SAMB SAMB - SAND SAND - SCHM SCHM - SELA SELA - SHAT SHAV - SHUS SHUS - SIMH SIMH - SOLO SOLO - SPIE SPIE - STRA STRA - SZOL T TAAM - TALM TALM - TARR TARR - TEHI TEHI - TENN TENT - THEB THEB - TIBE TIBE - TOBI TOBI - TORT TORT - TREB TREB - TRIW TROK - TYRO U UBAL - UNGA UNGE - URI URIB - UZZI V VAEZ - VANS VANC - VELL VEND - VERS VERV - VINE VINE - VIZH VOCA - VULT W WAAD - WALL WALL - WATE WATE - WEIG WEIL - WEIS WEIS - WESS WEST - WIEN WIEN - WILL WILL - WISE WISM - WOLF WOLF - WOOL WOOL - WYSB X XABI - XYST Y YAAB - YARH YARM - YEVR YEZE - YIZH YIZH - YOMK YOMT - YUSU Z ZABA - ZALI ZALM - ZARF ZARF - ZEBI ZEBI - ZEDE ZEDE - ZEIT ZEIT - ZEPH ZERA - ZIMM ZIMR - ZODI ZOHA - ZUKE ZUKU - ZWEI ENOCH, BOOKS OF (Ethiopic and Slavonic): By: Richard Gottheil , Enno Littmann Table of Contents I. Ethiopic Enoch: Language and Versions. Composition and Date. Separate Strata. Value. II. Slavonic Enoch: Language and Origin. Date and Value. Apocryphal works attributed to Enoch. From Gen. v. 24 (\"Enoch walked with God\" and \"God took him\") a cycle of Jewish legends about Enoch was derived, which, together with apocalyptic speculations naturally ascribed to such a man, credited with superhuman knowledge, found their literary expression in the Books of Enoch. Of this literature a collection of fragments or single, independent pieces has come down to us in the socalled \"Ethiopic Enoch,\" whereas the Slavonic Book of Enoch gives, as it were, a résumé of most of the current oral or literary traditions about its hero, which it brings into a certain system of its own. So far as can be judged from these books, the legends of Enoch are the following: (1) He went during his lifetime to heaven, \"walked\" with God's angels over all heaven (or heavens) and earth, came back to his family and told them what he had seen, and finally was again taken up to heaven. (2) During his journeys he saw the secrets of heaven and earth, that is, the natural phenomena. (3) He saw what had become of the angels, \"sons of God,\" who, according to Gen. vi. 1-4, had come to earth and sinned with the daughters of men. (4) He interceded for these fallen angels. In 3 and 4 evidently two different cycles of legends have crossed each other, but whether 3 precedes 4, or vice versa, is hard to tell. These legends, a more popular form of tradition, are, however, not preserved unimpaired, but are strongly influenced and developed by the literary traditions which deal mainly with apocalyptic ideas. I. Ethiopic Enoch: In the old Jewish and Christian literatures (for example, in the New Testament Epistle of Jude, verse 14) a Book of Enoch is quoted, and is undoubtedly often used without special reference being made to it. But about 300 the Christian Church began to discredit the book, and after the time of the Greek fathers Syncellus and Cedrenus, who cite it (ninth century), it was entirely lost until (1773) the traveler Bruce discovered in Abyssinia two manuscripts of thebook. In the nineteenth century several editions and translations were made, and many critical inquiries into its contents published. The following is a list of the various editions and translations of the Ethiopic Enoch: Editions: Laurence, \"Libri Enoch Versio Æthiopica,\" Oxford, 1838, Dillmann, \"Liber Henoch Æthiopice,\" Leipsic, 1851 (from 5 MSS.); Flemming, \"Das Buch Henoch,\" Leipsic, 1902 (from 14 MSS.); another edition, still fuller than that of Flemming, is being prepared by Professor Charles. Translations: Laurence, \"The Book of Enoch,\" Oxford, 1821; Hoffmann, \"Das Buch Henoch,\" Jena, 1833-38; Dillmann, \"Das Buch Henoch Uebersetzt und Urklärt,\" Leipsic, 1853 (standard translation for 40 years); Schodde, \"The Book of Enoch Translated, with Introduction and Notes,\" Andover, 1882; Charles, \"The Book of Enoch,\" Oxford, 1893; Beer, in Kautzsch, \"Apokryphen und Pseudepigraphen,\" ii. 217-310, Tübingen, 1900; Flemming, in vol. v. of \"Die Griechischen Christlichen Schriftsteller der Ersten Drei Jahrhunderte,\" Leipsic, 1901. There may also be mentioned here a retranslation into Hebrew ( ) by L. Goldschmidt, Berlin, 1892, from Dillmann's German translation. Following is an analysis of the contents: Ch. i.-v.: Introduction: Enoch relates a vision of the last days, the fate of the elect and of sinners, and urges observation of the works of God in nature. Ch. vi.-cv.: The main part of the book:Ch. vi.-xxxvi.: The so-called \"angelological book\":(a: vi.-xix.): The story of the fallen angels:vi.-xi.: The angels on earth, their marriages and wrong-doings; announcement of their punishment.xii.-xvi.: Enoch's visions concerning their punishment; he announces their destiny to them, but upon their supplication intercedes for them. In another vision he is told that his intercession is in vain; he then announces their final punishment.xvii.-xix.: Enoch's journey through heaven and earth, during which he sees chiefly the fallen angels suffer the punishment which he had announced.(b: xx.-xxxvi.): Enoch wanders, accompanied by the six (or seven) archangels, through heaven and earth, and is shown again the punishment of the angels (xxi.), Hades (xxii.), and the secrets of nature in the west (xxiii.-xxv.), in the center of the earth (xxvi.-xxvii.), in the east (xxviii.-xxxiii.), in the north (xxxiv. and xxxv. 2), and in the south (xxxvi.).Ch. xxxvii.-lxxi.: The similitudes and additions:(a: xxxvii.): Introduction.(b: xxxviii.-xliv.): First similitude: The future kingdom of God, the dwellings of the righteous, the angels, and the secrets of nature.(c: xlv.-lvii.): Second similitude: The Last Judgment by the Messiah, \"the Son of Man,\" who sits with \"the Head of Days.\" The holy and elect are rewarded; the heathen and sinners are destroyed forever.(d: lviii.-lxix.): Third similitude (with fragments of an account of the Flood interspersed): The eternal bliss of the righteous and the sufferings of the kings and the mighty.(e: lxx.-lxxi.): First and second appendices: Enoch's translation into paradise, and Enoch's ascension and election as \"Son of Man.\"Ch. lxxii.-lxxxii.: The Book of Celestial Physics: Theories about sun, moon, stars, intercalary days, the four quarters of the world.Ch. lxxxiii.-xc.: Two dream-visions of Enoch before his marriage, which he recounts to his son Methuselah:(a: lxxxiii.-lxxxiv.): The Flood—the first world-judgment.(b: lxxxv.-xc.): The history of the world from Adam until the final judgment: Men are represented here as animals; the righteous are white cattle and sheep, the sinners and enemies of Israel are black cattle and wild animals (vision of the animals, or of the shepherds).Ch. xci.-cv.: Admonitions and predictions of Enoch, addressed to his children:(a: xci. 1-11, 18-19): Admonition to live a righteous life.(b: xci. 12-17 and xciii.): The \"Apocalypse of Weeks\": The history of the world is outlined, divided into ten weeks.(c: xcii., xciv.-cv.): Admonitions, predictions of the punishment of sinners, and promises of reward to the righteous. Ch. cvi.-cviii.: Appendices:Ch. cvi.-cvii.: Miracles and signs at the birth of Noah.Ch. cviii.: Another speech of Enoch concerning the fate of the wicked and of the righteous. Language and Versions. The Ethiopic Enoch was originally written in Hebrew, and then translated into Greek. From this version an Ethiopic and probably a Latin translation were made. Of the Greek version ch. i.-xxxii. are preserved in a manuscript discovered at Gizeh in 1886-87 by the French Archeological Mission, and published by Bouriant in the \"Mémoires\" of that mission (1892, vol. ix., fasc. i.), by Dillmann in the \"Sitzungsberichte der Berliner Akademie der Wissenschaften\" (1892, pp. 1079 et seq. ), by Lods, \"Le Livre d'Hénoch\" (Paris, 1892), by Charles, \"Book of Enoch\" (1893, Appendix C), and by Swete, \"The Old Testament in Greek\" (2d ed., iii. 789 et seq. , Cambridge, 1899). Furthermore, ch. vi.-ix. 4, viii. 4-x. 14, xv. 8-xvi. 1 have come down to us through Syncellus (about 800), and lxxxix. 42-49 is found in a manuscript in the Vatican. These fragments are reproduced by Charles (1893), and again by Swete (1899). Of the Latin translation only i. 9 and cvi. 1-18 are known. The first passage occurs in Pseudo-Cyprian and Pseudo-Vigilius (see Beer, l.c. p. 237); the second was discovered by James in an eighth-century manuscript in the British Museum, and published by Charles, l.c. , Appendix E, and by James, \"Apocrypha Anecdota,\" pp. 146-150. Whether or not the whole book was translated into Latin can not be established with certainty from these fragments. All the Greek and Latin fragments are republished in Flemming and Radermacher, \"Das Buch Henoch.\" Leipsic. 1901. Composition and Date. Almost from the beginning it was recognized that Ethiopic Enoch was composed of various independent works, and it was assumed that three sources were to be distinguished: (1) the \"groundwork,\" i.-xxxvi., lxxii.-civ.; (2) the similitudes, xxxvii.-lxxi.; (3) Noachian interpolations, chiefly to be found in the similitudes. Different scholars gave different analyses: it is not possible to enumerate all their views, nor can all their works and articles be mentioned here. The most recent ones, in which the earlier views are usually given in full (see especially Schürer, Charles, and Clemen) are: Schürer, Gesch. iii. 190 et seq., Leipsic, 1898; Eng. ed. div. ii., iii. 54-73; Charles, Book of Enoch, pp. 9 et seq., 310-311; Cheyne and Black, Encyc. Bibl. i. 220-225; Lawlor, Early Citations from the Book of Enoch, in Jour. of Philology, 1897, xxv. 164-225; Clemen, Die Zusammensetzung des Buches Henoch, in Theologische Studien und Kritiken, 1898, pp. 212-227; Beer, in Kautzsch, Apokryphen und Pseudepigraphen, ii. 217-235; Bousset, Neueste Fors",
+      "rawHtml": null,
+      "keywords": "crawl(d1): theme: book of enoch",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:37:10.075Z",
+      "evidences": [
+        {
+          "id": "cmqyscuyp00117djljd1n6urx",
+          "sourceId": "cmqyscuyi000z7djlws2jg9fp",
+          "scriptureRef": "1-enoch 1:1",
+          "scriptureText": null,
+          "claim": "Crawled for theme: book of enoch",
+          "corroboration": "ENOCH, BOOKS OF (Ethiopic and Slavonic) - JewishEncyclopedia.com JewishEncyclopedia.com A AACH - ABDI ABDI - ABRA ABRA - ABRA ABRA - ADLE ADLE - AINM AIRE - ALGA ALGE - AMOR AMOS - ANTU ANTW - ARTA ARTA - ASSE ASSE - AZZU B BAAL - BAKH BAKI - BARN BARN - BEAB BERA - BELM BELM - BENJ BENJ - BERN BERN - BIED BIEG - BLUM BLUM - BORN BORO - BROD BROD - BYZA C CABA - CANS CANS - CARP CARP - CEME CENS - CHAS CHAT - CHRI CHRI - COHE COHE - COLO COLO - CORD CORD - CREM CREM - CZYN D DABB - DANO DANO - DAVI DAVI - DAVI DAVI - DEDE DEDI - DENM DENV - DEUT DEUT - DIES DIET - DLUG DLUG - DOSA DOSA - DUAL DUAR - DYVI E EAGL - EFES EFOD - EJEC EKAH - ELEA ELEA - ELIE ELIE - ELIJ ELIJ - ELTE ELVI - ENGE ENGE - EPIC EPIG - ESTE ESTE - EVIL EVIL - EZRA F FABL - FARH FARH - FELB FELD - FEUE FEUS - FISC FISC - FLEX FLIS - FORG FORG - FRAN FRAN - FRAN FRAN - FRID FRIE - FROH FROH - FURT G GABB - GAMA GAMA - GEDA GEDA - GERM GERM - GHIR GHIR - GLOG GLOG - GOLD GOLD - GORD GORD - GRAZ GRAZ - GUAR GUAR - GYMN H HAAR - HAIN HAIR - HAMN HAMN - HARA HARA - HAUS HAUS - HAZZ HAZZ - HEKS HELA - HERR HERS - HILL HILL - HOCH HOCH - HORO HORS - HYSS I I - IBNM IBNM - IBNY IBNY - ILLE ILLI - INDI INDI - INTE INTE - ISAA ISAA - ISAA ISAA - ISAB ISAI - ISPA ISRA - ISRA ISRA - ISRA ISRA - IZRA J JAAR - JACO JACO - JAFF JAGE - JEHO JEHO - JEWI JEWI - JOD JOEL - JONA JONA - JOSE JOSE - JOSE JOSE - JUDA JUDA - JUDE JUDE - JUWE K KAB - KALI KALI - KANA KANI - KASA KASH - KEMP KEMP - KIEV KIHA - KITE KITT - KNOT KNOX - KOKE KOLB - KOSM KOSS - KROC KRON - KUTT L LAPE - LAND LAND - LAZA LAZA - LEMO LEMU - LEVI LEVI - LEVI LEVI - LEWI LEWI - LILI LILI - LIVE LIVE - LOND LONG - LOWY LOWY - LYSI M MAAC - MALA MALA - MARK MARK - MEAS MEAT - MENA MENA - METE METH - MILL MILM - MOND MONE - MOSE MOSE - MOSE MOSE - MYST N NAAM - NAHU NAHU - NASI NASI - NATH NATH - NEBU NECH - NESE NESV - NEUZ NEVA - NICH NICH - NISS NISS - NOSE NOSS - NYON O OAKA - OHOL OHOL - OPFE OPHE - OREG OREN - OSTR OSTR - OZER P PABL - PAPP PAPP - PATT PAUL - PENI PENN - PESI PESS - PHIN PHIN - PINS PINS - POLA POLA - PORG PORG - PREG PREM - PROV PROV - PYKE Q QUAD - QUOR R RAAB - RABI RABI - RAME RAMI - RAUS RAVE - REGG REGG - REPT RESC - RIBA RIBA - RITT RITT - ROMI ROMI - ROSE ROSE - ROTH ROTH - RYSS S SAAD - SAMB SAMB - SAND SAND - SCHM SCHM - SELA SELA - SHAT SHAV - SHUS SHUS - SIMH SIMH - SOLO SOLO - SPIE SPIE - STRA STRA - SZOL T TAAM - TALM TALM - TARR TARR - TEHI TEHI - TENN TENT - THEB THEB - TIBE TIBE - TOBI TOBI - TORT TORT - TREB TREB - TRIW TROK - TYRO U UBAL - UNGA UNGE - URI URIB - UZZI V VAEZ - VANS VANC - VELL VEND - VERS VERV - VINE VINE - VIZH VOCA - VULT W WAAD - WALL WALL - WATE WATE - WEIG WEIL - WEIS WEIS - WESS WEST - WIEN WIEN - WILL WILL - WISE WISM - WOLF WOLF - WOOL WOOL - WYSB X XABI - XYST Y YAAB - YARH YARM - YEVR YEZE - YIZH YIZH - YOMK YOMT - YUSU Z ZABA - ZALI ZALM - ZARF ZARF - ZEBI ZEBI - ZEDE ZEDE - ZEIT ZEIT - ZEPH ZERA - ZIMM ZIMR - ZODI ZOHA - ZUKE ZUKU - ZWEI ENOCH, BOOKS OF (Ethiopic and Slavonic): By: Richard Gottheil , Enno Littmann Table of Contents I. Ethiopic Enoch: Language and Versions. Composition and Date.",
+          "alignment": "contextualizes",
+          "confidence": 0.33,
+          "claimTypeSlug": "tradition-devotional",
+          "notes": "Recursive crawl (depth 1) from theme: book of enoch. ",
+          "blindspot": true,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-06-29T05:37:10.081Z",
+          "updatedAt": "2026-06-29T05:38:12.975Z"
+        }
+      ]
+    },
+    {
+      "id": "cmqyscw2w00147djlqccyob6a",
+      "url": "https://www.newadvent.org/cathen/01602a.htm",
+      "title": "CATHOLIC ENCYCLOPEDIA: The Book of Enoch",
+      "domain": "newadvent.org",
+      "category": "crawled",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:37:11.529Z",
+      "author": null,
+      "publisher": null,
+      "summary": "CATHOLIC ENCYCLOPEDIA: The Book of Enoch Search: Submit Search Home Encyclopedia Summa Fathers Bible Library A B C D E F G H I J K L M N O P Q R S T U V W X Y Z SEARCH Encyclopedia Summa Fathers Bible Library --> Home > Catholic Encyclopedia > H > The Book of Henoch (Ethiopic) The Book of Henoch (Ethiopic) Please help support the mission of New Advent and get the full contents of this website as an instant download. Includes the Catholic Encyclopedia, Church Fathers, Summa, Bible and more &#151;",
+      "content": "CATHOLIC ENCYCLOPEDIA: The Book of Enoch Search: Submit Search Home Encyclopedia Summa Fathers Bible Library A B C D E F G H I J K L M N O P Q R S T U V W X Y Z SEARCH Encyclopedia Summa Fathers Bible Library --> Home > Catholic Encyclopedia > H > The Book of Henoch (Ethiopic) The Book of Henoch (Ethiopic) Please help support the mission of New Advent and get the full contents of this website as an instant download. Includes the Catholic Encyclopedia, Church Fathers, Summa, Bible and more &#151; all for only $19.99... The antediluvian patriarch Henoch according to Genesis \"walked with God and was seen no more, because God took him\". This walking with God was naturally understood to refer to special revelations made to the patriarch, and this, together with the mystery surrounding his departure from the world, made Henoch's name an apt one for the purposes of apocalyptic writers. In consequence there arose a literature attributed to him. It influenced not only later Jewish apocrypha , but has left its imprint on the New Testament and the works of the early Fathers. The canonical Epistle of St. Jude , in verses 14, 15 , explicitly quotes from the Book of Henoch ; the citation is found in the Ethiopic version in verses 9 and 4 of the first chapter. There are probable traces of the Henoch literature in other portions of the New Testament . Passing to the patristic writers, the Book of Henoch enjoyed a high esteem among them, mainly owing to the quotation in Jude. The so-called Epistle of Barnabas twice cites Henoch as Scripture. Clement of Alexandria , Tertullian , Origen , and even St. Augustine suppose the work to be a genuine one of the patriarch. But in the fourth century the Henoch writings lost credit and ceased to be quoted. After an allusion by an author of the beginning of the ninth century, they disappear from view. So great was the oblivion into which they fell that only scanty fragments of Greek and Latin versions were preserved in the West. The complete text was thought to have perished when it was discovered in two Ethiopic manuscripts in Abyssinia , by the traveler Bruce in 1773. Since, several more copies in the same language have been brought to light. Recently a large Greek fragment comprising chapters i-xxxii was unearthed at Akhm&icirc;n in Egypt . Scholars agree that the Book of Henoch was originally composed either in Hebrew or Aramaic, and that the Ethiopic version was derived from a Greek one. A comparison of the Ethiopic text with the Akhm&icirc;n Greek fragment proves that the former is in general a trustworthy translation. The work is a compilation, and its component parts were written in Palestine by Jews of the orthodox Hasidic or Pharisaic schools . Its composite character appears clearly from the palpable differences in eschatology , in the views of the origin of sin and of the character and importance of the Messias found in portions otherwise marked off from each other by diversities of subject. Critics agree that the oldest portions are those included in chapters i-xxxvi and (broadly speaking) lxxi-civ. It will be seen that the work is a voluminous one. But the most recent research, led by the Rev. R.H. Charles, an English specialist, breaks up this part into at least two distinct constituents. Charles's analysis and dating are: i-xxxvi, the oldest part, composed before 170 B.C.; xxxvii-lxx, lxxxiii-xc, written between 166-161 B.C.; chapters xci-civ between the years 134-95 B.C.; the Book of Parables between 94-64 B.C.; the Book of Celestial Physics, lxxii-lxxviii, lxxxii, lxxix, date undetermined. Criticism recognizes, scattered here and there, interpolations from a lost apocalypse, the Book of Noah. Expert opinion is not united on the date of the composite older portion, i.e. i-xxxvi, lxxi-civ. The preponderant authority represented by Charles and Sch&uuml;rer assigns it to the latter part of the second century before Christ, but Baldensperger would bring it down to a half century before our Era. Contents In the following outline of contents, Charles's analysis , which is supported by cogent reasons, has been adopted. The various elements are taken up in their chronological sequence. Book I (chapters 1-36) Its body contains an account of the fall of the angelic \"Watchers\", their punishment, and the patriarch's intervention in their history. It is based upon Genesis 6:2 : \"The sons of God seeing the daughters of men, that they were fair, took to themselves wives of all they chose.\" The narrative is intended to explain the origin of sin and evil in the world and in this connection lays very little stress on the disobedience of our First Parents. This portion is remarkable for the entire absence of a Messias . Book II (chapters 83-90) This book contains two visions. In the first, lxxxiii-lxxxiv, is portrayed the dreadful visitation of the flood, about to fall upon the earth. Henoch supplicates God not to annihilate the human race . The remaining section, under the symbolism of cattle, beasts, and birds, sketches the entire history of Israel down to the Messianic reign. Book III (chapters 91-94, 98) It professes to give a prophetic vision of the events of the world-weeks, centering about Israel . This part is distinguished by insistence upon a sharp conflict between the righteous of the nation and their wicked opponents both within and without Israel . They triumph and slay their oppressors in a Messianic kingdom without a personal Messias . At its close occurs the final judgment, which inaugurates a blessed immortality in heaven for the righteous. For this purpose all the departed just will rise from a mysterious abode, though apparently not in the body (ciii, 3, 4). The wicked will go into the Sheol of darkness and fire and dwell there forever. This is one of the earliest mentions of Sheol as a hell of torment, preceding portions of the book having described the place of retribution for the wicked as Tartarus and Geennom. Book IV (chapters 37-70) This book consists of three \"Parables\". The first describes the secrets of heaven , giving prominence to the angelic hosts and their princes. The second parable (xliv-lvii) deals with the Messias , and is the most striking of this remarkable book. The influence of Daniel is easily traceable here, but the figure of the Messias is sketched much more fully, and the idea developed to a degree unparalleled in pre-Christian literature. The Elect One, or Son of Man , existed before the sun and stars were created, and is to execute justice upon all sinners who oppress the good. For this end there will be a resurrection of all Israel and a judgment in which the Son of Man will render to everyone according to his deeds. Iniquity will be banished from the earth and the reign of the Messias will be everlasting. The third parable (lviii-lxx) describes again the happiness reserved for the just, the great Judgment and the secrets of nature. Here and there throughout the Book of Parables the author gives piecemeal his theory of the origin of sin . Going a step further back than the fault of the Watchers of the first book, he attributes their fall to certain mysterious Satans . Book V (chapters 72-78, 89 and 79 transposed) This book may be called the Book of Celestial Physics, or Astronomy. It presents a bewildering mass of revelations concerning the movements of the heavenly bodies, given to Henoch by the angel Uriel. The final chapters of the entire work, cv-cvii, are drawn from the lost Book of Noah. About this page APA citation. The Book of Henoch (Ethiopic). (1907). In The Catholic Encyclopedia. New York: Robert Appleton Company. https://www.newadvent.org/cathen/01602a.htm MLA citation. \"The Book of Henoch (Ethiopic).\" The Catholic Encyclopedia. Vol. 1. New York: Robert Appleton Company, 1907. &lt;https://www.newadvent.org/cathen/01602a.htm&gt;. Transcription. This article was transcribed for New Advent by Douglas J. Potter. Dedicated to the Sacred Heart of Jesus Christ. Ecclesiastical approbation. Nihil Obstat. March 1, 1907. Remy Lafort, S.T.D., Censor. Imprimatur. +John Cardinal Farley, Archbishop of New York. Contact information. The editor of New Advent is Kevin Knight. My email address is webmaster at newadvent.org. Regrettably, I can't reply to every letter, but I greatly appreciate your feedback &mdash; especially notifications about typographical errors and inappropriate ads. Copyright &#169; 2026 by New Advent LLC . Dedicated to the Immaculate Heart of Mary. CONTACT US | ADVERTISE WITH NEW ADVENT",
+      "rawHtml": null,
+      "keywords": "crawl(d1): theme: book of enoch",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:37:11.529Z",
+      "evidences": [
+        {
+          "id": "cmqyscw3400167djl4zv7qz98",
+          "sourceId": "cmqyscw2w00147djlqccyob6a",
+          "scriptureRef": "1-enoch 1:1",
+          "scriptureText": null,
+          "claim": "Crawled for theme: book of enoch",
+          "corroboration": "CATHOLIC ENCYCLOPEDIA: The Book of Enoch Search: Submit Search Home Encyclopedia Summa Fathers Bible Library A B C D E F G H I J K L M N O P Q R S T U V W X Y Z SEARCH Encyclopedia Summa Fathers Bible Library --> Home > Catholic Encyclopedia > H > The Book of Henoch (Ethiopic) The Book of Henoch (Ethiopic) Please help support the mission of New Advent and get the full contents of this website as an instant download. Includes the Catholic Encyclopedia, Church Fathers, Summa, Bible and more &#151; all for only $19.99... The antediluvian patriarch Henoch according to Genesis \"walked with God and was seen no more, because God took him\".",
+          "alignment": "contextualizes",
+          "confidence": 0.33,
+          "claimTypeSlug": "tradition-devotional",
+          "notes": "Recursive crawl (depth 1) from theme: book of enoch. ",
+          "blindspot": true,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-06-29T05:37:11.536Z",
+          "updatedAt": "2026-06-29T05:38:12.979Z"
+        }
+      ]
+    },
+    {
+      "id": "cmqysd57t00197djlcsv3wj2x",
+      "url": "https://www.newadvent.org/cathen/01601a.htm",
+      "title": "CATHOLIC ENCYCLOPEDIA: Apocrypha",
+      "domain": "newadvent.org",
+      "category": "crawled",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-06-29T05:37:23.370Z",
+      "author": null,
+      "publisher": null,
+      "summary": "CATHOLIC ENCYCLOPEDIA: Apocrypha Search: Submit Search Home Encyclopedia Summa Fathers Bible Library A B C D E F G H I J K L M N O P Q R S T U V W X Y Z SEARCH Encyclopedia Summa Fathers Bible Library --> Home > Catholic Encyclopedia > A > Apocrypha Apocrypha Please help support the mission of New Advent and get the full contents of this website as an instant download. Includes the Catholic Encyclopedia, Church Fathers, Summa, Bible and more &#151; all for only $19.99... Overview The scope of th",
+      "content": "CATHOLIC ENCYCLOPEDIA: Apocrypha Search: Submit Search Home Encyclopedia Summa Fathers Bible Library A B C D E F G H I J K L M N O P Q R S T U V W X Y Z SEARCH Encyclopedia Summa Fathers Bible Library --> Home > Catholic Encyclopedia > A > Apocrypha Apocrypha Please help support the mission of New Advent and get the full contents of this website as an instant download. Includes the Catholic Encyclopedia, Church Fathers, Summa, Bible and more &#151; all for only $19.99... Overview The scope of this article takes in those compositions which profess to have been written either by Biblical personages or men in intimate relations with them. Such known works as the Shepherd of Hermas, the Epistle of Barnabas , the Didache (Teaching) of the Twelve Apostles , and the Apostolic Canons and Constitutions, though formerly apocryphal, really belong to patristic literature, and are considered independently. It has been deemed better to classify the Biblical apocrypha according to their origin, instead of following the misleading division of the apocrypha of the Old and New Testaments. Broadly speaking, the apocrypha of Jewish origin are coextensive with what are styled of the Old Testament , and those of Christian origin with the apocrypha of the New Testament . The subject will be treated as follows: I. Apocrypha of Jewish origin Jewish Apocalypses Legendary Apocrypha of Jewish Origin Apocryphal Psalms and Prayers Jewish Philosophy II. Apocrypha of Jewish origin with Christian accretions III. Apocrypha of Christian origin Apocryphal Gospels Pilate literature and other apocrypha concerning Christ Apocryphal Acts of the Apostles Apocryphal doctrinal works Apocryphal Epistles Apocryphal Apocalypses IV. The Apocrypha and the Church Name and notion Etymologically, the derivation of Apocrypha is very simple, being from the Greek apokryphos , hidden, and corresponding to the neuter plural of the adjective. The use of the singular, \"Apocryphon\", is both legitimate and convenient, when referring to a single work. When we would attempt to seize the literary sense attaching to the word, the task is not so easy. It has been employed in various ways by early patristic writers, who have sometimes entirely lost sight of the etymology. Thus it has the connotation \"uncanonical\" with some of them. St. Jerome evidently applied the term to all quasi-scriptural books which in his estimation lay outside the canon of the Bible , and the Protestant Reformers , following Jerome's catalogue of Old Testament Scriptures &#151; one which was at once erroneous and singular among the Fathers of the Church &#151; applied the title Apocrypha to the excess of the Catholic canon of the Old Testament over that of the Jews . Naturally, Catholics refuse to admit such a denomination, and we employ \"deuterocanonical\" to designate this literature, which non-Catholics conventionally and improperly know as the \"Apocrypha\". (See CANON OF THE OLD TESTAMENT .) The original and proper sense of the term apocryphal as applied to the pretended sacred books was early obscured. But a clue to it may be recognized in the so-called Fourth Book of Esdras, which relates that Estrus (Era) by divine inspiration composed ninety-four books. Of these, twenty-four were restorations of the sacred literature of the Israelites which had perished in the Captivity; they were to be published openly, but the remaining were to be guarded in secret for the exclusive use of the wise (cf. Daniel 12:4, 9 , where the prophet is bidden to shut up and seal an inspired book until an appointed time). Accordingly it may be accepted as highly probable that in its original meaning an apocryphal writing had no unfavorable import, but simply denoted a composition which claimed a sacred origin, and was supposed to have been hidden for generations, either absolutely, awaiting the due time of its revelation, or relatively, inasmuch as knowledge of it was confined to a limited esoteric circle. However, the name Apocrypha soon came to have an unfavourable signification which it still retains, comporting both want of genuineness and canonicity. These are the negative aspects of the modern application of the name; on its positive side it is properly employed only of a well defined class of literature, putting forth scriptural or quasi-scriptural pretensions, and which originated in part among the Hebrews during the two centuries preceding Christ and for a space after, and in part among Christians , both orthodox and heterodox, in the early centuries of our era. Apocrypha of Jewish origin Ancient literature, especially in the Orient, used methods much more free and elastic than those permitted by our modern and Occidental culture. Pseudographic composition was in vogue among the Jews in the two centuries before Christ and for some time later. The attribution of a great name of the distant past to a book by its real author, who thus effaced his own personality , was, in some cases at least, a mere literary fiction which deceived no one except the ignorant . This holds good for the so-called \"Wisdom of Solomon\", written in Greek and belonging to the Church's sacred canon. In other cases, where the assumed name did not stand as a symbol of a type of a certain kind of literature, the intention was not without a degree of at least objective literary dishonesty. Jewish apocalypses The most important and valuable of the extant Jewish apocrypha are those which have a large apocalyptic element; that is, which profess to contain visions and revelations of the unseen world and the Messianic future. Jewish apocalyptic literature is a theme which deserves and has increasingly received the attention of all interested in the development of the religious thought of Israel , that body of concepts and tendencies in which are fixed the roots of the great doctrinal principles of Christianity itself, just as its Divine Founder took His temporal generation from the stock of orthodox Judaism . The Jewish apocalypses furnish the completing links in the progress of Jewish theology and fill what would otherwise be a gap, though a small one, between the advanced stage marked by the deuterocanonical books and its full maturity in the time of Our Lord ; a maturity so relatively perfect that Jesus could suppose as existing in the popular consciousness, without teaching de novo , the doctrines of future retribution , the resurrection of the body , and the existence, nature, and office of angels . Jewish apocalyptic writing is an attempt to supply the place of prophecy , which had been dead for centuries, and it has its roots in the sacred oracles of Israel . Hebrew prophecy on its human side had its springs, its occasions, and immediate objects in the present; the prophets were inspired men who found matter for comfort as well as rebuke and warning in the actual conditions of Israel's theocratic life. But when ages had elapsed, and the glowing Messianic promises of the prophets had not been realized; when the Jewish people had chafed, not through two or three, but many generations, under the bitter yoke of foreign masters or the constantly repeated pressure of heathen states, reflecting and fervent spirits, finding no hope in the actual order of things, looked away from earth and fixed their vision on another and ideal world where God's justice would reign unthwarted, to the everlasting glory of Israel both as a nation and in its faithful individuals , and unto the utter destruction and endless torment of the Gentile oppressors and the unrighteous. Apocalyptic literature was both a message of comfort and an effort to solve the problems of the sufferings of the just and the apparent hopelessness of a fulfilment of the prophecies of Israel's sovereignty on earth. But the inevitable consequence of the apocalyptic distrust of everything present was its assumption of the guise of the remote and classic past; in other words, its pseudonymous character. Naturally basing itself upon the Pentateuch and the Prophets, it clothed itself fictitiously with the authority of a patriarch or prophet who was made to reveal the transcendent future. But in their effort to adjust this future to the history that lay within their ken the apocalyptic writers unfolded also a philosophy of the origin and progress of mundane things. A wider view of world-politics and a comprehensive cosmological speculation are among the distinctive traits of Jewish apocalyptic. The Book of Daniel is the one book of the Old Testament to which the non-inspired apocalypses bear the closest affinity, and it evidently furnished ideas to several of the latter. An apocalyptic element existing in the prophets , in Zacharias (i-vi), in Tobias (Tobias, xiii), can be traced back to the visions of Ezechiel which form the prototype of apocalyptic; all this had its influence upon the new literature. Messianism of course plays an important part in apocalyptic eschatology and the idea of the Messias in certain books received a very high development. But even when it is transcendent and mystic it is intensely, almost fanatically, national, and surrounded by fanciful and often extravagant accessories. It lacks the universal outlook of some of the prophets , especially the Deutero-Isaias, and is far from having a uniform and consistent physiognomy. Sometimes the Messianic realm is placed upon the transfigured earth, centering in a new Jerusalem ; in other works it is lifted into the Heavens; in some books the Messias is wanting or is apparently merely human, while the Parables of Henoch with their pre-existent Messias mark the highest point of development of the Messianic concept to be found in the whole range of Hebrew literature. (a) The Book of Henoch (Ethiopic) See the separate article under this title. (b) Assumption of Moses Origen , \"De Principiis\", III, ii, 1, names the Assumption of Moses &#151; Analepsis Mouseos &#151; as the book cited by the Epistle of Jude, 9 , where there is an allusion to a dispute between Michael and Satan over the body of Moses. Aside from a few other brief references in patristic literature, nothing more was known of this apocryphon until the Latin manuscript containing a long portion of it was discovered by Ceriani in the Ambrosian Library , at Milan , and published by him in 1861. Its identity with the ancient work is established by a quotation from the latter in the Acts of the Nicene Council. The book purports to be a series of predictions delivered in written form to the safe-keeping of Josue (Joshua) by Moses when the latter, in view of his approaching death, appointed Josue as his successor. The ostensible purpose of these deliverances is to confirm the Mosaic laws and the admonitions in Deuteronomy. The entire history of Israel is outlined. In a vehement and glowing style the book delineates under its prophetic guise the impiety of Israel's Hasmonean rulers and Sadducean priests . The historical allusions come down to the reign of an insolent monarch who is plainly Herod the Great , and a powerful ruler who shall come from the West and subjugate the people &#151; a reference to the punitive expedition of Quintilius Varus, 4 B.C. But the Messias will intervene and execute Divine wrath upon the enemies of the nation, and a cataclysm of nature, which is depicted with truly apocalyptic sublimity, will forerun the beginning of the new era. Strangely there is no mention of a resurrection or a judgment of individuals . The book then returns to the doings of Moses and Josue. The manuscript breaks off abruptly at chapter xii, and the portion cited by Jude must have belonged to the lost conclusion. This apocalypse has with solid reasons been assigned to the early years after Herod's death, between 4 B.C. and A.D. 10. It is evident that neither of Herod's sons, Philip and Antipas , had yet reigned thirty-four years, since the writer, hazarding a prediction that proved false , says that the sons should enjoy shorter reigns than their f",
+      "rawHtml": null,
+      "keywords": "crawl(d2): theme: book of enoch",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-06-29T05:37:23.370Z",
+      "evidences": [
+        {
+          "id": "cmqysd584001b7djlwfmiyvm1",
+          "sourceId": "cmqysd57t00197djlcsv3wj2x",
+          "scriptureRef": "1-enoch 1:1",
+          "scriptureText": null,
+          "claim": "Crawled for theme: book of enoch",
+          "corroboration": "CATHOLIC ENCYCLOPEDIA: Apocrypha Search: Submit Search Home Encyclopedia Summa Fathers Bible Library A B C D E F G H I J K L M N O P Q R S T U V W X Y Z SEARCH Encyclopedia Summa Fathers Bible Library --> Home > Catholic Encyclopedia > A > Apocrypha Apocrypha Please help support the mission of New Advent and get the full contents of this website as an instant download. Includes the Catholic Encyclopedia, Church Fathers, Summa, Bible and more &#151; all for only $19.99... Overview The scope of this article takes in those compositions which profess to have been written either by Biblical personages or men in intimate relations with them.",
+          "alignment": "contextualizes",
+          "confidence": 0.33,
+          "claimTypeSlug": "tradition-devotional",
+          "notes": "Recursive crawl (depth 2) from theme: book of enoch. ",
+          "blindspot": true,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-06-29T05:37:23.381Z",
+          "updatedAt": "2026-06-29T05:38:12.983Z"
+        }
+      ]
     }
   ]
 }

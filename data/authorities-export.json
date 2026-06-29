@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-06-29T05:31:02.816Z",
-  "count": 94,
+  "exportedAt": "2026-06-29T05:38:14.587Z",
+  "count": 97,
   "authorities": [
     {
       "id": "cmqwzeyj400017dsppear02d1",
@@ -18,7 +18,7 @@
       "validationNotes": "Publisher/host of deadseascrolls.org.il. Institutional standing.",
       "homepage": "https://deadseascrolls.org.il",
       "createdAt": "2026-06-27T23:19:12.976Z",
-      "updatedAt": "2026-06-29T05:31:01.612Z",
+      "updatedAt": "2026-06-29T05:38:13.117Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygqyd00967dcy54k4n6mi",
@@ -43,7 +43,7 @@
       "validationNotes": "Publisher/host of biblicalarchaeology.org. Institutional standing.",
       "homepage": "https://biblicalarchaeology.org",
       "createdAt": "2026-06-27T23:19:12.993Z",
-      "updatedAt": "2026-06-29T05:31:02.342Z",
+      "updatedAt": "2026-06-29T05:38:14.000Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygqyy009b7dcy6ayikqp6",
@@ -103,7 +103,7 @@
       "validationNotes": "Publisher/host of britishmuseum.org. Institutional standing.",
       "homepage": "https://britishmuseum.org",
       "createdAt": "2026-06-27T23:19:13.012Z",
-      "updatedAt": "2026-06-29T05:31:01.624Z",
+      "updatedAt": "2026-06-29T05:38:13.133Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygqzf009e7dcy2apen3o5",
@@ -128,7 +128,7 @@
       "validationNotes": "Publisher/host of nature.com. Institutional standing.",
       "homepage": "https://nature.com",
       "createdAt": "2026-06-27T23:19:13.028Z",
-      "updatedAt": "2026-06-29T05:31:01.629Z",
+      "updatedAt": "2026-06-29T05:38:13.138Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygr01009j7dcyruw2obto",
@@ -153,7 +153,7 @@
       "validationNotes": "Publisher/host of science.org. Institutional standing.",
       "homepage": "https://science.org",
       "createdAt": "2026-06-27T23:19:13.043Z",
-      "updatedAt": "2026-06-29T05:31:01.634Z",
+      "updatedAt": "2026-06-29T05:38:13.145Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygr0b009m7dcydr4s8r2q",
@@ -178,7 +178,7 @@
       "validationNotes": "Publisher/host of jstor.org. Institutional standing.",
       "homepage": "https://jstor.org",
       "createdAt": "2026-06-27T23:19:13.060Z",
-      "updatedAt": "2026-06-29T05:31:02.338Z",
+      "updatedAt": "2026-06-29T05:38:13.995Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygr0q009p7dcyzyinaxno",
@@ -218,7 +218,7 @@
       "validationNotes": "Publisher/host of bibleinterp.com. Institutional standing.",
       "homepage": "https://bibleinterp.com",
       "createdAt": "2026-06-27T23:19:13.074Z",
-      "updatedAt": "2026-06-29T05:31:01.643Z",
+      "updatedAt": "2026-06-29T05:38:13.156Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygr1a009s7dcyvotjnoas",
@@ -243,7 +243,7 @@
       "validationNotes": "Publisher/host of thegospelcoalition.org. Institutional standing.",
       "homepage": "https://thegospelcoalition.org",
       "createdAt": "2026-06-27T23:19:13.089Z",
-      "updatedAt": "2026-06-29T05:31:01.983Z",
+      "updatedAt": "2026-06-29T05:38:13.583Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs4j00007deqh5jdzw1a",
@@ -278,7 +278,7 @@
       "validationNotes": "Publisher/host of catholicproductions.com. Institutional standing.",
       "homepage": "https://catholicproductions.com",
       "createdAt": "2026-06-27T23:19:13.107Z",
-      "updatedAt": "2026-06-29T05:31:01.922Z",
+      "updatedAt": "2026-06-29T05:38:13.495Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs4s00017deqb3r0uxly",
@@ -313,7 +313,7 @@
       "validationNotes": "Publisher/host of aomin.org. Institutional standing.",
       "homepage": "https://aomin.org",
       "createdAt": "2026-06-27T23:19:13.121Z",
-      "updatedAt": "2026-06-29T05:31:01.657Z",
+      "updatedAt": "2026-06-29T05:38:13.174Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs5100027deqgyywitxl",
@@ -338,7 +338,7 @@
       "validationNotes": "Publisher/host of en.wikipedia.org. Institutional standing.",
       "homepage": "https://en.wikipedia.org",
       "createdAt": "2026-06-27T23:19:13.138Z",
-      "updatedAt": "2026-06-29T05:31:01.831Z",
+      "updatedAt": "2026-06-29T05:38:14.082Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs5800037deqhzpzowwo",
@@ -389,6 +389,11 @@
           "sourceId": "cmqwygskz002o7deqvtvh0tp4",
           "authorityId": "cmqwzeynl000l7dspazrqwwhl",
           "role": "institution"
+        },
+        {
+          "sourceId": "cmqysba8w00007djlwybfen2u",
+          "authorityId": "cmqwzeynl000l7dspazrqwwhl",
+          "role": "institution"
         }
       ]
     },
@@ -408,7 +413,7 @@
       "validationNotes": "Publisher/host of biola.edu. Institutional standing.",
       "homepage": "https://biola.edu",
       "createdAt": "2026-06-27T23:19:13.152Z",
-      "updatedAt": "2026-06-29T05:31:01.666Z",
+      "updatedAt": "2026-06-29T05:38:13.187Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs5h00047deqs8pvt53n",
@@ -433,7 +438,7 @@
       "validationNotes": "Publisher/host of digitalcommons.liberty.edu. Institutional standing.",
       "homepage": "https://digitalcommons.liberty.edu",
       "createdAt": "2026-06-27T23:19:13.164Z",
-      "updatedAt": "2026-06-29T05:31:01.670Z",
+      "updatedAt": "2026-06-29T05:38:13.193Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs5o00057deqa4t5f6ep",
@@ -458,7 +463,7 @@
       "validationNotes": "Publisher/host of theeasternchurch.com. Institutional standing.",
       "homepage": "https://theeasternchurch.com",
       "createdAt": "2026-06-27T23:19:13.211Z",
-      "updatedAt": "2026-06-29T05:31:01.960Z",
+      "updatedAt": "2026-06-29T05:38:13.539Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs6800087deqf6009g36",
@@ -488,7 +493,7 @@
       "validationNotes": "Publisher/host of euclid.int. Institutional standing.",
       "homepage": "https://euclid.int",
       "createdAt": "2026-06-27T23:19:13.223Z",
-      "updatedAt": "2026-06-29T05:31:01.688Z",
+      "updatedAt": "2026-06-29T05:38:13.214Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs6f00097deqepf1dapp",
@@ -513,7 +518,7 @@
       "validationNotes": "Publisher/host of ecatholic2000.com. Institutional standing.",
       "homepage": "https://ecatholic2000.com",
       "createdAt": "2026-06-27T23:19:13.239Z",
-      "updatedAt": "2026-06-29T05:31:01.692Z",
+      "updatedAt": "2026-06-29T05:38:13.219Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs6m000a7deqrnvt6nut",
@@ -538,7 +543,7 @@
       "validationNotes": "Publisher/host of annecatherineemmerich.com. Institutional standing.",
       "homepage": "https://annecatherineemmerich.com",
       "createdAt": "2026-06-27T23:19:13.255Z",
-      "updatedAt": "2026-06-29T05:31:01.697Z",
+      "updatedAt": "2026-06-29T05:38:13.225Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs6u000b7deqhv84gjxg",
@@ -563,7 +568,7 @@
       "validationNotes": "Publisher/host of brill.com. Institutional standing.",
       "homepage": "https://brill.com",
       "createdAt": "2026-06-27T23:19:13.312Z",
-      "updatedAt": "2026-06-29T05:31:02.379Z",
+      "updatedAt": "2026-06-29T05:38:14.043Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs7o000f7deq3yv2snyf",
@@ -658,7 +663,7 @@
       "validationNotes": "Publisher/host of digitalcommons.andrews.edu. Institutional standing.",
       "homepage": "https://digitalcommons.andrews.edu",
       "createdAt": "2026-06-27T23:19:13.325Z",
-      "updatedAt": "2026-06-29T05:31:01.719Z",
+      "updatedAt": "2026-06-29T05:38:13.250Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs7u000g7deqfbbr1ajd",
@@ -683,7 +688,7 @@
       "validationNotes": "Publisher/host of chadashby.com. Institutional standing.",
       "homepage": "https://chadashby.com",
       "createdAt": "2026-06-27T23:19:13.357Z",
-      "updatedAt": "2026-06-29T05:31:01.728Z",
+      "updatedAt": "2026-06-29T05:38:13.260Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs87000i7deq1yxuputa",
@@ -708,7 +713,7 @@
       "validationNotes": "Publisher/host of equip.sbts.edu. Institutional standing.",
       "homepage": "https://equip.sbts.edu",
       "createdAt": "2026-06-27T23:19:13.369Z",
-      "updatedAt": "2026-06-29T05:31:01.732Z",
+      "updatedAt": "2026-06-29T05:38:13.266Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs8d000j7deqolr2scpw",
@@ -733,7 +738,7 @@
       "validationNotes": "Publisher/host of thetorah.com. Institutional standing.",
       "homepage": "https://thetorah.com",
       "createdAt": "2026-06-27T23:19:13.384Z",
-      "updatedAt": "2026-06-29T05:31:02.433Z",
+      "updatedAt": "2026-06-29T05:38:14.077Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs8k000k7deq2kect6m9",
@@ -773,7 +778,7 @@
       "validationNotes": "Publisher/host of drmsh.com. Institutional standing.",
       "homepage": "https://drmsh.com",
       "createdAt": "2026-06-27T23:19:13.398Z",
-      "updatedAt": "2026-06-29T05:31:01.741Z",
+      "updatedAt": "2026-06-29T05:38:13.276Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs8t000l7deq4hcxiq2i",
@@ -798,7 +803,7 @@
       "validationNotes": "Publisher/host of icr.org. Institutional standing.",
       "homepage": "https://icr.org",
       "createdAt": "2026-06-27T23:19:13.412Z",
-      "updatedAt": "2026-06-29T05:31:01.745Z",
+      "updatedAt": "2026-06-29T05:38:13.282Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs90000m7deq2qif4v4c",
@@ -823,7 +828,7 @@
       "validationNotes": "Publisher/host of katychristianmagazine.com. Institutional standing.",
       "homepage": "https://katychristianmagazine.com",
       "createdAt": "2026-06-27T23:19:13.441Z",
-      "updatedAt": "2026-06-29T05:31:01.753Z",
+      "updatedAt": "2026-06-29T05:38:13.293Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsac000u7deq607153so",
@@ -848,7 +853,7 @@
       "validationNotes": "Publisher/host of gospelworthdyingfor.com. Institutional standing.",
       "homepage": "https://gospelworthdyingfor.com",
       "createdAt": "2026-06-27T23:19:13.453Z",
-      "updatedAt": "2026-06-29T05:31:01.757Z",
+      "updatedAt": "2026-06-29T05:38:13.299Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsaw000y7deqandnn371",
@@ -873,7 +878,7 @@
       "validationNotes": "Publisher/host of christchurchjerusalem.org. Institutional standing.",
       "homepage": "https://christchurchjerusalem.org",
       "createdAt": "2026-06-27T23:19:13.486Z",
-      "updatedAt": "2026-06-29T05:31:01.766Z",
+      "updatedAt": "2026-06-29T05:38:13.308Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsc500167deqs2mm3gla",
@@ -898,7 +903,7 @@
       "validationNotes": "Publisher/host of intertextual.bible. Institutional standing.",
       "homepage": "https://intertextual.bible",
       "createdAt": "2026-06-27T23:19:13.513Z",
-      "updatedAt": "2026-06-29T05:31:01.835Z",
+      "updatedAt": "2026-06-29T05:38:13.387Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsdl001e7deqg3qgvajf",
@@ -933,7 +938,7 @@
       "validationNotes": "Publisher/host of faithtacoma.org. Institutional standing.",
       "homepage": "https://faithtacoma.org",
       "createdAt": "2026-06-27T23:19:13.554Z",
-      "updatedAt": "2026-06-29T05:31:01.788Z",
+      "updatedAt": "2026-06-29T05:38:13.332Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsfb001q7deqg432lwha",
@@ -958,7 +963,7 @@
       "validationNotes": "Publisher/host of ncse.ngo. Institutional standing.",
       "homepage": "https://ncse.ngo",
       "createdAt": "2026-06-27T23:19:13.566Z",
-      "updatedAt": "2026-06-29T05:31:01.792Z",
+      "updatedAt": "2026-06-29T05:38:13.337Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsfw001u7deqsqyolz6x",
@@ -983,7 +988,7 @@
       "validationNotes": "Publisher/host of sciencedirect.com. Institutional standing.",
       "homepage": "https://sciencedirect.com",
       "createdAt": "2026-06-27T23:19:13.578Z",
-      "updatedAt": "2026-06-29T05:31:01.796Z",
+      "updatedAt": "2026-06-29T05:38:13.341Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsgk001y7deqh1ro80wf",
@@ -1008,7 +1013,7 @@
       "validationNotes": "Publisher/host of czasopisma.kul.pl. Institutional standing.",
       "homepage": "https://czasopisma.kul.pl",
       "createdAt": "2026-06-27T23:19:13.594Z",
-      "updatedAt": "2026-06-29T05:31:02.061Z",
+      "updatedAt": "2026-06-29T05:38:13.675Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsh400227deqrryltjgz",
@@ -1038,7 +1043,7 @@
       "validationNotes": "Publisher/host of byustudies.byu.edu. Institutional standing.",
       "homepage": "https://byustudies.byu.edu",
       "createdAt": "2026-06-27T23:19:13.609Z",
-      "updatedAt": "2026-06-29T05:31:01.805Z",
+      "updatedAt": "2026-06-29T05:38:13.352Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygshs00267deqqug7vd7v",
@@ -1063,7 +1068,7 @@
       "validationNotes": "Publisher/host of bookofenoch2020.com. Institutional standing.",
       "homepage": "https://bookofenoch2020.com",
       "createdAt": "2026-06-27T23:19:13.624Z",
-      "updatedAt": "2026-06-29T05:31:01.809Z",
+      "updatedAt": "2026-06-29T05:38:13.357Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsif002a7deqrr27o6ky",
@@ -1088,7 +1093,7 @@
       "validationNotes": "Publisher/host of scripturecentral.org. Institutional standing.",
       "homepage": "https://scripturecentral.org",
       "createdAt": "2026-06-27T23:19:13.679Z",
-      "updatedAt": "2026-06-29T05:31:02.361Z",
+      "updatedAt": "2026-06-29T05:38:14.022Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsks002n7deqdb1sved7",
@@ -1118,7 +1123,7 @@
       "validationNotes": "Publisher/host of nextstepbiblestudy.net. Institutional standing.",
       "homepage": "https://nextstepbiblestudy.net",
       "createdAt": "2026-06-27T23:19:13.721Z",
-      "updatedAt": "2026-06-29T05:31:01.839Z",
+      "updatedAt": "2026-06-29T05:38:13.392Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygslv002t7deql8bl6cpn",
@@ -1143,7 +1148,7 @@
       "validationNotes": "Publisher/host of academia.edu. Institutional standing.",
       "homepage": "https://academia.edu",
       "createdAt": "2026-06-27T23:19:13.757Z",
-      "updatedAt": "2026-06-29T05:31:02.328Z",
+      "updatedAt": "2026-06-29T05:38:14.109Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsnw00357deqshnw6pmn",
@@ -1204,6 +1209,11 @@
           "sourceId": "cmqwz6dxa002i7diycy5c5qgi",
           "authorityId": "cmqwzez4s00317dsp52knzjge",
           "role": "institution"
+        },
+        {
+          "sourceId": "cmqysc2g5000f7djluz7m526r",
+          "authorityId": "cmqwzez4s00317dsp52knzjge",
+          "role": "institution"
         }
       ]
     },
@@ -1223,7 +1233,7 @@
       "validationNotes": "Publisher/host of etd.ohiolink.edu. Institutional standing.",
       "homepage": "https://etd.ohiolink.edu",
       "createdAt": "2026-06-27T23:19:13.815Z",
-      "updatedAt": "2026-06-29T05:31:01.867Z",
+      "updatedAt": "2026-06-29T05:38:13.426Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsqk003l7deqvd6kkbtd",
@@ -1248,7 +1258,7 @@
       "validationNotes": "Publisher/host of vridar.org. Institutional standing.",
       "homepage": "https://vridar.org",
       "createdAt": "2026-06-27T23:19:13.875Z",
-      "updatedAt": "2026-06-29T05:31:01.883Z",
+      "updatedAt": "2026-06-29T05:38:13.446Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygssn00417deqpp0uqfax",
@@ -1273,7 +1283,7 @@
       "validationNotes": "Publisher/host of eprints.glos.ac.uk. Institutional standing.",
       "homepage": "https://eprints.glos.ac.uk",
       "createdAt": "2026-06-27T23:19:13.889Z",
-      "updatedAt": "2026-06-29T05:31:01.887Z",
+      "updatedAt": "2026-06-29T05:38:13.451Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygstb00457deqsjlgnk32",
@@ -1298,7 +1308,7 @@
       "validationNotes": "Publisher/host of asor.org. Institutional standing.",
       "homepage": "https://asor.org",
       "createdAt": "2026-06-27T23:19:13.982Z",
-      "updatedAt": "2026-06-29T05:31:01.914Z",
+      "updatedAt": "2026-06-29T05:38:13.485Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygswb004r7deq8vl4js35",
@@ -1323,7 +1333,7 @@
       "validationNotes": "Publisher/host of facebook.com. Institutional standing.",
       "homepage": "https://facebook.com",
       "createdAt": "2026-06-27T23:19:14.024Z",
-      "updatedAt": "2026-06-29T05:31:02.238Z",
+      "updatedAt": "2026-06-29T05:38:13.879Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwypo1x00017d648uev1y3g",
@@ -1423,7 +1433,7 @@
       "validationNotes": "Publisher/host of medium.com. Institutional standing.",
       "homepage": "https://medium.com",
       "createdAt": "2026-06-27T23:19:14.035Z",
-      "updatedAt": "2026-06-29T05:31:02.017Z",
+      "updatedAt": "2026-06-29T05:38:13.624Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyprx600027d644aebt09d",
@@ -1453,7 +1463,7 @@
       "validationNotes": "Publisher/host of evidenceunseen.com. Institutional standing.",
       "homepage": "https://evidenceunseen.com",
       "createdAt": "2026-06-27T23:19:14.073Z",
-      "updatedAt": "2026-06-29T05:31:01.943Z",
+      "updatedAt": "2026-06-29T05:38:13.519Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwypvxe00057d64rlk7zd4g",
@@ -1478,7 +1488,7 @@
       "validationNotes": "Publisher/host of reddit.com. Institutional standing.",
       "homepage": "https://reddit.com",
       "createdAt": "2026-06-27T23:19:14.085Z",
-      "updatedAt": "2026-06-29T05:31:01.947Z",
+      "updatedAt": "2026-06-29T05:38:13.523Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwypvxn00067d64l96uqwt8",
@@ -1503,7 +1513,7 @@
       "validationNotes": "Publisher/host of kcmifm.com. Institutional standing.",
       "homepage": "https://kcmifm.com",
       "createdAt": "2026-06-27T23:19:14.104Z",
-      "updatedAt": "2026-06-29T05:31:01.951Z",
+      "updatedAt": "2026-06-29T05:38:13.529Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwypvxv00077d6488lbj03w",
@@ -1528,7 +1538,7 @@
       "validationNotes": "Publisher/host of encyclopedia.pub. Institutional standing.",
       "homepage": "https://encyclopedia.pub",
       "createdAt": "2026-06-27T23:19:14.117Z",
-      "updatedAt": "2026-06-29T05:31:01.956Z",
+      "updatedAt": "2026-06-29T05:38:13.534Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwypytk00087d64lftfnytm",
@@ -1553,7 +1563,7 @@
       "validationNotes": "Publisher/host of youtube.com. Institutional standing.",
       "homepage": "https://youtube.com",
       "createdAt": "2026-06-27T23:19:14.141Z",
-      "updatedAt": "2026-06-29T05:31:02.138Z",
+      "updatedAt": "2026-06-29T05:38:13.767Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyq7mg000a7d645a9u9frk",
@@ -1603,7 +1613,7 @@
       "validationNotes": "Publisher/host of researchgate.net. Institutional standing.",
       "homepage": "https://researchgate.net",
       "createdAt": "2026-06-27T23:19:14.179Z",
-      "updatedAt": "2026-06-29T05:31:02.324Z",
+      "updatedAt": "2026-06-29T05:38:13.980Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyqmz1000d7d64wdlbhoir",
@@ -1648,7 +1658,7 @@
       "validationNotes": "Publisher/host of tiktok.com. Institutional standing.",
       "homepage": "https://tiktok.com",
       "createdAt": "2026-06-27T23:19:14.221Z",
-      "updatedAt": "2026-06-29T05:31:02.120Z",
+      "updatedAt": "2026-06-29T05:38:13.746Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyqqav000g7d649rcpilwf",
@@ -1678,7 +1688,7 @@
       "validationNotes": "Publisher/host of quora.com. Institutional standing.",
       "homepage": "https://quora.com",
       "createdAt": "2026-06-27T23:19:14.234Z",
-      "updatedAt": "2026-06-29T05:31:02.165Z",
+      "updatedAt": "2026-06-29T05:38:13.795Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyqu3z000h7d643ssy9zur",
@@ -1708,7 +1718,7 @@
       "validationNotes": "Publisher/host of jpost.com. Institutional standing.",
       "homepage": "https://jpost.com",
       "createdAt": "2026-06-27T23:19:14.280Z",
-      "updatedAt": "2026-06-29T05:31:02.008Z",
+      "updatedAt": "2026-06-29T05:38:13.614Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyqz26000w7d64vroq4f6r",
@@ -1733,7 +1743,7 @@
       "validationNotes": "Publisher/host of marquette.edu. Institutional standing.",
       "homepage": "https://marquette.edu",
       "createdAt": "2026-06-27T23:19:14.323Z",
-      "updatedAt": "2026-06-29T05:31:02.247Z",
+      "updatedAt": "2026-06-29T05:38:13.888Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyr3c1001b7d64h0ubeolp",
@@ -1768,7 +1778,7 @@
       "validationNotes": "Publisher/host of readingacts.com. Institutional standing.",
       "homepage": "https://readingacts.com",
       "createdAt": "2026-06-27T23:19:14.336Z",
-      "updatedAt": "2026-06-29T05:31:02.369Z",
+      "updatedAt": "2026-06-29T05:38:14.033Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyr3cr001g7d640jbuga1w",
@@ -1798,7 +1808,7 @@
       "validationNotes": "Publisher/host of ndl.ethernet.edu.et. Institutional standing.",
       "homepage": "https://ndl.ethernet.edu.et",
       "createdAt": "2026-06-27T23:19:14.365Z",
-      "updatedAt": "2026-06-29T05:31:02.034Z",
+      "updatedAt": "2026-06-29T05:38:13.645Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyrb6o001q7d643a651vs9",
@@ -1823,7 +1833,7 @@
       "validationNotes": "Publisher/host of umu.diva-portal.org. Institutional standing.",
       "homepage": "https://umu.diva-portal.org",
       "createdAt": "2026-06-27T23:19:14.377Z",
-      "updatedAt": "2026-06-29T05:31:02.039Z",
+      "updatedAt": "2026-06-29T05:38:13.650Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyrb7p001v7d640ouzhn3w",
@@ -1848,7 +1858,7 @@
       "validationNotes": "Publisher/host of cambridge.org. Institutional standing.",
       "homepage": "https://cambridge.org",
       "createdAt": "2026-06-27T23:19:14.392Z",
-      "updatedAt": "2026-06-29T05:31:02.333Z",
+      "updatedAt": "2026-06-29T05:38:14.101Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyrb8h00207d64v77m92sf",
@@ -1857,6 +1867,11 @@
         },
         {
           "sourceId": "cmqwz6ham002n7diynwt24m22",
+          "authorityId": "cmqwzezmf005l7dsp6k5y8omz",
+          "role": "publisher"
+        },
+        {
+          "sourceId": "cmqysc135000a7djlepr8tkzk",
           "authorityId": "cmqwzezmf005l7dsp6k5y8omz",
           "role": "publisher"
         }
@@ -1878,7 +1893,7 @@
       "validationNotes": "Publisher/host of instagram.com. Institutional standing.",
       "homepage": "https://instagram.com",
       "createdAt": "2026-06-27T23:19:14.418Z",
-      "updatedAt": "2026-06-29T05:31:02.057Z",
+      "updatedAt": "2026-06-29T05:38:13.670Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyrhg6002a7d646ybcfd14",
@@ -1908,7 +1923,7 @@
       "validationNotes": "Publisher/host of preprints.org. Institutional standing.",
       "homepage": "https://preprints.org",
       "createdAt": "2026-06-27T23:19:14.456Z",
-      "updatedAt": "2026-06-29T05:31:02.065Z",
+      "updatedAt": "2026-06-29T05:38:13.680Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyro5k002p7d641eayrh8q",
@@ -1933,7 +1948,7 @@
       "validationNotes": "Publisher/host of um.edu.mt. Institutional standing.",
       "homepage": "https://um.edu.mt",
       "createdAt": "2026-06-27T23:19:14.483Z",
-      "updatedAt": "2026-06-29T05:31:02.074Z",
+      "updatedAt": "2026-06-29T05:38:13.690Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyro74002z7d64hlhexpfu",
@@ -1958,7 +1973,7 @@
       "validationNotes": "Publisher/host of academic.oup.com. Institutional standing.",
       "homepage": "https://academic.oup.com",
       "createdAt": "2026-06-27T23:19:14.523Z",
-      "updatedAt": "2026-06-29T05:31:02.087Z",
+      "updatedAt": "2026-06-29T05:38:13.707Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyrvu8003e7d64a1jtb82m",
@@ -1983,7 +1998,7 @@
       "validationNotes": "Publisher/host of nomos-elibrary.de. Institutional standing.",
       "homepage": "https://nomos-elibrary.de",
       "createdAt": "2026-06-27T23:19:14.590Z",
-      "updatedAt": "2026-06-29T05:31:02.108Z",
+      "updatedAt": "2026-06-29T05:38:13.732Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwys2xa003v7d64s57n7yf7",
@@ -2008,7 +2023,7 @@
       "validationNotes": "Publisher/host of referenceworks.brill.com. Institutional standing.",
       "homepage": "https://referenceworks.brill.com",
       "createdAt": "2026-06-27T23:19:14.604Z",
-      "updatedAt": "2026-06-29T05:31:02.112Z",
+      "updatedAt": "2026-06-29T05:38:13.737Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyskyq00007dgkihjtim4w",
@@ -2033,7 +2048,7 @@
       "validationNotes": "Publisher/host of journals.sagepub.com. Institutional standing.",
       "homepage": "https://journals.sagepub.com",
       "createdAt": "2026-06-27T23:19:14.714Z",
-      "updatedAt": "2026-06-29T05:31:02.225Z",
+      "updatedAt": "2026-06-29T05:38:13.864Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwysy4t00147dgkqk4ri4n9",
@@ -2068,7 +2083,7 @@
       "validationNotes": "Publisher/host of grokipedia.com. Institutional standing.",
       "homepage": "https://grokipedia.com",
       "createdAt": "2026-06-27T23:19:14.743Z",
-      "updatedAt": "2026-06-29T05:31:02.156Z",
+      "updatedAt": "2026-06-29T05:38:13.786Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyt1l7001e7dgkcw95yidf",
@@ -2093,7 +2108,7 @@
       "validationNotes": "Publisher/host of degruyterbrill.com. Institutional standing.",
       "homepage": "https://degruyterbrill.com",
       "createdAt": "2026-06-27T23:19:14.780Z",
-      "updatedAt": "2026-06-29T05:31:02.259Z",
+      "updatedAt": "2026-06-29T05:38:13.904Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyt4un001t7dgk1vx5p6dn",
@@ -2133,7 +2148,7 @@
       "validationNotes": "Publisher/host of apocryphalstone.com. Institutional standing.",
       "homepage": "https://apocryphalstone.com",
       "createdAt": "2026-06-27T23:19:14.794Z",
-      "updatedAt": "2026-06-29T05:31:02.173Z",
+      "updatedAt": "2026-06-29T05:38:13.806Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyt822001y7dgk5l4edm7y",
@@ -2158,7 +2173,7 @@
       "validationNotes": "Publisher/host of scribd.com. Institutional standing.",
       "homepage": "https://scribd.com",
       "createdAt": "2026-06-27T23:19:14.851Z",
-      "updatedAt": "2026-06-29T05:31:02.301Z",
+      "updatedAt": "2026-06-29T05:38:13.956Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwythiy002i7dgknzoq6n7j",
@@ -2188,7 +2203,7 @@
       "validationNotes": "Publisher/host of kesherjournal.com. Institutional standing.",
       "homepage": "https://kesherjournal.com",
       "createdAt": "2026-06-27T23:19:14.864Z",
-      "updatedAt": "2026-06-29T05:31:02.195Z",
+      "updatedAt": "2026-06-29T05:38:13.830Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwytkxs002n7dgkmjvs166e",
@@ -2213,7 +2228,7 @@
       "validationNotes": "Publisher/host of research-repository.st-andrews.ac.uk. Institutional standing.",
       "homepage": "https://research-repository.st-andrews.ac.uk",
       "createdAt": "2026-06-27T23:19:14.891Z",
-      "updatedAt": "2026-06-29T05:31:02.204Z",
+      "updatedAt": "2026-06-29T05:38:13.840Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwytsd6002x7dgk4jj16lgw",
@@ -2238,7 +2253,7 @@
       "validationNotes": "Publisher/host of dokumen.pub. Institutional standing.",
       "homepage": "https://dokumen.pub",
       "createdAt": "2026-06-27T23:19:14.941Z",
-      "updatedAt": "2026-06-29T05:31:02.315Z",
+      "updatedAt": "2026-06-29T05:38:13.970Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwytvop003h7dgkp6n7crp9",
@@ -2283,7 +2298,7 @@
       "validationNotes": "Publisher/host of revistas.ucatolicaluisamigo.edu.co. Institutional standing.",
       "homepage": "https://revistas.ucatolicaluisamigo.edu.co",
       "createdAt": "2026-06-27T23:19:15.100Z",
-      "updatedAt": "2026-06-29T05:31:02.263Z",
+      "updatedAt": "2026-06-29T05:38:13.909Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwz4zl5000f7diytoflo0un",
@@ -2308,7 +2323,7 @@
       "validationNotes": "Publisher/host of chesterrep.openrepository.com. Institutional standing.",
       "homepage": "https://chesterrep.openrepository.com",
       "createdAt": "2026-06-27T23:19:15.132Z",
-      "updatedAt": "2026-06-29T05:31:02.271Z",
+      "updatedAt": "2026-06-29T05:38:13.919Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwz52rc000p7diy5gytcrb6",
@@ -2333,7 +2348,7 @@
       "validationNotes": "Publisher/host of pmc.ncbi.nlm.nih.gov. Institutional standing.",
       "homepage": "https://pmc.ncbi.nlm.nih.gov",
       "createdAt": "2026-06-27T23:19:15.146Z",
-      "updatedAt": "2026-06-29T05:31:02.275Z",
+      "updatedAt": "2026-06-29T05:38:13.925Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwz52s1000u7diyie9e0fka",
@@ -2358,7 +2373,7 @@
       "validationNotes": "Publisher/host of chasingthegiants.com. Institutional standing.",
       "homepage": "https://chasingthegiants.com",
       "createdAt": "2026-06-27T23:19:15.175Z",
-      "updatedAt": "2026-06-29T05:31:02.284Z",
+      "updatedAt": "2026-06-29T05:38:13.935Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwz5ezl00147diyeky93hqx",
@@ -2383,7 +2398,7 @@
       "validationNotes": "Publisher/host of unisapressjournals.co.za. Institutional standing.",
       "homepage": "https://unisapressjournals.co.za",
       "createdAt": "2026-06-27T23:19:15.219Z",
-      "updatedAt": "2026-06-29T05:31:02.297Z",
+      "updatedAt": "2026-06-29T05:38:13.951Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwz5vm0001j7diy8fqnhiau",
@@ -2408,7 +2423,7 @@
       "validationNotes": "Publisher/host of amazon.com. Institutional standing.",
       "homepage": "https://amazon.com",
       "createdAt": "2026-06-27T23:19:15.263Z",
-      "updatedAt": "2026-06-29T05:31:02.310Z",
+      "updatedAt": "2026-06-29T05:38:13.966Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwz69nf001y7diy2s7c2fwz",
@@ -2433,7 +2448,7 @@
       "validationNotes": "Publisher/host of biblearchaeology.org. Institutional standing.",
       "homepage": "https://biblearchaeology.org",
       "createdAt": "2026-06-27T23:19:15.288Z",
-      "updatedAt": "2026-06-29T05:31:02.320Z",
+      "updatedAt": "2026-06-29T05:38:13.975Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwz6dvo00287diy2or6mku8",
@@ -2458,7 +2473,7 @@
       "validationNotes": "Publisher/host of chabad.org. Institutional standing.",
       "homepage": "https://chabad.org",
       "createdAt": "2026-06-27T23:19:15.378Z",
-      "updatedAt": "2026-06-29T05:31:02.346Z",
+      "updatedAt": "2026-06-29T05:38:14.005Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwz70mn00057djiwiaqcnlu",
@@ -2483,7 +2498,7 @@
       "validationNotes": "Publisher/host of alephne.org. Institutional standing.",
       "homepage": "https://alephne.org",
       "createdAt": "2026-06-27T23:19:15.393Z",
-      "updatedAt": "2026-06-29T05:31:02.351Z",
+      "updatedAt": "2026-06-29T05:38:14.009Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwz70nj000a7dji9aazarnz",
@@ -2508,7 +2523,7 @@
       "validationNotes": "Publisher/host of ag.org. Institutional standing.",
       "homepage": "https://ag.org",
       "createdAt": "2026-06-27T23:19:15.413Z",
-      "updatedAt": "2026-06-29T05:31:02.356Z",
+      "updatedAt": "2026-06-29T05:38:14.014Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwz73ve000f7djicdjuo363",
@@ -2533,10 +2548,25 @@
       "validationNotes": "Publisher/host of sacred-texts.com. Institutional standing.",
       "homepage": "https://sacred-texts.com",
       "createdAt": "2026-06-27T23:19:15.440Z",
-      "updatedAt": "2026-06-29T05:31:02.365Z",
+      "updatedAt": "2026-06-29T05:38:14.135Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwz7ecf000p7dji7xo1wvd4",
+          "authorityId": "cmqwzf0fk009p7dspse1eo5q0",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmqysbc4l00057djlfq6wv3q8",
+          "authorityId": "cmqwzf0fk009p7dspse1eo5q0",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmqysca51000p7djlz6zxxlkc",
+          "authorityId": "cmqwzf0fk009p7dspse1eo5q0",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmqyscaqk000u7djlcguamag5",
           "authorityId": "cmqwzf0fk009p7dspse1eo5q0",
           "role": "institution"
         }
@@ -2558,7 +2588,7 @@
       "validationNotes": "Independent web check: 3 strong academic/reference hits; e.g. R.H. Charles: Biography & Modernized Books - Updated Works (https://updatedworks.com/authors/rh-charles/).",
       "homepage": "https://updatedworks.com/authors/rh-charles/",
       "createdAt": "2026-06-27T23:19:15.511Z",
-      "updatedAt": "2026-06-29T05:31:02.441Z",
+      "updatedAt": "2026-06-29T05:38:14.169Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygr1a009s7dcyvotjnoas",
@@ -2604,6 +2634,36 @@
           "sourceId": "cmqys1y5d00057d1py0hn55vr",
           "authorityId": "cmqwzf0hj009x7dspb3t0ddw8",
           "role": "author"
+        },
+        {
+          "sourceId": "cmqysbc4l00057djlfq6wv3q8",
+          "authorityId": "cmqwzf0hj009x7dspb3t0ddw8",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmqysc135000a7djlepr8tkzk",
+          "authorityId": "cmqwzf0hj009x7dspb3t0ddw8",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmqysca51000p7djlz6zxxlkc",
+          "authorityId": "cmqwzf0hj009x7dspb3t0ddw8",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmqyscaqk000u7djlcguamag5",
+          "authorityId": "cmqwzf0hj009x7dspb3t0ddw8",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmqyscuyi000z7djlws2jg9fp",
+          "authorityId": "cmqwzf0hj009x7dspb3t0ddw8",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmqyscw2w00147djlqccyob6a",
+          "authorityId": "cmqwzf0hj009x7dspb3t0ddw8",
+          "role": "author"
         }
       ]
     },
@@ -2623,7 +2683,7 @@
       "validationNotes": "Independent web check: 3 strong academic/reference hits; e.g. George W.E. Nickelsburg (1934-), scholar - 4 Enoch (https://4enoch.org/wiki5/index.php/George_W.E._Nickelsburg_().",
       "homepage": "https://4enoch.org/wiki5/index.php/George_W.E._Nickelsburg_(1934-),_scholar",
       "createdAt": "2026-06-27T23:19:15.568Z",
-      "updatedAt": "2026-06-29T05:31:02.459Z",
+      "updatedAt": "2026-06-29T05:38:14.209Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsh400227deqrryltjgz",
@@ -2632,6 +2692,11 @@
         },
         {
           "sourceId": "cmqwygssn00417deqpp0uqfax",
+          "authorityId": "cmqwzf0j4009z7dspk2yer3a6",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmqysba8w00007djlwybfen2u",
           "authorityId": "cmqwzf0j4009z7dspk2yer3a6",
           "role": "author"
         }
@@ -2653,7 +2718,7 @@
       "validationNotes": "Independent web check: 4 strong academic/reference hits; e.g. James H. Charlesworth - Wikipedia (https://en.wikipedia.org/wiki/James_H._Charlesworth).",
       "homepage": "https://en.wikipedia.org/wiki/James_H._Charlesworth",
       "createdAt": "2026-06-27T23:19:15.590Z",
-      "updatedAt": "2026-06-29T05:31:02.465Z",
+      "updatedAt": "2026-06-29T05:38:14.227Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygr1a009s7dcyvotjnoas",
@@ -2683,7 +2748,7 @@
       "validationNotes": "Independent web check: 1 strong academic/reference hits; e.g. Loren Stuckenbruck Selected Professional Activities - Academia.edu (https://www.academia.edu/48832072/Loren_Stuckenbruck_Selecte).",
       "homepage": "https://www.academia.edu/48832072/Loren_Stuckenbruck_Selected_Professional_Activities",
       "createdAt": "2026-06-27T23:19:15.611Z",
-      "updatedAt": "2026-06-29T05:31:02.471Z",
+      "updatedAt": "2026-06-29T05:38:14.234Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsh400227deqrryltjgz",
@@ -2723,7 +2788,7 @@
       "validationNotes": "Independent web check: 7 strong academic/reference hits; e.g. Annette Yoshiko Reed | Harvard Divinity School (https://www.hds.harvard.edu/people/annette-yoshiko-reed).",
       "homepage": "https://www.hds.harvard.edu/people/annette-yoshiko-reed",
       "createdAt": "2026-06-27T23:19:15.642Z",
-      "updatedAt": "2026-06-29T05:31:02.478Z",
+      "updatedAt": "2026-06-29T05:38:14.242Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwyprx600027d644aebt09d",
@@ -2742,6 +2807,11 @@
         },
         {
           "sourceId": "cmqwz6dvo00287diy2or6mku8",
+          "authorityId": "cmqwzf0l600a57dspj2e9oa1x",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmqysc135000a7djlepr8tkzk",
           "authorityId": "cmqwzf0l600a57dspj2e9oa1x",
           "role": "author"
         }
@@ -2763,7 +2833,7 @@
       "validationNotes": "Independent web check: 3 strong academic/reference hits; e.g. John J. Collins | Yale Divinity School (https://divinity.yale.edu/profile/john-j-collins).",
       "homepage": "https://divinity.yale.edu/profile/john-j-collins",
       "createdAt": "2026-06-27T23:19:15.671Z",
-      "updatedAt": "2026-06-29T05:31:02.487Z",
+      "updatedAt": "2026-06-29T05:38:14.253Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsh400227deqrryltjgz",
@@ -2772,6 +2842,11 @@
         },
         {
           "sourceId": "cmqwypvxe00057d64rlk7zd4g",
+          "authorityId": "cmqwzf0lz00a77dsp8arcltu8",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmqysc2g5000f7djluz7m526r",
           "authorityId": "cmqwzf0lz00a77dsp8arcltu8",
           "role": "author"
         }
@@ -2793,7 +2868,7 @@
       "validationNotes": "Independent web check: 4 strong academic/reference hits; e.g. [PDF] Michael Stone - Pan-Armenian Digital Library (http://arar.sci.am/Content/9812).",
       "homepage": "http://arar.sci.am/Content/9812",
       "createdAt": "2026-06-27T23:19:15.694Z",
-      "updatedAt": "2026-06-29T05:31:02.493Z",
+      "updatedAt": "2026-06-29T05:38:14.264Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygssn00417deqpp0uqfax",
@@ -2833,7 +2908,7 @@
       "validationNotes": "Independent web check: 4 strong academic/reference hits; e.g. Jacob Milgrom - Wikipedia (https://en.wikipedia.org/wiki/Jacob_Milgrom).",
       "homepage": "https://en.wikipedia.org/wiki/Jacob_Milgrom",
       "createdAt": "2026-06-27T23:19:15.719Z",
-      "updatedAt": "2026-06-29T05:31:02.505Z",
+      "updatedAt": "2026-06-29T05:38:14.271Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygr0q009p7dcyzyinaxno",
@@ -2858,7 +2933,7 @@
       "validationNotes": "Independent web check: 3 strong academic/reference hits; e.g. Devorah Dimant - University of Haifa (https://cris.haifa.ac.il/en/persons/devorah-dimant/).",
       "homepage": "https://cris.haifa.ac.il/en/persons/devorah-dimant/",
       "createdAt": "2026-06-27T23:19:15.734Z",
-      "updatedAt": "2026-06-29T05:31:02.511Z",
+      "updatedAt": "2026-06-29T05:38:14.277Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygsh400227deqrryltjgz",
@@ -2883,7 +2958,7 @@
       "validationNotes": "Independent web check: 2 strong academic/reference hits; e.g. Florentino Garcia Martinez - KU Leuven (https://theo.kuleuven.be/en/research/researchers/00035105).",
       "homepage": "https://theo.kuleuven.be/en/research/researchers/00035105",
       "createdAt": "2026-06-27T23:19:15.748Z",
-      "updatedAt": "2026-06-29T05:31:02.517Z",
+      "updatedAt": "2026-06-29T05:38:14.283Z",
       "sourceLinks": []
     },
     {
@@ -2902,7 +2977,7 @@
       "validationNotes": "Independent web check: 1 strong academic/reference hits; e.g. Anne Catherine Emmerich - Wikipedia (https://en.wikipedia.org/wiki/Anne_Catherine_Emmerich).",
       "homepage": "https://en.wikipedia.org/wiki/Anne_Catherine_Emmerich",
       "createdAt": "2026-06-27T23:19:15.755Z",
-      "updatedAt": "2026-06-29T05:31:02.522Z",
+      "updatedAt": "2026-06-29T05:38:14.288Z",
       "sourceLinks": [
         {
           "sourceId": "cmqwygs6m000a7deqrnvt6nut",
@@ -2927,7 +3002,7 @@
       "validationNotes": "Publisher/host of archive.org. Institutional standing.",
       "homepage": "https://archive.org",
       "createdAt": "2026-06-29T05:31:02.383Z",
-      "updatedAt": "2026-06-29T05:31:02.425Z",
+      "updatedAt": "2026-06-29T05:38:14.072Z",
       "sourceLinks": [
         {
           "sourceId": "cmqys1xfr00007d1pazlve5ps",
@@ -2952,6 +3027,86 @@
         {
           "sourceId": "cmqys46cj00037dc4nyjh8cvt",
           "authorityId": "cmqys4z8v009x7dn0unw3kkot",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmqyse8dh00aj7duhzhlcz5h0",
+      "slug": "digitalcommons-georgefox-edu-academic-repository",
+      "name": "digitalcommons.georgefox.edu (academic repository)",
+      "kind": "institution",
+      "type": "university",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": "secular-academic",
+      "credibility": 0.8,
+      "credibilityTier": "credentialed",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of digitalcommons.georgefox.edu. Institutional standing.",
+      "homepage": "https://digitalcommons.georgefox.edu",
+      "createdAt": "2026-06-29T05:38:14.117Z",
+      "updatedAt": "2026-06-29T05:38:14.117Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmqysc3p3000k7djlvmw9iak5",
+          "authorityId": "cmqyse8dh00aj7duhzhlcz5h0",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmqyse8e700ap7duhua92jbie",
+      "slug": "jewishencyclopedia-com",
+      "name": "jewishencyclopedia.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of jewishencyclopedia.com. Institutional standing.",
+      "homepage": "https://jewishencyclopedia.com",
+      "createdAt": "2026-06-29T05:38:14.143Z",
+      "updatedAt": "2026-06-29T05:38:14.143Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmqyscuyi000z7djlws2jg9fp",
+          "authorityId": "cmqyse8e700ap7duhua92jbie",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmqyse8ef00ar7duhkee0kcm2",
+      "slug": "newadvent-org",
+      "name": "newadvent.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of newadvent.org. Institutional standing.",
+      "homepage": "https://newadvent.org",
+      "createdAt": "2026-06-29T05:38:14.151Z",
+      "updatedAt": "2026-06-29T05:38:14.160Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmqyscw2w00147djlqccyob6a",
+          "authorityId": "cmqyse8ef00ar7duhkee0kcm2",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmqysd57t00197djlcsv3wj2x",
+          "authorityId": "cmqyse8ef00ar7duhkee0kcm2",
           "role": "institution"
         }
       ]
