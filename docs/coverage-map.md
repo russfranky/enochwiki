@@ -5,7 +5,7 @@
 > whole composition and decide for themselves. Lower on the ladder ≠ false; it means *less
 > independently verifiable* and a place to keep digging.
 
-**178 evidence** across **245 sources** (47 community-leads) · **49 topics**
+**190 evidence** across **266 sources** (56 community-leads) · **49 topics**
 
 ## The picture so far — verifiability ladder
 
@@ -13,11 +13,11 @@
 |---|---:|---|
 | Textually attested | 3 | `█·······················` |
 | Historically / archaeologically corroborated | 12 | `████····················` |
-| Scholarly consensus | 70 | `████████████████████████` |
+| Scholarly consensus | 71 | `████████████████████████` |
 | Contested / minority | 2 | `█·······················` |
-| Tradition / devotional | 57 | `████████████████████····` |
+| Tradition / devotional | 61 | `█████████████████████···` |
 | Visionary / private revelation | 1 | `························` |
-| Speculative | 33 | `███████████·············` |
+| Speculative | 40 | `██████████████··········` |
 
 ## By topic — where each thread stands
 
@@ -34,12 +34,12 @@
 | ⚠️ verse: jubilees 5:1 (giants) | 0 | 2 | tradition:2 |
 | ⚠️ verse: 1-enoch 15:3 (giants) | 0 | 1 | tradition:1 |
 | ⚠️ crawl(d0): theme: book of enoch | 0 | 1 | tradition:1 |
-| theme: The Watchers ( Fallen Angels) | 1 | 5 | historically:1 · tradition:2 · speculative:2 |
+| theme: The Watchers ( Fallen Angels) | 1 | 6 | historically:1 · tradition:3 · speculative:2 |
+| theme: Cosmology of the Heavens | 1 | 5 | scholarly:1 · tradition:1 · speculative:3 |
 | theme: Eschatological Judgment | 1 | 4 | scholarly:1 · tradition:3 |
+| theme: Azazel & the Scapegoat | 1 | 4 | scholarly:1 · speculative:3 |
 | verse: 1-enoch 46:3 (Son of Man) | 1 | 4 | scholarly:1 · tradition:1 · speculative:2 |
 | theme: Solar Calendar (364 days) | 1 | 3 | scholarly:1 · tradition:1 · speculative:1 |
-| theme: Azazel & the Scapegoat | 1 | 3 | scholarly:1 · speculative:2 |
-| theme: Cosmology of the Heavens | 1 | 3 | scholarly:1 · tradition:1 · speculative:1 |
 | verse: 1-enoch 8:1 (Azazel) | 1 | 3 | scholarly:1 · tradition:1 · speculative:1 |
 | verse: 1-enoch 46:4 (Son of Man) | 1 | 3 | scholarly:1 · speculative:2 |
 | verse: genesis 6:4 (Nephilim) | 1 | 3 | scholarly:1 · tradition:2 |
@@ -52,8 +52,8 @@
 | verse: 1-enoch 6:6 (Hermon) | 1 | 1 | scholarly:1 |
 | crawl(d0): theme: watchers | 1 | 1 | scholarly:1 |
 | crawl(d1): theme: nephilim | 1 | 1 | scholarly:1 |
+| theme: The Great Flood | 2 | 8 | historically:2 · speculative:6 |
 | verse: 1-enoch 9:5 (Azazel) | 2 | 6 | scholarly:2 · tradition:1 · speculative:3 |
-| theme: The Great Flood | 2 | 5 | historically:2 · speculative:3 |
 | verse: 1-enoch 1:5 (Watchers) | 2 | 4 | scholarly:2 · speculative:2 |
 | verse: 1-enoch 71:9 (Son of Man) | 2 | 3 | scholarly:2 · tradition:1 |
 | qumran|aramaic|enoch|second-temple|watchers | 2 | 2 | historically:2 |
@@ -65,14 +65,14 @@
 | theme: Covenant of Mount Hermon | 3 | 6 | textually:1 · scholarly:2 · tradition:3 |
 | verse: 1-enoch 15:2 (Watchers) | 3 | 6 | scholarly:3 · tradition:2 · speculative:1 |
 | theme: Enoch's Heavenly Ascension | 3 | 5 | scholarly:3 · tradition:1 · visionary:1 |
+| theme: Book of Life / Heavenly Books | 3 | 5 | textually:1 · scholarly:2 · tradition:1 · speculative:1 |
 | verse: 1-enoch 10:7 (Watchers) | 3 | 5 | scholarly:3 · tradition:2 |
 | verse: 1-enoch 15:9 (Watchers) | 3 | 5 | scholarly:3 · tradition:2 |
-| theme: Book of Life / Heavenly Books | 3 | 4 | textually:1 · scholarly:2 · speculative:1 |
 | crawl(d1): theme: watchers | 3 | 4 | scholarly:3 · tradition:1 |
-| theme: Covenant & Noahide Laws | 4 | 8 | textually:1 · scholarly:3 · tradition:4 |
+| theme: Covenant & Noahide Laws | 4 | 11 | textually:1 · scholarly:3 · tradition:6 · speculative:1 |
 | verse: 1-enoch 10:9 (Watchers) | 4 | 6 | historically:1 · scholarly:3 · speculative:2 |
 | verse: 1-enoch 10:4 (Azazel) | 4 | 4 | scholarly:4 |
-| theme: Son of Man | 5 | 7 | scholarly:5 · tradition:2 |
+| theme: Son of Man | 6 | 8 | scholarly:6 · tradition:2 |
 | crawl(d1): theme: book of enoch | 8 | 13 | scholarly:8 · tradition:5 |
 
 ## Scripture coverage
@@ -88,19 +88,19 @@
 
 A second axis of verifiability: not just *what* a source says but *who* stands behind it,
 validated the same way sources are (credentials + affiliation + independent corroboration).
-**11 named figures**, **101 institutions**.
+**11 named figures**, **105 institutions**.
 
 ### Named figures (independently validated)
 
 | Person | Type | Tier | Basis | Sources |
 |---|---|---|---|---:|
-| R. H. Charles | scholar | established-authority | peer-cited | 19 |
+| R. H. Charles | scholar | established-authority | peer-cited | 20 |
 | George W. E. Nickelsburg | scholar | established-authority | peer-cited | 3 |
 | James H. Charlesworth | scholar | established-authority | peer-cited | 4 |
-| Annette Yoshiko Reed | scholar | established-authority | peer-cited | 11 |
-| John J. Collins | scholar | established-authority | peer-cited | 3 |
+| Annette Yoshiko Reed | scholar | established-authority | peer-cited | 12 |
+| John J. Collins | scholar | established-authority | peer-cited | 4 |
 | Michael E. Stone | scholar | established-authority | peer-cited | 4 |
-| Jacob Milgrom | scholar | established-authority | peer-cited | 1 |
+| Jacob Milgrom | scholar | established-authority | peer-cited | 2 |
 | Devorah Dimant | scholar | established-authority | peer-cited | 3 |
 | Florentino García Martínez | scholar | established-authority | peer-cited | 2 |
 | Loren T. Stuckenbruck | scholar | credentialed | credentials-verified | 4 |
@@ -108,8 +108,8 @@ validated the same way sources are (credentials + affiliation + independent corr
 
 ### Top institutional backers
 
-- **Brill Academic Publishers** — 18 sources (95%)
-- **Biblical Archaeology Society** — 9 sources (90%)
+- **Brill Academic Publishers** — 20 sources (95%)
+- **Biblical Archaeology Society** — 10 sources (90%)
 - **JSTOR** — 4 sources (90%)
 - **Cambridge University Press** — 3 sources (93%)
 - **Israel Antiquities Authority — Dead Sea Scrolls** — 1 sources (97%)

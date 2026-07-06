@@ -1,9 +1,9 @@
 {
-  "exportedAt": "2026-07-06T00:45:13.721Z",
+  "exportedAt": "2026-07-06T00:49:28.534Z",
   "counts": {
-    "sources": 245,
-    "evidence": 178,
-    "reviews": 184
+    "sources": 266,
+    "evidence": 190,
+    "reviews": 196
   },
   "sources": [
     {
@@ -42,7 +42,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:08.824Z",
-          "updatedAt": "2026-07-06T00:45:12.066Z"
+          "updatedAt": "2026-07-06T00:49:26.734Z"
         },
         {
           "id": "cmr8hi9zt009aihplk2jkr3qr",
@@ -59,7 +59,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:08.826Z",
-          "updatedAt": "2026-07-06T00:45:12.071Z"
+          "updatedAt": "2026-07-06T00:49:26.738Z"
         }
       ]
     },
@@ -99,7 +99,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:08.829Z",
-          "updatedAt": "2026-07-06T00:45:12.073Z"
+          "updatedAt": "2026-07-06T00:49:26.741Z"
         }
       ]
     },
@@ -139,7 +139,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:08.833Z",
-          "updatedAt": "2026-07-06T00:45:12.075Z"
+          "updatedAt": "2026-07-06T00:49:26.744Z"
         },
         {
           "id": "cmr8hia02009iihplmxf35jt0",
@@ -156,7 +156,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:08.835Z",
-          "updatedAt": "2026-07-06T00:45:12.078Z"
+          "updatedAt": "2026-07-06T00:49:26.747Z"
         }
       ]
     },
@@ -196,7 +196,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:08.838Z",
-          "updatedAt": "2026-07-06T00:45:12.080Z"
+          "updatedAt": "2026-07-06T00:49:26.749Z"
         }
       ]
     },
@@ -236,7 +236,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:08.845Z",
-          "updatedAt": "2026-07-06T00:45:12.083Z"
+          "updatedAt": "2026-07-06T00:49:26.751Z"
         }
       ]
     },
@@ -276,7 +276,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:08.852Z",
-          "updatedAt": "2026-07-06T00:45:12.085Z"
+          "updatedAt": "2026-07-06T00:49:26.754Z"
         }
       ]
     },
@@ -316,7 +316,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:08.856Z",
-          "updatedAt": "2026-07-06T00:45:12.087Z"
+          "updatedAt": "2026-07-06T00:49:26.757Z"
         },
         {
           "id": "cmr8hia0p009wihply29cron6",
@@ -333,7 +333,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:08.857Z",
-          "updatedAt": "2026-07-06T00:45:12.089Z"
+          "updatedAt": "2026-07-06T00:49:26.759Z"
         }
       ]
     },
@@ -857,7 +857,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.792Z",
-          "updatedAt": "2026-07-06T00:45:12.091Z"
+          "updatedAt": "2026-07-06T00:49:26.761Z"
         }
       ]
     },
@@ -897,7 +897,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.798Z",
-          "updatedAt": "2026-07-06T00:45:12.093Z"
+          "updatedAt": "2026-07-06T00:49:26.763Z"
         }
       ]
     },
@@ -937,7 +937,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.805Z",
-          "updatedAt": "2026-07-06T00:45:12.095Z"
+          "updatedAt": "2026-07-06T00:49:26.765Z"
         }
       ]
     },
@@ -977,7 +977,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.814Z",
-          "updatedAt": "2026-07-06T00:45:12.097Z"
+          "updatedAt": "2026-07-06T00:49:26.767Z"
         }
       ]
     },
@@ -1017,7 +1017,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.820Z",
-          "updatedAt": "2026-07-06T00:45:12.099Z"
+          "updatedAt": "2026-07-06T00:49:26.769Z"
         }
       ]
     },
@@ -1057,7 +1057,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.841Z",
-          "updatedAt": "2026-07-06T00:45:12.101Z"
+          "updatedAt": "2026-07-06T00:49:26.772Z"
         }
       ]
     },
@@ -1097,7 +1097,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.849Z",
-          "updatedAt": "2026-07-06T00:45:12.104Z"
+          "updatedAt": "2026-07-06T00:49:26.775Z"
         }
       ]
     },
@@ -1137,7 +1137,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.855Z",
-          "updatedAt": "2026-07-06T00:45:12.105Z"
+          "updatedAt": "2026-07-06T00:49:26.777Z"
         }
       ]
     },
@@ -1177,7 +1177,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.867Z",
-          "updatedAt": "2026-07-06T00:45:12.107Z"
+          "updatedAt": "2026-07-06T00:49:26.778Z"
         }
       ]
     },
@@ -1217,7 +1217,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.873Z",
-          "updatedAt": "2026-07-06T00:45:12.109Z"
+          "updatedAt": "2026-07-06T00:49:26.780Z"
         }
       ]
     },
@@ -1257,7 +1257,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.879Z",
-          "updatedAt": "2026-07-06T00:45:12.111Z"
+          "updatedAt": "2026-07-06T00:49:26.782Z"
         }
       ]
     },
@@ -1297,7 +1297,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.885Z",
-          "updatedAt": "2026-07-06T00:45:12.113Z"
+          "updatedAt": "2026-07-06T00:49:26.784Z"
         }
       ]
     },
@@ -1337,7 +1337,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.895Z",
-          "updatedAt": "2026-07-06T00:45:12.115Z"
+          "updatedAt": "2026-07-06T00:49:26.786Z"
         }
       ]
     },
@@ -1377,7 +1377,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.901Z",
-          "updatedAt": "2026-07-06T00:45:12.117Z"
+          "updatedAt": "2026-07-06T00:49:26.789Z"
         }
       ]
     },
@@ -1417,7 +1417,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.907Z",
-          "updatedAt": "2026-07-06T00:45:12.118Z"
+          "updatedAt": "2026-07-06T00:49:26.791Z"
         }
       ]
     },
@@ -1457,7 +1457,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.916Z",
-          "updatedAt": "2026-07-06T00:45:12.121Z"
+          "updatedAt": "2026-07-06T00:49:26.793Z"
         }
       ]
     },
@@ -1497,7 +1497,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.924Z",
-          "updatedAt": "2026-07-06T00:45:12.123Z"
+          "updatedAt": "2026-07-06T00:49:26.796Z"
         }
       ]
     },
@@ -1537,7 +1537,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.930Z",
-          "updatedAt": "2026-07-06T00:45:12.125Z"
+          "updatedAt": "2026-07-06T00:49:26.797Z"
         }
       ]
     },
@@ -1643,7 +1643,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.951Z",
-          "updatedAt": "2026-07-06T00:45:12.127Z"
+          "updatedAt": "2026-07-06T00:49:26.800Z"
         }
       ]
     },
@@ -1683,7 +1683,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.957Z",
-          "updatedAt": "2026-07-06T00:45:12.129Z"
+          "updatedAt": "2026-07-06T00:49:26.801Z"
         }
       ]
     },
@@ -1723,7 +1723,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.962Z",
-          "updatedAt": "2026-07-06T00:45:12.131Z"
+          "updatedAt": "2026-07-06T00:49:26.804Z"
         }
       ]
     },
@@ -1763,7 +1763,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.972Z",
-          "updatedAt": "2026-07-06T00:45:12.133Z"
+          "updatedAt": "2026-07-06T00:49:26.806Z"
         }
       ]
     },
@@ -1803,7 +1803,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.979Z",
-          "updatedAt": "2026-07-06T00:45:12.135Z"
+          "updatedAt": "2026-07-06T00:49:26.808Z"
         }
       ]
     },
@@ -1843,7 +1843,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.985Z",
-          "updatedAt": "2026-07-06T00:45:12.137Z"
+          "updatedAt": "2026-07-06T00:49:26.810Z"
         }
       ]
     },
@@ -1883,7 +1883,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:09.991Z",
-          "updatedAt": "2026-07-06T00:45:12.139Z"
+          "updatedAt": "2026-07-06T00:49:26.812Z"
         }
       ]
     },
@@ -1923,7 +1923,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.002Z",
-          "updatedAt": "2026-07-06T00:45:12.141Z"
+          "updatedAt": "2026-07-06T00:49:26.814Z"
         }
       ]
     },
@@ -1963,7 +1963,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.008Z",
-          "updatedAt": "2026-07-06T00:45:12.143Z"
+          "updatedAt": "2026-07-06T00:49:26.816Z"
         }
       ]
     },
@@ -2003,7 +2003,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.014Z",
-          "updatedAt": "2026-07-06T00:45:12.145Z"
+          "updatedAt": "2026-07-06T00:49:26.818Z"
         }
       ]
     },
@@ -2043,7 +2043,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.022Z",
-          "updatedAt": "2026-07-06T00:45:12.147Z"
+          "updatedAt": "2026-07-06T00:49:26.820Z"
         }
       ]
     },
@@ -2083,7 +2083,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.030Z",
-          "updatedAt": "2026-07-06T00:45:12.149Z"
+          "updatedAt": "2026-07-06T00:49:26.823Z"
         }
       ]
     },
@@ -2123,7 +2123,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.035Z",
-          "updatedAt": "2026-07-06T00:45:12.151Z"
+          "updatedAt": "2026-07-06T00:49:26.825Z"
         }
       ]
     },
@@ -2163,7 +2163,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.040Z",
-          "updatedAt": "2026-07-06T00:45:12.153Z"
+          "updatedAt": "2026-07-06T00:49:26.827Z"
         }
       ]
     },
@@ -2203,7 +2203,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.049Z",
-          "updatedAt": "2026-07-06T00:45:12.155Z"
+          "updatedAt": "2026-07-06T00:49:26.830Z"
         }
       ]
     },
@@ -2243,7 +2243,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.057Z",
-          "updatedAt": "2026-07-06T00:45:12.157Z"
+          "updatedAt": "2026-07-06T00:49:26.832Z"
         }
       ]
     },
@@ -2283,7 +2283,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.064Z",
-          "updatedAt": "2026-07-06T00:45:12.159Z"
+          "updatedAt": "2026-07-06T00:49:26.834Z"
         }
       ]
     },
@@ -2345,7 +2345,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.073Z",
-          "updatedAt": "2026-07-06T00:45:12.161Z"
+          "updatedAt": "2026-07-06T00:49:26.836Z"
         }
       ]
     },
@@ -2429,7 +2429,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.086Z",
-          "updatedAt": "2026-07-06T00:45:12.164Z"
+          "updatedAt": "2026-07-06T00:49:26.839Z"
         }
       ]
     },
@@ -2843,7 +2843,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.146Z",
-          "updatedAt": "2026-07-06T00:45:12.166Z"
+          "updatedAt": "2026-07-06T00:49:26.842Z"
         }
       ]
     },
@@ -2883,7 +2883,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.153Z",
-          "updatedAt": "2026-07-06T00:45:12.168Z"
+          "updatedAt": "2026-07-06T00:49:26.843Z"
         }
       ]
     },
@@ -2923,7 +2923,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.162Z",
-          "updatedAt": "2026-07-06T00:45:12.170Z"
+          "updatedAt": "2026-07-06T00:49:26.846Z"
         }
       ]
     },
@@ -2963,7 +2963,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.168Z",
-          "updatedAt": "2026-07-06T00:45:12.173Z"
+          "updatedAt": "2026-07-06T00:49:26.848Z"
         }
       ]
     },
@@ -3003,7 +3003,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.174Z",
-          "updatedAt": "2026-07-06T00:45:12.174Z"
+          "updatedAt": "2026-07-06T00:49:26.850Z"
         }
       ]
     },
@@ -3043,7 +3043,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.183Z",
-          "updatedAt": "2026-07-06T00:45:12.176Z"
+          "updatedAt": "2026-07-06T00:49:26.852Z"
         }
       ]
     },
@@ -3083,7 +3083,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.190Z",
-          "updatedAt": "2026-07-06T00:45:12.178Z"
+          "updatedAt": "2026-07-06T00:49:26.855Z"
         }
       ]
     },
@@ -3123,7 +3123,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.195Z",
-          "updatedAt": "2026-07-06T00:45:12.180Z"
+          "updatedAt": "2026-07-06T00:49:26.857Z"
         }
       ]
     },
@@ -3163,7 +3163,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.201Z",
-          "updatedAt": "2026-07-06T00:45:12.182Z"
+          "updatedAt": "2026-07-06T00:49:26.859Z"
         }
       ]
     },
@@ -3203,7 +3203,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.212Z",
-          "updatedAt": "2026-07-06T00:45:12.184Z"
+          "updatedAt": "2026-07-06T00:49:26.862Z"
         }
       ]
     },
@@ -3243,7 +3243,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.221Z",
-          "updatedAt": "2026-07-06T00:45:12.186Z"
+          "updatedAt": "2026-07-06T00:49:26.864Z"
         }
       ]
     },
@@ -3283,7 +3283,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.227Z",
-          "updatedAt": "2026-07-06T00:45:12.187Z"
+          "updatedAt": "2026-07-06T00:49:26.866Z"
         }
       ]
     },
@@ -3323,7 +3323,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.243Z",
-          "updatedAt": "2026-07-06T00:45:12.189Z"
+          "updatedAt": "2026-07-06T00:49:26.869Z"
         }
       ]
     },
@@ -3363,7 +3363,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.249Z",
-          "updatedAt": "2026-07-06T00:45:12.191Z"
+          "updatedAt": "2026-07-06T00:49:26.872Z"
         }
       ]
     },
@@ -3403,7 +3403,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.257Z",
-          "updatedAt": "2026-07-06T00:45:12.193Z"
+          "updatedAt": "2026-07-06T00:49:26.874Z"
         }
       ]
     },
@@ -3443,7 +3443,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.271Z",
-          "updatedAt": "2026-07-06T00:45:12.195Z"
+          "updatedAt": "2026-07-06T00:49:26.876Z"
         }
       ]
     },
@@ -3483,7 +3483,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.277Z",
-          "updatedAt": "2026-07-06T00:45:12.197Z"
+          "updatedAt": "2026-07-06T00:49:26.878Z"
         }
       ]
     },
@@ -3523,7 +3523,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.291Z",
-          "updatedAt": "2026-07-06T00:45:12.199Z"
+          "updatedAt": "2026-07-06T00:49:26.880Z"
         }
       ]
     },
@@ -3563,7 +3563,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.298Z",
-          "updatedAt": "2026-07-06T00:45:12.201Z"
+          "updatedAt": "2026-07-06T00:49:26.881Z"
         }
       ]
     },
@@ -3603,7 +3603,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.305Z",
-          "updatedAt": "2026-07-06T00:45:12.203Z"
+          "updatedAt": "2026-07-06T00:49:26.883Z"
         }
       ]
     },
@@ -3643,7 +3643,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.319Z",
-          "updatedAt": "2026-07-06T00:45:12.205Z"
+          "updatedAt": "2026-07-06T00:49:26.885Z"
         }
       ]
     },
@@ -3727,7 +3727,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.331Z",
-          "updatedAt": "2026-07-06T00:45:12.207Z"
+          "updatedAt": "2026-07-06T00:49:26.887Z"
         }
       ]
     },
@@ -3767,7 +3767,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.342Z",
-          "updatedAt": "2026-07-06T00:45:12.209Z"
+          "updatedAt": "2026-07-06T00:49:26.890Z"
         }
       ]
     },
@@ -3807,7 +3807,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.350Z",
-          "updatedAt": "2026-07-06T00:45:12.211Z"
+          "updatedAt": "2026-07-06T00:49:26.892Z"
         }
       ]
     },
@@ -3847,7 +3847,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.357Z",
-          "updatedAt": "2026-07-06T00:45:12.213Z"
+          "updatedAt": "2026-07-06T00:49:26.894Z"
         }
       ]
     },
@@ -3887,7 +3887,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.364Z",
-          "updatedAt": "2026-07-06T00:45:12.215Z"
+          "updatedAt": "2026-07-06T00:49:26.896Z"
         }
       ]
     },
@@ -3927,7 +3927,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.374Z",
-          "updatedAt": "2026-07-06T00:45:12.217Z"
+          "updatedAt": "2026-07-06T00:49:26.898Z"
         }
       ]
     },
@@ -3967,7 +3967,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.380Z",
-          "updatedAt": "2026-07-06T00:45:12.219Z"
+          "updatedAt": "2026-07-06T00:49:26.900Z"
         }
       ]
     },
@@ -4007,7 +4007,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.386Z",
-          "updatedAt": "2026-07-06T00:45:12.221Z"
+          "updatedAt": "2026-07-06T00:49:26.902Z"
         }
       ]
     },
@@ -4047,7 +4047,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.394Z",
-          "updatedAt": "2026-07-06T00:45:12.223Z"
+          "updatedAt": "2026-07-06T00:49:26.903Z"
         }
       ]
     },
@@ -4087,7 +4087,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.404Z",
-          "updatedAt": "2026-07-06T00:45:12.225Z"
+          "updatedAt": "2026-07-06T00:49:26.905Z"
         }
       ]
     },
@@ -4127,7 +4127,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.410Z",
-          "updatedAt": "2026-07-06T00:45:12.226Z"
+          "updatedAt": "2026-07-06T00:49:26.908Z"
         }
       ]
     },
@@ -4167,7 +4167,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.415Z",
-          "updatedAt": "2026-07-06T00:45:12.229Z"
+          "updatedAt": "2026-07-06T00:49:26.910Z"
         }
       ]
     },
@@ -4207,7 +4207,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.429Z",
-          "updatedAt": "2026-07-06T00:45:12.231Z"
+          "updatedAt": "2026-07-06T00:49:26.912Z"
         }
       ]
     },
@@ -4247,7 +4247,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.435Z",
-          "updatedAt": "2026-07-06T00:45:12.233Z"
+          "updatedAt": "2026-07-06T00:49:26.914Z"
         }
       ]
     },
@@ -4287,7 +4287,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.441Z",
-          "updatedAt": "2026-07-06T00:45:12.236Z"
+          "updatedAt": "2026-07-06T00:49:26.915Z"
         }
       ]
     },
@@ -4327,7 +4327,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.482Z",
-          "updatedAt": "2026-07-06T00:45:12.237Z"
+          "updatedAt": "2026-07-06T00:49:26.917Z"
         }
       ]
     },
@@ -4367,7 +4367,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.488Z",
-          "updatedAt": "2026-07-06T00:45:12.239Z"
+          "updatedAt": "2026-07-06T00:49:26.918Z"
         }
       ]
     },
@@ -4407,7 +4407,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.495Z",
-          "updatedAt": "2026-07-06T00:45:12.241Z"
+          "updatedAt": "2026-07-06T00:49:26.921Z"
         }
       ]
     },
@@ -4447,7 +4447,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.508Z",
-          "updatedAt": "2026-07-06T00:45:12.243Z"
+          "updatedAt": "2026-07-06T00:49:26.924Z"
         }
       ]
     },
@@ -4487,7 +4487,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.514Z",
-          "updatedAt": "2026-07-06T00:45:12.245Z"
+          "updatedAt": "2026-07-06T00:49:26.925Z"
         }
       ]
     },
@@ -4527,7 +4527,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.521Z",
-          "updatedAt": "2026-07-06T00:45:12.247Z"
+          "updatedAt": "2026-07-06T00:49:26.927Z"
         }
       ]
     },
@@ -4567,7 +4567,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.533Z",
-          "updatedAt": "2026-07-06T00:45:12.249Z"
+          "updatedAt": "2026-07-06T00:49:26.929Z"
         }
       ]
     },
@@ -4607,7 +4607,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.619Z",
-          "updatedAt": "2026-07-06T00:45:12.251Z"
+          "updatedAt": "2026-07-06T00:49:26.931Z"
         }
       ]
     },
@@ -4647,7 +4647,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.629Z",
-          "updatedAt": "2026-07-06T00:45:12.253Z"
+          "updatedAt": "2026-07-06T00:49:26.933Z"
         }
       ]
     },
@@ -4687,7 +4687,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.645Z",
-          "updatedAt": "2026-07-06T00:45:12.255Z"
+          "updatedAt": "2026-07-06T00:49:26.934Z"
         }
       ]
     },
@@ -4727,7 +4727,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.654Z",
-          "updatedAt": "2026-07-06T00:45:12.257Z"
+          "updatedAt": "2026-07-06T00:49:26.935Z"
         }
       ]
     },
@@ -4767,7 +4767,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.670Z",
-          "updatedAt": "2026-07-06T00:45:12.258Z"
+          "updatedAt": "2026-07-06T00:49:26.937Z"
         }
       ]
     },
@@ -4807,7 +4807,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.678Z",
-          "updatedAt": "2026-07-06T00:45:12.260Z"
+          "updatedAt": "2026-07-06T00:49:26.940Z"
         }
       ]
     },
@@ -4847,7 +4847,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.690Z",
-          "updatedAt": "2026-07-06T00:45:12.262Z"
+          "updatedAt": "2026-07-06T00:49:26.941Z"
         }
       ]
     },
@@ -4887,7 +4887,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.700Z",
-          "updatedAt": "2026-07-06T00:45:12.265Z"
+          "updatedAt": "2026-07-06T00:49:26.943Z"
         }
       ]
     },
@@ -4927,7 +4927,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.708Z",
-          "updatedAt": "2026-07-06T00:45:12.267Z"
+          "updatedAt": "2026-07-06T00:49:26.944Z"
         }
       ]
     },
@@ -4967,7 +4967,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.719Z",
-          "updatedAt": "2026-07-06T00:45:12.269Z"
+          "updatedAt": "2026-07-06T00:49:26.946Z"
         }
       ]
     },
@@ -5007,7 +5007,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.730Z",
-          "updatedAt": "2026-07-06T00:45:12.271Z"
+          "updatedAt": "2026-07-06T00:49:26.948Z"
         }
       ]
     },
@@ -5047,7 +5047,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.737Z",
-          "updatedAt": "2026-07-06T00:45:12.274Z"
+          "updatedAt": "2026-07-06T00:49:26.950Z"
         }
       ]
     },
@@ -5087,7 +5087,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.749Z",
-          "updatedAt": "2026-07-06T00:45:12.276Z"
+          "updatedAt": "2026-07-06T00:49:26.952Z"
         }
       ]
     },
@@ -5127,7 +5127,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.757Z",
-          "updatedAt": "2026-07-06T00:45:12.277Z"
+          "updatedAt": "2026-07-06T00:49:26.953Z"
         }
       ]
     },
@@ -5167,7 +5167,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.764Z",
-          "updatedAt": "2026-07-06T00:45:12.279Z"
+          "updatedAt": "2026-07-06T00:49:26.956Z"
         }
       ]
     },
@@ -5207,7 +5207,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.776Z",
-          "updatedAt": "2026-07-06T00:45:12.281Z"
+          "updatedAt": "2026-07-06T00:49:26.959Z"
         }
       ]
     },
@@ -5247,7 +5247,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.785Z",
-          "updatedAt": "2026-07-06T00:45:12.283Z"
+          "updatedAt": "2026-07-06T00:49:26.961Z"
         }
       ]
     },
@@ -5287,7 +5287,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.792Z",
-          "updatedAt": "2026-07-06T00:45:12.286Z"
+          "updatedAt": "2026-07-06T00:49:26.963Z"
         }
       ]
     },
@@ -5327,7 +5327,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.805Z",
-          "updatedAt": "2026-07-06T00:45:12.288Z"
+          "updatedAt": "2026-07-06T00:49:26.965Z"
         }
       ]
     },
@@ -5367,7 +5367,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.813Z",
-          "updatedAt": "2026-07-06T00:45:12.289Z"
+          "updatedAt": "2026-07-06T00:49:26.967Z"
         }
       ]
     },
@@ -5407,7 +5407,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.822Z",
-          "updatedAt": "2026-07-06T00:45:12.290Z"
+          "updatedAt": "2026-07-06T00:49:26.968Z"
         }
       ]
     },
@@ -5447,7 +5447,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.832Z",
-          "updatedAt": "2026-07-06T00:45:12.292Z"
+          "updatedAt": "2026-07-06T00:49:26.970Z"
         }
       ]
     },
@@ -5487,7 +5487,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.840Z",
-          "updatedAt": "2026-07-06T00:45:12.293Z"
+          "updatedAt": "2026-07-06T00:49:26.972Z"
         }
       ]
     },
@@ -5527,7 +5527,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.853Z",
-          "updatedAt": "2026-07-06T00:45:12.296Z"
+          "updatedAt": "2026-07-06T00:49:26.974Z"
         }
       ]
     },
@@ -5567,7 +5567,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.863Z",
-          "updatedAt": "2026-07-06T00:45:12.298Z"
+          "updatedAt": "2026-07-06T00:49:26.977Z"
         }
       ]
     },
@@ -5607,7 +5607,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.870Z",
-          "updatedAt": "2026-07-06T00:45:12.299Z"
+          "updatedAt": "2026-07-06T00:49:26.979Z"
         }
       ]
     },
@@ -5647,7 +5647,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.881Z",
-          "updatedAt": "2026-07-06T00:45:12.301Z"
+          "updatedAt": "2026-07-06T00:49:26.980Z"
         }
       ]
     },
@@ -5687,7 +5687,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.891Z",
-          "updatedAt": "2026-07-06T00:45:12.303Z"
+          "updatedAt": "2026-07-06T00:49:26.982Z"
         }
       ]
     },
@@ -5727,7 +5727,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.899Z",
-          "updatedAt": "2026-07-06T00:45:12.305Z"
+          "updatedAt": "2026-07-06T00:49:26.984Z"
         }
       ]
     },
@@ -5767,7 +5767,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.918Z",
-          "updatedAt": "2026-07-06T00:45:12.306Z"
+          "updatedAt": "2026-07-06T00:49:26.986Z"
         }
       ]
     },
@@ -5807,7 +5807,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.927Z",
-          "updatedAt": "2026-07-06T00:45:12.308Z"
+          "updatedAt": "2026-07-06T00:49:26.988Z"
         }
       ]
     },
@@ -5847,7 +5847,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.939Z",
-          "updatedAt": "2026-07-06T00:45:12.309Z"
+          "updatedAt": "2026-07-06T00:49:26.990Z"
         }
       ]
     },
@@ -5887,7 +5887,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.947Z",
-          "updatedAt": "2026-07-06T00:45:12.311Z"
+          "updatedAt": "2026-07-06T00:49:26.992Z"
         }
       ]
     },
@@ -5927,7 +5927,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.954Z",
-          "updatedAt": "2026-07-06T00:45:12.313Z"
+          "updatedAt": "2026-07-06T00:49:26.994Z"
         }
       ]
     },
@@ -5967,7 +5967,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.966Z",
-          "updatedAt": "2026-07-06T00:45:12.316Z"
+          "updatedAt": "2026-07-06T00:49:26.997Z"
         }
       ]
     },
@@ -6007,7 +6007,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.975Z",
-          "updatedAt": "2026-07-06T00:45:12.317Z"
+          "updatedAt": "2026-07-06T00:49:26.999Z"
         }
       ]
     },
@@ -6047,7 +6047,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.982Z",
-          "updatedAt": "2026-07-06T00:45:12.320Z"
+          "updatedAt": "2026-07-06T00:49:27.001Z"
         }
       ]
     },
@@ -6087,7 +6087,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:10.995Z",
-          "updatedAt": "2026-07-06T00:45:12.321Z"
+          "updatedAt": "2026-07-06T00:49:27.002Z"
         }
       ]
     },
@@ -6127,7 +6127,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.002Z",
-          "updatedAt": "2026-07-06T00:45:12.323Z"
+          "updatedAt": "2026-07-06T00:49:27.004Z"
         }
       ]
     },
@@ -6167,7 +6167,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.009Z",
-          "updatedAt": "2026-07-06T00:45:12.325Z"
+          "updatedAt": "2026-07-06T00:49:27.007Z"
         }
       ]
     },
@@ -6207,7 +6207,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.022Z",
-          "updatedAt": "2026-07-06T00:45:12.327Z"
+          "updatedAt": "2026-07-06T00:49:27.009Z"
         }
       ]
     },
@@ -6247,7 +6247,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.030Z",
-          "updatedAt": "2026-07-06T00:45:12.329Z"
+          "updatedAt": "2026-07-06T00:49:27.010Z"
         }
       ]
     },
@@ -6287,7 +6287,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.037Z",
-          "updatedAt": "2026-07-06T00:45:12.331Z"
+          "updatedAt": "2026-07-06T00:49:27.013Z"
         }
       ]
     },
@@ -6327,7 +6327,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.051Z",
-          "updatedAt": "2026-07-06T00:45:12.332Z"
+          "updatedAt": "2026-07-06T00:49:27.015Z"
         }
       ]
     },
@@ -6367,7 +6367,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.060Z",
-          "updatedAt": "2026-07-06T00:45:12.334Z"
+          "updatedAt": "2026-07-06T00:49:27.017Z"
         }
       ]
     },
@@ -6407,7 +6407,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.072Z",
-          "updatedAt": "2026-07-06T00:45:12.336Z"
+          "updatedAt": "2026-07-06T00:49:27.018Z"
         }
       ]
     },
@@ -6557,7 +6557,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.101Z",
-          "updatedAt": "2026-07-06T00:45:12.338Z"
+          "updatedAt": "2026-07-06T00:49:27.020Z"
         }
       ]
     },
@@ -6597,7 +6597,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.110Z",
-          "updatedAt": "2026-07-06T00:45:12.340Z"
+          "updatedAt": "2026-07-06T00:49:27.023Z"
         }
       ]
     },
@@ -6637,7 +6637,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.117Z",
-          "updatedAt": "2026-07-06T00:45:12.341Z"
+          "updatedAt": "2026-07-06T00:49:27.025Z"
         }
       ]
     },
@@ -6677,7 +6677,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.130Z",
-          "updatedAt": "2026-07-06T00:45:12.343Z"
+          "updatedAt": "2026-07-06T00:49:27.027Z"
         }
       ]
     },
@@ -6717,7 +6717,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.137Z",
-          "updatedAt": "2026-07-06T00:45:12.346Z"
+          "updatedAt": "2026-07-06T00:49:27.029Z"
         }
       ]
     },
@@ -6757,7 +6757,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.151Z",
-          "updatedAt": "2026-07-06T00:45:12.349Z"
+          "updatedAt": "2026-07-06T00:49:27.031Z"
         }
       ]
     },
@@ -6797,7 +6797,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.161Z",
-          "updatedAt": "2026-07-06T00:45:12.350Z"
+          "updatedAt": "2026-07-06T00:49:27.032Z"
         }
       ]
     },
@@ -6837,7 +6837,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.169Z",
-          "updatedAt": "2026-07-06T00:45:12.352Z"
+          "updatedAt": "2026-07-06T00:49:27.034Z"
         }
       ]
     },
@@ -6877,7 +6877,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.177Z",
-          "updatedAt": "2026-07-06T00:45:12.354Z"
+          "updatedAt": "2026-07-06T00:49:27.035Z"
         }
       ]
     },
@@ -6917,7 +6917,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.188Z",
-          "updatedAt": "2026-07-06T00:45:12.355Z"
+          "updatedAt": "2026-07-06T00:49:27.037Z"
         }
       ]
     },
@@ -7023,7 +7023,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.214Z",
-          "updatedAt": "2026-07-06T00:45:12.357Z"
+          "updatedAt": "2026-07-06T00:49:27.039Z"
         }
       ]
     },
@@ -7063,7 +7063,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:31:11.220Z",
-          "updatedAt": "2026-07-06T00:45:12.358Z"
+          "updatedAt": "2026-07-06T00:49:27.040Z"
         }
       ]
     },
@@ -7103,7 +7103,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:32:53.417Z",
-          "updatedAt": "2026-07-06T00:45:12.360Z"
+          "updatedAt": "2026-07-06T00:49:27.042Z"
         }
       ]
     },
@@ -7143,7 +7143,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:33:07.170Z",
-          "updatedAt": "2026-07-06T00:45:12.362Z"
+          "updatedAt": "2026-07-06T00:49:27.043Z"
         }
       ]
     },
@@ -7183,7 +7183,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:33:18.307Z",
-          "updatedAt": "2026-07-06T00:45:12.363Z"
+          "updatedAt": "2026-07-06T00:49:27.044Z"
         }
       ]
     },
@@ -7223,7 +7223,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:33:32.739Z",
-          "updatedAt": "2026-07-06T00:45:12.365Z"
+          "updatedAt": "2026-07-06T00:49:27.046Z"
         }
       ]
     },
@@ -7263,7 +7263,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:36:24.709Z",
-          "updatedAt": "2026-07-06T00:45:12.367Z"
+          "updatedAt": "2026-07-06T00:49:27.047Z"
         }
       ]
     },
@@ -7303,7 +7303,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:36:28.755Z",
-          "updatedAt": "2026-07-06T00:45:12.369Z"
+          "updatedAt": "2026-07-06T00:49:27.049Z"
         }
       ]
     },
@@ -7343,7 +7343,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:37:01.225Z",
-          "updatedAt": "2026-07-06T00:45:12.371Z"
+          "updatedAt": "2026-07-06T00:49:27.050Z"
         }
       ]
     },
@@ -7383,7 +7383,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:38:42.123Z",
-          "updatedAt": "2026-07-06T00:45:12.373Z"
+          "updatedAt": "2026-07-06T00:49:27.052Z"
         }
       ]
     },
@@ -7423,7 +7423,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:38:50.971Z",
-          "updatedAt": "2026-07-06T00:45:12.374Z"
+          "updatedAt": "2026-07-06T00:49:27.053Z"
         }
       ]
     },
@@ -7463,7 +7463,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:40:55.050Z",
-          "updatedAt": "2026-07-06T00:45:12.376Z"
+          "updatedAt": "2026-07-06T00:49:27.056Z"
         }
       ]
     },
@@ -7833,7 +7833,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:42:02.973Z",
-          "updatedAt": "2026-07-06T00:45:12.378Z"
+          "updatedAt": "2026-07-06T00:49:27.058Z"
         }
       ]
     },
@@ -7873,7 +7873,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:42:06.835Z",
-          "updatedAt": "2026-07-06T00:45:12.380Z"
+          "updatedAt": "2026-07-06T00:49:27.060Z"
         }
       ]
     },
@@ -7913,7 +7913,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:42:06.842Z",
-          "updatedAt": "2026-07-06T00:45:12.384Z"
+          "updatedAt": "2026-07-06T00:49:27.062Z"
         }
       ]
     },
@@ -7953,7 +7953,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:42:11.823Z",
-          "updatedAt": "2026-07-06T00:45:12.388Z"
+          "updatedAt": "2026-07-06T00:49:27.065Z"
         }
       ]
     },
@@ -7993,7 +7993,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:42:20.226Z",
-          "updatedAt": "2026-07-06T00:45:12.391Z"
+          "updatedAt": "2026-07-06T00:49:27.068Z"
         }
       ]
     },
@@ -8033,7 +8033,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:42:20.239Z",
-          "updatedAt": "2026-07-06T00:45:12.394Z"
+          "updatedAt": "2026-07-06T00:49:27.070Z"
         }
       ]
     },
@@ -8073,7 +8073,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:42:45.468Z",
-          "updatedAt": "2026-07-06T00:45:12.397Z"
+          "updatedAt": "2026-07-06T00:49:27.073Z"
         }
       ]
     },
@@ -8113,7 +8113,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:42:49.630Z",
-          "updatedAt": "2026-07-06T00:45:12.401Z"
+          "updatedAt": "2026-07-06T00:49:27.076Z"
         }
       ]
     },
@@ -8153,7 +8153,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:42:55.953Z",
-          "updatedAt": "2026-07-06T00:45:12.405Z"
+          "updatedAt": "2026-07-06T00:49:27.078Z"
         }
       ]
     },
@@ -8193,7 +8193,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:42:55.967Z",
-          "updatedAt": "2026-07-06T00:45:12.407Z"
+          "updatedAt": "2026-07-06T00:49:27.081Z"
         }
       ]
     },
@@ -8233,7 +8233,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:43:05.593Z",
-          "updatedAt": "2026-07-06T00:45:12.411Z"
+          "updatedAt": "2026-07-06T00:49:27.083Z"
         }
       ]
     },
@@ -8273,7 +8273,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:43:05.603Z",
-          "updatedAt": "2026-07-06T00:45:12.414Z"
+          "updatedAt": "2026-07-06T00:49:27.085Z"
         }
       ]
     },
@@ -8313,7 +8313,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:43:05.611Z",
-          "updatedAt": "2026-07-06T00:45:12.418Z"
+          "updatedAt": "2026-07-06T00:49:27.089Z"
         }
       ]
     },
@@ -8353,7 +8353,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:43:14.580Z",
-          "updatedAt": "2026-07-06T00:45:12.422Z"
+          "updatedAt": "2026-07-06T00:49:27.092Z"
         }
       ]
     },
@@ -8393,7 +8393,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:43:14.593Z",
-          "updatedAt": "2026-07-06T00:45:12.424Z"
+          "updatedAt": "2026-07-06T00:49:27.094Z"
         }
       ]
     },
@@ -8433,7 +8433,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:43:14.602Z",
-          "updatedAt": "2026-07-06T00:45:12.426Z"
+          "updatedAt": "2026-07-06T00:49:27.095Z"
         }
       ]
     },
@@ -8473,7 +8473,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:43:19.450Z",
-          "updatedAt": "2026-07-06T00:45:12.427Z"
+          "updatedAt": "2026-07-06T00:49:27.097Z"
         }
       ]
     },
@@ -8513,7 +8513,7 @@
           "reviewState": "auto-corroborated",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:43:19.458Z",
-          "updatedAt": "2026-07-06T00:45:12.431Z"
+          "updatedAt": "2026-07-06T00:49:27.099Z"
         }
       ]
     },
@@ -8553,7 +8553,7 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:43:40.562Z",
-          "updatedAt": "2026-07-06T00:45:12.434Z"
+          "updatedAt": "2026-07-06T00:49:27.101Z"
         }
       ]
     },
@@ -8593,9 +8593,687 @@
           "reviewState": "draft",
           "publishedAt": null,
           "createdAt": "2026-07-06T00:43:53.188Z",
-          "updatedAt": "2026-07-06T00:45:12.438Z"
+          "updatedAt": "2026-07-06T00:49:27.103Z"
         }
       ]
+    },
+    {
+      "id": "cmr8i3pei0000ihy4e237nc17",
+      "url": "https://www.scribd.com/document/899240248/be682167ee5d5a388f8044da86dddb73",
+      "title": "Watchers of Mount Hermon Explained | PDF - Scribd",
+      "domain": "scribd.com",
+      "category": "history",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:47:48.570Z",
+      "author": null,
+      "publisher": null,
+      "summary": "The document discusses the 200 Watcher class of Angels that descended on Mount Hermon during the days of Enoch, highlighting their influence on humanity and ...",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "theme: The Watchers ( Fallen Angels)",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:47:48.570Z",
+      "evidences": [
+        {
+          "id": "cmr8i3pek0002ihy4apxaiwjl",
+          "sourceId": "cmr8i3pei0000ihy4e237nc17",
+          "scriptureRef": "1-enoch 6:2",
+          "scriptureText": "And the angels, the children of the heaven, saw and lusted after them, and said to one another: \"Come, let us choose us wives from among the children of men and beget us children.\"",
+          "claim": "And the angels, the children of the heaven, saw and lusted after them, and said to one another: \"Come, let us choose us wives from among the children of men and beget us children.\"",
+          "corroboration": "The document discusses the 200 Watcher class of Angels that descended on Mount Hermon during the days of Enoch, highlighting their influence on humanity and ...",
+          "alignment": "contextualizes",
+          "confidence": 0.385,
+          "claimTypeSlug": "tradition-devotional",
+          "notes": "Auto-grown via \"theme: The Watchers ( Fallen Angels)\" (live MCP search).",
+          "blindspot": true,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-07-06T00:47:48.573Z",
+          "updatedAt": "2026-07-06T00:49:27.105Z"
+        }
+      ]
+    },
+    {
+      "id": "cmr8i3vcd0005ihy4r9wp3qfy",
+      "url": "https://www.youtube.com/watch?v=Z6JxEDghdQE",
+      "title": "How HEAVEN Looks Like According to the Book of Enoch - YouTube",
+      "domain": "youtube.com",
+      "category": "community-lead",
+      "credibilityTier": "community-lead",
+      "credibility": 0.4,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:47:56.269Z",
+      "author": null,
+      "publisher": null,
+      "summary": "Comments · What Enoch Saw in the Third Heaven — The Place Scripture Barely Describes · The Real Reason Demons Are Targeting You | Biblical Wisdom.",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "theme: Cosmology of the Heavens",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:47:56.269Z",
+      "evidences": [
+        {
+          "id": "cmr8i3vcf0007ihy4iumeeqsw",
+          "sourceId": "cmr8i3vcd0005ihy4r9wp3qfy",
+          "scriptureRef": "1-enoch 8:1",
+          "scriptureText": "And Azazel taught men to make swords, and knives, and shields, and breastplates, and made known to them the metals of the earth and the art of working them, and bracelets, and ornaments, and the use of antimony, and the beautifying of the eyelids, and all kinds of costly stones, and all colouring tinctures.",
+          "claim": "And Azazel taught men to make swords, and knives, and shields, and breastplates, and made known to them the metals of the earth and the art of working them, and bracelets, and ornaments, and the use of antimony, and the beautifying of the eyelids, and all kinds of costly stones, and all colouring tinctures.",
+          "corroboration": "Comments · What Enoch Saw in the Third Heaven — The Place Scripture Barely Describes · The Real Reason Demons Are Targeting You | Biblical Wisdom.",
+          "alignment": "neutral",
+          "confidence": 0.28,
+          "claimTypeSlug": "speculative",
+          "notes": "Exploratory lead via \"theme: Cosmology of the Heavens\" — community/discussion source, NOT corroboration. Needs digging + corroboration.",
+          "blindspot": true,
+          "reviewState": "draft",
+          "publishedAt": null,
+          "createdAt": "2026-07-06T00:47:56.272Z",
+          "updatedAt": "2026-07-06T00:49:27.107Z"
+        }
+      ]
+    },
+    {
+      "id": "cmr8i3vck000aihy4ho7o1qun",
+      "url": "https://www.instagram.com/reel/DM9fnxKNhN8/",
+      "title": "There are 10 Heavens, Based on Enoch! #jesuslovesyou #church ...",
+      "domain": "instagram.com",
+      "category": "community-lead",
+      "credibilityTier": "community-lead",
+      "credibility": 0.4,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:47:56.276Z",
+      "author": null,
+      "publisher": null,
+      "summary": "It is a place carved into the Earth, waiting for the souls of the damned. And look, I don't believe in Heaven, Hell, any of that, but this gave ...",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "theme: Cosmology of the Heavens",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:47:56.276Z",
+      "evidences": [
+        {
+          "id": "cmr8i3vcm000cihy4gu3muxcg",
+          "sourceId": "cmr8i3vck000aihy4ho7o1qun",
+          "scriptureRef": "1-enoch 8:1",
+          "scriptureText": "And Azazel taught men to make swords, and knives, and shields, and breastplates, and made known to them the metals of the earth and the art of working them, and bracelets, and ornaments, and the use of antimony, and the beautifying of the eyelids, and all kinds of costly stones, and all colouring tinctures.",
+          "claim": "And Azazel taught men to make swords, and knives, and shields, and breastplates, and made known to them the metals of the earth and the art of working them, and bracelets, and ornaments, and the use of antimony, and the beautifying of the eyelids, and all kinds of costly stones, and all colouring tinctures.",
+          "corroboration": "It is a place carved into the Earth, waiting for the souls of the damned. And look, I don't believe in Heaven, Hell, any of that, but this gave ...",
+          "alignment": "neutral",
+          "confidence": 0.28,
+          "claimTypeSlug": "speculative",
+          "notes": "Exploratory lead via \"theme: Cosmology of the Heavens\" — community/discussion source, NOT corroboration. Needs digging + corroboration.",
+          "blindspot": true,
+          "reviewState": "draft",
+          "publishedAt": null,
+          "createdAt": "2026-07-06T00:47:56.278Z",
+          "updatedAt": "2026-07-06T00:49:27.110Z"
+        }
+      ]
+    },
+    {
+      "id": "cmr8i41ae000fihy4s3po65dv",
+      "url": "https://www.gotquestions.org/Noahide-laws.html",
+      "title": "What are the Noahide Laws, and are they biblical? | GotQuestions.org",
+      "domain": "gotquestions.org",
+      "category": "history",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:03.974Z",
+      "author": null,
+      "publisher": null,
+      "summary": "What are the Noahide Laws, and are they biblical? | GotQuestions.org Light Dark Bible Version ESV CSB KJV NASB NIV NKJV NLT Font Family Default Arial Verdana Helvetica Tahoma Georgia Times New Roman Line Height Default 1.0 1.2 1.5 2 Font Size Default 1.0 1.2 1.5 2 Facebook X Pinterest Email Text/SMS Find Out How to go to heaven How to get right with God Random Subscribe Home Content Index Judaism Judaism and Old Testament History Noahide laws Question What are the Noahide Laws, and are they biblical? Answer The Noahide Laws are seven ancient laws that many people view as the basis of civilized society.",
+      "content": "What are the Noahide Laws, and are they biblical? | GotQuestions.org Light Dark Bible Version ESV CSB KJV NASB NIV NKJV NLT Font Family Default Arial Verdana Helvetica Tahoma Georgia Times New Roman Line Height Default 1.0 1.2 1.5 2 Font Size Default 1.0 1.2 1.5 2 Facebook X Pinterest Email Text/SMS Find Out How to go to heaven How to get right with God Random Subscribe Home Content Index Judaism Judaism and Old Testament History Noahide laws Question What are the Noahide Laws, and are they biblical? Answer The Noahide Laws are seven ancient laws that many people view as the basis of civilized society. They govern morality and represent the “bare minimum” of what God expects of humanity. They are called the “Noahide” laws because they are thought to have been given in their fullness to Noah after the flood. They are also called the Noachian laws, the Seven Laws of Noah, or the Seven Commands for Noah’s Sons (in Hebrew, Sheva Mitzvot B'nei Noach ). The idea of a formal set of laws given to all humanity (all the sons of Noah) comes from the Talmud and is therefore extra-biblical. Some scholars believe the Book of Jubilees contains a possible mention of the Noahide Laws. But, again, the Book of Jubilees is not inspired Scripture. However, the basic seven Noahide Laws are based in biblical principles. Here are the Noahide Laws: 1. Do not deny God (no idolatry). 2. Do not murder. 3. Do not steal. 4. Do not engage in sexual immorality. 5. Do not blaspheme. 6. Do not eat of a live animal (no eating flesh taken from an animal while it is still alive). 7. Establish courts and legal systems to ensure obedience of these laws. According to Jewish tradition, the first six of these seven laws were given to Adam in the Garden of Eden (the sixth law, to not eat live animals, was extraneous, since Adam did not eat any animals). When God established His covenant with Noah, He added the seventh (and the sixth became applicable). Each of the seven Noahide Laws is seen as a summary of more detailed laws, about 211 total. According to Judaism, a Gentile does not have to follow the Mosaic Law; however, all Gentiles are obliged to follow the Noahide Laws. The laws given to Noah’s children are universally binding. A non-Jew who abides by the Noahide Laws is considered a “righteous Gentile,” according to Judaism, and will earn a reward in the afterlife, if his obedience is coupled with a knowledge that the laws come from God. A “righteous Gentile” might also be called a “Hasidic Gentile” or simply a “Noahide.” Nowhere does the Bible record what laws God may have given Adam, other than the command to fill and subdue the earth and the prohibition against eating of the tree of knowledge of good and evil (Genesis 1:28; 2:17). After Noah and his family exited the ark, God gave the following three commands to him: “Be fruitful and increase in number and fill the earth” (Genesis 9:1); “You must not eat meat that has its lifeblood still in it” (verse 4); and “Whoever sheds human blood, / by humans shall their blood be shed; / for in the image of God / has God made mankind” (verse 6). After that, God repeats His command to “be fruitful and increase in number; multiply on the earth and increase upon it” (verse 7). Other than Noah being told not to eat raw meat, there is no hint of the traditional Noahide Laws in these passages. The only other place in Scripture where a Noahide law might be mentioned is Acts 15:29. The context of this passage is the Jerusalem Council , which met to address the issue of the Gentiles’ place in the early church. Specifically, the question before the council was, “Must Gentiles be circumcised according to Mosaic Law in order to be saved?” (see Acts 15:1). The apostles in Jerusalem answered with a resounding “no.” We are not saved by keeping the Law (see Galatians 2:16). However, to promote peace within the early church, the council advised Gentile believers to avoid four things, including the eating of “blood” and sexual immorality (Acts 15:29). Neither of the other two instructions correspond to any of the Noahide Laws. As an ancient moral code, the Noahide Laws have been a major influence in many cultures. In fact, in 1991, both houses of Congress passed a bill, signed into law by President George H. W. Bush, that declared the Noahide Laws to be “the bedrock of society from the dawn of civilization” and the “ethical values and principles . . . upon which our great Nation was founded” (H.J.RES.104.ENR). Are the Noahide Laws found in the Bible? No, not as a definitive list, and they are certainly not associated with either Noah or Adam. Are the Noahide Laws congruent with biblical teaching? The basic seven laws are congruent with Old Testament revelation. The Talmud calls for capital punishment for Gentiles who violate the Noahide Laws, and this has led to some debate as to whether or not Christians (who worship Jesus Christ) are guilty of violating the first Noahide law and therefore deserving of the death penalty. The modern consensus is that Trinitarianism is acceptable among Gentiles. In any case, it is important to note that we are not saved by rule-keeping; God requires faith in His Son (John 3:18). For Further Study What Do Jews Believe?: The Spiritual Foundations of Judaism by David Ariel The Quest Study Bible: Answers to Thousands of Your Questions About the Bible Related Articles What are the Ten Commandments? What is the Decalogue? What is the Mosaic Covenant? Why did God prohibit eating meat with blood in it (Genesis 9:4)? What is the Noahic Covenant? What is the Davidic covenant? Return to: Jewish Questions What are the Noahide Laws, and are they biblical? Subscribe to the Question of the Week Get our Question of the Week delivered right to your inbox! This page last updated: January 4, 2022",
+      "rawHtml": null,
+      "keywords": "theme: Covenant & Noahide Laws",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:03.974Z",
+      "evidences": [
+        {
+          "id": "cmr8i41ag000hihy4afovx4bz",
+          "sourceId": "cmr8i41ae000fihy4s3po65dv",
+          "scriptureRef": "jubilees 6:1",
+          "scriptureText": "And on the new moon of the first month, and on the new moon of the fourth month, and on the new moon of the seventh month, and on the new moon of the tenth month are the days of remembrance, and the days of the seasons in the four divisions of the year. These are written and ordained as a testimony for ever.",
+          "claim": "And on the new moon of the first month, and on the new moon of the fourth month, and on the new moon of the seventh month, and on the new moon of the tenth month are the days of remembrance, and the days of the seasons in the four divisions of the year. These are written and ordained as a testimony for ever.",
+          "corroboration": "What are the Noahide Laws, and are they biblical? | GotQuestions.org Light Dark Bible Version ESV CSB KJV NASB NIV NKJV NLT Font Family Default Arial Verdana Helvetica Tahoma Georgia Times New Roman Line Height Default 1.0 1.2 1.5 2 Font Size Default 1.0 1.2 1.5 2 Facebook X Pinterest Email Text/SMS Find Out How to go to heaven How to get right with God Random Subscribe Home Content Index Judaism Judaism and Old Testament History Noahide laws Question What are the Noahide Laws, and are they biblical? Answer The Noahide Laws are seven ancient laws that many people view as the basis of civilized society.",
+          "alignment": "contextualizes",
+          "confidence": 0.385,
+          "claimTypeSlug": "tradition-devotional",
+          "notes": "Auto-grown via \"theme: Covenant & Noahide Laws\" (live MCP search).",
+          "blindspot": true,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-07-06T00:48:03.977Z",
+          "updatedAt": "2026-07-06T00:49:27.114Z"
+        }
+      ]
+    },
+    {
+      "id": "cmr8i41al000kihy4yewuqbw2",
+      "url": "https://www.youtube.com/watch?v=ZVjMed4hk-0",
+      "title": "The Origins Behind the 7 Noahide Laws - YouTube",
+      "domain": "youtube.com",
+      "category": "community-lead",
+      "credibilityTier": "community-lead",
+      "credibility": 0.4,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:03.982Z",
+      "author": null,
+      "publisher": null,
+      "summary": "What are the Seven Noahide Laws, and what do they imply about the Jewish role in cultivating a better world? Explore this often overlooked ...",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "theme: Covenant & Noahide Laws",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:03.982Z",
+      "evidences": [
+        {
+          "id": "cmr8i41ao000mihy4opk1x2d6",
+          "sourceId": "cmr8i41al000kihy4yewuqbw2",
+          "scriptureRef": "jubilees 6:1",
+          "scriptureText": "And on the new moon of the first month, and on the new moon of the fourth month, and on the new moon of the seventh month, and on the new moon of the tenth month are the days of remembrance, and the days of the seasons in the four divisions of the year. These are written and ordained as a testimony for ever.",
+          "claim": "And on the new moon of the first month, and on the new moon of the fourth month, and on the new moon of the seventh month, and on the new moon of the tenth month are the days of remembrance, and the days of the seasons in the four divisions of the year. These are written and ordained as a testimony for ever.",
+          "corroboration": "What are the Seven Noahide Laws, and what do they imply about the Jewish role in cultivating a better world? Explore this often overlooked ...",
+          "alignment": "neutral",
+          "confidence": 0.28,
+          "claimTypeSlug": "speculative",
+          "notes": "Exploratory lead via \"theme: Covenant & Noahide Laws\" — community/discussion source, NOT corroboration. Needs digging + corroboration.",
+          "blindspot": true,
+          "reviewState": "draft",
+          "publishedAt": null,
+          "createdAt": "2026-07-06T00:48:03.984Z",
+          "updatedAt": "2026-07-06T00:49:27.116Z"
+        }
+      ]
+    },
+    {
+      "id": "cmr8i41at000pihy4h4ub4ubi",
+      "url": "https://www.chabad.org/library/article_cdo/aid/5559665/jewish/The-Seven-Laws-of-Noah.htm",
+      "title": "The Seven Laws of Noah - Chabad.org",
+      "domain": "chabad.org",
+      "category": "history",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:03.990Z",
+      "author": null,
+      "publisher": null,
+      "summary": "The Seven Laws of Noah · Embrace G‑d's Oneness · Do Not Curse Him · Guard Human Life · Respect Animal Life · Respect the Property of Others · Live a Moral Family Life ...",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "theme: Covenant & Noahide Laws",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:03.990Z",
+      "evidences": [
+        {
+          "id": "cmr8i41av000rihy4byer7hqy",
+          "sourceId": "cmr8i41at000pihy4h4ub4ubi",
+          "scriptureRef": "jubilees 6:1",
+          "scriptureText": "And on the new moon of the first month, and on the new moon of the fourth month, and on the new moon of the seventh month, and on the new moon of the tenth month are the days of remembrance, and the days of the seasons in the four divisions of the year. These are written and ordained as a testimony for ever.",
+          "claim": "And on the new moon of the first month, and on the new moon of the fourth month, and on the new moon of the seventh month, and on the new moon of the tenth month are the days of remembrance, and the days of the seasons in the four divisions of the year. These are written and ordained as a testimony for ever.",
+          "corroboration": "The Seven Laws of Noah · Embrace G‑d's Oneness · Do Not Curse Him · Guard Human Life · Respect Animal Life · Respect the Property of Others · Live a Moral Family Life ...",
+          "alignment": "contextualizes",
+          "confidence": 0.385,
+          "claimTypeSlug": "tradition-devotional",
+          "notes": "Auto-grown via \"theme: Covenant & Noahide Laws\" (live MCP search).",
+          "blindspot": true,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-07-06T00:48:03.992Z",
+          "updatedAt": "2026-07-06T00:49:27.119Z"
+        }
+      ]
+    },
+    {
+      "id": "cmr8i49mj000uihy4dl5mqhyr",
+      "url": "https://www.instagram.com/reel/DVlUzsPiJzn/",
+      "title": "Instagram",
+      "domain": "instagram.com",
+      "category": "community-lead",
+      "credibilityTier": "community-lead",
+      "credibility": 0.4,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:14.780Z",
+      "author": null,
+      "publisher": null,
+      "summary": "Instagram Instagram Log In Sign Up Meta About Blog Jobs Help API Privacy Consumer Health Privacy Terms Locations Popular Instagram Lite Meta AI Threads Contact Uploading & Non-Users Meta Verified English Down chevron icon Afrikaans العربية Čeština Dansk Deutsch Ελληνικά English English (UK) Español (España) Español فارسی Suomi Français עברית Bahasa Indonesia Italiano 日本語 한국어 Bahasa Melayu Norsk Nederlands Polski Português (Brasil) Português (Portugal) Русский Svenska ภาษาไทย Filipino Türkçe 中文(简体) 中文(台灣) বাংলা ગુજરાતી हिन्दी Hrvatski Magyar ಕನ್ನಡ മലയാളം मराठी नेपाली ਪੰਜਾਬੀ සිංහල Slovenčina தமிழ் తెలుగు اردو Tiếng Việt 中文(香港) Български Français (Canada) Română Српски Українська © 2026 Instagram from Meta",
+      "content": "Instagram Instagram Log In Sign Up Meta About Blog Jobs Help API Privacy Consumer Health Privacy Terms Locations Popular Instagram Lite Meta AI Threads Contact Uploading & Non-Users Meta Verified English Down chevron icon Afrikaans العربية Čeština Dansk Deutsch Ελληνικά English English (UK) Español (España) Español فارسی Suomi Français עברית Bahasa Indonesia Italiano 日本語 한국어 Bahasa Melayu Norsk Nederlands Polski Português (Brasil) Português (Portugal) Русский Svenska ภาษาไทย Filipino Türkçe 中文(简体) 中文(台灣) বাংলা ગુજરાતી हिन्दी Hrvatski Magyar ಕನ್ನಡ മലയാളം मराठी नेपाली ਪੰਜਾਬੀ සිංහල Slovenčina தமிழ் తెలుగు اردو Tiếng Việt 中文(香港) Български Français (Canada) Română Српски Українська © 2026 Instagram from Meta",
+      "rawHtml": null,
+      "keywords": "theme: The Great Flood",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:14.780Z",
+      "evidences": [
+        {
+          "id": "cmr8i49mm000wihy4noa0s16f",
+          "sourceId": "cmr8i49mj000uihy4dl5mqhyr",
+          "scriptureRef": "jubilees 5:1",
+          "scriptureText": "And it came to pass when the children of men began to multiply on the face of the earth and daughters were born unto them, that the angels of God saw them on a certain year of this jubilee, that they were beautiful to look upon; and they took themselves wives of all whom they chose, and they bare unto them sons and they were giants.",
+          "claim": "And it came to pass when the children of men began to multiply on the face of the earth and daughters were born unto them, that the angels of God saw them on a certain year of this jubilee, that they were beautiful to look upon; and they took themselves wives of all whom they chose, and they bare unto them sons and they were giants.",
+          "corroboration": "Instagram Instagram Log In Sign Up Meta About Blog Jobs Help API Privacy Consumer Health Privacy Terms Locations Popular Instagram Lite Meta AI Threads Contact Uploading & Non-Users Meta Verified English Down chevron icon Afrikaans العربية Čeština Dansk Deutsch Ελληνικά English English (UK) Español (España) Español فارسی Suomi Français עברית Bahasa Indonesia Italiano 日本語 한국어 Bahasa Melayu Norsk Nederlands Polski Português (Brasil) Português (Portugal) Русский Svenska ภาษาไทย Filipino Türkçe 中文(简体) 中文(台灣) বাংলা ગુજરાતી हिन्दी Hrvatski Magyar ಕನ್ನಡ മലയാളം मराठी नेपाली ਪੰਜਾਬੀ සිංහල Slovenčina தமிழ் తెలుగు اردو Tiếng Việt 中文(香港) Български Français (Canada) Română Српски Українська © 2026 Instagram from Meta",
+          "alignment": "neutral",
+          "confidence": 0.28,
+          "claimTypeSlug": "speculative",
+          "notes": "Exploratory lead via \"theme: The Great Flood\" — community/discussion source, NOT corroboration. Needs digging + corroboration.",
+          "blindspot": true,
+          "reviewState": "draft",
+          "publishedAt": null,
+          "createdAt": "2026-07-06T00:48:14.783Z",
+          "updatedAt": "2026-07-06T00:49:27.122Z"
+        }
+      ]
+    },
+    {
+      "id": "cmr8i49mr000zihy4sn76y7q7",
+      "url": "https://www.facebook.com/TheReformedSage/posts/if-the-flood-was-partially-intended-to-wipe-out-all-the-nephilim-why-do-they-exi/1009222444803719/",
+      "title": "If the flood was partially intended to wipe out all ...",
+      "domain": "facebook.com",
+      "category": "community-lead",
+      "credibilityTier": "community-lead",
+      "credibility": 0.4,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:14.788Z",
+      "author": null,
+      "publisher": null,
+      "summary": "... Watchers,\" corrupted humanity and brought about the great flood. ... violence, and GENETIC CORRUPTION the Nephilim posed to the earth.",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "theme: The Great Flood",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:14.788Z",
+      "evidences": [
+        {
+          "id": "cmr8i49mu0011ihy4guvwfypy",
+          "sourceId": "cmr8i49mr000zihy4sn76y7q7",
+          "scriptureRef": "jubilees 5:1",
+          "scriptureText": "And it came to pass when the children of men began to multiply on the face of the earth and daughters were born unto them, that the angels of God saw them on a certain year of this jubilee, that they were beautiful to look upon; and they took themselves wives of all whom they chose, and they bare unto them sons and they were giants.",
+          "claim": "And it came to pass when the children of men began to multiply on the face of the earth and daughters were born unto them, that the angels of God saw them on a certain year of this jubilee, that they were beautiful to look upon; and they took themselves wives of all whom they chose, and they bare unto them sons and they were giants.",
+          "corroboration": "... Watchers,\" corrupted humanity and brought about the great flood. ... violence, and GENETIC CORRUPTION the Nephilim posed to the earth.",
+          "alignment": "neutral",
+          "confidence": 0.28,
+          "claimTypeSlug": "speculative",
+          "notes": "Exploratory lead via \"theme: The Great Flood\" — community/discussion source, NOT corroboration. Needs digging + corroboration.",
+          "blindspot": true,
+          "reviewState": "draft",
+          "publishedAt": null,
+          "createdAt": "2026-07-06T00:48:14.790Z",
+          "updatedAt": "2026-07-06T00:49:27.126Z"
+        }
+      ]
+    },
+    {
+      "id": "cmr8i49my0014ihy408x0z7nn",
+      "url": "https://www.quora.com/Why-did-God-allow-the-Fallen-Watchers-to-beget-the-Nephilim-and-corrupt-the-Earth-even-though-He-knew-it-will-result-in-Noahs-Flood",
+      "title": "Why did God allow the Fallen Watchers to beget ...",
+      "domain": "quora.com",
+      "category": "community-lead",
+      "credibilityTier": "community-lead",
+      "credibility": 0.4,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:14.795Z",
+      "author": null,
+      "publisher": null,
+      "summary": "Why did God allow the Fallen Watchers to beget the Nephilim and corrupt the Earth, even though He knew it will result in Noah's Flood?",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "theme: The Great Flood",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:14.795Z",
+      "evidences": [
+        {
+          "id": "cmr8i49n00016ihy4ho246g6l",
+          "sourceId": "cmr8i49my0014ihy408x0z7nn",
+          "scriptureRef": "jubilees 5:1",
+          "scriptureText": "And it came to pass when the children of men began to multiply on the face of the earth and daughters were born unto them, that the angels of God saw them on a certain year of this jubilee, that they were beautiful to look upon; and they took themselves wives of all whom they chose, and they bare unto them sons and they were giants.",
+          "claim": "And it came to pass when the children of men began to multiply on the face of the earth and daughters were born unto them, that the angels of God saw them on a certain year of this jubilee, that they were beautiful to look upon; and they took themselves wives of all whom they chose, and they bare unto them sons and they were giants.",
+          "corroboration": "Why did God allow the Fallen Watchers to beget the Nephilim and corrupt the Earth, even though He knew it will result in Noah's Flood?",
+          "alignment": "neutral",
+          "confidence": 0.28,
+          "claimTypeSlug": "speculative",
+          "notes": "Exploratory lead via \"theme: The Great Flood\" — community/discussion source, NOT corroboration. Needs digging + corroboration.",
+          "blindspot": true,
+          "reviewState": "draft",
+          "publishedAt": null,
+          "createdAt": "2026-07-06T00:48:14.796Z",
+          "updatedAt": "2026-07-06T00:49:27.129Z"
+        }
+      ]
+    },
+    {
+      "id": "cmr8i4kdv0019ihy4921ip57q",
+      "url": "https://www.facebook.com/groups/544175310009545/posts/1408455973581470/",
+      "title": "Superstitions, Fairy Tales, Folklore &amp; Mythology | **Azazel** is one of the most ominous and enigmatic figures in the Bible",
+      "domain": "facebook.com",
+      "category": "community-lead",
+      "credibilityTier": "community-lead",
+      "credibility": 0.4,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:28.723Z",
+      "author": null,
+      "publisher": null,
+      "summary": "Superstitions, Fairy Tales, Folklore & Mythology | **Azazel** is one of the most ominous and enigmatic figures in the Bible",
+      "content": "Superstitions, Fairy Tales, Folklore & Mythology | **Azazel** is one of the most ominous and enigmatic figures in the Bible",
+      "rawHtml": null,
+      "keywords": "theme: Azazel & the Scapegoat",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:28.723Z",
+      "evidences": [
+        {
+          "id": "cmr8i4kdx001bihy4fnwm1rfd",
+          "sourceId": "cmr8i4kdv0019ihy4921ip57q",
+          "scriptureRef": "1-enoch 10:4",
+          "scriptureText": "And again the Lord said to Raphael: \"Bind Azazel hand and foot, and cast him into the darkness: and make an opening in the desert, which is in Dudael, and cast him therein.",
+          "claim": "And again the Lord said to Raphael: \"Bind Azazel hand and foot, and cast him into the darkness: and make an opening in the desert, which is in Dudael, and cast him therein.",
+          "corroboration": "Superstitions, Fairy Tales, Folklore & Mythology | **Azazel** is one of the most ominous and enigmatic figures in the Bible",
+          "alignment": "neutral",
+          "confidence": 0.28,
+          "claimTypeSlug": "speculative",
+          "notes": "Exploratory lead via \"theme: Azazel & the Scapegoat\" — community/discussion source, NOT corroboration. Needs digging + corroboration.",
+          "blindspot": true,
+          "reviewState": "draft",
+          "publishedAt": null,
+          "createdAt": "2026-07-06T00:48:28.725Z",
+          "updatedAt": "2026-07-06T00:49:27.133Z"
+        }
+      ]
+    },
+    {
+      "id": "cmr8i4nz1001eihy4rq98t9iy",
+      "url": "https://academic.oup.com/edited-volume/34334/chapter/291371168",
+      "title": "Archaeology | The Oxford Handbook of Biblical Studies",
+      "domain": "academic.oup.com",
+      "category": "history",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:33.374Z",
+      "author": null,
+      "publisher": null,
+      "summary": "Abstract. This article discusses the contributions of archaeology to biblical scholarship. Biblical scholarship needs the archaeologist as it needs the ...",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "theme: Tree of Life",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:33.374Z",
+      "evidences": []
+    },
+    {
+      "id": "cmr8i4nz5001fihy4tforxxk9",
+      "url": "https://www.biblicalarchaeology.org/magazine-issue/biblical-archaeology-review-fall-2021/",
+      "title": "Biblical Archaeology Review, Fall 2021",
+      "domain": "biblicalarchaeology.org",
+      "category": "history",
+      "credibilityTier": "peer-reviewed",
+      "credibility": 0.9,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:33.377Z",
+      "author": null,
+      "publisher": null,
+      "summary": "Biblical Archaeology Review's Fall 2021 issue features exciting new discoveries and insights about the world of the Bible.",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "theme: Tree of Life",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:33.377Z",
+      "evidences": []
+    },
+    {
+      "id": "cmr8i4r8l001gihy4plae0jbz",
+      "url": "http://qbible.com/enoch/47.html",
+      "title": "Chapter XLVII / Chapter 47 - Book of 1 Enoch, Parallel 1912 Charles ...",
+      "domain": "qbible.com",
+      "category": "history",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:37.605Z",
+      "author": null,
+      "publisher": null,
+      "summary": "47:3 At that time I beheld the Ancient of days, while he sat upon the throne of his glory, [while] the book of the living was opened in his presence, and [while] ...",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "theme: Book of Life / Heavenly Books",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:37.605Z",
+      "evidences": [
+        {
+          "id": "cmr8i4r8n001iihy4di3cpgyh",
+          "sourceId": "cmr8i4r8l001gihy4plae0jbz",
+          "scriptureRef": "1-enoch 1:1",
+          "scriptureText": "The words of the blessing of Enoch, wherewith he blessed the elect and righteous who will be living in the day of tribulation, when all the wicked and godless are to be removed.",
+          "claim": "The words of the blessing of Enoch, wherewith he blessed the elect and righteous who will be living in the day of tribulation, when all the wicked and godless are to be removed.",
+          "corroboration": "47:3 At that time I beheld the Ancient of days, while he sat upon the throne of his glory, [while] the book of the living was opened in his presence, and [while] ...",
+          "alignment": "contextualizes",
+          "confidence": 0.385,
+          "claimTypeSlug": "tradition-devotional",
+          "notes": "Auto-grown via \"theme: Book of Life / Heavenly Books\" (live MCP search).",
+          "blindspot": true,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-07-06T00:48:37.607Z",
+          "updatedAt": "2026-07-06T00:49:27.139Z"
+        }
+      ]
+    },
+    {
+      "id": "cmr8i4upn001lihy43nxuh0kk",
+      "url": "https://brill.com/display/book/edcoll/9789004429536/BP000004.xml?srsltid=AfmBOoqFMjw6VVPgsLY3Y8Xk7kdYHTII3jZOh18yvDgMewNCKaQUEzb1",
+      "title": "Chapter 2 The Importance of the Parables of 1 Enoch for ... - Brill",
+      "domain": "brill.com",
+      "category": "history",
+      "credibilityTier": "peer-reviewed",
+      "credibility": 0.92,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:42.108Z",
+      "author": null,
+      "publisher": null,
+      "summary": "Eschatological judgment is mentioned in Daniel 7 (Dan 7:10, 22, 26), and “one like a son of man” is given universal dominion or rule (Dan 7:14), ...",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "theme: Son of Man",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:42.108Z",
+      "evidences": [
+        {
+          "id": "cmr8i4upq001nihy4ebibmcwo",
+          "sourceId": "cmr8i4upn001lihy43nxuh0kk",
+          "scriptureRef": "1-enoch 1:9",
+          "scriptureText": "And behold, he comes with ten thousands of his holy ones to execute judgment upon all, and to destroy all the ungodly: and to convict all flesh of all the works of their ungodliness which they have ungodly committed, and of all the hard things which ungodly sinners have spoken against him.",
+          "claim": "And behold, he comes with ten thousands of his holy ones to execute judgment upon all, and to destroy all the ungodly: and to convict all flesh of all the works of their ungodliness which they have ungodly committed, and of all the hard things which ungodly sinners have spoken against him.",
+          "corroboration": "Eschatological judgment is mentioned in Daniel 7 (Dan 7:10, 22, 26), and “one like a son of man” is given universal dominion or rule (Dan 7:14), ...",
+          "alignment": "contextualizes",
+          "confidence": 0.644,
+          "claimTypeSlug": "scholarly-consensus",
+          "notes": "Auto-grown via \"theme: Son of Man\" (live MCP search).",
+          "blindspot": false,
+          "reviewState": "auto-corroborated",
+          "publishedAt": null,
+          "createdAt": "2026-07-06T00:48:42.110Z",
+          "updatedAt": "2026-07-06T00:49:27.141Z"
+        }
+      ]
+    },
+    {
+      "id": "cmr8i4ykt0000ihzgxg9xtzn3",
+      "url": "https://catholicproductions.com/blogs/blog/jesus-descent-into-hell?srsltid=AfmBOop6uS8odhNLpmV-pAG6zhe5aSNgLtH8OFyZqApuW62qhCXzYpCg",
+      "title": "Jesus' Descent into Hell | Dr. Brant Pitre - Catholic Productions",
+      "domain": "catholicproductions.com",
+      "category": "history",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:47.117Z",
+      "author": null,
+      "publisher": null,
+      "summary": "Dr. Brant Pitre explores 1 Peter 3 and what it means that Jesus descended into hell between his death and resurrection.",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "film: harrowing of hell",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:47.117Z",
+      "evidences": []
+    },
+    {
+      "id": "cmr8i4ykx0001ihzginvfy5yx",
+      "url": "https://www.bible-bridge.com/christs-descent-to-hades-reflecting-on-1-peter-318-20/",
+      "title": "Christ's Descent to Hades? Reflecting on 1 Peter 3:18-20 - BibleBridge",
+      "domain": "bible-bridge.com",
+      "category": "history",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:47.121Z",
+      "author": null,
+      "publisher": null,
+      "summary": "In the book Christ the Conqueror of Hell, the author analyzes early church leaders' views on Christ's descent to Hades—the realm of the dead.",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "film: harrowing of hell",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:47.121Z",
+      "evidences": []
+    },
+    {
+      "id": "cmr8i556x0002ihzgzxdboytw",
+      "url": "https://www.reddit.com/r/AcademicBiblical/comments/xdv4p9/what_is_a_historical_explanation_if_any_for_jesus/",
+      "title": "What is a historical explanation, if any, for Jesus' empty tomb? - Reddit",
+      "domain": "reddit.com",
+      "category": "community-lead",
+      "credibilityTier": "community-lead",
+      "credibility": 0.4,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:55.690Z",
+      "author": null,
+      "publisher": null,
+      "summary": "The empty tomb is not mentioned until the decade of the sixties. By all the evidence, it did not play a significant role in the birth of faith ...",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "film: resurrection",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:55.690Z",
+      "evidences": []
+    },
+    {
+      "id": "cmr8i58fo0003ihzg5gxx2l2g",
+      "url": "https://www.facebook.com/groups/157650817740680/posts/1185920738247011/",
+      "title": "Sources for the 81 book canon of the Ethiopian Church - Facebook",
+      "domain": "facebook.com",
+      "category": "community-lead",
+      "credibilityTier": "community-lead",
+      "credibility": 0.4,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:48:59.892Z",
+      "author": null,
+      "publisher": null,
+      "summary": "This holy book was unlike any other, for it contained **81 books** that spanned both the Old and New Testaments, setting it apart from the canons of other ...",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "film: ethiopian canon",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:48:59.892Z",
+      "evidences": []
+    },
+    {
+      "id": "cmr8i5ll50004ihzgxszorcq3",
+      "url": "https://brill.com/downloadpdf/book/9789004332874/BP000006.pdf?srsltid=AfmBOoqGrlEaSMIDmaP8evtdaVM-euZmQGVSCjOyMRU9cB_dI8_6h_YU",
+      "title": "THE PERPETUAL CALENDAR OF THE DEAD SEA SCROLLS - Brill",
+      "domain": "brill.com",
+      "category": "history",
+      "credibilityTier": "peer-reviewed",
+      "credibility": 0.92,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:49:16.938Z",
+      "author": null,
+      "publisher": null,
+      "summary": "Though the Essene year consists of complete weeks (for 52 x 7 days= 364 days), and though the first day of the biblical week is Sunday, the Essene year begins ...",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "film: jubilees calendar",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:49:16.938Z",
+      "evidences": []
+    },
+    {
+      "id": "cmr8i5oca0005ihzg8o00dkca",
+      "url": "https://chadashby.com/2014/05/05/genesis-6-sons-of-god-nephilim-and-watchers/?srsltid=AfmBOoqriJ_9xXERQIgQeMN-ax10ermoGKBRgfSxcCa3jaxfcL3e5cgt",
+      "title": "Genesis 6: Sons of God, Nephilim, and Watchers? - Chad C. Ashby",
+      "domain": "chadashby.com",
+      "category": "history",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:49:20.507Z",
+      "author": null,
+      "publisher": null,
+      "summary": "Many scholars would argue that the story about “sons of God” procreating with the “daughters of man” needs to be demythologized.",
+      "content": null,
+      "rawHtml": null,
+      "keywords": "film: nephilim",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:49:20.507Z",
+      "evidences": []
+    },
+    {
+      "id": "cmr8i5rvc0006ihzgy9ag1915",
+      "url": "https://zondervanacademic.com/blog/azazel-and-the-scapegoat",
+      "title": "Azazel and the “Scapegoat” (Leviticus 16) | Zondervan Academic",
+      "domain": "zondervanacademic.com",
+      "category": "history",
+      "credibilityTier": "popular-journalistic",
+      "credibility": 0.55,
+      "publishedAt": null,
+      "retrievedAt": "2026-07-06T00:49:25.081Z",
+      "author": null,
+      "publisher": null,
+      "summary": "Azazel and the “Scapegoat” (Leviticus 16) | Zondervan Academic Request an Exam Copy Search... Search Zondervan Academic Browse Products Books Biblical Studies Bible Survey & Reference Bibles Biblical Theology Commentaries (NT) Commentaries (OT) Greek Hebrew & Cognate Languages Hermeneutics New Testament Studies Old Testament Studies Theology Apologetics Bible & Culture Church History Counterpoints Ethics Historical Theology Philosophy Systematic Theology Theology (General) World Religions Worldview Ministry Christian Education Church Growth & Health Counseling Evangelism Missions Pastoral Ministry & Leadership Preaching/Homiletics Spiritual Formation Worship Studies Youth Ministry New Products Instructor Resources Service & More Blog Publishing with Us Help About Us Publishing with Us Media Inquiries My Account Sign In Sign Up Azazel and the “Scapegoat” (Leviticus 16) johnwaltonzablog@gmail.com March 6, 2009 Share Twitter Facebook Categories Old Testament Often we encounter sections and practices in the Old Testament that seem very strange to us. It should not be surprising that some of these can be clarified with knowledge gleaned from the ancient Near East.",
+      "content": "Azazel and the “Scapegoat” (Leviticus 16) | Zondervan Academic Request an Exam Copy Search... Search Zondervan Academic Browse Products Books Biblical Studies Bible Survey & Reference Bibles Biblical Theology Commentaries (NT) Commentaries (OT) Greek Hebrew & Cognate Languages Hermeneutics New Testament Studies Old Testament Studies Theology Apologetics Bible & Culture Church History Counterpoints Ethics Historical Theology Philosophy Systematic Theology Theology (General) World Religions Worldview Ministry Christian Education Church Growth & Health Counseling Evangelism Missions Pastoral Ministry & Leadership Preaching/Homiletics Spiritual Formation Worship Studies Youth Ministry New Products Instructor Resources Service & More Blog Publishing with Us Help About Us Publishing with Us Media Inquiries My Account Sign In Sign Up Azazel and the “Scapegoat” (Leviticus 16) johnwaltonzablog@gmail.com March 6, 2009 Share Twitter Facebook Categories Old Testament Often we encounter sections and practices in the Old Testament that seem very strange to us. It should not be surprising that some of these can be clarified with knowledge gleaned from the ancient Near East. In what is arguably the most important ritual for ancient Israelites, the Day of Atonement (Yom Kippur), the people are instructed to designate one goat as a &quot;scapegoat&quot;—a ancient attempt to render an obscure Hebrew word, Azazel. In his Leviticus contribution to ZIBBCOT, ritual specialist Roy Gane writes: Rather than the traditional &quot;scapegoat&quot; translating la ‘ a za,zel here, we should read instead &quot;to Azazel&quot; (NRSV; NJB). 1 We know that ‘ a za,zel should be the proper name of a party capable of ownership because a lot ceremony designated one goat layhwh , &quot;belonging to Yahweh,&quot; and the other goat as la ‘ a za,zel , &quot;belonging to Azazel&quot; (16:8). However, we do not know what the name &quot;Azazel&quot; means. 2 A number of scholars have attempted to answer the question by reconstructing etymologies based on ancient Near Eastern parallels. For example, in accord with the rabbinic tradition that during the Second Temple period Azazel’s goat was driven over a cliff to its death ( m. Yoma 6:6), G. R. Driver took Azazel to mean &quot;jagged rocks/precipice,&quot; derived from the Semitic root ‘zz , from which also comes the Arabic word ‘azâzu(n) , &quot;rough ground.&quot; 3 O. Loretz suggests a linguistic relation between Azazel and the Ugaritic divine name ‘zb‘l . 4 Based on their interpretation of the Hurrian term aza/ushri in light of Akkadian use of the root ‘zz , which refers to divine anger, B. Janowski, and G. Wilhelm interpret the &quot;Azazel&quot; ritual as expulsion of a goat in order to overcome divine anger. 5 If Azazel is a proper name, la ‘ a za,zel in 16:10 following the words &quot;by sending it into the desert&quot; most naturally indicates the one to whom the live goat is sent: &quot;to Azazel&quot; (cf. 16:26). This rules out the common interpretation of ‘ a za,zel as &quot;(e)scapegoat,&quot; referring to the goat itself. Obviously the goat would not be sent &quot;to the scapegoat.&quot; 6 The fact that Yahweh, owner of the goat slain as a purification offering (16:9, 15), is supernatural suggests that Azazel, owner of the live goat, is also some kind of supernatural being. Because transporting a load of Israelite toxic waste, consisting of moral faults, to Azazel in the wilderness and abandoning it there by the command of Yahweh (16:10, 22; cf. Zech 5:5–11) is a singularly unfriendly gesture, it appears that Azazel is Yahweh’s enemy. 7 Therefore, Azazel is most likely some kind of demon (so Jewish tradition recorded in 1 En. 10:4–5), who dwells in an uninhabited region (cf. Lev. 17:7; Isa. 13:21; 34:14; Luke 11:24; Rev. 18:2). 8 The biblical ritual expels moral faults to Azazel, who is apparently the ultimate source of their sins (cf. Gen. 3; Rev. 12:9). By contrast, non-Israelite rituals involving demons were concerned with expelling the demons themselves. 9 For example, a ritual for purifying the Ezida shrine of the god Nabû on the fifth day of the Babylonian New Year Festival of Spring began by covering the shrine with a golden canopy. Then the high priest and a group of artisans recited an incantation invoking the gods to exorcise demons who could be lurking there: &quot;Marduk purifies the temple, Kusu designs the plan, and Ningirim casts the spell. Whatever evil resides in this temple, get out! Great demon, may Bel kill you! May you be cut down wherever you are!&quot; 10 The Israelites didn’t need to worry about such demons because the Lord’s Presence would keep them away. The people’s concern was to acknowledge and banish the sins they had committed. Azazel’s nonsacrificial &quot;tote&quot; goat (NIV translates &quot;scapegoat&quot;) served as a ritual &quot;garbage truck&quot; to purge the Israelite community of moral faults through a process of transfer and disposal. 11 Other ancient Near Eastern rituals included transfer and disposal. For example, the Hittite Ambazzi and Huwarlu rituals closely parallel the Israelite ritual &quot;in that they use live animals as bearers of the evil and lack the motif of substitution.&quot; 12 The &quot;Ritual of Ambazzi&quot; to rid people of &quot;evil sickness&quot; and &quot;evil tension&quot; goes as follows: She wraps a little tin on the bowstring. She puts it on the right hand (and) feet of the offerers. Then she takes it away and puts it on a mouse (saying): &quot;I have taken away from you evil and I have put it on the mouse. Let this mouse take it to the high mountains, the deep valleys (and) the distant ways.&quot; She lets the mouse go (saying): &quot;Alawaimi, drive this (mouse) forth, and I will give to you a goat to eat.&quot; [Offerings to Alawaimi and other gods follow.] 13 Unlike the biblical ritual, a deity is entreated (by words and sacrifice) for help in getting rid of the animal bearing the evil. 14 The &quot;Ritual of Huwarlu&quot; had the purpose of removing an evil &quot;magical word&quot; from the king and queen and from their palace. A small live dog was waved over the couple and inside the palace in order to transfer the evil to the animal. Then an old woman uttered an incantation expressing the dog’s ability to bear the evil, and the animal was taken away to a location regarded as designated by the gods. By contrast, the oral component of the Israelite ritual was confession (by the high priest; Lev. 16:21) rather than an incantation, and the power of the biblical procedure was from the Lord rather than magical in nature. 15 Nevertheless, acting out transfer and disposal provided powerful assurance to the Israelites that their community was freed from the sins they had committed during the past year. (Excerpt from Roy Gane, Leviticus in the Zondervan Illustrated Bible Backgrounds Commentary, forthcoming) In this case, information from the ancient Near East helps us to see that rituals of elimination (which is what Yom Kippur is) were common enough in the ancient world. Furthermore, that the offenses would be sent out to a wilderness chaos entity resonates well with ancient Near Eastern conceptions. These similarities show that these rituals share a broad familiarity in the ancient world. At the same time, the Israelite rituals focused on cleansing sacred space from the offenses of the people rather than from demonic powers. Bible Backgrounds is a series of weekly blog posts leading up to the fall 2009 release of the Zondervan Illustrated Bible Backgrounds Commentary: Old Testament . Each post is written by John H. Walton , the general editor for the five volumes. ZIBBCOT is the product of thirty international specialists; their work and expertise will also be represented throughout this series. NOTES 1 See also Milgrom, Lev iticus 23–27 , 1921; cf. NJPS: &quot;for Azazel.&quot; 2 For surveys of suggested explanations, see B. Levine, Leviticus (JPS Torah Commentary; Philadelphia: Jewish Publication Society, 1989), 250–53; Wright, Disposal of Impurity , 21–22; Milgrom, Leviticus 1–16 , 1020–21; A. Treiyer, The Day of Atonement and the Heavenly Judgment from the Pentateuch to Revelation (Siloam Springs, AR: Creation Enterprises International, 1992), 231–58. 3 G. R. Driver, &quot;Three Technical Terms in the Pentateuch,&quot; JSS 1 (1956): 98. 4 Loretz, Leberschau , 56–57. 5 B. Janowski, and G. Wilhelm, &quot;Der Bock, der die Sünden hinausträgt: Zur Religionsgeschichte des Azazel–Ritus Lev 16,10.21f,&quot; in Religionsgechichtliche Beziehungen zwischen Kleinasien, Nordsyrien und dem Alten Testament , ed. B. Janowski, K. Koch, and G. Wilhelm (OBO 129; Freiburg/Göttingen: Universitätsverlag/Vandenhoeck & Ruprecht, 1993), 134–62. 6 C. D. Ginsburg, Leviticus (The Handy Commentary; Grand Rapids: Zondervan, 1961), 151; cf. S. R. Driver and H. A. White, The Book of Leviticus (SBONT; New York: Dodd, Mead, 1898), 81. 7 R. Gane, Altar Call (Berrien Springs, Mich.: Diadem, 1999), 248–50; Gane, Cult and Character , ch. 11. 8 A. Noordtzij, Leviticus , trans. R. Togtman (BSC; Grand Rapids: Zondervan, 1982), 162–63; B. Levine, &quot;Leviticus, Book of,&quot; ABD, 4:315. For Babylonian belief in alu -demons who lived in deserted wastelands, see CAD , 1:376. On the Azazel episode in 1 Enoch , see P. D. Hanson, &quot;Rebellion in Heaven, Azazel, and Euhemeristic Heroes in 1 Enoch 6–11,&quot; JBL 96 (1977): 220–27. 9 Y. Kaufmann, The Religion of Israel , trans. and abridged M. Greenberg (Chicago: Univ. of Chicago Press, 1960), 114. 10 Cohen, Cultic Calendars , 446; see also ANET, 334. 11 See further in Gane, Cult and Character , ch. 11; Gane, Leviticus, Numbers , 273–74, 288–91. 12 David P. Wright, &quot;Day of Atonement,&quot; ABD, 2:74. 13 Wright, Disposal of Impurity , 57. For analysis of the Israelite &quot;scapegoat&quot; ritual in relation to a number of Hittite and Mesopotamian parallels, see 15–74. For an apparent Ugaritic parallel, in which an elimination ritual involves driving a goat away to a far place, see K. Aartun, &quot;Eine weitere Parallele aus Ugarit zur kultischen Praxis in Israels Religion,&quot; BO 33 (1976): 288; O. Loretz, Leberschau, Sündenbock, Asasel in Ugarit und Israel (UBL; Altenberge: CIS–Verlag, 1985), 35–49. 14 Wright, Disposal of Impurity , 58. 15 Ibid., 58–60; cf. H. Hoffner, &quot;Hittite-Israelite Cultural Parallels,&quot; in COS , 3:xxxii; see also Walton, Matthews, and Chavalas on the &quot;scapegoat&quot; concept in the ancient Near East, The IVP Bible Background Commentary , 131. johnwaltonzablog@gmail.com John Walton is Professor of Old Testament at Wheaton College. He has a PhD in Hebrew and Cognate Studies, Hebrew Union College-Jewish Institute of Religion. He writes for BioLogos Forum and is the author of Zondervan Illustrated Bible Backgrounds Commentary Set–Old Testament . Next Post Influential Books and Authors: Michael E. Wittmer on \"Creation Regained\" Influential Books and Authors: Michael E. Wittmer on \"Creation Regained\" Each week in Influential Books and Authors we hear from a noted&#0160;scholar on the author(s) and book(s) that have bee... Your form could not be submitted. Please check errors and resubmit. Thank you! Sign up complete. Subscribe to the Blog Get expert commentary on biblical languages, fresh explorations in theology, hand-picked book excerpts, author videos, and info on limited-time sales. Email Address By submitting your email address, you understand that you will receive email communications from HarperCollins Christian Publishing (501 Nelson Place, Nashville, TN 37214 USA) providing information about products and services of HCCP and its affiliates. You may unsubscribe from these email communications at any time. If you have any questions, please review our Privacy Policy or email us at yourprivacy@harpercollins.com . This form is protected by reCAPTCHA. Subscribe Your form could not be submitted. Please check errors and resubmit",
+      "rawHtml": null,
+      "keywords": "film: azazel",
+      "imageUrl": null,
+      "license": null,
+      "robotsChecked": true,
+      "createdAt": "2026-07-06T00:49:25.081Z",
+      "evidences": []
     }
   ]
 }
