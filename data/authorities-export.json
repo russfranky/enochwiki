@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-07-06T00:55:28.588Z",
-  "count": 125,
+  "exportedAt": "2026-07-06T01:21:19.212Z",
+  "count": 250,
   "authorities": [
     {
       "id": "cmr8hizwd0001ihr2orxsnixd",
@@ -18,7 +18,7 @@
       "validationNotes": "Publisher/host of deadseascrolls.org.il. Institutional standing.",
       "homepage": "https://deadseascrolls.org.il",
       "createdAt": "2026-07-06T00:31:42.397Z",
-      "updatedAt": "2026-07-06T00:55:26.694Z",
+      "updatedAt": "2026-07-06T01:21:16.191Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hi9zn0096ihpl642s7p9n",
@@ -43,7 +43,7 @@
       "validationNotes": "Publisher/host of biblicalarchaeology.org. Institutional standing.",
       "homepage": "https://biblicalarchaeology.org",
       "createdAt": "2026-07-06T00:31:42.407Z",
-      "updatedAt": "2026-07-06T00:55:27.999Z",
+      "updatedAt": "2026-07-06T01:21:17.062Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hi9zv009bihplpctt64ay",
@@ -118,7 +118,7 @@
       "validationNotes": "Publisher/host of britishmuseum.org. Institutional standing.",
       "homepage": "https://britishmuseum.org",
       "createdAt": "2026-07-06T00:31:42.413Z",
-      "updatedAt": "2026-07-06T00:55:26.703Z",
+      "updatedAt": "2026-07-06T01:21:16.197Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hi9zz009eihplo3lc7r4n",
@@ -143,7 +143,7 @@
       "validationNotes": "Publisher/host of nature.com. Institutional standing.",
       "homepage": "https://nature.com",
       "createdAt": "2026-07-06T00:31:42.419Z",
-      "updatedAt": "2026-07-06T00:55:26.707Z",
+      "updatedAt": "2026-07-06T01:21:16.201Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hia04009jihplyaw2md16",
@@ -168,7 +168,7 @@
       "validationNotes": "Publisher/host of science.org. Institutional standing.",
       "homepage": "https://science.org",
       "createdAt": "2026-07-06T00:31:42.425Z",
-      "updatedAt": "2026-07-06T00:55:26.711Z",
+      "updatedAt": "2026-07-06T01:21:16.205Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hia07009mihplu61j3rf9",
@@ -193,7 +193,7 @@
       "validationNotes": "Publisher/host of jstor.org. Institutional standing.",
       "homepage": "https://jstor.org",
       "createdAt": "2026-07-06T00:31:42.431Z",
-      "updatedAt": "2026-07-06T00:55:28.019Z",
+      "updatedAt": "2026-07-06T01:21:17.076Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hia0h009pihpl5tn14q8j",
@@ -248,7 +248,7 @@
       "validationNotes": "Publisher/host of bibleinterp.com. Institutional standing.",
       "homepage": "https://bibleinterp.com",
       "createdAt": "2026-07-06T00:31:42.439Z",
-      "updatedAt": "2026-07-06T00:55:26.718Z",
+      "updatedAt": "2026-07-06T01:21:16.211Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hia0l009sihplc40r8yfn",
@@ -273,7 +273,7 @@
       "validationNotes": "Publisher/host of thegospelcoalition.org. Institutional standing.",
       "homepage": "https://thegospelcoalition.org",
       "createdAt": "2026-07-06T00:31:42.444Z",
-      "updatedAt": "2026-07-06T00:55:26.999Z",
+      "updatedAt": "2026-07-06T01:21:16.433Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaog0000ihpujkhcsqa4",
@@ -308,7 +308,7 @@
       "validationNotes": "Publisher/host of catholicproductions.com. Institutional standing.",
       "homepage": "https://catholicproductions.com",
       "createdAt": "2026-07-06T00:31:42.450Z",
-      "updatedAt": "2026-07-06T00:55:27.856Z",
+      "updatedAt": "2026-07-06T01:21:16.965Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaok0001ihpucl7yt8he",
@@ -348,7 +348,7 @@
       "validationNotes": "Publisher/host of aomin.org. Institutional standing.",
       "homepage": "https://aomin.org",
       "createdAt": "2026-07-06T00:31:42.457Z",
-      "updatedAt": "2026-07-06T00:55:26.729Z",
+      "updatedAt": "2026-07-06T01:21:16.221Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaon0002ihpua7ejrgym",
@@ -373,7 +373,7 @@
       "validationNotes": "Publisher/host of en.wikipedia.org. Institutional standing.",
       "homepage": "https://en.wikipedia.org",
       "createdAt": "2026-07-06T00:31:42.463Z",
-      "updatedAt": "2026-07-06T00:55:27.927Z",
+      "updatedAt": "2026-07-06T01:21:18.435Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaoq0003ihpuq5fak2nm",
@@ -434,6 +434,131 @@
           "sourceId": "cmr8ibvq10004ih88y790x2jr",
           "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
           "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ipvwa000aihmsxlnfjd3i",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iqahs000rihmst3kg41fp",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8isbow0000ihp7vbpzcenk",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8isg3n000fihp7ia3iid89",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iud420001ihqxucvxovp9",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ivbjm000fihqxr4i5esam",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iy1ld0028ihqxmyiub9r6",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iyq8w002fihqxufj6tut9",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iz3cg002pihqxscrw0dt4",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iz9yz002tihqxav6g03yd",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8izd99002vihqxeecryfn3",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8izjif0030ihqxyn7nnlpt",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8izmw80031ihqxoq3tmr4d",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j07080039ihqxma0pwsnm",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0awc003bihqxcnmig9vv",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0wth003oihqxmij2bmb7",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j1veq004lihqxtnyru9xv",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j2e30004wihqx7lt2azds",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j33dn0052ihqx8636pas9",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j3eaf0058ihqxikiydu0s",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j41d2005mihqxholisb1y",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j458v005wihqxhphn03m9",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j5j2e008nihqxgf4bx6t3",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6yaf00bkihqxwa47vd5a",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j99kr00ezihqxofet0lda",
+          "authorityId": "cmr8hizy6000lihr2ic3s5gtz",
+          "role": "institution"
         }
       ]
     },
@@ -453,7 +578,7 @@
       "validationNotes": "Publisher/host of biola.edu. Institutional standing.",
       "homepage": "https://biola.edu",
       "createdAt": "2026-07-06T00:31:42.468Z",
-      "updatedAt": "2026-07-06T00:55:26.735Z",
+      "updatedAt": "2026-07-06T01:21:16.228Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaou0004ihpuu14s6swh",
@@ -478,10 +603,15 @@
       "validationNotes": "Publisher/host of digitalcommons.liberty.edu. Institutional standing.",
       "homepage": "https://digitalcommons.liberty.edu",
       "createdAt": "2026-07-06T00:31:42.475Z",
-      "updatedAt": "2026-07-06T00:55:26.738Z",
+      "updatedAt": "2026-07-06T01:21:18.583Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaoz0005ihpu8vl2v7lb",
+          "authorityId": "cmr8hizyj000pihr2th6t8rty",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8jah3z00h4ihqxxwts5bcc",
           "authorityId": "cmr8hizyj000pihr2th6t8rty",
           "role": "institution"
         }
@@ -503,7 +633,7 @@
       "validationNotes": "Publisher/host of theeasternchurch.com. Institutional standing.",
       "homepage": "https://theeasternchurch.com",
       "createdAt": "2026-07-06T00:31:42.493Z",
-      "updatedAt": "2026-07-06T00:55:26.975Z",
+      "updatedAt": "2026-07-06T01:21:17.988Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiap80008ihpujrpchyzy",
@@ -512,6 +642,11 @@
         },
         {
           "sourceId": "cmr8hiazq0055ihpu7r2pn37f",
+          "authorityId": "cmr8hizz1000vihr22z8aleml",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j5fgm0088ihqx2ix4j7eb",
           "authorityId": "cmr8hizz1000vihr22z8aleml",
           "role": "institution"
         }
@@ -533,7 +668,7 @@
       "validationNotes": "Publisher/host of euclid.int. Institutional standing.",
       "homepage": "https://euclid.int",
       "createdAt": "2026-07-06T00:31:42.499Z",
-      "updatedAt": "2026-07-06T00:55:26.750Z",
+      "updatedAt": "2026-07-06T01:21:16.243Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiapb0009ihpuiiu5y4q8",
@@ -558,7 +693,7 @@
       "validationNotes": "Publisher/host of ecatholic2000.com. Institutional standing.",
       "homepage": "https://ecatholic2000.com",
       "createdAt": "2026-07-06T00:31:42.507Z",
-      "updatedAt": "2026-07-06T00:55:26.753Z",
+      "updatedAt": "2026-07-06T01:21:16.246Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiapd000aihpu15ex5ner",
@@ -583,7 +718,7 @@
       "validationNotes": "Publisher/host of annecatherineemmerich.com. Institutional standing.",
       "homepage": "https://annecatherineemmerich.com",
       "createdAt": "2026-07-06T00:31:42.511Z",
-      "updatedAt": "2026-07-06T00:55:26.757Z",
+      "updatedAt": "2026-07-06T01:21:16.250Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiapg000bihpug77zz31d",
@@ -608,7 +743,7 @@
       "validationNotes": "Publisher/host of brill.com. Institutional standing.",
       "homepage": "https://brill.com",
       "createdAt": "2026-07-06T00:31:42.535Z",
-      "updatedAt": "2026-07-06T00:55:27.868Z",
+      "updatedAt": "2026-07-06T01:21:18.242Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiapy000fihpuhd2jhkg7",
@@ -709,6 +844,11 @@
           "sourceId": "cmr8i5ll50004ihzgxszorcq3",
           "authorityId": "cmr8hj0070019ihr2qki4y8e4",
           "role": "publisher"
+        },
+        {
+          "sourceId": "cmr8j7l4e00c2ihqxdr86z0z0",
+          "authorityId": "cmr8hj0070019ihr2qki4y8e4",
+          "role": "publisher"
         }
       ]
     },
@@ -728,7 +868,7 @@
       "validationNotes": "Publisher/host of digitalcommons.andrews.edu. Institutional standing.",
       "homepage": "https://digitalcommons.andrews.edu",
       "createdAt": "2026-07-06T00:31:42.540Z",
-      "updatedAt": "2026-07-06T00:55:26.771Z",
+      "updatedAt": "2026-07-06T01:21:16.263Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaq0000gihpuso84gmhh",
@@ -753,7 +893,7 @@
       "validationNotes": "Publisher/host of chadashby.com. Institutional standing.",
       "homepage": "https://chadashby.com",
       "createdAt": "2026-07-06T00:31:42.551Z",
-      "updatedAt": "2026-07-06T00:55:27.872Z",
+      "updatedAt": "2026-07-06T01:21:16.981Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaq6000iihputgccwpmt",
@@ -788,7 +928,7 @@
       "validationNotes": "Publisher/host of equip.sbts.edu. Institutional standing.",
       "homepage": "https://equip.sbts.edu",
       "createdAt": "2026-07-06T00:31:42.556Z",
-      "updatedAt": "2026-07-06T00:55:26.781Z",
+      "updatedAt": "2026-07-06T01:21:16.271Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaq9000jihpu3973wdf1",
@@ -813,7 +953,7 @@
       "validationNotes": "Publisher/host of thetorah.com. Institutional standing.",
       "homepage": "https://thetorah.com",
       "createdAt": "2026-07-06T00:31:42.561Z",
-      "updatedAt": "2026-07-06T00:55:27.591Z",
+      "updatedAt": "2026-07-06T01:21:18.114Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaqd000kihpu86fl2ue0",
@@ -832,6 +972,11 @@
         },
         {
           "sourceId": "cmr8hibqr00ffihpuzkjbj9wt",
+          "authorityId": "cmr8hj00x001jihr2i8k6w7dl",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6l3b00atihqxin0xdbuw",
           "authorityId": "cmr8hj00x001jihr2i8k6w7dl",
           "role": "institution"
         }
@@ -853,7 +998,7 @@
       "validationNotes": "Publisher/host of drmsh.com. Institutional standing.",
       "homepage": "https://drmsh.com",
       "createdAt": "2026-07-06T00:31:42.567Z",
-      "updatedAt": "2026-07-06T00:55:26.787Z",
+      "updatedAt": "2026-07-06T01:21:16.277Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaqj000lihpupbfssqaz",
@@ -878,7 +1023,7 @@
       "validationNotes": "Publisher/host of icr.org. Institutional standing.",
       "homepage": "https://icr.org",
       "createdAt": "2026-07-06T00:31:42.573Z",
-      "updatedAt": "2026-07-06T00:55:26.790Z",
+      "updatedAt": "2026-07-06T01:21:16.280Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaqm000mihpu2889iavo",
@@ -903,7 +1048,7 @@
       "validationNotes": "Publisher/host of katychristianmagazine.com. Institutional standing.",
       "homepage": "https://katychristianmagazine.com",
       "createdAt": "2026-07-06T00:31:42.583Z",
-      "updatedAt": "2026-07-06T00:55:26.796Z",
+      "updatedAt": "2026-07-06T01:21:16.285Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaqx000uihpuqg43cc8q",
@@ -928,7 +1073,7 @@
       "validationNotes": "Publisher/host of gospelworthdyingfor.com. Institutional standing.",
       "homepage": "https://gospelworthdyingfor.com",
       "createdAt": "2026-07-06T00:31:42.589Z",
-      "updatedAt": "2026-07-06T00:55:26.799Z",
+      "updatedAt": "2026-07-06T01:21:16.288Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiar8000yihpuau4pu0uu",
@@ -953,7 +1098,7 @@
       "validationNotes": "Publisher/host of christchurchjerusalem.org. Institutional standing.",
       "homepage": "https://christchurchjerusalem.org",
       "createdAt": "2026-07-06T00:31:42.600Z",
-      "updatedAt": "2026-07-06T00:55:26.805Z",
+      "updatedAt": "2026-07-06T01:21:16.294Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiarq0016ihpufvj35516",
@@ -978,7 +1123,7 @@
       "validationNotes": "Publisher/host of intertextual.bible. Institutional standing.",
       "homepage": "https://intertextual.bible",
       "createdAt": "2026-07-06T00:31:42.613Z",
-      "updatedAt": "2026-07-06T00:55:27.988Z",
+      "updatedAt": "2026-07-06T01:21:18.529Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiasd001eihpuvat2von4",
@@ -1009,6 +1154,11 @@
           "sourceId": "cmr8icv3y0006ih9lonecywt3",
           "authorityId": "cmr8hj02d0021ihr2qq7mz5h1",
           "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ja37v00ggihqx5kxebrj3",
+          "authorityId": "cmr8hj02d0021ihr2qq7mz5h1",
+          "role": "institution"
         }
       ]
     },
@@ -1028,7 +1178,7 @@
       "validationNotes": "Publisher/host of faithtacoma.org. Institutional standing.",
       "homepage": "https://faithtacoma.org",
       "createdAt": "2026-07-06T00:31:42.632Z",
-      "updatedAt": "2026-07-06T00:55:26.821Z",
+      "updatedAt": "2026-07-06T01:21:16.307Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiat1001qihpu5zr46n8c",
@@ -1053,7 +1203,7 @@
       "validationNotes": "Publisher/host of ncse.ngo. Institutional standing.",
       "homepage": "https://ncse.ngo",
       "createdAt": "2026-07-06T00:31:42.639Z",
-      "updatedAt": "2026-07-06T00:55:26.825Z",
+      "updatedAt": "2026-07-06T01:21:16.309Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiat6001uihpuds2v2zog",
@@ -1078,7 +1228,7 @@
       "validationNotes": "Publisher/host of sciencedirect.com. Institutional standing.",
       "homepage": "https://sciencedirect.com",
       "createdAt": "2026-07-06T00:31:42.644Z",
-      "updatedAt": "2026-07-06T00:55:26.827Z",
+      "updatedAt": "2026-07-06T01:21:16.312Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiath001yihpuyjw1d1nt",
@@ -1103,7 +1253,7 @@
       "validationNotes": "Publisher/host of czasopisma.kul.pl. Institutional standing.",
       "homepage": "https://czasopisma.kul.pl",
       "createdAt": "2026-07-06T00:31:42.649Z",
-      "updatedAt": "2026-07-06T00:55:27.099Z",
+      "updatedAt": "2026-07-06T01:21:16.487Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiatn0022ihpuqh7sczvc",
@@ -1133,7 +1283,7 @@
       "validationNotes": "Publisher/host of byustudies.byu.edu. Institutional standing.",
       "homepage": "https://byustudies.byu.edu",
       "createdAt": "2026-07-06T00:31:42.657Z",
-      "updatedAt": "2026-07-06T00:55:26.834Z",
+      "updatedAt": "2026-07-06T01:21:16.317Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiatt0026ihpu0p5r2ogs",
@@ -1158,7 +1308,7 @@
       "validationNotes": "Publisher/host of bookofenoch2020.com. Institutional standing.",
       "homepage": "https://bookofenoch2020.com",
       "createdAt": "2026-07-06T00:31:42.662Z",
-      "updatedAt": "2026-07-06T00:55:26.837Z",
+      "updatedAt": "2026-07-06T01:21:16.320Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiau1002aihpu80p2f5lk",
@@ -1183,7 +1333,7 @@
       "validationNotes": "Publisher/host of scripturecentral.org. Institutional standing.",
       "homepage": "https://scripturecentral.org",
       "createdAt": "2026-07-06T00:31:42.688Z",
-      "updatedAt": "2026-07-06T00:55:27.548Z",
+      "updatedAt": "2026-07-06T01:21:16.710Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiauo002nihpuqefphh2r",
@@ -1213,7 +1363,7 @@
       "validationNotes": "Publisher/host of nextstepbiblestudy.net. Institutional standing.",
       "homepage": "https://nextstepbiblestudy.net",
       "createdAt": "2026-07-06T00:31:42.707Z",
-      "updatedAt": "2026-07-06T00:55:26.858Z",
+      "updatedAt": "2026-07-06T01:21:16.337Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiav6002tihpufe5eq7x8",
@@ -1238,7 +1388,7 @@
       "validationNotes": "Publisher/host of academia.edu. Institutional standing.",
       "homepage": "https://academia.edu",
       "createdAt": "2026-07-06T00:31:42.725Z",
-      "updatedAt": "2026-07-06T00:55:27.632Z",
+      "updatedAt": "2026-07-06T01:21:18.574Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiavt0035ihpujeq1bwgh",
@@ -1309,6 +1459,51 @@
           "sourceId": "cmr8hibtl00gkihpuxq8v1re7",
           "authorityId": "cmr8hj05h0031ihr2hb3745ol",
           "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ivnax000rihqx43ynpcjl",
+          "authorityId": "cmr8hj05h0031ihr2hb3745ol",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iyq8y002gihqxwaqt80zk",
+          "authorityId": "cmr8hj05h0031ihr2hb3745ol",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j1j3y003zihqxs39do39l",
+          "authorityId": "cmr8hj05h0031ihr2hb3745ol",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j23v9004qihqx61w1nk45",
+          "authorityId": "cmr8hj05h0031ihr2hb3745ol",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6v2o00bgihqxf5guquue",
+          "authorityId": "cmr8hj05h0031ihr2hb3745ol",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j7hji00c0ihqx2vo1f6mv",
+          "authorityId": "cmr8hj05h0031ihr2hb3745ol",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j83o800csihqx7xclbdop",
+          "authorityId": "cmr8hj05h0031ihr2hb3745ol",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j8oz200dwihqxue65qwox",
+          "authorityId": "cmr8hj05h0031ihr2hb3745ol",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8jadnl00h2ihqxauce9r9z",
+          "authorityId": "cmr8hj05h0031ihr2hb3745ol",
+          "role": "institution"
         }
       ]
     },
@@ -1328,7 +1523,7 @@
       "validationNotes": "Publisher/host of etd.ohiolink.edu. Institutional standing.",
       "homepage": "https://etd.ohiolink.edu",
       "createdAt": "2026-07-06T00:31:42.749Z",
-      "updatedAt": "2026-07-06T00:55:26.900Z",
+      "updatedAt": "2026-07-06T01:21:16.357Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiawm003lihpue3y4fzj4",
@@ -1353,7 +1548,7 @@
       "validationNotes": "Publisher/host of vridar.org. Institutional standing.",
       "homepage": "https://vridar.org",
       "createdAt": "2026-07-06T00:31:42.775Z",
-      "updatedAt": "2026-07-06T00:55:26.916Z",
+      "updatedAt": "2026-07-06T01:21:16.367Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaxd0041ihpujq6f8cxm",
@@ -1378,7 +1573,7 @@
       "validationNotes": "Publisher/host of eprints.glos.ac.uk. Institutional standing.",
       "homepage": "https://eprints.glos.ac.uk",
       "createdAt": "2026-07-06T00:31:42.781Z",
-      "updatedAt": "2026-07-06T00:55:26.919Z",
+      "updatedAt": "2026-07-06T01:21:16.369Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaxi0045ihpu9ghhc3o4",
@@ -1403,7 +1598,7 @@
       "validationNotes": "Publisher/host of asor.org. Institutional standing.",
       "homepage": "https://asor.org",
       "createdAt": "2026-07-06T00:31:42.826Z",
-      "updatedAt": "2026-07-06T00:55:26.940Z",
+      "updatedAt": "2026-07-06T01:21:16.389Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiayq004rihpuqjsfgsnj",
@@ -1428,7 +1623,7 @@
       "validationNotes": "Publisher/host of facebook.com. Institutional standing.",
       "homepage": "https://facebook.com",
       "createdAt": "2026-07-06T00:31:42.843Z",
-      "updatedAt": "2026-07-06T00:55:27.866Z",
+      "updatedAt": "2026-07-06T01:21:18.560Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaz0004xihpunhqrfpij",
@@ -1569,6 +1764,241 @@
           "sourceId": "cmr8i58fo0003ihzg5gxx2l2g",
           "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
           "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iprqa0005ihmsmen6l5o8",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ipzla000kihmsn679awr6",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iq6qm000oihms53c9d4wo",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8isbp60005ihp7uqblf61z",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ivfxe000mihqx14szv1ou",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ivnb0000sihqxqgu5coe3",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ivz6n000wihqxeuufxjpq",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iwnsg0013ihqxmejmdvvr",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iytqo002hihqxt3tnde73",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iytqu002jihqx76w1zhs3",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iz9yw002sihqxl1c6n5te",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8izjib002yihqxdi71o1uo",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8izmwb0032ihqxgyou09di",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j06zo0037ihqxq19kg99z",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0k1t003hihqxdezwwdjv",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0q26003jihqx6wpr7gh6",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0q28003kihqx7kbfptul",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0tho003mihqx5tywa69a",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0wtn003qihqx13b82kcn",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j18c0003rihqxyehoyckh",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j1rqx004jihqx0msdfllm",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j27rq004sihqxvknb0mhv",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j27rv004uihqxjfhxo6hv",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j3xdo005fihqx77esuats",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j4g7i006vihqxnm64vh1b",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j4vni007iihqxdmhhf2hc",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j5fgz008iihqxsmz890mb",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6l3200aoihqx3fwrty64",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6omt00ayihqx9gcc01v4",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6rvy00bdihqxnb2fp6fl",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6v2t00biihqxqqeudlq5",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6yaj00blihqxznt7ikxv",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j735f00bmihqxgqqb0gat",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j7a3t00bsihqxjujphr6w",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j7e5p00bwihqxh0xg1heh",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j7tzj00c6ihqxo1ujx9qd",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j80hu00coihqxpkypchuf",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j873c00cyihqxvv19kh8z",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j8h3l00drihqx2b7nu0x8",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j8kf000duihqxu8nwteef",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j8t7600e0ihqx2ropxko5",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j9ctu00f0ihqxwz31eu3t",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j9k0h00fjihqxiq4cci8x",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j9nx200fmihqxt1g6mjy1",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j9w5e00g1ihqxsufraqm9",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ja6l400gvihqxjeppsr23",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8jaabn00gzihqxwaiphcce",
+          "authorityId": "cmr8hj08r0043ihr2xc7ogxik",
+          "role": "institution"
         }
       ]
     },
@@ -1588,7 +2018,7 @@
       "validationNotes": "Publisher/host of medium.com. Institutional standing.",
       "homepage": "https://medium.com",
       "createdAt": "2026-07-06T00:31:42.849Z",
-      "updatedAt": "2026-07-06T00:55:27.058Z",
+      "updatedAt": "2026-07-06T01:21:18.022Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaz3004yihpubqnerxe9",
@@ -1597,6 +2027,11 @@
         },
         {
           "sourceId": "cmr8hib1f005xihpu9d91r8n9",
+          "authorityId": "cmr8hj08x0045ihr2f5xoijgy",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j5roy008sihqxawqel4zh",
           "authorityId": "cmr8hj08x0045ihr2f5xoijgy",
           "role": "institution"
         }
@@ -1618,7 +2053,7 @@
       "validationNotes": "Publisher/host of evidenceunseen.com. Institutional standing.",
       "homepage": "https://evidenceunseen.com",
       "createdAt": "2026-07-06T00:31:42.865Z",
-      "updatedAt": "2026-07-06T00:55:26.962Z",
+      "updatedAt": "2026-07-06T01:21:16.408Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiazg0051ihpuzjfnq3fw",
@@ -1643,7 +2078,7 @@
       "validationNotes": "Publisher/host of reddit.com. Institutional standing.",
       "homepage": "https://reddit.com",
       "createdAt": "2026-07-06T00:31:42.872Z",
-      "updatedAt": "2026-07-06T00:55:27.862Z",
+      "updatedAt": "2026-07-06T01:21:18.280Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiazj0052ihpun146cgg4",
@@ -1652,6 +2087,31 @@
         },
         {
           "sourceId": "cmr8i556x0002ihzgzxdboytw",
+          "authorityId": "cmr8hj09k004dihr2lnh57mfc",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ivz6k000vihqx6h1zt65y",
+          "authorityId": "cmr8hj09k004dihr2lnh57mfc",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ixy710026ihqx2dbemicm",
+          "authorityId": "cmr8hj09k004dihr2lnh57mfc",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iz9z1002uihqx5jsn3f7h",
+          "authorityId": "cmr8hj09k004dihr2lnh57mfc",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6hj700a9ihqx0wuiu5wa",
+          "authorityId": "cmr8hj09k004dihr2lnh57mfc",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j80hr00cnihqx6pqqzmwo",
           "authorityId": "cmr8hj09k004dihr2lnh57mfc",
           "role": "institution"
         }
@@ -1673,7 +2133,7 @@
       "validationNotes": "Publisher/host of kcmifm.com. Institutional standing.",
       "homepage": "https://kcmifm.com",
       "createdAt": "2026-07-06T00:31:42.877Z",
-      "updatedAt": "2026-07-06T00:55:26.969Z",
+      "updatedAt": "2026-07-06T01:21:16.413Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiazm0053ihpu17u1oxju",
@@ -1698,7 +2158,7 @@
       "validationNotes": "Publisher/host of encyclopedia.pub. Institutional standing.",
       "homepage": "https://encyclopedia.pub",
       "createdAt": "2026-07-06T00:31:42.883Z",
-      "updatedAt": "2026-07-06T00:55:26.972Z",
+      "updatedAt": "2026-07-06T01:21:16.415Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiazo0054ihpui3tgofsi",
@@ -1723,7 +2183,7 @@
       "validationNotes": "Publisher/host of youtube.com. Institutional standing.",
       "homepage": "https://youtube.com",
       "createdAt": "2026-07-06T00:31:42.895Z",
-      "updatedAt": "2026-07-06T00:55:27.825Z",
+      "updatedAt": "2026-07-06T01:21:18.603Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiazt0056ihpuost5270l",
@@ -1769,6 +2229,176 @@
           "sourceId": "cmr8i41al000kihy4yewuqbw2",
           "authorityId": "cmr8hj0a7004lihr2apif7lr6",
           "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iprq10000ihmsl4mddsxc",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8isg3g000aihp7lwsaz0hk",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iwvls001bihqxor19v407",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ix3zo001nihqxmcg5hm7w",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ixb83001sihqxufoq1rlf",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iylxn002cihqxwgsdfha8",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iylxq002dihqxtlbsq8sm",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8izd9b002wihqxz8umqwcw",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0aw9003aihqxv5edvfli",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j18cl003tihqxgsvqn1j0",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j1can003uihqx3dk0ql42",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j2p6f004yihqxa5ctknbc",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j45930061ihqxmk3k3mjh",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j4jr0007aihqx78971ix9",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j4nid007eihqxo4cnm61z",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j57ke007vihqxx6d8028e",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j5j2k008oihqxt9nbk0wd",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j5mzj008pihqx070p5fjt",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j5rpc0092ihqxiq65ualm",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j5vp10097ihqxxh28ab0n",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6dwn009uihqx1eyhr0p3",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6hjg00aeihqxgb5nth2s",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6v2r00bhihqxkbq60ab4",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j76yy00brihqxqjqpqfc0",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j7tzy00cgihqxoxj64lbz",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j80hw00cpihqxdkuu44j1",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j8kex00dtihqxaqz9tum7",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j8x1y00e1ihqxzi12f1ia",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j96co00etihqx2t6x9gxz",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j9cu100f5ihqx3nfsh54k",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j9k0e00fiihqxqi64h25l",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j9nwz00flihqxeovsugdc",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8jaabt00h0ihqx85j4rfdv",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8jao5o00hbihqxyaowdjrv",
+          "authorityId": "cmr8hj0a7004lihr2apif7lr6",
+          "role": "institution"
         }
       ]
     },
@@ -1788,7 +2418,7 @@
       "validationNotes": "Publisher/host of researchgate.net. Institutional standing.",
       "homepage": "https://researchgate.net",
       "createdAt": "2026-07-06T00:31:42.914Z",
-      "updatedAt": "2026-07-06T00:55:27.517Z",
+      "updatedAt": "2026-07-06T01:21:18.609Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib050059ihpuwvz1nry5",
@@ -1814,6 +2444,81 @@
           "sourceId": "cmr8hibme00dnihpu03tw3mhb",
           "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
           "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ivnau000qihqxebhdwifd",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iyx9o002kihqxpnzi8mqo",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iz04x002nihqx6hoofirg",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j2046004pihqxtbx59c2c",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j5z1u009mihqxd17p67qc",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j62aj009qihqxms849mmq",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6rw100beihqxz2dgzur9",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j7hjc00byihqx4nac2h11",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j8abb00d8ihqxakxthnh9",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j8h3j00dqihqx3ap7n0md",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j92iv00eiihqximwphkuv",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j96a600ejihqxok2gjyw6",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j9s2p00fqihqxocd6ocvz",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j9ztl00gbihqxo6qq0not",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8jao5w00hgihqxj52ybo66",
+          "authorityId": "cmr8hj0aq004rihr2b2n93ntp",
+          "role": "institution"
         }
       ]
     },
@@ -1833,7 +2538,7 @@
       "validationNotes": "Publisher/host of tiktok.com. Institutional standing.",
       "homepage": "https://tiktok.com",
       "createdAt": "2026-07-06T00:31:42.932Z",
-      "updatedAt": "2026-07-06T00:55:27.165Z",
+      "updatedAt": "2026-07-06T01:21:17.553Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib0d005cihpu96pnzaej",
@@ -1842,6 +2547,16 @@
         },
         {
           "sourceId": "cmr8hib6x008fihpuwpu5jtpd",
+          "authorityId": "cmr8hj0b8004xihr2y6u1ejyx",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iy1lf0029ihqx72bzygs8",
+          "authorityId": "cmr8hj0b8004xihr2y6u1ejyx",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8izzxm0036ihqx5312uifw",
           "authorityId": "cmr8hj0b8004xihr2y6u1ejyx",
           "role": "institution"
         }
@@ -1863,7 +2578,7 @@
       "validationNotes": "Publisher/host of quora.com. Institutional standing.",
       "homepage": "https://quora.com",
       "createdAt": "2026-07-06T00:31:42.940Z",
-      "updatedAt": "2026-07-06T00:55:27.837Z",
+      "updatedAt": "2026-07-06T01:21:17.095Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib0f005dihpurb10dks8",
@@ -1904,6 +2619,11 @@
           "sourceId": "cmr8i49my0014ihy408x0z7nn",
           "authorityId": "cmr8hj0bg004zihr2v3b9s73n",
           "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ipvwi000fihmsknn78qqu",
+          "authorityId": "cmr8hj0bg004zihr2v3b9s73n",
+          "role": "institution"
         }
       ]
     },
@@ -1923,7 +2643,7 @@
       "validationNotes": "Publisher/host of jpost.com. Institutional standing.",
       "homepage": "https://jpost.com",
       "createdAt": "2026-07-06T00:31:42.958Z",
-      "updatedAt": "2026-07-06T00:55:27.049Z",
+      "updatedAt": "2026-07-06T01:21:16.452Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib12005pihpu4sxg8gqf",
@@ -1948,7 +2668,7 @@
       "validationNotes": "Publisher/host of marquette.edu. Institutional standing.",
       "homepage": "https://marquette.edu",
       "createdAt": "2026-07-06T00:31:42.976Z",
-      "updatedAt": "2026-07-06T00:55:27.878Z",
+      "updatedAt": "2026-07-06T01:21:16.987Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib1n0061ihpu4by6v2bo",
@@ -1988,7 +2708,7 @@
       "validationNotes": "Publisher/host of readingacts.com. Institutional standing.",
       "homepage": "https://readingacts.com",
       "createdAt": "2026-07-06T00:31:42.982Z",
-      "updatedAt": "2026-07-06T00:55:27.554Z",
+      "updatedAt": "2026-07-06T01:21:16.717Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib1t0065ihpu9m7ta0id",
@@ -2018,7 +2738,7 @@
       "validationNotes": "Publisher/host of ndl.ethernet.edu.et. Institutional standing.",
       "homepage": "https://ndl.ethernet.edu.et",
       "createdAt": "2026-07-06T00:31:42.996Z",
-      "updatedAt": "2026-07-06T00:55:27.077Z",
+      "updatedAt": "2026-07-06T01:21:16.469Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib27006dihpurxnol1bn",
@@ -2043,7 +2763,7 @@
       "validationNotes": "Publisher/host of umu.diva-portal.org. Institutional standing.",
       "homepage": "https://umu.diva-portal.org",
       "createdAt": "2026-07-06T00:31:43.002Z",
-      "updatedAt": "2026-07-06T00:55:27.081Z",
+      "updatedAt": "2026-07-06T01:21:16.472Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib2j006hihpu8x9zvau8",
@@ -2068,7 +2788,7 @@
       "validationNotes": "Publisher/host of cambridge.org. Institutional standing.",
       "homepage": "https://cambridge.org",
       "createdAt": "2026-07-06T00:31:43.007Z",
-      "updatedAt": "2026-07-06T00:55:27.603Z",
+      "updatedAt": "2026-07-06T01:21:16.753Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib2p006lihputf6h5ttb",
@@ -2103,7 +2823,7 @@
       "validationNotes": "Publisher/host of instagram.com. Institutional standing.",
       "homepage": "https://instagram.com",
       "createdAt": "2026-07-06T00:31:43.017Z",
-      "updatedAt": "2026-07-06T00:55:27.831Z",
+      "updatedAt": "2026-07-06T01:21:18.552Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib3b006tihpuw51qk7o3",
@@ -2122,6 +2842,81 @@
         },
         {
           "sourceId": "cmr8i49mj000uihy4dl5mqhyr",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ipzle000lihmsgzi5mcib",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ivjpc000nihqxr35pn5z3",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ixk44001uihqx8gmaz1dn",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iy5d8002bihqxrm3mz422",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8izzxb0034ihqx18rxh5hq",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0ey7003dihqxijztirgc",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0eya003eihqxb3qqheqq",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0eyc003fihqxaud9f1jh",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0k1r003gihqxfmahthh4",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0k1w003iihqx9uhqd2vx",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0thr003nihqxzmrdt1or",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j48dc006bihqxja7iaulc",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6dwu009zihqxxr06mivn",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6on800b8ihqx4jnv0ua0",
+          "authorityId": "cmr8hj0dl005pihr2eonb7k25",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ja6la00gxihqxrywmqgtz",
           "authorityId": "cmr8hj0dl005pihr2eonb7k25",
           "role": "institution"
         }
@@ -2143,7 +2938,7 @@
       "validationNotes": "Publisher/host of preprints.org. Institutional standing.",
       "homepage": "https://preprints.org",
       "createdAt": "2026-07-06T00:31:43.034Z",
-      "updatedAt": "2026-07-06T00:55:27.103Z",
+      "updatedAt": "2026-07-06T01:21:16.490Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib430075ihpuo5tce18f",
@@ -2168,7 +2963,7 @@
       "validationNotes": "Publisher/host of um.edu.mt. Institutional standing.",
       "homepage": "https://um.edu.mt",
       "createdAt": "2026-07-06T00:31:43.045Z",
-      "updatedAt": "2026-07-06T00:55:27.113Z",
+      "updatedAt": "2026-07-06T01:21:16.496Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib4o007dihpuipsge1os",
@@ -2193,7 +2988,7 @@
       "validationNotes": "Publisher/host of academic.oup.com. Institutional standing.",
       "homepage": "https://academic.oup.com",
       "createdAt": "2026-07-06T00:31:43.064Z",
-      "updatedAt": "2026-07-06T00:55:27.844Z",
+      "updatedAt": "2026-07-06T01:21:16.954Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib5f007pihpuxrq1zt69",
@@ -2223,7 +3018,7 @@
       "validationNotes": "Publisher/host of nomos-elibrary.de. Institutional standing.",
       "homepage": "https://nomos-elibrary.de",
       "createdAt": "2026-07-06T00:31:43.096Z",
-      "updatedAt": "2026-07-06T00:55:27.146Z",
+      "updatedAt": "2026-07-06T01:21:16.520Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib6b0083ihpuor856r85",
@@ -2248,7 +3043,7 @@
       "validationNotes": "Publisher/host of referenceworks.brill.com. Institutional standing.",
       "homepage": "https://referenceworks.brill.com",
       "createdAt": "2026-07-06T00:31:43.101Z",
-      "updatedAt": "2026-07-06T00:55:27.751Z",
+      "updatedAt": "2026-07-06T01:21:16.872Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib6h0087ihpuax9npyyk",
@@ -2278,7 +3073,7 @@
       "validationNotes": "Publisher/host of journals.sagepub.com. Institutional standing.",
       "homepage": "https://journals.sagepub.com",
       "createdAt": "2026-07-06T00:31:43.149Z",
-      "updatedAt": "2026-07-06T00:55:27.331Z",
+      "updatedAt": "2026-07-06T01:21:16.608Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib8b0093ihpucplb7hhz",
@@ -2313,7 +3108,7 @@
       "validationNotes": "Publisher/host of grokipedia.com. Institutional standing.",
       "homepage": "https://grokipedia.com",
       "createdAt": "2026-07-06T00:31:43.162Z",
-      "updatedAt": "2026-07-06T00:55:27.993Z",
+      "updatedAt": "2026-07-06T01:21:17.382Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hib8n009bihpuip5m8m8s",
@@ -2322,6 +3117,21 @@
         },
         {
           "sourceId": "cmr8id1u60000ih9xifdpzg0m",
+          "authorityId": "cmr8hj0hm0071ihr29w38du7u",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iud4d0003ihqx4pkw2um9",
+          "authorityId": "cmr8hj0hm0071ihr29w38du7u",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iwvm6001gihqxkyueu8zg",
+          "authorityId": "cmr8hj0hm0071ihr29w38du7u",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iy1l90027ihqxqn6p742s",
           "authorityId": "cmr8hj0hm0071ihr29w38du7u",
           "role": "institution"
         }
@@ -2337,13 +3147,13 @@
       "affiliation": null,
       "field": null,
       "perspectiveSlug": null,
-      "credibility": 0.55,
+      "credibility": 0.7,
       "credibilityTier": "recognized",
       "verificationBasis": "institutional",
       "validationNotes": "Publisher/host of degruyterbrill.com. Institutional standing.",
       "homepage": "https://degruyterbrill.com",
       "createdAt": "2026-07-06T00:31:43.180Z",
-      "updatedAt": "2026-07-06T00:55:27.767Z",
+      "updatedAt": "2026-07-06T01:21:17.679Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiba4009nihpu7o65zel0",
@@ -2369,6 +3179,11 @@
           "sourceId": "cmr8hxapx000kihkst85rjoi8",
           "authorityId": "cmr8hj0i40077ihr2laqxsz2m",
           "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j1ngu0047ihqxqw26bhs4",
+          "authorityId": "cmr8hj0i40077ihr2laqxsz2m",
+          "role": "institution"
         }
       ]
     },
@@ -2388,7 +3203,7 @@
       "validationNotes": "Publisher/host of apocryphalstone.com. Institutional standing.",
       "homepage": "https://apocryphalstone.com",
       "createdAt": "2026-07-06T00:31:43.187Z",
-      "updatedAt": "2026-07-06T00:55:27.233Z",
+      "updatedAt": "2026-07-06T01:21:16.568Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibae009rihpul19apipc",
@@ -2407,13 +3222,13 @@
       "affiliation": null,
       "field": null,
       "perspectiveSlug": null,
-      "credibility": 0.55,
-      "credibilityTier": "recognized",
+      "credibility": 0.4,
+      "credibilityTier": "unverified-claimant",
       "verificationBasis": "institutional",
       "validationNotes": "Publisher/host of scribd.com. Institutional standing.",
       "homepage": "https://scribd.com",
       "createdAt": "2026-07-06T00:31:43.211Z",
-      "updatedAt": "2026-07-06T00:55:27.936Z",
+      "updatedAt": "2026-07-06T01:21:18.492Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibbo00a7ihputj2frdke",
@@ -2444,6 +3259,86 @@
           "sourceId": "cmr8iby5y0006ih88efp0zrfy",
           "authorityId": "cmr8hj0iz007hihr2r4abq3to",
           "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iu04b0000ihqxjcz41d44",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iwry00014ihqxv7rc3ar4",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iwry50015ihqxmodwbbly",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ix7gk001rihqx395102eo",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ixne8001vihqxtcj513jo",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ixrmr001wihqx48x7050z",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iy5d4002aihqxl94aunpo",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iz3cj002qihqxqknpm24g",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j1rqr004hihqxpu07h118",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j23vb004rihqx0l7tdhz5",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j3i620059ihqxk9l7x2x2",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j3tum005dihqx0vibyvq2",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j5rp4008xihqxm8juk127",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j6dx200a4ihqx41wxua2c",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j8abg00d9ihqx1pau46rg",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j9s2i00foihqxjovjzaoy",
+          "authorityId": "cmr8hj0iz007hihr2r4abq3to",
+          "role": "institution"
         }
       ]
     },
@@ -2463,7 +3358,7 @@
       "validationNotes": "Publisher/host of kesherjournal.com. Institutional standing.",
       "homepage": "https://kesherjournal.com",
       "createdAt": "2026-07-06T00:31:43.217Z",
-      "updatedAt": "2026-07-06T00:55:27.257Z",
+      "updatedAt": "2026-07-06T01:21:16.585Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibdu00abihpud2hw8eng",
@@ -2488,7 +3383,7 @@
       "validationNotes": "Publisher/host of research-repository.st-andrews.ac.uk. Institutional standing.",
       "homepage": "https://research-repository.st-andrews.ac.uk",
       "createdAt": "2026-07-06T00:31:43.227Z",
-      "updatedAt": "2026-07-06T00:55:27.274Z",
+      "updatedAt": "2026-07-06T01:21:16.592Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibei00ajihpukhqoyo9m",
@@ -2513,7 +3408,7 @@
       "validationNotes": "Publisher/host of dokumen.pub. Institutional standing.",
       "homepage": "https://dokumen.pub",
       "createdAt": "2026-07-06T00:31:43.253Z",
-      "updatedAt": "2026-07-06T00:55:27.509Z",
+      "updatedAt": "2026-07-06T01:21:17.145Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibft00azihpuut5bnwd3",
@@ -2539,6 +3434,11 @@
           "sourceId": "cmr8hiblv00dfihpud4wn98z4",
           "authorityId": "cmr8hj0k5007vihr259jphomz",
           "role": "institution"
+        },
+        {
+          "sourceId": "cmr8isg3u000kihp7do2imsxg",
+          "authorityId": "cmr8hj0k5007vihr259jphomz",
+          "role": "institution"
         }
       ]
     },
@@ -2558,7 +3458,7 @@
       "validationNotes": "Publisher/host of revistas.ucatolicaluisamigo.edu.co. Institutional standing.",
       "homepage": "https://revistas.ucatolicaluisamigo.edu.co",
       "createdAt": "2026-07-06T00:31:43.314Z",
-      "updatedAt": "2026-07-06T00:55:27.668Z",
+      "updatedAt": "2026-07-06T01:21:16.805Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibid00c3ihpu0gu6th5y",
@@ -2588,7 +3488,7 @@
       "validationNotes": "Publisher/host of chesterrep.openrepository.com. Institutional standing.",
       "homepage": "https://chesterrep.openrepository.com",
       "createdAt": "2026-07-06T00:31:43.327Z",
-      "updatedAt": "2026-07-06T00:55:27.790Z",
+      "updatedAt": "2026-07-06T01:21:16.903Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibiy00cbihpulqncb3wu",
@@ -2618,7 +3518,7 @@
       "validationNotes": "Publisher/host of pmc.ncbi.nlm.nih.gov. Institutional standing.",
       "homepage": "https://pmc.ncbi.nlm.nih.gov",
       "createdAt": "2026-07-06T00:31:43.332Z",
-      "updatedAt": "2026-07-06T00:55:27.473Z",
+      "updatedAt": "2026-07-06T01:21:16.649Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibj600cfihpu1r4e3wmz",
@@ -2643,7 +3543,7 @@
       "validationNotes": "Publisher/host of chasingthegiants.com. Institutional standing.",
       "homepage": "https://chasingthegiants.com",
       "createdAt": "2026-07-06T00:31:43.343Z",
-      "updatedAt": "2026-07-06T00:55:27.482Z",
+      "updatedAt": "2026-07-06T01:21:16.656Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibjp00cnihpu2sv7lvwd",
@@ -2668,7 +3568,7 @@
       "validationNotes": "Publisher/host of unisapressjournals.co.za. Institutional standing.",
       "homepage": "https://unisapressjournals.co.za",
       "createdAt": "2026-07-06T00:31:43.359Z",
-      "updatedAt": "2026-07-06T00:55:27.494Z",
+      "updatedAt": "2026-07-06T01:21:16.665Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibkj00czihputpzypbhc",
@@ -2693,7 +3593,7 @@
       "validationNotes": "Publisher/host of amazon.com. Institutional standing.",
       "homepage": "https://amazon.com",
       "createdAt": "2026-07-06T00:31:43.376Z",
-      "updatedAt": "2026-07-06T00:55:27.504Z",
+      "updatedAt": "2026-07-06T01:21:16.675Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiblc00dbihpupqbcu81p",
@@ -2718,7 +3618,7 @@
       "validationNotes": "Publisher/host of biblearchaeology.org. Institutional standing.",
       "homepage": "https://biblearchaeology.org",
       "createdAt": "2026-07-06T00:31:43.387Z",
-      "updatedAt": "2026-07-06T00:55:27.513Z",
+      "updatedAt": "2026-07-06T01:21:16.680Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibm300djihpuubdlvje4",
@@ -2743,7 +3643,7 @@
       "validationNotes": "Publisher/host of chabad.org. Institutional standing.",
       "homepage": "https://chabad.org",
       "createdAt": "2026-07-06T00:31:43.424Z",
-      "updatedAt": "2026-07-06T00:55:27.828Z",
+      "updatedAt": "2026-07-06T01:21:16.939Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibnn00e7ihputappqewk",
@@ -2773,7 +3673,7 @@
       "validationNotes": "Publisher/host of alephne.org. Institutional standing.",
       "homepage": "https://alephne.org",
       "createdAt": "2026-07-06T00:31:43.428Z",
-      "updatedAt": "2026-07-06T00:55:27.540Z",
+      "updatedAt": "2026-07-06T01:21:16.703Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibo000ebihpuu84nkhrb",
@@ -2798,7 +3698,7 @@
       "validationNotes": "Publisher/host of ag.org. Institutional standing.",
       "homepage": "https://ag.org",
       "createdAt": "2026-07-06T00:31:43.434Z",
-      "updatedAt": "2026-07-06T00:55:27.543Z",
+      "updatedAt": "2026-07-06T01:21:16.706Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibo700efihpuyziqh8ol",
@@ -2823,7 +3723,7 @@
       "validationNotes": "Publisher/host of sacred-texts.com. Institutional standing.",
       "homepage": "https://sacred-texts.com",
       "createdAt": "2026-07-06T00:31:43.446Z",
-      "updatedAt": "2026-07-06T00:55:27.656Z",
+      "updatedAt": "2026-07-06T01:21:16.795Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiboq00enihpu1elagdy4",
@@ -2868,7 +3768,7 @@
       "validationNotes": "Publisher/host of archive.org. Institutional standing.",
       "homepage": "https://archive.org",
       "createdAt": "2026-07-06T00:31:43.471Z",
-      "updatedAt": "2026-07-06T00:55:27.683Z",
+      "updatedAt": "2026-07-06T01:21:16.816Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibpt00f3ihpuk26z7omr",
@@ -2928,7 +3828,7 @@
       "validationNotes": "Publisher/host of digitalcommons.georgefox.edu. Institutional standing.",
       "homepage": "https://digitalcommons.georgefox.edu",
       "createdAt": "2026-07-06T00:31:43.543Z",
-      "updatedAt": "2026-07-06T00:55:27.612Z",
+      "updatedAt": "2026-07-06T01:21:16.759Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibry00fwihpuythnwma8",
@@ -2953,7 +3853,7 @@
       "validationNotes": "Publisher/host of jewishencyclopedia.com. Institutional standing.",
       "homepage": "https://jewishencyclopedia.com",
       "createdAt": "2026-07-06T00:31:43.561Z",
-      "updatedAt": "2026-07-06T00:55:27.622Z",
+      "updatedAt": "2026-07-06T01:21:16.767Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibsu00g8ihpuolf4ytjp",
@@ -2978,7 +3878,7 @@
       "validationNotes": "Publisher/host of newadvent.org. Institutional standing.",
       "homepage": "https://newadvent.org",
       "createdAt": "2026-07-06T00:31:43.568Z",
-      "updatedAt": "2026-07-06T00:55:27.671Z",
+      "updatedAt": "2026-07-06T01:21:16.808Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibt100gcihpudxrjzxfp",
@@ -3023,7 +3923,7 @@
       "validationNotes": "Publisher/host of library.biblicalarchaeology.org. Institutional standing.",
       "homepage": "https://library.biblicalarchaeology.org",
       "createdAt": "2026-07-06T00:31:43.587Z",
-      "updatedAt": "2026-07-06T00:55:27.638Z",
+      "updatedAt": "2026-07-06T01:21:16.781Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibto00glihpu37zgisna",
@@ -3053,7 +3953,7 @@
       "validationNotes": "Publisher/host of web.archive.org. Institutional standing.",
       "homepage": "https://web.archive.org",
       "createdAt": "2026-07-06T00:31:43.598Z",
-      "updatedAt": "2026-07-06T00:55:27.951Z",
+      "updatedAt": "2026-07-06T01:21:17.033Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hibu000gnihpuhv8r5707",
@@ -3098,7 +3998,7 @@
       "validationNotes": "Independent web check: 3 strong academic/reference hits; e.g. R.H. Charles: Biography & Modernized Books - Updated Works (https://updatedworks.com/authors/rh-charles/).",
       "homepage": "https://updatedworks.com/authors/rh-charles/",
       "createdAt": "2026-07-06T00:31:43.612Z",
-      "updatedAt": "2026-07-06T00:55:28.026Z",
+      "updatedAt": "2026-07-06T01:21:18.615Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hia0l009sihplc40r8yfn",
@@ -3244,6 +4144,26 @@
           "sourceId": "cmr8ict820004ih9lj7r5lemv",
           "authorityId": "cmr8hj0u400b5ihr2pvkygb16",
           "role": "author"
+        },
+        {
+          "sourceId": "cmr8ipvwa000aihmsxlnfjd3i",
+          "authorityId": "cmr8hj0u400b5ihr2pvkygb16",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmr8isbow0000ihp7vbpzcenk",
+          "authorityId": "cmr8hj0u400b5ihr2pvkygb16",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmr8ivfx0000kihqxduhlnqpd",
+          "authorityId": "cmr8hj0u400b5ihr2pvkygb16",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmr8j68da009rihqxvnwy4yqv",
+          "authorityId": "cmr8hj0u400b5ihr2pvkygb16",
+          "role": "author"
         }
       ]
     },
@@ -3263,7 +4183,7 @@
       "validationNotes": "Independent web check: 3 strong academic/reference hits; e.g. George W.E. Nickelsburg (1934-), scholar - 4 Enoch (https://4enoch.org/wiki5/index.php/George_W.E._Nickelsburg_().",
       "homepage": "https://4enoch.org/wiki5/index.php/George_W.E._Nickelsburg_(1934-),_scholar",
       "createdAt": "2026-07-06T00:31:43.669Z",
-      "updatedAt": "2026-07-06T00:55:28.064Z",
+      "updatedAt": "2026-07-06T01:21:18.648Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiatn0022ihpuqh7sczvc",
@@ -3313,7 +4233,7 @@
       "validationNotes": "Independent web check: 4 strong academic/reference hits; e.g. James H. Charlesworth - Wikipedia (https://en.wikipedia.org/wiki/James_H._Charlesworth).",
       "homepage": "https://en.wikipedia.org/wiki/James_H._Charlesworth",
       "createdAt": "2026-07-06T00:31:43.684Z",
-      "updatedAt": "2026-07-06T00:55:28.078Z",
+      "updatedAt": "2026-07-06T01:21:18.660Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hia0l009sihplc40r8yfn",
@@ -3339,6 +4259,11 @@
           "sourceId": "cmr8ic4u70009ih88cjrxnjlu",
           "authorityId": "cmr8hj0w400b9ihr2c59vpul5",
           "role": "author"
+        },
+        {
+          "sourceId": "cmr8ivfx0000kihqxduhlnqpd",
+          "authorityId": "cmr8hj0w400b9ihr2c59vpul5",
+          "role": "author"
         }
       ]
     },
@@ -3358,7 +4283,7 @@
       "validationNotes": "Independent web check: 1 strong academic/reference hits; e.g. Loren Stuckenbruck Selected Professional Activities - Academia.edu (https://www.academia.edu/48832072/Loren_Stuckenbruck_Selecte).",
       "homepage": "https://www.academia.edu/48832072/Loren_Stuckenbruck_Selected_Professional_Activities",
       "createdAt": "2026-07-06T00:31:43.698Z",
-      "updatedAt": "2026-07-06T00:55:28.088Z",
+      "updatedAt": "2026-07-06T01:21:18.672Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiatn0022ihpuqh7sczvc",
@@ -3423,7 +4348,7 @@
       "validationNotes": "Independent web check: 7 strong academic/reference hits; e.g. Annette Yoshiko Reed | Harvard Divinity School (https://www.hds.harvard.edu/people/annette-yoshiko-reed).",
       "homepage": "https://www.hds.harvard.edu/people/annette-yoshiko-reed",
       "createdAt": "2026-07-06T00:31:43.714Z",
-      "updatedAt": "2026-07-06T00:55:28.106Z",
+      "updatedAt": "2026-07-06T01:21:18.685Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaz3004yihpubqnerxe9",
@@ -3509,6 +4434,56 @@
           "sourceId": "cmr8id4oq0002ih9xbp2yu2qw",
           "authorityId": "cmr8hj0wx00bdihr2y12s39ki",
           "role": "author"
+        },
+        {
+          "sourceId": "cmr8isbow0000ihp7vbpzcenk",
+          "authorityId": "cmr8hj0wx00bdihr2y12s39ki",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmr8iwry00014ihqxv7rc3ar4",
+          "authorityId": "cmr8hj0wx00bdihr2y12s39ki",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmr8iyq8s002eihqx0qktkhzy",
+          "authorityId": "cmr8hj0wx00bdihr2y12s39ki",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmr8j1ven004kihqx13ewzv1w",
+          "authorityId": "cmr8hj0wx00bdihr2y12s39ki",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmr8j53vm007nihqxncaqpzs7",
+          "authorityId": "cmr8hj0wx00bdihr2y12s39ki",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmr8j5j2e008nihqxgf4bx6t3",
+          "authorityId": "cmr8hj0wx00bdihr2y12s39ki",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmr8j6yac00bjihqxjryi9o2k",
+          "authorityId": "cmr8hj0wx00bdihr2y12s39ki",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmr8j873200ctihqxkaq0ehyh",
+          "authorityId": "cmr8hj0wx00bdihr2y12s39ki",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmr8j8t7600e0ihqx2ropxko5",
+          "authorityId": "cmr8hj0wx00bdihr2y12s39ki",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmr8ja37v00ggihqx5kxebrj3",
+          "authorityId": "cmr8hj0wx00bdihr2y12s39ki",
+          "role": "author"
         }
       ]
     },
@@ -3528,7 +4503,7 @@
       "validationNotes": "Independent web check: 3 strong academic/reference hits; e.g. John J. Collins | Yale Divinity School (https://divinity.yale.edu/profile/john-j-collins).",
       "homepage": "https://divinity.yale.edu/profile/john-j-collins",
       "createdAt": "2026-07-06T00:31:43.738Z",
-      "updatedAt": "2026-07-06T00:55:28.131Z",
+      "updatedAt": "2026-07-06T01:21:18.724Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiatn0022ihpuqh7sczvc",
@@ -3573,7 +4548,7 @@
       "validationNotes": "Independent web check: 4 strong academic/reference hits; e.g. [PDF] Michael Stone - Pan-Armenian Digital Library (http://arar.sci.am/Content/9812).",
       "homepage": "http://arar.sci.am/Content/9812",
       "createdAt": "2026-07-06T00:31:43.751Z",
-      "updatedAt": "2026-07-06T00:55:28.141Z",
+      "updatedAt": "2026-07-06T01:21:18.733Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiaxd0041ihpujq6f8cxm",
@@ -3614,6 +4589,16 @@
           "sourceId": "cmr8ict820004ih9lj7r5lemv",
           "authorityId": "cmr8hj0xz00bhihr22sl2m12l",
           "role": "author"
+        },
+        {
+          "sourceId": "cmr8j458v005wihqxhphn03m9",
+          "authorityId": "cmr8hj0xz00bhihr22sl2m12l",
+          "role": "author"
+        },
+        {
+          "sourceId": "cmr8j9w4z00frihqxf277ft7b",
+          "authorityId": "cmr8hj0xz00bhihr22sl2m12l",
+          "role": "author"
         }
       ]
     },
@@ -3633,7 +4618,7 @@
       "validationNotes": "Independent web check: 4 strong academic/reference hits; e.g. Jacob Milgrom - Wikipedia (https://en.wikipedia.org/wiki/Jacob_Milgrom).",
       "homepage": "https://en.wikipedia.org/wiki/Jacob_Milgrom",
       "createdAt": "2026-07-06T00:31:43.771Z",
-      "updatedAt": "2026-07-06T00:55:28.159Z",
+      "updatedAt": "2026-07-06T01:21:18.748Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hia0h009pihpl5tn14q8j",
@@ -3663,7 +4648,7 @@
       "validationNotes": "Independent web check: 3 strong academic/reference hits; e.g. Devorah Dimant - University of Haifa (https://cris.haifa.ac.il/en/persons/devorah-dimant/).",
       "homepage": "https://cris.haifa.ac.il/en/persons/devorah-dimant/",
       "createdAt": "2026-07-06T00:31:43.779Z",
-      "updatedAt": "2026-07-06T00:55:28.166Z",
+      "updatedAt": "2026-07-06T01:21:18.756Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiatn0022ihpuqh7sczvc",
@@ -3703,7 +4688,7 @@
       "validationNotes": "Independent web check: 2 strong academic/reference hits; e.g. Florentino Garcia Martinez - KU Leuven (https://theo.kuleuven.be/en/research/researchers/00035105).",
       "homepage": "https://theo.kuleuven.be/en/research/researchers/00035105",
       "createdAt": "2026-07-06T00:31:43.793Z",
-      "updatedAt": "2026-07-06T00:55:28.176Z",
+      "updatedAt": "2026-07-06T01:21:18.765Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hp4uo0005ihyk742xtlsq",
@@ -3748,7 +4733,7 @@
       "validationNotes": "Independent web check: 1 strong academic/reference hits; e.g. Anne Catherine Emmerich - Wikipedia (https://en.wikipedia.org/wiki/Anne_Catherine_Emmerich).",
       "homepage": "https://en.wikipedia.org/wiki/Anne_Catherine_Emmerich",
       "createdAt": "2026-07-06T00:31:43.799Z",
-      "updatedAt": "2026-07-06T00:55:28.189Z",
+      "updatedAt": "2026-07-06T01:21:18.775Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hiapd000aihpu15ex5ner",
@@ -3773,7 +4758,7 @@
       "validationNotes": "Publisher/host of bible.usccb.org. Institutional standing.",
       "homepage": "https://bible.usccb.org",
       "createdAt": "2026-07-06T00:41:13.998Z",
-      "updatedAt": "2026-07-06T00:55:27.678Z",
+      "updatedAt": "2026-07-06T01:21:16.814Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hs6kx0005ih1g1q0t1ygx",
@@ -3798,7 +4783,7 @@
       "validationNotes": "Publisher/host of tableprepared.com. Institutional standing.",
       "homepage": "https://tableprepared.com",
       "createdAt": "2026-07-06T00:45:13.157Z",
-      "updatedAt": "2026-07-06T00:55:27.687Z",
+      "updatedAt": "2026-07-06T01:21:16.820Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hvdq60000ihc9q045rc3o",
@@ -3823,7 +4808,7 @@
       "validationNotes": "Publisher/host of credomag.com. Institutional standing.",
       "homepage": "https://credomag.com",
       "createdAt": "2026-07-06T00:45:13.162Z",
-      "updatedAt": "2026-07-06T00:55:27.691Z",
+      "updatedAt": "2026-07-06T01:21:16.823Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hvdqb0001ihc9f5azbppj",
@@ -3848,7 +4833,7 @@
       "validationNotes": "Publisher/host of blogs.ancientfaith.com. Institutional standing.",
       "homepage": "https://blogs.ancientfaith.com",
       "createdAt": "2026-07-06T00:45:13.167Z",
-      "updatedAt": "2026-07-06T00:55:27.694Z",
+      "updatedAt": "2026-07-06T01:21:16.826Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hvhdb0002ihc9ndakbl3p",
@@ -3873,7 +4858,7 @@
       "validationNotes": "Publisher/host of jesustweezers.home.blog. Institutional standing.",
       "homepage": "https://jesustweezers.home.blog",
       "createdAt": "2026-07-06T00:45:13.182Z",
-      "updatedAt": "2026-07-06T00:55:27.707Z",
+      "updatedAt": "2026-07-06T01:21:16.833Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hvktf0005ihc9abdb7evo",
@@ -3892,16 +4877,56 @@
       "affiliation": null,
       "field": null,
       "perspectiveSlug": null,
-      "credibility": 0.55,
+      "credibility": 0.7,
       "credibilityTier": "recognized",
       "verificationBasis": "institutional",
       "validationNotes": "Publisher/host of ethiopianorthodox.org. Institutional standing.",
       "homepage": "https://ethiopianorthodox.org",
       "createdAt": "2026-07-06T00:45:13.185Z",
-      "updatedAt": "2026-07-06T00:55:27.711Z",
+      "updatedAt": "2026-07-06T01:21:18.453Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hvonm0006ihc9t0mh3oh1",
+          "authorityId": "cmr8i0di900c1ihsqvqonn329",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iwns00011ihqxrcespoec",
+          "authorityId": "cmr8i0di900c1ihsqvqonn329",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iwvlg0016ihqxede9ooz6",
+          "authorityId": "cmr8i0di900c1ihsqvqonn329",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8ix7gd001pihqxhq8743ok",
+          "authorityId": "cmr8i0di900c1ihsqvqonn329",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8izmwd0033ihqx6sby8e6b",
+          "authorityId": "cmr8i0di900c1ihsqvqonn329",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j18ci003sihqxjeyrciky",
+          "authorityId": "cmr8i0di900c1ihsqvqonn329",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j3i65005aihqxysqlie8y",
+          "authorityId": "cmr8i0di900c1ihsqvqonn329",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j8ket00dsihqxoqpcqcer",
+          "authorityId": "cmr8i0di900c1ihsqvqonn329",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j9g9k00ffihqxiirid7dq",
           "authorityId": "cmr8i0di900c1ihsqvqonn329",
           "role": "institution"
         }
@@ -3923,7 +4948,7 @@
       "validationNotes": "Publisher/host of knightword.wordpress.com. Institutional standing.",
       "homepage": "https://knightword.wordpress.com",
       "createdAt": "2026-07-06T00:45:13.200Z",
-      "updatedAt": "2026-07-06T00:55:27.722Z",
+      "updatedAt": "2026-07-06T01:21:16.845Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hvwhz0009ihc9vztqx2hf",
@@ -3948,7 +4973,7 @@
       "validationNotes": "Publisher/host of theberean.org. Institutional standing.",
       "homepage": "https://theberean.org",
       "createdAt": "2026-07-06T00:45:13.213Z",
-      "updatedAt": "2026-07-06T00:55:27.732Z",
+      "updatedAt": "2026-07-06T01:21:16.854Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hw7mt000cihc9xqxpths3",
@@ -3973,7 +4998,7 @@
       "validationNotes": "Publisher/host of rabbisacks.org. Institutional standing.",
       "homepage": "https://rabbisacks.org",
       "createdAt": "2026-07-06T00:45:13.217Z",
-      "updatedAt": "2026-07-06T00:55:27.735Z",
+      "updatedAt": "2026-07-06T01:21:16.857Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hw7mw000dihc9u28721f5",
@@ -3998,7 +5023,7 @@
       "validationNotes": "Publisher/host of ancientjewreview.com. Institutional standing.",
       "homepage": "https://ancientjewreview.com",
       "createdAt": "2026-07-06T00:45:13.225Z",
-      "updatedAt": "2026-07-06T00:55:27.741Z",
+      "updatedAt": "2026-07-06T01:21:16.862Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hwaqi000fihc98fzvoy8v",
@@ -4023,7 +5048,7 @@
       "validationNotes": "Publisher/host of cdn.mohrsiebeck.com. Institutional standing.",
       "homepage": "https://cdn.mohrsiebeck.com",
       "createdAt": "2026-07-06T00:45:13.261Z",
-      "updatedAt": "2026-07-06T00:55:27.771Z",
+      "updatedAt": "2026-07-06T01:21:16.888Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hxflx000pihksah8bdoxb",
@@ -4048,7 +5073,7 @@
       "validationNotes": "Publisher/host of files.eric.ed.gov. Institutional standing.",
       "homepage": "https://files.eric.ed.gov",
       "createdAt": "2026-07-06T00:45:13.290Z",
-      "updatedAt": "2026-07-06T00:55:27.794Z",
+      "updatedAt": "2026-07-06T01:21:16.906Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hxtzy001jihksrr9lsurw",
@@ -4073,7 +5098,7 @@
       "validationNotes": "Publisher/host of fremantleprison.com.au. Institutional standing.",
       "homepage": "https://fremantleprison.com.au",
       "createdAt": "2026-07-06T00:45:13.294Z",
-      "updatedAt": "2026-07-06T00:55:27.797Z",
+      "updatedAt": "2026-07-06T01:21:16.909Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8hxu08001oihks8x9mt1tt",
@@ -4098,7 +5123,7 @@
       "validationNotes": "Publisher/host of gotquestions.org. Institutional standing.",
       "homepage": "https://gotquestions.org",
       "createdAt": "2026-07-06T00:49:28.043Z",
-      "updatedAt": "2026-07-06T00:55:27.822Z",
+      "updatedAt": "2026-07-06T01:21:16.933Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8i41ae000fihy4s3po65dv",
@@ -4123,7 +5148,7 @@
       "validationNotes": "Publisher/host of qbible.com. Institutional standing.",
       "homepage": "https://qbible.com",
       "createdAt": "2026-07-06T00:49:28.080Z",
-      "updatedAt": "2026-07-06T00:55:27.850Z",
+      "updatedAt": "2026-07-06T01:21:16.960Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8i4r8l001gihy4plae0jbz",
@@ -4148,7 +5173,7 @@
       "validationNotes": "Publisher/host of bible-bridge.com. Institutional standing.",
       "homepage": "https://bible-bridge.com",
       "createdAt": "2026-07-06T00:49:28.093Z",
-      "updatedAt": "2026-07-06T00:55:27.859Z",
+      "updatedAt": "2026-07-06T01:21:16.968Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8i4ykx0001ihzginvfy5yx",
@@ -4173,7 +5198,7 @@
       "validationNotes": "Publisher/host of zondervanacademic.com. Institutional standing.",
       "homepage": "https://zondervanacademic.com",
       "createdAt": "2026-07-06T00:49:28.113Z",
-      "updatedAt": "2026-07-06T00:55:27.875Z",
+      "updatedAt": "2026-07-06T01:21:16.984Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8i5rvc0006ihzgy9ag1915",
@@ -4198,7 +5223,7 @@
       "validationNotes": "Publisher/host of ccel.org. Institutional standing.",
       "homepage": "https://ccel.org",
       "createdAt": "2026-07-06T00:55:27.883Z",
-      "updatedAt": "2026-07-06T00:55:27.892Z",
+      "updatedAt": "2026-07-06T01:21:16.996Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8iapzl0001ih74cnq54wdw",
@@ -4233,7 +5258,7 @@
       "validationNotes": "Publisher/host of jesusmonotheism.com. Institutional standing.",
       "homepage": "https://jesusmonotheism.com",
       "createdAt": "2026-07-06T00:55:27.898Z",
-      "updatedAt": "2026-07-06T00:55:27.898Z",
+      "updatedAt": "2026-07-06T01:21:16.999Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8iawtz0000ih78xztp1fcn",
@@ -4258,7 +5283,7 @@
       "validationNotes": "Publisher/host of de.wikipedia.org. Institutional standing.",
       "homepage": "https://de.wikipedia.org",
       "createdAt": "2026-07-06T00:55:27.908Z",
-      "updatedAt": "2026-07-06T00:55:27.908Z",
+      "updatedAt": "2026-07-06T01:21:17.005Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8iboig0000ih88b17fqg3l",
@@ -4283,7 +5308,7 @@
       "validationNotes": "Publisher/host of bibliotecapleyades.net. Institutional standing.",
       "homepage": "https://bibliotecapleyades.net",
       "createdAt": "2026-07-06T00:55:27.917Z",
-      "updatedAt": "2026-07-06T00:55:27.917Z",
+      "updatedAt": "2026-07-06T01:21:17.012Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8ibsbv0002ih88vzbalby9",
@@ -4308,7 +5333,7 @@
       "validationNotes": "Publisher/host of gnosis.org. Institutional standing.",
       "homepage": "https://gnosis.org",
       "createdAt": "2026-07-06T00:55:27.922Z",
-      "updatedAt": "2026-07-06T00:55:27.946Z",
+      "updatedAt": "2026-07-06T01:21:17.030Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8iburd0003ih88ylowl16p",
@@ -4343,7 +5368,7 @@
       "validationNotes": "Publisher/host of pseudepigrapha.com. Institutional standing.",
       "homepage": "https://pseudepigrapha.com",
       "createdAt": "2026-07-06T00:55:27.956Z",
-      "updatedAt": "2026-07-06T00:55:27.977Z",
+      "updatedAt": "2026-07-06T01:21:17.123Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8icn0m0000ih9lj0qc5z57",
@@ -4352,6 +5377,11 @@
         },
         {
           "sourceId": "cmr8ict820004ih9lj7r5lemv",
+          "authorityId": "cmr8idjv700fpihaqpwrjwx2q",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iqai0000wihmslw9ddsmj",
           "authorityId": "cmr8idjv700fpihaqpwrjwx2q",
           "role": "institution"
         }
@@ -4373,7 +5403,7 @@
       "validationNotes": "Publisher/host of orion.huji.ac.il. Institutional standing.",
       "homepage": "https://orion.huji.ac.il",
       "createdAt": "2026-07-06T00:55:27.967Z",
-      "updatedAt": "2026-07-06T00:55:27.967Z",
+      "updatedAt": "2026-07-06T01:21:17.043Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8icppm0002ih9ljsctbj14",
@@ -4398,7 +5428,7 @@
       "validationNotes": "Publisher/host of ocms.ac.uk. Institutional standing.",
       "homepage": "https://ocms.ac.uk",
       "createdAt": "2026-07-06T00:55:27.972Z",
-      "updatedAt": "2026-07-06T00:55:27.972Z",
+      "updatedAt": "2026-07-06T01:21:17.045Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8icqlz0003ih9l1jvz06cy",
@@ -4423,11 +5453,3266 @@
       "validationNotes": "Publisher/host of bibleinterp.arizona.edu. Institutional standing.",
       "homepage": "https://bibleinterp.arizona.edu",
       "createdAt": "2026-07-06T00:55:28.004Z",
-      "updatedAt": "2026-07-06T00:55:28.004Z",
+      "updatedAt": "2026-07-06T01:21:17.980Z",
       "sourceLinks": [
         {
           "sourceId": "cmr8id4oq0002ih9xbp2yu2qw",
           "authorityId": "cmr8idjwj00g7ihaq7ypt41m4",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j5c1t0086ihqx7638fluf",
+          "authorityId": "cmr8idjwj00g7ihaq7ypt41m4",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jar7d00gtih39heavclbd",
+      "slug": "brandonwhawk-net",
+      "name": "brandonwhawk.net",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of brandonwhawk.net. Institutional standing.",
+      "homepage": "https://brandonwhawk.net",
+      "createdAt": "2026-07-06T01:21:17.113Z",
+      "updatedAt": "2026-07-06T01:21:17.113Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8iq6qq000pihmsv8e2v0jo",
+          "authorityId": "cmr8jar7d00gtih39heavclbd",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jar8m00hdih390rduwsns",
+      "slug": "cja-huji-ac-il",
+      "name": "cja.huji.ac.il",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of cja.huji.ac.il. Institutional standing.",
+      "homepage": "https://cja.huji.ac.il",
+      "createdAt": "2026-07-06T01:21:17.158Z",
+      "updatedAt": "2026-07-06T01:21:17.158Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8iud490002ihqx0h585ul6",
+          "authorityId": "cmr8jar8m00hdih390rduwsns",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jar8v00hhih390bhyes8r",
+      "slug": "eotcmk-org",
+      "name": "eotcmk.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of eotcmk.org. Institutional standing.",
+      "homepage": "https://eotcmk.org",
+      "createdAt": "2026-07-06T01:21:17.168Z",
+      "updatedAt": "2026-07-06T01:21:18.461Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8iugn10004ihqxush4y9i3",
+          "authorityId": "cmr8jar8v00hhih390bhyes8r",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8izzxk0035ihqxykyxzwq1",
+          "authorityId": "cmr8jar8v00hhih390bhyes8r",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j5fgt008dihqxx5mq0p9k",
+          "authorityId": "cmr8jar8v00hhih390bhyes8r",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j62ae009oihqxe8drgj3g",
+          "authorityId": "cmr8jar8v00hhih390bhyes8r",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j9g9r00fhihqxh1m0sl5y",
+          "authorityId": "cmr8jar8v00hhih390bhyes8r",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jar8z00hjih39byioq40q",
+      "slug": "apps-apple-com",
+      "name": "apps.apple.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of apps.apple.com. Institutional standing.",
+      "homepage": "https://apps.apple.com",
+      "createdAt": "2026-07-06T01:21:17.172Z",
+      "updatedAt": "2026-07-06T01:21:17.475Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8iurbs0005ihqxo8ssc3um",
+          "authorityId": "cmr8jar8z00hjih39byioq40q",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iz051002oihqxh0vqsjsv",
+          "authorityId": "cmr8jar8z00hjih39byioq40q",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jar9400hlih39ptg7pe0b",
+      "slug": "www3-emagine-org",
+      "name": "www3.emagine.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of www3.emagine.org. Institutional standing.",
+      "homepage": "https://www3.emagine.org",
+      "createdAt": "2026-07-06T01:21:17.176Z",
+      "updatedAt": "2026-07-06T01:21:17.176Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ivbjb000aihqxrz1ofc5h",
+          "authorityId": "cmr8jar9400hlih39ptg7pe0b",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jar9d00hpih390k3yadhp",
+      "slug": "bible-ertale-com",
+      "name": "bible.ertale.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of bible.ertale.com. Institutional standing.",
+      "homepage": "https://bible.ertale.com",
+      "createdAt": "2026-07-06T01:21:17.185Z",
+      "updatedAt": "2026-07-06T01:21:17.257Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ivfx0000kihqxduhlnqpd",
+          "authorityId": "cmr8jar9d00hpih390k3yadhp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iw6dn000zihqx6wrk0vqs",
+          "authorityId": "cmr8jar9d00hpih390k3yadhp",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jar9h00hrih39dg3s6n54",
+      "slug": "kids-kiddle-co",
+      "name": "kids.kiddle.co",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of kids.kiddle.co. Institutional standing.",
+      "homepage": "https://kids.kiddle.co",
+      "createdAt": "2026-07-06T01:21:17.190Z",
+      "updatedAt": "2026-07-06T01:21:17.190Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ivfx7000lihqxusmhvsft",
+          "authorityId": "cmr8jar9h00hrih39dg3s6n54",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jar9u00hxih39e371i8aj",
+      "slug": "johnsanidopoulos-com",
+      "name": "johnsanidopoulos.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of johnsanidopoulos.com. Institutional standing.",
+      "homepage": "https://johnsanidopoulos.com",
+      "createdAt": "2026-07-06T01:21:17.203Z",
+      "updatedAt": "2026-07-06T01:21:17.203Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ivjpg000oihqx4qdnprff",
+          "authorityId": "cmr8jar9u00hxih39e371i8aj",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jar9z00hzih39z7wny3od",
+      "slug": "apocryphicity-ca",
+      "name": "apocryphicity.ca",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of apocryphicity.ca. Institutional standing.",
+      "homepage": "https://apocryphicity.ca",
+      "createdAt": "2026-07-06T01:21:17.207Z",
+      "updatedAt": "2026-07-06T01:21:17.207Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ivjpi000pihqxj50hyccg",
+          "authorityId": "cmr8jar9z00hzih39z7wny3od",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarag00i7ih39e5qr3s7u",
+      "slug": "books-google-com",
+      "name": "books.google.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of books.google.com. Institutional standing.",
+      "homepage": "https://books.google.com",
+      "createdAt": "2026-07-06T01:21:17.225Z",
+      "updatedAt": "2026-07-06T01:21:17.579Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ivqgd000tihqxg7rti5lx",
+          "authorityId": "cmr8jarag00i7ih39e5qr3s7u",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8iwzqj001lihqxyr89pq3l",
+          "authorityId": "cmr8jarag00i7ih39e5qr3s7u",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j0awf003cihqxrdxytz8j",
+          "authorityId": "cmr8jarag00i7ih39e5qr3s7u",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jaral00i9ih39mvm57ai0",
+      "slug": "scholar-csl-edu-academic-repository",
+      "name": "scholar.csl.edu (academic repository)",
+      "kind": "institution",
+      "type": "university",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": "secular-academic",
+      "credibility": 0.8,
+      "credibilityTier": "credentialed",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of scholar.csl.edu. Institutional standing.",
+      "homepage": "https://scholar.csl.edu",
+      "createdAt": "2026-07-06T01:21:17.229Z",
+      "updatedAt": "2026-07-06T01:21:17.763Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ivw9j000uihqxiyxe5lm7",
+          "authorityId": "cmr8jaral00i9ih39mvm57ai0",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j2p6j004zihqxt53o3jqm",
+          "authorityId": "cmr8jaral00i9ih39mvm57ai0",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarb000ifih39q715iant",
+      "slug": "biblia-com",
+      "name": "biblia.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of biblia.com. Institutional standing.",
+      "homepage": "https://biblia.com",
+      "createdAt": "2026-07-06T01:21:17.245Z",
+      "updatedAt": "2026-07-06T01:21:17.245Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ivz6q000xihqxuy43d810",
+          "authorityId": "cmr8jarb000ifih39q715iant",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarb500ihih39p8c6f58j",
+      "slug": "bcharchive-org",
+      "name": "bcharchive.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.7,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of bcharchive.org. Institutional standing.",
+      "homepage": "https://bcharchive.org",
+      "createdAt": "2026-07-06T01:21:17.249Z",
+      "updatedAt": "2026-07-06T01:21:17.249Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8iw6dk000yihqx12drmar9",
+          "authorityId": "cmr8jarb500ihih39p8c6f58j",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarbh00ilih39csqa2yqr",
+      "slug": "ethiopianorthodoxbible-wordpress-com-community-platform",
+      "name": "ethiopianorthodoxbible.wordpress.com (community platform)",
+      "kind": "institution",
+      "type": "community",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": "fringe-speculative",
+      "credibility": 0.35,
+      "credibilityTier": "unverified-claimant",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of ethiopianorthodoxbible.wordpress.com. Institutional standing.",
+      "homepage": "https://ethiopianorthodoxbible.wordpress.com",
+      "createdAt": "2026-07-06T01:21:17.262Z",
+      "updatedAt": "2026-07-06T01:21:17.262Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8iwf910010ihqxp0tvs6pf",
+          "authorityId": "cmr8jarbh00ilih39csqa2yqr",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarbr00ipih39mukjvlwn",
+      "slug": "cap-press-com",
+      "name": "cap-press.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of cap-press.com. Institutional standing.",
+      "homepage": "https://cap-press.com",
+      "createdAt": "2026-07-06T01:21:17.271Z",
+      "updatedAt": "2026-07-06T01:21:17.271Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8iwnsd0012ihqx4o56vpcp",
+          "authorityId": "cmr8jarbr00ipih39mukjvlwn",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarcv00j5ih39fhju8eya",
+      "slug": "music-apple-com",
+      "name": "music.apple.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of music.apple.com. Institutional standing.",
+      "homepage": "https://music.apple.com",
+      "createdAt": "2026-07-06T01:21:17.311Z",
+      "updatedAt": "2026-07-06T01:21:17.311Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8iwzqn001mihqx5sidlnc2",
+          "authorityId": "cmr8jarcv00j5ih39fhju8eya",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jard500j9ih39xylrc2lq",
+      "slug": "medhanialemct-org",
+      "name": "medhanialemct.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.6000000000000001,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of medhanialemct.org. Institutional standing.",
+      "homepage": "https://medhanialemct.org",
+      "createdAt": "2026-07-06T01:21:17.321Z",
+      "updatedAt": "2026-07-06T01:21:17.321Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ix3zr001oihqxw1ubvxw0",
+          "authorityId": "cmr8jard500j9ih39xylrc2lq",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jardg00jdih39taeft3be",
+      "slug": "ninesaintsethiopianorthodoxmonastery-org",
+      "name": "ninesaintsethiopianorthodoxmonastery.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of ninesaintsethiopianorthodoxmonastery.org. Institutional standing.",
+      "homepage": "https://ninesaintsethiopianorthodoxmonastery.org",
+      "createdAt": "2026-07-06T01:21:17.333Z",
+      "updatedAt": "2026-07-06T01:21:17.333Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ix7gh001qihqxy5ej57m2",
+          "authorityId": "cmr8jardg00jdih39taeft3be",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jardv00jjih39uov3qf8w",
+      "slug": "pt-scribd-com",
+      "name": "pt.scribd.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.4,
+      "credibilityTier": "unverified-claimant",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of pt.scribd.com. Institutional standing.",
+      "homepage": "https://pt.scribd.com",
+      "createdAt": "2026-07-06T01:21:17.347Z",
+      "updatedAt": "2026-07-06T01:21:17.347Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ixb88001tihqxak1y5g96",
+          "authorityId": "cmr8jardv00jjih39uov3qf8w",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarei00jrih393hmabyyw",
+      "slug": "eotc-faithweb-com",
+      "name": "eotc.faithweb.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of eotc.faithweb.com. Institutional standing.",
+      "homepage": "https://eotc.faithweb.com",
+      "createdAt": "2026-07-06T01:21:17.371Z",
+      "updatedAt": "2026-07-06T01:21:17.371Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ixrn00021ihqxpzk9zcnm",
+          "authorityId": "cmr8jarei00jrih393hmabyyw",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarg200k9ih39ssmr83kj",
+      "slug": "thepocketscroll-wordpress-com-community-platform",
+      "name": "thepocketscroll.wordpress.com (community platform)",
+      "kind": "institution",
+      "type": "community",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": "fringe-speculative",
+      "credibility": 0.35,
+      "credibilityTier": "unverified-claimant",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of thepocketscroll.wordpress.com. Institutional standing.",
+      "homepage": "https://thepocketscroll.wordpress.com",
+      "createdAt": "2026-07-06T01:21:17.426Z",
+      "updatedAt": "2026-07-06T01:21:17.426Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8iyq8s002eihqx0qktkhzy",
+          "authorityId": "cmr8jarg200k9ih39ssmr83kj",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jargn00khih39wszgiwfv",
+      "slug": "rct-uk",
+      "name": "rct.uk",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.6000000000000001,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of rct.uk. Institutional standing.",
+      "homepage": "https://rct.uk",
+      "createdAt": "2026-07-06T01:21:17.447Z",
+      "updatedAt": "2026-07-06T01:21:17.447Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8iytqr002iihqxpojj4hgo",
+          "authorityId": "cmr8jargn00khih39wszgiwfv",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarh100knih39bmtmbd0b",
+      "slug": "ijramr-com",
+      "name": "ijramr.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of ijramr.com. Institutional standing.",
+      "homepage": "https://ijramr.com",
+      "createdAt": "2026-07-06T01:21:17.462Z",
+      "updatedAt": "2026-07-06T01:21:17.462Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8iyx9t002lihqxixjyuibc",
+          "authorityId": "cmr8jarh100knih39bmtmbd0b",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarh500kpih39kw8nv6zc",
+      "slug": "play-google-com",
+      "name": "play.google.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of play.google.com. Institutional standing.",
+      "homepage": "https://play.google.com",
+      "createdAt": "2026-07-06T01:21:17.466Z",
+      "updatedAt": "2026-07-06T01:21:17.466Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8iyx9w002mihqxp87p5xx0",
+          "authorityId": "cmr8jarh500kpih39kw8nv6zc",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarhs00kzih3967cqd9wp",
+      "slug": "eotc-ma-com",
+      "name": "eotc-ma.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of eotc-ma.com. Institutional standing.",
+      "homepage": "https://eotc-ma.com",
+      "createdAt": "2026-07-06T01:21:17.488Z",
+      "updatedAt": "2026-07-06T01:21:17.488Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8iz3cm002rihqxm14hwtox",
+          "authorityId": "cmr8jarhs00kzih3967cqd9wp",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarij00lbih39jslqyd0e",
+      "slug": "britannica-com",
+      "name": "britannica.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of britannica.com. Institutional standing.",
+      "homepage": "https://britannica.com",
+      "createdAt": "2026-07-06T01:21:17.515Z",
+      "updatedAt": "2026-07-06T01:21:17.515Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8izd9d002xihqxsmod8tkf",
+          "authorityId": "cmr8jarij00lbih39jslqyd0e",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarir00lfih39ykksv9sh",
+      "slug": "zehabesha-com",
+      "name": "zehabesha.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of zehabesha.com. Institutional standing.",
+      "homepage": "https://zehabesha.com",
+      "createdAt": "2026-07-06T01:21:17.524Z",
+      "updatedAt": "2026-07-06T01:21:17.524Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8izjid002zihqxny79shhw",
+          "authorityId": "cmr8jarir00lfih39ykksv9sh",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarjt00lxih39vutp7eem",
+      "slug": "persee-fr",
+      "name": "persee.fr",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of persee.fr. Institutional standing.",
+      "homepage": "https://persee.fr",
+      "createdAt": "2026-07-06T01:21:17.562Z",
+      "updatedAt": "2026-07-06T01:21:17.562Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j07000038ihqxr32mouuq",
+          "authorityId": "cmr8jarjt00lxih39vutp7eem",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarlg00mnih394ixyhgwt",
+      "slug": "eotcdicac-org",
+      "name": "eotcdicac.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.6000000000000001,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of eotcdicac.org. Institutional standing.",
+      "homepage": "https://eotcdicac.org",
+      "createdAt": "2026-07-06T01:21:17.620Z",
+      "updatedAt": "2026-07-06T01:21:17.620Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j0thl003lihqxma1mtxjy",
+          "authorityId": "cmr8jarlg00mnih394ixyhgwt",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarlx00mvih39pbctewcp",
+      "slug": "mdpi-com",
+      "name": "mdpi.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of mdpi.com. Institutional standing.",
+      "homepage": "https://mdpi.com",
+      "createdAt": "2026-07-06T01:21:17.637Z",
+      "updatedAt": "2026-07-06T01:21:18.293Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j0wtk003pihqx5jyl1gsw",
+          "authorityId": "cmr8jarlx00mvih39pbctewcp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j1j420041ihqx1sx72mor",
+          "authorityId": "cmr8jarlx00mvih39pbctewcp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j5z1x009nihqxo70i5ne2",
+          "authorityId": "cmr8jarlx00mvih39pbctewcp",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j83o200cqihqx2oide7ka",
+          "authorityId": "cmr8jarlx00mvih39pbctewcp",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarmr00n9ih39wkl60gkj",
+      "slug": "enciclopediapatristica-com",
+      "name": "enciclopediapatristica.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of enciclopediapatristica.com. Institutional standing.",
+      "homepage": "https://enciclopediapatristica.com",
+      "createdAt": "2026-07-06T01:21:17.667Z",
+      "updatedAt": "2026-07-06T01:21:17.667Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j1j400040ihqxuahnvjbd",
+          "authorityId": "cmr8jarmr00n9ih39wkl60gkj",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarmz00ndih39ols1ftwb",
+      "slug": "documenta-catholica-eu",
+      "name": "documenta-catholica.eu",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of documenta-catholica.eu. Institutional standing.",
+      "homepage": "https://documenta-catholica.eu",
+      "createdAt": "2026-07-06T01:21:17.675Z",
+      "updatedAt": "2026-07-06T01:21:17.675Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j1ngm0042ihqxje5yxuk5",
+          "authorityId": "cmr8jarmz00ndih39ols1ftwb",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarn700nhih3933mpuszs",
+      "slug": "alinsuciu-com",
+      "name": "alinsuciu.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of alinsuciu.com. Institutional standing.",
+      "homepage": "https://alinsuciu.com",
+      "createdAt": "2026-07-06T01:21:17.683Z",
+      "updatedAt": "2026-07-06T01:21:17.683Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j1nh1004cihqx4zbvxw91",
+          "authorityId": "cmr8jarn700nhih3933mpuszs",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarng00nlih39ycsrmqoz",
+      "slug": "ocf-net",
+      "name": "ocf.net",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of ocf.net. Institutional standing.",
+      "homepage": "https://ocf.net",
+      "createdAt": "2026-07-06T01:21:17.692Z",
+      "updatedAt": "2026-07-06T01:21:17.692Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j1rqv004iihqxmjjiau6y",
+          "authorityId": "cmr8jarng00nlih39ycsrmqoz",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarno00npih39hy2v2otw",
+      "slug": "lacopts-org",
+      "name": "lacopts.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of lacopts.org. Institutional standing.",
+      "homepage": "https://lacopts.org",
+      "createdAt": "2026-07-06T01:21:17.700Z",
+      "updatedAt": "2026-07-06T01:21:17.700Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j1ven004kihqx13ewzv1w",
+          "authorityId": "cmr8jarno00npih39hy2v2otw",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarnw00ntih397jsszgw5",
+      "slug": "syri-ac",
+      "name": "syri.ac",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of syri.ac. Institutional standing.",
+      "homepage": "https://syri.ac",
+      "createdAt": "2026-07-06T01:21:17.708Z",
+      "updatedAt": "2026-07-06T01:21:17.708Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j1vet004mihqxp7lmtjuv",
+          "authorityId": "cmr8jarnw00ntih397jsszgw5",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jaro000nvih39wqexoyma",
+      "slug": "african-theologyworldwide-com",
+      "name": "african.theologyworldwide.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of african.theologyworldwide.com. Institutional standing.",
+      "homepage": "https://african.theologyworldwide.com",
+      "createdAt": "2026-07-06T01:21:17.713Z",
+      "updatedAt": "2026-07-06T01:21:17.713Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j203z004nihqxzvhthmjq",
+          "authorityId": "cmr8jaro000nvih39wqexoyma",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jaro400nxih39rntlqisp",
+      "slug": "riftvalley-net",
+      "name": "riftvalley.net",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of riftvalley.net. Institutional standing.",
+      "homepage": "https://riftvalley.net",
+      "createdAt": "2026-07-06T01:21:17.716Z",
+      "updatedAt": "2026-07-06T01:21:17.716Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j2043004oihqx8fz43vuh",
+          "authorityId": "cmr8jaro400nxih39rntlqisp",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jaroq00o7ih39rpmxstm5",
+      "slug": "en-sewasew-com",
+      "name": "en.sewasew.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of en.sewasew.com. Institutional standing.",
+      "homepage": "https://en.sewasew.com",
+      "createdAt": "2026-07-06T01:21:17.738Z",
+      "updatedAt": "2026-07-06T01:21:17.738Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j27rt004tihqxfjpm3n2v",
+          "authorityId": "cmr8jaroq00o7ih39rpmxstm5",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jaroy00obih392tc3guhl",
+      "slug": "unreached-network",
+      "name": "unreached.network",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of unreached.network. Institutional standing.",
+      "homepage": "https://unreached.network",
+      "createdAt": "2026-07-06T01:21:17.747Z",
+      "updatedAt": "2026-07-06T01:21:17.747Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j2e2x004vihqxj61cjyv6",
+          "authorityId": "cmr8jaroy00obih392tc3guhl",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarp700ofih39nr617auy",
+      "slug": "orthodoxwiki-org",
+      "name": "orthodoxwiki.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of orthodoxwiki.org. Institutional standing.",
+      "homepage": "https://orthodoxwiki.org",
+      "createdAt": "2026-07-06T01:21:17.755Z",
+      "updatedAt": "2026-07-06T01:21:17.755Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j2e33004xihqxdb0sxmuv",
+          "authorityId": "cmr8jarp700ofih39nr617auy",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarpk00olih39szlbxmjz",
+      "slug": "proquest-com",
+      "name": "proquest.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of proquest.com. Institutional standing.",
+      "homepage": "https://proquest.com",
+      "createdAt": "2026-07-06T01:21:17.768Z",
+      "updatedAt": "2026-07-06T01:21:17.768Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j2p6m0050ihqxnvi1qn90",
+          "authorityId": "cmr8jarpk00olih39szlbxmjz",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarpo00onih39zzzqaxgx",
+      "slug": "loimission-net",
+      "name": "loimission.net",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of loimission.net. Institutional standing.",
+      "homepage": "https://loimission.net",
+      "createdAt": "2026-07-06T01:21:17.772Z",
+      "updatedAt": "2026-07-06T01:21:17.772Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j33dj0051ihqxkbw3lhzf",
+          "authorityId": "cmr8jarpo00onih39zzzqaxgx",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarpw00orih39heqciz39",
+      "slug": "publicorthodoxy-org",
+      "name": "publicorthodoxy.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of publicorthodoxy.org. Institutional standing.",
+      "homepage": "https://publicorthodoxy.org",
+      "createdAt": "2026-07-06T01:21:17.781Z",
+      "updatedAt": "2026-07-06T01:21:17.781Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j37aa0053ihqxhbtx1zuj",
+          "authorityId": "cmr8jarpw00orih39heqciz39",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarq100otih39o5s3dvi1",
+      "slug": "biarjournal-com",
+      "name": "biarjournal.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of biarjournal.com. Institutional standing.",
+      "homepage": "https://biarjournal.com",
+      "createdAt": "2026-07-06T01:21:17.785Z",
+      "updatedAt": "2026-07-06T01:21:18.409Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j37ae0054ihqxnilui946",
+          "authorityId": "cmr8jarq100otih39o5s3dvi1",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j3i68005bihqxozrl2pp9",
+          "authorityId": "cmr8jarq100otih39o5s3dvi1",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j92is00ehihqxw60yddeb",
+          "authorityId": "cmr8jarq100otih39o5s3dvi1",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarq500ovih39v032t8bd",
+      "slug": "cdn-prod-website-files-com",
+      "name": "cdn.prod.website-files.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of cdn.prod.website-files.com. Institutional standing.",
+      "homepage": "https://cdn.prod.website-files.com",
+      "createdAt": "2026-07-06T01:21:17.789Z",
+      "updatedAt": "2026-07-06T01:21:17.789Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j3ayk0055ihqxz7mkljzm",
+          "authorityId": "cmr8jarq500ovih39v032t8bd",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarq900oxih39lxov1l09",
+      "slug": "insightsjournal-org",
+      "name": "insightsjournal.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of insightsjournal.org. Institutional standing.",
+      "homepage": "https://insightsjournal.org",
+      "createdAt": "2026-07-06T01:21:17.794Z",
+      "updatedAt": "2026-07-06T01:21:17.794Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j3eaa0056ihqxm00l5gg8",
+          "authorityId": "cmr8jarq900oxih39lxov1l09",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarqd00ozih39j4jtoiq0",
+      "slug": "journals-bdu-edu-et-academic-repository",
+      "name": "journals.bdu.edu.et (academic repository)",
+      "kind": "institution",
+      "type": "university",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": "secular-academic",
+      "credibility": 0.8,
+      "credibilityTier": "credentialed",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of journals.bdu.edu.et. Institutional standing.",
+      "homepage": "https://journals.bdu.edu.et",
+      "createdAt": "2026-07-06T01:21:17.798Z",
+      "updatedAt": "2026-07-06T01:21:17.798Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j3eac0057ihqxqjkxsf9f",
+          "authorityId": "cmr8jarqd00ozih39j4jtoiq0",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarr000p9ih392tlbn02k",
+      "slug": "etd-aau-edu-et-academic-repository",
+      "name": "etd.aau.edu.et (academic repository)",
+      "kind": "institution",
+      "type": "university",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": "secular-academic",
+      "credibility": 0.8,
+      "credibilityTier": "credentialed",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of etd.aau.edu.et. Institutional standing.",
+      "homepage": "https://etd.aau.edu.et",
+      "createdAt": "2026-07-06T01:21:17.820Z",
+      "updatedAt": "2026-07-06T01:21:17.820Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j3tuj005cihqxlc5nevog",
+          "authorityId": "cmr8jarr000p9ih392tlbn02k",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarr800pdih39se1sxr5t",
+      "slug": "bestiary-ca",
+      "name": "bestiary.ca",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of bestiary.ca. Institutional standing.",
+      "homepage": "https://bestiary.ca",
+      "createdAt": "2026-07-06T01:21:17.828Z",
+      "updatedAt": "2026-07-06T01:21:17.828Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j3tup005eihqxp4luxsrx",
+          "authorityId": "cmr8jarr800pdih39se1sxr5t",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarrg00phih391xjfeu6m",
+      "slug": "arirangculture-news",
+      "name": "arirangculture.news",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.6000000000000001,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of arirangculture.news. Institutional standing.",
+      "homepage": "https://arirangculture.news",
+      "createdAt": "2026-07-06T01:21:17.836Z",
+      "updatedAt": "2026-07-06T01:21:17.836Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j3xdr005gihqxcvj8ywr6",
+          "authorityId": "cmr8jarrg00phih391xjfeu6m",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarrl00pjih39c4i0i2bp",
+      "slug": "tasbeha-org",
+      "name": "tasbeha.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of tasbeha.org. Institutional standing.",
+      "homepage": "https://tasbeha.org",
+      "createdAt": "2026-07-06T01:21:17.842Z",
+      "updatedAt": "2026-07-06T01:21:17.842Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j41cu005hihqxzip24hj2",
+          "authorityId": "cmr8jarrl00pjih39c4i0i2bp",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarrs00pnih39hy3dnpjt",
+      "slug": "ebsco-com",
+      "name": "ebsco.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of ebsco.com. Institutional standing.",
+      "homepage": "https://ebsco.com",
+      "createdAt": "2026-07-06T01:21:17.849Z",
+      "updatedAt": "2026-07-06T01:21:18.246Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j41d8005rihqx35pf4sho",
+          "authorityId": "cmr8jarrs00pnih39hy3dnpjt",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j7e5r00bxihqxhambcgio",
+          "authorityId": "cmr8jarrs00pnih39hy3dnpjt",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j7l4h00c3ihqxt932ooaq",
+          "authorityId": "cmr8jarrs00pnih39hy3dnpjt",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jars600ptih3920vaj0cn",
+      "slug": "smithsonianmag-com",
+      "name": "smithsonianmag.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of smithsonianmag.com. Institutional standing.",
+      "homepage": "https://smithsonianmag.com",
+      "createdAt": "2026-07-06T01:21:17.862Z",
+      "updatedAt": "2026-07-06T01:21:17.862Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j45990066ihqxyquafwjm",
+          "authorityId": "cmr8jars600ptih3920vaj0cn",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarse00pxih39mn1shiza",
+      "slug": "static-wikitide-net",
+      "name": "static.wikitide.net",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of static.wikitide.net. Institutional standing.",
+      "homepage": "https://static.wikitide.net",
+      "createdAt": "2026-07-06T01:21:17.871Z",
+      "updatedAt": "2026-07-06T01:21:17.871Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4cfy006gihqxv4tdwq6j",
+          "authorityId": "cmr8jarse00pxih39mn1shiza",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarsj00pzih39hlz3lqha",
+      "slug": "dn721506-ca-archive-org",
+      "name": "dn721506.ca.archive.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.7,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of dn721506.ca.archive.org. Institutional standing.",
+      "homepage": "https://dn721506.ca.archive.org",
+      "createdAt": "2026-07-06T01:21:17.875Z",
+      "updatedAt": "2026-07-06T01:21:17.875Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4cg5006lihqxj5jjp3wd",
+          "authorityId": "cmr8jarsj00pzih39hlz3lqha",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarsn00q1ih3962y408pd",
+      "slug": "netbible-org",
+      "name": "netbible.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of netbible.org. Institutional standing.",
+      "homepage": "https://netbible.org",
+      "createdAt": "2026-07-06T01:21:17.879Z",
+      "updatedAt": "2026-07-06T01:21:17.879Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4cge006qihqxk0t766zx",
+          "authorityId": "cmr8jarsn00q1ih3962y408pd",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarsv00q5ih39b3clqtjn",
+      "slug": "logos-com",
+      "name": "logos.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of logos.com. Institutional standing.",
+      "homepage": "https://logos.com",
+      "createdAt": "2026-07-06T01:21:17.888Z",
+      "updatedAt": "2026-07-06T01:21:17.888Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4g7s0070ihqx8go7tf83",
+          "authorityId": "cmr8jarsv00q5ih39b3clqtjn",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jart000q7ih39uzaqw0y2",
+      "slug": "answeringislam-blog",
+      "name": "answeringislam.blog",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.4,
+      "credibilityTier": "unverified-claimant",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of answeringislam.blog. Institutional standing.",
+      "homepage": "https://answeringislam.blog",
+      "createdAt": "2026-07-06T01:21:17.892Z",
+      "updatedAt": "2026-07-06T01:21:17.892Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4g820075ihqxdi88borz",
+          "authorityId": "cmr8jart000q7ih39uzaqw0y2",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jart800qbih39yb1qbrmi",
+      "slug": "oca-org",
+      "name": "oca.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of oca.org. Institutional standing.",
+      "homepage": "https://oca.org",
+      "createdAt": "2026-07-06T01:21:17.901Z",
+      "updatedAt": "2026-07-06T01:21:17.901Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4jr3007bihqxn97q941s",
+          "authorityId": "cmr8jart800qbih39yb1qbrmi",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jartd00qdih39xov7v61w",
+      "slug": "library-abide-edu-kg-academic-repository",
+      "name": "library.abide.edu.kg (academic repository)",
+      "kind": "institution",
+      "type": "university",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": "secular-academic",
+      "credibility": 0.8,
+      "credibilityTier": "credentialed",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of library.abide.edu.kg. Institutional standing.",
+      "homepage": "https://library.abide.edu.kg",
+      "createdAt": "2026-07-06T01:21:17.905Z",
+      "updatedAt": "2026-07-06T01:21:17.905Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4ni7007cihqx8902sos8",
+          "authorityId": "cmr8jartd00qdih39xov7v61w",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarth00qfih398n6jcf4g",
+      "slug": "wesleyanlearn-com",
+      "name": "wesleyanlearn.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of wesleyanlearn.com. Institutional standing.",
+      "homepage": "https://wesleyanlearn.com",
+      "createdAt": "2026-07-06T01:21:17.909Z",
+      "updatedAt": "2026-07-06T01:21:17.909Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4nib007dihqxfxz6c88a",
+          "authorityId": "cmr8jarth00qfih398n6jcf4g",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jartq00qjih390kfxrsa7",
+      "slug": "learn-ligonier-org",
+      "name": "learn.ligonier.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of learn.ligonier.org. Institutional standing.",
+      "homepage": "https://learn.ligonier.org",
+      "createdAt": "2026-07-06T01:21:17.918Z",
+      "updatedAt": "2026-07-06T01:21:17.918Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4rzp007fihqxol1rkv66",
+          "authorityId": "cmr8jartq00qjih390kfxrsa7",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jartu00qlih394klgpk3c",
+      "slug": "servantofmessiah-org",
+      "name": "servantofmessiah.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of servantofmessiah.org. Institutional standing.",
+      "homepage": "https://servantofmessiah.org",
+      "createdAt": "2026-07-06T01:21:17.922Z",
+      "updatedAt": "2026-07-06T01:21:17.922Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4rzr007gihqxdem4bt5q",
+          "authorityId": "cmr8jartu00qlih394klgpk3c",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jartz00qnih39evufytk7",
+      "slug": "oneinjesus-info",
+      "name": "oneinjesus.info",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of oneinjesus.info. Institutional standing.",
+      "homepage": "https://oneinjesus.info",
+      "createdAt": "2026-07-06T01:21:17.927Z",
+      "updatedAt": "2026-07-06T01:21:17.927Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4rzt007hihqxbc65h7f9",
+          "authorityId": "cmr8jartz00qnih39evufytk7",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jaru700qrih39yewncdd3",
+      "slug": "college-de-france-fr",
+      "name": "college-de-france.fr",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of college-de-france.fr. Institutional standing.",
+      "homepage": "https://college-de-france.fr",
+      "createdAt": "2026-07-06T01:21:17.935Z",
+      "updatedAt": "2026-07-06T01:21:17.935Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4vnm007jihqxebt5advk",
+          "authorityId": "cmr8jaru700qrih39yewncdd3",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarub00qtih39tqo4w3u0",
+      "slug": "yalebiblestudy-org",
+      "name": "yalebiblestudy.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of yalebiblestudy.org. Institutional standing.",
+      "homepage": "https://yalebiblestudy.org",
+      "createdAt": "2026-07-06T01:21:17.939Z",
+      "updatedAt": "2026-07-06T01:21:17.939Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4vnq007kihqxom35g2h0",
+          "authorityId": "cmr8jarub00qtih39tqo4w3u0",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jaruf00qvih39spscccd6",
+      "slug": "blogs-uco-edu-academic-repository",
+      "name": "blogs.uco.edu (academic repository)",
+      "kind": "institution",
+      "type": "university",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": "secular-academic",
+      "credibility": 0.8,
+      "credibilityTier": "credentialed",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of blogs.uco.edu. Institutional standing.",
+      "homepage": "https://blogs.uco.edu",
+      "createdAt": "2026-07-06T01:21:17.943Z",
+      "updatedAt": "2026-07-06T01:21:17.943Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4z8w007lihqx40rdoehn",
+          "authorityId": "cmr8jaruf00qvih39spscccd6",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jaruj00qxih39mji6ycov",
+      "slug": "digitalcommons-chapman-edu-academic-repository",
+      "name": "digitalcommons.chapman.edu (academic repository)",
+      "kind": "institution",
+      "type": "university",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": "secular-academic",
+      "credibility": 0.8,
+      "credibilityTier": "credentialed",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of digitalcommons.chapman.edu. Institutional standing.",
+      "homepage": "https://digitalcommons.chapman.edu",
+      "createdAt": "2026-07-06T01:21:17.948Z",
+      "updatedAt": "2026-07-06T01:21:17.948Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j4z8z007mihqxh7791wox",
+          "authorityId": "cmr8jaruj00qxih39mji6ycov",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jaruo00qzih393d7jqfxa",
+      "slug": "biblebookclubpodcast-com",
+      "name": "biblebookclubpodcast.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of biblebookclubpodcast.com. Institutional standing.",
+      "homepage": "https://biblebookclubpodcast.com",
+      "createdAt": "2026-07-06T01:21:17.952Z",
+      "updatedAt": "2026-07-06T01:21:17.952Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j53vm007nihqxncaqpzs7",
+          "authorityId": "cmr8jaruo00qzih393d7jqfxa",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarus00r1ih39zzti1ler",
+      "slug": "biblestudydownloads-org",
+      "name": "biblestudydownloads.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of biblestudydownloads.org. Institutional standing.",
+      "homepage": "https://biblestudydownloads.org",
+      "createdAt": "2026-07-06T01:21:17.956Z",
+      "updatedAt": "2026-07-06T01:21:17.956Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j53vp007oihqxqn7bjj3s",
+          "authorityId": "cmr8jarus00r1ih39zzti1ler",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jaruw00r3ih39z7u6thgp",
+      "slug": "enjoyingthejourney-org",
+      "name": "enjoyingthejourney.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of enjoyingthejourney.org. Institutional standing.",
+      "homepage": "https://enjoyingthejourney.org",
+      "createdAt": "2026-07-06T01:21:17.960Z",
+      "updatedAt": "2026-07-06T01:21:17.960Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j53vs007pihqx4sjro228",
+          "authorityId": "cmr8jaruw00r3ih39z7u6thgp",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jaruz00r5ih39zi91dxqe",
+      "slug": "christchurchphoenix-org",
+      "name": "christchurchphoenix.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of christchurchphoenix.org. Institutional standing.",
+      "homepage": "https://christchurchphoenix.org",
+      "createdAt": "2026-07-06T01:21:17.963Z",
+      "updatedAt": "2026-07-06T01:21:17.963Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j57k6007qihqxc8iekqyo",
+          "authorityId": "cmr8jaruz00r5ih39zi91dxqe",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarv700r9ih3997foaayk",
+      "slug": "venicechurchofchrist-org",
+      "name": "venicechurchofchrist.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of venicechurchofchrist.org. Institutional standing.",
+      "homepage": "https://venicechurchofchrist.org",
+      "createdAt": "2026-07-06T01:21:17.972Z",
+      "updatedAt": "2026-07-06T01:21:17.972Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j57kl0080ihqxhdz1eo3e",
+          "authorityId": "cmr8jarv700r9ih3997foaayk",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarvb00rbih39lsie7z3o",
+      "slug": "minjung-or-kr",
+      "name": "minjung.or.kr",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of minjung.or.kr. Institutional standing.",
+      "homepage": "https://minjung.or.kr",
+      "createdAt": "2026-07-06T01:21:17.976Z",
+      "updatedAt": "2026-07-06T01:21:17.976Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j5c1m0085ihqxfwyoyddl",
+          "authorityId": "cmr8jarvb00rbih39lsie7z3o",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarvk00rfih39wua4ettz",
+      "slug": "scielo-org-za",
+      "name": "scielo.org.za",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of scielo.org.za. Institutional standing.",
+      "homepage": "https://scielo.org.za",
+      "createdAt": "2026-07-06T01:21:17.984Z",
+      "updatedAt": "2026-07-06T01:21:18.422Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j5c1v0087ihqxe824gh6w",
+          "authorityId": "cmr8jarvk00rfih39wua4ettz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j7qey00c4ihqx3p4rugnt",
+          "authorityId": "cmr8jarvk00rfih39wua4ettz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j7xe000clihqx3zkc7ob1",
+          "authorityId": "cmr8jarvk00rfih39wua4ettz",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j96ch00eoihqx56pq9oai",
+          "authorityId": "cmr8jarvk00rfih39wua4ettz",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarwe00rtih39gqaiw1l4",
+      "slug": "eng-chagim-org-il",
+      "name": "eng.chagim.org.il",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of eng.chagim.org.il. Institutional standing.",
+      "homepage": "https://eng.chagim.org.il",
+      "createdAt": "2026-07-06T01:21:18.014Z",
+      "updatedAt": "2026-07-06T01:21:18.014Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j5mzm008qihqxbtz3h924",
+          "authorityId": "cmr8jarwe00rtih39gqaiw1l4",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarwi00rvih39g5iu10bb",
+      "slug": "spurgeon-org",
+      "name": "spurgeon.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of spurgeon.org. Institutional standing.",
+      "homepage": "https://spurgeon.org",
+      "createdAt": "2026-07-06T01:21:18.018Z",
+      "updatedAt": "2026-07-06T01:21:18.018Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j5mzp008rihqxgdim5q78",
+          "authorityId": "cmr8jarwi00rvih39g5iu10bb",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarx300s5ih39rec5ft69",
+      "slug": "reformconfess-com",
+      "name": "reformconfess.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of reformconfess.com. Institutional standing.",
+      "homepage": "https://reformconfess.com",
+      "createdAt": "2026-07-06T01:21:18.039Z",
+      "updatedAt": "2026-07-06T01:21:18.039Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j5vpb009cihqxvsh0uk4w",
+          "authorityId": "cmr8jarx300s5ih39rec5ft69",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarx700s7ih39lhctknfb",
+      "slug": "churchofengland-org",
+      "name": "churchofengland.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of churchofengland.org. Institutional standing.",
+      "homepage": "https://churchofengland.org",
+      "createdAt": "2026-07-06T01:21:18.044Z",
+      "updatedAt": "2026-07-06T01:21:18.044Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j5vpi009hihqxt9bktwf3",
+          "authorityId": "cmr8jarx700s7ih39lhctknfb",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarxo00sfih39g6aoycp0",
+      "slug": "etheses-durham-ac-uk",
+      "name": "etheses.durham.ac.uk",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of etheses.durham.ac.uk. Institutional standing.",
+      "homepage": "https://etheses.durham.ac.uk",
+      "createdAt": "2026-07-06T01:21:18.061Z",
+      "updatedAt": "2026-07-06T01:21:18.061Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j62ah009pihqxotmmgo6l",
+          "authorityId": "cmr8jarxo00sfih39g6aoycp0",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarxx00sjih39yvkvyqm4",
+      "slug": "seekingourgod-wordpress-com-community-platform",
+      "name": "seekingourgod.wordpress.com (community platform)",
+      "kind": "institution",
+      "type": "community",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": "fringe-speculative",
+      "credibility": 0.35,
+      "credibilityTier": "unverified-claimant",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of seekingourgod.wordpress.com. Institutional standing.",
+      "homepage": "https://seekingourgod.wordpress.com",
+      "createdAt": "2026-07-06T01:21:18.069Z",
+      "updatedAt": "2026-07-06T01:21:18.069Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j68da009rihqxvnwy4yqv",
+          "authorityId": "cmr8jarxx00sjih39yvkvyqm4",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jary100slih39jpzuxsc4",
+      "slug": "biblicalstudies-org-uk",
+      "name": "biblicalstudies.org.uk",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of biblicalstudies.org.uk. Institutional standing.",
+      "homepage": "https://biblicalstudies.org.uk",
+      "createdAt": "2026-07-06T01:21:18.074Z",
+      "updatedAt": "2026-07-06T01:21:18.074Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j68dd009sihqxbkkdwyeh",
+          "authorityId": "cmr8jary100slih39jpzuxsc4",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jary500snih39sjt37bbz",
+      "slug": "puritanboard-com",
+      "name": "puritanboard.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of puritanboard.com. Institutional standing.",
+      "homepage": "https://puritanboard.com",
+      "createdAt": "2026-07-06T01:21:18.078Z",
+      "updatedAt": "2026-07-06T01:21:18.078Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j68dg009tihqx9cc2zmm2",
+          "authorityId": "cmr8jary500snih39sjt37bbz",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jaryx00szih39j4d7qakq",
+      "slug": "earlywritings-com",
+      "name": "earlywritings.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of earlywritings.com. Institutional standing.",
+      "homepage": "https://earlywritings.com",
+      "createdAt": "2026-07-06T01:21:18.105Z",
+      "updatedAt": "2026-07-06T01:21:18.105Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j6l2t00ajihqxj19500oc",
+          "authorityId": "cmr8jaryx00szih39j4d7qakq",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarzg00t7ih39eewfgym1",
+      "slug": "rsc-byu-edu-academic-repository",
+      "name": "rsc.byu.edu (academic repository)",
+      "kind": "institution",
+      "type": "university",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": "secular-academic",
+      "credibility": 0.8,
+      "credibilityTier": "credentialed",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of rsc.byu.edu. Institutional standing.",
+      "homepage": "https://rsc.byu.edu",
+      "createdAt": "2026-07-06T01:21:18.124Z",
+      "updatedAt": "2026-07-06T01:21:18.124Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j6on100b3ihqx7f6f1xqq",
+          "authorityId": "cmr8jarzg00t7ih39eewfgym1",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jarzx00tfih39swk238z0",
+      "slug": "beresolute-org",
+      "name": "beresolute.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of beresolute.org. Institutional standing.",
+      "homepage": "https://beresolute.org",
+      "createdAt": "2026-07-06T01:21:18.141Z",
+      "updatedAt": "2026-07-06T01:21:18.141Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j6rw400bfihqx5potrxcp",
+          "authorityId": "cmr8jarzx00tfih39swk238z0",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas0e00tnih39wti9274p",
+      "slug": "bibleproject-com",
+      "name": "bibleproject.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of bibleproject.com. Institutional standing.",
+      "homepage": "https://bibleproject.com",
+      "createdAt": "2026-07-06T01:21:18.158Z",
+      "updatedAt": "2026-07-06T01:21:18.255Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j6yac00bjihqxjryi9o2k",
+          "authorityId": "cmr8jas0e00tnih39wti9274p",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j76yr00bpihqxizss61v8",
+          "authorityId": "cmr8jas0e00tnih39wti9274p",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j7e5l00bvihqxie8zzcqj",
+          "authorityId": "cmr8jas0e00tnih39wti9274p",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j7qf100c5ihqxh7cucefp",
+          "authorityId": "cmr8jas0e00tnih39wti9274p",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas0v00tvih39fabjcuqn",
+      "slug": "biblegateway-com",
+      "name": "biblegateway.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of biblegateway.com. Institutional standing.",
+      "homepage": "https://biblegateway.com",
+      "createdAt": "2026-07-06T01:21:18.176Z",
+      "updatedAt": "2026-07-06T01:21:18.339Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j735h00bnihqxy7cypvmj",
+          "authorityId": "cmr8jas0v00tvih39fabjcuqn",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j76yv00bqihqx7wy7iipb",
+          "authorityId": "cmr8jas0v00tvih39fabjcuqn",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j8e1r00dlihqxxvc4ki5v",
+          "authorityId": "cmr8jas0v00tvih39fabjcuqn",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas0z00txih39eppv56m1",
+      "slug": "goservglobal-org",
+      "name": "goservglobal.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of goservglobal.org. Institutional standing.",
+      "homepage": "https://goservglobal.org",
+      "createdAt": "2026-07-06T01:21:18.180Z",
+      "updatedAt": "2026-07-06T01:21:18.180Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j735j00boihqxk8l3kbbd",
+          "authorityId": "cmr8jas0z00txih39eppv56m1",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas1m00u7ih399vcqof3b",
+      "slug": "nigerianjournalsonline-org",
+      "name": "nigerianjournalsonline.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of nigerianjournalsonline.org. Institutional standing.",
+      "homepage": "https://nigerianjournalsonline.org",
+      "createdAt": "2026-07-06T01:21:18.202Z",
+      "updatedAt": "2026-07-06T01:21:18.202Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j7a3w00btihqx5szvwxo0",
+          "authorityId": "cmr8jas1m00u7ih399vcqof3b",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas1q00u9ih39p3e0za7m",
+      "slug": "christoverall-com",
+      "name": "christoverall.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of christoverall.com. Institutional standing.",
+      "homepage": "https://christoverall.com",
+      "createdAt": "2026-07-06T01:21:18.206Z",
+      "updatedAt": "2026-07-06T01:21:18.206Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j7a3y00buihqx3u8vr39a",
+          "authorityId": "cmr8jas1q00u9ih39p3e0za7m",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas2b00ujih39eprrvltx",
+      "slug": "nottingham-repository-worktribe-com",
+      "name": "nottingham-repository.worktribe.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of nottingham-repository.worktribe.com. Institutional standing.",
+      "homepage": "https://nottingham-repository.worktribe.com",
+      "createdAt": "2026-07-06T01:21:18.228Z",
+      "updatedAt": "2026-07-06T01:21:18.228Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j7hjg00bzihqx6c8n7eoo",
+          "authorityId": "cmr8jas2b00ujih39eprrvltx",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas2k00unih39nnhhhbee",
+      "slug": "redeemer-ch",
+      "name": "redeemer.ch",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of redeemer.ch. Institutional standing.",
+      "homepage": "https://redeemer.ch",
+      "createdAt": "2026-07-06T01:21:18.236Z",
+      "updatedAt": "2026-07-06T01:21:18.236Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j7l4b00c1ihqxq6rhtz4q",
+          "authorityId": "cmr8jas2k00unih39nnhhhbee",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas3b00uzih39rvudewuq",
+      "slug": "ldolphin-org",
+      "name": "ldolphin.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of ldolphin.org. Institutional standing.",
+      "homepage": "https://ldolphin.org",
+      "createdAt": "2026-07-06T01:21:18.263Z",
+      "updatedAt": "2026-07-06T01:21:18.263Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j7tzr00cbihqxi2fvo9km",
+          "authorityId": "cmr8jas3b00uzih39rvudewuq",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas3o00v5ih395f8agziz",
+      "slug": "ote-journal-otwsa-otssa-org-za",
+      "name": "ote-journal.otwsa-otssa.org.za",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of ote-journal.otwsa-otssa.org.za. Institutional standing.",
+      "homepage": "https://ote-journal.otwsa-otssa.org.za",
+      "createdAt": "2026-07-06T01:21:18.277Z",
+      "updatedAt": "2026-07-06T01:21:18.277Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j7xe200cmihqxf3vk2ef4",
+          "authorityId": "cmr8jas3o00v5ih395f8agziz",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas4900vfih39t46s7lpa",
+      "slug": "pdfs-semanticscholar-org",
+      "name": "pdfs.semanticscholar.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.6000000000000001,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of pdfs.semanticscholar.org. Institutional standing.",
+      "homepage": "https://pdfs.semanticscholar.org",
+      "createdAt": "2026-07-06T01:21:18.297Z",
+      "updatedAt": "2026-07-06T01:21:18.297Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j83o500crihqx2fnt89t6",
+          "authorityId": "cmr8jas4900vfih39t46s7lpa",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas4i00vjih39eclo2ilk",
+      "slug": "merton-ox-ac-uk",
+      "name": "merton.ox.ac.uk",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of merton.ox.ac.uk. Institutional standing.",
+      "homepage": "https://merton.ox.ac.uk",
+      "createdAt": "2026-07-06T01:21:18.306Z",
+      "updatedAt": "2026-07-06T01:21:18.306Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j873200ctihqxkaq0ehyh",
+          "authorityId": "cmr8jas4i00vjih39eclo2ilk",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas4p00vnih39l3kcs53t",
+      "slug": "ncec-catholic-edu-au-academic-repository",
+      "name": "ncec.catholic.edu.au (academic repository)",
+      "kind": "institution",
+      "type": "university",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": "secular-academic",
+      "credibility": 0.8,
+      "credibilityTier": "credentialed",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of ncec.catholic.edu.au. Institutional standing.",
+      "homepage": "https://ncec.catholic.edu.au",
+      "createdAt": "2026-07-06T01:21:18.313Z",
+      "updatedAt": "2026-07-06T01:21:18.313Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j873k00d3ihqxfms7d4r6",
+          "authorityId": "cmr8jas4p00vnih39l3kcs53t",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas5300vtih397laalyyf",
+      "slug": "hts-org-za",
+      "name": "hts.org.za",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of hts.org.za. Institutional standing.",
+      "homepage": "https://hts.org.za",
+      "createdAt": "2026-07-06T01:21:18.327Z",
+      "updatedAt": "2026-07-06T01:21:18.327Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j8abk00daihqx7fgnse3h",
+          "authorityId": "cmr8jas5300vtih397laalyyf",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas5600vvih395vra9663",
+      "slug": "gracefresno-com",
+      "name": "gracefresno.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of gracefresno.com. Institutional standing.",
+      "homepage": "https://gracefresno.com",
+      "createdAt": "2026-07-06T01:21:18.331Z",
+      "updatedAt": "2026-07-06T01:21:18.331Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j8e1c00dbihqxwjbu5zpk",
+          "authorityId": "cmr8jas5600vvih395vra9663",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas5a00vxih39j4o7bhny",
+      "slug": "blogs-oxford-anglican-org",
+      "name": "blogs.oxford.anglican.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.4,
+      "credibilityTier": "unverified-claimant",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of blogs.oxford.anglican.org. Institutional standing.",
+      "homepage": "https://blogs.oxford.anglican.org",
+      "createdAt": "2026-07-06T01:21:18.335Z",
+      "updatedAt": "2026-07-06T01:21:18.335Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j8e1j00dgihqxagjugnii",
+          "authorityId": "cmr8jas5a00vxih39j4o7bhny",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas6500wbih39e7ee1c8u",
+      "slug": "gospellight-sg",
+      "name": "gospellight.sg",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of gospellight.sg. Institutional standing.",
+      "homepage": "https://gospellight.sg",
+      "createdAt": "2026-07-06T01:21:18.366Z",
+      "updatedAt": "2026-07-06T01:21:18.378Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j8oyy00dvihqx45txe3tj",
+          "authorityId": "cmr8jas6500wbih39e7ee1c8u",
+          "role": "institution"
+        },
+        {
+          "sourceId": "cmr8j8t7000dyihqxeuu2i93e",
+          "authorityId": "cmr8jas6500wbih39e7ee1c8u",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas6e00wfih39jfgu7zm6",
+      "slug": "apostolicfaith-org",
+      "name": "apostolicfaith.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of apostolicfaith.org. Institutional standing.",
+      "homepage": "https://apostolicfaith.org",
+      "createdAt": "2026-07-06T01:21:18.374Z",
+      "updatedAt": "2026-07-06T01:21:18.374Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j8oz400dxihqx4cm4gqu3",
+          "authorityId": "cmr8jas6e00wfih39jfgu7zm6",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas6m00wjih39kxkqy66k",
+      "slug": "dashhouse-com",
+      "name": "dashhouse.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of dashhouse.com. Institutional standing.",
+      "homepage": "https://dashhouse.com",
+      "createdAt": "2026-07-06T01:21:18.382Z",
+      "updatedAt": "2026-07-06T01:21:18.382Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j8t7400dzihqxgw2sqxva",
+          "authorityId": "cmr8jas6m00wjih39kxkqy66k",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas6z00wpih39i6nofze4",
+      "slug": "interserveusa-org",
+      "name": "interserveusa.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of interserveusa.org. Institutional standing.",
+      "homepage": "https://interserveusa.org",
+      "createdAt": "2026-07-06T01:21:18.396Z",
+      "updatedAt": "2026-07-06T01:21:18.396Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j8x2600e6ihqxjne0x6wq",
+          "authorityId": "cmr8jas6z00wpih39i6nofze4",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas7400wrih39vfm1kahz",
+      "slug": "hccmobile-org",
+      "name": "hccmobile.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of hccmobile.org. Institutional standing.",
+      "homepage": "https://hccmobile.org",
+      "createdAt": "2026-07-06T01:21:18.400Z",
+      "updatedAt": "2026-07-06T01:21:18.400Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j8x2e00ebihqxf3bblkfv",
+          "authorityId": "cmr8jas7400wrih39vfm1kahz",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas7800wtih39vazx504m",
+      "slug": "verbumetecclesia-org-za",
+      "name": "verbumetecclesia.org.za",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of verbumetecclesia.org.za. Institutional standing.",
+      "homepage": "https://verbumetecclesia.org.za",
+      "createdAt": "2026-07-06T01:21:18.404Z",
+      "updatedAt": "2026-07-06T01:21:18.404Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j92ev00egihqxsc6rwazh",
+          "authorityId": "cmr8jas7800wtih39vazx504m",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas7z00x5ih39eyt24w2b",
+      "slug": "philarchive-org",
+      "name": "philarchive.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.7,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of philarchive.org. Institutional standing.",
+      "homepage": "https://philarchive.org",
+      "createdAt": "2026-07-06T01:21:18.431Z",
+      "updatedAt": "2026-07-06T01:21:18.431Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j99ko00eyihqxehommfqi",
+          "authorityId": "cmr8jas7z00x5ih39eyt24w2b",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas8f00xdih395cp685zu",
+      "slug": "desiringgod-org",
+      "name": "desiringgod.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of desiringgod.org. Institutional standing.",
+      "homepage": "https://desiringgod.org",
+      "createdAt": "2026-07-06T01:21:18.448Z",
+      "updatedAt": "2026-07-06T01:21:18.448Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j9cu800faihqxb6mysa34",
+          "authorityId": "cmr8jas8f00xdih395cp685zu",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas8p00xhih39palckxg9",
+      "slug": "eewc-com",
+      "name": "eewc.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of eewc.com. Institutional standing.",
+      "homepage": "https://eewc.com",
+      "createdAt": "2026-07-06T01:21:18.457Z",
+      "updatedAt": "2026-07-06T01:21:18.457Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j9g9n00fgihqx57mcboiq",
+          "authorityId": "cmr8jas8p00xhih39palckxg9",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas9600xpih39gpz9dx7k",
+      "slug": "christianunity-va",
+      "name": "christianunity.va",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of christianunity.va. Institutional standing.",
+      "homepage": "https://christianunity.va",
+      "createdAt": "2026-07-06T01:21:18.475Z",
+      "updatedAt": "2026-07-06T01:21:18.475Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j9k0j00fkihqxzk02s8kd",
+          "authorityId": "cmr8jas9600xpih39gpz9dx7k",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas9j00xvih391gn9cxye",
+      "slug": "thepastorsbrief-com",
+      "name": "thepastorsbrief.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of thepastorsbrief.com. Institutional standing.",
+      "homepage": "https://thepastorsbrief.com",
+      "createdAt": "2026-07-06T01:21:18.487Z",
+      "updatedAt": "2026-07-06T01:21:18.487Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j9nx500fnihqxm2mnyumf",
+          "authorityId": "cmr8jas9j00xvih391gn9cxye",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jas9t00xzih39m1d0jg4l",
+      "slug": "baptistcourier-com",
+      "name": "baptistcourier.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of baptistcourier.com. Institutional standing.",
+      "homepage": "https://baptistcourier.com",
+      "createdAt": "2026-07-06T01:21:18.497Z",
+      "updatedAt": "2026-07-06T01:21:18.497Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j9s2l00fpihqxkmb9a6hb",
+          "authorityId": "cmr8jas9t00xzih39m1d0jg4l",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jasa300y3ih39r7ewazow",
+      "slug": "lifeassuranceministries-org",
+      "name": "lifeassuranceministries.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of lifeassuranceministries.org. Institutional standing.",
+      "homepage": "https://lifeassuranceministries.org",
+      "createdAt": "2026-07-06T01:21:18.507Z",
+      "updatedAt": "2026-07-06T01:21:18.507Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j9w4z00frihqxf277ft7b",
+          "authorityId": "cmr8jasa300y3ih39r7ewazow",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jasa700y5ih39d7cidng2",
+      "slug": "revival-tv",
+      "name": "revival.tv",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of revival.tv. Institutional standing.",
+      "homepage": "https://revival.tv",
+      "createdAt": "2026-07-06T01:21:18.511Z",
+      "updatedAt": "2026-07-06T01:21:18.511Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j9w5700fwihqxqpfgyql6",
+          "authorityId": "cmr8jasa700y5ih39d7cidng2",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jasag00y9ih39jyon7nzx",
+      "slug": "matthewzcapps-com",
+      "name": "matthewzcapps.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of matthewzcapps.com. Institutional standing.",
+      "homepage": "https://matthewzcapps.com",
+      "createdAt": "2026-07-06T01:21:18.520Z",
+      "updatedAt": "2026-07-06T01:21:18.520Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8j9ztb00g6ihqxhuh32mi1",
+          "authorityId": "cmr8jasag00y9ih39jyon7nzx",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jasat00yfih39fx9ql1of",
+      "slug": "faithalone-org",
+      "name": "faithalone.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of faithalone.org. Institutional standing.",
+      "homepage": "https://faithalone.org",
+      "createdAt": "2026-07-06T01:21:18.533Z",
+      "updatedAt": "2026-07-06T01:21:18.533Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ja38300glihqxozkws568",
+          "authorityId": "cmr8jasat00yfih39fx9ql1of",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jasay00yhih39e6318vvs",
+      "slug": "emmausinstitute-net",
+      "name": "emmausinstitute.net",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of emmausinstitute.net. Institutional standing.",
+      "homepage": "https://emmausinstitute.net",
+      "createdAt": "2026-07-06T01:21:18.538Z",
+      "updatedAt": "2026-07-06T01:21:18.538Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ja38d00gqihqxzolcc5em",
+          "authorityId": "cmr8jasay00yhih39e6318vvs",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jasb700ylih392xhxaplw",
+      "slug": "orthodoxchristianethos-com",
+      "name": "orthodoxchristianethos.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of orthodoxchristianethos.com. Institutional standing.",
+      "homepage": "https://orthodoxchristianethos.com",
+      "createdAt": "2026-07-06T01:21:18.547Z",
+      "updatedAt": "2026-07-06T01:21:18.547Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8ja6l700gwihqxcymxrg5e",
+          "authorityId": "cmr8jasb700ylih392xhxaplw",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jasbg00ypih393z5ocpf2",
+      "slug": "towerviewkc-com",
+      "name": "towerviewkc.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of towerviewkc.com. Institutional standing.",
+      "homepage": "https://towerviewkc.com",
+      "createdAt": "2026-07-06T01:21:18.556Z",
+      "updatedAt": "2026-07-06T01:21:18.556Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8jaabj00gyihqxl1wh6jms",
+          "authorityId": "cmr8jasbg00ypih393z5ocpf2",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jasbt00yvih39jynmljlf",
+      "slug": "iiardjournals-org",
+      "name": "iiardjournals.org",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of iiardjournals.org. Institutional standing.",
+      "homepage": "https://iiardjournals.org",
+      "createdAt": "2026-07-06T01:21:18.569Z",
+      "updatedAt": "2026-07-06T01:21:18.569Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8jadni00h1ihqxqwgtg5f3",
+          "authorityId": "cmr8jasbt00yvih39jynmljlf",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jasc200yzih39siwc5oqd",
+      "slug": "tandfonline-com",
+      "name": "tandfonline.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of tandfonline.com. Institutional standing.",
+      "homepage": "https://tandfonline.com",
+      "createdAt": "2026-07-06T01:21:18.579Z",
+      "updatedAt": "2026-07-06T01:21:18.579Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8jadno00h3ihqxgllluoab",
+          "authorityId": "cmr8jasc200yzih39siwc5oqd",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jascb00z3ih39f7a9h2pz",
+      "slug": "orthodoxchristiantheology-com",
+      "name": "orthodoxchristiantheology.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of orthodoxchristiantheology.com. Institutional standing.",
+      "homepage": "https://orthodoxchristiantheology.com",
+      "createdAt": "2026-07-06T01:21:18.587Z",
+      "updatedAt": "2026-07-06T01:21:18.587Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8jah4400h5ihqxnc7rod4b",
+          "authorityId": "cmr8jascb00z3ih39f7a9h2pz",
+          "role": "institution"
+        }
+      ]
+    },
+    {
+      "id": "cmr8jascg00z5ih39wyttlzjs",
+      "slug": "firebrandmag-com",
+      "name": "firebrandmag.com",
+      "kind": "institution",
+      "type": "institution",
+      "credentials": null,
+      "affiliation": null,
+      "field": null,
+      "perspectiveSlug": null,
+      "credibility": 0.55,
+      "credibilityTier": "recognized",
+      "verificationBasis": "institutional",
+      "validationNotes": "Publisher/host of firebrandmag.com. Institutional standing.",
+      "homepage": "https://firebrandmag.com",
+      "createdAt": "2026-07-06T01:21:18.592Z",
+      "updatedAt": "2026-07-06T01:21:18.592Z",
+      "sourceLinks": [
+        {
+          "sourceId": "cmr8jaklb00h6ihqxa3krvjbv",
+          "authorityId": "cmr8jascg00z5ih39wyttlzjs",
           "role": "institution"
         }
       ]
