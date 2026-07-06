@@ -5,19 +5,19 @@
 > whole composition and decide for themselves. Lower on the ladder ≠ false; it means *less
 > independently verifiable* and a place to keep digging.
 
-**300 evidence** across **657 sources** (181 community-leads) · **92 topics**
+**319 evidence** across **676 sources** (181 community-leads) · **100 topics**
 
 ## The picture so far — verifiability ladder
 
 | Level | Count | |
 |---|---:|---|
 | Textually attested | 5 | `█·······················` |
-| Historically / archaeologically corroborated | 13 | `███·····················` |
-| Scholarly consensus | 93 | `████████████████████····` |
+| Historically / archaeologically corroborated | 14 | `███·····················` |
+| Scholarly consensus | 101 | `████████████████████····` |
 | Contested / minority | 3 | `█·······················` |
-| Tradition / devotional | 109 | `████████████████████████` |
+| Tradition / devotional | 119 | `████████████████████████` |
 | Visionary / private revelation | 1 | `························` |
-| Speculative | 76 | `█████████████████·······` |
+| Speculative | 76 | `███████████████·········` |
 
 ## By topic — where each thread stands
 
@@ -51,18 +51,21 @@
 | ⚠️ eotc: ot-canon: Jeremiah | 0 | 2 | speculative:2 |
 | ⚠️ eotc: nt-canon: 1 Peter | 0 | 2 | tradition:2 |
 | ⚠️ eotc: nt-canon: Revelation | 0 | 2 | tradition:1 · speculative:1 |
+| ⚠️ glm-swarm: Jubilees at Qumran | 0 | 2 | tradition:2 |
 | ⚠️ verse: 1-enoch 15:3 (giants) | 0 | 1 | tradition:1 |
 | ⚠️ crawl(d0): theme: book of enoch | 0 | 1 | tradition:1 |
 | ⚠️ eotc: ot-distinctive: Prayer of Manasseh | 0 | 1 | tradition:1 |
 | ⚠️ eotc: marian: Marian Anaphora and homilies | 0 | 1 | speculative:1 |
 | ⚠️ eotc: ot-canon: Leviticus | 0 | 1 | speculative:1 |
 | ⚠️ eotc: nt-canon: Jude | 0 | 1 | tradition:1 |
+| ⚠️ glm-swarm: Astronomical Book | 0 | 1 | tradition:1 |
 | theme: The Watchers ( Fallen Angels) | 1 | 6 | historically:1 · tradition:3 · speculative:2 |
 | theme: Cosmology of the Heavens | 1 | 5 | scholarly:1 · tradition:1 · speculative:3 |
 | theme: Eschatological Judgment | 1 | 4 | scholarly:1 · tradition:3 |
 | theme: Azazel & the Scapegoat | 1 | 4 | scholarly:1 · speculative:3 |
 | verse: 1-enoch 46:3 (Son of Man) | 1 | 4 | scholarly:1 · tradition:1 · speculative:2 |
 | glm-swarm: Enoch patristic reception | 1 | 4 | scholarly:1 · tradition:3 |
+| glm-swarm: Apocalypse of Weeks | 1 | 4 | scholarly:1 · tradition:3 |
 | theme: Solar Calendar (364 days) | 1 | 3 | scholarly:1 · tradition:1 · speculative:1 |
 | verse: 1-enoch 8:1 (Azazel) | 1 | 3 | scholarly:1 · tradition:1 · speculative:1 |
 | verse: 1-enoch 46:4 (Son of Man) | 1 | 3 | scholarly:1 · speculative:2 |
@@ -82,8 +85,11 @@
 | eotc: apocrypha: Ascension of Isaiah | 1 | 2 | scholarly:1 · speculative:1 |
 | eotc: apocrypha: 1 Baruch | 1 | 2 | scholarly:1 · tradition:1 |
 | glm-swarm: 2 Enoch | 1 | 2 | scholarly:1 · tradition:1 |
-| glm-swarm: Manichaean Book of Giants | 1 | 2 | scholarly:1 · tradition:1 |
 | glm-swarm: Apocalypse of Peter | 1 | 2 | scholarly:1 · tradition:1 |
+| glm-swarm: Animal Apocalypse | 1 | 2 | scholarly:1 · tradition:1 |
+| glm-swarm: Kebra Nagast | 1 | 2 | scholarly:1 · tradition:1 |
+| glm-swarm: EOTC canon | 1 | 2 | scholarly:1 · tradition:1 |
+| glm-swarm: Nephilim Rephaim | 1 | 2 | historically:1 · tradition:1 |
 | qumran|scrolls|enoch|jubilees|aramaic | 1 | 1 | historically:1 |
 | hermon|banias|caesarea-philippi|watchers|cultic | 1 | 1 | historically:1 |
 | black-sea|flood|geology|holocene|ryan-pitman | 1 | 1 | historically:1 |
@@ -96,6 +102,7 @@
 | verse: 1-enoch 1:5 (Watchers) | 2 | 4 | scholarly:2 · speculative:2 |
 | verse: 1-enoch 71:9 (Son of Man) | 2 | 3 | scholarly:2 · tradition:1 |
 | eotc: ot-canon: Exodus | 2 | 3 | historically:1 · scholarly:1 · speculative:1 |
+| glm-swarm: Manichaean Book of Giants | 2 | 3 | scholarly:2 · tradition:1 |
 | glm-swarm: Shepherd of Hermas | 2 | 3 | scholarly:2 · tradition:1 |
 | qumran|aramaic|enoch|second-temple|watchers | 2 | 2 | historically:2 |
 | gilgamesh|utnapishtim|flood|nineveh|mesopotamia | 2 | 2 | historically:2 |
@@ -112,6 +119,7 @@
 | verse: 1-enoch 15:9 (Watchers) | 3 | 5 | scholarly:3 · tradition:2 |
 | crawl(d1): theme: watchers | 3 | 4 | scholarly:3 · tradition:1 |
 | glm-swarm: 3 Enoch | 3 | 4 | scholarly:3 · tradition:1 |
+| glm-swarm: Aramaic Watchers | 3 | 3 | scholarly:3 |
 | theme: Covenant & Noahide Laws | 4 | 11 | textually:1 · scholarly:3 · tradition:6 · speculative:1 |
 | verse: 1-enoch 10:9 (Watchers) | 4 | 6 | historically:1 · scholarly:3 · speculative:2 |
 | verse: 1-enoch 10:4 (Azazel) | 4 | 4 | scholarly:4 |
@@ -131,28 +139,28 @@
 
 A second axis of verifiability: not just *what* a source says but *who* stands behind it,
 validated the same way sources are (credentials + affiliation + independent corroboration).
-**11 named figures**, **248 institutions**.
+**11 named figures**, **258 institutions**.
 
 ### Named figures (independently validated)
 
 | Person | Type | Tier | Basis | Sources |
 |---|---|---|---|---:|
-| R. H. Charles | scholar | established-authority | peer-cited | 37 |
+| R. H. Charles | scholar | established-authority | peer-cited | 39 |
 | George W. E. Nickelsburg | scholar | established-authority | peer-cited | 6 |
 | James H. Charlesworth | scholar | established-authority | peer-cited | 9 |
 | Annette Yoshiko Reed | scholar | established-authority | peer-cited | 29 |
 | John J. Collins | scholar | established-authority | peer-cited | 6 |
-| Michael E. Stone | scholar | established-authority | peer-cited | 15 |
+| Michael E. Stone | scholar | established-authority | peer-cited | 16 |
 | Jacob Milgrom | scholar | established-authority | peer-cited | 2 |
-| Devorah Dimant | scholar | established-authority | peer-cited | 4 |
+| Devorah Dimant | scholar | established-authority | peer-cited | 5 |
 | Florentino García Martínez | scholar | established-authority | peer-cited | 6 |
-| Loren T. Stuckenbruck | scholar | credentialed | credentials-verified | 9 |
+| Loren T. Stuckenbruck | scholar | credentialed | credentials-verified | 10 |
 | Anne Catherine Emmerich | visionary | recognized | credentials-verified | 1 |
 
 ### Top institutional backers
 
 - **Brill Academic Publishers** — 21 sources (95%)
-- **Biblical Archaeology Society** — 11 sources (90%)
+- **Biblical Archaeology Society** — 12 sources (90%)
 - **JSTOR** — 8 sources (90%)
 - **Cambridge University Press** — 3 sources (93%)
 - **Israel Antiquities Authority — Dead Sea Scrolls** — 1 sources (97%)
@@ -190,9 +198,11 @@ Topics currently resting only on devotional / visionary / speculative / lead sou
 - **eotc: ot-canon: Jeremiah** (2 pieces, none independently corroborated yet)
 - **eotc: nt-canon: 1 Peter** (2 pieces, none independently corroborated yet)
 - **eotc: nt-canon: Revelation** (2 pieces, none independently corroborated yet)
+- **glm-swarm: Jubilees at Qumran** (2 pieces, none independently corroborated yet)
 - **verse: 1-enoch 15:3 (giants)** (1 pieces, none independently corroborated yet)
 - **crawl(d0): theme: book of enoch** (1 pieces, none independently corroborated yet)
 - **eotc: ot-distinctive: Prayer of Manasseh** (1 pieces, none independently corroborated yet)
 - **eotc: marian: Marian Anaphora and homilies** (1 pieces, none independently corroborated yet)
 - **eotc: ot-canon: Leviticus** (1 pieces, none independently corroborated yet)
 - **eotc: nt-canon: Jude** (1 pieces, none independently corroborated yet)
+- **glm-swarm: Astronomical Book** (1 pieces, none independently corroborated yet)
