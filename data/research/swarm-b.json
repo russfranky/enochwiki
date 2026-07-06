@@ -1,0 +1,406 @@
+{
+  "generatedBy": "glm-swarm worker B",
+  "topics": ["Manichaean Book of Giants","Apocalypse of Peter","Shepherd of Hermas","Enoch patristic reception"],
+  "sources": [
+    {
+      "url": "https://www.iranicaonline.org/articles/giants-the-book-of/",
+      "title": "GIANTS, THE BOOK OF - Encyclopaedia Iranica",
+      "domain": "iranicaonline.org",
+      "category": "academic",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.78,
+      "author": null,
+      "summary": "Scholarly encyclopedia entry on Mani's Book of Giants, detailing its sources in Enochic literature, the correspondence of giant names between Aramaic and Manichaean versions, and the Qumran fragments that show affinities with Manichaean traditions.",
+      "content": "The main sources, already named by Isaac de Beausobre, are: the apocryphal works ascribed to the prophet Enoch (and a Graphḗ tōn Gigánton). Jozef T. Milik managed to identify fragments of a work from the Enoch literature among the Qumrān texts. This work does not appear in later Christian versions, but shows such affinities with the Manichean pieces that he provisionally referred to it as a Book of Giants. It certainly served Mani as the main source of his Book of Giants, as shown by textual comparisons and the similarity or correspondence of many names: Aram. Šemīḥazah = Man. Šahmīzād, Aram. Ohyah = Man. Sām, explained in a Sogd. text as [ʾwx]yʾ, Aram. Hahyah = Man. Narīmān, explained in the same place as ʾxyʾ, Aram. Baraqʾēl = Man. Wirogdād, Aram. Māhaway (mhwy) = Man. Māhaway, Aram. Ḥobābiš (ḥwbbš) = Man. (Mid. Pers.) hwbʾbyš.",
+      "keywords": "Manichaean Book of Giants",
+      "publishedAt": null,
+      "evidences": [
+        {
+          "scriptureRef": "1-enoch 6-7",
+          "claim": "The Watchers descend and beget giants, including named giants like Ohya and Hahyah",
+          "corroboration": "Shows the correspondence of giant names between Aramaic Enochic tradition and Manichaean Book of Giants: Ohyah = Sām, Hahyah = Narīmān",
+          "alignment": "contextualizes",
+          "confidence": 0.8,
+          "notes": "Establishes Mani's direct dependence on Enochic Book of Giants tradition",
+          "reviewState": "draft",
+          "blindspot": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.jstor.org/stable/26375154",
+      "title": "Reimagining Enoch in Sasanian Babylonia in Light of Zoroastrian and Manichaean Traditions",
+      "domain": "jstor.org",
+      "category": "academic",
+      "credibilityTier": "peer-reviewed",
+      "credibility": 0.9,
+      "author": null,
+      "summary": "Examines Enoch/Metatron traditions in Babylonian Talmud and 3 Enoch in light of Zoroastrian and Manichaean Yima traditions, noting identification of Yima with the son of man in Sogdian fragments of Manichaean Book of Giants.",
+      "content": "The article examines the reception and transmission of traditions about the figure of Enoch/Metatron in Sasanian Babylonia, and particularly the emergence of Metatron speculation in the Babylonian Talmud and 3 Enoch, by reading these traditions in light of Zoroastrian and Manichaean reports of the Iranian hero, Yima. The figure of Enoch/Metatron was reimagined and reconfigured by the Babylonian authors so as to resemble local Yima traditions, though the process of translating and repackaging the figure of Enoch in the image of his Iranian counterpart was not merely a conscious act of comparison, in which an analogy is drawn in an attempt to highlight particular aspects common to both figures; it was an expression of a more comprehensive discourse of identification. Beyond close parallels in the depictions of these figures, the connections between Metatron speculation and the Zoroastrian and Manichaean Yima traditions are supported by an identification of Yima with the son of man implied in two Sogdian fragments of the Manichaean Book of Giants.",
+      "keywords": "Manichaean Book of Giants",
+      "publishedAt": null,
+      "evidences": [
+        {
+          "scriptureRef": "1-enoch 1-36",
+          "claim": "Enoch as exalted heavenly figure and mediator",
+          "corroboration": "Shows Enoch/Metatron reimagined in light of Iranian Yima traditions in Sasanian Babylonia, with Manichaean Book of Giants fragments identifying Yima with son of man",
+          "alignment": "contextualizes",
+          "confidence": 0.7,
+          "notes": "Demonstrates cross-cultural influence on Enochic traditions in late antiquity",
+          "reviewState": "draft",
+          "blindspot": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.academia.edu/25989215/Some_New_Sogdian_Fragments_Related_to_Mani_s_Book_of_Giants_and_the_Problem_of_the_Influence_of_Jewish_Enochic_Literature",
+      "title": "Some New Sogdian Fragments Related to Mani's Book of Giants and the Problem of the Influence of Jewish Enochic Literature",
+      "domain": "academia.edu",
+      "category": "academic",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.7,
+      "author": null,
+      "summary": "Presents previously unpublished Sogdian fragments from the Turfan collection related to Mani's Book of Giants, including texts concerning the giant Sāhm and showing Mani's engagement with Enochic themes.",
+      "content": "This paper presents previously unpublished Sogdian fragments related to Mani's Book of Giants, shedding light on the influence of Jewish Enochic literature on Mani's religious development. Two significant texts are introduced: one concerning the giant Sāhm and his interactions with other giants, and another reflecting Mani's interest in Enochic themes. The findings offer new insights into the complex interplay between Manichaean and Jewish traditions. The study indicates that Mani integrated themes from Jewish Enochic literature, such as the fall of angels, into his Book of Giants, exemplified by Sogdian fragments depicting cosmic struggles and rebel stars. Particularly, the lamentation of bound stars showcases similarities to motifs found in Enochic texts.",
+      "keywords": "Manichaean Book of Giants",
+      "publishedAt": null,
+      "evidences": [
+        {
+          "scriptureRef": "1-enoch 7",
+          "claim": "Giant Sāhm (Ohya) and other giants as offspring of Watchers",
+          "corroboration": "New Sogdian fragments concerning giant Sāhm and Mani's integration of Enochic themes like fall of angels",
+          "alignment": "contextualizes",
+          "confidence": 0.75,
+          "notes": "Primary source material from Turfan collection showing Manichaean adaptation",
+          "reviewState": "draft",
+          "blindspot": true
+        }
+      ]
+    },
+    {
+      "url": "https://bible.ertale.com/ethiopiancanon/clement2/",
+      "title": "Ethiopic Clement 2 | The Ethiopian Bible in English",
+      "domain": "ertale.com",
+      "category": "history",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.72,
+      "author": "M. R. James",
+      "summary": "English translation of the Ethiopic version of the Apocalypse of Peter, preserved as book 2 of the Ethiopic Clement corpus, based on M.R. James' 1924 translation from the public domain.",
+      "content": "English translation: M. R. James, 1924 ('The Apocryphal New Testament'; Oxford: Clarendon Press, section 'D. The Ethiopic Text', within the Apocalypse of Peter). Public domain (US, pre-1929). The Ethiopic version of the Apocalypse of Peter is preserved as book 2 of the Ethiopic Clement (Mashafa Qalementos) corpus, and is the only one of the seven books of Ethiopic Clement currently available in a public-domain English translation. Books 1 and 3 to 7 are blocked: modern compilations by Lumpkin and Mikhail are copyrighted, and no public-domain English source is currently available. James's Greek-fragment sections (the Akhmim fragment, the Bodleian leaf, and the Sibylline Oracles paraphrase) are omitted as they are not part of the Ge'ez recension. James's Ethiopic translation has no intrinsic chapter or verse divisions; we ship each paragraph as one chapter rendered as a single verse.",
+      "keywords": "Apocalypse of Peter",
+      "publishedAt": "1924",
+      "evidences": [
+        {
+          "scriptureRef": "apocalypse-of-peter",
+          "claim": "Detailed tours of hell with specific punishments for different sins",
+          "corroboration": "Provides the actual Ethiopic text of the Apocalypse of Peter with its detailed hell tour narrative",
+          "alignment": "supports",
+          "confidence": 0.9,
+          "notes": "Primary source translation of the complete Ethiopic recension",
+          "reviewState": "draft",
+          "blindspot": false
+        }
+      ]
+    },
+    {
+      "url": "https://archive.org/details/youreyeswillbeop0000buch",
+      "title": "Your eyes will be opened : a study of the Greek (Ethiopic) Apocalypse of Peter",
+      "domain": "archive.org",
+      "category": "academic",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.75,
+      "author": "Dennis D. Buchholz",
+      "summary": "Scholarly monograph providing critical analysis of the Greek and Ethiopic versions of the Apocalypse of Peter, published by Scholars Press in 1988 as part of the SBL dissertation series.",
+      "content": "Your eyes will be opened : a study of the Greek (Ethiopic) Apocalypse of Peter : Buchholz, Dennis D., 1947- : Free Download, Borrow, and Streaming : Internet Archive. Publication date 1988 Topics Apocalypse of Peter (Greek-Ethiopic version) -- Criticism, interpretation, etc, Apocalypse of Peter (Greek-Ethiopic version), Apocalypsis Petri, Bible. New Testament -- Critique, interprétation, etc, 11.37 Apocrypha and pseudepigraphs, Apocalyps van Petrus (apocrief), Gnosticisme Publisher Atlanta, Ga. : Scholars Press Collection claremont_school_of_theology; internetarchivebooks; printdisabled Contributor Internet Archive Language English Item Size 847.2M",
+      "keywords": "Apocalypse of Peter",
+      "publishedAt": "1988",
+      "evidences": [
+        {
+          "scriptureRef": "apocalypse-of-peter",
+          "claim": "The Apocalypse of Peter exists in both Greek fragment and Ethiopic complete versions",
+          "corroboration": "Critical scholarly study comparing and analyzing both Greek and Ethiopic recensions",
+          "alignment": "contextualizes",
+          "confidence": 0.85,
+          "notes": "Standard academic reference for textual criticism of the Apocalypse of Peter",
+          "reviewState": "draft",
+          "blindspot": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.brepolsonline.net/content/journals/10.1484/J.APOCRA.5.112694",
+      "title": "Towards a Re-Edition of the Ethiopic Dossier of the Apocalypse of Peter : A Few Remarks on the Ethiopic Manuscript Witnesses",
+      "domain": "brepolsonline.net",
+      "category": "academic",
+      "credibilityTier": "peer-reviewed",
+      "credibility": 0.9,
+      "author": null,
+      "summary": "Codicological analysis of the two Ethiopic manuscripts transmitting the Apocalypse of Peter dossier (BnF d'Abbadie 51 and Lake Ṭānā Ṭānāsee 35), showing the text goes back to a larger collection and noting its heterodox character.",
+      "content": "The second-century Apocalypse of Peter (ApPt) is transmitted in its entirety only in an Arabic-based Ethiopic translation within a pseudoclementine dossier composed of The second coming of Christ and the resurrection of the dead and the A speech on the glorious and arcane mystery of the judgment of sinners and a dispute concerning this speech. The codicological analysis of the two manuscripts – BnF, éthiopien, d'Abbadie 51 (P), and Lake Ṭānā, Ṭānāsee 35 = Kebrān 35 (T) – transmitting the dossier shows that the Ethiopic ApPt dossier goes back to a larger collection. Moreover, there are clues that the blank of a few lines that interrupts, without any apparent omission or material loss, the text of ms P on fol. 141vb, is most probably due to team work. The colophon of ms T confirms the marked heterodox character of the Ethiopic dossier.",
+      "keywords": "Apocalypse of Peter",
+      "publishedAt": null,
+      "evidences": [
+        {
+          "scriptureRef": "apocalypse-of-peter",
+          "claim": "The Ethiopic Apocalypse of Peter is preserved in a pseudoclementine dossier with heterodox characteristics",
+          "corroboration": "Manuscript analysis shows the Ethiopic dossier goes back to a larger collection and has marked heterodox character per colophon",
+          "alignment": "contextualizes",
+          "confidence": 0.8,
+          "notes": "Important for understanding the textual transmission and theological context",
+          "reviewState": "draft",
+          "blindspot": true
+        }
+      ]
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/0951820710364880",
+      "title": "'ZR'L, The Angel of Death and the Ethiopic Apocalypse of Peter",
+      "domain": "sagepub.com",
+      "category": "academic",
+      "credibilityTier": "peer-reviewed",
+      "credibility": 0.9,
+      "author": "S.R. Burge",
+      "summary": "Analyzes the angel 'Ezrā'ēl as an angel of Hell in the Ethiopic Apocalypse of Peter, exploring possible Islamic influence on the use of this name for the Angel of Death and its implications for dating the text.",
+      "content": "While the angel 'Ezrā'ēl, an angel of Hell, appears in the Ethiopic Apocalypse of Peter, the name 'Ezrā'ēl remains obscure. Where did this name come from? Islamic tradition may provide the answer, since the same angelic name 'Azrā'īl or 'Izrā'īl, is a common name for the Angel of Death. This article assesses the history of the use of this name and asks whether Islamic tradition influenced its use in the Ethiopic version of the Apocalypse of Peter. In addition, this study asks whether it is possible also to use the inclusion of the name 'Ezrā'ēl as a means of dating the text.",
+      "keywords": "Apocalypse of Peter",
+      "publishedAt": "2010",
+      "evidences": [
+        {
+          "scriptureRef": "apocalypse-of-peter",
+          "claim": "The angel 'Ezrā'ēl appears as an angel of Hell in the Ethiopic version",
+          "corroboration": "Scholarly analysis of this angel's name and possible Islamic influence, suggesting cross-cultural exchange in angelology",
+          "alignment": "contextualizes",
+          "confidence": 0.75,
+          "notes": "Important for understanding the development of angel of death traditions",
+          "reviewState": "draft",
+          "blindspot": true
+        }
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Shepherd_of_Hermas",
+      "title": "The Shepherd of Hermas",
+      "domain": "wikipedia.org",
+      "category": "history",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.65,
+      "author": null,
+      "summary": "Overview article on the Shepherd of Hermas, a second-century Christian work considered valuable but not canonical by early Church Fathers, preserved in Codex Sinaiticus and addressed by the Muratorian fragment.",
+      "content": "The Shepherd of Hermas (Ancient Greek: Ποιμὴν τοῦ Ἑρμᾶ, romanized: Poimēn tou Herma; Latin: Pastor Hermae), sometimes just called The Shepherd, is a Christian literary work of the late first half of the second century, considered a valuable book by many Christians, but not considered canonical scripture by the early Church Fathers such as Irenaeus. The Shepherd was popular among Christians in the 2nd, 3rd, and 4th centuries. It is found in the Codex Sinaiticus. The Muratorian fragment identifies the author of The Shepherd as Hermas, the brother of Pope Pius I. The Muratorian Fragment also explicitly states that The Shepherd of Hermas is useful for private reading but not to be read publicly in the church because it is not apostolic.",
+      "keywords": "Shepherd of Hermas",
+      "publishedAt": null,
+      "evidences": [
+        {
+          "scriptureRef": "shepherd-of-hermas",
+          "claim": "The Shepherd of Hermas was considered useful but not canonical scripture",
+          "corroboration": "Muratorian fragment states it should be read privately but not publicly in church because it is not apostolic",
+          "alignment": "contextualizes",
+          "confidence": 0.85,
+          "notes": "Key source for understanding early canon formation and the book's borderline status",
+          "reviewState": "draft",
+          "blindspot": false
+        }
+      ]
+    },
+    {
+      "url": "https://brill.com/view/journals/scri/3/1/article-p1_2.xml",
+      "title": "THE ANGELOMORPHIC SPIRIT IN EARLY CHRISTIANITY: REVELATION, THE SHEPHERD OF HERMAS, CLEMENT OF ALEXANDRIA",
+      "domain": "brill.com",
+      "category": "academic",
+      "credibilityTier": "peer-reviewed",
+      "credibility": 0.9,
+      "author": null,
+      "summary": "Scholarly article arguing for the presence of 'angelomorphic Pneumatology' in Revelation, the Shepherd of Hermas, and Clement of Alexandria, where spirit designates angelic presence within a binitarian theological framework.",
+      "content": "Building on John R. Levison's study on «The Angelic Spirit in Early Judaism», which documented the widespread use of the term «spirit» as a designation for an angelic presence, this essay argues the presence of an «angelomorphic Pneumatology» in three early Christian sources: the book of Revelation, the Shepherd of Hermas, and Clement of Alexandria. It is argued that angelomorphic Pneumatology occurs in tandem with Spirit Christology, within a binitarian theological framework. This larger theological articulation results in a quasi-Trinitarian structure of the divine world, featuring the Father, the Son/Spirit, and the angelomorphic Spirit. The final section of the essay proposes a theological interpretation of these data.",
+      "keywords": "Shepherd of Hermas",
+      "publishedAt": null,
+      "evidences": [
+        {
+          "scriptureRef": "shepherd-of-hermas",
+          "claim": "The Shepherd uses pneuma (spirit) to designate angelic entities",
+          "corroboration": "Scholarly analysis showing angelomorphic pneumatology in Hermas alongside Spirit Christology in binitarian framework",
+          "alignment": "contextualizes",
+          "confidence": 0.85,
+          "notes": "Important for understanding early Christian angelology and pneumatology",
+          "reviewState": "draft",
+          "blindspot": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.degruyter.com/document/doi/10.1163/ej.9789004174146.i-238.27",
+      "title": "Chapter Four. Angelomorphic Pneumatology In The Shepherd Of Hermas",
+      "domain": "degruyter.com",
+      "category": "academic",
+      "credibilityTier": "peer-reviewed",
+      "credibility": 0.9,
+      "author": null,
+      "summary": "Detailed analysis of angelomorphic pneumatology in the Shepherd of Hermas, examining the text's use of pneuma for angelic entities, for the Son of God, and proposing a rereading of the Fifth Similitude.",
+      "content": "This chapter considers an early Christian apocalypse which enjoyed huge popularity in the early centuries, and which Clement of Alexandria read with evident affection and reverence: the Shepherd of Hermas. It discusses, first, the Shepherds use of πνeῦμα for angelic entities, then its use of πνeῦμα for the Son of God, and finally proposes a rereading of the Fifth Similitude, the ultimate test case for any theory on the Shepherds views on angels and spirits. In submitting to the current scholarly consensus, the author assumes that the Shepherd of Hermas is a unitary text from the early decades of the second century. It appears, in conclusion, that together with Revelation and Clements elders, the Shepherd is part of this early Christian tradition that reworked the Second Temple notion of the seven principal angels, using it in the service of pneumatology.",
+      "keywords": "Shepherd of Hermas",
+      "publishedAt": null,
+      "evidences": [
+        {
+          "scriptureRef": "shepherd-of-hermas",
+          "claim": "The Shepherd reworks Second Temple notions of seven principal angels in service of pneumatology",
+          "corroboration": "Detailed analysis showing Hermas uses pneuma for both angelic entities and the Son of God, part of early Christian tradition",
+          "alignment": "contextualizes",
+          "confidence": 0.85,
+          "notes": "Key source for understanding development of early Christian angelology",
+          "reviewState": "draft",
+          "blindspot": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.encyclopedia.com/philosophy-and-religion/christianity/christianity-general/shepherd-hermas",
+      "title": "Shepherd Of Hermas | Encyclopedia.com",
+      "domain": "encyclopedia.com",
+      "category": "history",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.72,
+      "author": null,
+      "summary": "Encyclopedia entry on the Shepherd of Hermas covering its authorship, dating, Christology, and canon history, noting it was regarded as quasi-canonical by some Fathers but rejected by Athanasius.",
+      "content": "The Muratorian Canon states that Hermas was the brother of Pope pius i (d. c. 154) and had written during his pontificate. Hermas himself refers to a contemporary Clement of Rome (Vis. 2.4.3) as an authority in the Church, but this is not necessarily Pope clement i (fl. c. 96). Origen's identification of Hermas with Rom 16.14 is regarded as an attempt to provide him with some kind of apostolic background. A date of composition between 140 and 155 fits the period given by the Muratorian Canon, while internal evidence indicates that the work was written after a period of peace. The fifth Vision is clearly intended as an introduction to what follows, for Hermas has a vision of the angel of repentance wearing shepherd dress; the angel dictates the 12 Mandates. The third to the sixth have some affinity with the Qumran Manual of Discipline(iii.13–iv.26), and throughout there are distinct signs of Jewish influence, as in the conflict between the good desire and the evil desire described in the 12th Mandate. Hermas also commends such practices as cheerfulness, patience, continence, and fasting. Hermas was more concerned with morals than with theology, and his Christological thinking is confused. He emphasizes that there is only one God (Man. 1). The Holy Spirit is identified with the Son of God before the Incarnation, and Christ becomes the adopted Son after His humanity is taken up into Heaven (Sim. 5.6.5). Christ is the rock on which the Church is built, the door through which all stones must be carried (Sim. 9), but at times He seems to be no more than an angel. The Shepherd was regarded as quasi-canonical by St. irenaeus, clement of alexandria, origen, and Tertullian in his pre-Montanist period. athanasius set it outside the Canon (probably because of the possibly Arian implications of Man. 1), but valued its moral teaching, as did Eusebius.",
+      "keywords": "Shepherd of Hermas",
+      "publishedAt": null,
+      "evidences": [
+        {
+          "scriptureRef": "shepherd-of-hermas",
+          "claim": "The Shepherd was regarded as quasi-canonical by Irenaeus, Clement of Alexandria, Origen, and Tertullian but rejected by Athanasius",
+          "corroboration": "Encyclopedia entry documenting the canon history and varying reception among Church Fathers",
+          "alignment": "contextualizes",
+          "confidence": 0.8,
+          "notes": "Comprehensive overview of the book's canonical reception history",
+          "reviewState": "draft",
+          "blindspot": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/0402.htm",
+      "title": "CHURCH FATHERS: On the Apparel of Women (Tertullian)",
+      "domain": "newadvent.org",
+      "category": "history",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.75,
+      "author": "Tertullian",
+      "summary": "Tertullian's defense of the Book of Enoch in Chapter 3, arguing for its genuineness based on Noah's preservation of Enoch's teachings through hereditary tradition, and noting Jude's citation of Enoch.",
+      "content": "I am aware that the Scripture of Enoch, which has assigned this order (of action) to angels, is not received by some, because it is not admitted into the Jewish canon either. I suppose they did not think that, having been published before the deluge, it could have safely survived that world-wide calamity, the abolisher of all things. If that is the reason (for rejecting it), let them recall to their memory that Noah, the survivor of the deluge, was the great-grandson of Enoch himself; and he, of course, had heard and remembered, from domestic renown and hereditary tradition, concerning his own great-grandfather's grace in the sight of God, and concerning all his preachings; since Enoch had given no other charge to Methuselah than that he should hand on the knowledge of them to his posterity. Noah therefore, no doubt, might have succeeded in the trusteeship of (his) preaching; or, had the case been otherwise, he would not have been silent alike concerning the disposition (of things) made by God, his Preserver, and concerning the particular glory of his own house. But since Enoch in the same Scripture has preached likewise concerning the Lord, nothing at all must be rejected by us which pertains to us; and we read that every Scripture suitable for edification is divinely inspired. By the Jews it may now seem to have been rejected for that (very) reason, just like all the other (portions) nearly which tell of Christ. Nor, of course, is this fact wonderful, that they did not receive some Scriptures which spoke of Him whom even in person, speaking in their presence, they were not to receive. To these considerations is added the fact that Enoch possesses a testimony in the Apostle Jude.",
+      "keywords": "Enoch patristic reception",
+      "publishedAt": null,
+      "evidences": [
+        {
+          "scriptureRef": "jude 1:14-15",
+          "claim": "Jude cites Enoch as a prophetic authority",
+          "corroboration": "Tertullian defends Enoch's genuineness and notes that Enoch possesses a testimony in the Apostle Jude",
+          "alignment": "supports",
+          "confidence": 0.9,
+          "notes": "Primary patristic source showing Tertullian's acceptance of Enoch as inspired",
+          "reviewState": "draft",
+          "blindspot": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.newadvent.org/cathen/14520c.htm",
+      "title": "CATHOLIC ENCYCLOPEDIA: Tertullian",
+      "domain": "newadvent.org",
+      "category": "history",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.75,
+      "author": null,
+      "summary": "Encyclopedia entry on Tertullian noting that he cites the Book of Enoch as inspired and thinks those who rejected it were wrong, while also documenting his canon of Scripture.",
+      "content": "Tertullian's canon of the Old Testament included the deuterocanonical books, since he quotes most of them. He also cites the Book of Enoch as inspired, and thinks those who rejected it were wrong. He seems also to recognize IV Esdras, and the Sibyl, though he admits that there are many Sibylline forgeries. In the New Testament he knows the Four Gospels, Acts, Epistles of St. Paul, I Peter (Ad Ponticos), I John, Jude, Apocalypse. He does not know James and II Peter, but we cannot tell that he did not know II, III John. He attributes Hebrews to St. Barnabas. He rejects the Pastor of Hermas and says that many councils of the Psychici had also rejected it.",
+      "keywords": "Enoch patristic reception",
+      "publishedAt": null,
+      "evidences": [
+        {
+          "scriptureRef": "jude 1:14-15",
+          "claim": "Tertullian considered the Book of Enoch as inspired scripture",
+          "corroboration": "Encyclopedia entry confirming Tertullian cites Enoch as inspired and considered rejection of it wrong",
+          "alignment": "supports",
+          "confidence": 0.85,
+          "notes": "Secondary source confirming Tertullian's high view of Enoch",
+          "reviewState": "draft",
+          "blindspot": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.newadvent.org/cathen/01602a.htm",
+      "title": "CATHOLIC ENCYCLOPEDIA: The Book of Enoch",
+      "domain": "newadvent.org",
+      "category": "history",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.75,
+      "author": null,
+      "summary": "Encyclopedia entry on the Book of Enoch documenting its high esteem among patristic writers due to Jude's quotation, with Clement of Alexandria, Tertullian, Origen, and Augustine supposing it to be genuine.",
+      "content": "Passing to the patristic writers, the Book of Henoch enjoyed a high esteem among them, mainly owing to the quotation in Jude. The so-called Epistle of Barnabas twice cites Henoch as Scripture. Clement of Alexandria, Tertullian, Origen, and even St. Augustine suppose the work to be a genuine one of the patriarch. But in the fourth century the Henoch writings lost credit and ceased to be quoted. After an allusion by an author of the beginning of the ninth century, they disappear from view. Its body contains an account of the fall of the angelic Watchers, their punishment, and the patriarch's intervention in their history. It is based upon Genesis 6:2: The sons of God seeing the daughters of men, that they were fair, took to themselves wives of all they chose. The narrative is intended to explain the origin of sin and evil in the world and in this connection lays very little stress on the disobedience of our First Parents.",
+      "keywords": "Enoch patristic reception",
+      "publishedAt": null,
+      "evidences": [
+        {
+          "scriptureRef": "jude 1:14-15",
+          "claim": "The Book of Enoch enjoyed high esteem among patristic writers due to Jude's quotation",
+          "corroboration": "Documents that Clement of Alexandria, Tertullian, Origen, and Augustine supposed Enoch to be genuine, though it lost credit in the fourth century",
+          "alignment": "contextualizes",
+          "confidence": 0.85,
+          "notes": "Important overview of patristic reception history of Enoch",
+          "reviewState": "draft",
+          "blindspot": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.tyndalebulletin.org/article/29438-reassessing-jude-s-use-of-enochic-traditions-with-notes-on-their-later-reception-history.pdf",
+      "title": "REASSESSING JUDE'S USE OF ENOCHIC TRADITIONS",
+      "domain": "tyndalebulletin.org",
+      "category": "academic",
+      "credibilityTier": "peer-reviewed",
+      "credibility": 0.9,
+      "author": null,
+      "summary": "Scholarly article reassessing Jude's use of Enochic traditions, examining the textual relationship between Jude 14-15 and 1 Enoch 1:9, and discussing the later reception history including Tertullian's defense of Enoch's genuineness.",
+      "content": "A consensus exists today – nearly equivalent to established fact – that when Jude in New Testament refers to Enoch in vv. 14-15, he is quoting a version of 1 Enoch. The genuineness of Enoch is discussed as early as Tertullian, On the Clothing of Women 1.3. This is significant, since these traditions influenced Christianity mainly in Egypt/North Africa, Asia Minor, Palestine, and Syria. That is to say, Christianity in the West was largely unaffected by the Enoch traditions. In addition, according to 2 Peter 2:4 and Jude 6, the angels who sinned were cast into hell and committed to pits of darkness. Text in common with Jude 14-15 is underlined. Jude 14-15: Προεφήτευσεν δὲ καὶ τούτοις ἕβδομος ἀπὸ Ἀδὰμ Ἑνὼχ λέγων· ἰδοὺ ἦλθεν κύριος ἐν ἁγίαις μυριάσιν αὐτοῦ 15 ποιῆσαι κρίσιν κατὰ πάντων καὶ ἐλέγξαι πᾶσαν ὴν περὶ πάντων τῶν ἔ ων ἀσεβείας αὐτῶν ὧν ἠ πάντων τῶν ηρῶν ὧν ἐ ῖς. Ethiopic 1 Enoch 1.9: And ibus, facere ietatis eorum [Jud 14b-15a]. Vetus Latina, K Text (North Africa): ecce venit cum multis milibus nuntiorum suorum facere iudicium de omnibus et perdere omn et arguere de omnibus. On the versions in Greek, the text in Jude and the text in Enoch have 72 per cent of all words in common.",
+      "keywords": "Enoch patristic reception",
+      "publishedAt": null,
+      "evidences": [
+        {
+          "scriptureRef": "jude 1:14-15",
+          "claim": "Jude quotes 1 Enoch 1:9 with 72% of words in common between the texts",
+          "corroboration": "Detailed textual analysis showing the relationship between Jude and 1 Enoch, and noting Tertullian's early discussion of Enoch's genuineness",
+          "alignment": "contextualizes",
+          "confidence": 0.9,
+          "notes": "Technical analysis of the textual relationship and reception history",
+          "reviewState": "draft",
+          "blindspot": true
+        }
+      ]
+    },
+    {
+      "url": "http://researchrepository.murdoch.edu.au/id/eprint/24595",
+      "title": "Jude and 1 Enoch: From Tertullian to Augustine on the 'Apostle Judes' citation of 1 Enoch",
+      "domain": "murdoch.edu.au",
+      "category": "academic",
+      "credibilityTier": "reputable-reference",
+      "credibility": 0.75,
+      "author": null,
+      "summary": "Scholarly thesis exploring the complicated relationship between canon and authority through Jude's citation of 1 Enoch, surveying strategies early Christians adopted from Tertullian to Augustine for dealing with Jude's use of an apocryphon.",
+      "content": "There is perhaps no richer cite in early Christianity for exploring the complicated and uneasy relationship between the concepts of canon, revelation, authority, and tradition than in the case of Jude's reliance upon 1 Enoch (and, to a lesser extent, the Assumption of Moses). Not only does Jude cite 1 Enoch verbatim (his only scriptural citation), but the language, imagery, and eschatology of the entire epistle is heavily indebted to this great (and once quite popular) apocryphon. What is the meaning of a canon that includes the Epistle of Jude, but rejects that text to which Jude so reverentially refers? Is Jude not to be trusted when it says that Enoch authored the words from 1 Enoch? The problem is not made any easier by the way Jude cites 1 Enoch. In fact, the language of Jude, and of other early Christians, belies the claim of some modern scholarship that the practice of pseudepigraphy, especially in testamentary or apocalyptic genres, was so common as to be transparent. In fact, ancients were often quite credulous. Jude identified the author of 1 Enoch as the antediluvian seventh from Adam, and Tertullian addressed such concrete problems as how Enoch's teachings could have survived the flood.",
+      "keywords": "Enoch patristic reception",
+      "publishedAt": null,
+      "evidences": [
+        {
+          "scriptureRef": "jude 1:14-15",
+          "claim": "Jude's citation of 1 Enoch creates canonical tension since Jude is accepted but Enoch is rejected",
+          "corroboration": "Scholarly analysis of how early Christians from Tertullian to Augustine dealt with this problem, including Tertullian's defense of Enoch's survival through Noah",
+          "alignment": "contextualizes",
+          "confidence": 0.85,
+          "notes": "Important for understanding the development of canon and authority",
+          "reviewState": "draft",
+          "blindspot": true
+        }
+      ]
+    }
+  ]
+}
