@@ -17,9 +17,6 @@
 
 import { PrismaClient } from '@prisma/client'
 import { createHash } from 'node:crypto'
-import { readFileSync } from 'node:fs'
-import { homedir } from 'node:os'
-import { join } from 'node:path'
 
 const db = new PrismaClient()
 const argv = process.argv.slice(2)
@@ -32,10 +29,12 @@ const CHUNK_CHARS = parseInt(opt('--chunk-chars', '1400'), 10)
 const OVERLAP = 180
 const MAX_CHUNKS_PER_DOC = 8
 
-const KEY = process.env.ZAI_API_KEY || process.env.Z_AI_API_KEY ||
-  (() => { try { return readFileSync(join(homedir(), '.config/glm/z-ai.key'), 'utf8').trim() } catch { return '' } })()
-const BASE_URL = process.env.ZAI_BASE_URL || 'https://api.z.ai/api/paas/v4'
-const EMBED_MODEL = process.env.ZAI_EMBED_MODEL || 'embedding-3'
+// Pluggable OpenAI-compatible embeddings endpoint (see src/lib/embedder.ts + docs/rag.md).
+// Ollama (local, free): EMBED_BASE_URL=http://localhost:11434/v1 EMBED_MODEL=nomic-embed-text
+const EMBED_BASE_URL = (process.env.EMBED_BASE_URL || '').replace(/\/$/, '')
+const EMBED_MODEL = process.env.EMBED_MODEL || ''
+const EMBED_API_KEY = process.env.EMBED_API_KEY || ''
+const embedConfigured = () => Boolean(EMBED_BASE_URL && EMBED_MODEL)
 
 const hash = (s) => createHash('sha1').update(s).digest('hex')
 const want = (kind) => !ONLY.length || ONLY.includes(kind)
@@ -124,12 +123,12 @@ async function buildChunks() {
   return added
 }
 
-// ── z.ai embeddings (OpenAI-shaped) ──────────────────────────────────────────
+// ── OpenAI-compatible embeddings (Ollama / OpenAI / Voyage / …) ───────────────
 async function embedBatch(texts) {
-  if (!KEY) return texts.map(() => null)
+  if (!embedConfigured()) return texts.map(() => null)
   try {
-    const res = await fetch(`${BASE_URL}/embeddings`, {
-      method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${KEY}` },
+    const res = await fetch(`${EMBED_BASE_URL}/embeddings`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json', ...(EMBED_API_KEY ? { Authorization: `Bearer ${EMBED_API_KEY}` } : {}) },
       body: JSON.stringify({ model: EMBED_MODEL, input: texts }),
     })
     if (!res.ok) { console.error(`  embed HTTP ${res.status}: ${(await res.text()).slice(0, 120)}`); return texts.map(() => null) }
@@ -141,7 +140,7 @@ async function embedBatch(texts) {
 }
 
 async function embedMissing() {
-  if (!KEY) { console.error('[rag-index] --embed needs ZAI_API_KEY (env or ~/.config/glm/z-ai.key) — skipping embed phase'); return { embedded: 0, dim: 0 } }
+  if (!embedConfigured()) { console.error('[rag-index] --embed needs EMBED_BASE_URL + EMBED_MODEL (e.g. Ollama: EMBED_BASE_URL=http://localhost:11434/v1 EMBED_MODEL=nomic-embed-text) — skipping embed phase'); return { embedded: 0, dim: 0 } }
   const pending = await db.ragChunk.findMany({ where: { embedding: null }, select: { id: true, text: true }, take: LIMIT })
   console.error(`[rag-index] embedding ${pending.length} chunks via ${EMBED_MODEL}…`)
   let embedded = 0, dim = 0

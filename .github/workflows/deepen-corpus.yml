@@ -63,6 +63,13 @@ jobs:
           node scripts/coverage-map.mjs
           node scripts/export-snapshots.mjs
 
+      - name: Refresh RAG index (FTS + chunks over the grown corpus)
+        # Keyword/FTS retrieval works with no embeddings. Semantic vectors are opt-in:
+        # set EMBED_BASE_URL + EMBED_MODEL (e.g. an Ollama sidecar) and add `--embed`.
+        run: |
+          bun scripts/setup-fts.ts
+          node scripts/rag-index.mjs
+
       - name: Commit grown corpus
         run: |
           git config user.name 'enochwiki-bot'

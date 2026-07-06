@@ -12,7 +12,7 @@ changes. That's the whole design goal — *effective now, trivial to deepen late
 |---|---|
 | [`src/lib/rag-retrieval.ts`](../src/lib/rag-retrieval.ts) | The seam. `retrieve(query, opts)` returns ranked `RetrievedChunk[]` across all corpus kinds; `buildContext()` formats them for an LLM. Backend is auto-selected. |
 | [`src/app/api/rag/route.ts`](../src/app/api/rag/route.ts) | `GET /api/rag?q=…` → retrieval only. `POST /api/rag {question}` → retrieval + grounded GLM answer with citations. |
-| [`src/lib/zai-api.ts`](../src/lib/zai-api.ts) | `embedText()` / `embedTexts()` — z.ai embeddings; the only external call the vector path needs. Returns `null` gracefully when no key/balance. |
+| [`src/lib/embedder.ts`](../src/lib/embedder.ts) | Pluggable, provider-agnostic embedder — POSTs to any OpenAI-compatible `/embeddings` endpoint (Ollama, OpenAI, Voyage, …). Returns `null` when unconfigured, so the vector path stays dormant instead of erroring. |
 | [`scripts/rag-index.mjs`](../scripts/rag-index.mjs) | Chunks the corpus into `RagChunk` rows (text now, embeddings on `--embed`). Idempotent via `contentHash`. |
 | `RagChunk` (Prisma) | Persistent, embeddable chunk store. `embedding Bytes?` is `NULL` until you embed. |
 
@@ -46,18 +46,41 @@ curl -X POST http://localhost:3000/api/rag -H 'content-type: application/json' \
 Filter by corpus kind or credibility:
 `/api/rag?q=azazel&kinds=source,evidence&minCredibility=0.75`.
 
-## Turn on semantic vector search later (three steps)
+## Turn on semantic vector search (point it at an embeddings endpoint)
 
-1. Ensure `ZAI_API_KEY` (or `~/.config/glm/z-ai.key`) is set and the account has
-   embeddings quota. Model defaults to `embedding-3` (`ZAI_EMBED_MODEL` to override).
-2. Embed the chunks:
-   ```bash
-   bun run rag:index          # make sure chunks exist
-   bun run rag:embed          # fills RagChunk.embedding
-   ```
-3. Nothing else. `retrieve()` sees embedded chunks (`hasEmbeddings()`), prefers the
-   vector backend, and `GET/POST /api/rag` start returning semantic hits. Re-run
-   `rag:embed` after each churn to embed the new chunks.
+The embedder is provider-agnostic (`src/lib/embedder.ts`) — it needs any
+OpenAI-compatible `/embeddings` endpoint. Set three env vars, embed, done.
+
+> Note: the GLM Coding Plan powering the churn does **not** expose an embeddings
+> model (its `/paas/v4/embeddings` returns 1211 "Unknown Model"), so semantic search
+> uses a separate embedder. Keyword/FTS RAG needs none of this and already works.
+
+**Recommended — Ollama (local, free, no key, any CPU arch):**
+```bash
+ollama pull nomic-embed-text
+export EMBED_BASE_URL=http://localhost:11434/v1
+export EMBED_MODEL=nomic-embed-text
+bun run rag:index    # make sure chunks exist
+bun run rag:embed    # fills RagChunk.embedding
+```
+
+**Or a hosted provider** (OpenAI / Voyage / any OpenAI-shaped API):
+```bash
+export EMBED_BASE_URL=https://api.openai.com/v1
+export EMBED_MODEL=text-embedding-3-small
+export EMBED_API_KEY=sk-…
+bun run rag:embed
+```
+
+Then nothing else: `retrieve()` sees embedded chunks (`hasEmbeddings()`), prefers the
+vector backend, and `GET/POST /api/rag` start returning semantic hits. Re-run
+`rag:embed` after each churn to embed new chunks. Keep the SAME `EMBED_MODEL` for
+indexing and querying — queries are embedded by the same endpoint at request time.
+
+> Local native embedders (Transformers.js/onnxruntime-node) were tried and dropped:
+> no prebuilt onnxruntime binary exists for x64-darwin (Rosetta), and the WASM
+> backend still eagerly requires the native module. The endpoint approach sidesteps
+> all of that and works identically on a laptop or in CI (as an Ollama sidecar).
 
 ## Scaling past in-memory cosine
 

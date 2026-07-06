@@ -17,7 +17,7 @@
 //   → `retrieve()` starts returning vector hits automatically.
 
 import { db } from '@/lib/db'
-import { embedText } from '@/lib/zai-api'
+import { embedText } from '@/lib/embedder'
 
 export type ChunkKind = 'verse' | 'source' | 'evidence' | 'topic' | 'glossary'
 export type RagBackend = 'auto' | 'vector' | 'fts' | 'keyword'
