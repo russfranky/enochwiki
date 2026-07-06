@@ -5,7 +5,7 @@
 > whole composition and decide for themselves. Lower on the ladder ≠ false; it means *less
 > independently verifiable* and a place to keep digging.
 
-**190 evidence** across **266 sources** (56 community-leads) · **49 topics**
+**190 evidence** across **295 sources** (56 community-leads) · **49 topics**
 
 ## The picture so far — verifiability ladder
 
@@ -88,29 +88,29 @@
 
 A second axis of verifiability: not just *what* a source says but *who* stands behind it,
 validated the same way sources are (credentials + affiliation + independent corroboration).
-**11 named figures**, **105 institutions**.
+**11 named figures**, **114 institutions**.
 
 ### Named figures (independently validated)
 
 | Person | Type | Tier | Basis | Sources |
 |---|---|---|---|---:|
-| R. H. Charles | scholar | established-authority | peer-cited | 20 |
-| George W. E. Nickelsburg | scholar | established-authority | peer-cited | 3 |
-| James H. Charlesworth | scholar | established-authority | peer-cited | 4 |
-| Annette Yoshiko Reed | scholar | established-authority | peer-cited | 12 |
-| John J. Collins | scholar | established-authority | peer-cited | 4 |
-| Michael E. Stone | scholar | established-authority | peer-cited | 4 |
+| R. H. Charles | scholar | established-authority | peer-cited | 29 |
+| George W. E. Nickelsburg | scholar | established-authority | peer-cited | 6 |
+| James H. Charlesworth | scholar | established-authority | peer-cited | 5 |
+| Annette Yoshiko Reed | scholar | established-authority | peer-cited | 17 |
+| John J. Collins | scholar | established-authority | peer-cited | 5 |
+| Michael E. Stone | scholar | established-authority | peer-cited | 8 |
 | Jacob Milgrom | scholar | established-authority | peer-cited | 2 |
-| Devorah Dimant | scholar | established-authority | peer-cited | 3 |
-| Florentino García Martínez | scholar | established-authority | peer-cited | 2 |
-| Loren T. Stuckenbruck | scholar | credentialed | credentials-verified | 4 |
+| Devorah Dimant | scholar | established-authority | peer-cited | 4 |
+| Florentino García Martínez | scholar | established-authority | peer-cited | 5 |
+| Loren T. Stuckenbruck | scholar | credentialed | credentials-verified | 9 |
 | Anne Catherine Emmerich | visionary | recognized | credentials-verified | 1 |
 
 ### Top institutional backers
 
 - **Brill Academic Publishers** — 20 sources (95%)
-- **Biblical Archaeology Society** — 10 sources (90%)
-- **JSTOR** — 4 sources (90%)
+- **Biblical Archaeology Society** — 11 sources (90%)
+- **JSTOR** — 7 sources (90%)
 - **Cambridge University Press** — 3 sources (93%)
 - **Israel Antiquities Authority — Dead Sea Scrolls** — 1 sources (97%)
 - **The British Museum** — 1 sources (96%)
