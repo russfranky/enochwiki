@@ -319,6 +319,44 @@ function extractPublishedTime(html: string): string | undefined {
   return match ? match[1] : undefined
 }
 
+// ── Embeddings (for semantic / vector RAG) ──────────────────────────────────
+// Z.ai exposes an OpenAI-shaped embeddings endpoint. This is the ONLY piece the
+// vector RAG backend needs: fill RagChunk.embedding with these vectors and
+// src/lib/rag-retrieval.ts starts doing cosine search automatically (see docs/rag.md).
+// Degrades gracefully to `null` when no key/balance, so callers can fall back to
+// FTS/keyword retrieval instead of erroring.
+const EMBED_MODEL = process.env.ZAI_EMBED_MODEL || 'embedding-3'
+
+/** Embed a single string → vector, or `null` if embeddings are unavailable. */
+export async function embedText(text: string): Promise<number[] | null> {
+  const out = await embedTexts([text])
+  return out[0] ?? null
+}
+
+/** Embed a batch of strings. Returns one vector per input (or `null` per slot on failure). */
+export async function embedTexts(texts: string[]): Promise<(number[] | null)[]> {
+  if (!API_KEY || texts.length === 0) return texts.map(() => null)
+  try {
+    const res = await fetch(`${BASE_URL}/embeddings`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${API_KEY}` },
+      body: JSON.stringify({ model: EMBED_MODEL, input: texts }),
+    })
+    if (!res.ok) return texts.map(() => null)
+    const data = await res.json()
+    const rows: any[] = data?.data ?? []
+    // Preserve input order via each row's `index`.
+    const bySlot: (number[] | null)[] = texts.map(() => null)
+    for (const r of rows) {
+      const i = typeof r?.index === 'number' ? r.index : rows.indexOf(r)
+      if (Array.isArray(r?.embedding)) bySlot[i] = r.embedding as number[]
+    }
+    return bySlot
+  } catch {
+    return texts.map(() => null)
+  }
+}
+
 /**
  * Check if the Z.ai API is reachable and has balance.
  */

@@ -443,3 +443,31 @@ model Note {
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 }
+
+// ── RAG index (retrieval-augmented generation) ───────────────────────────────
+// Persistent, embeddable chunk store spanning the WHOLE corpus (verses, scholarly
+// sources, evidence, topic pages, glossary). Populated by scripts/rag-index.mjs
+// and queried by src/lib/rag-retrieval.ts. `embedding` stays NULL until you run the
+// indexer with --embed; retrieval works keyword/FTS-only until then, so semantic
+// vector search is a later flip, not a prerequisite. See docs/rag.md.
+model RagChunk {
+  id          String   @id @default(cuid())
+  kind        String   // "verse" | "source" | "evidence" | "topic" | "glossary"
+  refId       String   // id of the underlying Verse/Source/Evidence/TopicPage/GlossaryEntry
+  ref         String   // citation handle: scriptureRef | url | slug | term
+  title       String
+  text        String   // the chunk text that gets embedded / matched
+  ordinal     Int      @default(0) // chunk index within a long source (0 for single-chunk items)
+  credibility Float    @default(0.5)
+  tokenCount  Int      @default(0)
+  embedding   Bytes?   // Float32 little-endian vector blob; NULL until embedded
+  embModel    String?  // e.g. "embedding-3" — which model produced `embedding`
+  embDim      Int?     // vector dimensionality
+  contentHash String   @unique // dedup / incremental reindex: hash(kind:refId:ordinal:text)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([kind])
+  @@index([refId])
+  @@index([embModel])
+}
