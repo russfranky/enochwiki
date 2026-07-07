@@ -65,6 +65,17 @@ Latency note: kilo's CLI carries a large fixed agent system-prompt (~14.7K input
 tokens) on every call regardless of prompt size, so expect ~25–30s — fine for a
 free fallback, not for a low-latency primary path.
 
+### Chat with the corpus from the terminal
+
+`scripts/rag-ask.ts` is the same retrieval + generation path as `POST /api/rag`,
+no dev server required:
+
+```bash
+bun run rag:ask                          # interactive chat (REPL) — /exit to quit
+bun run rag:ask "Who is Azazel?"         # one-shot
+bun run rag:ask --provider kilo          # force a provider (chat or one-shot)
+```
+
 ## Turn on semantic vector search (point it at an embeddings endpoint)
 
 The embedder is provider-agnostic (`src/lib/embedder.ts`) — it needs any
