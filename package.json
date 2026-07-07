@@ -13,6 +13,7 @@
     "eotc-grow": "node --env-file=.env scripts/eotc-grow.mjs",
     "rag:index": "node --env-file=.env scripts/rag-index.mjs",
     "rag:embed": "node --env-file=.env scripts/rag-index.mjs --embed",
+    "rag:ask": "bun --env-file=.env scripts/rag-ask.ts",
     "db:push": "prisma db push",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",

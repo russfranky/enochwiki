@@ -15,6 +15,7 @@ changes. That's the whole design goal — *effective now, trivial to deepen late
 | [`src/lib/embedder.ts`](../src/lib/embedder.ts) | Pluggable, provider-agnostic embedder — POSTs to any OpenAI-compatible `/embeddings` endpoint (Ollama, OpenAI, Voyage, …). Returns `null` when unconfigured, so the vector path stays dormant instead of erroring. |
 | [`scripts/rag-index.mjs`](../scripts/rag-index.mjs) | Chunks the corpus into `RagChunk` rows (text now, embeddings on `--embed`). Idempotent via `contentHash`. |
 | `RagChunk` (Prisma) | Persistent, embeddable chunk store. `embedding Bytes?` is `NULL` until you embed. |
+| [`src/lib/kilo.ts`](../src/lib/kilo.ts) | Free chat-completion fallback — shells out to the local `kilo` CLI (Tencent Hy3, `kilo/tencent/hy3:free`, cost $0) when z.ai is unavailable. |
 
 ## Retrieval backends (chosen automatically, in order)
 
@@ -45,6 +46,24 @@ curl -X POST http://localhost:3000/api/rag -H 'content-type: application/json' \
 
 Filter by corpus kind or credibility:
 `/api/rag?q=azazel&kinds=source,evidence&minCredibility=0.75`.
+
+## Answer generation (POST) — provider fallback chain
+
+`POST /api/rag` tries **z.ai** (`glm-4.5`, thinking-enabled) first, and on *any*
+failure (unconfigured, out of quota, network) falls through automatically to
+**kilo** — the local [`@kilocode/cli`](https://kilo.ai) binary, which proxies to
+Tencent Hy3 for free (`kilo/tencent/hy3:free`, confirmed `cost: 0`). No API key
+needed for the fallback: `kilo auth list` shows 0 stored credentials, so
+`src/lib/kilo.ts` shells out to `kilo run --format json -m kilo/tencent/hy3:free`
+and parses the NDJSON event stream rather than calling an HTTP endpoint directly.
+Requires `kilo` on `PATH` and a logged-in kilo.ai session (`kilo auth login`).
+
+The response includes `provider: "zai" | "kilo"` so callers can see which one
+answered. Force one explicitly for testing: `{"question": "…", "provider": "kilo"}`.
+
+Latency note: kilo's CLI carries a large fixed agent system-prompt (~14.7K input
+tokens) on every call regardless of prompt size, so expect ~25–30s — fine for a
+free fallback, not for a low-latency primary path.
 
 ## Turn on semantic vector search (point it at an embeddings endpoint)
 
