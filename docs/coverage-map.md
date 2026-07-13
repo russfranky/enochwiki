@@ -1,6 +1,6 @@
 # enoch.wiki — Verifiability Coverage Map
 
-> Auto-generated 2026-07-07 by `scripts/coverage-map.mjs`. **Not a verdict — a filing system.**
+> Auto-generated 2026-07-13 by `scripts/coverage-map.mjs`. **Not a verdict — a filing system.**
 > Every fragment is shown at its honest level of verifiability so explorers can weigh the
 > whole composition and decide for themselves. Lower on the ladder ≠ false; it means *less
 > independently verifiable* and a place to keep digging.
