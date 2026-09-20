@@ -14,7 +14,6 @@
     "no_config_flag_flips_unless_unblocked": true,
     "bun_path": "/opt/hatch-image/bin",
     "protected_paths": [
-      "next.config.ts",
       "prisma/schema.prisma",
       "prisma/migrations/"
     ]
@@ -114,14 +113,14 @@
       "id": "EW-006",
       "category": "config",
       "passes": false,
-      "blocked": true,
+      "blocked": false,
       "description": "Flip `typescript.ignoreBuildErrors` from `true` to `false` in next.config.ts so the production `next build` itself enforces types (defence-in-depth over the EW-005 gate). OWNER-GATED: changes build-failure semantics and could break deploys — needs explicit owner OK, and should only land after the tsc gate has been green.",
       "steps": [
         "Owner unblocks this item explicitly.",
         "Flip the flag.",
         "bash scripts/check.sh must end ALL GATES PASS."
       ],
-      "regression_notes": "Blocked. Never start without owner approval.",
+      "regression_notes": "Owner explicitly unblocked 2026-09-20 (chat: Get unblocked).",
       "allowed_paths": [
         "next.config.ts"
       ]
