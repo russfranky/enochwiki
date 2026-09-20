@@ -103,3 +103,11 @@ Outcome: PASS
   `bun run typecheck` exit 0; `bash scripts/check.sh` exit 0, final line `ALL GATES PASS`
   with the new `ok typecheck` step between lint and build.
 - Diff of this iteration: package.json (one script line) + scripts/check.sh (header comment + one gate step).
+
+## 2026-09-20T16:32:37Z — EW-005 (engine)
+
+Work summary: Gate re-run outside the worker passed. Scope check passed (5 changed path(s)). Committed 3af1cbe.
+
+Gate result: `bash scripts/check.sh` exited 0 and ended with `ALL GATES PASS`.
+
+Outcome: PASS

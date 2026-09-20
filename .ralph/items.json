@@ -95,7 +95,7 @@
     {
       "id": "EW-005",
       "category": "gates",
-      "passes": false,
+      "passes": true,
       "blocked": false,
       "description": "With the app surface clean (EW-001..004), add a `typecheck` script (`tsc --noEmit`) to package.json and wire a strict typecheck gate into scripts/check.sh (before the build step). This makes type regressions fail the gate.",
       "steps": [

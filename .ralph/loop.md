@@ -1,3 +1,3 @@
 running: false
-iteration: 4
-stop_reason: "keep-going"
+iteration: 5
+stop_reason: "all items pass or remaining items are blocked"
