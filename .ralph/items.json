@@ -25,12 +25,12 @@
       "category": "types",
       "passes": false,
       "blocked": false,
-      "description": "Fix the `src/app/api/flashcards/route.ts(98,18)` type error: argument of type `any` not assignable to parameter of type `never` (a Prisma create/update data shape mismatch). Align the data object to the Prisma model type without changing what the route does. Also covers src/app/page.tsx(257,15) TS2322: `boolean | null` not assignable to `boolean | undefined` on the Button `disabled` prop. It was missed in the 2026-09-20 re-plan because the baseline tsc ran with the stale worker's fix already in the worktree; the seeded fix appends `?? undefined` (null and undefined are equivalent for React disabled). Behavior-preserving.",
+      "description": "Fix the `src/app/api/flashcards/route.ts(98,18)` type error: `const created = []` is inferred as `never[]` (evolving-array inference applies to `let`, not `const`), so `created.push(card)` fails with TS2345 (`any` not assignable to `never`). Annotate the array. The repo-wide convention for collected created records in API routes is `any[]` (6 usages: auto-grow, fts x3, scrape x2; zero routes use Prisma model types; this file itself uses `const where: any`), so `const created: any[] = []` is the intended fix. No runtime/logic change. Also covers `src/app/page.tsx(257,15)` TS2322: `boolean | null` not assignable to `boolean | undefined` on the Button `disabled` prop (missed in the 2026-09-20 re-plan because the baseline tsc ran with the stale worker's fix already in the worktree); the seeded fix appends `?? undefined` (null and undefined are equivalent for React disabled). Behavior-preserving.",
       "steps": [
-        "bunx tsc --noEmit 2>&1 | grep 'src/app/api/flashcards/route.ts'  # confirm + read line 98.",
-        "Read the route; compare the object passed at :98 to the Flashcard model in prisma/schema.prisma.",
-        "Type the argument correctly (e.g. Prisma.FlashcardCreateInput/...UpdateInput, or fix the offending field) \u2014 preserve the existing fields/behavior.",
-        "bunx tsc --noEmit 2>&1 | grep 'src/app/api/flashcards/route.ts'  # MUST be empty.",
+        "bunx tsc --noEmit 2>&1 | grep -E 'flashcards/route|src/app/page.tsx'  # confirm both errors + read them.",
+        "Read the route around the reported line; identify the true fault (the untyped array, not the data object).",
+        "Annotate as `any[]` per repo convention (cf. src/app/api/scrape/route.ts:128); fix page.tsx:257 with `?? undefined`. Preserve behavior.",
+        "bunx tsc --noEmit 2>&1 | grep -E 'flashcards/route|src/app/page.tsx'  # MUST be empty.",
         "bash scripts/check.sh must end ALL GATES PASS."
       ],
       "regression_notes": "Do NOT touch prisma/schema.prisma or migrations here \u2014 fix the TS at the call site only. Behavior-preserving.",

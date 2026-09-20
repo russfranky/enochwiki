@@ -254,7 +254,7 @@ export default function Home() {
               variant="outline"
               size="icon"
               onClick={growDatabase}
-              disabled={growing || (apiHealth && !apiHealth.ok)}
+              disabled={(growing || (apiHealth && !apiHealth.ok)) ?? undefined}
               className="h-8 w-8 hidden sm:flex"
               aria-label="Grow database"
               title={apiHealth && !apiHealth.ok ? 'Z.ai API needs credits to grow' : 'Scrape corroboration for all themes and film topics'}

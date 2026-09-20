@@ -83,7 +83,7 @@ Only output the JSON array, no other text.`,
   }
 
   // Save cards
-  const created = []
+  const created: any[] = []
   for (const c of cards.slice(0, count)) {
     if (!c.front || !c.back) continue
     const card = await db.flashcard.create({
