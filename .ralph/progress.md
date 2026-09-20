@@ -59,3 +59,24 @@ Work summary: Gate re-run outside the worker passed. Scope check passed (3 chang
 Gate result: `bash scripts/check.sh` exited 0 and ended with `ALL GATES PASS`.
 
 Outcome: PASS
+
+## 2026-09-20T16:26:24Z — EW-003 (engine)
+
+Work summary: Gate re-run outside the worker passed. Scope check passed (3 changed path(s)). Committed 11c0939.
+
+Gate result: `bash scripts/check.sh` exited 0 and ended with `ALL GATES PASS`.
+
+Outcome: PASS
+
+## 2026-09-20 · EW-004 done (worker iteration)
+
+- Added `scripts/**` and `examples/**` to the `exclude` array in `tsconfig.json`
+  (kept `node_modules`), mirroring the established ignore style in `eslint.config.mjs`
+  (`ignores: [..., "examples/**", ...]`). These files run ad-hoc via `bunx tsx` and
+  are never compiled by Next; no runtime/logic change.
+- Evidence: `bun x tsc --noEmit` before = 23 errors under `scripts/`+`examples/`
+  (redeclared globals, uninstalled optional deps like socket.io); after = 0 errors
+  total, exit 0. No `src/` errors before or after (app surface already clean from EW-001..003).
+- Gate: `bash scripts/check.sh` → exit 0, final line `ALL GATES PASS`
+  (bun ok, node_modules ok, prisma generate ok, eslint ok, next build ok, items.json valid).
+- Diff of this iteration: `tsconfig.json` exclude array only.
