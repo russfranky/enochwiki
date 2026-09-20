@@ -119,3 +119,61 @@ Work summary: Gate re-run outside the worker passed. Scope check passed (3 chang
 Gate result: `bash scripts/check.sh` exited 0 and ended with `ALL GATES PASS`.
 
 Outcome: PASS
+
+## 2026-09-20T21:13:23Z — EW-007 (worker iteration)
+
+Work summary: hid all AI-facing UI behind one launch-time switch. New module
+src/lib/launch.ts exports AI_ENABLED, read from NEXT_PUBLIC_AI_ENABLED
+(default OFF). Gates applied: src/app/page.tsx hides the desktop ChatPanel
+pane (layout falls back to a clean 2-pane split), the mobile Chat nav button,
+and the grow-database button; src/components/study/study-tools.tsx hides the
+Daily and Summary tabs, defaults the tab to glossary, and skips the
+/api/daily-insight and /api/summarize fetch calls while Glossary keeps
+working; src/components/study/synergy-view.tsx hides the scrape bar.
+Unchanged per item scope: all /api/* routes, src/lib/zai-api.ts,
+rag-retrieval, spend-guard, scripts, seed data, src/app/api/health/route.ts.
+.env.example documents the switch as commented defaults only.
+Only allowed_paths touched: src/lib/launch.ts, src/app/page.tsx,
+src/components/study/study-tools.tsx, src/components/study/synergy-view.tsx,
+.env.example, plus this .ralph/progress.md entry. No commit, push, or merge.
+
+Evidence: `bash scripts/check.sh` exit 0, final line `ALL GATES PASS`
+(bun 1.3.10, prisma generate ok, lint ok, typecheck ok, next build ok,
+items.json valid). Key file lines: src/lib/launch.ts (whole file),
+src/app/page.tsx import of AI_ENABLED (~line 35) and 2-pane fallback,
+src/components/study/study-tools.tsx tab gating, src/components/study/synergy-view.tsx scrape bar gating.
+
+Outcome: PASS (worker-side; passes:true left false for engine/owner review)
+- [jev 2026-09-20T21:24:10.601Z] output-verify FAIL on EW-007: P(implements_intent)=0.37, defect=scope-creep. Tree left as-is; lock released; not committed.
+
+## 2026-09-20T21:30Z — EW-007 (engine verdict on Jev fail-iteration)
+
+Jev output-verify returned FAIL-ITERATION (P(implements_intent)=0.37,
+defect=scope-creep). Engine investigated before accepting the verdict.
+
+What Jev saw: the full working-tree diff vs HEAD (26 files, +512/-376)
+against the item's 5 allowed paths. What the live check shows: the EW-007
+worker was active ~17:00-17:13 EDT, and every file it modified has an mtime
+inside that window: src/lib/launch.ts (new), src/app/page.tsx,
+src/components/study/study-tools.tsx, src/components/study/synergy-view.tsx,
+.env.example. All other changed files (API routes, prisma/schema.prisma,
+Caddyfile, src/lib/zai-api.ts, etc.) have mtimes older than the worker
+window: pre-existing uncommitted work from other efforts, which the engine
+was instructed to preserve and the worker never touched. The worker's own
+diff implements the item intent exactly; src/app/api/health/route.ts is
+byte-identical to HEAD.
+
+Independent engine evidence: `bash scripts/check.sh` re-run by the engine
+twice (once after the worker, once after a one-line engine copy fix to the
+synergy-view empty state so it no longer references the hidden scrape bar):
+exit 0, final line `ALL GATES PASS` both times. Production build served on
+:13111 and rendered at 390px and 1440px: no desktop chat pane (clean 2-pane
+split), no mobile Chat nav, no grow-database button, no Daily/Summary tabs
+or fetches, Glossary functional, no scrape bar, scripture/evidence/themes/
+review UI intact. /api/health returns 200.
+
+Conclusion: the fail-iteration is a false positive from diff attribution
+(the gate diffs the whole dirty tree, not the worker's change set), not a
+worker defect. Engine verdict: PASS. passes stays false; nothing committed
+without owner approval.
+- [jev 2026-09-20T21:24:40.264Z] loop-continue STOP: done (P(continue)=0.41).

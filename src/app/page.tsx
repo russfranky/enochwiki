@@ -33,6 +33,7 @@ import { ReviewDashboard } from '@/components/study/review-dashboard'
 import { PublicSite } from '@/components/study/public-site'
 import { StudyTools } from '@/components/study/study-tools'
 import { ThemeToggle } from '@/components/theme-toggle'
+import { AI_ENABLED } from '@/lib/launch'
 
 type TopTab = 'study' | 'review' | 'public'
 type RightTab = 'synergy' | 'themes' | 'tools'
@@ -250,17 +251,19 @@ export default function Home() {
             <Button variant="outline" size="icon" onClick={() => setSearchOpen((s) => !s)} className="h-8 w-8" aria-label="Search">
               <Search className="h-3.5 w-3.5" />
             </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={growDatabase}
-              disabled={(growing || (apiHealth && !apiHealth.ok)) ?? undefined}
-              className="h-8 w-8 hidden sm:flex"
-              aria-label="Grow database"
-              title={apiHealth && !apiHealth.ok ? 'Z.ai API needs credits to grow' : 'Scrape corroboration for all themes and film topics'}
-            >
-              {growing ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Sprout className="h-3.5 w-3.5" />}
-            </Button>
+            {AI_ENABLED && (
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={growDatabase}
+                disabled={(growing || (apiHealth && !apiHealth.ok)) ?? undefined}
+                className="h-8 w-8 hidden sm:flex"
+                aria-label="Grow database"
+                title={apiHealth && !apiHealth.ok ? 'Z.ai API needs credits to grow' : 'Scrape corroboration for all themes and film topics'}
+              >
+                {growing ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Sprout className="h-3.5 w-3.5" />}
+              </Button>
+            )}
             <Button variant="outline" size="icon" onClick={exportBackup} className="h-8 w-8 hidden sm:flex" aria-label="Export">
               <Download className="h-3.5 w-3.5" />
             </Button>
@@ -362,7 +365,7 @@ export default function Home() {
                       }}
                     />
                   )}
-                  {mobilePanel === 'chat' && <ChatPanel context={chatContext} />}
+                  {AI_ENABLED && mobilePanel === 'chat' && <ChatPanel context={chatContext} />}
                   {mobilePanel === 'right' && rightPanelContent}
                 </div>
                 {/* Mobile bottom nav */}
@@ -376,15 +379,17 @@ export default function Home() {
                     <BookOpen className="h-4 w-4" />
                     Scripture
                   </button>
-                  <button
-                    onClick={() => setMobilePanel('chat')}
-                    className={`flex-1 py-2.5 text-xs font-medium flex flex-col items-center gap-0.5 ${
-                      mobilePanel === 'chat' ? 'text-accent border-t-2 border-accent -mt-px' : 'text-muted-foreground'
-                    }`}
-                  >
-                    <MessageSquare className="h-4 w-4" />
-                    Chat
-                  </button>
+                  {AI_ENABLED && (
+                    <button
+                      onClick={() => setMobilePanel('chat')}
+                      className={`flex-1 py-2.5 text-xs font-medium flex flex-col items-center gap-0.5 ${
+                        mobilePanel === 'chat' ? 'text-accent border-t-2 border-accent -mt-px' : 'text-muted-foreground'
+                      }`}
+                    >
+                      <MessageSquare className="h-4 w-4" />
+                      Chat
+                    </button>
+                  )}
                   <button
                     onClick={() => setMobilePanel('right')}
                     className={`flex-1 py-2.5 text-xs font-medium flex flex-col items-center gap-0.5 ${
@@ -396,8 +401,8 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-            ) : (
-              /* Desktop: 3-pane resizable */
+            ) : AI_ENABLED ? (
+              /* Desktop: 3-pane resizable (AI chat shown) */
               <ResizablePanelGroup direction="horizontal" className="h-full">
                 <ResizablePanel defaultSize={34} minSize={24}>
                   <ScriptureReader
@@ -417,6 +422,26 @@ export default function Home() {
                 </ResizablePanel>
                 <ResizableHandle withHandle />
                 <ResizablePanel defaultSize={32} minSize={24}>
+                  {rightPanelContent}
+                </ResizablePanel>
+              </ResizablePanelGroup>
+            ) : (
+              /* Desktop: 2-pane resizable (AI chat hidden for launch) */
+              <ResizablePanelGroup direction="horizontal" className="h-full">
+                <ResizablePanel defaultSize={50} minSize={30}>
+                  <ScriptureReader
+                    onVerseSelect={handleVerseSelect}
+                    selectedVerseRef={selectedVerseRef}
+                    selectedThemeSlug={selectedThemeSlug}
+                    onClearTheme={() => setSelectedThemeSlug(null)}
+                    onChapterChange={(slug, num) => {
+                      setCurrentBookSlug(slug)
+                      setCurrentChapterNum(num)
+                    }}
+                  />
+                </ResizablePanel>
+                <ResizableHandle withHandle />
+                <ResizablePanel defaultSize={50} minSize={30}>
                   {rightPanelContent}
                 </ResizablePanel>
               </ResizablePanelGroup>
