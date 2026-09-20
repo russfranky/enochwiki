@@ -51,3 +51,11 @@ Gate result: `bash scripts/check.sh` exited 0 and ended with `ALL GATES PASS`.
 
 Outcome: PASS
 - [jev 2026-09-20T16:23:53.210Z] output-verify FAIL on EW-002: P(implements_intent)=0.13, defect=cosmetic-only. Tree left as-is; lock released; not committed.
+
+## 2026-09-20T16:25:10Z — EW-002 (engine)
+
+Work summary: Gate re-run outside the worker passed. Scope check passed (3 changed path(s)). Committed e04a2f7.
+
+Gate result: `bash scripts/check.sh` exited 0 and ended with `ALL GATES PASS`.
+
+Outcome: PASS

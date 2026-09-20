@@ -42,7 +42,7 @@
     {
       "id": "EW-002",
       "category": "types",
-      "passes": false,
+      "passes": true,
       "blocked": false,
       "description": "Fix the 3 `src/app/api/fts/route.ts` type errors (lines 22, 43, 62): TS2347 untyped function calls may not accept type arguments. Give the called functions proper types (or restructure the call) without changing runtime behavior. NOTE (engine 2026-09-20): the TS2347 errors described here do not exist in the current tree — they were artifacts of the Prisma client not being generated at baseline time (untyped client calls reject type arguments). With `prisma generate` (already a gate step in scripts/check.sh) the generated types resolve and `bun x tsc --noEmit` reports zero errors in this file. Acceptance is the tsc grep below being empty; no code change required.",
       "steps": [
