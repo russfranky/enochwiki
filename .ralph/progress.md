@@ -111,3 +111,11 @@ Work summary: Gate re-run outside the worker passed. Scope check passed (5 chang
 Gate result: `bash scripts/check.sh` exited 0 and ended with `ALL GATES PASS`.
 
 Outcome: PASS
+
+## 2026-09-20T16:47:21Z — EW-006 (engine)
+
+Work summary: Gate re-run outside the worker passed. Scope check passed (3 changed path(s)). Committed 891382f.
+
+Gate result: `bash scripts/check.sh` exited 0 and ended with `ALL GATES PASS`.
+
+Outcome: PASS

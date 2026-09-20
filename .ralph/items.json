@@ -112,7 +112,7 @@
     {
       "id": "EW-006",
       "category": "config",
-      "passes": false,
+      "passes": true,
       "blocked": false,
       "description": "Flip `typescript.ignoreBuildErrors` from `true` to `false` in next.config.ts so the production `next build` itself enforces types (defence-in-depth over the EW-005 gate). OWNER-GATED: changes build-failure semantics and could break deploys — needs explicit owner OK, and should only land after the tsc gate has been green.",
       "steps": [
