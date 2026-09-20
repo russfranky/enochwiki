@@ -2,7 +2,9 @@
   "version": 1,
   "objective": "Harden enochWIKI type-safety and lock in the verification gates: drive `tsc --noEmit` to clean across the real app surface (behavior-preserving fixes only), add a `typecheck` script, and tighten scripts/check.sh to enforce it. Flipping next.config.ts `typescript.ignoreBuildErrors` to false is owner-gated and stays BLOCKED.",
   "runtime_contract": {
-    "verification_gates": ["bash scripts/check.sh"],
+    "verification_gates": [
+      "bash scripts/check.sh"
+    ],
     "require_one_item_per_iteration": true,
     "require_commit": true,
     "require_progress_append": true,
@@ -10,7 +12,7 @@
     "never_push_without_owner_ok": true,
     "behavior_preserving_only": true,
     "no_config_flag_flips_unless_unblocked": true,
-    "bun_path": "/Users/russ/.bun/bin"
+    "bun_path": "/opt/hatch-image/bin"
   },
   "items": [
     {
@@ -22,11 +24,14 @@
       "steps": [
         "bunx tsc --noEmit 2>&1 | grep 'src/app/page.tsx'  # confirm the error + read line 257 for context.",
         "Read src/app/page.tsx around line 257; map the value's source (likely a nullable state/field).",
-        "Make it `boolean | undefined` at the call site (e.g. `value ?? undefined`) or fix the upstream type — no behavior change, no logic change.",
+        "Make it `boolean | undefined` at the call site (e.g. `value ?? undefined`) or fix the upstream type \u2014 no behavior change, no logic change.",
         "bunx tsc --noEmit 2>&1 | grep 'src/app/page.tsx'  # MUST be empty now.",
         "bash scripts/check.sh must end ALL GATES PASS."
       ],
-      "regression_notes": "Behavior-preserving only. tsc is not yet a gate (EW-004 adds it), so verify this item with the targeted grep AND keep check.sh (lint+build) green."
+      "regression_notes": "Behavior-preserving only. tsc is not yet a gate (EW-004 adds it), so verify this item with the targeted grep AND keep check.sh (lint+build) green.",
+      "allowed_paths": [
+        "src/app/page.tsx"
+      ]
     },
     {
       "id": "EW-002",
@@ -37,25 +42,31 @@
       "steps": [
         "bunx tsc --noEmit 2>&1 | grep 'src/app/api/flashcards/route.ts'  # confirm + read line 98.",
         "Read the route; compare the object passed at :98 to the Flashcard model in prisma/schema.prisma.",
-        "Type the argument correctly (e.g. `Prisma.FlashcardCreateInput`/`...UpdateInput`, or fix the offending field) — preserve the existing fields/behavior.",
+        "Type the argument correctly (e.g. `Prisma.FlashcardCreateInput`/`...UpdateInput`, or fix the offending field) \u2014 preserve the existing fields/behavior.",
         "bunx tsc --noEmit 2>&1 | grep 'src/app/api/flashcards/route.ts'  # MUST be empty.",
         "bash scripts/check.sh must end ALL GATES PASS."
       ],
-      "regression_notes": "Do NOT touch prisma/schema.prisma or migrations here — fix the TS at the call site only. Behavior-preserving."
+      "regression_notes": "Do NOT touch prisma/schema.prisma or migrations here \u2014 fix the TS at the call site only. Behavior-preserving.",
+      "allowed_paths": [
+        "src/app/api/flashcards/route.ts"
+      ]
     },
     {
       "id": "EW-003",
       "category": "config",
       "passes": false,
       "blocked": false,
-      "description": "Stop `tsc` from typechecking non-app dev scripts and examples (which redeclare globals / reference optional, uninstalled deps). Exclude `scripts/**` and `examples/**` from tsconfig.json — mirroring eslint.config.mjs, which already ignores `examples/**`. These files are run ad-hoc via `bunx tsx`, never compiled by Next.",
+      "description": "Stop `tsc` from typechecking non-app dev scripts and examples (which redeclare globals / reference optional, uninstalled deps). Exclude `scripts/**` and `examples/**` from tsconfig.json \u2014 mirroring eslint.config.mjs, which already ignores `examples/**`. These files are run ad-hoc via `bunx tsx`, never compiled by Next.",
       "steps": [
         "bunx tsc --noEmit 2>&1 | grep -E '^(scripts|examples)/'  # see the script/example noise.",
         "Read tsconfig.json; add `scripts/**` and `examples/**` to the `exclude` array (keep `node_modules`).",
-        "bunx tsc --noEmit 2>&1  # should now report ONLY app errors already fixed by EW-001/002 — ideally clean.",
+        "bunx tsc --noEmit 2>&1  # should now report ONLY app errors already fixed by EW-001/002 \u2014 ideally clean.",
         "Confirm Next still builds (scripts/examples were never part of the build): bash scripts/check.sh must end ALL GATES PASS."
       ],
-      "regression_notes": "Excluding from tsconfig only changes what tsc/the editor checks; it does not change runtime, the build, or how `bunx tsx scripts/*.ts` runs. Do not delete the script files."
+      "regression_notes": "Excluding from tsconfig only changes what tsc/the editor checks; it does not change runtime, the build, or how `bunx tsx scripts/*.ts` runs. Do not delete the script files.",
+      "allowed_paths": [
+        "tsconfig.json"
+      ]
     },
     {
       "id": "EW-004",
@@ -64,12 +75,16 @@
       "blocked": false,
       "description": "With the app surface clean (EW-001..003), add a `typecheck` script (`tsc --noEmit`) to package.json and wire a strict typecheck gate into scripts/check.sh (before the build step). This makes type regressions fail the gate.",
       "steps": [
-        "Confirm prerequisite: bunx tsc --noEmit  # MUST exit 0 (clean). If not, the prior items are not done — STOP, do not force this item.",
+        "Confirm prerequisite: bunx tsc --noEmit  # MUST exit 0 (clean). If not, the prior items are not done \u2014 STOP, do not force this item.",
         "Add `\"typecheck\": \"tsc --noEmit\"` to package.json scripts (match the existing JSON style).",
         "Edit scripts/check.sh: add a `step \"typecheck (tsc --noEmit)\"` running `bun run typecheck` (FAIL -> rc=1), placed before the build step; update the header comment that currently says tsc is NOT a gate.",
         "bash scripts/check.sh must end ALL GATES PASS (now including typecheck)."
       ],
-      "regression_notes": "This tightens the gate. After this lands, EVERY later iteration's check.sh enforces a clean tsc. Keep the gate ordering cheap-before-expensive (typecheck before build)."
+      "regression_notes": "This tightens the gate. After this lands, EVERY later iteration's check.sh enforces a clean tsc. Keep the gate ordering cheap-before-expensive (typecheck before build).",
+      "allowed_paths": [
+        "package.json",
+        "scripts/check.sh"
+      ]
     },
     {
       "id": "EW-005",
@@ -78,10 +93,18 @@
       "blocked": true,
       "description": "Flip `typescript.ignoreBuildErrors` from `true` to `false` in next.config.ts so the production `next build` itself enforces types (defence-in-depth over the EW-004 gate).",
       "steps": [
-        "BLOCKED — do not start. Requires owner OK: flipping this changes build-failure semantics and could break `bun run build` / deploys if any type error remains anywhere the build compiles.",
+        "BLOCKED \u2014 do not start. Requires owner OK: flipping this changes build-failure semantics and could break `bun run build` / deploys if any type error remains anywhere the build compiles.",
         "When unblocked: ensure `bun run typecheck` is green (EW-004 landed), set `ignoreBuildErrors: false`, run a full `bash scripts/check.sh`, and confirm the standalone build still emits before committing."
       ],
-      "regression_notes": "Owner-gated build-policy change. Never flip in a local-only iteration without explicit owner approval."
+      "regression_notes": "Owner-gated build-policy change. Never flip in a local-only iteration without explicit owner approval.",
+      "allowed_paths": [
+        "next.config.ts"
+      ]
     }
+  ],
+  "protected_paths": [
+    "next.config.ts",
+    "prisma/schema.prisma",
+    "prisma/migrations/"
   ]
 }

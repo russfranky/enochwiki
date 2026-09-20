@@ -18,7 +18,7 @@
 set -uo pipefail
 cd "$(cd "$(dirname "$0")/.." && pwd)"
 # bun is the runtime + package manager for this repo.
-export PATH="/Users/russ/.bun/bin:$PATH"
+export PATH="/opt/hatch-image/bin:$HOME/.bun/bin:$PATH"
 rc=0
 step(){ printf '\n=== %s ===\n' "$1"; }
 
