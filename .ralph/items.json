@@ -12,7 +12,12 @@
     "never_push_without_owner_ok": true,
     "behavior_preserving_only": true,
     "no_config_flag_flips_unless_unblocked": true,
-    "bun_path": "/opt/hatch-image/bin"
+    "bun_path": "/opt/hatch-image/bin",
+    "protected_paths": [
+      "next.config.ts",
+      "prisma/schema.prisma",
+      "prisma/migrations/"
+    ]
   },
   "items": [
     {
@@ -20,7 +25,7 @@
       "category": "types",
       "passes": false,
       "blocked": false,
-      "description": "Fix the `src/app/api/flashcards/route.ts(98,18)` type error: argument of type `any` not assignable to parameter of type `never` (a Prisma create/update data shape mismatch). Align the data object to the Prisma model type without changing what the route does.",
+      "description": "Fix the `src/app/api/flashcards/route.ts(98,18)` type error: argument of type `any` not assignable to parameter of type `never` (a Prisma create/update data shape mismatch). Align the data object to the Prisma model type without changing what the route does. Also covers src/app/page.tsx(257,15) TS2322: `boolean | null` not assignable to `boolean | undefined` on the Button `disabled` prop. It was missed in the 2026-09-20 re-plan because the baseline tsc ran with the stale worker's fix already in the worktree; the seeded fix appends `?? undefined` (null and undefined are equivalent for React disabled). Behavior-preserving.",
       "steps": [
         "bunx tsc --noEmit 2>&1 | grep 'src/app/api/flashcards/route.ts'  # confirm + read line 98.",
         "Read the route; compare the object passed at :98 to the Flashcard model in prisma/schema.prisma.",
@@ -30,7 +35,8 @@
       ],
       "regression_notes": "Do NOT touch prisma/schema.prisma or migrations here \u2014 fix the TS at the call site only. Behavior-preserving.",
       "allowed_paths": [
-        "src/app/api/flashcards/route.ts"
+        "src/app/api/flashcards/route.ts",
+        "src/app/page.tsx"
       ]
     },
     {
@@ -38,7 +44,7 @@
       "category": "types",
       "passes": false,
       "blocked": false,
-      "description": "Fix the 3 `src/app/api/fts/route.ts` type errors (lines 22, 43, 62): TS2347 untyped function calls may not accept type arguments. Give the called functions proper types (or restructure the call) without changing runtime behavior.",
+      "description": "Fix the 3 `src/app/api/fts/route.ts` type errors (lines 22, 43, 62): TS2347 untyped function calls may not accept type arguments. Give the called functions proper types (or restructure the call) without changing runtime behavior. NOTE (engine 2026-09-20): the TS2347 errors described here do not exist in the current tree \u2014 they were artifacts of the Prisma client not being generated at baseline time (untyped client calls reject type arguments). With `prisma generate` (already a gate step in scripts/check.sh) the generated types resolve and `bun x tsc --noEmit` reports zero errors in this file. Acceptance is the tsc grep below being empty; no code change required.",
       "steps": [
         "bunx tsc --noEmit 2>&1 | grep 'src/app/api/fts/route.ts'  # confirm the 3 errors.",
         "Read the route; find the untyped function(s) being called with explicit type arguments.",
@@ -56,7 +62,7 @@
       "category": "types",
       "passes": false,
       "blocked": false,
-      "description": "Fix the 3 `src/lib/rag-retrieval.ts` type errors: TS2347 untyped function calls may not accept type arguments. Give the called functions proper types without changing runtime behavior.",
+      "description": "Fix the 3 `src/lib/rag-retrieval.ts` type errors: TS2347 untyped function calls may not accept type arguments. Give the called functions proper types without changing runtime behavior. NOTE (engine 2026-09-20): the TS2347 errors described here do not exist in the current tree \u2014 they were artifacts of the Prisma client not being generated at baseline time (untyped client calls reject type arguments). With `prisma generate` (already a gate step in scripts/check.sh) the generated types resolve and `bun x tsc --noEmit` reports zero errors in this file. Acceptance is the tsc grep below being empty; no code change required.",
       "steps": [
         "bunx tsc --noEmit 2>&1 | grep 'src/lib/rag-retrieval.ts'  # confirm the errors.",
         "Read the file; find the untyped function(s) called with explicit type arguments.",
@@ -120,10 +126,5 @@
         "next.config.ts"
       ]
     }
-  ],
-  "protected_paths": [
-    "next.config.ts",
-    "prisma/schema.prisma",
-    "prisma/migrations/"
   ]
 }

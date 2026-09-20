@@ -19,6 +19,10 @@ set -uo pipefail
 cd "$(cd "$(dirname "$0")/.." && pwd)"
 # bun is the runtime + package manager for this repo.
 export PATH="/opt/hatch-image/bin:$HOME/.bun/bin:$PATH"
+# Turbopack's bundled TLS roots do not trust this machine's egress-proxy CA, which
+# breaks `next build`'s Google Fonts fetch. Use the system certs (SSL_CERT_FILE)
+# so the build gate is hermetic here; harmless elsewhere.
+export NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1
 rc=0
 step(){ printf '\n=== %s ===\n' "$1"; }
 
