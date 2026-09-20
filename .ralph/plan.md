@@ -42,3 +42,14 @@ it needs owner OK and should only land after the `tsc` gate has been green.
   touch `prisma` migrations unless the worked item is explicitly unblocked (EW-005 is blocked).
 - `bun` is the runtime + package manager; `scripts/check.sh` puts `/Users/russ/.bun/bin` on PATH.
 - Verify with evidence (command output / file:line). Never claim.
+
+## 2026-09-20 · backlog re-plan (base-station engine)
+
+The 2026-06-25 seed described errors that no longer exist in the current tree
+(`src/app/page.tsx:257` is clean). Re-ran `bunx tsc --noEmit` on main@285dd15:
+**35 errors** — 26 in `scripts/*`, 2 in `examples/websocket/*`, and 7 on the app
+surface: `src/app/api/flashcards/route.ts(98,18)` (any→never), `src/app/api/fts/route.ts`
+×3 (TS2347), `src/lib/rag-retrieval.ts` ×3 (TS2347). Backlog re-planned to match:
+EW-001 flashcards route, EW-002 fts route, EW-003 rag-retrieval, EW-004 tsconfig
+excludes, EW-005 typecheck script + gate, EW-006 ignoreBuildErrors flip (blocked).
+Objective and invariants unchanged.
