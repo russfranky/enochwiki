@@ -42,3 +42,12 @@ Append-only log. Each iteration adds a dated entry: the item, what was done, and
 - Diff of this iteration: exactly one line in `src/app/api/flashcards/route.ts`
   (`-  const created = []` / `+  const created: any[] = []`).
 - [jev 2026-09-20T16:21:33.876Z] output-verify FAIL on EW-001: P(implements_intent)=0.29, defect=wrong-approach. Tree left as-is; lock released; not committed.
+
+## 2026-09-20T16:23:35Z — EW-001 (engine)
+
+Work summary: Gate re-run outside the worker passed. Scope check passed (5 changed path(s)). Committed 3ac37fc.
+
+Gate result: `bash scripts/check.sh` exited 0 and ended with `ALL GATES PASS`.
+
+Outcome: PASS
+- [jev 2026-09-20T16:23:53.210Z] output-verify FAIL on EW-002: P(implements_intent)=0.13, defect=cosmetic-only. Tree left as-is; lock released; not committed.

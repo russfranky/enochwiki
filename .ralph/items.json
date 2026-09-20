@@ -23,7 +23,7 @@
     {
       "id": "EW-001",
       "category": "types",
-      "passes": false,
+      "passes": true,
       "blocked": false,
       "description": "Fix the `src/app/api/flashcards/route.ts(98,18)` type error: `const created = []` is inferred as `never[]` (evolving-array inference applies to `let`, not `const`), so `created.push(card)` fails with TS2345 (`any` not assignable to `never`). Annotate the array. The repo-wide convention for collected created records in API routes is `any[]` (6 usages: auto-grow, fts x3, scrape x2; zero routes use Prisma model types; this file itself uses `const where: any`), so `const created: any[] = []` is the intended fix. No runtime/logic change. Also covers `src/app/page.tsx(257,15)` TS2322: `boolean | null` not assignable to `boolean | undefined` on the Button `disabled` prop (missed in the 2026-09-20 re-plan because the baseline tsc ran with the stale worker's fix already in the worktree); the seeded fix appends `?? undefined` (null and undefined are equivalent for React disabled). Behavior-preserving.",
       "steps": [
@@ -33,7 +33,7 @@
         "bunx tsc --noEmit 2>&1 | grep -E 'flashcards/route|src/app/page.tsx'  # MUST be empty.",
         "bash scripts/check.sh must end ALL GATES PASS."
       ],
-      "regression_notes": "Do NOT touch prisma/schema.prisma or migrations here \u2014 fix the TS at the call site only. Behavior-preserving.",
+      "regression_notes": "Do NOT touch prisma/schema.prisma or migrations here — fix the TS at the call site only. Behavior-preserving.",
       "allowed_paths": [
         "src/app/api/flashcards/route.ts",
         "src/app/page.tsx"
@@ -44,11 +44,11 @@
       "category": "types",
       "passes": false,
       "blocked": false,
-      "description": "Fix the 3 `src/app/api/fts/route.ts` type errors (lines 22, 43, 62): TS2347 untyped function calls may not accept type arguments. Give the called functions proper types (or restructure the call) without changing runtime behavior. NOTE (engine 2026-09-20): the TS2347 errors described here do not exist in the current tree \u2014 they were artifacts of the Prisma client not being generated at baseline time (untyped client calls reject type arguments). With `prisma generate` (already a gate step in scripts/check.sh) the generated types resolve and `bun x tsc --noEmit` reports zero errors in this file. Acceptance is the tsc grep below being empty; no code change required.",
+      "description": "Fix the 3 `src/app/api/fts/route.ts` type errors (lines 22, 43, 62): TS2347 untyped function calls may not accept type arguments. Give the called functions proper types (or restructure the call) without changing runtime behavior. NOTE (engine 2026-09-20): the TS2347 errors described here do not exist in the current tree — they were artifacts of the Prisma client not being generated at baseline time (untyped client calls reject type arguments). With `prisma generate` (already a gate step in scripts/check.sh) the generated types resolve and `bun x tsc --noEmit` reports zero errors in this file. Acceptance is the tsc grep below being empty; no code change required.",
       "steps": [
         "bunx tsc --noEmit 2>&1 | grep 'src/app/api/fts/route.ts'  # confirm the 3 errors.",
         "Read the route; find the untyped function(s) being called with explicit type arguments.",
-        "Type them correctly at the definition (preferred) \u2014 no behavior change, no logic change.",
+        "Type them correctly at the definition (preferred) — no behavior change, no logic change.",
         "bunx tsc --noEmit 2>&1 | grep 'src/app/api/fts/route.ts'  # MUST be empty.",
         "bash scripts/check.sh must end ALL GATES PASS."
       ],
@@ -62,11 +62,11 @@
       "category": "types",
       "passes": false,
       "blocked": false,
-      "description": "Fix the 3 `src/lib/rag-retrieval.ts` type errors: TS2347 untyped function calls may not accept type arguments. Give the called functions proper types without changing runtime behavior. NOTE (engine 2026-09-20): the TS2347 errors described here do not exist in the current tree \u2014 they were artifacts of the Prisma client not being generated at baseline time (untyped client calls reject type arguments). With `prisma generate` (already a gate step in scripts/check.sh) the generated types resolve and `bun x tsc --noEmit` reports zero errors in this file. Acceptance is the tsc grep below being empty; no code change required.",
+      "description": "Fix the 3 `src/lib/rag-retrieval.ts` type errors: TS2347 untyped function calls may not accept type arguments. Give the called functions proper types without changing runtime behavior. NOTE (engine 2026-09-20): the TS2347 errors described here do not exist in the current tree — they were artifacts of the Prisma client not being generated at baseline time (untyped client calls reject type arguments). With `prisma generate` (already a gate step in scripts/check.sh) the generated types resolve and `bun x tsc --noEmit` reports zero errors in this file. Acceptance is the tsc grep below being empty; no code change required.",
       "steps": [
         "bunx tsc --noEmit 2>&1 | grep 'src/lib/rag-retrieval.ts'  # confirm the errors.",
         "Read the file; find the untyped function(s) called with explicit type arguments.",
-        "Type them correctly at the definition (preferred) \u2014 no behavior change, no logic change.",
+        "Type them correctly at the definition (preferred) — no behavior change, no logic change.",
         "bunx tsc --noEmit 2>&1 | grep 'src/lib/rag-retrieval.ts'  # MUST be empty.",
         "bash scripts/check.sh must end ALL GATES PASS."
       ],
@@ -80,11 +80,11 @@
       "category": "config",
       "passes": false,
       "blocked": false,
-      "description": "Stop `tsc` from typechecking non-app dev scripts and examples (which redeclare globals / reference optional, uninstalled deps). Exclude `scripts/**` and `examples/**` from tsconfig.json \u2014 mirroring eslint.config.mjs, which already ignores `examples/**`. These files are run ad-hoc via `bunx tsx`, never compiled by Next.",
+      "description": "Stop `tsc` from typechecking non-app dev scripts and examples (which redeclare globals / reference optional, uninstalled deps). Exclude `scripts/**` and `examples/**` from tsconfig.json — mirroring eslint.config.mjs, which already ignores `examples/**`. These files are run ad-hoc via `bunx tsx`, never compiled by Next.",
       "steps": [
         "bunx tsc --noEmit 2>&1 | grep -E '^(scripts|examples)/'  # see the script/example noise.",
         "Read tsconfig.json; add `scripts/**` and `examples/**` to the `exclude` array (keep `node_modules`).",
-        "bunx tsc --noEmit 2>&1  # should now report ONLY app errors already fixed by EW-001..003 \u2014 ideally clean.",
+        "bunx tsc --noEmit 2>&1  # should now report ONLY app errors already fixed by EW-001..003 — ideally clean.",
         "Confirm Next still builds (scripts/examples were never part of the build): bash scripts/check.sh must end ALL GATES PASS."
       ],
       "regression_notes": "Config-only change. Must not alter what `next build` compiles.",
@@ -99,7 +99,7 @@
       "blocked": false,
       "description": "With the app surface clean (EW-001..004), add a `typecheck` script (`tsc --noEmit`) to package.json and wire a strict typecheck gate into scripts/check.sh (before the build step). This makes type regressions fail the gate.",
       "steps": [
-        "Confirm prerequisite: bunx tsc --noEmit  # MUST exit 0 (clean). If not, the prior items are not done \u2014 STOP, do not force this item.",
+        "Confirm prerequisite: bunx tsc --noEmit  # MUST exit 0 (clean). If not, the prior items are not done — STOP, do not force this item.",
         "Add `\"typecheck\": \"tsc --noEmit\"` to package.json scripts (match the existing JSON style).",
         "Edit scripts/check.sh: add a `step \"typecheck (tsc --noEmit)\"` running `bun run typecheck` (FAIL -> rc=1), placed before the build step; update the header comment that currently says tsc is NOT a gate.",
         "bash scripts/check.sh must end ALL GATES PASS (now including typecheck)."
@@ -115,7 +115,7 @@
       "category": "config",
       "passes": false,
       "blocked": true,
-      "description": "Flip `typescript.ignoreBuildErrors` from `true` to `false` in next.config.ts so the production `next build` itself enforces types (defence-in-depth over the EW-005 gate). OWNER-GATED: changes build-failure semantics and could break deploys \u2014 needs explicit owner OK, and should only land after the tsc gate has been green.",
+      "description": "Flip `typescript.ignoreBuildErrors` from `true` to `false` in next.config.ts so the production `next build` itself enforces types (defence-in-depth over the EW-005 gate). OWNER-GATED: changes build-failure semantics and could break deploys — needs explicit owner OK, and should only land after the tsc gate has been green.",
       "steps": [
         "Owner unblocks this item explicitly.",
         "Flip the flag.",
