@@ -1,3 +1,3 @@
-running: true
-iteration: 3
-stop_reason: ""
+running: false
+iteration: 4
+stop_reason: "keep-going"

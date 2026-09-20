@@ -80,3 +80,26 @@ Outcome: PASS
 - Gate: `bash scripts/check.sh` → exit 0, final line `ALL GATES PASS`
   (bun ok, node_modules ok, prisma generate ok, eslint ok, next build ok, items.json valid).
 - Diff of this iteration: `tsconfig.json` exclude array only.
+
+## 2026-09-20T16:29:40Z — EW-004 (engine)
+
+Work summary: Gate re-run outside the worker passed. Scope check passed (4 changed path(s)). Committed 8ab5017.
+
+Gate result: `bash scripts/check.sh` exited 0 and ended with `ALL GATES PASS`.
+
+Outcome: PASS
+- [jev 2026-09-20T16:29:44.452Z] loop-continue STOP: keep-going (P(continue)=0.58).
+
+## 2026-09-20 · EW-005 done (worker iteration)
+
+- Added `"typecheck": "tsc --noEmit"` to package.json scripts (placed after `"lint"`,
+  matching the existing 2-space JSON style and check-script grouping).
+- scripts/check.sh: added `step "typecheck (tsc --noEmit)"` running `bun run typecheck`
+  (FAIL -> tail log + rc=1, same pattern as the lint step), placed after lint and before
+  build. Rewrote the header NOTE: strict `tsc --noEmit` IS now a gate (EW-001..004 complete);
+  notes next.config.ts `typescript.ignoreBuildErrors:true` remains (EW-006, owner-blocked).
+  The `NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1` export was kept untouched.
+- Evidence: prerequisite `bun x tsc --noEmit` exit 0 (0 errors, already clean from EW-004);
+  `bun run typecheck` exit 0; `bash scripts/check.sh` exit 0, final line `ALL GATES PASS`
+  with the new `ok typecheck` step between lint and build.
+- Diff of this iteration: package.json (one script line) + scripts/check.sh (header comment + one gate step).

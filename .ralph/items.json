@@ -78,7 +78,7 @@
     {
       "id": "EW-004",
       "category": "config",
-      "passes": false,
+      "passes": true,
       "blocked": false,
       "description": "Stop `tsc` from typechecking non-app dev scripts and examples (which redeclare globals / reference optional, uninstalled deps). Exclude `scripts/**` and `examples/**` from tsconfig.json — mirroring eslint.config.mjs, which already ignores `examples/**`. These files are run ad-hoc via `bunx tsx`, never compiled by Next.",
       "steps": [
