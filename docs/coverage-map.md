@@ -1,11 +1,11 @@
 # enoch.wiki — Verifiability Coverage Map
 
-> Auto-generated 2026-09-14 by `scripts/coverage-map.mjs`. **Not a verdict — a filing system.**
+> Auto-generated 2026-09-21 by `scripts/coverage-map.mjs`. **Not a verdict — a filing system.**
 > Every fragment is shown at its honest level of verifiability so explorers can weigh the
 > whole composition and decide for themselves. Lower on the ladder ≠ false; it means *less
 > independently verifiable* and a place to keep digging.
 
-**346 evidence** across **703 sources** (181 community-leads) · **110 topics**
+**347 evidence** across **704 sources** (181 community-leads) · **110 topics**
 
 ## The picture so far — verifiability ladder
 
@@ -15,7 +15,7 @@
 | Historically / archaeologically corroborated | 15 | `███·····················` |
 | Scholarly consensus | 108 | `███████████████████·····` |
 | Contested / minority | 3 | `█·······················` |
-| Tradition / devotional | 138 | `████████████████████████` |
+| Tradition / devotional | 139 | `████████████████████████` |
 | Visionary / private revelation | 1 | `························` |
 | Speculative | 76 | `█████████████···········` |
 
@@ -134,7 +134,7 @@
 | verse: 1-enoch 10:9 (Watchers) | 4 | 6 | historically:1 · scholarly:3 · speculative:2 |
 | verse: 1-enoch 10:4 (Azazel) | 4 | 4 | scholarly:4 |
 | theme: Son of Man | 6 | 8 | scholarly:6 · tradition:2 |
-| crawl(d1): theme: book of enoch | 8 | 14 | scholarly:8 · tradition:6 |
+| crawl(d1): theme: book of enoch | 8 | 15 | scholarly:8 · tradition:7 |
 
 ## Scripture coverage
 
@@ -149,18 +149,18 @@
 
 A second axis of verifiability: not just *what* a source says but *who* stands behind it,
 validated the same way sources are (credentials + affiliation + independent corroboration).
-**11 named figures**, **271 institutions**.
+**11 named figures**, **272 institutions**.
 
 ### Named figures (independently validated)
 
 | Person | Type | Tier | Basis | Sources |
 |---|---|---|---|---:|
-| R. H. Charles | scholar | established-authority | peer-cited | 44 |
+| R. H. Charles | scholar | established-authority | peer-cited | 45 |
 | George W. E. Nickelsburg | scholar | established-authority | peer-cited | 7 |
 | James H. Charlesworth | scholar | established-authority | peer-cited | 11 |
 | Annette Yoshiko Reed | scholar | established-authority | peer-cited | 30 |
 | John J. Collins | scholar | established-authority | peer-cited | 6 |
-| Michael E. Stone | scholar | established-authority | peer-cited | 19 |
+| Michael E. Stone | scholar | established-authority | peer-cited | 20 |
 | Jacob Milgrom | scholar | established-authority | peer-cited | 2 |
 | Devorah Dimant | scholar | established-authority | peer-cited | 5 |
 | Florentino García Martínez | scholar | established-authority | peer-cited | 7 |
