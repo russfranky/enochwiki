@@ -20,6 +20,7 @@ import {
   ChevronLeft,
 } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
+import { AI_ENABLED } from '@/lib/launch'
 
 interface StudyToolsProps {
   bookSlug?: string
@@ -27,7 +28,7 @@ interface StudyToolsProps {
 }
 
 export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
-  const [tab, setTab] = useState('daily')
+  const [tab, setTab] = useState(AI_ENABLED ? 'daily' : 'glossary')
   const [summary, setSummary] = useState<string | null>(null)
   const [summaryLoading, setSummaryLoading] = useState(false)
   const [daily, setDaily] = useState<any>(null)
@@ -36,8 +37,9 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
   const [currentCard, setCurrentCard] = useState(0)
   const [showBack, setShowBack] = useState(false)
 
-  // Load daily insight
+  // Load daily insight (AI UI hidden at launch: skip when the switch is off)
   useEffect(() => {
+    if (!AI_ENABLED) return
     fetch('/api/daily-insight').then((r) => r.json()).then((d) => setDaily(d.insight))
   }, [])
 
@@ -51,8 +53,9 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
     fetch('/api/flashcards?due=1').then((r) => r.json()).then((d) => setFlashcards(d.cards || []))
   }, [])
 
-  // Load summary when book/chapter changes
+  // Load summary when book/chapter changes (AI UI hidden at launch: skip when off)
   useEffect(() => {
+    if (!AI_ENABLED) return
     if (!bookSlug || !chapterNum) return
     setSummary(null)
     fetch(`/api/summarize?book=${bookSlug}&chapter=${chapterNum}`)
@@ -61,6 +64,7 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
   }, [bookSlug, chapterNum])
 
   async function generateSummary() {
+    if (!AI_ENABLED) return
     if (!bookSlug || !chapterNum) return
     setSummaryLoading(true)
     try {
@@ -121,72 +125,80 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
       </div>
 
       <Tabs value={tab} onValueChange={setTab} className="flex-1 flex flex-col">
-        <TabsList className="grid grid-cols-4 mx-2 mt-2 h-8">
-          <TabsTrigger value="daily" className="text-[10px]"><Sun className="h-3 w-3 mr-1" />Daily</TabsTrigger>
-          <TabsTrigger value="summary" className="text-[10px]"><Sparkles className="h-3 w-3 mr-1" />Summary</TabsTrigger>
+        <TabsList className={`grid mx-2 mt-2 h-8 ${AI_ENABLED ? 'grid-cols-4' : 'grid-cols-2'}`}>
+          {AI_ENABLED && (
+            <TabsTrigger value="daily" className="text-[10px]"><Sun className="h-3 w-3 mr-1" />Daily</TabsTrigger>
+          )}
+          {AI_ENABLED && (
+            <TabsTrigger value="summary" className="text-[10px]"><Sparkles className="h-3 w-3 mr-1" />Summary</TabsTrigger>
+          )}
           <TabsTrigger value="flashcards" className="text-[10px]"><Layers3 className="h-3 w-3 mr-1" />Cards</TabsTrigger>
           <TabsTrigger value="glossary" className="text-[10px]"><BookMarked className="h-3 w-3 mr-1" />Glossary</TabsTrigger>
         </TabsList>
 
         {/* Daily Insight */}
-        <TabsContent value="daily" className="flex-1 mt-0">
-          <ScrollArea className="h-full">
-            <div className="p-3 sm:p-4">
-              {daily ? (
-                <Card className="p-3 sm:p-4 bg-gradient-to-br from-accent/5 to-primary/5 border-accent/30">
-                  <div className="text-[10px] uppercase tracking-wider text-accent font-semibold mb-2">
-                    Daily Insight · {new Date(daily.date).toLocaleDateString(undefined, { month: 'long', day: 'numeric' })}
+        {AI_ENABLED && (
+          <TabsContent value="daily" className="flex-1 mt-0">
+            <ScrollArea className="h-full">
+              <div className="p-3 sm:p-4">
+                {daily ? (
+                  <Card className="p-3 sm:p-4 bg-gradient-to-br from-accent/5 to-primary/5 border-accent/30">
+                    <div className="text-[10px] uppercase tracking-wider text-accent font-semibold mb-2">
+                      Daily Insight · {new Date(daily.date).toLocaleDateString(undefined, { month: 'long', day: 'numeric' })}
+                    </div>
+                    <div className="font-mono text-xs text-muted-foreground mb-2">{daily.scriptureRef}</div>
+                    <blockquote className="text-sm italic border-l-2 border-accent pl-3 mb-3">
+                      {daily.scriptureText}
+                    </blockquote>
+                    {daily.lifeTheme && (
+                      <Badge variant="outline" className="text-[10px] mb-2 bg-accent/10">{daily.lifeTheme}</Badge>
+                    )}
+                    <p className="text-sm leading-relaxed">{daily.reflection}</p>
+                  </Card>
+                ) : (
+                  <div className="text-center py-6 text-sm text-muted-foreground">
+                    <Loader2 className="h-4 w-4 animate-spin mx-auto" />
                   </div>
-                  <div className="font-mono text-xs text-muted-foreground mb-2">{daily.scriptureRef}</div>
-                  <blockquote className="text-sm italic border-l-2 border-accent pl-3 mb-3">
-                    {daily.scriptureText}
-                  </blockquote>
-                  {daily.lifeTheme && (
-                    <Badge variant="outline" className="text-[10px] mb-2 bg-accent/10">{daily.lifeTheme}</Badge>
-                  )}
-                  <p className="text-sm leading-relaxed">{daily.reflection}</p>
-                </Card>
-              ) : (
-                <div className="text-center py-6 text-sm text-muted-foreground">
-                  <Loader2 className="h-4 w-4 animate-spin mx-auto" />
-                </div>
-              )}
-            </div>
-          </ScrollArea>
-        </TabsContent>
+                )}
+              </div>
+            </ScrollArea>
+          </TabsContent>
+        )}
 
         {/* Passage Summary */}
-        <TabsContent value="summary" className="flex-1 mt-0">
-          <ScrollArea className="h-full">
-            <div className="p-3 sm:p-4">
-              {bookSlug && chapterNum ? (
-                <>
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="text-xs">
-                      <span className="text-muted-foreground">Chapter:</span>{' '}
-                      <span className="font-mono">{bookSlug} {chapterNum}</span>
+        {AI_ENABLED && (
+          <TabsContent value="summary" className="flex-1 mt-0">
+            <ScrollArea className="h-full">
+              <div className="p-3 sm:p-4">
+                {bookSlug && chapterNum ? (
+                  <>
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="text-xs">
+                        <span className="text-muted-foreground">Chapter:</span>{' '}
+                        <span className="font-mono">{bookSlug} {chapterNum}</span>
+                      </div>
+                      <Button size="sm" variant="outline" onClick={generateSummary} disabled={summaryLoading} className="h-7 text-xs">
+                        {summaryLoading ? <Loader2 className="h-3 w-3 mr-1 animate-spin" /> : <Sparkles className="h-3 w-3 mr-1" />}
+                        {summary ? 'Regenerate' : 'Generate'}
+                      </Button>
                     </div>
-                    <Button size="sm" variant="outline" onClick={generateSummary} disabled={summaryLoading} className="h-7 text-xs">
-                      {summaryLoading ? <Loader2 className="h-3 w-3 mr-1 animate-spin" /> : <Sparkles className="h-3 w-3 mr-1" />}
-                      {summary ? 'Regenerate' : 'Generate'}
-                    </Button>
-                  </div>
-                  {summary ? (
-                    <div className="prose-enoch">
-                      <ReactMarkdown>{summary}</ReactMarkdown>
-                    </div>
-                  ) : (
-                    <p className="text-xs text-muted-foreground text-center py-6">
-                      Click "Generate" to produce a structured AI summary grounded in this chapter's text.
-                    </p>
-                  )}
-                </>
-              ) : (
-                <p className="text-xs text-muted-foreground text-center py-6">Select a chapter to summarize.</p>
-              )}
-            </div>
-          </ScrollArea>
-        </TabsContent>
+                    {summary ? (
+                      <div className="prose-enoch">
+                        <ReactMarkdown>{summary}</ReactMarkdown>
+                      </div>
+                    ) : (
+                      <p className="text-xs text-muted-foreground text-center py-6">
+                        Click "Generate" to produce a structured AI summary grounded in this chapter's text.
+                      </p>
+                    )}
+                  </>
+                ) : (
+                  <p className="text-xs text-muted-foreground text-center py-6">Select a chapter to summarize.</p>
+                )}
+              </div>
+            </ScrollArea>
+          </TabsContent>
+        )}
 
         {/* Flashcards */}
         <TabsContent value="flashcards" className="flex-1 mt-0">

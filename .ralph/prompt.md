@@ -1,6 +1,6 @@
 # Ralph iteration contract — enochWIKI (handed to each fresh agent)
 
-You are ONE iteration of the enochWIKI Ralph loop. Repo: `/Users/russ/Documents/GITHUB/enochWIKI`.
+You are ONE iteration of the enochWIKI Ralph loop. Repo: `/home/hatch/workspace/stations/enochwiki`.
 You start with a CLEAN context — the durable state in `.ralph/` is your only memory. Do ONE
 verified unit of work, persist evidence, commit, and exit. Do not try to do everything.
 

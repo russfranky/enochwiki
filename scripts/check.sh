@@ -7,18 +7,23 @@
 #   bash scripts/check.sh
 #
 # The repo has NO CI workflow; these gates mirror the package.json
-# scripts the project actually ships (lint + next build) plus a
+# scripts the project actually ships (lint + typecheck + next build) plus a
 # Prisma client generate (so types/build match prisma/schema.prisma).
 #
-# NOTE: a strict `tsc --noEmit` is NOT yet a gate — the codebase
-# currently ships with pre-existing type errors and next.config.ts
-# sets typescript.ignoreBuildErrors:true. Cleaning that up and
-# tightening this gate is the Ralph backlog objective (see .ralph/plan.md).
+# NOTE: a strict `tsc --noEmit` IS a gate (via `bun run typecheck`). The
+# Ralph backlog EW-001..004 cleaned the app surface and excluded the
+# non-app scripts/examples noise, so the typecheck gate now holds.
+# next.config.ts still sets typescript.ignoreBuildErrors:true (EW-006,
+# owner-blocked); the gate below is stricter than the Next build itself.
 # ============================================================
 set -uo pipefail
 cd "$(cd "$(dirname "$0")/.." && pwd)"
 # bun is the runtime + package manager for this repo.
-export PATH="/Users/russ/.bun/bin:$PATH"
+export PATH="/opt/hatch-image/bin:$HOME/.bun/bin:$PATH"
+# Turbopack's bundled TLS roots do not trust this machine's egress-proxy CA, which
+# breaks `next build`'s Google Fonts fetch. Use the system certs (SSL_CERT_FILE)
+# so the build gate is hermetic here; harmless elsewhere.
+export NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1
 rc=0
 step(){ printf '\n=== %s ===\n' "$1"; }
 
@@ -35,6 +40,10 @@ bunx prisma generate >/tmp/ew-prisma.log 2>&1 \
 step "lint (eslint .)"
 bun run lint >/tmp/ew-lint.log 2>&1 \
   && echo "ok lint" || { echo "FAIL lint"; tail -20 /tmp/ew-lint.log; rc=1; }
+
+step "typecheck (tsc --noEmit)"
+bun run typecheck >/tmp/ew-typecheck.log 2>&1 \
+  && echo "ok typecheck" || { echo "FAIL typecheck"; tail -20 /tmp/ew-typecheck.log; rc=1; }
 
 step "build (next build, standalone)"
 bun run build >/tmp/ew-build.log 2>&1 \

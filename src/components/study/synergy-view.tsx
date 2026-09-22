@@ -20,6 +20,8 @@ import {
   Search,
 } from 'lucide-react'
 
+import { AI_ENABLED } from '@/lib/launch'
+
 interface Evidence {
   id: string
   scriptureRef: string
@@ -164,36 +166,38 @@ export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
         {/* SIDE-BY-SIDE */}
         <TabsContent value="side" className="flex-1 mt-0 overflow-hidden">
           <div className="h-full flex flex-col">
-            {/* Scrape bar */}
-            <div className="px-3 sm:px-4 py-2 border-b border-border bg-card/50">
-              <div className="flex gap-2">
-                <input
-                  type="text"
-                  value={scrapeQuery}
-                  onChange={(e) => setScrapeQuery(e.target.value)}
-                  onKeyDown={(e) => e.key === 'Enter' && scrapeFor()}
-                  placeholder={
-                    selectedVerseRef
-                      ? `Search for corroborating evidence for ${selectedVerseRef}...`
-                      : 'Search for evidence on any topic (e.g. "Qumran Enoch fragments", "Mount Hermon archaeology")...'
-                  }
-                  className="flex-1 h-9 px-3 text-sm rounded-md border border-input bg-background"
-                  disabled={scraping}
-                />
-                <Button onClick={scrapeFor} disabled={scraping || !scrapeQuery.trim()} size="sm">
-                  {scraping ? (
-                    <Loader2 className="h-3.5 w-3.5 animate-spin mr-1" />
-                  ) : (
-                    <Search className="h-3.5 w-3.5 mr-1" />
-                  )}
-                  Scrape
-                </Button>
+            {/* Scrape bar (AI UI hidden at launch) */}
+            {AI_ENABLED && (
+              <div className="px-3 sm:px-4 py-2 border-b border-border bg-card/50">
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    value={scrapeQuery}
+                    onChange={(e) => setScrapeQuery(e.target.value)}
+                    onKeyDown={(e) => e.key === 'Enter' && scrapeFor()}
+                    placeholder={
+                      selectedVerseRef
+                        ? `Search for corroborating evidence for ${selectedVerseRef}...`
+                        : 'Search for evidence on any topic (e.g. "Qumran Enoch fragments", "Mount Hermon archaeology")...'
+                    }
+                    className="flex-1 h-9 px-3 text-sm rounded-md border border-input bg-background"
+                    disabled={scraping}
+                  />
+                  <Button onClick={scrapeFor} disabled={scraping || !scrapeQuery.trim()} size="sm">
+                    {scraping ? (
+                      <Loader2 className="h-3.5 w-3.5 animate-spin mr-1" />
+                    ) : (
+                      <Search className="h-3.5 w-3.5 mr-1" />
+                    )}
+                    Scrape
+                  </Button>
+                </div>
+                <p className="text-[10px] text-muted-foreground mt-1">
+                  Searches the web via the z-ai SDK, archives results locally with credibility scoring,
+                  and auto-creates evidence links when a verse is selected.
+                </p>
               </div>
-              <p className="text-[10px] text-muted-foreground mt-1">
-                Searches the web via the z-ai SDK, archives results locally with credibility scoring,
-                and auto-creates evidence links when a verse is selected.
-              </p>
-            </div>
+            )}
 
             <ScrollArea className="flex-1">
               <div className="px-3 sm:px-4 py-3 space-y-3">
@@ -211,8 +215,9 @@ export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
                     <Search className="h-8 w-8 mx-auto mb-2 opacity-50" />
                     No evidence records yet.
                     <p className="text-xs mt-2">
-                      Use the search bar above to scrape external sources, or select a verse to see
-                      pre-loaded corroborations.
+                      {AI_ENABLED
+                        ? 'Use the search bar above to scrape external sources, or select a verse to see pre-loaded corroborations.'
+                        : 'Select a verse to see pre-loaded corroborations.'}
                     </p>
                   </div>
                 ) : (

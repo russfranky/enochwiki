@@ -7,6 +7,7 @@
     "build": "next build && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/",
     "start": "NODE_ENV=production bun .next/standalone/server.js 2>&1 | tee server.log",
     "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
     "websearch": "node scripts/zai-websearch.mjs",
     "crawl": "node --env-file=.env scripts/crawl.mjs",
     "scrape-grow": "node --env-file=.env scripts/scrape-grow.mjs",
