@@ -3,6 +3,9 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { db } from '@/lib/db'
 import { webSearch, pageReader, checkApiHealth } from '@/lib/zai-api'
+import { SCRAPE_ENABLED } from '@/lib/launch'
+
+const SCRAPE_DORMANT = { error: 'Scrape pipeline is dormant. Set SCRAPE_ENABLED=true to feed it again.' }
 
 export const runtime = 'nodejs'
 export const maxDuration = 300 // 5 minutes
@@ -24,6 +27,9 @@ interface GrowResult {
 }
 
 export async function POST(req: NextRequest) {
+  if (!SCRAPE_ENABLED) {
+    return NextResponse.json(SCRAPE_DORMANT, { status: 503 })
+  }
   const body = (await req.json()) as GrowRequest
   const mode = body.mode || 'themes'
   const limit = body.limit || 10
@@ -249,6 +255,9 @@ export async function POST(req: NextRequest) {
 }
 
 export async function GET() {
+  if (!SCRAPE_ENABLED) {
+    return NextResponse.json(SCRAPE_DORMANT, { status: 503 })
+  }
   // Return a preview of what would be processed
   const themes = await db.theme.count()
   const verses = await db.verse.count()

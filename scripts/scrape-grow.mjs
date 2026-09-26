@@ -24,6 +24,13 @@ import { readFileSync } from 'node:fs'
 import { homedir } from 'node:os'
 import { join } from 'node:path'
 
+// Dormant switch (owner call 2026-09-26): the corpus is in hand, so the scrape
+// pipeline is off by default. Set SCRAPE_ENABLED=true to feed it again.
+if (process.env.SCRAPE_ENABLED !== 'true') {
+  console.log('[scrape-grow] pipeline is dormant (SCRAPE_ENABLED is not "true") — nothing to do.')
+  process.exit(0)
+}
+
 const rawArgs = process.argv.slice(2)
 // --min-cred drops sources below a floor (default 0: keep everything, leads included).
 // --leads-only / --scholarly-only restrict a run to one class.

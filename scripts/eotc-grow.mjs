@@ -17,6 +17,13 @@ import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 import { homedir } from 'node:os'
 
+// Dormant switch (owner call 2026-09-26): the corpus is in hand, so the scrape
+// pipeline is off by default. Set SCRAPE_ENABLED=true to feed it again.
+if (process.env.SCRAPE_ENABLED !== 'true') {
+  console.log('[eotc-grow] pipeline is dormant (SCRAPE_ENABLED is not "true") — nothing to do.')
+  process.exit(0)
+}
+
 const here = dirname(fileURLToPath(import.meta.url))
 const argv = process.argv.slice(2)
 const opt = (f, d) => { const i = argv.indexOf(f); return i >= 0 ? argv[i + 1] : d }
