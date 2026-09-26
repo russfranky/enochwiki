@@ -1,6 +1,9 @@
 // Scrape external sources to corroborate scripture — uses direct Z.ai API (web_search + page_reader)
 import { NextRequest, NextResponse } from 'next/server'
 import { db } from '@/lib/db'
+import { SCRAPE_ENABLED } from '@/lib/launch'
+
+const SCRAPE_DORMANT = { error: 'Scrape pipeline is dormant. Set SCRAPE_ENABLED=true to feed it again.' }
 
 export const runtime = 'nodejs'
 export const maxDuration = 90
@@ -86,6 +89,9 @@ interface ScrapeRequestBody {
 }
 
 export async function POST(req: NextRequest) {
+  if (!SCRAPE_ENABLED) {
+    return NextResponse.json(SCRAPE_DORMANT, { status: 503 })
+  }
   try {
     const body = (await req.json()) as ScrapeRequestBody
     const { query, scriptureRef, scriptureText, num = 8 } = body
