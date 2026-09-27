@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { ScrollArea } from '@/components/ui/scroll-area'
+import { getAdminToken, setAdminToken, adminAuthHeaders } from '@/lib/admin-token'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -73,15 +74,37 @@ export function ReviewDashboard() {
   const [reviewer, setReviewer] = useState('editor')
   const [notes, setNotes] = useState('')
   const [acting, setActing] = useState(false)
+  // D-014: admin token entry point + honest auth-failure surfacing.
+  const [tokenInput, setTokenInput] = useState('')
+  const [hasToken, setHasToken] = useState(false)
+  const [authError, setAuthError] = useState<string | null>(null)
+
+  useEffect(() => {
+    setHasToken(!!getAdminToken())
+  }, [])
 
   async function load() {
     setLoading(true)
-    const url = filter === 'all' ? '/api/review' : `/api/review?state=${filter}`
-    const d = await fetch(url).then((r) => r.json())
-    setItems(d.queue || [])
-    setAuditLog(d.auditLog || [])
-    setCounts(d.counts || {})
-    setLoading(false)
+    setAuthError(null)
+    try {
+      const url = filter === 'all' ? '/api/review' : `/api/review?state=${filter}`
+      const r = await fetch(url, { headers: adminAuthHeaders() })
+      if (r.status === 401 || r.status === 503) {
+        // Auth failure is a visible error, never a silent empty queue (D-014).
+        const d = await r.json().catch(() => ({} as { error?: string }))
+        setAuthError(d.error || 'Admin access denied.')
+        setItems([])
+        setAuditLog([])
+        setCounts({})
+        return
+      }
+      const d = await r.json()
+      setItems(d.queue || [])
+      setAuditLog(d.auditLog || [])
+      setCounts(d.counts || {})
+    } finally {
+      setLoading(false)
+    }
   }
 
   useEffect(() => {
@@ -92,9 +115,9 @@ export function ReviewDashboard() {
     if (!selected) return
     setActing(true)
     try {
-      await fetch('/api/review', {
+      const r = await fetch('/api/review', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', ...adminAuthHeaders() },
         body: JSON.stringify({
           itemType: selected.itemType,
           itemId: selected.itemId,
@@ -104,6 +127,16 @@ export function ReviewDashboard() {
           notes,
         }),
       })
+      if (r.status === 401 || r.status === 503) {
+        const d = await r.json().catch(() => ({} as { error?: string }))
+        setAuthError(d.error || 'Admin access denied.')
+        return
+      }
+      if (!r.ok) {
+        const d = await r.json().catch(() => ({} as { error?: string }))
+        alert(d.error || 'Review action failed')
+        return
+      }
       setNotes('')
       await load()
       setSelected(null)
@@ -118,14 +151,16 @@ export function ReviewDashboard() {
     try {
       const r = await fetch('/api/publish', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', ...adminAuthHeaders() },
         body: JSON.stringify({ itemType: selected.itemType, itemId: selected.itemId }),
       })
-      const d = await r.json()
-      if (!r.ok) {
+      const d = await r.json().catch(() => ({} as { error?: string }))
+      if (r.status === 401 || r.status === 503) {
+        setAuthError(d.error || 'Admin access denied.')
+      } else if (!r.ok) {
         alert(d.error || 'Publish failed')
       } else {
-        alert(`Published as: ${d.article?.slug}`)
+        alert(`Published as: ${(d as any).article?.slug}`)
       }
       await load()
     } finally {
@@ -145,7 +180,73 @@ export function ReviewDashboard() {
         <p className="text-xs text-muted-foreground mt-0.5">
           The gate. Nothing reaches the public site until it passes review here.
         </p>
+        {/* D-014: minimal admin token entry point. Token stays in memory +
+            sessionStorage for this session; it is never logged or persisted. */}
+        <div className="flex flex-wrap items-center gap-2 mt-2">
+          {hasToken ? (
+            <>
+              <Badge variant="outline" className="text-[10px]">
+                <ShieldCheck className="h-3 w-3 mr-1" />
+                admin session active
+              </Badge>
+              <Button
+                size="sm"
+                variant="ghost"
+                onClick={() => {
+                  setAdminToken('')
+                  setHasToken(false)
+                  setTokenInput('')
+                  load()
+                }}
+              >
+                Clear token
+              </Button>
+            </>
+          ) : (
+            <>
+              <input
+                type="password"
+                autoComplete="off"
+                value={tokenInput}
+                onChange={(e) => setTokenInput(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    setAdminToken(tokenInput)
+                    setHasToken(!!tokenInput.trim())
+                    setTokenInput('')
+                    load()
+                  }
+                }}
+                placeholder="Admin token"
+                className="h-7 px-2 text-xs rounded border border-input bg-background w-36"
+              />
+              <Button
+                size="sm"
+                variant="outline"
+                onClick={() => {
+                  setAdminToken(tokenInput)
+                  setHasToken(!!tokenInput.trim())
+                  setTokenInput('')
+                  load()
+                }}
+              >
+                Use token
+              </Button>
+            </>
+          )}
+        </div>
       </div>
+
+      {authError && (
+        <div className="px-4 py-2 bg-destructive/10 border-b border-destructive/30 flex items-center gap-2">
+          <ShieldAlert className="h-4 w-4 text-destructive flex-shrink-0" />
+          <span className="text-xs text-destructive font-medium">Admin access denied.</span>
+          <span className="text-xs text-muted-foreground">
+            {authError}
+            {!hasToken && ' Enter the admin token above to load the queue.'}
+          </span>
+        </div>
+      )}
 
       <div className="flex flex-1 overflow-hidden flex-col md:flex-row">
         {/* Queue */}
@@ -179,7 +280,11 @@ export function ReviewDashboard() {
                   <Loader2 className="h-5 w-5 animate-spin mx-auto text-muted-foreground" />
                 </div>
               ) : items.length === 0 ? (
-                <p className="text-center text-xs text-muted-foreground py-6">No items in this state.</p>
+                <p className="text-center text-xs text-muted-foreground py-6">
+                  {authError
+                    ? 'Enter a valid admin token above to load the queue.'
+                    : 'No items in this state.'}
+                </p>
               ) : (
                 items.map((it) => (
                   <Card
@@ -304,7 +409,7 @@ export function ReviewDashboard() {
                       </div>
                       {selected.item.source && (
                         <a
-                          href={selected.item.source.url}
+                          href={typeof selected.item.source.url === 'string' && /^https?:\/\//i.test(selected.item.source.url.trim()) ? selected.item.source.url : undefined}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-xs text-accent underline block"
