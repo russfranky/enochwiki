@@ -11,6 +11,10 @@ cd "$(dirname "$0")/.." || exit 1
 ROOT="$(pwd -P)"
 export PATH="$HOME/.bun/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
 [ -f .env ] || { echo "[grow] no .env — run scripts/bootstrap or set up DB first"; exit 1; }
+# D-012: safety guard — never run growth against a Supabase-hosted database.
+if grep -qi supabase .env 2>/dev/null; then
+  echo "[grow] refusing to run: .env references Supabase (production DB). Use a local SQLite DATABASE_URL."; exit 1
+fi
 
 LOG="$ROOT/.grow-cron.log"; exec >> "$LOG" 2>&1
 echo "===== grow run $(date) ====="

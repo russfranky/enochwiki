@@ -1,8 +1,9 @@
-// Setup FTS5 with contentless tables — simpler, no triggers needed
+// Setup FTS5 with content-storing tables — snippet()/highlight() need stored
+// content; contentless (content='') tables always return empty snippets.
 import { db } from '../src/lib/db'
 
 async function main() {
-  console.log('🔧 Setting up FTS5 (contentless, no triggers)...')
+  console.log('🔧 Setting up FTS5 (content-storing, no triggers)...')
 
   // Drop existing FTS tables and triggers
   await db.$executeRawUnsafe(`DROP TRIGGER IF EXISTS verses_ai;`).catch(() => {})
@@ -19,23 +20,25 @@ async function main() {
   await db.$executeRawUnsafe(`DROP TABLE IF EXISTS sources_fts;`).catch(() => {})
   await db.$executeRawUnsafe(`DROP TABLE IF EXISTS evidence_fts;`).catch(() => {})
 
-  // Create contentless FTS5 tables (no content= linkage, no triggers)
+  // Create content-storing FTS5 tables (no content= linkage, no triggers).
+  // D-001: these MUST store content — contentless tables (content='') make
+  // snippet()/highlight() return '' on every result.
   await db.$executeRawUnsafe(`
     CREATE VIRTUAL TABLE verses_fts USING fts5(
-      ref, text, book_name, content='', tokenize='porter unicode61'
+      ref, text, book_name, tokenize='porter unicode61'
     );
   `)
   await db.$executeRawUnsafe(`
     CREATE VIRTUAL TABLE sources_fts USING fts5(
-      title, summary, content, domain, content='', tokenize='porter unicode61'
+      title, summary, content, domain, tokenize='porter unicode61'
     );
   `)
   await db.$executeRawUnsafe(`
     CREATE VIRTUAL TABLE evidence_fts USING fts5(
-      scripture_ref, claim, corroboration, notes, content='', tokenize='porter unicode61'
+      scripture_ref, claim, corroboration, notes, tokenize='porter unicode61'
     );
   `)
-  console.log('  ✓ FTS5 tables created (contentless)')
+  console.log('  ✓ FTS5 tables created (content-storing)')
 
   // Populate verses_fts
   const verseRows = await db.$queryRawUnsafe<any[]>(

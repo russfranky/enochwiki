@@ -9,6 +9,8 @@ const VALID_STATES = ['draft', 'auto-corroborated', 'in-review', 'approved', 're
 const VALID_ITEM_TYPES = ['evidence', 'public-article', 'topic-page', 'source']
 
 export async function GET(req: NextRequest) {
+  const denied = requireAdmin(req)
+  if (denied) return denied
   const { searchParams } = new URL(req.url)
   const state = searchParams.get('state')
   const itemType = searchParams.get('itemType')
