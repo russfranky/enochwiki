@@ -2,10 +2,13 @@
 // Takes an approved item and creates/updates a corresponding PublicArticle
 import { NextRequest, NextResponse } from 'next/server'
 import { db } from '@/lib/db'
+import { requireAdmin } from '@/lib/admin'
 
 export const runtime = 'nodejs'
 
 export async function POST(req: NextRequest) {
+  const gate = requireAdmin(req)
+  if (gate) return gate
   const body = await req.json()
   const { itemType, itemId } = body as { itemType: string; itemId: string }
 

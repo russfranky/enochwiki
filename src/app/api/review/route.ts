@@ -1,6 +1,7 @@
 // Editorial review workflow — queue, approve/reject, checklist, audit log
 import { NextRequest, NextResponse } from 'next/server'
 import { db } from '@/lib/db'
+import { requireAdmin } from '@/lib/admin'
 
 export const runtime = 'nodejs'
 
@@ -72,6 +73,8 @@ export async function GET(req: NextRequest) {
 
 // Update item state — transition with audit log
 export async function POST(req: NextRequest) {
+  const gate = requireAdmin(req)
+  if (gate) return gate
   const body = await req.json()
   const { itemType, itemId, action, reviewer = 'editor', reviewerRole = 'reviewer', notes, checklist } = body as {
     itemType: string

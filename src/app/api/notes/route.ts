@@ -1,6 +1,7 @@
 // User notes — CRUD
 import { NextRequest, NextResponse } from 'next/server'
 import { db } from '@/lib/db'
+import { requireAdmin } from '@/lib/admin'
 
 export const runtime = 'nodejs'
 
@@ -19,6 +20,8 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: NextRequest) {
+  const gate = requireAdmin(req)
+  if (gate) return gate
   const body = await req.json()
   const { title, content, scriptureRef, themeSlug, tags } = body as {
     title: string
@@ -37,6 +40,8 @@ export async function POST(req: NextRequest) {
 }
 
 export async function PATCH(req: NextRequest) {
+  const gate = requireAdmin(req)
+  if (gate) return gate
   const body = await req.json()
   const { id, title, content, tags } = body as {
     id: string
@@ -57,6 +62,8 @@ export async function PATCH(req: NextRequest) {
 }
 
 export async function DELETE(req: NextRequest) {
+  const gate = requireAdmin(req)
+  if (gate) return gate
   const { searchParams } = new URL(req.url)
   const id = searchParams.get('id')
   if (!id) return NextResponse.json({ error: 'id required' }, { status: 400 })
