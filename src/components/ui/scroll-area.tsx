@@ -13,7 +13,10 @@ function ScrollArea({
   return (
     <ScrollAreaPrimitive.Root
       data-slot="scroll-area"
-      className={cn("relative", className)}
+      // min-h-0: the root is not a scroll container itself, so without this
+      // its automatic minimum size is content-based and flex-1 cannot shrink
+      // it inside a constrained column (verses became unreachable).
+      className={cn("relative min-h-0", className)}
       {...props}
     >
       <ScrollAreaPrimitive.Viewport
