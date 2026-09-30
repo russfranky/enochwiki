@@ -12,7 +12,6 @@ import {
   BookOpen,
   Scale,
   Layers,
-  Search,
   X,
   Brain,
   MessageSquare,
@@ -22,7 +21,7 @@ import { ChatPanel } from '@/components/study/chat-panel'
 import { SynergyView } from '@/components/study/synergy-view'
 import { ThemeExplorer } from '@/components/study/theme-explorer'
 import { StudyTools } from '@/components/study/study-tools'
-import { ThemeToggle } from '@/components/theme-toggle'
+import { SiteHeader } from '@/components/site-header'
 import { AI_ENABLED } from '@/lib/launch'
 
 // D-002: Source URLs come from the database — allowlist http/https before
@@ -93,30 +92,30 @@ export default function Home() {
       <div className="flex border-b border-border bg-secondary/40">
         <button
           onClick={() => setRightTab('synergy')}
-          className={`flex-1 px-2 sm:px-3 py-2.5 text-xs font-medium transition-colors ${
+          className={`flex-1 px-1 sm:px-3 py-2.5 text-[10px] sm:text-xs font-medium transition-colors ${
             rightTab === 'synergy' ? 'bg-card text-primary border-b-2 border-accent' : 'text-muted-foreground hover:text-foreground'
           }`}
         >
-          <Scale className="h-3.5 w-3.5 inline mr-1 sm:mr-1.5" />
-          <span className="hidden sm:inline">Corroboration</span>
+          <Scale className="h-3.5 w-3.5 inline mr-1" />
+          <span>Corroboration</span>
         </button>
         <button
           onClick={() => setRightTab('themes')}
-          className={`flex-1 px-2 sm:px-3 py-2.5 text-xs font-medium transition-colors ${
+          className={`flex-1 px-1 sm:px-3 py-2.5 text-[10px] sm:text-xs font-medium transition-colors ${
             rightTab === 'themes' ? 'bg-card text-primary border-b-2 border-accent' : 'text-muted-foreground hover:text-foreground'
           }`}
         >
-          <Layers className="h-3.5 w-3.5 inline mr-1 sm:mr-1.5" />
-          <span className="hidden sm:inline">Themes</span>
+          <Layers className="h-3.5 w-3.5 inline mr-1" />
+          <span>Themes</span>
         </button>
         <button
           onClick={() => setRightTab('tools')}
-          className={`flex-1 px-2 sm:px-3 py-2.5 text-xs font-medium transition-colors ${
+          className={`flex-1 px-1 sm:px-3 py-2.5 text-[10px] sm:text-xs font-medium transition-colors ${
             rightTab === 'tools' ? 'bg-card text-primary border-b-2 border-accent' : 'text-muted-foreground hover:text-foreground'
           }`}
         >
-          <Brain className="h-3.5 w-3.5 inline mr-1 sm:mr-1.5" />
-          <span className="hidden sm:inline">Study Tools</span>
+          <Brain className="h-3.5 w-3.5 inline mr-1" />
+          <span>Study Tools</span>
         </button>
       </div>
       <div className="flex-1 overflow-hidden">
@@ -136,48 +135,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col parchment-bg">
-      {/* Header */}
-      <header className="border-b border-hairline bg-card/85 backdrop-blur-md sticky top-0 z-30">
-        <div className="px-3 sm:px-4 md:px-6 py-2.5 sm:py-3 flex items-center justify-between gap-2">
-          {/* Brand */}
-          <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0 min-w-0">
-            <svg viewBox="0 0 240 240" className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0" aria-label="enoch.wiki mark" role="img">
-              <circle cx="120" cy="120" r="100" fill="none" stroke="var(--gold-500)" strokeWidth="4"/>
-              <path d="M 120 20 L 129.9 96 L 163.8 76.2 L 144 110.1 L 220 120 L 144 129.9 L 163.8 163.8 L 129.9 144 L 120 220 L 110.1 144 L 76.2 163.8 L 96 129.9 L 20 120 L 96 110.1 L 76.2 76.2 L 110.1 96 Z" fill="var(--gold-500)"/>
-              <ellipse cx="120" cy="120" rx="112" ry="42" fill="none" stroke="var(--gold-500)" strokeWidth="5" transform="rotate(-22 120 120)"/>
-            </svg>
-            <div className="min-w-0">
-              <h1 className="font-serif text-lg sm:text-xl md:text-2xl font-semibold leading-tight text-foreground truncate" style={{ fontFamily: 'var(--font-display-stack)' }}>
-                enoch<span style={{ color: 'var(--gold-500)' }}>.</span>wiki
-              </h1>
-              <p className="text-[10px] sm:text-[11px] text-muted-foreground -mt-0.5 hidden sm:block" style={{ fontFamily: 'var(--font-ui-stack)' }}>
-                The Ethiopian Bible, corroborated
-              </p>
-            </div>
-          </div>
-
-          {/* Right side: nav + actions */}
-          <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
-            <Link
-              href="/topics"
-              className="text-xs px-2 sm:px-3 py-1.5 rounded transition text-muted-foreground hover:text-foreground"
-              style={{ fontFamily: 'var(--font-ui-stack)' }}
-            >
-              Topics
-            </Link>
-            <Link
-              href="/how-we-vet"
-              className="text-xs px-2 sm:px-3 py-1.5 rounded transition text-muted-foreground hover:text-foreground hidden sm:inline"
-              style={{ fontFamily: 'var(--font-ui-stack)' }}
-            >
-              How we vet
-            </Link>
-            <Button variant="outline" size="icon" onClick={() => setSearchOpen((s) => !s)} className="h-8 w-8" aria-label="Search">
-              <Search className="h-3.5 w-3.5" />
-            </Button>
-            <ThemeToggle />
-          </div>
-        </div>
+      <SiteHeader onSearchToggle={() => setSearchOpen((s) => !s)} searchOpen={searchOpen} />
 
         {/* Selected verse indicator */}
         {selectedVerseRef && (
@@ -251,8 +209,6 @@ export default function Home() {
             )}
           </div>
         )}
-      </header>
-
       {/* Main content */}
       <main className="flex-1 overflow-hidden">
         {/* Mobile: panel switcher with bottom nav */}
