@@ -329,7 +329,7 @@ export function ScriptureReader({
                         <Badge
                           key={t.slug}
                           variant="outline"
-                          className="text-[9px] py-0 px-1.5 h-4 border-accent/40 text-accent-foreground bg-accent/10"
+                          className="text-[9px] py-0 px-1.5 h-4 border-accent/40 text-accent-foreground dark:text-[var(--gold-300)] bg-accent/10"
                         >
                           {t.name}
                         </Badge>
