@@ -1,10 +1,13 @@
 // Local backup/export — full JSON dump + Markdown digest
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 import { db } from '@/lib/db'
+import { requireAdmin } from '@/lib/admin'
 
 export const runtime = 'nodejs'
 
-export async function GET() {
+export async function GET(req: NextRequest) {
+  const denied = requireAdmin(req)
+  if (denied) return denied
   const [books, themes, crossReferences, sources, evidence, notes, chatHistory] =
     await Promise.all([
       db.book.findMany({

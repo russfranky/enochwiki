@@ -286,6 +286,9 @@ export async function POST(req: NextRequest) {
 }
 
 export async function GET() {
+  if (!SCRAPE_ENABLED) {
+    return NextResponse.json(SCRAPE_DORMANT, { status: 503 })
+  }
   const sources = await db.source.findMany({
     orderBy: { retrievedAt: 'desc' },
     take: 100,

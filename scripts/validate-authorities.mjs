@@ -24,7 +24,19 @@ const db = new PrismaClient()
 // deterministically because source ids change on every reseed).
 const OFFLINE = process.argv.includes('--offline')
 let RESTORED = {}
-try { for (const a of JSON.parse(readFileSync('data/authorities-export.json', 'utf8')).authorities) RESTORED[a.slug] = a } catch { /* no prior export */ }
+// D-007: --offline restores scholar scores from the snapshot; without it there
+// is nothing to restore, so fail with a clear error instead of running an
+// unvalidated online-style pass that crashes on a missing perspective FK.
+if (OFFLINE) {
+  let snapshot = null
+  try { snapshot = JSON.parse(readFileSync('data/authorities-export.json', 'utf8')) } catch { /* missing/invalid */ }
+  if (!snapshot || !Array.isArray(snapshot.authorities)) {
+    console.error('[authorities] --offline requires data/authorities-export.json with an "authorities" array; run without --offline once to generate it.')
+    await db.$disconnect()
+    process.exit(2)
+  }
+  for (const a of snapshot.authorities) RESTORED[a.slug] = a
+}
 const KEY = process.env.ZAI_API_KEY || process.env.Z_AI_API_KEY ||
   (() => { try { return readFileSync(join(homedir(), '.config/glm/z-ai.key'), 'utf8').trim() } catch { return '' } })()
 const MCP_URL = process.env.ZAI_MCP_WEB_SEARCH_URL || 'https://api.z.ai/api/mcp/web_search_prime/mcp'

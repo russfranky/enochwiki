@@ -15,6 +15,16 @@ import { fileURLToPath } from 'node:url'
 const db = new PrismaClient()
 const here = dirname(fileURLToPath(import.meta.url))
 const argv = process.argv.slice(2)
+// D-005: --help must print usage and exit BEFORE any ingest — previously the
+// flag was ignored and a real ingest ran (wrote Source/Evidence rows).
+if (argv.includes('--help') || argv.includes('-h')) {
+  console.log(`Usage: node --env-file=.env scripts/ingest-research.mjs [--dry] [--file data/research/x.json]
+
+  --dry        verify + print what would be filed, without writing to the DB
+  --file PATH  ingest only this JSON file (default: all data/research/*.json)
+  -h, --help   print this help and exit`)
+  process.exit(0)
+}
 const DRY = argv.includes('--dry')
 const only = (() => { const i = argv.indexOf('--file'); return i >= 0 ? argv[i + 1] : null })()
 const dir = join(here, '..', 'data', 'research')

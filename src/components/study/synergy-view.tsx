@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Separator } from '@/components/ui/separator'
+import { adminAuthHeaders } from '@/lib/admin-token'
 import {
   ScrollText,
   Network,
@@ -94,12 +95,16 @@ export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
     try {
       const res = await fetch('/api/scrape', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', ...adminAuthHeaders() },
         body: JSON.stringify({
           query: scrapeQuery.trim(),
           scriptureRef: selectedVerseRef || undefined,
         }),
       })
+      if (res.status === 401 || res.status === 503) {
+        const d = await res.json().catch(() => ({} as { error?: string }))
+        throw new Error(d.error || 'Admin access denied. Enter the admin token in the Review tab.')
+      }
       if (!res.ok) throw new Error('Scrape failed')
       const data = await res.json()
       // reload evidence
@@ -120,14 +125,17 @@ export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
 
   async function deleteEvidence(id: string) {
     if (!confirm('Delete this evidence record?')) return
-    await fetch(`/api/evidence?id=${id}`, { method: 'DELETE' })
+    await fetch(`/api/evidence?id=${id}`, {
+      method: 'DELETE',
+      headers: adminAuthHeaders(),
+    })
     setAllEvidence((e) => e.filter((x) => x.id !== id))
   }
 
   async function updateAlignment(id: string, alignment: string) {
     await fetch('/api/evidence', {
       method: 'PATCH',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', ...adminAuthHeaders() },
       body: JSON.stringify({ id, alignment }),
     })
     setAllEvidence((e) =>
@@ -344,7 +352,7 @@ function EvidenceCard({
       {evidence.source && (
         <div className="mt-2 pt-2 border-t border-border">
           <a
-            href={evidence.source.url}
+            href={/^https?:\/\//i.test(evidence.source.url.trim()) ? evidence.source.url : undefined}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-start gap-1.5 text-xs hover:text-accent transition group"

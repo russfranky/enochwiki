@@ -24,6 +24,7 @@ import {
   Loader2,
   MessageSquare,
   Menu,
+  AlertTriangle,
 } from 'lucide-react'
 import { ScriptureReader } from '@/components/study/scripture-reader'
 import { ChatPanel } from '@/components/study/chat-panel'
@@ -34,6 +35,12 @@ import { PublicSite } from '@/components/study/public-site'
 import { StudyTools } from '@/components/study/study-tools'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { AI_ENABLED } from '@/lib/launch'
+import { adminAuthHeaders } from '@/lib/admin-token'
+
+// D-002: Source URLs come from the database — allowlist http/https before
+// injecting into href so a poisoned `javascript:` URL cannot execute on click.
+const safeHref = (u: unknown): string | undefined =>
+  typeof u === 'string' && /^https?:\/\//i.test(u.trim()) ? u : undefined
 
 type TopTab = 'study' | 'review' | 'public'
 type RightTab = 'synergy' | 'themes' | 'tools'
@@ -57,6 +64,8 @@ export default function Home() {
   const [growResult, setGrowResult] = useState<any>(null)
   const [mobilePanel, setMobilePanel] = useState<MobilePanel>('scripture')
   const [isMobile, setIsMobile] = useState(false)
+  // D-015: error message shown when the export request fails (no download).
+  const [exportError, setExportError] = useState<string | null>(null)
 
   // Detect mobile viewport
   useEffect(() => {
@@ -102,16 +111,32 @@ export default function Home() {
     }
   }
 
+  // D-015: check res.ok and content-type before downloading; show the error
+  // message in the UI instead of silently downloading an error payload.
   async function exportBackup() {
-    const res = await fetch('/api/export')
-    const data = await res.json()
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
-    const url = URL.createObjectURL(blob)
-    const a = document.createElement('a')
-    a.href = url
-    a.download = `ethiopian-bible-backup-${new Date().toISOString().slice(0, 10)}.json`
-    a.click()
-    URL.revokeObjectURL(url)
+    setExportError(null)
+    try {
+      const res = await fetch('/api/export', { headers: adminAuthHeaders() })
+      const contentType = res.headers.get('content-type') || ''
+      const data = await res.json().catch(() => null)
+      const serverError =
+        !res.ok || !contentType.includes('application/json') || !data || (data as any).error
+      if (serverError) {
+        setExportError(
+          (data as any)?.error || `Export failed (HTTP ${res.status}). Check the admin token.`,
+        )
+        return
+      }
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = `ethiopian-bible-backup-${new Date().toISOString().slice(0, 10)}.json`
+      a.click()
+      URL.revokeObjectURL(url)
+    } catch (e: any) {
+      setExportError(`Export failed: ${e.message}`)
+    }
   }
 
   async function growDatabase() {
@@ -122,7 +147,7 @@ export default function Home() {
     try {
       const res = await fetch('/api/auto-grow', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', ...adminAuthHeaders() },
         body: JSON.stringify({ mode: 'all', limit: 8 }),
       })
       const data = await res.json()
@@ -330,7 +355,7 @@ export default function Home() {
                 {searchResults.sources?.slice(0, 3).map((s: any) => (
                   <a
                     key={s.id}
-                    href={s.url}
+                    href={safeHref(s.url)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block p-1.5 hover:bg-secondary rounded text-xs"
@@ -344,6 +369,22 @@ export default function Home() {
           </div>
         )}
       </header>
+
+      {/* D-015: export failure feedback — error shown instead of a bad download */}
+      {exportError && (
+        <div className="px-3 sm:px-4 md:px-6 py-2 bg-destructive/10 border-b border-destructive/30 flex items-center gap-2">
+          <AlertTriangle className="h-4 w-4 text-destructive flex-shrink-0" />
+          <span className="text-xs text-destructive font-medium">Export failed:</span>
+          <span className="text-xs text-muted-foreground flex-1">{exportError}</span>
+          <button
+            onClick={() => setExportError(null)}
+            className="text-muted-foreground hover:text-foreground flex-shrink-0"
+            aria-label="Dismiss export error"
+          >
+            <X className="h-3 w-3" />
+          </button>
+        </div>
+      )}
 
       {/* Main content */}
       <main className="flex-1 overflow-hidden">
