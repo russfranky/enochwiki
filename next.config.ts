@@ -7,6 +7,16 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: false,
   },
   reactStrictMode: false,
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.enoch.wiki" }],
+        destination: "https://enoch.wiki/:path*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
