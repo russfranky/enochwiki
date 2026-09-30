@@ -1,0 +1,4 @@
+# Never upload local env files. They carry machine-specific absolute paths
+# (e.g. PRISMA_QUERY_ENGINE_LIBRARY) that break the remote build.
+# The build uses the project's configured environment variables instead.
+.env*
