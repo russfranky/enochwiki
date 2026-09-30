@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useCallback, useEffect } from 'react'
+import { useState, useCallback, useEffect, Suspense } from 'react'
 import Link from 'next/link'
+import { useSearchParams } from 'next/navigation'
 import {
   ResizableHandle,
   ResizablePanel,
@@ -9,12 +10,10 @@ import {
 } from '@/components/ui/resizable'
 import { Button } from '@/components/ui/button'
 import {
-  BookOpen,
   Scale,
   Layers,
   X,
   Brain,
-  MessageSquare,
 } from 'lucide-react'
 import { ScriptureReader } from '@/components/study/scripture-reader'
 import { ChatPanel } from '@/components/study/chat-panel'
@@ -22,6 +21,7 @@ import { SynergyView } from '@/components/study/synergy-view'
 import { ThemeExplorer } from '@/components/study/theme-explorer'
 import { StudyTools } from '@/components/study/study-tools'
 import { SiteHeader } from '@/components/site-header'
+import { MobileBottomNav } from '@/components/mobile-bottom-nav'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { AI_ENABLED } from '@/lib/launch'
 
@@ -33,7 +33,7 @@ const safeHref = (u: unknown): string | undefined =>
 type RightTab = 'synergy' | 'themes' | 'tools'
 type MobilePanel = 'scripture' | 'chat' | 'right'
 
-export default function Home() {
+function HomeContent() {
   const [selectedVerseRef, setSelectedVerseRef] = useState<string | null>(null)
   const [selectedVerseText, setSelectedVerseText] = useState<string>('')
   const [chatContext, setChatContext] = useState<string>('')
@@ -55,6 +55,15 @@ export default function Home() {
     window.addEventListener('resize', checkMobile)
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
+
+  // Deep link: ?panel=explore opens the Explore pane on mobile (used by the
+  // shared bottom nav when navigating in from other routes).
+  const searchParams = useSearchParams()
+  useEffect(() => {
+    if (searchParams.get('panel') === 'explore') {
+      setMobilePanel('right')
+    }
+  }, [searchParams])
 
   const handleVerseSelect = useCallback(
     (ref: string, text: string, context: string) => {
@@ -231,38 +240,11 @@ export default function Home() {
               {AI_ENABLED && mobilePanel === 'chat' && <ChatPanel context={chatContext} />}
               {mobilePanel === 'right' && rightPanelContent}
             </div>
-            {/* Mobile bottom nav */}
-            <div className="flex border-t border-border bg-card">
-              <button
-                onClick={() => setMobilePanel('scripture')}
-                className={`flex-1 py-2.5 text-xs font-medium flex flex-col items-center gap-0.5 ${
-                  mobilePanel === 'scripture' ? 'text-accent border-t-2 border-accent -mt-px' : 'text-muted-foreground'
-                }`}
-              >
-                <BookOpen className="h-4 w-4" />
-                Read
-              </button>
-              {AI_ENABLED && (
-                <button
-                  onClick={() => setMobilePanel('chat')}
-                  className={`flex-1 py-2.5 text-xs font-medium flex flex-col items-center gap-0.5 ${
-                    mobilePanel === 'chat' ? 'text-accent border-t-2 border-accent -mt-px' : 'text-muted-foreground'
-                  }`}
-                >
-                  <MessageSquare className="h-4 w-4" />
-                  Ask
-                </button>
-              )}
-              <button
-                onClick={() => setMobilePanel('right')}
-                className={`flex-1 py-2.5 text-xs font-medium flex flex-col items-center gap-0.5 ${
-                  mobilePanel === 'right' ? 'text-accent border-t-2 border-accent -mt-px' : 'text-muted-foreground'
-                }`}
-              >
-                <Layers className="h-4 w-4" />
-                Explore
-              </button>
-            </div>
+            {/* Mobile bottom nav: the single primary navigation on mobile */}
+            <MobileBottomNav
+              mobilePane={mobilePanel === 'right' ? 'right' : mobilePanel === 'chat' ? null : 'scripture'}
+              onPaneChange={(pane) => setMobilePanel(pane)}
+            />
           </div>
         ) : AI_ENABLED ? (
           /* Desktop: 3-pane resizable (AI chat shown) */
@@ -329,5 +311,15 @@ export default function Home() {
         </div>
       </footer>
     </div>
+  )
+}
+
+// useSearchParams requires a Suspense boundary; the wrapper keeps the
+// ?panel=explore deep link working without touching the page layout.
+export default function Home() {
+  return (
+    <Suspense>
+      <HomeContent />
+    </Suspense>
   )
 }

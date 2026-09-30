@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { Card } from '@/components/ui/card'
 import { SiteHeader } from '@/components/site-header'
+import { MobileBottomNav } from '@/components/mobile-bottom-nav'
 import { db } from '@/lib/db'
 
 export const dynamic = 'force-dynamic'
@@ -28,7 +29,7 @@ export default async function TopicsIndex() {
   return (
     <div className="min-h-screen flex flex-col parchment-bg">
       <SiteHeader />
-      <main className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
+      <main className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 pt-6 sm:pt-10 pb-24 sm:pb-10">
         <h1 className="font-serif text-3xl sm:text-4xl font-bold mb-2">Topics</h1>
         <p className="text-muted-foreground mb-8 max-w-2xl">
           In-depth explorations of the concepts behind the Ethiopian Bible. Nothing here
@@ -74,6 +75,8 @@ export default async function TopicsIndex() {
           </div>
         </div>
       </footer>
+      {/* Mobile primary nav, fixed to the viewport bottom */}
+      <MobileBottomNav mobilePane={null} className="fixed bottom-0 inset-x-0 z-40" />
     </div>
   )
 }

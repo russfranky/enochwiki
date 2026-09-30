@@ -1,12 +1,11 @@
 'use client'
 
-import { useState } from 'react'
 import Link from 'next/link'
-import { Search, Menu, X } from 'lucide-react'
+import { Search } from 'lucide-react'
 
 // Shared public header for every page, including the study experience on /.
-// Mobile keeps a single compact row: brand + actions. Nav links live behind
-// a hamburger button so they take zero space until opened.
+// Mobile keeps a single compact row: brand + Search. Primary navigation lives
+// in the mobile bottom tab bar; desktop keeps inline nav links.
 // Labels are never icon-only.
 interface SiteHeaderProps {
   onSearchToggle?: () => void
@@ -29,8 +28,6 @@ function BrandMark() {
 }
 
 export function SiteHeader({ onSearchToggle, searchOpen }: SiteHeaderProps) {
-  const [menuOpen, setMenuOpen] = useState(false)
-
   return (
     <header className="border-b border-hairline bg-card/85 backdrop-blur-md sticky top-0 z-30">
       <div className="px-3 sm:px-4 md:px-6 py-2.5 sm:py-3 max-w-6xl mx-auto">
@@ -75,34 +72,8 @@ export function SiteHeader({ onSearchToggle, searchOpen }: SiteHeaderProps) {
                 <span>Search</span>
               </button>
             )}
-            {/* Mobile menu button */}
-            <button
-              onClick={() => setMenuOpen((o) => !o)}
-              aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-              aria-expanded={menuOpen}
-              className="sm:hidden inline-flex items-center justify-center h-8 w-8 rounded-md border border-input bg-transparent text-foreground hover:bg-secondary/60 transition"
-            >
-              {menuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
-            </button>
           </div>
         </div>
-
-        {/* Mobile menu panel: only takes space while open */}
-        {menuOpen && (
-          <nav className="sm:hidden mt-2 pt-2 border-t border-hairline" aria-label="Primary">
-            {NAV_LINKS.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                onClick={() => setMenuOpen(false)}
-                className="block text-sm font-medium px-2 py-2.5 rounded-md text-foreground hover:bg-secondary/60 transition"
-                style={{ fontFamily: 'var(--font-ui-stack)' }}
-              >
-                {l.label}
-              </Link>
-            ))}
-          </nav>
-        )}
       </div>
     </header>
   )

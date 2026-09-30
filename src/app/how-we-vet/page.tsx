@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { SiteHeader } from '@/components/site-header'
+import { MobileBottomNav } from '@/components/mobile-bottom-nav'
 import { db } from '@/lib/db'
 import { Scale, ShieldCheck } from 'lucide-react'
 
@@ -44,7 +45,7 @@ export default async function HowWeVet() {
   return (
     <div className="min-h-screen flex flex-col parchment-bg">
       <SiteHeader />
-      <main className="flex-1 w-full max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
+      <main className="flex-1 w-full max-w-3xl mx-auto px-4 sm:px-6 pt-6 sm:pt-10 pb-24 sm:pb-10">
         <h1 className="font-serif text-3xl sm:text-4xl font-bold mb-2">How Enoch.Wiki vets content</h1>
         <p className="text-muted-foreground mb-8">
           Enoch.Wiki holds itself to a public-authority standard. Nothing is presented as
@@ -136,6 +137,8 @@ export default async function HowWeVet() {
           </div>
         </div>
       </footer>
+      {/* Mobile primary nav, fixed to the viewport bottom */}
+      <MobileBottomNav mobilePane={null} className="fixed bottom-0 inset-x-0 z-40" />
     </div>
   )
 }
