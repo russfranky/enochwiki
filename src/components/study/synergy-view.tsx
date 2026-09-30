@@ -225,9 +225,9 @@ function EvidenceCard({
         <div className="text-[10px] uppercase tracking-wider text-accent font-semibold mb-0.5">
           Evidence
         </div>
-        <p className="text-sm leading-snug mb-1.5 break-words">{evidence.corroboration}</p>
+        <p className="text-sm leading-snug mb-1.5 [overflow-wrap:anywhere]">{evidence.corroboration}</p>
         {evidence.notes && (
-          <p className="text-[11px] text-muted-foreground italic mt-1 break-words">{evidence.notes}</p>
+          <p className="text-[11px] text-muted-foreground italic mt-1 [overflow-wrap:anywhere]">{evidence.notes}</p>
         )}
       </div>
 
