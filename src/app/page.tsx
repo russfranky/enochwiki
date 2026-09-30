@@ -22,6 +22,7 @@ import { SynergyView } from '@/components/study/synergy-view'
 import { ThemeExplorer } from '@/components/study/theme-explorer'
 import { StudyTools } from '@/components/study/study-tools'
 import { SiteHeader } from '@/components/site-header'
+import { ThemeToggle } from '@/components/theme-toggle'
 import { AI_ENABLED } from '@/lib/launch'
 
 // D-002: Source URLs come from the database — allowlist http/https before
@@ -321,6 +322,10 @@ export default function Home() {
           <Link href="/how-we-vet" className="hover:text-foreground">How we vet content</Link>
           <span>·</span>
           <span className="font-semibold text-foreground">enoch.wiki</span>
+          <span>·</span>
+          <span className="[&>button]:h-6 [&>button]:w-6 [&_svg]:h-3 [&_svg]:w-3" title="Theme">
+            <ThemeToggle />
+          </span>
         </div>
       </footer>
     </div>

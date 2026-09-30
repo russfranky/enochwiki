@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { Search } from 'lucide-react'
-import { ThemeToggle } from '@/components/theme-toggle'
 
 // Shared public header for every page, including the study experience on /.
 // Mobile gets two rows: brand + actions on top, nav links below with
@@ -70,7 +69,6 @@ export function SiteHeader({ onSearchToggle, searchOpen }: SiteHeaderProps) {
                 <span>Search</span>
               </button>
             )}
-            <ThemeToggle />
           </div>
         </div>
 

@@ -5,6 +5,14 @@ import { requireAdmin } from '@/lib/admin'
 
 export const runtime = 'nodejs'
 
+// Raw crawl output is pipeline working material, not vetted evidence.
+// Records whose claim is still the crawler's placeholder text
+// ("Crawled for theme: ...") are kept in the database for review
+// but never served as corroboration.
+const VETTED_WHERE = {
+  NOT: { claim: { startsWith: 'Crawled for theme:', mode: 'insensitive' as const } },
+}
+
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url)
   const ref = searchParams.get('ref')
@@ -12,7 +20,7 @@ export async function GET(req: NextRequest) {
 
   if (ref) {
     const evidences = await db.evidence.findMany({
-      where: { scriptureRef: ref },
+      where: { scriptureRef: ref, ...VETTED_WHERE },
       orderBy: { confidence: 'desc' },
       include: { source: true },
     })
@@ -21,7 +29,7 @@ export async function GET(req: NextRequest) {
 
   if (sourceId) {
     const evidences = await db.evidence.findMany({
-      where: { sourceId },
+      where: { sourceId, ...VETTED_WHERE },
       orderBy: { createdAt: 'asc' },
       include: { source: true },
     })
@@ -29,6 +37,7 @@ export async function GET(req: NextRequest) {
   }
 
   const all = await db.evidence.findMany({
+    where: VETTED_WHERE,
     orderBy: { createdAt: 'desc' },
     include: { source: true },
     take: 200,
