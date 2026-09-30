@@ -143,8 +143,11 @@ function HomeContent() {
     </div>
   )
 
+  // Mobile gets a definite viewport height so the flex chain constrains:
+  // the bottom tab bar stays pinned and panes scroll internally instead of
+  // pushing the nav below the fold. Desktop keeps min-h-screen.
   return (
-    <div className="min-h-screen flex flex-col parchment-bg">
+    <div className="min-h-screen max-md:h-dvh flex flex-col parchment-bg">
       <SiteHeader onSearchToggle={() => setSearchOpen((s) => !s)} searchOpen={searchOpen} />
 
         {/* Selected verse indicator */}
