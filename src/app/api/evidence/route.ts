@@ -10,7 +10,7 @@ export const runtime = 'nodejs'
 // ("Crawled for theme: ...") are kept in the database for review
 // but never served as corroboration.
 const VETTED_WHERE = {
-  NOT: { claim: { startsWith: 'Crawled for theme:', mode: 'insensitive' as const } },
+  NOT: { claim: { startsWith: 'Crawled for theme:' } },
 }
 
 export async function GET(req: NextRequest) {
