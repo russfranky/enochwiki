@@ -18,22 +18,22 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: 'GPTBot',
         allow: PUBLIC_PATHS,
-        disallow: ['/api', '/review'],
+        disallow: ['/api', '/review', '/study', '/admin'],
       },
       {
         userAgent: 'Google-Extended',
         allow: PUBLIC_PATHS,
-        disallow: ['/api', '/review'],
+        disallow: ['/api', '/review', '/study', '/admin'],
       },
       {
         userAgent: 'PerplexityBot',
         allow: PUBLIC_PATHS,
-        disallow: ['/api', '/review'],
+        disallow: ['/api', '/review', '/study', '/admin'],
       },
       {
         userAgent: 'ClaudeBot',
         allow: PUBLIC_PATHS,
-        disallow: ['/api', '/review'],
+        disallow: ['/api', '/review', '/study', '/admin'],
       },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
