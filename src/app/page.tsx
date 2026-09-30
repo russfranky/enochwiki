@@ -1,53 +1,39 @@
 'use client'
 
 import { useState, useCallback, useEffect } from 'react'
+import Link from 'next/link'
 import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
 } from '@/components/ui/resizable'
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
 import {
   BookOpen,
-  Sparkles,
   Scale,
   Layers,
-  Download,
   Search,
   X,
-  ShieldCheck,
-  Globe,
   Brain,
-  FileText,
-  Sprout,
-  Loader2,
   MessageSquare,
-  Menu,
-  AlertTriangle,
 } from 'lucide-react'
 import { ScriptureReader } from '@/components/study/scripture-reader'
 import { ChatPanel } from '@/components/study/chat-panel'
 import { SynergyView } from '@/components/study/synergy-view'
 import { ThemeExplorer } from '@/components/study/theme-explorer'
-import { ReviewDashboard } from '@/components/study/review-dashboard'
-import { PublicSite } from '@/components/study/public-site'
 import { StudyTools } from '@/components/study/study-tools'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { AI_ENABLED } from '@/lib/launch'
-import { adminAuthHeaders } from '@/lib/admin-token'
 
 // D-002: Source URLs come from the database — allowlist http/https before
 // injecting into href so a poisoned `javascript:` URL cannot execute on click.
 const safeHref = (u: unknown): string | undefined =>
   typeof u === 'string' && /^https?:\/\//i.test(u.trim()) ? u : undefined
 
-type TopTab = 'study' | 'review' | 'public'
 type RightTab = 'synergy' | 'themes' | 'tools'
 type MobilePanel = 'scripture' | 'chat' | 'right'
 
 export default function Home() {
-  const [topTab, setTopTab] = useState<TopTab>('study')
   const [selectedVerseRef, setSelectedVerseRef] = useState<string | null>(null)
   const [selectedVerseText, setSelectedVerseText] = useState<string>('')
   const [chatContext, setChatContext] = useState<string>('')
@@ -59,13 +45,8 @@ export default function Home() {
   const [searching, setSearching] = useState(false)
   const [currentBookSlug, setCurrentBookSlug] = useState<string>('')
   const [currentChapterNum, setCurrentChapterNum] = useState<number>(0)
-  const [apiHealth, setApiHealth] = useState<{ ok: boolean; error?: string; model?: string } | null>(null)
-  const [growing, setGrowing] = useState(false)
-  const [growResult, setGrowResult] = useState<any>(null)
   const [mobilePanel, setMobilePanel] = useState<MobilePanel>('scripture')
   const [isMobile, setIsMobile] = useState(false)
-  // D-015: error message shown when the export request fails (no download).
-  const [exportError, setExportError] = useState<string | null>(null)
 
   // Detect mobile viewport
   useEffect(() => {
@@ -73,11 +54,6 @@ export default function Home() {
     checkMobile()
     window.addEventListener('resize', checkMobile)
     return () => window.removeEventListener('resize', checkMobile)
-  }, [])
-
-  // Check Z.ai API health on mount
-  useEffect(() => {
-    fetch('/api/health').then((r) => r.json()).then(setApiHealth).catch(() => {})
   }, [])
 
   const handleVerseSelect = useCallback(
@@ -111,59 +87,6 @@ export default function Home() {
     }
   }
 
-  // D-015: check res.ok and content-type before downloading; show the error
-  // message in the UI instead of silently downloading an error payload.
-  async function exportBackup() {
-    setExportError(null)
-    try {
-      const res = await fetch('/api/export', { headers: adminAuthHeaders() })
-      const contentType = res.headers.get('content-type') || ''
-      const data = await res.json().catch(() => null)
-      const serverError =
-        !res.ok || !contentType.includes('application/json') || !data || (data as any).error
-      if (serverError) {
-        setExportError(
-          (data as any)?.error || `Export failed (HTTP ${res.status}). Check the admin token.`,
-        )
-        return
-      }
-      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
-      const url = URL.createObjectURL(blob)
-      const a = document.createElement('a')
-      a.href = url
-      a.download = `ethiopian-bible-backup-${new Date().toISOString().slice(0, 10)}.json`
-      a.click()
-      URL.revokeObjectURL(url)
-    } catch (e: any) {
-      setExportError(`Export failed: ${e.message}`)
-    }
-  }
-
-  async function growDatabase() {
-    if (growing) return
-    if (!confirm('This will scrape external sources for all themes and film topics. It may take several minutes and consume Z.ai API credits. Continue?')) return
-    setGrowing(true)
-    setGrowResult(null)
-    try {
-      const res = await fetch('/api/auto-grow', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', ...adminAuthHeaders() },
-        body: JSON.stringify({ mode: 'all', limit: 8 }),
-      })
-      const data = await res.json()
-      setGrowResult(data)
-      if (!res.ok) {
-        alert(data.error || 'Auto-grow failed')
-      } else {
-        alert(`Grew database: +${data.sourcesAdded} sources, +${data.evidenceAdded} evidence records. Processed ${data.processed} items.`)
-      }
-    } catch (e: any) {
-      alert(`Error: ${e.message}`)
-    } finally {
-      setGrowing(false)
-    }
-  }
-
   // Right panel content (shared between desktop and mobile)
   const rightPanelContent = (
     <div className="flex flex-col h-full">
@@ -175,7 +98,7 @@ export default function Home() {
           }`}
         >
           <Scale className="h-3.5 w-3.5 inline mr-1 sm:mr-1.5" />
-          <span className="hidden sm:inline">Synergy</span>
+          <span className="hidden sm:inline">Corroboration</span>
         </button>
         <button
           onClick={() => setRightTab('themes')}
@@ -193,7 +116,7 @@ export default function Home() {
           }`}
         >
           <Brain className="h-3.5 w-3.5 inline mr-1 sm:mr-1.5" />
-          <span className="hidden sm:inline">Tools</span>
+          <span className="hidden sm:inline">Study Tools</span>
         </button>
       </div>
       <div className="flex-1 overflow-hidden">
@@ -235,73 +158,33 @@ export default function Home() {
 
           {/* Right side: nav + actions */}
           <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
-            {/* Top-level navigation */}
-            <div className="flex items-center gap-0.5 bg-secondary/60 rounded-md p-0.5">
-              <button
-                onClick={() => setTopTab('study')}
-                className={`text-xs px-2 sm:px-3 py-1.5 rounded transition flex items-center gap-1.5 ${
-                  topTab === 'study' ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
-                }`}
-                style={{ fontFamily: 'var(--font-ui-stack)' }}
-                aria-label="Study"
-              >
-                <BookOpen className="h-3.5 w-3.5" />
-                <span className="hidden sm:inline">Study</span>
-              </button>
-              <button
-                onClick={() => setTopTab('review')}
-                className={`text-xs px-2 sm:px-3 py-1.5 rounded transition flex items-center gap-1.5 ${
-                  topTab === 'review' ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
-                }`}
-                style={{ fontFamily: 'var(--font-ui-stack)' }}
-                aria-label="Review"
-              >
-                <ShieldCheck className="h-3.5 w-3.5" />
-                <span className="hidden sm:inline">Review</span>
-              </button>
-              <button
-                onClick={() => setTopTab('public')}
-                className={`text-xs px-2 sm:px-3 py-1.5 rounded transition flex items-center gap-1.5 ${
-                  topTab === 'public' ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
-                }`}
-                style={{ fontFamily: 'var(--font-ui-stack)' }}
-                aria-label="Public"
-              >
-                <Globe className="h-3.5 w-3.5" />
-                <span className="hidden sm:inline">Public</span>
-              </button>
-            </div>
-
-            {/* Action buttons — icon only on mobile */}
+            <Link
+              href="/topics"
+              className="text-xs px-2 sm:px-3 py-1.5 rounded transition text-muted-foreground hover:text-foreground"
+              style={{ fontFamily: 'var(--font-ui-stack)' }}
+            >
+              Topics
+            </Link>
+            <Link
+              href="/how-we-vet"
+              className="text-xs px-2 sm:px-3 py-1.5 rounded transition text-muted-foreground hover:text-foreground hidden sm:inline"
+              style={{ fontFamily: 'var(--font-ui-stack)' }}
+            >
+              How we vet
+            </Link>
             <Button variant="outline" size="icon" onClick={() => setSearchOpen((s) => !s)} className="h-8 w-8" aria-label="Search">
               <Search className="h-3.5 w-3.5" />
-            </Button>
-            {AI_ENABLED && (
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={growDatabase}
-                disabled={(growing || (apiHealth && !apiHealth.ok)) ?? undefined}
-                className="h-8 w-8 hidden sm:flex"
-                aria-label="Grow database"
-                title={apiHealth && !apiHealth.ok ? 'Z.ai API needs credits to grow' : 'Scrape corroboration for all themes and film topics'}
-              >
-                {growing ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Sprout className="h-3.5 w-3.5" />}
-              </Button>
-            )}
-            <Button variant="outline" size="icon" onClick={exportBackup} className="h-8 w-8 hidden sm:flex" aria-label="Export">
-              <Download className="h-3.5 w-3.5" />
             </Button>
             <ThemeToggle />
           </div>
         </div>
 
         {/* Selected verse indicator */}
-        {selectedVerseRef && topTab === 'study' && (
+        {selectedVerseRef && (
           <div className="px-3 sm:px-4 md:px-6 py-1.5 border-t border-border bg-accent/10 flex items-center gap-2 text-xs">
             <span className="text-muted-foreground hidden sm:inline">Selected verse:</span>
             <strong className="font-mono text-accent">{selectedVerseRef}</strong>
-            <span className="text-muted-foreground truncate italic flex-1">— "{selectedVerseText.slice(0, 80)}..."</span>
+            <span className="text-muted-foreground truncate italic flex-1">: "{selectedVerseText.slice(0, 80)}..."</span>
             <button
               onClick={() => {
                 setSelectedVerseRef(null)
@@ -370,129 +253,105 @@ export default function Home() {
         )}
       </header>
 
-      {/* D-015: export failure feedback — error shown instead of a bad download */}
-      {exportError && (
-        <div className="px-3 sm:px-4 md:px-6 py-2 bg-destructive/10 border-b border-destructive/30 flex items-center gap-2">
-          <AlertTriangle className="h-4 w-4 text-destructive flex-shrink-0" />
-          <span className="text-xs text-destructive font-medium">Export failed:</span>
-          <span className="text-xs text-muted-foreground flex-1">{exportError}</span>
-          <button
-            onClick={() => setExportError(null)}
-            className="text-muted-foreground hover:text-foreground flex-shrink-0"
-            aria-label="Dismiss export error"
-          >
-            <X className="h-3 w-3" />
-          </button>
-        </div>
-      )}
-
       {/* Main content */}
       <main className="flex-1 overflow-hidden">
-        {topTab === 'study' && (
-          <>
-            {/* Mobile: panel switcher with bottom nav */}
-            {isMobile ? (
-              <div className="flex flex-col h-full">
-                <div className="flex-1 overflow-hidden">
-                  {mobilePanel === 'scripture' && (
-                    <ScriptureReader
-                      onVerseSelect={handleVerseSelect}
-                      selectedVerseRef={selectedVerseRef}
-                      selectedThemeSlug={selectedThemeSlug}
-                      onClearTheme={() => setSelectedThemeSlug(null)}
-                      onChapterChange={(slug, num) => {
-                        setCurrentBookSlug(slug)
-                        setCurrentChapterNum(num)
-                      }}
-                    />
-                  )}
-                  {AI_ENABLED && mobilePanel === 'chat' && <ChatPanel context={chatContext} />}
-                  {mobilePanel === 'right' && rightPanelContent}
-                </div>
-                {/* Mobile bottom nav */}
-                <div className="flex border-t border-border bg-card">
-                  <button
-                    onClick={() => setMobilePanel('scripture')}
-                    className={`flex-1 py-2.5 text-xs font-medium flex flex-col items-center gap-0.5 ${
-                      mobilePanel === 'scripture' ? 'text-accent border-t-2 border-accent -mt-px' : 'text-muted-foreground'
-                    }`}
-                  >
-                    <BookOpen className="h-4 w-4" />
-                    Scripture
-                  </button>
-                  {AI_ENABLED && (
-                    <button
-                      onClick={() => setMobilePanel('chat')}
-                      className={`flex-1 py-2.5 text-xs font-medium flex flex-col items-center gap-0.5 ${
-                        mobilePanel === 'chat' ? 'text-accent border-t-2 border-accent -mt-px' : 'text-muted-foreground'
-                      }`}
-                    >
-                      <MessageSquare className="h-4 w-4" />
-                      Chat
-                    </button>
-                  )}
-                  <button
-                    onClick={() => setMobilePanel('right')}
-                    className={`flex-1 py-2.5 text-xs font-medium flex flex-col items-center gap-0.5 ${
-                      mobilePanel === 'right' ? 'text-accent border-t-2 border-accent -mt-px' : 'text-muted-foreground'
-                    }`}
-                  >
-                    <Layers className="h-4 w-4" />
-                    Explore
-                  </button>
-                </div>
-              </div>
-            ) : AI_ENABLED ? (
-              /* Desktop: 3-pane resizable (AI chat shown) */
-              <ResizablePanelGroup direction="horizontal" className="h-full">
-                <ResizablePanel defaultSize={34} minSize={24}>
-                  <ScriptureReader
-                    onVerseSelect={handleVerseSelect}
-                    selectedVerseRef={selectedVerseRef}
-                    selectedThemeSlug={selectedThemeSlug}
-                    onClearTheme={() => setSelectedThemeSlug(null)}
-                    onChapterChange={(slug, num) => {
-                      setCurrentBookSlug(slug)
-                      setCurrentChapterNum(num)
-                    }}
-                  />
-                </ResizablePanel>
-                <ResizableHandle withHandle />
-                <ResizablePanel defaultSize={34} minSize={24}>
-                  <ChatPanel context={chatContext} />
-                </ResizablePanel>
-                <ResizableHandle withHandle />
-                <ResizablePanel defaultSize={32} minSize={24}>
-                  {rightPanelContent}
-                </ResizablePanel>
-              </ResizablePanelGroup>
-            ) : (
-              /* Desktop: 2-pane resizable (AI chat hidden for launch) */
-              <ResizablePanelGroup direction="horizontal" className="h-full">
-                <ResizablePanel defaultSize={50} minSize={30}>
-                  <ScriptureReader
-                    onVerseSelect={handleVerseSelect}
-                    selectedVerseRef={selectedVerseRef}
-                    selectedThemeSlug={selectedThemeSlug}
-                    onClearTheme={() => setSelectedThemeSlug(null)}
-                    onChapterChange={(slug, num) => {
-                      setCurrentBookSlug(slug)
-                      setCurrentChapterNum(num)
-                    }}
-                  />
-                </ResizablePanel>
-                <ResizableHandle withHandle />
-                <ResizablePanel defaultSize={50} minSize={30}>
-                  {rightPanelContent}
-                </ResizablePanel>
-              </ResizablePanelGroup>
-            )}
-          </>
+        {/* Mobile: panel switcher with bottom nav */}
+        {isMobile ? (
+          <div className="flex flex-col h-full">
+            <div className="flex-1 overflow-hidden">
+              {mobilePanel === 'scripture' && (
+                <ScriptureReader
+                  onVerseSelect={handleVerseSelect}
+                  selectedVerseRef={selectedVerseRef}
+                  selectedThemeSlug={selectedThemeSlug}
+                  onClearTheme={() => setSelectedThemeSlug(null)}
+                  onChapterChange={(slug, num) => {
+                    setCurrentBookSlug(slug)
+                    setCurrentChapterNum(num)
+                  }}
+                />
+              )}
+              {AI_ENABLED && mobilePanel === 'chat' && <ChatPanel context={chatContext} />}
+              {mobilePanel === 'right' && rightPanelContent}
+            </div>
+            {/* Mobile bottom nav */}
+            <div className="flex border-t border-border bg-card">
+              <button
+                onClick={() => setMobilePanel('scripture')}
+                className={`flex-1 py-2.5 text-xs font-medium flex flex-col items-center gap-0.5 ${
+                  mobilePanel === 'scripture' ? 'text-accent border-t-2 border-accent -mt-px' : 'text-muted-foreground'
+                }`}
+              >
+                <BookOpen className="h-4 w-4" />
+                Read
+              </button>
+              {AI_ENABLED && (
+                <button
+                  onClick={() => setMobilePanel('chat')}
+                  className={`flex-1 py-2.5 text-xs font-medium flex flex-col items-center gap-0.5 ${
+                    mobilePanel === 'chat' ? 'text-accent border-t-2 border-accent -mt-px' : 'text-muted-foreground'
+                  }`}
+                >
+                  <MessageSquare className="h-4 w-4" />
+                  Ask
+                </button>
+              )}
+              <button
+                onClick={() => setMobilePanel('right')}
+                className={`flex-1 py-2.5 text-xs font-medium flex flex-col items-center gap-0.5 ${
+                  mobilePanel === 'right' ? 'text-accent border-t-2 border-accent -mt-px' : 'text-muted-foreground'
+                }`}
+              >
+                <Layers className="h-4 w-4" />
+                Explore
+              </button>
+            </div>
+          </div>
+        ) : AI_ENABLED ? (
+          /* Desktop: 3-pane resizable (AI chat shown) */
+          <ResizablePanelGroup direction="horizontal" className="h-full">
+            <ResizablePanel defaultSize={34} minSize={24}>
+              <ScriptureReader
+                onVerseSelect={handleVerseSelect}
+                selectedVerseRef={selectedVerseRef}
+                selectedThemeSlug={selectedThemeSlug}
+                onClearTheme={() => setSelectedThemeSlug(null)}
+                onChapterChange={(slug, num) => {
+                  setCurrentBookSlug(slug)
+                  setCurrentChapterNum(num)
+                }}
+              />
+            </ResizablePanel>
+            <ResizableHandle withHandle />
+            <ResizablePanel defaultSize={34} minSize={24}>
+              <ChatPanel context={chatContext} />
+            </ResizablePanel>
+            <ResizableHandle withHandle />
+            <ResizablePanel defaultSize={32} minSize={24}>
+              {rightPanelContent}
+            </ResizablePanel>
+          </ResizablePanelGroup>
+        ) : (
+          /* Desktop: 2-pane resizable (AI chat hidden for launch) */
+          <ResizablePanelGroup direction="horizontal" className="h-full">
+            <ResizablePanel defaultSize={50} minSize={30}>
+              <ScriptureReader
+                onVerseSelect={handleVerseSelect}
+                selectedVerseRef={selectedVerseRef}
+                selectedThemeSlug={selectedThemeSlug}
+                onClearTheme={() => setSelectedThemeSlug(null)}
+                onChapterChange={(slug, num) => {
+                  setCurrentBookSlug(slug)
+                  setCurrentChapterNum(num)
+                }}
+              />
+            </ResizablePanel>
+            <ResizableHandle withHandle />
+            <ResizablePanel defaultSize={50} minSize={24}>
+              {rightPanelContent}
+            </ResizablePanel>
+          </ResizablePanelGroup>
         )}
-
-        {topTab === 'review' && <ReviewDashboard />}
-
-        {topTab === 'public' && <PublicSite />}
       </main>
 
       {/* Footer */}
@@ -503,11 +362,9 @@ export default function Home() {
           </span>
         </div>
         <div className="flex items-center gap-2 sm:gap-3 text-[10px]" style={{ fontFamily: 'var(--font-ui-stack)' }}>
-          <span className="font-semibold text-foreground">enoch.wiki</span>
+          <Link href="/how-we-vet" className="hover:text-foreground">How we vet content</Link>
           <span>·</span>
-          <span className="hidden md:inline">Phase 1 · Private Engine + Gate + Public Skeleton</span>
-          <span className="hidden md:inline">·</span>
-          <span>Q1 2027</span>
+          <span className="font-semibold text-foreground">enoch.wiki</span>
         </div>
       </footer>
     </div>

@@ -4,24 +4,17 @@ import { useState, useEffect } from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { Separator } from '@/components/ui/separator'
-import { adminAuthHeaders } from '@/lib/admin-token'
 import {
   ScrollText,
   Network,
   Clock,
   ExternalLink,
-  Trash2,
-  Loader2,
   ShieldCheck,
   ShieldAlert,
   Scale,
   Search,
 } from 'lucide-react'
-
-import { AI_ENABLED } from '@/lib/launch'
 
 interface Evidence {
   id: string
@@ -59,12 +52,9 @@ interface SynergyViewProps {
 }
 
 export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
-  const [evidence, setEvidence] = useState<Evidence[]>([])
   const [allEvidence, setAllEvidence] = useState<Evidence[]>([])
   const [crossRefs, setCrossRefs] = useState<CrossRef[]>([])
   const [loading, setLoading] = useState(true)
-  const [scraping, setScraping] = useState(false)
-  const [scrapeQuery, setScrapeQuery] = useState('')
 
   // Load all evidence + cross-refs
   useEffect(() => {
@@ -79,76 +69,17 @@ export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
       .finally(() => setLoading(false))
   }, [])
 
-  // Filter to selected verse
-  useEffect(() => {
-    if (selectedVerseRef) {
-      const matched = allEvidence.filter((e) => e.scriptureRef === selectedVerseRef)
-      setEvidence(matched)
-    } else {
-      setEvidence(allEvidence)
-    }
-  }, [selectedVerseRef, allEvidence])
-
-  async function scrapeFor() {
-    if (!scrapeQuery.trim()) return
-    setScraping(true)
-    try {
-      const res = await fetch('/api/scrape', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', ...adminAuthHeaders() },
-        body: JSON.stringify({
-          query: scrapeQuery.trim(),
-          scriptureRef: selectedVerseRef || undefined,
-        }),
-      })
-      if (res.status === 401 || res.status === 503) {
-        const d = await res.json().catch(() => ({} as { error?: string }))
-        throw new Error(d.error || 'Admin access denied. Enter the admin token in the Review tab.')
-      }
-      if (!res.ok) throw new Error('Scrape failed')
-      const data = await res.json()
-      // reload evidence
-      const ev = await fetch('/api/evidence').then((r) => r.json())
-      setAllEvidence(ev.evidences || [])
-      alert(
-        `Scraped ${data.found} sources, saved ${data.saved} new sources${
-          selectedVerseRef ? `, auto-linked to ${selectedVerseRef}` : ''
-        }.`,
-      )
-      setScrapeQuery('')
-    } catch (e: any) {
-      alert(`Error: ${e.message}`)
-    } finally {
-      setScraping(false)
-    }
-  }
-
-  async function deleteEvidence(id: string) {
-    if (!confirm('Delete this evidence record?')) return
-    await fetch(`/api/evidence?id=${id}`, {
-      method: 'DELETE',
-      headers: adminAuthHeaders(),
-    })
-    setAllEvidence((e) => e.filter((x) => x.id !== id))
-  }
-
-  async function updateAlignment(id: string, alignment: string) {
-    await fetch('/api/evidence', {
-      method: 'PATCH',
-      headers: { 'Content-Type': 'application/json', ...adminAuthHeaders() },
-      body: JSON.stringify({ id, alignment }),
-    })
-    setAllEvidence((e) =>
-      e.map((x) => (x.id === id ? { ...x, alignment } : x)),
-    )
-  }
+  // Filter to selected verse (derived during render, no extra state)
+  const evidence = selectedVerseRef
+    ? allEvidence.filter((e) => e.scriptureRef === selectedVerseRef)
+    : allEvidence
 
   return (
     <div className="flex flex-col h-full">
       <div className="px-3 sm:px-4 py-2.5 sm:py-3 border-b border-border bg-secondary/40">
         <h3 className="font-serif text-lg font-semibold flex items-center gap-2">
           <Scale className="h-4 w-4 text-accent" />
-          Synergy &amp; Corroboration
+          Corroboration
         </h3>
         <p className="text-xs text-muted-foreground mt-0.5">
           Scripture ↔ evidence alignment across three lenses
@@ -174,39 +105,6 @@ export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
         {/* SIDE-BY-SIDE */}
         <TabsContent value="side" className="flex-1 mt-0 overflow-hidden">
           <div className="h-full flex flex-col">
-            {/* Scrape bar (AI UI hidden at launch) */}
-            {AI_ENABLED && (
-              <div className="px-3 sm:px-4 py-2 border-b border-border bg-card/50">
-                <div className="flex gap-2">
-                  <input
-                    type="text"
-                    value={scrapeQuery}
-                    onChange={(e) => setScrapeQuery(e.target.value)}
-                    onKeyDown={(e) => e.key === 'Enter' && scrapeFor()}
-                    placeholder={
-                      selectedVerseRef
-                        ? `Search for corroborating evidence for ${selectedVerseRef}...`
-                        : 'Search for evidence on any topic (e.g. "Qumran Enoch fragments", "Mount Hermon archaeology")...'
-                    }
-                    className="flex-1 h-9 px-3 text-sm rounded-md border border-input bg-background"
-                    disabled={scraping}
-                  />
-                  <Button onClick={scrapeFor} disabled={scraping || !scrapeQuery.trim()} size="sm">
-                    {scraping ? (
-                      <Loader2 className="h-3.5 w-3.5 animate-spin mr-1" />
-                    ) : (
-                      <Search className="h-3.5 w-3.5 mr-1" />
-                    )}
-                    Scrape
-                  </Button>
-                </div>
-                <p className="text-[10px] text-muted-foreground mt-1">
-                  Searches the web via the z-ai SDK, archives results locally with credibility scoring,
-                  and auto-creates evidence links when a verse is selected.
-                </p>
-              </div>
-            )}
-
             <ScrollArea className="flex-1">
               <div className="px-3 sm:px-4 py-3 space-y-3">
                 {selectedVerseRef && (
@@ -223,9 +121,7 @@ export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
                     <Search className="h-8 w-8 mx-auto mb-2 opacity-50" />
                     No evidence records yet.
                     <p className="text-xs mt-2">
-                      {AI_ENABLED
-                        ? 'Use the search bar above to scrape external sources, or select a verse to see pre-loaded corroborations.'
-                        : 'Select a verse to see pre-loaded corroborations.'}
+                      Select a verse to see pre-loaded corroborations.
                     </p>
                   </div>
                 ) : (
@@ -233,8 +129,6 @@ export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
                     <EvidenceCard
                       key={e.id}
                       evidence={e}
-                      onDelete={deleteEvidence}
-                      onUpdateAlignment={updateAlignment}
                     />
                   ))
                 )}
@@ -273,12 +167,8 @@ export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
 
 function EvidenceCard({
   evidence,
-  onDelete,
-  onUpdateAlignment,
 }: {
   evidence: Evidence
-  onDelete: (id: string) => void
-  onUpdateAlignment: (id: string, alignment: string) => void
 }) {
   const alignmentColor = (a: string) => {
     switch (a) {
@@ -297,29 +187,22 @@ function EvidenceCard({
 
   return (
     <Card className="p-3.5 border-border bg-card">
-      <div className="flex items-start justify-between gap-2 mb-2">
-        <div className="flex-1">
-          <div className="flex items-center gap-2 flex-wrap">
-            <Badge variant="outline" className={`text-[10px] ${alignmentColor(evidence.alignment)}`}>
-              {evidence.alignment}
-            </Badge>
-            <Badge variant="outline" className="text-[10px]">
-              {evidence.source?.category || 'unknown'}
-            </Badge>
-            {evidence.source && (
-              <Badge variant="outline" className="text-[10px] gap-1">
-                {credibilityIcon(evidence.source.credibility)}
-                {(evidence.source.credibility * 100).toFixed(0)}% credibility
-              </Badge>
-            )}
-            <Badge variant="outline" className="text-[10px]">
-              confidence: {(evidence.confidence * 100).toFixed(0)}%
-            </Badge>
-          </div>
-        </div>
-        <Button size="icon" variant="ghost" className="h-6 w-6 text-muted-foreground hover:text-destructive" onClick={() => onDelete(evidence.id)}>
-          <Trash2 className="h-3 w-3" />
-        </Button>
+      <div className="flex items-center gap-2 flex-wrap mb-2">
+        <Badge variant="outline" className={`text-[10px] ${alignmentColor(evidence.alignment)}`}>
+          {evidence.alignment}
+        </Badge>
+        <Badge variant="outline" className="text-[10px]">
+          {evidence.source?.category || 'unknown'}
+        </Badge>
+        {evidence.source && (
+          <Badge variant="outline" className="text-[10px] gap-1">
+            {credibilityIcon(evidence.source.credibility)}
+            {(evidence.source.credibility * 100).toFixed(0)}% credibility
+          </Badge>
+        )}
+        <Badge variant="outline" className="text-[10px]">
+          confidence: {(evidence.confidence * 100).toFixed(0)}%
+        </Badge>
       </div>
 
       {/* Scripture side */}
@@ -371,23 +254,6 @@ function EvidenceCard({
         </div>
       )}
 
-      {/* Alignment controls */}
-      <div className="mt-2 pt-2 border-t border-border flex items-center gap-1.5 flex-wrap">
-        <span className="text-[10px] text-muted-foreground">Reclassify:</span>
-        {['supports', 'challenges', 'contextualizes', 'neutral'].map((a) => (
-          <button
-            key={a}
-            onClick={() => onUpdateAlignment(evidence.id, a)}
-            className={`text-[10px] px-1.5 py-0.5 rounded border transition ${
-              evidence.alignment === a
-                ? 'bg-primary text-primary-foreground border-primary'
-                : 'border-border text-muted-foreground hover:bg-secondary'
-            }`}
-          >
-            {a}
-          </button>
-        ))}
-      </div>
     </Card>
   )
 }

@@ -28,6 +28,13 @@ export async function POST(req: NextRequest) {
   const body = await req.json()
   const { bookSlug, chapterNum, count = 8 } = body as { bookSlug: string; chapterNum: number; count?: number }
 
+  if (!bookSlug || chapterNum === undefined || chapterNum === null) {
+    return NextResponse.json({ error: 'bookSlug and chapterNum required' }, { status: 400 })
+  }
+  if (typeof chapterNum !== 'number' || !Number.isInteger(chapterNum)) {
+    return NextResponse.json({ error: 'chapterNum must be an integer' }, { status: 400 })
+  }
+
   const book = await db.book.findUnique({ where: { slug: bookSlug } })
   if (!book) return NextResponse.json({ error: 'Book not found' }, { status: 404 })
 
@@ -39,9 +46,9 @@ export async function POST(req: NextRequest) {
 
   const versesText = chapter.verses.map((v) => `${v.chapterNum}:${v.verseNum} — ${v.text}`).join('\n')
 
-  const zai = await ZAI.create()
   let completion
   try {
+    const zai = await ZAI.create()
     completion = await zai.chat.completions.create({
       messages: [
         {
@@ -67,6 +74,11 @@ Only output the JSON array, no other text.`,
     if (errMsg.includes('1113') || errMsg.includes('Insufficient balance') || errMsg.includes('429')) {
       return NextResponse.json({
         error: 'Z.ai API has insufficient balance. Add credits at https://z.ai/ to generate flashcards.',
+      }, { status: 503 })
+    }
+    if (errMsg.includes('API key') || errMsg.includes('apiKey') || errMsg.includes('ZAI_API_KEY') || errMsg.includes('z-ai-config') || errMsg.includes('Configuration file not found')) {
+      return NextResponse.json({
+        error: 'AI service not configured. Set ZAI_API_KEY to enable AI features.',
       }, { status: 503 })
     }
     throw apiErr

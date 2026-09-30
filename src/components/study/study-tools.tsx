@@ -57,7 +57,6 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
   useEffect(() => {
     if (!AI_ENABLED) return
     if (!bookSlug || !chapterNum) return
-    setSummary(null)
     fetch(`/api/summarize?book=${bookSlug}&chapter=${chapterNum}`)
       .then((r) => r.json())
       .then((d) => setSummary(d.summary || null))

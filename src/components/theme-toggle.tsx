@@ -8,10 +8,12 @@ import { Button } from '@/components/ui/button'
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = React.useState(false)
-
-  // Avoid hydration mismatch — only render the icon after mount
-  React.useEffect(() => setMounted(true), [])
+  // Avoid hydration mismatch — only render the themed icon after mount.
+  const mounted = React.useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  )
 
   if (!mounted) {
     return (

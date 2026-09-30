@@ -2,6 +2,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { db } from '@/lib/db'
 import { SCRAPE_ENABLED } from '@/lib/launch'
+import { requireAdmin } from '@/lib/admin'
 
 const SCRAPE_DORMANT = { error: 'Scrape pipeline is dormant. Set SCRAPE_ENABLED=true to feed it again.' }
 
@@ -92,6 +93,8 @@ export async function POST(req: NextRequest) {
   if (!SCRAPE_ENABLED) {
     return NextResponse.json(SCRAPE_DORMANT, { status: 503 })
   }
+  const denied = requireAdmin(req)
+  if (denied) return denied
   try {
     const body = (await req.json()) as ScrapeRequestBody
     const { query, scriptureRef, scriptureText, num = 8 } = body

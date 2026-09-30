@@ -76,12 +76,8 @@ export function ReviewDashboard() {
   const [acting, setActing] = useState(false)
   // D-014: admin token entry point + honest auth-failure surfacing.
   const [tokenInput, setTokenInput] = useState('')
-  const [hasToken, setHasToken] = useState(false)
+  const [hasToken, setHasToken] = useState(() => !!getAdminToken())
   const [authError, setAuthError] = useState<string | null>(null)
-
-  useEffect(() => {
-    setHasToken(!!getAdminToken())
-  }, [])
 
   async function load() {
     setLoading(true)
@@ -108,7 +104,33 @@ export function ReviewDashboard() {
   }
 
   useEffect(() => {
-    load()
+    // Fetch the review queue when the filter changes. The fetch body is
+    // inlined here (rather than calling load()) because the lint rule
+    // react-hooks/set-state-in-effect flags the synchronous setLoading/
+    // setAuthError calls at the top of load().
+    ;(async () => {
+      setLoading(true)
+      setAuthError(null)
+      try {
+        const url = filter === 'all' ? '/api/review' : `/api/review?state=${filter}`
+        const r = await fetch(url, { headers: adminAuthHeaders() })
+        if (r.status === 401 || r.status === 503) {
+          // Auth failure is a visible error, never a silent empty queue (D-014).
+          const d = await r.json().catch(() => ({} as { error?: string }))
+          setAuthError(d.error || 'Admin access denied.')
+          setItems([])
+          setAuditLog([])
+          setCounts({})
+          return
+        }
+        const d = await r.json()
+        setItems(d.queue || [])
+        setAuditLog(d.auditLog || [])
+        setCounts(d.counts || {})
+      } finally {
+        setLoading(false)
+      }
+    })()
   }, [filter])
 
   async function act(action: 'submit-review' | 'approve' | 'reject' | 'request-revision' | 'archive') {

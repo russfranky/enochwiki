@@ -82,9 +82,9 @@ export async function POST(req: NextRequest) {
       },
     })
 
-    const zai = await ZAI.create()
     let completion
     try {
+      const zai = await ZAI.create()
       completion = await zai.chat.completions.create({
         model: 'glm-4.5',
         messages: [
@@ -101,6 +101,12 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({
           error: 'Z.ai API account has insufficient balance. Add credits at https://z.ai/ to enable AI responses.',
           reply: 'I cannot generate a response right now because the Z.ai API account has insufficient balance. Please add credits at https://z.ai/ and try again.',
+        }, { status: 503 })
+      }
+      if (errMsg.includes('API key') || errMsg.includes('apiKey') || errMsg.includes('ZAI_API_KEY') || errMsg.includes('z-ai-config') || errMsg.includes('Configuration file not found')) {
+        return NextResponse.json({
+          error: 'AI service not configured. Set ZAI_API_KEY to enable AI features.',
+          reply: 'I cannot generate a response right now because the AI service is not configured. Set ZAI_API_KEY to enable AI features.',
         }, { status: 503 })
       }
       throw apiErr

@@ -13,6 +13,9 @@ export async function POST(req: NextRequest) {
   if (!bookSlug || !chapterNum) {
     return NextResponse.json({ error: 'bookSlug and chapterNum required' }, { status: 400 })
   }
+  if (typeof chapterNum !== 'number' || !Number.isInteger(chapterNum)) {
+    return NextResponse.json({ error: 'chapterNum must be an integer' }, { status: 400 })
+  }
 
   const book = await db.book.findUnique({ where: { slug: bookSlug } })
   if (!book) return NextResponse.json({ error: 'Book not found' }, { status: 404 })
@@ -83,9 +86,9 @@ Where traditions or scholars disagree. Be honest about uncertainty.
 - Never fabricate.
 - Distinguish text from scholarship from interpretation.`
 
-  const zai = await ZAI.create()
   let completion
   try {
+    const zai = await ZAI.create()
     completion = await zai.chat.completions.create({
       model: 'glm-4.5',
       messages: [
@@ -99,6 +102,11 @@ Where traditions or scholars disagree. Be honest about uncertainty.
     if (errMsg.includes('1113') || errMsg.includes('Insufficient balance') || errMsg.includes('429')) {
       return NextResponse.json({
         error: 'Z.ai API has insufficient balance. Add credits at https://z.ai/ to generate summaries.',
+      }, { status: 503 })
+    }
+    if (errMsg.includes('API key') || errMsg.includes('apiKey') || errMsg.includes('ZAI_API_KEY') || errMsg.includes('z-ai-config') || errMsg.includes('Configuration file not found')) {
+      return NextResponse.json({
+        error: 'AI service not configured. Set ZAI_API_KEY to enable AI features.',
       }, { status: 503 })
     }
     throw apiErr

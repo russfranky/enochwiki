@@ -1,34 +1,38 @@
 // robots.ts — generates robots.txt for enoch.wiki
+// Only allows paths that resolve. /articles, /glossary, /scripture, and
+// /canon have no page routes (fixed 2026-09-29).
 import { MetadataRoute } from 'next'
 
 const SITE_URL = 'https://enoch.wiki'
+
+const PUBLIC_PATHS = ['/', '/topics', '/how-we-vet']
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
         userAgent: '*',
-        allow: ['/', '/topics', '/articles', '/glossary', '/scripture', '/canon', '/how-we-vet'],
+        allow: PUBLIC_PATHS,
         disallow: ['/api', '/review', '/study', '/admin'],
       },
       {
         userAgent: 'GPTBot',
-        allow: ['/', '/topics', '/articles', '/glossary'],
+        allow: PUBLIC_PATHS,
         disallow: ['/api', '/review'],
       },
       {
         userAgent: 'Google-Extended',
-        allow: ['/', '/topics', '/articles', '/glossary'],
+        allow: PUBLIC_PATHS,
         disallow: ['/api', '/review'],
       },
       {
         userAgent: 'PerplexityBot',
-        allow: ['/', '/topics', '/articles', '/glossary'],
+        allow: PUBLIC_PATHS,
         disallow: ['/api', '/review'],
       },
       {
         userAgent: 'ClaudeBot',
-        allow: ['/', '/topics', '/articles', '/glossary'],
+        allow: PUBLIC_PATHS,
         disallow: ['/api', '/review'],
       },
     ],
