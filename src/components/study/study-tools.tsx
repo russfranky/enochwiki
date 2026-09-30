@@ -123,7 +123,7 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
         </h3>
       </div>
 
-      <Tabs value={tab} onValueChange={setTab} className="flex-1 flex flex-col">
+      <Tabs value={tab} onValueChange={setTab} className="flex-1 flex flex-col min-h-0">
         <TabsList className={`grid mx-2 mt-2 h-8 ${AI_ENABLED ? 'grid-cols-4' : 'grid-cols-2'}`}>
           {AI_ENABLED && (
             <TabsTrigger value="daily" className="text-[10px]"><Sun className="h-3 w-3 mr-1" />Daily</TabsTrigger>

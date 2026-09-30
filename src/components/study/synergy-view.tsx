@@ -86,7 +86,7 @@ export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
         </p>
       </div>
 
-      <Tabs defaultValue="side" className="flex-1 flex flex-col">
+      <Tabs defaultValue="side" className="flex-1 flex flex-col min-h-0">
         <TabsList className="grid grid-cols-3 mx-3 sm:mx-4 mt-3">
           <TabsTrigger value="side" className="text-xs">
             <ScrollText className="h-3.5 w-3.5 mr-1" />
