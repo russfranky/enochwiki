@@ -1,1 +1,52 @@
-{"items":[{"allowed_paths":["src/app/page.tsx","src/app/read/","src/app/layout.tsx","src/app/sitemap.ts","src/components/","public/images/"],"blocked":false,"category":"ui","description":"Build the marketing landing page as the new / route and move the current app homepage to /read, replicating the approved artifact design (workspace/your_files/enoch-wiki-landing-page/enoch-wiki-landing-page.html). Sections: header (wordmark, nav: The app -> /read, How we vet -> /how-we-vet, Vision -> #vision, FAQ -> #faq, CTA 'Open app ->' -> /read, nowrap), hero (eyebrow 'The Ethiopian Bible, corroborated', H1 'What the text says. And how we know.' with italic accent, sub copy, CTAs 'Start reading ->' -> /read and 'See how we vet' -> /how-we-vet, app mock panel), certainty strip (6 tier chips), 01 THE APP (5 feature cards with 3-item includes lists), 02 HOW WE VET (3-stage pipeline, review rubric, source tiers), 03 VISION (Garima Gospels image with caption + alt text, pull quote, purpose triad), FAQ accordion, closing CTA band ('Open app ->'), footer. Move src/app/page.tsx to src/app/read/page.tsx; update SiteHeader (logo -> /, Open app -> /read), MobileBottomNav Read tab -> /read, sitemap.ts (add / with priority, keep existing entries). Save the Garima image under public/images/ (extract from the artifact export or Wikimedia Commons; keep the attribution caption). SEO: metadata title/description/OG on /, one h1, semantic heading order, server-rendered. Brand: repo theme tokens (parchment, antique gold, indigo, serif); works in light and dark mode. HARD CONSTRAINTS: zero emdashes (—) in any new/changed copy — rewrite with commas, colons, periods, or parentheses; tighten copy for brevity without dropping verified claims. Copy claims must match the real app only (reader, search, Knowledge Graph, Timeline, Themes, Study Tools, AI companion via /api/chat + /api/summarize, three-layer pipeline, tiers). Render and eyeball at 390px and 1440px: no overflow, no wrapped CTA, no dead space, visible focus, working anchors, 44px+ touch targets. Run bash scripts/check.sh to ALL GATES PASS.","id":"landing-page-home","passes":false,"regression_notes":"Re-run if routes or header nav change. The /read move must keep ?panel=explore deep links and mobile bottom nav working. If the Garima image download fails, extract it from the artifact export instead of hotlinking.","steps":["Read the artifact HTML at workspace/your_files/enoch-wiki-landing-page/enoch-wiki-landing-page.html and the repo theme tokens (tailwind.config.ts, src/app/globals.css).","Move src/app/page.tsx to src/app/read/page.tsx; verify ?panel=explore and mobile nav still work at /read.","Build the landing page at src/app/page.tsx (+ src/components/landing/ as needed) replicating the artifact sections, with no emdashes and tightened copy.","Update SiteHeader, MobileBottomNav, sitemap.ts; add page metadata; save the Garima image to public/images/ with alt text.","Screenshot at 390px and 1440px; fix overflow, wrapping, dead space, contrast, heading order, anchors, touch targets.","bash scripts/check.sh must end ALL GATES PASS. Grep the diff for — (must be zero in new/changed copy)."]}],"objective":"Ship the Mobbin-grounded landing page as the SEO front door at /, move the app homepage to /read. No emdashes, brief copy, verified claims only, all gates pass.","runtime_contract":{"behavior_preserving_only":false,"branch":"ralph/landing-page","bun_path":"/opt/hatch-image/bin","merge_grant":"Standing enochwiki merge grant 2026-09-26: gate-passing work may merge to main, but only with the repo's exact-head CI opened, read, and green. Never merge on red or unread CI.","never_push_without_owner_ok":false,"protected_paths":["prisma/schema.prisma","prisma/migrations/","src/app/api/health/route.ts","next.config.ts","Caddyfile","scripts/check.sh",".ralph/"],"require_commit":true,"require_one_item_per_iteration":true,"require_progress_append":true,"verification_gates":["bash scripts/check.sh"]},"version":1}
+{
+  "items": [
+    {
+      "allowed_paths": [
+        "src/app/page.tsx",
+        "src/app/read/",
+        "src/app/layout.tsx",
+        "src/app/sitemap.ts",
+        "src/components/",
+        "public/images/"
+      ],
+      "blocked": false,
+      "category": "ui",
+      "description": "Build the marketing landing page as the new / route and move the current app homepage to /read, replicating the approved artifact design (workspace/your_files/enoch-wiki-landing-page/enoch-wiki-landing-page.html). Sections: header (wordmark, nav: The app -> /read, How we vet -> /how-we-vet, Vision -> #vision, FAQ -> #faq, CTA 'Open app ->' -> /read, nowrap), hero (eyebrow 'The Ethiopian Bible, corroborated', H1 'What the text says. And how we know.' with italic accent, sub copy, CTAs 'Start reading ->' -> /read and 'See how we vet' -> /how-we-vet, app mock panel), certainty strip (6 tier chips), 01 THE APP (5 feature cards with 3-item includes lists), 02 HOW WE VET (3-stage pipeline, review rubric, source tiers), 03 VISION (Garima Gospels image with caption + alt text, pull quote, purpose triad), FAQ accordion, closing CTA band ('Open app ->'), footer. Move src/app/page.tsx to src/app/read/page.tsx; update SiteHeader (logo -> /, Open app -> /read), MobileBottomNav Read tab -> /read, sitemap.ts (add / with priority, keep existing entries). Save the Garima image under public/images/ (extract from the artifact export or Wikimedia Commons; keep the attribution caption). SEO: metadata title/description/OG on /, one h1, semantic heading order, server-rendered. Brand: repo theme tokens (parchment, antique gold, indigo, serif); works in light and dark mode. HARD CONSTRAINTS: zero emdashes (\u2014) in any new/changed copy \u2014 rewrite with commas, colons, periods, or parentheses; tighten copy for brevity without dropping verified claims. Copy claims must match the real app only (reader, search, Knowledge Graph, Timeline, Themes, Study Tools, AI companion via /api/chat + /api/summarize, three-layer pipeline, tiers). Render and eyeball at 390px and 1440px: no overflow, no wrapped CTA, no dead space, visible focus, working anchors, 44px+ touch targets. Run bash scripts/check.sh to ALL GATES PASS.",
+      "id": "landing-page-home",
+      "passes": true,
+      "regression_notes": "Re-run if routes or header nav change. The /read move must keep ?panel=explore deep links and mobile bottom nav working. If the Garima image download fails, extract it from the artifact export instead of hotlinking.",
+      "steps": [
+        "Read the artifact HTML at workspace/your_files/enoch-wiki-landing-page/enoch-wiki-landing-page.html and the repo theme tokens (tailwind.config.ts, src/app/globals.css).",
+        "Move src/app/page.tsx to src/app/read/page.tsx; verify ?panel=explore and mobile nav still work at /read.",
+        "Build the landing page at src/app/page.tsx (+ src/components/landing/ as needed) replicating the artifact sections, with no emdashes and tightened copy.",
+        "Update SiteHeader, MobileBottomNav, sitemap.ts; add page metadata; save the Garima image to public/images/ with alt text.",
+        "Screenshot at 390px and 1440px; fix overflow, wrapping, dead space, contrast, heading order, anchors, touch targets.",
+        "bash scripts/check.sh must end ALL GATES PASS. Grep the diff for \u2014 (must be zero in new/changed copy)."
+      ]
+    }
+  ],
+  "objective": "Ship the Mobbin-grounded landing page as the SEO front door at /, move the app homepage to /read. No emdashes, brief copy, verified claims only, all gates pass.",
+  "runtime_contract": {
+    "behavior_preserving_only": false,
+    "branch": "ralph/landing-page",
+    "bun_path": "/opt/hatch-image/bin",
+    "merge_grant": "Standing enochwiki merge grant 2026-09-26: gate-passing work may merge to main, but only with the repo's exact-head CI opened, read, and green. Never merge on red or unread CI.",
+    "never_push_without_owner_ok": false,
+    "protected_paths": [
+      "prisma/schema.prisma",
+      "prisma/migrations/",
+      "src/app/api/health/route.ts",
+      "next.config.ts",
+      "Caddyfile",
+      "scripts/check.sh",
+      ".ralph/"
+    ],
+    "require_commit": true,
+    "require_one_item_per_iteration": true,
+    "require_progress_append": true,
+    "verification_gates": [
+      "bash scripts/check.sh"
+    ]
+  },
+  "version": 1
+}

@@ -1,4 +1,4 @@
-// sitemap.ts — generates sitemap.xml for enoch.wiki
+// sitemap.ts: generates sitemap.xml for enoch.wiki
 // Only lists URLs that resolve. /canon, /glossary, /articles/*, and
 // /scripture/* have no page routes, so advertising them sends crawlers
 // into 404s (fixed 2026-09-29).
@@ -16,6 +16,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 1.0,
+    },
+    {
+      url: `${SITE_URL}/read`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
     },
     {
       url: `${SITE_URL}/topics`,
@@ -46,7 +52,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       })
     }
   } catch (e) {
-    // DB not ready — return static entries only
+    // DB not ready: return static entries only
   }
 
   return entries

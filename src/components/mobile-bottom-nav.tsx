@@ -15,14 +15,14 @@ import {
 import { ThemeToggle } from '@/components/theme-toggle'
 
 // Shared mobile bottom navigation: the single primary nav on mobile.
-// Four tabs, labels never icon-only. Read and Explore switch panes on `/`
+// Four tabs, labels never icon-only. Read and Explore switch panes on `/read`
 // and deep-link there from other routes; Topics navigates; More opens a
 // bottom-sheet drawer with secondary links.
 export type MobilePane = 'scripture' | 'right'
 
 interface MobileBottomNavProps {
   mobilePane: MobilePane | null
-  // Only meaningful on `/`; on other routes the tabs navigate instead, so
+  // Only meaningful on `/read`; on other routes the tabs navigate instead, so
   // this stays optional (server components cannot pass function props).
   onPaneChange?: (pane: MobilePane) => void
   className?: string
@@ -36,18 +36,18 @@ export function MobileBottomNav({ mobilePane, onPaneChange, className }: MobileB
   const router = useRouter()
   const [moreOpen, setMoreOpen] = useState(false)
 
-  const onHome = pathname === '/'
-  const readActive = onHome && mobilePane === 'scripture'
-  const exploreActive = onHome && mobilePane === 'right'
+  const onRead = pathname === '/read'
+  const readActive = onRead && mobilePane === 'scripture'
+  const exploreActive = onRead && mobilePane === 'right'
   const topicsActive = pathname === '/topics' || pathname.startsWith('/topics/')
 
   const goRead = () => {
-    if (onHome) onPaneChange?.('scripture')
-    else router.push('/')
+    if (onRead) onPaneChange?.('scripture')
+    else router.push('/read')
   }
   const goExplore = () => {
-    if (onHome) onPaneChange?.('right')
-    else router.push('/?panel=explore')
+    if (onRead) onPaneChange?.('right')
+    else router.push('/read?panel=explore')
   }
 
   return (
