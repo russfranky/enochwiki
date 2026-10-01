@@ -88,7 +88,7 @@ function HomeContent() {
     if (!searchQuery.trim()) return
     setSearching(true)
     try {
-      const res = await fetch(`/api/fts?q=${encodeURIComponent(searchQuery)}`)
+      const res = await fetch(`/api/search?q=${encodeURIComponent(searchQuery)}`)
       const data = await res.json()
       setSearchResults(data)
     } finally {
