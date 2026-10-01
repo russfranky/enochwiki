@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import s from './landing.module.css'
 
 // Marketing landing page for /. Server-rendered, no client JS: the FAQ uses
@@ -437,12 +436,12 @@ function VisionSection() {
     <section id="vision" aria-labelledby="vision-h">
       <div className={`${s.wrap} ${s['vision-grid']}`}>
         <figure className={s.manuscript}>
-          <Image
+          <img
             src="/images/garima-gospels.jpg"
             alt="Illuminated canon table with Ge'ez script from the Garima Gospels, among the oldest preserved manuscripts of the Ethiopian tradition"
             width={960}
             height={1239}
-            sizes="(max-width: 900px) 100vw, 420px"
+            loading="lazy"
           />
           <figcaption>
             <b>The Garima Gospels.</b> An illuminated canon table in Ge&apos;ez, the classical
