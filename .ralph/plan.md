@@ -1,55 +1,36 @@
-# Ralph plan — enochWIKI
+# Landing page integration — plan
 
 ## Objective
-Harden enochWIKI's type-safety and **lock in the verification gates**. The repo ships today
-with `next.config.ts` → `typescript.ignoreBuildErrors: true` and a `tsc --noEmit` that fails on
-pre-existing errors, and there is **no CI**. Drive `tsc --noEmit` to clean across the real app
-surface, add a `typecheck` script, and tighten `scripts/check.sh` to enforce it — all
-**behavior-preserving** (no runtime/logic changes). Flipping the build-policy flag itself
-(`ignoreBuildErrors`) is owner-gated and stays **blocked**.
 
-> This is the seed backlog. Replace it for a different goal with `/ralph-plan <goal>`.
+Ship the Mobbin-grounded landing page as the SEO front door of enoch.wiki at `/`,
+and move the current app homepage to `/read`. Owner approved 2026-10-01:
+"Whatever is the most seo friendly" → landing page owns the root, the app moves.
 
-## Source-of-truth files (read before acting — do not plan from memory)
-- `package.json` — the scripts the gate mirrors (`lint` = `eslint .`, `build` = `next build`).
-- `next.config.ts` — `output: "standalone"`, `typescript.ignoreBuildErrors: true` (EW-005).
-- `eslint.config.mjs` — flat config; already ignores `examples/**` and `skills`.
-- `tsconfig.json` — `strict: true`; `include` currently sweeps `**/*.ts(x)` (pulls in `scripts/`
-  + `examples/`, which is where most tsc noise comes from).
-- `prisma/schema.prisma` — sqlite; the client must be generated before build/typecheck.
-- `scripts/check.sh` — the gates every iteration must pass.
-
-## Known type errors at seed (from `bunx tsc --noEmit`)
-- `src/app/page.tsx:257` — `boolean | null` not assignable to `boolean | undefined` (EW-001).
-- `src/app/api/flashcards/route.ts:98` — argument typed `never` (EW-002).
-- `scripts/*` (probe-final, probe-websearch, test-zai-*, test-fts, seed) + `examples/websocket/*`
-  — dev scripts / examples, not app code; redeclares + missing optional deps (EW-003).
-
-## Backlog
-Tracked in `.ralph/items.json`. EW-001…004 are safe, behavior-preserving fixes + gate
-tightening (gates stay green). **EW-005** (flip `ignoreBuildErrors` to `false` in
-`next.config.ts`) is **blocked** — it changes build-failure semantics + could break deploys, so
-it needs owner OK and should only land after the `tsc` gate has been green.
+Design source of truth: `workspace/your_files/enoch-wiki-landing-page/enoch-wiki-landing-page.html`
+(exported 2026-10-01, includes the CTA fix "Open app →" and the AI-companion claim
+verified against `src/app/api/chat/route.ts` + `src/app/api/summarize/route.ts`).
 
 ## Invariants (non-negotiable)
-- **One item per iteration**; `bash scripts/check.sh` must end **ALL GATES PASS** before any
-  item flips `passes:true`.
-- **No AI / "Claude" attribution** in commits; conventional messages.
-- **Branch-only:** commit to `ralph/typecheck-gate`; **NEVER push or merge** to `main` without
-  owner OK.
-- **No secrets / no DB blobs** in git (`.env`, `db/*.db` — both already gitignored).
-- **Behavior-preserving:** do NOT change runtime/logic, flip `next.config.ts` build flags, or
-  touch `prisma` migrations unless the worked item is explicitly unblocked (EW-005 is blocked).
-- `bun` is the runtime + package manager; `scripts/check.sh` puts `/Users/russ/.bun/bin` on PATH.
-- Verify with evidence (command output / file:line). Never claim.
 
-## 2026-09-20 · backlog re-plan (base-station engine)
-
-The 2026-06-25 seed described errors that no longer exist in the current tree
-(`src/app/page.tsx:257` is clean). Re-ran `bunx tsc --noEmit` on main@285dd15:
-**35 errors** — 26 in `scripts/*`, 2 in `examples/websocket/*`, and 7 on the app
-surface: `src/app/api/flashcards/route.ts(98,18)` (any→never), `src/app/api/fts/route.ts`
-×3 (TS2347), `src/lib/rag-retrieval.ts` ×3 (TS2347). Backlog re-planned to match:
-EW-001 flashcards route, EW-002 fts route, EW-003 rag-retrieval, EW-004 tsconfig
-excludes, EW-005 typecheck script + gate, EW-006 ignoreBuildErrors flip (blocked).
-Objective and invariants unchanged.
+1. **No emdashes.** Owner order 2026-10-01. Zero `—` characters in any new or
+   changed copy. Rewrite with commas, colons, periods, or parentheses.
+2. **Brevity.** Tighten copy wherever possible without changing meaning or
+   dropping verified claims.
+3. **Copy claims match the real app.** Reader, search, Knowledge Graph, Timeline,
+   Themes, Study Tools (flashcards, study plans), AI companion (answers questions,
+   summarizes passages, cites sources — `/api/chat`, `/api/summarize`), three-layer
+   editorial pipeline, certainty tiers. Nothing invented.
+4. **`/read` keeps everything.** Reader, chat, right panels, `?panel=explore`
+   deep links, mobile bottom nav, theme toggle — all working after the move.
+5. **Brand.** Parchment, antique gold, indigo, serif headlines — the repo's
+   existing theme tokens. Respects light/dark mode.
+6. **SEO.** Metadata (title, description, OG) on `/`; single `h1`; semantic
+   heading order; alt text on images; sitemap updated; server-rendered content.
+7. **Viewports.** 390px and 1440px render clean: no overflow, no wrapped CTA,
+   no dead space, visible focus, working anchors, 44px+ touch targets.
+8. **Gates.** `bash scripts/check.sh` → ALL GATES PASS before any commit.
+9. **Merge.** Only under the standing enochwiki merge grant, and only with the
+   repo's exact-head CI green and read. Never merge on red/unread CI.
+10. **Scope.** Protected paths untouched: `prisma/schema.prisma`,
+    `prisma/migrations/`, `src/app/api/health/route.ts`, `next.config.ts`,
+    `Caddyfile`, `scripts/check.sh`, `.ralph/`.
