@@ -65,6 +65,16 @@ img{max-width:100%; height:auto}
 section{padding:88px 0}
 @media (max-width:640px){ section{padding:60px 0} }
 
+/* Returning-reader banner (only rendered for visitors who have used /read) */
+.returning{display:flex; align-items:center; justify-content:center; gap:8px 14px;
+  background:var(--gold-wash); border-bottom:1px solid var(--hairline);
+  padding:10px 16px; font-size:14.5px; color:var(--ink)}
+.returning p{margin:0}
+.returning a{font-weight:650; color:var(--brand-deep)}
+.returning-x{appearance:none; border:1px solid var(--hairline); background:transparent; color:var(--muted);
+  width:28px; height:28px; border-radius:999px; font-size:16px; line-height:1; cursor:pointer; flex:none}
+.returning-x:hover{color:var(--ink); border-color:var(--muted)}
+
 /* Focus & skip link */
 .skip{position:absolute; left:16px; top:-60px; z-index:200; background:var(--head); color:var(--bg);
   padding:10px 16px; border-radius:8px; font-weight:600; font-size:14px; transition:top .15s}

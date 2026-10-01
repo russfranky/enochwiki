@@ -48,6 +48,16 @@ function HomeContent() {
   const [mobilePanel, setMobilePanel] = useState<MobilePanel>('scripture')
   const [isMobile, setIsMobile] = useState(false)
 
+  // Mark this browser as a reader so the landing page can route return
+  // visits straight to /read (the app moved from / to /read).
+  useEffect(() => {
+    try {
+      window.localStorage.setItem('enochwiki.reader-seen', '1')
+    } catch {
+      /* storage unavailable: banner simply stays hidden */
+    }
+  }, [])
+
   // Detect mobile viewport
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768)

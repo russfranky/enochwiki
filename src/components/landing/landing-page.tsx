@@ -1,4 +1,5 @@
 import s from './landing.module.css'
+import { ReturningReaderBanner } from './returning-reader-banner'
 
 // Marketing landing page for /. Server-rendered, no client JS: the FAQ uses
 // native <details>. Brand and sections replicate the approved artifact export
@@ -605,6 +606,7 @@ export function LandingPage() {
   return (
     <div className={s.landing}>
       <a className={s.skip} href="#main">Skip to content</a>
+      <ReturningReaderBanner />
       <LandingHeader />
       <main id="main">
         <Hero />
