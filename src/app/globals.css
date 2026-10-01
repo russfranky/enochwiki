@@ -55,6 +55,9 @@
   --color-destructive: var(--destructive);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
+  /* Accent-strong — accent text that passes 4.5:1 on light AND dark surfaces.
+     Light: gold-700 (gold-500 is 2.46:1 on white, fails). Dark: gold-500. */
+  --color-accent-strong: var(--accent-strong);
   --color-muted-foreground: var(--muted-foreground);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-secondary: var(--secondary);
@@ -114,10 +117,10 @@
   --label-text-bg: #EFF0F3;        --label-text-fg: #1B2B5A;    /* Textually attested */
   --label-corr-bg: #E6F0EA;        --label-corr-fg: #2F6B4F;    /* Historically corroborated */
   --label-cons-bg: #EAF1F5;        --label-cons-fg: #1F5E7A;    /* Scholarly consensus */
-  --label-contested-bg: #F7ECD6;   --label-contested-fg: #9A6B16; /* Contested / minority */
+  --label-contested-bg: #F7ECD6;   --label-contested-fg: var(--gold-800); /* Contested / minority — fg passes 4.5:1 on the chip */
   --label-trad-bg: #EFE7F2;        --label-trad-fg: #6B4A7A;    /* Tradition / devotional */
   --label-spec-bg: #ECEEF1;        --label-spec-fg: #566273;    /* Speculative */
-  --label-visionary-bg: #F5EDE0;   --label-visionary-fg: #8B6914; /* Visionary / private revelation */
+  --label-visionary-bg: #F5EDE0;   --label-visionary-fg: var(--gold-800); /* Visionary / private revelation — fg passes 4.5:1 on the chip */
 
   /* ── Semantic token mapping ───────────────────────────────────────────── */
   --radius: 10px;
@@ -148,6 +151,8 @@
   /* Accent — Antique Gold (reserved for ONE key action per view) */
   --accent: var(--gold-500);
   --accent-foreground: var(--indigo-900);
+  /* Accent-strong — text-safe gold per mode (see --color-accent-strong) */
+  --accent-strong: var(--gold-700);
 
   --destructive: #A23B2B;
   --border: var(--hairline);
@@ -185,6 +190,7 @@
   --muted-foreground: var(--indigo-200);
   --accent: var(--gold-500);
   --accent-foreground: var(--indigo-900);
+  --accent-strong: var(--gold-500);
   --destructive: #C75B4A;
   --border: rgba(255, 255, 255, 0.10);
   --input: rgba(255, 255, 255, 0.15);

@@ -174,7 +174,7 @@ export function ScriptureReader({
         <div className="flex items-center justify-between gap-2 mb-2">
           <div className="flex items-center gap-2 min-w-0">
             <BookOpen className="h-4 w-4 text-accent flex-shrink-0" />
-            <h3 className="font-serif text-base sm:text-lg font-semibold truncate">Sacred Text</h3>
+            <h2 className="font-serif text-base sm:text-lg font-semibold truncate">Sacred Text</h2>
           </div>
           {selectedThemeSlug && (
             <Button variant="outline" size="sm" onClick={onClearTheme} className="h-7 text-xs flex-shrink-0">
@@ -186,7 +186,7 @@ export function ScriptureReader({
         {!selectedThemeSlug && (
           <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
             <Select value={selectedBookSlug} onValueChange={setSelectedBookSlug}>
-              <SelectTrigger className="h-8 text-sm flex-1 min-w-[140px]">
+              <SelectTrigger className="h-8 text-sm flex-1 min-w-[140px]" aria-label="Select book">
                 <SelectValue placeholder="Book" />
               </SelectTrigger>
               <SelectContent>
@@ -206,7 +206,7 @@ export function ScriptureReader({
                 value={String(selectedChapter)}
                 onValueChange={(v) => setSelectedChapter(parseInt(v, 10))}
               >
-                <SelectTrigger className="h-8 text-sm w-[100px] sm:w-[110px] flex-shrink-0">
+                <SelectTrigger className="h-8 text-sm w-[100px] sm:w-[110px] flex-shrink-0" aria-label="Select chapter">
                   <SelectValue placeholder="Chapter" />
                 </SelectTrigger>
                 <SelectContent>
@@ -228,6 +228,7 @@ export function ScriptureReader({
               className="h-8 w-8"
               onClick={() => navigateChapter(-1)}
               disabled={!currentBook || selectedChapter === currentBook.chapters[0]?.number}
+              aria-label="Previous chapter"
             >
               <ChevronLeft className="h-4 w-4" />
             </Button>
@@ -236,6 +237,7 @@ export function ScriptureReader({
               size="icon"
               className="h-8 w-8"
               onClick={() => navigateChapter(1)}
+              aria-label="Next chapter"
               disabled={
                 !currentBook ||
                 selectedChapter === currentBook.chapters[currentBook.chapters.length - 1]?.number
@@ -309,55 +311,60 @@ export function ScriptureReader({
                   key={v.id}
                   onMouseEnter={() => setHoveredVerse(v.ref)}
                   onMouseLeave={() => setHoveredVerse(null)}
-                  onClick={() => handleVerseClick(v)}
-                  className={`group relative cursor-pointer rounded-md px-3 py-2 transition-colors ${
-                    selectedVerseRef === v.ref
-                      ? 'bg-accent/15 border border-accent/40'
-                      : 'hover:bg-secondary/60 border border-transparent'
-                  } ${idx === 0 && !selectedThemeSlug ? 'drop-cap' : ''}`}
+                  className="relative"
                 >
-                  <div className="flex items-start gap-2">
-                    <span className="text-[10px] font-mono text-accent mt-1.5 select-none min-w-[28px] text-right">
-                      {v.verseNum}
+                  <button
+                    type="button"
+                    onClick={() => handleVerseClick(v)}
+                    aria-pressed={selectedVerseRef === v.ref}
+                    className={`block w-full text-left cursor-pointer rounded-md px-3 py-2 transition-colors ${
+                      selectedVerseRef === v.ref
+                        ? 'bg-accent/15 border border-accent/40'
+                        : 'hover:bg-secondary/60 border border-transparent'
+                    } ${idx === 0 && !selectedThemeSlug ? 'drop-cap' : ''}`}
+                  >
+                    <span className="flex items-start gap-2">
+                      <span className="text-[10px] font-mono text-accent-strong mt-1.5 select-none min-w-[28px] text-right">
+                        {v.verseNum}
+                      </span>
+                      <span className="flex-1 text-[0.95rem] leading-relaxed">{v.text}</span>
                     </span>
-                    <p className="flex-1 text-[0.95rem] leading-relaxed">{v.text}</p>
-                  </div>
 
-                  {v.themes.length > 0 && (
-                    <div className="flex flex-wrap gap-1 mt-1.5 ml-10">
-                      {v.themes.map((t) => (
-                        <Badge
-                          key={t.slug}
-                          variant="outline"
-                          className="text-[9px] py-0 px-1.5 h-4 border-accent/40 text-accent-foreground dark:text-[var(--gold-300)] bg-accent/10"
-                        >
-                          {t.name}
-                        </Badge>
-                      ))}
-                    </div>
-                  )}
+                    {v.themes.length > 0 && (
+                      <span className="flex flex-wrap gap-1 mt-1.5 ml-10">
+                        {v.themes.map((t) => (
+                          <Badge
+                            key={t.slug}
+                            variant="outline"
+                            className="text-[9px] py-0 px-1.5 h-4 border-accent/40 text-accent-foreground dark:text-[var(--gold-300)] bg-accent/10"
+                          >
+                            {t.name}
+                          </Badge>
+                        ))}
+                      </span>
+                    )}
 
-                  {/* Hover toolbar */}
+                    <span className="block text-[10px] text-muted-foreground mt-0.5 ml-10 font-mono">
+                      {v.ref}
+                    </span>
+                  </button>
+
+                  {/* Hover toolbar — sibling of the verse button (never nested
+                      inside it); focus-within keeps it visible for keyboard users */}
                   <div
                     className={`absolute top-1 right-1 flex gap-1 transition-opacity ${
                       hoveredVerse === v.ref ? 'opacity-100' : 'opacity-0'
-                    }`}
+                    } focus-within:opacity-100`}
                   >
                     <Button
                       size="icon"
                       variant="ghost"
                       className="h-6 w-6"
-                      onClick={(e) => {
-                        e.stopPropagation()
-                        copyVerse(v)
-                      }}
+                      onClick={() => copyVerse(v)}
+                      aria-label={`Copy ${v.ref}`}
                     >
                       <Copy className="h-3 w-3" />
                     </Button>
-                  </div>
-
-                  <div className="text-[10px] text-muted-foreground mt-0.5 ml-10 font-mono">
-                    {v.ref}
                   </div>
                 </div>
               ))}

@@ -80,7 +80,7 @@ export function PublicSite() {
           <h2 className="font-serif text-xl font-semibold flex items-center gap-2">
             <Globe className="h-5 w-5 text-accent" />
             <span>Public Resource Site</span>
-            <span className="text-accent font-mono text-sm">enoch.wiki</span>
+            <span className="text-accent-strong font-mono text-sm">enoch.wiki</span>
           </h2>
           <p className="text-xs text-muted-foreground mt-0.5">
             What the post-release search audience will see. Only approved content is published to enoch.wiki.
@@ -200,7 +200,7 @@ export function PublicSite() {
 
                 {selected.filmRelevance && (
                   <Card className="p-3 mb-4 bg-accent/5 border-accent/30">
-                    <div className="text-[10px] uppercase tracking-wider text-accent font-semibold mb-1 flex items-center gap-1">
+                    <div className="text-[10px] uppercase tracking-wider text-accent-strong font-semibold mb-1 flex items-center gap-1">
                       <Calendar className="h-3 w-3" /> Film Relevance
                     </div>
                     <p className="text-sm">{selected.filmRelevance}</p>

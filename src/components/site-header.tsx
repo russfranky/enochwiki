@@ -65,7 +65,7 @@ export function SiteHeader({ onSearchToggle, searchOpen }: SiteHeaderProps) {
                 onClick={onSearchToggle}
                 aria-label="Search"
                 aria-expanded={!!searchOpen}
-                className="inline-flex items-center gap-1.5 h-8 px-2.5 rounded-md border border-indigo-200 bg-transparent text-indigo-600 dark:text-indigo-300 hover:border-indigo-400 hover:bg-indigo-50 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 text-xs font-medium transition-all"
+                className="inline-flex items-center gap-1.5 h-8 px-2.5 rounded-md border border-indigo-200 bg-transparent text-indigo-600 dark:text-indigo-300 hover:border-indigo-400 hover:bg-indigo-50 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 text-xs font-medium transition-all outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]"
                 style={{ fontFamily: 'var(--font-ui-stack)' }}
               >
                 <Search className="h-3.5 w-3.5" />

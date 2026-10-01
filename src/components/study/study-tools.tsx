@@ -142,7 +142,7 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
               <div className="p-3 sm:p-4">
                 {daily ? (
                   <Card className="p-3 sm:p-4 bg-gradient-to-br from-accent/5 to-primary/5 border-accent/30">
-                    <div className="text-[10px] uppercase tracking-wider text-accent font-semibold mb-2">
+                    <div className="text-[10px] uppercase tracking-wider text-accent-strong font-semibold mb-2">
                       Daily Insight · {new Date(daily.date).toLocaleDateString(undefined, { month: 'long', day: 'numeric' })}
                     </div>
                     <div className="font-mono text-xs text-muted-foreground mb-2">{daily.scriptureRef}</div>
@@ -228,7 +228,7 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
                 >
                   {showBack ? (
                     <>
-                      <div className="text-[10px] uppercase tracking-wider text-accent font-semibold mb-2">Back</div>
+                      <div className="text-[10px] uppercase tracking-wider text-accent-strong font-semibold mb-2">Back</div>
                       <p className="text-sm">{flashcards[currentCard]?.back}</p>
                       <div className="text-[10px] text-muted-foreground mt-3 font-mono">{flashcards[currentCard]?.scriptureRef}</div>
                     </>
@@ -287,11 +287,11 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
                   <p className="text-xs leading-snug">{g.definition}</p>
                   {g.perspectiveNotes && (
                     <details className="mt-1.5">
-                      <summary className="text-[10px] text-accent cursor-pointer">How traditions view this</summary>
+                      <summary className="text-[10px] text-accent-strong cursor-pointer">How traditions view this</summary>
                       <div className="text-[11px] mt-1 space-y-1">
                         {Object.entries(JSON.parse(g.perspectiveNotes)).map(([perspective, note]: [string, any]) => (
                           <div key={perspective}>
-                            <strong className="text-accent">{perspective}:</strong> <span className="text-muted-foreground">{note}</span>
+                            <strong className="text-accent-strong">{perspective}:</strong> <span className="text-muted-foreground">{note}</span>
                           </div>
                         ))}
                       </div>

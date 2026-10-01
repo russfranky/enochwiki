@@ -154,7 +154,7 @@ function HomeContent() {
         {selectedVerseRef && (
           <div className="px-3 sm:px-4 md:px-6 py-1.5 border-t border-border bg-accent/10 flex items-center gap-2 text-xs">
             <span className="text-muted-foreground hidden sm:inline">Selected verse:</span>
-            <strong className="font-mono text-accent">{selectedVerseRef}</strong>
+            <strong className="font-mono text-accent-strong">{selectedVerseRef}</strong>
             <span className="text-muted-foreground truncate italic flex-1">: "{selectedVerseText.slice(0, 80)}..."</span>
             <button
               onClick={() => {
@@ -163,6 +163,7 @@ function HomeContent() {
                 setChatContext('')
               }}
               className="text-muted-foreground hover:text-destructive flex-shrink-0"
+              aria-label="Clear selected verse"
             >
               <X className="h-3 w-3" />
             </button>
@@ -171,7 +172,7 @@ function HomeContent() {
 
         {/* FTS Search bar */}
         {searchOpen && (
-          <div className="px-3 sm:px-4 md:px-6 py-2 border-t border-border bg-card">
+          <div role="search" className="px-3 sm:px-4 md:px-6 py-2 border-t border-border bg-card">
             <div className="flex gap-2">
               <input
                 type="text"
@@ -202,7 +203,7 @@ function HomeContent() {
                     }}
                     className="block w-full text-left p-1.5 hover:bg-secondary rounded text-xs"
                   >
-                    <span className="font-mono text-accent mr-2">{v.ref}</span>
+                    <span className="font-mono text-accent-strong mr-2">{v.ref}</span>
                     {v.text.slice(0, 100)}...
                   </button>
                 ))}
@@ -224,6 +225,7 @@ function HomeContent() {
         )}
       {/* Main content */}
       <main className="flex-1 overflow-hidden">
+        <h1 className="sr-only">Enoch Wiki — Read the Book of 1 Enoch</h1>
         {/* Mobile: panel switcher with bottom nav */}
         {isMobile ? (
           <div className="flex flex-col h-full">
@@ -304,7 +306,7 @@ function HomeContent() {
           </span>
         </div>
         <div className="flex items-center gap-2 sm:gap-3 text-[10px]" style={{ fontFamily: 'var(--font-ui-stack)' }}>
-          <Link href="/how-we-vet" className="hover:text-foreground">How we vet content</Link>
+          <Link href="/how-we-vet" className="hover:text-foreground py-1">How we vet content</Link>
           <span>·</span>
           <span className="font-semibold text-foreground">enoch.wiki</span>
           <span>·</span>

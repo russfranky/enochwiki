@@ -139,7 +139,7 @@ export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
 
         {/* KNOWLEDGE GRAPH */}
         <TabsContent value="graph" className="flex-1 mt-0 overflow-hidden">
-          <ScrollArea className="h-full">
+          <ScrollArea className="h-full" viewportLabel="Knowledge graph visualization">
             <div className="px-3 sm:px-4 py-3">
               <KnowledgeGraphView
                 evidence={allEvidence}
@@ -207,7 +207,7 @@ function EvidenceCard({
 
       {/* Scripture side */}
       <div className="mb-2.5 p-2 rounded-md bg-secondary/40 border border-border">
-        <div className="text-[10px] uppercase tracking-wider text-accent font-semibold mb-0.5">
+        <div className="text-[10px] uppercase tracking-wider text-accent-strong font-semibold mb-0.5">
           Scripture — {evidence.scriptureRef}
         </div>
         {evidence.scriptureText ? (
@@ -222,7 +222,7 @@ function EvidenceCard({
 
       {/* Evidence side */}
       <div className="p-2 rounded-md bg-accent/5 border border-accent/20">
-        <div className="text-[10px] uppercase tracking-wider text-accent font-semibold mb-0.5">
+        <div className="text-[10px] uppercase tracking-wider text-accent-strong font-semibold mb-0.5">
           Evidence
         </div>
         <p className="text-sm leading-snug mb-1.5 [overflow-wrap:anywhere]">{evidence.corroboration}</p>
@@ -238,7 +238,7 @@ function EvidenceCard({
             href={/^https?:\/\//i.test(evidence.source.url.trim()) ? evidence.source.url : undefined}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-start gap-1.5 text-xs hover:text-accent transition group"
+            className="flex items-start gap-1.5 text-xs hover:text-accent-strong transition group"
           >
             <ExternalLink className="h-3 w-3 mt-0.5 flex-shrink-0" />
             <div>
@@ -530,7 +530,7 @@ function TimelineView({
                 className={`absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full border-2 border-background ${color}`}
               />
               <div className="flex items-baseline gap-2">
-                <span className="text-xs font-mono font-semibold text-accent min-w-[60px]">
+                <span className="text-xs font-mono font-semibold text-accent-strong min-w-[60px]">
                   {parseInt(item.date) < 0 ? `${Math.abs(parseInt(item.date))} BCE` : item.date}
                 </span>
                 <span className="text-sm font-medium">{item.label}</span>

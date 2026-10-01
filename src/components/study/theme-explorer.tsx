@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Badge } from '@/components/ui/badge'
-import { Card } from '@/components/ui/card'
 import { Layers, Loader2 } from 'lucide-react'
 
 interface Theme {
@@ -83,12 +82,14 @@ export function ThemeExplorer({ onSelectTheme, selectedThemeSlug }: ThemeExplore
             </div>
           ) : (
             filtered.map((t) => (
-              <Card
+              <button
                 key={t.id}
+                type="button"
                 onClick={() => onSelectTheme(t.slug === selectedThemeSlug ? '' : t.slug)}
-                className={`p-3 cursor-pointer transition-all ${
+                aria-pressed={t.slug === selectedThemeSlug}
+                className={`w-full text-left bg-card text-card-foreground flex flex-col gap-6 rounded-xl border p-3 cursor-pointer shadow-sm transition-all ${
                   t.slug === selectedThemeSlug
-                    ? 'border-accent bg-accent/10 shadow-sm'
+                    ? 'border-accent-strong bg-accent/10'
                     : 'border-border hover:border-accent/50 hover:bg-secondary/40'
                 }`}
               >
@@ -110,7 +111,7 @@ export function ThemeExplorer({ onSelectTheme, selectedThemeSlug }: ThemeExplore
                 <div className="text-[10px] text-muted-foreground mt-1.5 italic">
                   {t.category}
                 </div>
-              </Card>
+              </button>
             ))
           )}
         </div>

@@ -62,7 +62,7 @@ export function MobileBottomNav({ mobilePane, onPaneChange, className }: MobileB
           aria-current={readActive ? 'page' : undefined}
           className={cn(
             TAB_BASE,
-            readActive ? 'text-accent border-t-2 border-accent -mt-px' : 'text-muted-foreground'
+            readActive ? 'text-accent-strong border-t-2 border-accent-strong -mt-px' : 'text-muted-foreground'
           )}
         >
           <BookOpen className="h-4 w-4" />
@@ -74,7 +74,7 @@ export function MobileBottomNav({ mobilePane, onPaneChange, className }: MobileB
           aria-current={topicsActive ? 'page' : undefined}
           className={cn(
             TAB_BASE,
-            topicsActive ? 'text-accent border-t-2 border-accent -mt-px' : 'text-muted-foreground'
+            topicsActive ? 'text-accent-strong border-t-2 border-accent-strong -mt-px' : 'text-muted-foreground'
           )}
         >
           <Tags className="h-4 w-4" />
@@ -86,7 +86,7 @@ export function MobileBottomNav({ mobilePane, onPaneChange, className }: MobileB
           aria-current={exploreActive ? 'page' : undefined}
           className={cn(
             TAB_BASE,
-            exploreActive ? 'text-accent border-t-2 border-accent -mt-px' : 'text-muted-foreground'
+            exploreActive ? 'text-accent-strong border-t-2 border-accent-strong -mt-px' : 'text-muted-foreground'
           )}
         >
           <Layers className="h-4 w-4" />
