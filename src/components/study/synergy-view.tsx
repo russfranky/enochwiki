@@ -77,10 +77,10 @@ export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
   return (
     <div className="flex flex-col h-full">
       <div className="px-3 sm:px-4 py-2.5 sm:py-3 border-b border-border bg-secondary/40">
-        <h3 className="font-serif text-lg font-semibold flex items-center gap-2">
+        <h2 className="font-serif text-lg font-semibold flex items-center gap-2">
           <Scale className="h-4 w-4 text-accent" />
           Corroboration
-        </h3>
+        </h2>
         <p className="text-xs text-muted-foreground mt-0.5">
           Scripture ↔ evidence alignment across three lenses
         </p>

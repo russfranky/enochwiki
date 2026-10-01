@@ -117,10 +117,10 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
   return (
     <div className="flex flex-col h-full">
       <div className="border-b border-border bg-secondary/40 px-3 sm:px-4 py-2.5">
-        <h3 className="font-serif text-base font-semibold flex items-center gap-2">
+        <h2 className="font-serif text-base font-semibold flex items-center gap-2">
           <Brain className="h-4 w-4 text-accent" />
           Study Tools
-        </h3>
+        </h2>
       </div>
 
       <Tabs value={tab} onValueChange={setTab} className="flex-1 flex flex-col min-h-0">
