@@ -31,12 +31,12 @@ const SITE_URL = "https://enoch.wiki";
 const SITE_NAME = "Enoch.Wiki";
 const SITE_TAGLINE = "The Ethiopian Bible, corroborated. A scholarly-neutral study and reference resource.";
 const SITE_DESCRIPTION =
-  "Enoch.Wiki is a rigorously corroborated knowledge resource for the Ethiopian Orthodox Bible — 1 Enoch, Jubilees, Meqabyan, 4 Baruch, and the canonical gospels. Every claim is sourced, perspective-tagged, and credibility-scored. Designed for the audience of The Resurrection of the Christ (May 2027).";
+  "Enoch.Wiki is a rigorously corroborated knowledge resource for the Ethiopian Orthodox Bible: 1 Enoch, Jubilees, Meqabyan, 4 Baruch, and the canonical gospels. Every claim is sourced, perspective-tagged, and credibility-scored. Designed for the audience of The Resurrection of the Christ (May 2027).";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    default: `${SITE_NAME} · ${SITE_TAGLINE}`,
     template: `%s · ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -72,20 +72,20 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    title: `${SITE_NAME} · ${SITE_TAGLINE}`,
     description: SITE_DESCRIPTION,
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "Enoch.Wiki — The Ethiopian Bible, corroborated",
+        alt: "Enoch.Wiki · The Ethiopian Bible, corroborated",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    title: `${SITE_NAME} · ${SITE_TAGLINE}`,
     description: SITE_DESCRIPTION,
     creator: "@enochwiki",
     site: "@enochwiki",
