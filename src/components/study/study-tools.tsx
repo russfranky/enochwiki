@@ -137,7 +137,7 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
 
         {/* Daily Insight */}
         {AI_ENABLED && (
-          <TabsContent value="daily" className="flex-1 mt-0">
+          <TabsContent value="daily" className="flex-1 mt-0 min-h-0">
             <ScrollArea className="h-full">
               <div className="p-3 sm:p-4">
                 {daily ? (
@@ -166,7 +166,7 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
 
         {/* Passage Summary */}
         {AI_ENABLED && (
-          <TabsContent value="summary" className="flex-1 mt-0">
+          <TabsContent value="summary" className="flex-1 mt-0 min-h-0">
             <ScrollArea className="h-full">
               <div className="p-3 sm:p-4">
                 {bookSlug && chapterNum ? (
@@ -200,7 +200,7 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
         )}
 
         {/* Flashcards */}
-        <TabsContent value="flashcards" className="flex-1 mt-0">
+        <TabsContent value="flashcards" className="flex-1 mt-0 min-h-0">
           <div className="p-3 sm:p-4 h-full flex flex-col">
             <div className="flex items-center justify-between mb-3">
               <div className="text-xs">
@@ -271,7 +271,7 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
         </TabsContent>
 
         {/* Glossary */}
-        <TabsContent value="glossary" className="flex-1 mt-0">
+        <TabsContent value="glossary" className="flex-1 mt-0 min-h-0">
           <ScrollArea className="h-full">
             <div className="p-3 space-y-2">
               {glossary.map((g) => (
