@@ -30,8 +30,8 @@ function BookCover({ book, size }: { book: Book; size: 'sm' | 'lg' }) {
     <div
       aria-hidden="true"
       className={
-        'flex flex-col justify-between rounded-md border border-border bg-card p-4 shadow-sm overflow-hidden ' +
-        (size === 'lg' ? 'aspect-[2/3] w-40 sm:w-52' : 'aspect-[2/3] w-24')
+        'flex flex-col justify-between rounded-md border border-border bg-card shadow-sm overflow-hidden ' +
+        (size === 'lg' ? 'aspect-[2/3] w-40 sm:w-52 p-4' : 'aspect-[2/3] w-28 p-3')
       }
     >
       <div
