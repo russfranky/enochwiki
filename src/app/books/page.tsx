@@ -36,7 +36,7 @@ function BookCover({ book, size }: { book: Book; size: 'sm' | 'lg' }) {
     >
       <div
         className={
-          'font-serif font-semibold leading-tight text-foreground break-words ' +
+          'font-serif font-semibold leading-tight text-foreground hyphens-auto ' +
           (size === 'lg' ? 'text-lg sm:text-xl' : 'text-xs')
         }
       >

@@ -78,7 +78,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
             aria-hidden="true"
             className="flex flex-col justify-between rounded-md border border-border bg-card p-6 shadow-sm aspect-[2/3] w-44 sm:w-60 flex-shrink-0 overflow-hidden"
           >
-            <div className="font-serif text-xl sm:text-2xl font-semibold leading-tight text-foreground break-words">
+            <div className="font-serif text-xl sm:text-2xl font-semibold leading-tight text-foreground hyphens-auto">
               {book.title}
             </div>
             <div className="text-sm text-muted-foreground leading-snug">{book.author}</div>
