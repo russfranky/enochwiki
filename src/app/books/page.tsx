@@ -9,14 +9,14 @@ import { BOOKS, type Book } from '@/lib/books'
 export const dynamic = 'force-static'
 
 export const metadata: Metadata = {
-  title: 'Recommended Books on 1 Enoch and the Ethiopian Canon',
+  title: 'Book Index: Editions and Translations of 1 Enoch',
   description:
-    'Curated books on the Book of Enoch, the Ethiopian Tewahedo canon, and Second Temple literature: the translations and references worth your shelf.',
+    'A neutral index of editions, translations, and reference works on the Book of Enoch, the Ethiopian canon, and Second Temple literature.',
   alternates: { canonical: '/books' },
   openGraph: {
-    title: 'Recommended Books | enoch.wiki',
+    title: 'Book Index | enoch.wiki',
     description:
-      'The translations and references worth your shelf: 1 Enoch, the Ethiopian canon, and Second Temple literature.',
+      'Editions, translations, and reference works on 1 Enoch, the Ethiopian canon, and Second Temple literature.',
     url: '/books',
     type: 'website',
   },
@@ -30,14 +30,14 @@ function BookCover({ book, size }: { book: Book; size: 'sm' | 'lg' }) {
     <div
       aria-hidden="true"
       className={
-        'flex flex-col justify-between rounded-md border border-border bg-card p-4 shadow-sm ' +
+        'flex flex-col justify-between rounded-md border border-border bg-card p-4 shadow-sm overflow-hidden ' +
         (size === 'lg' ? 'aspect-[2/3] w-40 sm:w-52' : 'aspect-[2/3] w-24')
       }
     >
       <div
         className={
-          'font-serif font-semibold leading-tight text-foreground ' +
-          (size === 'lg' ? 'text-lg sm:text-xl' : 'text-sm')
+          'font-serif font-semibold leading-tight text-foreground break-words ' +
+          (size === 'lg' ? 'text-lg sm:text-xl' : 'text-xs')
         }
       >
         {book.title}
@@ -79,10 +79,11 @@ export default function BooksIndex() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd(crumbs, SITE_URL)) }}
         />
         <Breadcrumbs items={crumbs} />
-        <h1 className="font-serif text-3xl sm:text-4xl font-bold mb-2">Recommended Books</h1>
+        <h1 className="font-serif text-3xl sm:text-4xl font-bold mb-2">Book Index</h1>
         <p className="text-muted-foreground mb-8 max-w-2xl">
-          The translations and references worth your shelf. A short, curated list:
-          every title here is one we would hand to a serious reader.
+          Editions, translations, and reference works on 1 Enoch, the Ethiopian
+          Tewahedo canon, and Second Temple literature. Bibliographic information
+          only; inclusion is not an endorsement.
         </p>
 
         {featured && (
@@ -91,9 +92,6 @@ export default function BooksIndex() {
               <Card className="p-6 sm:p-8 flex flex-col sm:flex-row gap-6 cursor-pointer transition border-border hover:border-accent/50 hover:bg-secondary/40">
                 <BookCover book={featured} size="lg" />
                 <div className="min-w-0">
-                  <div className="text-xs uppercase tracking-wider text-accent-strong font-semibold mb-2">
-                    Start here
-                  </div>
                   <h2 className="font-serif text-2xl font-semibold leading-tight mb-1">
                     {featured.title}
                   </h2>

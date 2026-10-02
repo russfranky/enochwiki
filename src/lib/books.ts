@@ -1,4 +1,4 @@
-// books.ts: the recommended-books catalog for /books.
+// books.ts: the book index catalog for /books.
 // Russ curates this list. affiliateUrl stays empty until he adds his
 // affiliate links; the detail page only renders a buy button when one exists.
 // Bibliographic facts only: no invented endorsements, no invented metrics.
@@ -26,8 +26,8 @@ export const BOOKS: Book[] = [
     isbn: '978-0800636944',
     tagline: 'The standard scholarly English translation of 1 Enoch.',
     description: [
-      'A translation of 1 Enoch from the Ethiopic text, with an introduction and commentary by two of the field\u2019s leading scholars. It draws on the Aramaic fragments from Qumran alongside the complete Ge\u2019ez version preserved in the Ethiopian canon.',
-      'This is the edition scholars cite and the one this site\u2019s vetting notes reference most often. Best for readers who want the full text with serious annotation.',
+      'A translation of 1 Enoch from the Ethiopic text, with an introduction and commentary by George W. E. Nickelsburg and James C. VanderKam. It draws on the Aramaic fragments from Qumran alongside the complete Ge\u2019ez version preserved in the Ethiopian canon.',
+      'Includes the full text with extensive annotation. This is the edition cited in this site\u2019s vetting notes.',
     ],
     topics: ['1 Enoch', 'Translation', 'Commentary'],
     featured: true,
@@ -41,8 +41,8 @@ export const BOOKS: Book[] = [
     isbn: '978-0385096216',
     tagline: 'The standard collection of Second Temple Jewish writings in English.',
     description: [
-      'The landmark English collection of the Old Testament Pseudepigrapha, including 1 Enoch, Jubilees, the Testaments of the Twelve Patriarchs, and dozens more texts from the Second Temple period.',
-      'Volume 1 covers the apocalyptic literature and testaments: the context 1 Enoch belongs to. The standard reference shelf for anyone studying Enochic literature seriously.',
+      'The English collection of the Old Testament Pseudepigrapha, edited by James H. Charlesworth, including 1 Enoch, Jubilees, the Testaments of the Twelve Patriarchs, and dozens more texts from the Second Temple period.',
+      'Volume 1 covers the apocalyptic literature and testaments: the context 1 Enoch belongs to. A standard reference for the study of Enochic literature.',
     ],
     topics: ['Pseudepigrapha', 'Second Temple', 'Reference'],
   },
@@ -53,10 +53,10 @@ export const BOOKS: Book[] = [
     publisher: 'Oxford: Clarendon Press (public domain)',
     year: 1917,
     isbn: '',
-    tagline: 'The classic public-domain translation, free to read.',
+    tagline: 'The public-domain translation, free to read.',
     description: [
-      'R. H. Charles\u2019s 1917 translation introduced 1 Enoch to the English-speaking world and remains the most widely reprinted edition. The language is dated, but the text is complete and free of copyright restriction.',
-      'A good first read before moving to a modern critical translation. Multiple free editions exist online and in print.',
+      'R. H. Charles\u2019s 1917 translation, widely reprinted. The language is dated, but the text is complete and free of copyright restriction.',
+      'Often used as an entry point before moving to a modern critical translation. Multiple free editions exist online and in print.',
     ],
     topics: ['1 Enoch', 'Translation', 'Public domain'],
   },
