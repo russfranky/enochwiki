@@ -5,6 +5,8 @@
 export interface Book {
   slug: string
   title: string
+  /** Short display title for the small index cover placeholder. */
+  shortTitle: string
   author: string
   publisher: string
   year: number
@@ -20,6 +22,7 @@ export const BOOKS: Book[] = [
   {
     slug: '1-enoch-a-new-translation',
     title: '1 Enoch: A New Translation',
+    shortTitle: '1 Enoch',
     author: 'George W. E. Nickelsburg and James C. VanderKam',
     publisher: 'Fortress Press',
     year: 2004,
@@ -35,6 +38,7 @@ export const BOOKS: Book[] = [
   {
     slug: 'old-testament-pseudepigrapha-vol-1',
     title: 'The Old Testament Pseudepigrapha, Volume 1: Apocalyptic Literature and Testaments',
+    shortTitle: 'Pseudepigrapha, Vol. 1',
     author: 'James H. Charlesworth (editor)',
     publisher: 'Doubleday',
     year: 1983,
@@ -49,6 +53,7 @@ export const BOOKS: Book[] = [
   {
     slug: 'book-of-enoch-charles',
     title: 'The Book of Enoch',
+    shortTitle: 'Book of Enoch',
     author: 'R. H. Charles (translator)',
     publisher: 'Oxford: Clarendon Press (public domain)',
     year: 1917,
