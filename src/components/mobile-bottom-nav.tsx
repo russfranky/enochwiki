@@ -114,6 +114,15 @@ export function MobileBottomNav({ mobilePane, onPaneChange, className }: MobileB
           <div className="px-4 pb-6 flex flex-col">
             <DrawerClose asChild>
               <Link
+                href="/books"
+                className="flex items-center gap-3 min-h-[44px] px-2 rounded-md text-sm font-medium text-foreground hover:bg-secondary/60 transition"
+              >
+                <BookOpen className="h-4 w-4 text-muted-foreground flex-shrink-0" />
+                Books
+              </Link>
+            </DrawerClose>
+            <DrawerClose asChild>
+              <Link
                 href="/how-we-vet"
                 className="flex items-center gap-3 min-h-[44px] px-2 rounded-md text-sm font-medium text-foreground hover:bg-secondary/60 transition"
               >

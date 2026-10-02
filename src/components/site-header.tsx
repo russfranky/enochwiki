@@ -14,6 +14,7 @@ interface SiteHeaderProps {
 
 const NAV_LINKS = [
   { href: '/topics', label: 'Topics' },
+  { href: '/books', label: 'Books' },
   { href: '/how-we-vet', label: 'How we vet' },
 ]
 

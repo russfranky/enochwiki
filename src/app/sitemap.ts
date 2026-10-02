@@ -35,7 +35,28 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'monthly',
       priority: 0.6,
     },
+    {
+      url: `${SITE_URL}/books`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
   ]
+
+  // Add all book pages
+  try {
+    const { BOOKS } = await import('@/lib/books')
+    for (const b of BOOKS) {
+      entries.push({
+        url: `${SITE_URL}/books/${b.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.7,
+      })
+    }
+  } catch (e) {
+    // books lib missing: skip
+  }
 
   // Add all approved topic pages
   try {
