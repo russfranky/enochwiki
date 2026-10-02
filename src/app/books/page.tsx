@@ -40,7 +40,7 @@ function BookCover({ book, size }: { book: Book; size: 'sm' | 'lg' }) {
           (size === 'lg' ? 'text-lg sm:text-xl' : 'text-xs')
         }
       >
-        {book.title}
+        {size === 'lg' ? book.title : book.shortTitle}
       </div>
       <div className="text-xs text-muted-foreground leading-snug">{book.author}</div>
     </div>
