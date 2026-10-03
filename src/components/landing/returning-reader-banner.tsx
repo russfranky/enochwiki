@@ -46,7 +46,7 @@ export function ReturningReaderBanner() {
       <p>
         Looking for the reader?{' '}
         <a href="/read">
-          Continue where you left off <span aria-hidden="true">→</span>
+          Open the reader <span aria-hidden="true">→</span>
         </a>
       </p>
       <button type="button" className={s['returning-x']} onClick={dismiss} aria-label="Dismiss notice">

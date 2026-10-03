@@ -34,7 +34,7 @@ export default async function TopicsIndex() {
         <p className="text-muted-foreground mb-8 max-w-2xl">
           In-depth explorations of the concepts behind the Ethiopian Bible. Nothing here
           is published until it clears editorial review.{' '}
-          <Link href="/how-we-vet" className="text-accent hover:underline">See how we vet content</Link>.
+          <Link href="/how-we-vet" className="text-accent-strong hover:underline">See how we vet content</Link>.
         </p>
 
         {topics.length === 0 ? (

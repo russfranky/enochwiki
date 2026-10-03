@@ -90,7 +90,7 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
 
         {topicPage.filmRelevance?.trim() && (
           <Card className="p-3 sm:p-4 mb-6 bg-accent/5 border-accent/30">
-            <div className="text-[10px] uppercase tracking-wider text-accent font-semibold mb-1 flex items-center gap-1">
+            <div className="text-[10px] uppercase tracking-wider text-accent-strong font-semibold mb-1 flex items-center gap-1">
               <Calendar className="h-3 w-3" /> Film relevance
             </div>
             <p className="text-sm">{topicPage.filmRelevance}</p>

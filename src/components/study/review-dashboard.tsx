@@ -404,18 +404,18 @@ export function ReviewDashboard() {
                   <Card className="p-3">
                     <div className="space-y-3 text-sm">
                       <div>
-                        <div className="text-[10px] uppercase tracking-wider text-accent font-semibold">Scripture</div>
+                        <div className="text-[10px] uppercase tracking-wider text-accent-strong font-semibold">Scripture</div>
                         <div className="font-mono text-xs">{selected.item.scriptureRef}</div>
                         {selected.item.scriptureText && (
                           <p className="text-xs italic text-muted-foreground mt-1">"{selected.item.scriptureText}"</p>
                         )}
                       </div>
                       <div>
-                        <div className="text-[10px] uppercase tracking-wider text-accent font-semibold">Claim</div>
+                        <div className="text-[10px] uppercase tracking-wider text-accent-strong font-semibold">Claim</div>
                         <p className="text-sm">{selected.item.claim}</p>
                       </div>
                       <div>
-                        <div className="text-[10px] uppercase tracking-wider text-accent font-semibold">Corroboration</div>
+                        <div className="text-[10px] uppercase tracking-wider text-accent-strong font-semibold">Corroboration</div>
                         <p className="text-sm">{selected.item.corroboration}</p>
                       </div>
                       <div className="flex flex-wrap gap-2 text-xs">
@@ -434,7 +434,7 @@ export function ReviewDashboard() {
                           href={typeof selected.item.source.url === 'string' && /^https?:\/\//i.test(selected.item.source.url.trim()) ? selected.item.source.url : undefined}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-xs text-accent underline block"
+                          className="text-xs text-accent-strong underline block"
                         >
                           {selected.item.source.url}
                         </a>
@@ -447,15 +447,15 @@ export function ReviewDashboard() {
                   <Card className="p-3">
                     <div className="space-y-2 text-sm">
                       <div>
-                        <div className="text-[10px] uppercase tracking-wider text-accent font-semibold">SEO Description</div>
+                        <div className="text-[10px] uppercase tracking-wider text-accent-strong font-semibold">SEO Description</div>
                         <p className="text-xs">{selected.item.seoDescription}</p>
                       </div>
                       <div>
-                        <div className="text-[10px] uppercase tracking-wider text-accent font-semibold">Film Relevance</div>
+                        <div className="text-[10px] uppercase tracking-wider text-accent-strong font-semibold">Film Relevance</div>
                         <p className="text-xs">{selected.item.filmRelevance}</p>
                       </div>
                       <div>
-                        <div className="text-[10px] uppercase tracking-wider text-accent font-semibold">Body (preview)</div>
+                        <div className="text-[10px] uppercase tracking-wider text-accent-strong font-semibold">Body (preview)</div>
                         <pre className="text-xs whitespace-pre-wrap max-h-60 overflow-y-auto bg-secondary/30 p-2 rounded">
                           {selected.item.bodyMarkdown?.slice(0, 800)}...
                         </pre>
@@ -515,7 +515,7 @@ export function ReviewDashboard() {
 
                 {selected.notes && (
                   <Card className="p-3">
-                    <div className="text-[10px] uppercase tracking-wider text-accent font-semibold mb-1">Prior Notes</div>
+                    <div className="text-[10px] uppercase tracking-wider text-accent-strong font-semibold mb-1">Prior Notes</div>
                     <p className="text-xs">{selected.notes}</p>
                   </Card>
                 )}

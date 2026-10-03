@@ -60,18 +60,21 @@ function HomeContent() {
 
   // Detect mobile viewport
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768)
+    const checkMobile = () => setIsMobile(window.innerWidth < 640)
     checkMobile()
     window.addEventListener('resize', checkMobile)
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
-  // Deep link: ?panel=explore opens the Explore pane on mobile (used by the
-  // shared bottom nav when navigating in from other routes).
+  // Deep link: ?panel=explore (or ?panel=chat when AI is enabled) opens the
+  // matching pane on mobile (used by the shared bottom nav when navigating
+  // in from other routes).
   const searchParams = useSearchParams()
   useEffect(() => {
     if (searchParams.get('panel') === 'explore') {
       setMobilePanel('right')
+    } else if (searchParams.get('panel') === 'chat' && AI_ENABLED) {
+      setMobilePanel('chat')
     }
   }, [searchParams])
 
@@ -92,6 +95,12 @@ function HomeContent() {
 
   const handleThemeSelect = useCallback((slug: string) => {
     setSelectedThemeSlug(slug || null)
+  }, [])
+
+  // D-022: Escape closes the search panel and focus returns to the toggle.
+  const closeSearch = useCallback(() => {
+    setSearchOpen(false)
+    document.getElementById('site-search-toggle')?.focus()
   }, [])
 
   async function runSearch() {
@@ -158,6 +167,12 @@ function HomeContent() {
   // pushing the nav below the fold. Desktop keeps min-h-screen.
   return (
     <div className="min-h-screen max-md:h-dvh flex flex-col parchment-bg">
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:rounded-md focus:bg-card focus:px-3 focus:py-2 focus:text-sm focus:font-medium"
+      >
+        Skip to content
+      </a>
       <SiteHeader onSearchToggle={() => setSearchOpen((s) => !s)} searchOpen={searchOpen} />
 
         {/* Selected verse indicator */}
@@ -182,7 +197,9 @@ function HomeContent() {
 
         {/* FTS Search bar */}
         {searchOpen && (
-          <div role="search" className="px-3 sm:px-4 md:px-6 py-2 border-t border-border bg-card">
+          <div role="search" className="px-3 sm:px-4 md:px-6 py-2 border-t border-border bg-card"
+            onKeyDown={(e) => e.key === 'Escape' && closeSearch()}
+          >
             <div className="flex gap-2">
               <input
                 type="text"
@@ -191,6 +208,7 @@ function HomeContent() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && runSearch()}
                 placeholder="Search verses, sources, evidence..."
+                aria-label="Search verses, sources, and evidence"
                 className="flex-1 h-9 px-3 text-sm rounded-md border border-input bg-background min-w-0"
               />
               <Button size="sm" onClick={runSearch} disabled={searching}>
@@ -234,7 +252,7 @@ function HomeContent() {
           </div>
         )}
       {/* Main content */}
-      <main className="flex-1 overflow-hidden">
+      <main id="main" className="flex-1 overflow-hidden">
         <h1 className="sr-only">Enoch Wiki: Read the Book of 1 Enoch</h1>
         {/* Mobile: panel switcher with bottom nav */}
         {isMobile ? (
@@ -257,7 +275,7 @@ function HomeContent() {
             </div>
             {/* Mobile bottom nav: the single primary navigation on mobile */}
             <MobileBottomNav
-              mobilePane={mobilePanel === 'right' ? 'right' : mobilePanel === 'chat' ? null : 'scripture'}
+              mobilePane={mobilePanel}
               onPaneChange={(pane) => setMobilePanel(pane)}
             />
           </div>
@@ -331,9 +349,21 @@ function HomeContent() {
 
 // useSearchParams requires a Suspense boundary; the wrapper keeps the
 // ?panel=explore deep link working without touching the page layout.
+// D-036: a real fallback so the prerendered HTML is not an empty shell.
+function ReadFallback() {
+  return (
+    <div className="min-h-screen max-md:h-dvh flex flex-col parchment-bg">
+      <SiteHeader />
+      <main id="main" className="flex-1 overflow-hidden flex items-center justify-center">
+        <p className="text-sm text-muted-foreground">Loading reader...</p>
+      </main>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
-    <Suspense>
+    <Suspense fallback={<ReadFallback />}>
       <HomeContent />
     </Suspense>
   )
