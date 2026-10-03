@@ -72,7 +72,7 @@ section{padding:88px 0}
 .returning p{margin:0}
 .returning a{font-weight:650; color:var(--brand-deep)}
 .returning-x{appearance:none; border:1px solid var(--hairline); background:transparent; color:var(--muted);
-  width:28px; height:28px; border-radius:999px; font-size:16px; line-height:1; cursor:pointer; flex:none}
+  width:44px; height:44px; border-radius:999px; font-size:16px; line-height:1; cursor:pointer; flex:none}
 .returning-x:hover{color:var(--ink); border-color:var(--muted)}
 
 /* Focus & skip link */

@@ -313,7 +313,13 @@ function KnowledgeGraphView({
         scripture via cross-references (left-to-left links). Hover or click to inspect.
       </p>
       <div className="overflow-x-auto border border-border rounded-md bg-card">
-        <svg width={width} height={height} className="block">
+        <svg
+          width={width}
+          height={height}
+          className="block"
+          role="img"
+          aria-label={`Knowledge graph: ${refs.length} scripture passages linked to ${sources.length} sources through ${evidence.length} evidence connections and ${crossRefs.length} cross-references.`}
+        >
           {/* Cross-ref edges (scripture ↔ scripture) */}
           {crossRefs.map((cr) => {
             const a = refPositions.get(cr.sourceRef)
@@ -426,6 +432,15 @@ function KnowledgeGraphView({
             )
           })}
         </svg>
+        {/* D-023: text alternative for the graph for screen-reader users. */}
+        <ul className="sr-only">
+          {refs.map((r) => (
+            <li key={`ref-${r}`}>Scripture passage: {r}</li>
+          ))}
+          {sources.map((s) => (
+            <li key={`src-${s.id}`}>Source: {s.title}</li>
+          ))}
+        </ul>
       </div>
 
       <div className="mt-3 flex flex-wrap gap-3 text-[10px]">

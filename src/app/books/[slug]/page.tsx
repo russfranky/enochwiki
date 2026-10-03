@@ -36,6 +36,11 @@ export async function generateMetadata({
 
 const SITE_URL = 'https://enoch.wiki'
 
+// D-017: affiliate URLs are owner-supplied: allowlist http/https before
+// injecting into href so a pasted `javascript:` URL cannot execute on click.
+const safeHref = (u: unknown): string | undefined =>
+  typeof u === 'string' && /^https?:\/\//i.test(u.trim()) ? u : undefined
+
 export default async function BookPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const book = getBook(slug)
@@ -127,9 +132,13 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
               </div>
             )}
 
+            <p className="text-xs text-muted-foreground mb-8">
+              Bibliographic information only; inclusion is not an endorsement.
+            </p>
+
             {book.affiliateUrl ? (
               <a
-                href={book.affiliateUrl}
+                href={safeHref(book.affiliateUrl)}
                 target="_blank"
                 rel="nofollow sponsored noopener"
                 className="inline-flex items-center gap-2 rounded-md bg-accent-strong px-5 py-3 text-sm font-semibold text-white hover:opacity-90 transition"
@@ -139,7 +148,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
             ) : null}
 
             <div className="mt-10">
-              <Link href="/books" className="text-sm text-accent hover:underline">
+              <Link href="/books" className="text-sm text-accent-strong hover:underline">
                 ← Back to all books
               </Link>
             </div>

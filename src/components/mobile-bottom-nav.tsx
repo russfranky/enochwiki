@@ -3,8 +3,9 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { BookOpen, Tags, Layers, MoreHorizontal, ShieldCheck, Palette } from 'lucide-react'
+import { BookOpen, Tags, Layers, MoreHorizontal, ShieldCheck, Palette, MessageCircle } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { AI_ENABLED } from '@/lib/launch'
 import {
   Drawer,
   DrawerClose,
@@ -15,10 +16,10 @@ import {
 import { ThemeToggle } from '@/components/theme-toggle'
 
 // Shared mobile bottom navigation: the single primary nav on mobile.
-// Four tabs, labels never icon-only. Read and Explore switch panes on `/read`
-// and deep-link there from other routes; Topics navigates; More opens a
-// bottom-sheet drawer with secondary links.
-export type MobilePane = 'scripture' | 'right'
+// Read, Topics, Explore switch panes on `/read` and deep-link there from
+// other routes; Topics navigates; More opens a bottom-sheet drawer with
+// secondary links. A Chat tab appears only when AI is enabled (D-030).
+export type MobilePane = 'scripture' | 'chat' | 'right'
 
 interface MobileBottomNavProps {
   mobilePane: MobilePane | null
@@ -39,6 +40,7 @@ export function MobileBottomNav({ mobilePane, onPaneChange, className }: MobileB
   const onRead = pathname === '/read'
   const readActive = onRead && mobilePane === 'scripture'
   const exploreActive = onRead && mobilePane === 'right'
+  const chatActive = onRead && mobilePane === 'chat'
   const topicsActive = pathname === '/topics' || pathname.startsWith('/topics/')
 
   const goRead = () => {
@@ -49,12 +51,16 @@ export function MobileBottomNav({ mobilePane, onPaneChange, className }: MobileB
     if (onRead) onPaneChange?.('right')
     else router.push('/read?panel=explore')
   }
+  const goChat = () => {
+    if (onRead) onPaneChange?.('chat')
+    else router.push('/read?panel=chat')
+  }
 
   return (
     <>
       <nav
-        aria-label="Primary"
-        className={cn('sm:hidden flex border-t border-border bg-card', className)}
+        aria-label="Primary mobile"
+        className={cn('sm:hidden flex border-t border-border bg-card pb-[env(safe-area-inset-bottom)]', className)}
       >
         <button
           type="button"
@@ -92,6 +98,20 @@ export function MobileBottomNav({ mobilePane, onPaneChange, className }: MobileB
           <Layers className="h-4 w-4" />
           Explore
         </button>
+        {AI_ENABLED && (
+          <button
+            type="button"
+            onClick={goChat}
+            aria-current={chatActive ? 'page' : undefined}
+            className={cn(
+              TAB_BASE,
+              chatActive ? 'text-accent-strong border-t-2 border-accent-strong -mt-px' : 'text-muted-foreground'
+            )}
+          >
+            <MessageCircle className="h-4 w-4" />
+            Chat
+          </button>
+        )}
         <button
           type="button"
           onClick={() => setMoreOpen(true)}
@@ -107,7 +127,7 @@ export function MobileBottomNav({ mobilePane, onPaneChange, className }: MobileB
       {/* More drawer: secondary links as a mobile bottom sheet. Vaul traps
           focus inside on open, returns focus on close, and Escape closes. */}
       <Drawer open={moreOpen} onOpenChange={setMoreOpen}>
-        <DrawerContent className="sm:hidden">
+        <DrawerContent className="sm:hidden" overlayClassName="sm:hidden">
           <DrawerHeader>
             <DrawerTitle>More</DrawerTitle>
           </DrawerHeader>

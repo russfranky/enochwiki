@@ -258,9 +258,10 @@ export async function POST(req: NextRequest) {
 }
 
 export async function GET() {
-  if (!SCRAPE_ENABLED) {
-    return NextResponse.json(SCRAPE_DORMANT, { status: 503 })
-  }
+  // D-034: the capacity preview is read-only (counts only), so it stays
+  // available while the pipeline is dormant. Only POST, which feeds the
+  // pipeline, is gated on SCRAPE_ENABLED.
+  const dormant = !SCRAPE_ENABLED
   // Return a preview of what would be processed
   const themes = await db.theme.count()
   const verses = await db.verse.count()
@@ -269,10 +270,13 @@ export async function GET() {
   const health = await checkApiHealth()
 
   return NextResponse.json({
+    dormant,
     stats: { themes, verses, sources, evidence },
     apiHealth: health,
     modes: ['themes', 'verses', 'film-topics', 'all'],
-    description: 'POST with { mode, limit } to grow the database. Rate-limited to 1 search per 2s.',
+    description: dormant
+      ? 'Pipeline is dormant (SCRAPE_ENABLED is off). POST is disabled; this preview shows current capacity only.'
+      : 'POST with { mode, limit } to grow the database. Rate-limited to 1 search per 2s.',
   })
 }
 
