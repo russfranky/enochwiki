@@ -3,6 +3,7 @@ import { Spectral, Source_Serif_4, Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
+import { GoogleAnalytics } from "@/components/analytics";
 
 const spectral = Spectral({
   variable: "--font-spectral",
@@ -168,6 +169,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <GoogleAnalytics />
       </head>
       <body
         className="antialiased bg-background text-foreground"
