@@ -54,8 +54,10 @@ export function CountdownTimer() {
     <div className="flex gap-2 sm:gap-3" role="timer" aria-label="Countdown to the release of The Resurrection of the Christ Part One">
       {UNITS.map((u) => (
         <div key={u.key} className="flex-1 rounded-lg border border-border bg-card px-2 py-3 text-center sm:px-4 sm:py-4">
-          <div className="font-serif text-2xl sm:text-4xl font-bold tabular-nums">
-            {String(p[u.key]).padStart(u.key === 'days' ? 1 : 2, '0')}
+          <div className="font-serif text-2xl sm:text-4xl font-bold tabular-nums overflow-hidden">
+            <span key={String(p[u.key])} className="digit-in">
+              {String(p[u.key]).padStart(u.key === 'days' ? 1 : 2, '0')}
+            </span>
           </div>
           <div className="text-xs text-muted-foreground mt-1">{u.label}</div>
         </div>

@@ -53,7 +53,7 @@ function SourceList({ sources }: { sources: Source[] }) {
             href={s.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent-foreground underline decoration-accent/60 underline-offset-2 hover:decoration-accent"
+            className="text-accent-foreground underline decoration-accent/60 underline-offset-2 hover:decoration-accent transition-colors duration-150 ease-out"
           >
             {s.label}
           </a>
@@ -63,9 +63,13 @@ function SourceList({ sources }: { sources: Source[] }) {
   )
 }
 
-function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
+function Section({ id, title, index, children }: { id: string; title: string; index: number; children: React.ReactNode }) {
   return (
-    <section aria-labelledby={id} className="mb-10 sm:mb-12">
+    <section
+      aria-labelledby={id}
+      className="mb-10 sm:mb-12 reveal"
+      style={{ animationDelay: `${index * 60}ms` }}
+    >
       <h2 id={id} className="font-serif text-2xl sm:text-3xl font-bold mb-4">
         {title}
       </h2>
@@ -91,6 +95,7 @@ export default function ResurrectionCountdown() {
         />
         <Breadcrumbs items={crumbs} />
 
+        <div className="reveal">
         <h1 className="font-serif text-3xl sm:text-5xl font-bold leading-tight mb-3">
           The Resurrection of the Christ: Release Date Countdown
         </h1>
@@ -107,8 +112,9 @@ export default function ResurrectionCountdown() {
             Counting down to Part One, May 6, 2027, Ascension Day.
           </p>
         </div>
+        </div>
 
-        <Section id="at-a-glance" title="At a glance">
+        <Section id="at-a-glance" index={1} title="At a glance">
           <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
             {[
               ['Part One release date', 'May 6, 2027 (Ascension Day)'],
@@ -140,7 +146,7 @@ export default function ResurrectionCountdown() {
           />
         </Section>
 
-        <Section id="story" title="What the film is about">
+        <Section id="story" index={2} title="What the film is about">
           <p>
             The two-part film follows the events after the crucifixion of Jesus. Gibson
             has said the story will travel beyond the planet to different realms: the
@@ -167,7 +173,7 @@ export default function ResurrectionCountdown() {
           />
         </Section>
 
-        <Section id="cast" title="The Resurrection of the Christ cast">
+        <Section id="cast" index={3} title="The Resurrection of the Christ cast">
           <p>
             The sequel uses an all-new cast. Finnish actor <strong>Jaakko Ohtonen</strong>,
             known for Netflix&apos;s The Last Kingdom, plays Jesus, replacing Jim Caviezel.
@@ -193,7 +199,7 @@ export default function ResurrectionCountdown() {
           />
         </Section>
 
-        <Section id="trailer" title="Trailer status">
+        <Section id="trailer" index={4} title="Trailer status">
           <p>
             <strong>No official trailer has been released yet.</strong> The first public
             images came in May 2026, when Lionsgate released first-look photos of
@@ -215,7 +221,7 @@ export default function ResurrectionCountdown() {
           />
         </Section>
 
-        <Section id="timeline" title="Production timeline">
+        <Section id="timeline" index={5} title="Production timeline">
           <ul className="space-y-3">
             {[
               ['October 2025', 'Principal photography begins at Cinecitta Studios in Rome.'],
@@ -245,7 +251,7 @@ export default function ResurrectionCountdown() {
           />
         </Section>
 
-        <Section id="faith-voices" title="What faith leaders are saying">
+        <Section id="faith-voices" index={6} title="What faith leaders are saying">
           <p>
             Cardinal Gerhard Ludwig Muller, former head of the Vatican&apos;s doctrine
             office, spent an entire day on the set discussing the theology of the
@@ -272,7 +278,7 @@ export default function ResurrectionCountdown() {
           />
         </Section>
 
-        <Section id="enoch-connection" title="Why this film matters to readers of 1 Enoch">
+        <Section id="enoch-connection" index={7} title="Why this film matters to readers of 1 Enoch">
           <p>
             This site exists to make the Book of 1 Enoch readable. The film&apos;s
             announced cosmology will sound familiar to Enoch readers: a journey through
@@ -293,7 +299,7 @@ export default function ResurrectionCountdown() {
           </p>
         </Section>
 
-        <Section id="sources" title="All sources">
+        <Section id="sources" index={8} title="All sources">
           <p>
             Every fact on this page comes from one of these reports. Dates and details
             are updated as new announcements land.
