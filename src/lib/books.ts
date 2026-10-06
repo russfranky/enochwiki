@@ -34,6 +34,8 @@ export const BOOKS: Book[] = [
     ],
     topics: ['1 Enoch', 'Translation', 'Commentary'],
     featured: true,
+    affiliateUrl: 'https://www.amazon.com/dp/9780800636944?tag=enochwiki-20',
+
   },
   {
     slug: 'old-testament-pseudepigrapha-vol-1',
@@ -49,6 +51,8 @@ export const BOOKS: Book[] = [
       'Volume 1 covers the apocalyptic literature and testaments: the context 1 Enoch belongs to. A standard reference for the study of Enochic literature.',
     ],
     topics: ['Pseudepigrapha', 'Second Temple', 'Reference'],
+    affiliateUrl: 'https://www.amazon.com/dp/9780385096216?tag=enochwiki-20',
+
   },
   {
     slug: 'book-of-enoch-charles',
@@ -79,6 +83,8 @@ export const BOOKS: Book[] = [
       'It includes discussion of the manuscript history, including the Aramaic Enoch fragments from Qumran, and situates the text in its Second Temple Jewish context. It is part of the Hermeneia commentary series.',
     ],
     topics: ['1 Enoch', 'commentary', 'Book of Watchers', 'Second Temple Judaism'],
+    affiliateUrl: 'https://www.amazon.com/dp/9780800660748?tag=enochwiki-20',
+
   },
   {
     slug: 'the-aramaic-enoch-from-qumran-cave-4',
@@ -87,13 +93,15 @@ export const BOOKS: Book[] = [
     author: 'J. T. Milik',
     publisher: 'Oxford University Press',
     year: 1976,
-    isbn: '',
+    isbn: '9780198261612',
     tagline: 'Edition of the Aramaic Enoch fragments discovered at Qumran Cave 4.',
     description: [
       'This volume presents the Aramaic fragments of Enochic works found in Qumran Cave 4, with transcription, translation, and commentary by J. T. Milik.',
       'It includes a contribution by Matthew Black and documents the Aramaic textual basis of Enochic literature predating the Ethiopic tradition.',
     ],
     topics: ['Dead Sea Scrolls', 'Aramaic fragments', '1 Enoch', 'Qumran'],
+    affiliateUrl: 'https://www.amazon.com/dp/9780198261612?tag=enochwiki-20',
+
   },
   {
     slug: 'the-book-of-jubilees-vanderkam',
@@ -102,13 +110,15 @@ export const BOOKS: Book[] = [
     author: 'James C. VanderKam',
     publisher: 'Peeters',
     year: 1989,
-    isbn: '',
+    isbn: '9789042905511',
     tagline: 'Critical edition of the Ethiopic text of Jubilees.',
     description: [
       'This two-volume work provides a critical edition of the Ethiopic text of Jubilees, the Second Temple retelling of Genesis and Exodus structured around jubilee cycles.',
       'Jubilees shares Enochic traditions, including material about the watchers, and is preserved among the Dead Sea Scrolls in Hebrew fragments.',
     ],
     topics: ['Jubilees', 'critical edition', 'Second Temple Judaism', 'Dead Sea Scrolls'],
+    affiliateUrl: 'https://www.amazon.com/dp/9789042905511?tag=enochwiki-20',
+
   },
   {
     slug: 'apocalypticism-in-the-dead-sea-scrolls',
@@ -124,6 +134,8 @@ export const BOOKS: Book[] = [
       'It addresses the definition of apocalyptic literature, the social setting of apocalyptic movements, and the place of Qumran texts within that tradition.',
     ],
     topics: ['apocalyptic literature', 'Dead Sea Scrolls', 'Qumran', 'Second Temple Judaism'],
+    affiliateUrl: 'https://www.amazon.com/dp/9780415146343?tag=enochwiki-20',
+
   },
   {
     slug: 'the-encyclopedia-of-apocalypticism-volume-1',
@@ -132,13 +144,15 @@ export const BOOKS: Book[] = [
     author: 'John J. Collins (volume editor)',
     publisher: 'Continuum',
     year: 1998,
-    isbn: '',
+    isbn: '9780826410719',
     tagline: 'Reference volume on the origins of apocalypticism in ancient Judaism and Christianity.',
     description: [
       'This reference volume covers the origins and development of apocalypticism from its roots in ancient Near Eastern and Jewish traditions through early Christianity.',
       'It includes essays treating Enochic literature, Daniel, and other Second Temple apocalyptic works, with contributions from multiple scholars.',
     ],
     topics: ['apocalyptic literature', 'reference work', 'Second Temple Judaism', '1 Enoch'],
+    affiliateUrl: 'https://www.amazon.com/dp/9780826410719?tag=enochwiki-20',
+
   },
   {
     slug: '1-enoch-2-commentary',
@@ -154,6 +168,8 @@ export const BOOKS: Book[] = [
       'The commentary presents translation, textual notes, and discussion of composition, dating, and historical context for the Enochic material, with contributions drawing on the Aramaic fragments and Ethiopic textual tradition.',
     ],
     topics: ['1 Enoch', 'Book of Parables', 'commentary', 'Enochic literature'],
+    affiliateUrl: 'https://www.amazon.com/dp/9780800699645?tag=enochwiki-20',
+
   },
   {
     slug: 'jubilees-translation-commentary',
@@ -184,6 +200,8 @@ export const BOOKS: Book[] = [
       'It includes translations of Enochic fragments, copies related to Jubilees, and other Second Temple period compositions represented in the Dead Sea Scrolls, arranged by manuscript and cave.',
     ],
     topics: ['Dead Sea Scrolls', 'Qumran', 'translation'],
+    affiliateUrl: 'https://www.amazon.com/dp/9789004099213?tag=enochwiki-20',
+
   },
   {
     slug: 'the-apocalyptic-imagination',
@@ -199,6 +217,8 @@ export const BOOKS: Book[] = [
       'The second edition, published in the Biblical Resource Series, revises the 1984 original and incorporates material from the Dead Sea Scrolls, with discussion of genre definitions and social settings of apocalypticism.',
     ],
     topics: ['apocalyptic literature', '1 Enoch', 'Second Temple Judaism'],
+    affiliateUrl: 'https://www.amazon.com/dp/9780802843718?tag=enochwiki-20',
+
   },
 ]
 
