@@ -116,6 +116,7 @@ export function MobileBottomNav({ mobilePane, onPaneChange, className }: MobileB
           type="button"
           onClick={() => setMoreOpen(true)}
           aria-label="More options"
+          aria-haspopup="dialog"
           aria-expanded={moreOpen}
           className={cn(TAB_BASE, 'text-muted-foreground')}
         >
@@ -131,7 +132,7 @@ export function MobileBottomNav({ mobilePane, onPaneChange, className }: MobileB
           <DrawerHeader>
             <DrawerTitle>More</DrawerTitle>
           </DrawerHeader>
-          <div className="px-4 pb-6 flex flex-col">
+          <div className="px-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] flex flex-col">
             <DrawerClose asChild>
               <Link
                 href="/books"

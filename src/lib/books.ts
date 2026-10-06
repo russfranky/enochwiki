@@ -27,7 +27,7 @@ export const BOOKS: Book[] = [
     publisher: 'Fortress Press',
     year: 2004,
     isbn: '978-0800636944',
-    tagline: 'The standard scholarly English translation of 1 Enoch.',
+    tagline: 'A widely used scholarly English translation of 1 Enoch.',
     description: [
       'A translation of 1 Enoch from the Ethiopic text, with an introduction and commentary by George W. E. Nickelsburg and James C. VanderKam. It draws on the Aramaic fragments from Qumran alongside the complete Ge\u2019ez version preserved in the Ethiopian canon.',
       'Includes the full text with extensive annotation. This is the edition cited in this site\u2019s vetting notes.',
@@ -45,10 +45,10 @@ export const BOOKS: Book[] = [
     publisher: 'Doubleday',
     year: 1983,
     isbn: '978-0385096216',
-    tagline: 'The standard collection of Second Temple Jewish writings in English.',
+    tagline: 'A widely used collection of Second Temple Jewish writings in English.',
     description: [
       'The English collection of the Old Testament Pseudepigrapha, edited by James H. Charlesworth, including 1 Enoch, Jubilees, the Testaments of the Twelve Patriarchs, and dozens more texts from the Second Temple period.',
-      'Volume 1 covers the apocalyptic literature and testaments: the context 1 Enoch belongs to. A standard reference for the study of Enochic literature.',
+      'Volume 1 covers the apocalyptic literature and testaments: the context 1 Enoch belongs to. A widely used reference for the study of Enochic literature.',
     ],
     topics: ['Pseudepigrapha', 'Second Temple', 'Reference'],
     affiliateUrl: 'https://www.amazon.com/dp/9780385096216?tag=enochwiki-20',

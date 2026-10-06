@@ -34,7 +34,7 @@ export function SiteHeader({ onSearchToggle, searchOpen }: SiteHeaderProps) {
       <div className="px-3 sm:px-4 md:px-6 py-2.5 sm:py-3 max-w-6xl mx-auto">
         <div className="flex items-center justify-between gap-2">
           {/* Brand */}
-          <Link href="/" className="flex items-center gap-2 sm:gap-3 flex-shrink-0 min-w-0" aria-label="enoch.wiki home">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 flex-shrink-0 min-w-0 min-h-[44px]" aria-label="enoch.wiki home">
             <BrandMark />
             <span className="min-w-0">
               <span className="font-serif text-lg sm:text-xl font-semibold leading-tight text-foreground block truncate" style={{ fontFamily: 'var(--font-display-stack)' }}>
@@ -54,7 +54,7 @@ export function SiteHeader({ onSearchToggle, searchOpen }: SiteHeaderProps) {
                 <Link
                   key={l.href}
                   href={l.href}
-                  className="text-xs px-2 sm:px-3 py-1.5 rounded transition text-muted-foreground hover:text-foreground"
+                  className="text-xs px-2 sm:px-3 py-1.5 rounded transition text-muted-foreground hover:text-foreground inline-flex items-center min-h-[44px]"
                   style={{ fontFamily: 'var(--font-ui-stack)' }}
                 >
                   {l.label}
@@ -67,7 +67,7 @@ export function SiteHeader({ onSearchToggle, searchOpen }: SiteHeaderProps) {
                 id="site-search-toggle"
                 aria-label="Search"
                 aria-expanded={!!searchOpen}
-                className="inline-flex items-center gap-1.5 h-8 px-2.5 rounded-md border border-indigo-200 bg-transparent text-indigo-600 dark:text-indigo-300 hover:border-indigo-400 hover:bg-indigo-50 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 text-xs font-medium transition-all outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]"
+                className="inline-flex items-center gap-1.5 h-11 sm:h-8 px-2.5 rounded-md border border-indigo-200 bg-transparent text-indigo-600 dark:text-indigo-300 hover:border-indigo-400 hover:bg-indigo-50 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 text-xs font-medium transition-all outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]"
                 style={{ fontFamily: 'var(--font-ui-stack)' }}
               >
                 <Search className="h-3.5 w-3.5" />

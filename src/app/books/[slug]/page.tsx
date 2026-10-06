@@ -46,6 +46,11 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
   const book = getBook(slug)
   if (!book) notFound()
 
+  // D-072: gate the buy button on the allowlisted href, not on the raw
+  // affiliateUrl. If Russ pastes a non-http(s) URL, safeHref returns
+  // undefined and the button hides instead of rendering a dead anchor.
+  const buyHref = safeHref(book.affiliateUrl)
+
   const crumbs = [
     { label: 'Home', href: '/' },
     { label: 'Books', href: '/books' },
@@ -65,8 +70,14 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 
   return (
     <div className="min-h-screen flex flex-col parchment-bg">
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:rounded-md focus:bg-card focus:px-3 focus:py-2 focus:text-sm focus:font-medium"
+      >
+        Skip to content
+      </a>
       <SiteHeader />
-      <main className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 pt-6 sm:pt-10 pb-24 sm:pb-10">
+      <main id="main" className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 pt-6 sm:pt-10 pb-24 sm:pb-10">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd(crumbs, SITE_URL)) }}
@@ -136,25 +147,38 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
               Bibliographic information only; inclusion is not an endorsement.
             </p>
 
-            {book.affiliateUrl ? (
+            {buyHref ? (
               <a
-                href={safeHref(book.affiliateUrl)}
+                href={buyHref}
                 target="_blank"
                 rel="nofollow sponsored noopener"
                 className="inline-flex items-center gap-2 rounded-md bg-accent-strong px-5 py-3 text-sm font-semibold text-white hover:opacity-90 transition"
               >
                 Get this book <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                <span className="sr-only">(opens in a new tab)</span>
               </a>
             ) : null}
 
             <div className="mt-10">
               <Link href="/books" className="text-sm text-accent-strong hover:underline">
-                ← Back to all books
+                <span aria-hidden="true">← </span>Back to all books
               </Link>
             </div>
           </div>
         </div>
       </main>
+      <footer className="mt-auto border-t border-hairline bg-card/60 px-3 sm:px-4 md:px-6 py-2.5 text-[10px] sm:text-[11px] text-muted-foreground mb-16 sm:mb-0">
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-2">
+          <span style={{ fontFamily: 'var(--font-read-stack)' }} className="italic hidden sm:inline">
+            &ldquo;Pursue truth at all costs, carry no bias.&rdquo;
+          </span>
+          <div className="flex items-center gap-2 sm:gap-3 text-[10px]" style={{ fontFamily: 'var(--font-ui-stack)' }}>
+            <Link href="/how-we-vet" className="hover:text-foreground py-1">How we vet content</Link>
+            <span>·</span>
+            <span className="font-semibold text-foreground">enoch.wiki</span>
+          </div>
+        </div>
+      </footer>
       <MobileBottomNav mobilePane={null} className="fixed bottom-0 inset-x-0 z-40" />
     </div>
   )

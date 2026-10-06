@@ -45,7 +45,7 @@ export async function GET() {
 
   const reflection = `Today's passage from ${verse.book.name} ${verse.chapter.number}:${verse.verseNum} invites reflection on ${themes[0]?.name || 'the sacred'}. ` +
     (crossRefs.length > 0
-      ? `It echoes ${parallels.map((p) => p.ref).join(', ')} — a thread woven through scripture. `
+      ? `It echoes ${parallels.map((p) => p.ref).join(', ')}. A thread woven through scripture. `
       : '') +
     `Sit with this text. What is it asking of you today? What pattern does it reveal about the nature of reality and your place within it?`
 

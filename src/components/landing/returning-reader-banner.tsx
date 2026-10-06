@@ -42,7 +42,7 @@ export function ReturningReaderBanner() {
   }
 
   return (
-    <div className={s.returning} role="note" aria-label="Reader moved notice">
+    <div className={s.returning} role="note" aria-label="Reader moved notice" aria-live="polite">
       <p>
         Looking for the reader?{' '}
         <a href="/read">

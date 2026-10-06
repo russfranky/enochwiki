@@ -113,6 +113,7 @@ export function ChatPanel({ context }: ChatPanelProps) {
           variant="ghost"
           size="sm"
           onClick={clearHistory}
+          aria-label="Clear chat history"
           className="text-muted-foreground hover:text-destructive"
         >
           <Trash2 className="h-3.5 w-3.5" />
@@ -125,7 +126,7 @@ export function ChatPanel({ context }: ChatPanelProps) {
             <BookOpen className="h-8 w-8 mx-auto mb-3 opacity-50" />
             <p className="text-sm leading-relaxed">
               Ask anything about the Ethiopian Bible, Enoch, Jubilees, the Watchers, the Nephilim, the
-              flood, the 364-day calendar — or how scripture parallels real-world evidence.
+              flood, the 364-day calendar, or how scripture parallels real-world evidence.
             </p>
             <p className="text-xs mt-3 italic">
               The tutor pursues truth without bias. It presents traditional, scholarly, and
@@ -218,7 +219,8 @@ export function ChatPanel({ context }: ChatPanelProps) {
                 send()
               }
             }}
-            placeholder="Ask, question, or seek..."
+            placeholder="Ask a question about the text..."
+            aria-label="Ask the AI study tutor"
             className="min-h-[60px] max-h-[180px] resize-y text-sm"
             disabled={loading}
           />
@@ -226,13 +228,14 @@ export function ChatPanel({ context }: ChatPanelProps) {
             onClick={send}
             disabled={loading || !input.trim()}
             size="icon"
+            aria-label="Send message"
             className="h-[60px] w-12"
           >
             <Send className="h-4 w-4" />
           </Button>
         </div>
         <p className="text-[10px] text-muted-foreground mt-1.5">
-          ⌘+Enter to send • The tutor cites sources and presents multiple perspectives
+          Ctrl/⌘+Enter to send • The tutor cites sources and presents multiple perspectives
         </p>
       </div>
     </div>

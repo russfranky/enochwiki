@@ -225,6 +225,15 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
                 <Card
                   className="flex-1 p-4 sm:p-6 cursor-pointer flex flex-col justify-center items-center text-center min-h-[200px]"
                   onClick={() => setShowBack((s) => !s)}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={showBack ? "Hide the answer" : "Reveal the answer"}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault()
+                      setShowBack((s) => !s)
+                    }
+                  }}
                 >
                   {showBack ? (
                     <>
@@ -236,7 +245,7 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
                     <>
                       <div className="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold mb-2">Front</div>
                       <p className="text-base font-medium">{flashcards[currentCard]?.front}</p>
-                      <div className="text-[10px] text-muted-foreground mt-3">Click to reveal answer</div>
+                      <div className="text-[10px] text-muted-foreground mt-3">Select to reveal answer</div>
                     </>
                   )}
                 </Card>

@@ -173,8 +173,8 @@ function AppSection() {
             </div>
             <h3>The reader: scripture, paired with its evidence</h3>
             <p>
-              The full text of the Ethiopian Tewahedo canon (1&nbsp;Enoch, Jubilees, Meqabyan,
-              and more). Each verse sits one tap from the sources that contextualize, support,
+              The growing text of the Ethiopian Tewahedo canon (1&nbsp;Enoch, Jubilees, Meqabyan,
+              and more), starting with the Book of 1 Enoch. Each verse sits one tap from the sources that contextualize, support,
               or challenge it. Credibility tiers and scores stay visible, never buried.
             </p>
             <ul className={s['inc-list']}>
@@ -209,13 +209,11 @@ function AppSection() {
             </div>
             <h3>Search across everything</h3>
             <p>
-              One search over verses, sources, and evidence: cross-references, themes, and
-              glossary included. Type a name, an idea, or a passage and jump to the
+              One search over verses, sources, and evidence. Type a name, an idea, or a passage and jump to the
               scholarship around it.
             </p>
             <ul className={s['inc-list']}>
               <li>Verses, sources, and evidence</li>
-              <li>Themes, cross-references, glossary</li>
               <li>Names, ideas, and passages</li>
             </ul>
             <div className={s.mini} aria-hidden="true">
@@ -317,13 +315,12 @@ function AppSection() {
             </div>
             <h3>Study tools &amp; a study companion</h3>
             <p>
-              Flashcards with spaced repetition, guided study plans, and a daily insight
-              from the canon. Plus an AI companion that answers questions, summarizes
-              passages, and cites its sources.
+              Flashcards with spaced repetition and a daily insight
+              from the canon. An AI companion is on the roadmap to answer questions, summarize
+              passages, and cite its sources.
             </p>
             <ul className={s['inc-list']}>
               <li>Flashcards with spaced repetition</li>
-              <li>Guided study plans</li>
               <li>Answers that cite their sources</li>
             </ul>
             <div className={s.mini} aria-hidden="true">

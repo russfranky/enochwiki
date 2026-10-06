@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { SiteHeader } from '@/components/site-header'
+import { Breadcrumbs } from '@/components/breadcrumbs'
 import { db } from '@/lib/db'
 import { BookOpen, Calendar, Tag, ShieldCheck } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
@@ -36,7 +37,7 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
     include: {
       publicArticles: {
         where: { reviewState: 'approved' },
-        include: { perspectiveLinks: { include: { perspective: true } } },
+        include: { perspectiveLinks: { include: { perspective: true } }, claimType: true },
       },
     },
   })
@@ -50,13 +51,15 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
 
   return (
     <div className="min-h-screen flex flex-col parchment-bg">
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:rounded-md focus:bg-card focus:px-3 focus:py-2 focus:text-sm focus:font-medium"
+      >
+        Skip to content
+      </a>
       <SiteHeader />
-      <main className="flex-1 w-full max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
-        <nav aria-label="Breadcrumb" className="mb-6 text-xs text-muted-foreground" style={{ fontFamily: 'var(--font-ui-stack)' }}>
-          <Link href="/topics" className="hover:text-foreground">Topics</Link>
-          <span className="mx-1.5">/</span>
-          <span className="text-foreground break-words">{topicPage.title}</span>
-        </nav>
+      <main id="main" className="flex-1 w-full max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
+        <Breadcrumbs items={[{ label: 'Topics', href: '/topics' }, { label: topicPage.title }]} />
 
         <div className="flex items-center gap-2 mb-4 flex-wrap">
           <Badge variant="outline" className="text-[10px] tag-historically-corroborated">
@@ -111,7 +114,7 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
                   <div className="flex items-center justify-between mb-1 gap-2">
                     <h3 className="font-serif font-medium text-sm">{a.title}</h3>
                     {a.claimTypeSlug && (
-                      <Badge variant="outline" className="text-[9px] flex-shrink-0">{a.claimTypeSlug}</Badge>
+                      <Badge variant="outline" className="text-[9px] flex-shrink-0">{a.claimType?.name || a.claimTypeSlug}</Badge>
                     )}
                   </div>
                   {a.subtitle && <p className="text-xs text-muted-foreground">{a.subtitle}</p>}
@@ -126,7 +129,8 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
           </>
         )}
       </main>
-      <footer className="mt-auto border-t border-hairline bg-card/60 px-3 sm:px-4 md:px-6 py-2.5 text-[10px] sm:text-[11px] text-muted-foreground">
+      {/* D-073: mb-16 lifts the footer above the fixed mobile bottom nav, which otherwise covers it (z-40) on small screens. */}
+      <footer className="mt-auto mb-16 sm:mb-0 border-t border-hairline bg-card/60 px-3 sm:px-4 md:px-6 py-2.5 text-[10px] sm:text-[11px] text-muted-foreground">
         <div className="max-w-3xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <span style={{ fontFamily: 'var(--font-read-stack)' }} className="italic hidden sm:inline">
             &ldquo;Pursue truth at all costs, carry no bias.&rdquo;

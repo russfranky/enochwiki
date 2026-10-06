@@ -26,7 +26,7 @@ const PERSPECTIVES = [
 // ════════════════════════════════════════════════════════════════════════════
 
 const CLAIM_TYPES = [
-  { slug: 'textually-attested', name: 'Textually Attested', description: 'The claim appears in a named text. Says nothing about historical truth — only that the text says it.', color: '#2d3748' },
+  { slug: 'textually-attested', name: 'Textually Attested', description: 'The claim appears in a named text. Says nothing about historical truth, only that the text says it.', color: '#2d3748' },
   { slug: 'historically-corroborated', name: 'Historically / Archaeologically Corroborated', description: 'Supported by external historical or archaeological evidence (e.g. Qumran fragments confirming 1 Enoch\'s antiquity).', color: '#1a4d2e' },
   { slug: 'scholarly-consensus', name: 'Scholarly Consensus', description: 'Majority view in peer-reviewed academic literature (e.g. 1 Enoch composed 300-100 BCE).', color: '#2b6cb0' },
   { slug: 'contested-minority', name: 'Contested / Minority View', description: 'A real scholarly position but held by a minority; competing majority view exists.', color: '#975a16' },

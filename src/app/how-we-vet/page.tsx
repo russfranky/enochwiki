@@ -44,8 +44,14 @@ export default async function HowWeVet() {
 
   return (
     <div className="min-h-screen flex flex-col parchment-bg">
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:rounded-md focus:bg-card focus:px-3 focus:py-2 focus:text-sm focus:font-medium"
+      >
+        Skip to content
+      </a>
       <SiteHeader />
-      <main className="flex-1 w-full max-w-3xl mx-auto px-4 sm:px-6 pt-6 sm:pt-10 pb-24 sm:pb-10">
+      <main id="main" className="flex-1 w-full max-w-3xl mx-auto px-4 sm:px-6 pt-6 sm:pt-10 pb-24 sm:pb-10">
         <h1 className="font-serif text-3xl sm:text-4xl font-bold mb-2">How Enoch.Wiki vets content</h1>
         <p className="text-muted-foreground mb-8">
           Enoch.Wiki holds itself to a public-authority standard. Nothing is presented as
@@ -125,7 +131,8 @@ export default async function HowWeVet() {
           </div>
         </Card>
       </main>
-      <footer className="mt-auto border-t border-hairline bg-card/60 px-3 sm:px-4 md:px-6 py-2.5 text-[10px] sm:text-[11px] text-muted-foreground">
+      {/* D-073: mb-16 lifts the footer above the fixed mobile bottom nav, which otherwise covers it (z-40) on small screens. */}
+      <footer className="mt-auto mb-16 sm:mb-0 border-t border-hairline bg-card/60 px-3 sm:px-4 md:px-6 py-2.5 text-[10px] sm:text-[11px] text-muted-foreground">
         <div className="max-w-3xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <span style={{ fontFamily: 'var(--font-read-stack)' }} className="italic hidden sm:inline">
             &ldquo;Pursue truth at all costs, carry no bias.&rdquo;

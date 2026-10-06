@@ -57,12 +57,16 @@ export async function PATCH(req: NextRequest) {
     notes?: string
   }
   if (!id) return NextResponse.json({ error: 'id required' }, { status: 400 })
-  if (
-    alignment !== undefined &&
-    !['supports', 'contextualizes', 'contested', 'contradicts'].includes(alignment)
-  ) {
+  // D-067 (cross-ref Worker A D-037): the allowlist must match the alignment
+  // vocabulary the product documents and stores. The Prisma schema comment
+  // defines "supports" | "challenges" | "contextualizes" | "neutral", the
+  // synergy graph colors "challenges", and the database carries those values;
+  // "contested"/"contradicts" appeared in no record, no UI surface, and no
+  // other code path, so they are dropped from the allowlist.
+  const ALIGNMENTS = ['supports', 'challenges', 'contextualizes', 'neutral']
+  if (alignment !== undefined && !ALIGNMENTS.includes(alignment)) {
     return NextResponse.json(
-      { error: 'alignment must be one of: supports, contextualizes, contested, contradicts' },
+      { error: `alignment must be one of: ${ALIGNMENTS.join(', ')}` },
       { status: 400 },
     )
   }

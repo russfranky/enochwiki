@@ -69,15 +69,19 @@ export function ReviewDashboard() {
   const [auditLog, setAuditLog] = useState<AuditEntry[]>([])
   const [counts, setCounts] = useState<Record<string, number>>({})
   const [loading, setLoading] = useState(true)
-  const [filter, setFilter] = useState<string>('auto-corroborated')
+  const [filter, setFilter] = useState<string>('in-review')
   const [selected, setSelected] = useState<ReviewItem | null>(null)
   const [reviewer, setReviewer] = useState('editor')
   const [notes, setNotes] = useState('')
   const [acting, setActing] = useState(false)
   // D-014: admin token entry point + honest auth-failure surfacing.
   const [tokenInput, setTokenInput] = useState('')
-  const [hasToken, setHasToken] = useState(() => !!getAdminToken())
+  const [hasToken, setHasToken] = useState(false)
   const [authError, setAuthError] = useState<string | null>(null)
+
+  useEffect(() => {
+    setHasToken(!!getAdminToken())
+  }, [])
 
   async function load() {
     setLoading(true)
@@ -276,7 +280,11 @@ export function ReviewDashboard() {
           <div className="px-3 py-2 border-b border-border flex flex-wrap gap-1.5">
             {[
               { k: 'all', label: 'All', count: Object.values(counts).reduce((a, b) => a + b, 0) },
-              { k: 'auto-corroborated', label: 'Pending', count: (counts['autoCorroborated'] || 0) + (counts['inReview'] || 0) },
+              // D-068 (cross-ref Worker A D-038): the Pending pill counts both
+              // auto-corroborated and in-review items, and the server expands
+              // state=in-review to exactly those two states, so the pill key
+              // is 'in-review' and the loaded queue matches the count.
+              { k: 'in-review', label: 'Pending', count: (counts['autoCorroborated'] || 0) + (counts['inReview'] || 0) },
               { k: 'approved', label: 'Approved', count: counts['approved'] || 0 },
               { k: 'rejected', label: 'Rejected', count: counts['rejected'] || 0 },
               { k: 'draft', label: 'Draft', count: counts['draft'] || 0 },

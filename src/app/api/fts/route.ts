@@ -7,10 +7,26 @@ export const runtime = 'nodejs'
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url)
   const q = searchParams.get('q')?.trim()
-  const limit = parseInt(searchParams.get('limit') || '20', 10)
+  // D-069: clamp the limit. SQLite treats LIMIT -1 as "no limit", so a
+  // negative or huge value would dump the whole match set on the verses
+  // query (sources/evidence were already capped at 10).
+  const limit = Math.min(Math.max(parseInt(searchParams.get('limit') || '20', 10) || 20, 1), 100)
 
   if (!q || q.length < 2) {
     return NextResponse.json({ error: 'Query too short' }, { status: 400 })
+  }
+
+  // D-070: signal when the FTS index tables are missing so a caller can
+  // distinguish "no matches" from "index not built" (the section queries
+  // below degrade to [] on error, which hides the missing index).
+  let ftsReady = true
+  try {
+    const tables = await db.$queryRawUnsafe<Array<{ name: string }>>(
+      `SELECT name FROM sqlite_master WHERE type = 'table' AND name IN ('verses_fts', 'sources_fts', 'evidence_fts')`
+    )
+    ftsReady = tables.length === 3
+  } catch {
+    ftsReady = false
   }
 
   // Build FTS5 query — escape special chars and use OR for multi-word
@@ -78,6 +94,7 @@ export async function GET(req: NextRequest) {
 
   return NextResponse.json({
     q,
+    ftsReady,
     verses: verses.map((r) => ({
       id: r.id,
       ref: `${r.bookSlug} ${r.chapterNum}:${r.verseNum}`,

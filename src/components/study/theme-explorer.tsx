@@ -87,6 +87,7 @@ export function ThemeExplorer({ onSelectTheme, selectedThemeSlug }: ThemeExplore
                 type="button"
                 onClick={() => onSelectTheme(t.slug === selectedThemeSlug ? '' : t.slug)}
                 aria-pressed={t.slug === selectedThemeSlug}
+                aria-label={t.slug === selectedThemeSlug ? `Clear the ${t.name} filter` : `Filter verses by ${t.name}`}
                 className={`w-full text-left bg-card text-card-foreground flex flex-col gap-6 rounded-xl border p-3 cursor-pointer shadow-sm transition-all ${
                   t.slug === selectedThemeSlug
                     ? 'border-accent-strong bg-accent/10'

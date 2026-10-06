@@ -22,9 +22,6 @@
 :global(.dark) .landing .btn-primary {
 background:#1E2A66; color:#fff
 }
-:global(.dark) .landing .btn-primary:hover {
-background:#2A3A85; color:#fff
-}
 
 
 .landing {
@@ -43,6 +40,7 @@ background:#2A3A85; color:#fff
   --tag-trad-bg:#EDE6F2; --tag-trad-fg:#6B4A7A;
   --tag-spec-bg:#EAECF0; --tag-spec-fg:#4E5866;
   --mock-verse:#F7F4EA; --shadow:0 1px 2px rgba(20,30,60,.05),0 12px 32px -12px rgba(20,30,60,.18);
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
   --display:var(--font-display-stack);
   --read:var(--font-read-stack);
   --ui:var(--font-ui-stack);
@@ -59,7 +57,6 @@ body{
 h1,h2,h3{font-family:var(--display); color:var(--head); font-weight:600; line-height:1.14; letter-spacing:-.015em; margin:0 0 .45em}
 p{margin:0 0 1em}
 a{color:var(--brand); text-decoration-thickness:1px; text-underline-offset:3px}
-a:hover{color:var(--gold-2)}
 img{max-width:100%; height:auto}
 .wrap{max-width:1120px; margin:0 auto; padding:0 24px}
 section{padding:88px 0}
@@ -70,15 +67,15 @@ section{padding:88px 0}
   background:var(--gold-wash); border-bottom:1px solid var(--hairline);
   padding:10px 16px; font-size:14.5px; color:var(--ink)}
 .returning p{margin:0}
-.returning a{font-weight:650; color:var(--brand-deep)}
+.returning a{font-weight:650; color:var(--brand-deep); white-space:nowrap}
 .returning-x{appearance:none; border:1px solid var(--hairline); background:transparent; color:var(--muted);
   width:44px; height:44px; border-radius:999px; font-size:16px; line-height:1; cursor:pointer; flex:none}
-.returning-x:hover{color:var(--ink); border-color:var(--muted)}
 
 /* Focus & skip link */
-.skip{position:absolute; left:16px; top:-60px; z-index:200; background:var(--head); color:var(--bg);
-  padding:10px 16px; border-radius:8px; font-weight:600; font-size:14px; transition:top .15s}
-.skip:focus{top:12px; color:var(--bg)}
+.skip{position:absolute; left:16px; top:12px; z-index:200; background:var(--head); color:var(--bg);
+  padding:10px 16px; border-radius:8px; font-weight:600; font-size:14px;
+  transform:translateY(-300%); transition:transform .15s var(--ease-out)}
+.skip:focus{transform:translateY(0); color:var(--bg)}
 a:focus-visible, button:focus-visible, summary:focus-visible{
   outline:2.5px solid var(--focus); outline-offset:2.5px; border-radius:6px;
 }
@@ -91,30 +88,24 @@ header.top{position:sticky; top:0; z-index:100;
 .topbar{display:flex; align-items:center; justify-content:space-between; gap:16px;
   max-width:1120px; margin:0 auto; padding:12px 24px}
 .brand{display:flex; align-items:center; gap:11px; text-decoration:none; font-family:var(--display);
-  font-size:21px; font-weight:600; color:var(--head); letter-spacing:-.01em}
+  font-size:21px; font-weight:600; color:var(--head); letter-spacing:-.01em; min-height:44px}
 .brand svg{width:30px; height:30px; display:block; flex:none}
-.brand:hover{color:var(--head)}
 nav.menu{display:flex; align-items:center; gap:28px}
 nav.menu .navlink{font-size:14.5px; font-weight:500; color:var(--text); text-decoration:none; opacity:.92}
-nav.menu .navlink:hover{color:var(--gold-ink); opacity:1}
 @media (max-width:760px){ nav.menu a.navlink{display:none} }
 
 /* Buttons */
 .btn{font-family:var(--ui); font-weight:600; font-size:15px; padding:12px 22px; border-radius:8px;
   border:1px solid transparent; cursor:pointer; display:inline-flex; align-items:center; gap:9px;
   text-decoration:none; line-height:1.2; white-space:nowrap; flex:none;
-  transition:background .15s,border-color .15s,transform .05s}
-.btn:active{transform:translateY(1px)}
+  transition:background .15s var(--ease-out),border-color .15s var(--ease-out),transform .12s var(--ease-out)}
+.btn:active{transform:scale(0.97)}
 .btn-primary{background:var(--brand); color:#fff}
-.btn-primary:hover{background:#17244C; color:#fff}
 
 .btn-gold{background:var(--gold); color:#0A0F20}
-.btn-gold:hover{background:#B8942F; color:#0A0F20}
 .btn-ghost{background:transparent; color:var(--head); border-color:var(--hairline)}
-.btn-ghost:hover{border-color:var(--gold-deep, #886D24); background:var(--gold-wash); color:var(--head)}
 .btn-sm{padding:9px 16px; font-size:14px}
-.btn .arr{transition:transform .15s; flex:none}
-.btn:hover .arr{transform:translateX(3px)}
+.btn .arr{transition:transform .15s var(--ease-out); flex:none}
 
 /* Narrow header: shrink the wordmark and CTA so the button label fits on one line */
 @media (max-width:480px){
@@ -340,7 +331,6 @@ footer{padding:52px 0 40px; border-top:1px solid var(--hairline); background:var
 .foot-note{font-size:13.5px; color:var(--muted); max-width:52ch; line-height:1.6}
 .foot-links{display:flex; gap:22px; flex-wrap:wrap}
 .foot-links a{font-size:14px; font-weight:500; text-decoration:none; color:var(--text)}
-.foot-links a:hover{color:var(--gold-ink)}
 .foot-base{margin-top:36px; padding-top:22px; border-top:1px solid var(--hairline);
   display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; font-size:12.5px; color:var(--muted)}
 
@@ -354,4 +344,18 @@ footer{padding:52px 0 40px; border-top:1px solid var(--hairline); background:var
 .landing .btn{min-height:44px}
 @media (max-width:760px){
   .landing .foot-links a{display:inline-block; padding:10px 0}
+}
+
+/* Hover states only where hover exists: touch devices fire :hover on tap and it sticks. */
+@media (hover:hover) and (pointer:fine){
+  :global(.dark) .landing .btn-primary:hover{background:#2A3A85; color:#fff}
+  .landing a:hover{color:var(--gold-2)}
+  .landing .returning-x:hover{color:var(--ink); border-color:var(--muted)}
+  .landing .brand:hover{color:var(--head)}
+  .landing nav.menu .navlink:hover{color:var(--gold-ink); opacity:1}
+  .landing .btn-primary:hover{background:#17244C; color:#fff}
+  .landing .btn-gold:hover{background:#B8942F; color:#0A0F20}
+  .landing .btn-ghost:hover{border-color:var(--gold-deep, #886D24); background:var(--gold-wash); color:var(--head)}
+  .landing .btn:hover .arr{transform:translateX(3px)}
+  .landing .foot-links a:hover{color:var(--gold-ink)}
 }

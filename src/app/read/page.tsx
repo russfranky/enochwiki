@@ -42,6 +42,7 @@ function HomeContent() {
   const [searchOpen, setSearchOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const [searchResults, setSearchResults] = useState<any>(null)
+  const [searchError, setSearchError] = useState<string | null>(null)
   const [searching, setSearching] = useState(false)
   const [currentBookSlug, setCurrentBookSlug] = useState<string>('')
   const [currentChapterNum, setCurrentChapterNum] = useState<number>(0)
@@ -106,10 +107,23 @@ function HomeContent() {
   async function runSearch() {
     if (!searchQuery.trim()) return
     setSearching(true)
+    setSearchError(null)
     try {
       const res = await fetch(`/api/search?q=${encodeURIComponent(searchQuery)}`)
+      if (!res.ok) {
+        setSearchResults(null)
+        setSearchError(
+          res.status === 400
+            ? 'That search was too short. Use at least 2 characters.'
+            : 'Search failed. Check your connection and try again.'
+        )
+        return
+      }
       const data = await res.json()
       setSearchResults(data)
+    } catch {
+      setSearchResults(null)
+      setSearchError('Search failed. Check your connection and try again.')
     } finally {
       setSearching(false)
     }
@@ -118,9 +132,11 @@ function HomeContent() {
   // Right panel content (shared between desktop and mobile)
   const rightPanelContent = (
     <div className="flex flex-col h-full">
-      <div className="flex border-b border-border bg-secondary/40">
+      <div className="flex border-b border-border bg-secondary/40" role="tablist" aria-label="Study panels">
         <button
           onClick={() => setRightTab('synergy')}
+          role="tab"
+          aria-selected={rightTab === 'synergy'}
           className={`flex-1 px-1 sm:px-3 py-2.5 text-[10px] sm:text-xs font-medium transition-colors ${
             rightTab === 'synergy' ? 'bg-card text-primary border-b-2 border-accent' : 'text-muted-foreground hover:text-foreground'
           }`}
@@ -130,6 +146,8 @@ function HomeContent() {
         </button>
         <button
           onClick={() => setRightTab('themes')}
+          role="tab"
+          aria-selected={rightTab === 'themes'}
           className={`flex-1 px-1 sm:px-3 py-2.5 text-[10px] sm:text-xs font-medium transition-colors ${
             rightTab === 'themes' ? 'bg-card text-primary border-b-2 border-accent' : 'text-muted-foreground hover:text-foreground'
           }`}
@@ -139,6 +157,8 @@ function HomeContent() {
         </button>
         <button
           onClick={() => setRightTab('tools')}
+          role="tab"
+          aria-selected={rightTab === 'tools'}
           className={`flex-1 px-1 sm:px-3 py-2.5 text-[10px] sm:text-xs font-medium transition-colors ${
             rightTab === 'tools' ? 'bg-card text-primary border-b-2 border-accent' : 'text-muted-foreground hover:text-foreground'
           }`}
@@ -209,19 +229,33 @@ function HomeContent() {
                 onKeyDown={(e) => e.key === 'Enter' && runSearch()}
                 placeholder="Search verses, sources, evidence..."
                 aria-label="Search verses, sources, and evidence"
-                className="flex-1 h-9 px-3 text-sm rounded-md border border-input bg-background min-w-0"
+                // D-078 (cross-ref Worker B D-057): 44px touch targets on mobile
+                // (h-11), keeping the compact desktop sizing (input h-9, button h-8).
+                className="flex-1 h-11 sm:h-9 px-3 text-sm rounded-md border border-input bg-background min-w-0"
               />
-              <Button size="sm" onClick={runSearch} disabled={searching}>
+              <Button size="sm" className="h-11 sm:h-8" onClick={runSearch} disabled={searching} aria-label={searching ? 'Searching...' : 'Search'}>
                 {searching ? '...' : 'Search'}
               </Button>
             </div>
+            {searchError && (
+              <div role="alert" className="mt-2 text-xs text-destructive">
+                {searchError}
+              </div>
+            )}
             {searchResults && (
-              <div className="mt-2 max-h-80 overflow-y-auto text-sm border border-border rounded-md bg-background p-2">
+              <div aria-live="polite" className="mt-2 max-h-80 overflow-y-auto text-sm border border-border rounded-md bg-background p-2">
                 <div className="text-[10px] text-muted-foreground mb-1.5">
                   {searchResults.verses?.length || 0} verses ·{' '}
                   {searchResults.sources?.length || 0} sources ·{' '}
                   {searchResults.evidence?.length || 0} evidence
                 </div>
+                {(searchResults.verses?.length || 0) === 0 &&
+                  (searchResults.sources?.length || 0) === 0 &&
+                  (searchResults.evidence?.length || 0) === 0 && (
+                    <div className="text-xs text-muted-foreground py-2 text-center">
+                      No results. Try different words or check the spelling.
+                    </div>
+                  )}
                 {searchResults.verses?.slice(0, 5).map((v: any) => (
                   <button
                     key={v.id}
@@ -232,7 +266,7 @@ function HomeContent() {
                     className="block w-full text-left p-1.5 hover:bg-secondary rounded text-xs"
                   >
                     <span className="font-mono text-accent-strong mr-2">{v.ref}</span>
-                    {v.text.slice(0, 100)}...
+                    {v.text.length > 100 ? `${v.text.slice(0, 100)}...` : v.text}
                   </button>
                 ))}
                 {searchResults.sources?.slice(0, 3).map((s: any) => (
@@ -246,6 +280,13 @@ function HomeContent() {
                     <span className="font-medium">{s.title}</span>
                     <span className="text-muted-foreground ml-2">({s.domain})</span>
                   </a>
+                ))}
+                {searchResults.evidence?.slice(0, 3).map((e: any) => (
+                  <div key={e.id} className="block p-1.5 rounded text-xs">
+                    <span className="font-mono text-accent-strong mr-2">{e.scriptureRef}</span>
+                    <span className="font-medium">{e.claim}</span>
+                    {e.source?.title && <span className="text-muted-foreground ml-2">({e.source.title})</span>}
+                  </div>
                 ))}
               </div>
             )}
@@ -327,7 +368,9 @@ function HomeContent() {
       </main>
 
       {/* Footer */}
-      <footer className="mt-auto border-t border-hairline bg-card/60 px-3 sm:px-4 md:px-6 py-2.5 text-[10px] sm:text-[11px] text-muted-foreground flex flex-wrap items-center justify-between gap-2">
+      {/* Page footer: desktop only. On mobile the bottom tab bar is the
+          primary nav and the More drawer already carries these links. */}
+      <footer className="mt-auto border-t border-hairline bg-card/60 px-3 sm:px-4 md:px-6 py-2.5 text-[10px] sm:text-[11px] text-muted-foreground hidden sm:flex flex-wrap items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <span style={{ fontFamily: 'var(--font-read-stack)' }} className="italic hidden sm:inline">
             &ldquo;Pursue truth at all costs, carry no bias.&rdquo;
@@ -354,7 +397,7 @@ function ReadFallback() {
   return (
     <div className="min-h-screen max-md:h-dvh flex flex-col parchment-bg">
       <SiteHeader />
-      <main id="main" className="flex-1 overflow-hidden flex items-center justify-center">
+      <main className="flex-1 overflow-hidden flex items-center justify-center">
         <p className="text-sm text-muted-foreground">Loading reader...</p>
       </main>
     </div>
