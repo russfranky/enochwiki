@@ -29,7 +29,6 @@ interface Evidence {
   corroboration: string
   alignment: string
   confidence: number
-  notes: string | null
   source?: {
     id: string
     url: string
@@ -319,9 +318,7 @@ function EvidenceCard({
           Evidence
         </div>
         <p className="text-sm leading-snug mb-1.5 [overflow-wrap:anywhere]">{evidence.corroboration}</p>
-        {evidence.notes && (
-          <p className="text-[11px] text-muted-foreground italic mt-1 [overflow-wrap:anywhere]">{evidence.notes}</p>
-        )}
+
       </div>
 
       {/* Source attribution */}
