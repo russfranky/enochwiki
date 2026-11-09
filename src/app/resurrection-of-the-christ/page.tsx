@@ -36,6 +36,9 @@ const movieJsonLd = {
     { '@type': 'Person', name: 'Pier Luigi Pasino' },
     { '@type': 'Person', name: 'Riccardo Scamarcio' },
     { '@type': 'Person', name: 'Rupert Everett' },
+    { '@type': 'Person', name: 'Lorenzo Richelmy' },
+    { '@type': 'Person', name: 'Andrea Misuraca' },
+    { '@type': 'Person', name: 'Eduardo Scarpetta' },
   ],
   productionCompany: { '@type': 'Organization', name: 'Icon Productions' },
   distributor: { '@type': 'Organization', name: 'Lionsgate' },
@@ -182,8 +185,26 @@ export default function ResurrectionCountdown() {
             Mary, replacing Maia Morgenstern.
           </p>
           <p>
-            The cast also includes <strong>Pier Luigi Pasino</strong>,{' '}
-            <strong>Riccardo Scamarcio</strong>, and <strong>Rupert Everett</strong>.
+            The wider cast fills out the world around the resurrection.{' '}
+            <strong>Rupert Everett</strong> plays Abraham, <strong>Lorenzo Richelmy</strong>{' '}
+            plays King David, and <strong>Andrea Misuraca</strong> plays King Solomon: the
+            patriarchs waiting in the Hell of the just. <strong>Eduardo Scarpetta</strong>{' '}
+            plays Paul. The named apostles include John, Matthew, Andrew, Judas Thaddeus,
+            and Philip, with Mary Heli and Mary Salome also in the cast.{' '}
+            <strong>Pier Luigi Pasino</strong> and <strong>Riccardo Scamarcio</strong> round
+            out the announced names. The film is unreleased, so the smaller roles rest on
+            the film&apos;s published cast listing and may still shift.
+          </p>
+          <p>
+            In November 2026, Caviezel spoke publicly about the recasting for the first
+            time. He told Raymond Arroyo he had read both scripts and that Jesus{' '}
+            &quot;really didn&apos;t need me. It&apos;s a smaller role&quot; than in The
+            Passion of the Christ. He said he wanted the part anyway: &quot;But did I want
+            to do it? Of course I did.&quot; And he wished Ohtonen well: &quot;Good luck to
+            the new guy, cuz it&apos;ll be really hard.&quot; Caviezel added that he first
+            planned to do The Resurrection, then asked Gibson&apos;s permission to play
+            King Herod in Zero A.D. instead; Gibson agreed on condition of a big makeup
+            job and a changed voice.
           </p>
           <SourceList
             sources={[
@@ -194,6 +215,18 @@ export default function ResurrectionCountdown() {
               {
                 label: 'Patheos: First look at The Resurrection of the Christ (May 2026)',
                 href: 'https://www.patheos.com/blogs/reelfaith/2026/05/first-look-mel-gibsons-the-resurrection-of-the-christ.html',
+              },
+              {
+                label: 'Wikipedia: The Resurrection of the Christ: Part One, cast listing (Oct 2026)',
+                href: 'https://en.wikipedia.org/wiki/The_Resurrection_of_the_Christ:_Part_One',
+              },
+              {
+                label: 'ChurchLeaders: Jim Caviezel breaks silence on not returning as Jesus (Nov 6, 2026)',
+                href: 'https://churchleaders.com/news/2225255-jim-caviezel-not-returning-as-jesus.html',
+              },
+              {
+                label: 'National Catholic Register: Caviezel on playing King Herod in Zero A.D. (Nov 6, 2026)',
+                href: 'https://www.ncregister.com/news/jim-caviezel-raymond-arroyo-the-world-over-ewtn',
               },
             ]}
           />
@@ -228,6 +261,7 @@ export default function ResurrectionCountdown() {
               ['May 2026', 'Filming wraps after 134 days across Italy, including Rome, Matera, Bari, Ginosa, Craco, and Brindisi. Lionsgate releases first-look images of Jaakko Ohtonen as Jesus. Release dates announced: Part One May 6, 2027, Part Two May 25, 2028. Both dates fall on Ascension Day.'],
               ['September 2026', 'The Passion of the Christ returns to theaters in 4K for one week (Sep 10-17) with a behind-the-scenes sneak peek of Part One.'],
               ['September 2026', 'Gibson describes the multi-realm story: the firmament before creation, the Hell of the just, and the Hell of the damned. Cardinal Gerhard Ludwig Muller visits the set and spends a day discussing Resurrection theology with Gibson; Cardinal Raymond Burke, Franklin Graham, and Samuel Rodriguez also visit.'],
+              ['November 2026', 'Jim Caviezel speaks publicly about the recasting for the first time: he read both scripts, and Jesus has a smaller role than in The Passion of the Christ.'],
               ['May 6, 2027', 'The Resurrection of the Christ: Part One arrives in theaters.'],
               ['May 25, 2028', 'The Resurrection of the Christ: Part Two arrives in theaters.'],
             ].map(([date, text]) => (
@@ -337,6 +371,18 @@ export default function ResurrectionCountdown() {
               {
                 label: 'InfoVaticana: Cardinal Muller on the set discussing theology (Sep 16, 2026)',
                 href: 'https://infovaticana.com/en/2026/09/16/cardinal-muller-spent-an-entire-day-with-mel-gibson-on-the-set-of-the-resurrection-of-christ-discussing-theology/',
+              },
+              {
+                label: 'Wikipedia: The Resurrection of the Christ: Part One, cast listing (Oct 2026)',
+                href: 'https://en.wikipedia.org/wiki/The_Resurrection_of_the_Christ:_Part_One',
+              },
+              {
+                label: 'ChurchLeaders: Jim Caviezel breaks silence on not returning as Jesus (Nov 6, 2026)',
+                href: 'https://churchleaders.com/news/2225255-jim-caviezel-not-returning-as-jesus.html',
+              },
+              {
+                label: 'National Catholic Register: Caviezel on playing King Herod in Zero A.D. (Nov 6, 2026)',
+                href: 'https://www.ncregister.com/news/jim-caviezel-raymond-arroyo-the-world-over-ewtn',
               },
             ]}
           />
