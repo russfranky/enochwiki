@@ -1,12 +1,17 @@
 // AI passage summary — grounded in the local corpus
 import { NextRequest, NextResponse } from 'next/server'
-import ZAI from 'z-ai-web-dev-sdk'
+import { chatCompletion } from '@/lib/ai-provider'
 import { db } from '@/lib/db'
+import { aiRpm, checkRateLimit } from '@/lib/rate-limit'
+import { checkSpendCap } from '@/lib/spend-guard'
 
 export const runtime = 'nodejs'
 export const maxDuration = 60
 
 export async function POST(req: NextRequest) {
+  const limited = checkRateLimit(req, { rpm: aiRpm(), bucket: 'ai' })
+  if (limited) return limited
+
   const body = await req.json()
   const { bookSlug, chapterNum } = body as { bookSlug: string; chapterNum: number }
 
@@ -86,33 +91,29 @@ Where traditions or scholars disagree. Be honest about uncertainty.
 - Never fabricate.
 - Distinguish text from scholarship from interpretation.`
 
-  let completion
+  let summary: string | null = null
   try {
-    const zai = await ZAI.create()
-    completion = await zai.chat.completions.create({
-      model: 'glm-4.5',
-      messages: [
-        { role: 'system', content: systemPrompt },
-        { role: 'user', content: `Please summarize ${book.name} chapter ${chapter.number}.` },
-      ],
-      thinking: { type: 'enabled' },
-    } as any)
-  } catch (apiErr: any) {
-    const errMsg = apiErr?.message || String(apiErr)
-    if (errMsg.includes('1113') || errMsg.includes('Insufficient balance') || errMsg.includes('429')) {
+    // Daily AI budget: when spent, pause with the same friendly copy as a drained balance.
+    if (checkSpendCap('summarize')) {
       return NextResponse.json({
-        error: 'Z.ai API has insufficient balance. Add credits at https://z.ai/ to generate summaries.',
+        error: 'Passage summaries have reached the daily AI budget. Please try again tomorrow.',
       }, { status: 503 })
     }
-    if (errMsg.includes('API key') || errMsg.includes('apiKey') || errMsg.includes('ZAI_API_KEY') || errMsg.includes('z-ai-config') || errMsg.includes('Configuration file not found')) {
+    summary = await chatCompletion([
+      { role: 'system', content: systemPrompt },
+      { role: 'user', content: `Please summarize ${book.name} chapter ${chapter.number}.` },
+    ])
+  } catch (apiErr: any) {
+    const errMsg = apiErr?.message || String(apiErr)
+    if (errMsg.includes('402') || errMsg.includes('Insufficient') || errMsg.includes('401') || errMsg.includes('429')) {
       return NextResponse.json({
-        error: 'AI service not configured. Set ZAI_API_KEY to enable AI features.',
+        error: 'The Xiaomi MiMo API account has a billing or auth problem. Check the Token Plan subscription to generate summaries.',
       }, { status: 503 })
     }
     throw apiErr
   }
 
-  const summary = completion?.choices?.[0]?.message?.content ?? 'No summary generated. The Z.ai API may be unavailable or out of balance.'
+  if (!summary) summary = 'No summary generated. The AI provider may be unavailable.'
 
   // Persist the summary on the chapter
   await db.chapter.update({

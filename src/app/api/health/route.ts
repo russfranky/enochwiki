@@ -1,7 +1,7 @@
 // Health check — feature-aware: AI disabled for launch is healthy, not an error
 import { NextResponse } from 'next/server'
 import { db } from '@/lib/db'
-import { checkApiHealth } from '@/lib/zai-api'
+import { checkAiHealth, mimoModel } from '@/lib/ai-provider'
 import { AI_ENABLED, SCRAPE_ENABLED } from '@/lib/launch'
 
 export const runtime = 'nodejs'
@@ -14,7 +14,7 @@ export async function GET() {
   const scrapeEnabled = SCRAPE_ENABLED
 
   // AI is intentionally disabled for launch; missing key is not unhealthy
-  const ai = aiEnabled ? await checkApiHealth() : { ok: true, enabled: false, note: 'AI disabled for launch' }
+  const ai = aiEnabled ? await checkAiHealth() : { ok: true, enabled: false, note: 'AI disabled for launch' }
 
   // D-029: `ok` reflects the components instead of a hardcoded true. A
   // failed AI health check (when AI is enabled) or an unreachable database
@@ -32,6 +32,7 @@ export async function GET() {
     ai,
     db: { ok: dbOk },
     scrape: { enabled: scrapeEnabled },
-    baseUrl: process.env.ZAI_BASE_URL || 'https://api.z.ai/api/paas/v4',
+    provider: 'xiaomi-mimo',
+    model: mimoModel(),
   })
 }
