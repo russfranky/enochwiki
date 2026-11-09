@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { getAdminToken, setAdminToken, adminAuthHeaders } from '@/lib/admin-token'
+import { adminAuthHeaders } from '@/lib/admin-token'
+import { useAdminToken } from '@/hooks/use-admin-token'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -75,13 +76,10 @@ export function ReviewDashboard() {
   const [notes, setNotes] = useState('')
   const [acting, setActing] = useState(false)
   // D-014: admin token entry point + honest auth-failure surfacing.
-  const [tokenInput, setTokenInput] = useState('')
-  const [hasToken, setHasToken] = useState(false)
+  // Token gate state (input, hasToken, save, clear) is the shared
+  // useAdminToken machine; authError stays local to this dashboard.
+  const { tokenInput, setTokenInput, hasToken, saveToken, clearToken } = useAdminToken()
   const [authError, setAuthError] = useState<string | null>(null)
-
-  useEffect(() => {
-    setHasToken(!!getAdminToken())
-  }, [])
 
   async function load() {
     setLoading(true)
@@ -219,9 +217,7 @@ export function ReviewDashboard() {
                 size="sm"
                 variant="ghost"
                 onClick={() => {
-                  setAdminToken('')
-                  setHasToken(false)
-                  setTokenInput('')
+                  clearToken()
                   load()
                 }}
               >
@@ -237,9 +233,7 @@ export function ReviewDashboard() {
                 onChange={(e) => setTokenInput(e.target.value)}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter') {
-                    setAdminToken(tokenInput)
-                    setHasToken(!!tokenInput.trim())
-                    setTokenInput('')
+                    saveToken()
                     load()
                   }
                 }}
@@ -250,9 +244,7 @@ export function ReviewDashboard() {
                 size="sm"
                 variant="outline"
                 onClick={() => {
-                  setAdminToken(tokenInput)
-                  setHasToken(!!tokenInput.trim())
-                  setTokenInput('')
+                  saveToken()
                   load()
                 }}
               >

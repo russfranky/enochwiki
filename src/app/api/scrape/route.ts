@@ -1,10 +1,8 @@
 // Scrape external sources to corroborate scripture — uses direct Z.ai API (web_search + page_reader)
 import { NextRequest, NextResponse } from 'next/server'
 import { db } from '@/lib/db'
-import { SCRAPE_ENABLED } from '@/lib/launch'
+import { SCRAPE_ENABLED, SCRAPE_DORMANT_BODY as SCRAPE_DORMANT } from '@/lib/launch'
 import { requireAdmin } from '@/lib/admin'
-
-const SCRAPE_DORMANT = { error: 'Scrape pipeline is dormant. Set SCRAPE_ENABLED=true to feed it again.' }
 
 export const runtime = 'nodejs'
 export const maxDuration = 90

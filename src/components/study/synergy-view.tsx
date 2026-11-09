@@ -20,6 +20,7 @@ import {
   Loader2,
 } from 'lucide-react'
 import { AI_ENABLED } from '@/lib/launch'
+import { useAsync } from '@/hooks/use-async'
 
 interface Evidence {
   id: string
@@ -58,22 +59,21 @@ interface SynergyViewProps {
 export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
   const [allEvidence, setAllEvidence] = useState<Evidence[]>([])
   const [crossRefs, setCrossRefs] = useState<CrossRef[]>([])
-  const [loading, setLoading] = useState(true)
+  const { loading, error, run } = useAsync({ startInLoading: true })
   const [scraping, setScraping] = useState(false)
   const [scrapeQuery, setScrapeQuery] = useState('')
 
   // Load all evidence + cross-refs
   useEffect(() => {
-    Promise.all([
-      fetch('/api/evidence').then((r) => r.json()),
-      fetch('/api/cross-refs').then((r) => r.json()),
-    ])
-      .then(([ev, cr]) => {
-        setAllEvidence(ev.evidences || [])
-        setCrossRefs(cr.crossReferences || [])
-      })
-      .finally(() => setLoading(false))
-  }, [])
+    run(async () => {
+      const [ev, cr] = await Promise.all([
+        fetch('/api/evidence').then((r) => r.json()),
+        fetch('/api/cross-refs').then((r) => r.json()),
+      ])
+      setAllEvidence(ev.evidences || [])
+      setCrossRefs(cr.crossReferences || [])
+    })
+  }, [run])
 
   // Filter to selected verse (derived during render, no extra state)
   const evidence = selectedVerseRef
@@ -208,6 +208,10 @@ export function SynergyView({ selectedVerseRef }: SynergyViewProps) {
 
                 {loading ? (
                   <div className="text-center py-8 text-sm text-muted-foreground">Loading...</div>
+                ) : error ? (
+                  <div className="text-center py-8 text-sm text-destructive">
+                    Could not load evidence records.
+                  </div>
                 ) : evidence.length === 0 ? (
                   <div className="text-center py-8 text-sm text-muted-foreground">
                     <Search className="h-8 w-8 mx-auto mb-2 opacity-50" />

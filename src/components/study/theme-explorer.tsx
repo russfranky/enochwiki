@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Badge } from '@/components/ui/badge'
 import { Layers, Loader2 } from 'lucide-react'
+import { useAsync } from '@/hooks/use-async'
 
 interface Theme {
   id: string
@@ -21,15 +22,16 @@ interface ThemeExplorerProps {
 
 export function ThemeExplorer({ onSelectTheme, selectedThemeSlug }: ThemeExplorerProps) {
   const [themes, setThemes] = useState<Theme[]>([])
-  const [loading, setLoading] = useState(true)
+  const { loading, error, run } = useAsync({ startInLoading: true })
   const [categoryFilter, setCategoryFilter] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch('/api/themes')
-      .then((r) => r.json())
-      .then((d) => setThemes(d.themes || []))
-      .finally(() => setLoading(false))
-  }, [])
+    run(async () => {
+      const r = await fetch('/api/themes')
+      const d = await r.json()
+      setThemes(d.themes || [])
+    })
+  }, [run])
 
   const categories = Array.from(new Set(themes.map((t) => t.category)))
   const filtered = categoryFilter
@@ -80,6 +82,10 @@ export function ThemeExplorer({ onSelectTheme, selectedThemeSlug }: ThemeExplore
             <div className="flex items-center gap-2 text-sm text-muted-foreground py-8 justify-center">
               <Loader2 className="h-4 w-4 animate-spin" /> Loading themes...
             </div>
+          ) : error ? (
+            <p className="text-sm text-destructive text-center py-8">
+              Could not load themes.
+            </p>
           ) : (
             filtered.map((t) => (
               <button

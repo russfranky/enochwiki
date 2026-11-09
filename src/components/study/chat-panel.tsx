@@ -9,6 +9,7 @@ import { Card } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
 import { Trash2, Send, Sparkles, BookOpen, Loader2 } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
+import { useAsync } from '@/hooks/use-async'
 
 interface ChatMsg {
   id: string
@@ -24,8 +25,7 @@ interface ChatPanelProps {
 export function ChatPanel({ context }: ChatPanelProps) {
   const [messages, setMessages] = useState<ChatMsg[]>([])
   const [input, setInput] = useState('')
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
+  const { loading, error, run } = useAsync()
   const scrollRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -55,9 +55,7 @@ export function ChatPanel({ context }: ChatPanelProps) {
     }
     setMessages((m) => [...m, userMsg])
     setInput('')
-    setLoading(true)
-    setError(null)
-    try {
+    await run(async () => {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -89,11 +87,7 @@ export function ChatPanel({ context }: ChatPanelProps) {
           },
         ])
       }
-    } catch (e: any) {
-      setError(e.message)
-    } finally {
-      setLoading(false)
-    }
+    })
   }
 
   async function clearHistory() {
