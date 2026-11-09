@@ -5,7 +5,7 @@
 //
 // Env names are AI_DAILY_CAP_*; the legacy ZAI_DAILY_CAP_* names still work as fallback.
 
-export type SpendEndpoint = 'chat' | 'rag' | 'summarize' | 'flashcards'
+export type SpendEndpoint = 'chat' | 'rag' | 'summarize'
 
 interface DayCount {
   day: string
@@ -18,14 +18,12 @@ const ENV_BY_ENDPOINT: Record<SpendEndpoint, string[]> = {
   chat: ['AI_DAILY_CAP_CHAT', 'ZAI_DAILY_CAP_CHAT'],
   rag: ['AI_DAILY_CAP_RAG', 'ZAI_DAILY_CAP_RAG'],
   summarize: ['AI_DAILY_CAP_SUMMARIZE', 'ZAI_DAILY_CAP_SUMMARIZE'],
-  flashcards: ['AI_DAILY_CAP_FLASHCARDS'],
 }
 
 const DEFAULT_CAP: Record<SpendEndpoint, number> = {
   chat: 200,
   rag: 200,
   summarize: 100,
-  flashcards: 50,
 }
 
 export function spendCapFor(endpoint: SpendEndpoint): number {

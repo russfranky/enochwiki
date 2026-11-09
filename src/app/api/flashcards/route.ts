@@ -1,9 +1,7 @@
-// Flashcards — CRUD + auto-generate from scripture
+// Flashcards — review API (list due cards, record a review, delete).
+// Generation was removed by owner order 2026-11-09; existing cards remain reviewable.
 import { NextRequest, NextResponse } from 'next/server'
-import { chatCompletion } from '@/lib/ai-provider'
 import { db } from '@/lib/db'
-import { aiRpm, checkRateLimit } from '@/lib/rate-limit'
-import { checkSpendCap } from '@/lib/spend-guard'
 
 export const runtime = 'nodejs'
 export const maxDuration = 60
@@ -23,96 +21,6 @@ export async function GET(req: NextRequest) {
     take: 100,
   })
   return NextResponse.json({ cards })
-}
-
-// Auto-generate flashcards from a chapter
-export async function POST(req: NextRequest) {
-  const limited = checkRateLimit(req, { rpm: aiRpm(), bucket: 'ai' })
-  if (limited) return limited
-
-  const body = await req.json()
-  const { bookSlug, chapterNum, count = 8 } = body as { bookSlug: string; chapterNum: number; count?: number }
-
-  if (!bookSlug || chapterNum === undefined || chapterNum === null) {
-    return NextResponse.json({ error: 'bookSlug and chapterNum required' }, { status: 400 })
-  }
-  if (typeof chapterNum !== 'number' || !Number.isInteger(chapterNum)) {
-    return NextResponse.json({ error: 'chapterNum must be an integer' }, { status: 400 })
-  }
-
-  const book = await db.book.findUnique({ where: { slug: bookSlug } })
-  if (!book) return NextResponse.json({ error: 'Book not found' }, { status: 404 })
-
-  const chapter = await db.chapter.findFirst({
-    where: { bookId: book.id, number: chapterNum },
-    include: { verses: { orderBy: { verseNum: 'asc' } } },
-  })
-  if (!chapter) return NextResponse.json({ error: 'Chapter not found' }, { status: 404 })
-
-  const versesText = chapter.verses.map((v) => `${v.chapterNum}:${v.verseNum} — ${v.text}`).join('\n')
-
-  let raw: string | null = null
-  try {
-    // Daily AI budget: when spent, pause with the same friendly copy as a drained balance.
-    if (checkSpendCap('flashcards')) {
-      return NextResponse.json({
-        error: 'Flashcard generation has reached the daily AI budget. Please try again tomorrow.',
-      }, { status: 503 })
-    }
-    raw = await chatCompletion([
-      {
-        role: 'system',
-        content: `You are generating spaced-repetition flashcards for an Ethiopian Bible study database. Generate ${count} flashcards from the chapter provided. Each flashcard has a "front" (question or prompt) and "back" (answer with specific verse citation).
-
-Format your response as a JSON array of objects with this exact shape:
-{"front": "question", "back": "answer with verse citation", "scriptureRef": "1-enoch 6:2"}
-
-The back of each card MUST cite the specific verse. The front should be a focused question testing comprehension, not rote memorization.
-
-Only output the JSON array, no other text.`,
-      },
-      {
-        role: 'user',
-        content: `Generate ${count} flashcards from:\n\n**${book.name} chapter ${chapter.number}**\n\n${versesText}`,
-      },
-    ])
-  } catch (apiErr: any) {
-    const errMsg = apiErr?.message || String(apiErr)
-    if (errMsg.includes('402') || errMsg.includes('Insufficient') || errMsg.includes('401') || errMsg.includes('429')) {
-      return NextResponse.json({
-        error: 'The Xiaomi MiMo API account has a billing or auth problem. Check the Token Plan subscription to generate flashcards.',
-      }, { status: 503 })
-    }
-    throw apiErr
-  }
-
-  raw = raw ?? '[]'
-  let cards: { front: string; back: string; scriptureRef: string }[] = []
-  try {
-    // Find JSON array in response
-    const match = raw.match(/\[[\s\S]*\]/)
-    cards = match ? JSON.parse(match[0]) : []
-  } catch {
-    return NextResponse.json({ error: 'Failed to parse AI response', raw }, { status: 500 })
-  }
-
-  // Save cards
-  const created: any[] = []
-  for (const c of cards.slice(0, count)) {
-    if (!c.front || !c.back) continue
-    const card = await db.flashcard.create({
-      data: {
-        deckSlug: `${bookSlug}-${chapterNum}`,
-        front: c.front,
-        back: c.back,
-        scriptureRef: c.scriptureRef || `${bookSlug} ${chapterNum}:*`,
-        dueDate: new Date(),
-      },
-    })
-    created.push(card)
-  }
-
-  return NextResponse.json({ generated: created.length, cards: created })
 }
 
 // Review a flashcard (SM-2 algorithm)
