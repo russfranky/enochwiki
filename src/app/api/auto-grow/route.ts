@@ -4,9 +4,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { db } from '@/lib/db'
 import { webSearch, pageReader, checkApiHealth } from '@/lib/zai-api'
 import { requireAdmin } from '@/lib/admin'
-import { SCRAPE_ENABLED } from '@/lib/launch'
-
-const SCRAPE_DORMANT = { error: 'Scrape pipeline is dormant. Set SCRAPE_ENABLED=true to feed it again.' }
+import { SCRAPE_ENABLED, SCRAPE_DORMANT_BODY as SCRAPE_DORMANT } from '@/lib/launch'
 
 export const runtime = 'nodejs'
 export const maxDuration = 300 // 5 minutes

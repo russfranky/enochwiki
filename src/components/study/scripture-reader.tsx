@@ -13,6 +13,7 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { ChevronLeft, ChevronRight, BookOpen, Copy } from 'lucide-react'
+import { useAsync } from '@/hooks/use-async'
 
 interface Verse {
   id: string
@@ -64,7 +65,7 @@ export function ScriptureReader({
   const [selectedChapter, setSelectedChapter] = useState<number>(1)
   const [chapter, setChapter] = useState<Chapter | null>(null)
   const [verses, setVerses] = useState<Verse[]>([])
-  const [loading, setLoading] = useState(true)
+  const { loading, error, run, setError } = useAsync({ startInLoading: true })
   const [hoveredVerse, setHoveredVerse] = useState<string | null>(null)
 
   // Load books on mount
@@ -80,64 +81,62 @@ export function ScriptureReader({
           }
         }
       })
-      .catch(() => {})
-  }, [])
+      .catch(() => setError('Could not load the book list.'))
+  }, [setError])
 
-  // Load verses when book/chapter changes
+  // Load verses when book/chapter changes. Failures surface via the shared
+  // async machine instead of the old empty catch, which rendered a network
+  // error as "No verses found."
   useEffect(() => {
     if (!selectedBookSlug) return
     let cancelled = false
-    async function load() {
+    run(async () => {
+      let d: any
       try {
-        setLoading(true)
         const r = await fetch(`/api/scripture?book=${selectedBookSlug}&chapter=${selectedChapter}`)
-        const d = await r.json()
-        if (cancelled) return
-        setChapter(d.chapter || null)
-        setVerses(Array.isArray(d.verses) ? d.verses : [])
+        d = await r.json()
       } catch {
-      } finally {
-        if (!cancelled) setLoading(false)
+        throw new Error('Could not load this passage.')
       }
-    }
-    load()
+      if (cancelled) return
+      setChapter(d.chapter || null)
+      setVerses(Array.isArray(d.verses) ? d.verses : [])
+    })
     return () => {
       cancelled = true
     }
-  }, [selectedBookSlug, selectedChapter])
+  }, [selectedBookSlug, selectedChapter, run])
 
   // Theme-filter view: load all verses for the selected theme
   useEffect(() => {
     if (!selectedThemeSlug) return
     let cancelled = false
-    async function load() {
+    run(async () => {
+      let d: any
       try {
-        setLoading(true)
         const r = await fetch(`/api/themes?slug=${selectedThemeSlug}`)
-        const d = await r.json()
-        if (cancelled) return
-        if (d.verses) {
-          setVerses(
-            d.verses.map((v: any) => ({
-              id: v.id,
-              verseNum: v.verseNum,
-              text: v.text,
-              ref: v.ref,
-              themes: [{ slug: selectedThemeSlug, name: d.theme?.name ?? selectedThemeSlug, weight: v.weight }],
-            })),
-          )
-          setChapter(null)
-        }
+        d = await r.json()
       } catch {
-      } finally {
-        if (!cancelled) setLoading(false)
+        throw new Error('Could not load the theme verses.')
       }
-    }
-    load()
+      if (cancelled) return
+      if (d.verses) {
+        setVerses(
+          d.verses.map((v: any) => ({
+            id: v.id,
+            verseNum: v.verseNum,
+            text: v.text,
+            ref: v.ref,
+            themes: [{ slug: selectedThemeSlug, name: d.theme?.name ?? selectedThemeSlug, weight: v.weight }],
+          })),
+        )
+        setChapter(null)
+      }
+    })
     return () => {
       cancelled = true
     }
-  }, [selectedThemeSlug])
+  }, [selectedThemeSlug, run])
 
   // Notify parent when book/chapter changes
   useEffect(() => {
@@ -300,6 +299,10 @@ export function ScriptureReader({
                 </div>
               ))}
             </div>
+          ) : error ? (
+            <p className="text-center text-destructive py-8 text-sm">
+              {error} Try selecting the chapter again.
+            </p>
           ) : verses.length === 0 ? (
             <p className="text-center text-muted-foreground py-8 text-sm">
               No verses found.

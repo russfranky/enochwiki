@@ -2,13 +2,16 @@
 import { NextResponse } from 'next/server'
 import { db } from '@/lib/db'
 import { checkApiHealth } from '@/lib/zai-api'
+import { AI_ENABLED, SCRAPE_ENABLED } from '@/lib/launch'
 
 export const runtime = 'nodejs'
 export const maxDuration = 15
 
 export async function GET() {
-  const aiEnabled = !!process.env.NEXT_PUBLIC_AI_ENABLED
-  const scrapeEnabled = !!process.env.SCRAPE_ENABLED
+  // Read the switches from @/lib/launch (=== 'true'), not the raw env with
+  // !!, which reported "enabled" for the string "false".
+  const aiEnabled = AI_ENABLED
+  const scrapeEnabled = SCRAPE_ENABLED
 
   // AI is intentionally disabled for launch; missing key is not unhealthy
   const ai = aiEnabled ? await checkApiHealth() : { ok: true, enabled: false, note: 'AI disabled for launch' }

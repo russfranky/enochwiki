@@ -9,12 +9,12 @@ import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { ReviewDashboard } from '@/components/study/review-dashboard'
-import { getAdminToken, setAdminToken, adminAuthHeaders } from '@/lib/admin-token'
+import { adminAuthHeaders } from '@/lib/admin-token'
+import { useAdminToken } from '@/hooks/use-admin-token'
 import { ShieldCheck, Sprout, Download, Loader2, AlertTriangle } from 'lucide-react'
 
 export default function AdminPage() {
-  const [tokenInput, setTokenInput] = useState('')
-  const [hasToken, setHasToken] = useState(() => !!getAdminToken())
+  const { tokenInput, setTokenInput, hasToken, saveToken, clearToken } = useAdminToken()
   const [growing, setGrowing] = useState(false)
   const [exporting, setExporting] = useState(false)
   const [notice, setNotice] = useState<{ ok: boolean; text: string } | null>(null)
@@ -96,11 +96,7 @@ export default function AdminPage() {
                 <Button
                   size="sm"
                   variant="ghost"
-                  onClick={() => {
-                    setAdminToken('')
-                    setHasToken(false)
-                    setTokenInput('')
-                  }}
+                  onClick={clearToken}
                 >
                   Clear token
                 </Button>
@@ -114,9 +110,7 @@ export default function AdminPage() {
                   onChange={(e) => setTokenInput(e.target.value)}
                   onKeyDown={(e) => {
                     if (e.key === 'Enter') {
-                      setAdminToken(tokenInput)
-                      setHasToken(!!tokenInput.trim())
-                      setTokenInput('')
+                      saveToken()
                     }
                   }}
                   placeholder="Admin token"
@@ -125,11 +119,7 @@ export default function AdminPage() {
                 <Button
                   size="sm"
                   variant="outline"
-                  onClick={() => {
-                    setAdminToken(tokenInput)
-                    setHasToken(!!tokenInput.trim())
-                    setTokenInput('')
-                  }}
+                  onClick={saveToken}
                 >
                   Use token
                 </Button>

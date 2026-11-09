@@ -2,11 +2,13 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { db } from '@/lib/db'
 import { requireAdmin } from '@/lib/admin'
+import {
+  isReviewItemType,
+  targetStateFor,
+  canTransition,
+} from '@/lib/machines/review'
 
 export const runtime = 'nodejs'
-
-const VALID_STATES = ['draft', 'auto-corroborated', 'in-review', 'approved', 'rejected', 'needs-revision', 'archived']
-const VALID_ITEM_TYPES = ['evidence', 'public-article', 'topic-page', 'source']
 
 export async function GET(req: NextRequest) {
   const denied = requireAdmin(req)
@@ -81,26 +83,19 @@ export async function POST(req: NextRequest) {
   const { itemType, itemId, action, reviewer = 'editor', reviewerRole = 'reviewer', notes, checklist } = body as {
     itemType: string
     itemId: string
-    action: 'submit-review' | 'approve' | 'reject' | 'request-revision' | 'archive'
+    action: string
     reviewer?: string
     reviewerRole?: string
     notes?: string
     checklist?: any
   }
 
-  if (!VALID_ITEM_TYPES.includes(itemType)) {
+  if (!isReviewItemType(itemType)) {
     return NextResponse.json({ error: 'Invalid itemType' }, { status: 400 })
   }
 
-  // Map action → new state
-  const stateMap: Record<string, string> = {
-    'submit-review': 'in-review',
-    'approve': 'approved',
-    'reject': 'rejected',
-    'request-revision': 'needs-revision',
-    'archive': 'archived',
-  }
-  const newState = stateMap[action]
+  // Map action → new state (table lives in @/lib/machines/review)
+  const newState = targetStateFor(action)
   if (!newState) return NextResponse.json({ error: 'Invalid action' }, { status: 400 })
 
   // Compute checklist if not provided
@@ -132,16 +127,10 @@ export async function POST(req: NextRequest) {
 
   // Enforce the editorial state machine — an action is only valid from certain
   // current states. Without this, any item could be approved straight from draft
-  // or a rejected item re-approved, bypassing the gate.
+  // or a rejected item re-approved, bypassing the gate. The transition table
+  // lives in @/lib/machines/review (ALLOWED_FROM).
   const currentState = existing?.state || 'draft'
-  const allowedFrom: Record<string, string[]> = {
-    'submit-review': ['draft', 'auto-corroborated', 'needs-revision'],
-    'approve': ['in-review', 'auto-corroborated'],
-    'reject': ['in-review', 'auto-corroborated', 'needs-revision'],
-    'request-revision': ['in-review', 'auto-corroborated'],
-    'archive': ['draft', 'auto-corroborated', 'in-review', 'approved', 'rejected', 'needs-revision'],
-  }
-  if (!allowedFrom[action].includes(currentState)) {
+  if (!canTransition(action, currentState)) {
     return NextResponse.json(
       { error: `Cannot '${action}' from state '${currentState}'` },
       { status: 409 },
