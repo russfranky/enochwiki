@@ -8,6 +8,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import { db } from '@/lib/db'
 import { retrieve, buildContext, type ChunkKind } from '@/lib/rag-retrieval'
 import { generateAnswer } from '@/lib/rag-answer'
+import { aiRpm, checkRateLimit, readRpm } from '@/lib/rate-limit'
+import { checkSpendCap } from '@/lib/spend-guard'
 
 export const runtime = 'nodejs'
 export const maxDuration = 90
@@ -29,6 +31,9 @@ export async function GET(req: NextRequest) {
 
   if (!q || q.length < 3) return NextResponse.json({ error: 'Query too short' }, { status: 400 })
 
+  const limited = checkRateLimit(req, { rpm: readRpm(), bucket: 'read' })
+  if (limited) return limited
+
   const { chunks, backend } = await retrieve(q, { k: topK, kinds, minCredibility })
   return NextResponse.json({
     q,
@@ -39,8 +44,11 @@ export async function GET(req: NextRequest) {
 
 // POST — full RAG Q&A: retrieve across the corpus, then answer grounded in the hits.
 export async function POST(req: NextRequest) {
+  const limited = checkRateLimit(req, { rpm: aiRpm(), bucket: 'ai' })
+  if (limited) return limited
+
   const body = await req.json()
-  const { question, topK = 8, kinds: kindsIn, minCredibility, provider = 'auto' } = body as { question: string; topK?: number; kinds?: ChunkKind[]; minCredibility?: number; provider?: 'auto' | 'zai' | 'kilo' }
+  const { question, topK = 8, kinds: kindsIn, minCredibility, provider = 'auto' } = body as { question: string; topK?: number; kinds?: ChunkKind[]; minCredibility?: number; provider?: 'auto' | 'mimo' | 'kilo' }
 
   if (!question || typeof question !== 'string') return NextResponse.json({ error: 'Question required' }, { status: 400 })
 
@@ -57,12 +65,14 @@ export async function POST(req: NextRequest) {
   // Step 2: citation-tagged context block.
   const context = buildContext(chunks)
 
-  // Step 3: AI grounded Q&A — z.ai first, kilo (free) fallback on any failure.
-  const { answer, provider: usedProvider } = await generateAnswer(question, context, provider)
+  // Step 3: AI grounded Q&A — Xiaomi MiMo first, kilo (free) fallback on any failure.
+  // When the daily AI budget is spent, force the free kilo path directly.
+  const capHit = checkSpendCap('rag')
+  const { answer, provider: usedProvider } = await generateAnswer(question, context, capHit ? 'kilo' : provider)
 
   if (!answer) {
     return NextResponse.json({
-      error: 'No generation provider available (z.ai unavailable and kilo CLI unavailable/failed).',
+      error: 'No generation provider available (MiMo unavailable and kilo CLI unavailable/failed).',
       answer: 'Retrieval succeeded, but I cannot generate a grounded answer right now. The retrieved sources are returned below so you can read them directly.',
       sources: chunks, backend,
     }, { status: 503 })

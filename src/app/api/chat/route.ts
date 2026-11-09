@@ -1,7 +1,9 @@
 // AI study tutor — truth-seeking, multi-perspective Ethiopian Bible analysis
 import { NextRequest, NextResponse } from 'next/server'
-import ZAI from 'z-ai-web-dev-sdk'
+import { chatCompletion } from '@/lib/ai-provider'
 import { db } from '@/lib/db'
+import { aiRpm, checkRateLimit } from '@/lib/rate-limit'
+import { checkSpendCap } from '@/lib/spend-guard'
 
 export const runtime = 'nodejs'
 export const maxDuration = 60
@@ -49,12 +51,22 @@ When a question references a verse, the database context will be injected. Use i
 - When the user asks you to scrape for corroborating evidence, you may use the /api/scrape endpoint (the user interface does this automatically). Your job is to interpret, not to fetch.`
 
 export async function POST(req: NextRequest) {
+  const limited = checkRateLimit(req, { rpm: aiRpm(), bucket: 'ai' })
+  if (limited) return limited
   try {
     const body = await req.json()
     const { message, context } = body as { message: string; context?: string }
 
     if (!message || typeof message !== 'string') {
       return NextResponse.json({ error: 'Message required' }, { status: 400 })
+    }
+
+    // Daily AI budget: when spent, serve the same friendly pause as a drained balance.
+    if (checkSpendCap('chat')) {
+      return NextResponse.json({
+        error: 'The AI study companion has reached its daily budget. It returns tomorrow.',
+        reply: 'The AI study companion has reached its daily budget for today. Please try again tomorrow. You can still browse scripture, topics, and search in the meantime.',
+      }, { status: 503 })
     }
 
     // Build context block if user has selected a verse/chapter
@@ -82,39 +94,28 @@ export async function POST(req: NextRequest) {
       },
     })
 
-    let completion
+    let reply: string | null = null
     try {
-      const zai = await ZAI.create()
-      completion = await zai.chat.completions.create({
-        model: 'glm-4.5',
-        messages: [
-          { role: 'system', content: SYSTEM_PROMPT + contextBlock },
-          ...historyMessages,
-          { role: 'user', content: message },
-        ],
-        thinking: { type: 'enabled' },
-      } as any)
+      reply = await chatCompletion([
+        { role: 'system', content: SYSTEM_PROMPT + contextBlock },
+        ...historyMessages,
+        { role: 'user', content: message },
+      ])
     } catch (apiErr: any) {
       // Check for balance/auth errors and return a helpful message
       const errMsg = apiErr?.message || String(apiErr)
-      if (errMsg.includes('1113') || errMsg.includes('Insufficient balance')) {
+      if (errMsg.includes('402') || errMsg.includes('Insufficient') || errMsg.includes('401')) {
         return NextResponse.json({
-          error: 'Z.ai API account has insufficient balance. Add credits at https://z.ai/ to enable AI responses.',
-          reply: 'I cannot generate a response right now because the Z.ai API account has insufficient balance. Please add credits at https://z.ai/ and try again.',
-        }, { status: 503 })
-      }
-      if (errMsg.includes('API key') || errMsg.includes('apiKey') || errMsg.includes('ZAI_API_KEY') || errMsg.includes('z-ai-config') || errMsg.includes('Configuration file not found')) {
-        return NextResponse.json({
-          error: 'AI service not configured. Set ZAI_API_KEY to enable AI features.',
-          reply: 'I cannot generate a response right now because the AI service is not configured. Set ZAI_API_KEY to enable AI features.',
+          error: 'The Xiaomi MiMo API account has a billing or auth problem. Check the Token Plan subscription to enable AI responses.',
+          reply: 'I cannot generate a response right now because the Xiaomi MiMo API account has a billing or auth problem. Please check the subscription and try again.',
         }, { status: 503 })
       }
       throw apiErr
     }
 
-    const reply =
-      completion?.choices?.[0]?.message?.content ??
-      'I could not generate a response. The Z.ai API may be temporarily unavailable. Please try again.'
+    if (!reply) {
+      reply = 'I could not generate a response. The AI provider may be temporarily unavailable. Please try again.'
+    }
 
     // Save the assistant message
     await db.chatMessage.create({

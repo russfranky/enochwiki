@@ -1,7 +1,9 @@
 // Flashcards — CRUD + auto-generate from scripture
 import { NextRequest, NextResponse } from 'next/server'
-import ZAI from 'z-ai-web-dev-sdk'
+import { chatCompletion } from '@/lib/ai-provider'
 import { db } from '@/lib/db'
+import { aiRpm, checkRateLimit } from '@/lib/rate-limit'
+import { checkSpendCap } from '@/lib/spend-guard'
 
 export const runtime = 'nodejs'
 export const maxDuration = 60
@@ -25,6 +27,9 @@ export async function GET(req: NextRequest) {
 
 // Auto-generate flashcards from a chapter
 export async function POST(req: NextRequest) {
+  const limited = checkRateLimit(req, { rpm: aiRpm(), bucket: 'ai' })
+  if (limited) return limited
+
   const body = await req.json()
   const { bookSlug, chapterNum, count = 8 } = body as { bookSlug: string; chapterNum: number; count?: number }
 
@@ -46,14 +51,18 @@ export async function POST(req: NextRequest) {
 
   const versesText = chapter.verses.map((v) => `${v.chapterNum}:${v.verseNum} — ${v.text}`).join('\n')
 
-  let completion
+  let raw: string | null = null
   try {
-    const zai = await ZAI.create()
-    completion = await zai.chat.completions.create({
-      messages: [
-        {
-          role: 'system',
-          content: `You are generating spaced-repetition flashcards for an Ethiopian Bible study database. Generate ${count} flashcards from the chapter provided. Each flashcard has a "front" (question or prompt) and "back" (answer with specific verse citation).
+    // Daily AI budget: when spent, pause with the same friendly copy as a drained balance.
+    if (checkSpendCap('flashcards')) {
+      return NextResponse.json({
+        error: 'Flashcard generation has reached the daily AI budget. Please try again tomorrow.',
+      }, { status: 503 })
+    }
+    raw = await chatCompletion([
+      {
+        role: 'system',
+        content: `You are generating spaced-repetition flashcards for an Ethiopian Bible study database. Generate ${count} flashcards from the chapter provided. Each flashcard has a "front" (question or prompt) and "back" (answer with specific verse citation).
 
 Format your response as a JSON array of objects with this exact shape:
 {"front": "question", "back": "answer with verse citation", "scriptureRef": "1-enoch 6:2"}
@@ -61,30 +70,23 @@ Format your response as a JSON array of objects with this exact shape:
 The back of each card MUST cite the specific verse. The front should be a focused question testing comprehension, not rote memorization.
 
 Only output the JSON array, no other text.`,
-        },
-        {
-          role: 'user',
-          content: `Generate ${count} flashcards from:\n\n**${book.name} chapter ${chapter.number}**\n\n${versesText}`,
-        },
-      ],
-      model: 'glm-4.5',
-    } as any)
+      },
+      {
+        role: 'user',
+        content: `Generate ${count} flashcards from:\n\n**${book.name} chapter ${chapter.number}**\n\n${versesText}`,
+      },
+    ])
   } catch (apiErr: any) {
     const errMsg = apiErr?.message || String(apiErr)
-    if (errMsg.includes('1113') || errMsg.includes('Insufficient balance') || errMsg.includes('429')) {
+    if (errMsg.includes('402') || errMsg.includes('Insufficient') || errMsg.includes('401') || errMsg.includes('429')) {
       return NextResponse.json({
-        error: 'Z.ai API has insufficient balance. Add credits at https://z.ai/ to generate flashcards.',
-      }, { status: 503 })
-    }
-    if (errMsg.includes('API key') || errMsg.includes('apiKey') || errMsg.includes('ZAI_API_KEY') || errMsg.includes('z-ai-config') || errMsg.includes('Configuration file not found')) {
-      return NextResponse.json({
-        error: 'AI service not configured. Set ZAI_API_KEY to enable AI features.',
+        error: 'The Xiaomi MiMo API account has a billing or auth problem. Check the Token Plan subscription to generate flashcards.',
       }, { status: 503 })
     }
     throw apiErr
   }
 
-  const raw = completion?.choices?.[0]?.message?.content ?? '[]'
+  raw = raw ?? '[]'
   let cards: { front: string; back: string; scriptureRef: string }[] = []
   try {
     // Find JSON array in response

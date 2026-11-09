@@ -1,10 +1,10 @@
 // Shared grounded-answer generation — used by the POST /api/rag route and the
 // `bun run rag:ask` CLI, so both go through the exact same prompt + provider
-// fallback chain (z.ai first, kilo/Tencent-Hy3 free fallback on any failure).
-import ZAI from 'z-ai-web-dev-sdk'
+// fallback chain (Xiaomi MiMo first, kilo/Tencent-Hy3 free fallback on any failure).
+import { chatCompletion } from '@/lib/ai-provider'
 import { kiloGenerate } from '@/lib/kilo'
 
-export type GeneratorProvider = 'auto' | 'zai' | 'kilo'
+export type GeneratorProvider = 'auto' | 'mimo' | 'kilo'
 
 export function buildSystemPrompt(context: string): string {
   return `You are the AI study tutor for Enoch.Wiki (https://enoch.wiki) — a rigorously corroborated knowledge resource for the Ethiopian Orthodox Tewahedo Bible and its wider sacred-text tradition (1 Enoch, Jubilees, the Meqabyan, church-order and liturgical texts, plus the scholarship that corroborates them). A user asked a question, and I retrieved the most relevant items from the local corpus below.
@@ -30,30 +30,24 @@ export async function generateAnswer(
   question: string,
   context: string,
   provider: GeneratorProvider = 'auto'
-): Promise<{ answer: string | null; provider: 'zai' | 'kilo' | null }> {
+): Promise<{ answer: string | null; provider: 'mimo' | 'kilo' | null }> {
   const systemPrompt = buildSystemPrompt(context)
   let answer: string | null = null
-  let usedProvider: 'zai' | 'kilo' | null = null
+  let usedProvider: 'mimo' | 'kilo' | null = null
 
   if (provider !== 'kilo') {
     try {
-      const zai = await ZAI.create()
-      const completion = await zai.chat.completions.create({
-        model: 'glm-4.5',
-        messages: [
-          { role: 'system', content: systemPrompt },
-          { role: 'user', content: question },
-        ],
-        thinking: { type: 'enabled' },
-      } as any)
-      answer = completion?.choices?.[0]?.message?.content ?? null
-      if (answer) usedProvider = 'zai'
+      answer = await chatCompletion([
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: question },
+      ])
+      if (answer) usedProvider = 'mimo'
     } catch {
-      // Any z.ai failure (unconfigured, out of quota, network) — fall through to kilo below.
+      // Any MiMo failure (unconfigured, out of quota, network) — fall through to kilo below.
     }
   }
 
-  if (!answer && provider !== 'zai') {
+  if (!answer && provider !== 'mimo') {
     answer = await kiloGenerate(systemPrompt, question)
     if (answer) usedProvider = 'kilo'
   }
