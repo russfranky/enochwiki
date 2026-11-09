@@ -8,6 +8,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { db } from '@/lib/db'
 import { retrieve, buildContext, type ChunkKind } from '@/lib/rag-retrieval'
 import { generateAnswer } from '@/lib/rag-answer'
+import { byokFromHeaders } from '@/lib/ai-provider'
 import { aiRpm, checkRateLimit, readRpm } from '@/lib/rate-limit'
 import { checkSpendCap } from '@/lib/spend-guard'
 
@@ -67,12 +68,16 @@ export async function POST(req: NextRequest) {
 
   // Step 3: AI grounded Q&A — Xiaomi MiMo first, kilo (free) fallback on any failure.
   // When the daily AI budget is spent, force the free kilo path directly.
-  const capHit = checkSpendCap('rag')
-  const { answer, provider: usedProvider } = await generateAnswer(question, context, capHit ? 'kilo' : provider)
+  // BYOK overrides both: the visitor's key is used and the site cap does not apply.
+  const byok = byokFromHeaders(req) ?? undefined
+  const capHit = byok ? false : checkSpendCap('rag')
+  const { answer, provider: usedProvider } = await generateAnswer(question, context, capHit ? 'kilo' : provider, byok)
 
   if (!answer) {
     return NextResponse.json({
-      error: 'No generation provider available (MiMo unavailable and kilo CLI unavailable/failed).',
+      error: byok
+        ? 'Your API provider did not return an answer (check the key in Study Tools).'
+        : 'No generation provider available (MiMo unavailable and kilo CLI unavailable/failed).',
       answer: 'Retrieval succeeded, but I cannot generate a grounded answer right now. The retrieved sources are returned below so you can read them directly.',
       sources: chunks, backend,
     }, { status: 503 })
