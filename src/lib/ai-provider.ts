@@ -48,17 +48,69 @@ export function mimoSearchModel(): string {
   return SEARCH_MODEL
 }
 
-/** One chat completion against MiMo. Returns the reply text, or null on empty. Throws on HTTP errors. */
+// --- Bring your own key (BYOK) -------------------------------------------
+// A visitor may supply their own provider key per request (headers parsed
+// by byokFromHeaders). The key is used for that request only: never stored,
+// never logged. Design: ~/workspace/enochwiki-notes/byok-map.md.
+
+export interface ProviderOverride {
+  key: string
+  baseUrl: string
+  model: string
+  authStyle: 'api-key' | 'bearer'
+}
+
+function overrideAuthHeaders(o: ProviderOverride): Record<string, string> {
+  const headers: Record<string, string> = {}
+  if (o.authStyle === 'api-key') headers['api-key'] = o.key
+  else headers.Authorization = 'Bearer ' + o.key
+  return headers
+}
+
+const BLOCKED_HOSTS = new Set(['localhost', '127.0.0.1', '::1', '169.254.169.254'])
+
+/**
+ * Parse a BYOK override from request headers. Returns null when no key is
+ * present or anything is invalid (callers then use the site provider).
+ * Only https endpoints on public hosts are accepted.
+ */
+export function byokFromHeaders(req: { headers: { get(name: string): string | null } }): ProviderOverride | null {
+  const rawKey = req.headers.get('x-byok-key')
+  if (!rawKey) return null
+  const key = rawKey.trim()
+  if (!key || key.length > 512) return null
+  const rawBase = req.headers.get('x-byok-base-url') || ''
+  const model = (req.headers.get('x-byok-model') || '').trim()
+  if (!model || model.length > 128) return null
+  let url: URL
+  try {
+    url = new URL(rawBase)
+  } catch {
+    return null
+  }
+  if (url.protocol !== 'https:') return null
+  if (BLOCKED_HOSTS.has(url.hostname) || url.hostname.endsWith('.local') || url.hostname.endsWith('.internal')) return null
+  const authStyle = req.headers.get('x-byok-auth') === 'api-key' ? 'api-key' : 'bearer'
+  return { key, baseUrl: rawBase.replace(/\/+$/, ''), model, authStyle }
+}
+
+/** One chat completion. Site provider by default; opts.provider (BYOK) overrides it for this call. Returns the reply text, or null on empty. Throws on HTTP errors. */
 export async function chatCompletion(
   messages: ChatMessage[],
-  opts?: { maxTokens?: number; temperature?: number; timeoutMs?: number }
+  opts?: { maxTokens?: number; temperature?: number; timeoutMs?: number; provider?: ProviderOverride }
 ): Promise<string | null> {
-  if (!API_KEY) return null
-  const res = await fetch(`${BASE_URL}/chat/completions`, {
+  const o = opts?.provider
+  if (!o && !API_KEY) return null
+  const baseUrl = o ? o.baseUrl : BASE_URL
+  const model = o ? o.model : MODEL
+  const headers: Record<string, string> = o
+    ? { 'Content-Type': 'application/json', ...overrideAuthHeaders(o) }
+    : { 'Content-Type': 'application/json', 'api-key': API_KEY }
+  const res = await fetch(`${baseUrl}/chat/completions`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'api-key': API_KEY },
+    headers,
     body: JSON.stringify({
-      model: MODEL,
+      model,
       messages,
       ...(opts?.maxTokens ? { max_tokens: opts.maxTokens } : {}),
       ...(opts?.temperature !== undefined ? { temperature: opts.temperature } : {}),
@@ -67,15 +119,27 @@ export async function chatCompletion(
   })
   if (!res.ok) {
     const text = await res.text().catch(() => '')
-    throw new Error(`MiMo chat ${res.status}: ${text.slice(0, 200)}`)
+    throw new Error(`${o ? 'Provider' : 'MiMo'} chat ${res.status}: ${text.slice(0, 200)}`)
   }
   const json = await res.json()
   const content = json?.choices?.[0]?.message?.content
   return typeof content === 'string' && content.length > 0 ? content : null
 }
 
-/** Liveness probe for the app's AI provider (used by /api/health). */
-export async function checkAiHealth(): Promise<{ ok: boolean; error?: string; model?: string }> {
+/** Liveness probe. Site provider by default; pass a BYOK override to test a visitor key. */
+export async function checkAiHealth(override?: ProviderOverride): Promise<{ ok: boolean; error?: string; model?: string }> {
+  if (override) {
+    try {
+      const res = await fetch(`${override.baseUrl}/models`, {
+        headers: overrideAuthHeaders(override),
+        signal: AbortSignal.timeout(15_000),
+      })
+      if (!res.ok) return { ok: false, error: `Provider models endpoint ${res.status}`, model: override.model }
+      return { ok: true, model: override.model }
+    } catch (e: any) {
+      return { ok: false, error: e?.message || 'unreachable', model: override.model }
+    }
+  }
   if (!API_KEY) return { ok: false, error: 'MIMO_API_KEY not set — AI features unavailable', model: MODEL }
   try {
     const res = await fetch(`${BASE_URL}/models`, {

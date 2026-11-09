@@ -1,6 +1,6 @@
 // AI study tutor — truth-seeking, multi-perspective Ethiopian Bible analysis
 import { NextRequest, NextResponse } from 'next/server'
-import { chatCompletion } from '@/lib/ai-provider'
+import { byokFromHeaders, chatCompletion } from '@/lib/ai-provider'
 import { db } from '@/lib/db'
 import { aiRpm, checkRateLimit } from '@/lib/rate-limit'
 import { checkSpendCap } from '@/lib/spend-guard'
@@ -61,8 +61,11 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Message required' }, { status: 400 })
     }
 
+    // BYOK: a visitor-supplied key bypasses the site daily budget (their key, their bill).
+    const byok = byokFromHeaders(req)
+
     // Daily AI budget: when spent, serve the same friendly pause as a drained balance.
-    if (checkSpendCap('chat')) {
+    if (!byok && checkSpendCap('chat')) {
       return NextResponse.json({
         error: 'The AI study companion has reached its daily budget. It returns tomorrow.',
         reply: 'The AI study companion has reached its daily budget for today. Please try again tomorrow. You can still browse scripture, topics, and search in the meantime.',
@@ -100,11 +103,17 @@ export async function POST(req: NextRequest) {
         { role: 'system', content: SYSTEM_PROMPT + contextBlock },
         ...historyMessages,
         { role: 'user', content: message },
-      ])
+      ], byok ? { provider: byok } : undefined)
     } catch (apiErr: any) {
       // Check for balance/auth errors and return a helpful message
       const errMsg = apiErr?.message || String(apiErr)
       if (errMsg.includes('402') || errMsg.includes('Insufficient') || errMsg.includes('401')) {
+        if (byok) {
+          return NextResponse.json({
+            error: 'Your API provider reported a billing or auth problem with the key you supplied. Check the key, or clear it in Study Tools to use the site AI.',
+            reply: 'I could not use the API key you supplied. Your provider reported a billing or auth problem. Check the key in Study Tools, or clear it to use the site AI.',
+          }, { status: 503 })
+        }
         return NextResponse.json({
           error: 'The Xiaomi MiMo API account has a billing or auth problem. Check the Token Plan subscription to enable AI responses.',
           reply: 'I cannot generate a response right now because the Xiaomi MiMo API account has a billing or auth problem. Please check the subscription and try again.',

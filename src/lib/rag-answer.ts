@@ -1,7 +1,7 @@
 // Shared grounded-answer generation — used by the POST /api/rag route and the
 // `bun run rag:ask` CLI, so both go through the exact same prompt + provider
 // fallback chain (Xiaomi MiMo first, kilo/Tencent-Hy3 free fallback on any failure).
-import { chatCompletion } from '@/lib/ai-provider'
+import { chatCompletion, type ProviderOverride } from '@/lib/ai-provider'
 import { kiloGenerate } from '@/lib/kilo'
 
 export type GeneratorProvider = 'auto' | 'mimo' | 'kilo'
@@ -29,11 +29,27 @@ Markdown, dense and focused. Cite references in **bold**.`
 export async function generateAnswer(
   question: string,
   context: string,
-  provider: GeneratorProvider = 'auto'
-): Promise<{ answer: string | null; provider: 'mimo' | 'kilo' | null }> {
+  provider: GeneratorProvider = 'auto',
+  byok?: ProviderOverride
+): Promise<{ answer: string | null; provider: 'mimo' | 'kilo' | 'byok' | null }> {
   const systemPrompt = buildSystemPrompt(context)
   let answer: string | null = null
-  let usedProvider: 'mimo' | 'kilo' | null = null
+  let usedProvider: 'mimo' | 'kilo' | 'byok' | null = null
+
+  // BYOK: the visitor's own provider only. No site-key spend and no kilo
+  // fallback (their question must not silently route to another provider).
+  if (byok) {
+    try {
+      answer = await chatCompletion([
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: question },
+      ], { provider: byok })
+      if (answer) usedProvider = 'byok'
+    } catch {
+      // Fall through with no answer; the route reports the failure.
+    }
+    return { answer, provider: usedProvider }
+  }
 
   if (provider !== 'kilo') {
     try {

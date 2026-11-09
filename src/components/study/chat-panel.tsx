@@ -10,6 +10,7 @@ import { Separator } from '@/components/ui/separator'
 import { Trash2, Send, Sparkles, BookOpen, Loader2 } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import { useAsync } from '@/hooks/use-async'
+import { byokHeaders } from '@/lib/byok'
 
 interface ChatMsg {
   id: string
@@ -58,7 +59,7 @@ export function ChatPanel({ context }: ChatPanelProps) {
     await run(async () => {
       const res = await fetch('/api/chat', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', ...byokHeaders() },
         body: JSON.stringify({ message: userMsg.content, context }),
       })
       if (!res.ok) {

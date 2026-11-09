@@ -21,6 +21,11 @@ import {
 } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import { AI_ENABLED } from '@/lib/launch'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { BYOK_PROVIDERS, byokHeaders } from '@/lib/byok'
+import { useByok } from '@/hooks/use-byok'
+import { KeyRound } from 'lucide-react'
 
 interface StudyToolsProps {
   bookSlug?: string
@@ -29,6 +34,7 @@ interface StudyToolsProps {
 
 export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
   const [tab, setTab] = useState(AI_ENABLED ? 'daily' : 'glossary')
+  const byok = useByok()
   const [summary, setSummary] = useState<string | null>(null)
   const [summaryLoading, setSummaryLoading] = useState(false)
   const [daily, setDaily] = useState<any>(null)
@@ -69,7 +75,7 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
     try {
       const r = await fetch('/api/summarize', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', ...byokHeaders() },
         body: JSON.stringify({ bookSlug, chapterNum }),
       })
       const d = await r.json()
@@ -292,6 +298,97 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
           </ScrollArea>
         </TabsContent>
       </Tabs>
+
+      {/* Bring your own key */}
+      <div className="border-t border-border px-3 sm:px-4 py-3">
+        <div className="flex items-center gap-2 mb-1.5">
+          <KeyRound className="h-3.5 w-3.5 text-accent" />
+          <span className="text-xs font-semibold">Your API key</span>
+          <span className="text-[10px] text-muted-foreground ml-auto">
+            {byok.hasKey ? 'Using your key' : 'Using site AI'}
+          </span>
+        </div>
+        <p className="text-[10px] text-muted-foreground mb-2">
+          Optional. Your key stays in this browser tab and is sent only with your
+          requests; the site never stores it. Use a dedicated key with a spend cap.
+        </p>
+        <div className="flex flex-col gap-2">
+          <div>
+            <Label htmlFor="byok-provider" className="text-[10px]">Provider</Label>
+            <select
+              id="byok-provider"
+              value={byok.providerId}
+              onChange={(e) => byok.setProviderId(e.target.value)}
+              className="flex h-8 w-full rounded-md border border-input bg-transparent px-2 py-1 text-xs shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+            >
+              {BYOK_PROVIDERS.map((p) => (
+                <option key={p.id} value={p.id}>{p.name}</option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <Label htmlFor="byok-key" className="text-[10px]">API key</Label>
+            <Input
+              id="byok-key"
+              type="password"
+              autoComplete="off"
+              placeholder={byok.hasKey ? 'Key saved for this tab (enter to replace)' : 'Paste your key'}
+              value={byok.keyInput}
+              onChange={(e) => byok.setKeyInput(e.target.value)}
+              className="h-8 text-xs"
+            />
+          </div>
+          {byok.isCustom && (
+            <>
+              <div>
+                <Label htmlFor="byok-base" className="text-[10px]">Base URL (https)</Label>
+                <Input
+                  id="byok-base"
+                  type="url"
+                  placeholder="https://provider.example/v1"
+                  value={byok.baseUrl}
+                  onChange={(e) => byok.setBaseUrl(e.target.value)}
+                  className="h-8 text-xs"
+                />
+              </div>
+              <div>
+                <Label htmlFor="byok-auth" className="text-[10px]">Key is sent as</Label>
+                <select
+                  id="byok-auth"
+                  value={byok.authStyle}
+                  onChange={(e) => byok.setAuthStyle(e.target.value as 'api-key' | 'bearer')}
+                  className="flex h-8 w-full rounded-md border border-input bg-transparent px-2 py-1 text-xs shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                >
+                  <option value="bearer">Authorization: Bearer</option>
+                  <option value="api-key">api-key header</option>
+                </select>
+              </div>
+            </>
+          )}
+          <div>
+            <Label htmlFor="byok-model" className="text-[10px]">Model</Label>
+            <Input
+              id="byok-model"
+              type="text"
+              value={byok.model}
+              onChange={(e) => byok.setModel(e.target.value)}
+              className="h-8 text-xs"
+            />
+          </div>
+          <div className="flex items-center gap-1.5">
+            <Button size="sm" onClick={byok.saveKey} disabled={!byok.keyInput.trim()} className="h-7 text-xs">Save key</Button>
+            <Button size="sm" variant="outline" onClick={() => void byok.testKey()} disabled={byok.testState === 'testing'} className="h-7 text-xs">
+              {byok.testState === 'testing' ? 'Testing...' : 'Test connection'}
+            </Button>
+            {byok.hasKey && (
+              <Button size="sm" variant="ghost" onClick={byok.clearKey} className="h-7 text-xs">Clear</Button>
+            )}
+          </div>
+          {byok.testMessage && (
+            <p className={`text-[10px] ${byok.testState === 'ok' ? 'text-green-600' : 'text-destructive'}`}>{byok.testMessage}</p>
+          )}
+        </div>
+      </div>
     </div>
   )
 }

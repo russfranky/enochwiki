@@ -1,6 +1,6 @@
 // AI passage summary — grounded in the local corpus
 import { NextRequest, NextResponse } from 'next/server'
-import { chatCompletion } from '@/lib/ai-provider'
+import { byokFromHeaders, chatCompletion } from '@/lib/ai-provider'
 import { db } from '@/lib/db'
 import { aiRpm, checkRateLimit } from '@/lib/rate-limit'
 import { checkSpendCap } from '@/lib/spend-guard'
@@ -92,9 +92,11 @@ Where traditions or scholars disagree. Be honest about uncertainty.
 - Distinguish text from scholarship from interpretation.`
 
   let summary: string | null = null
+  // BYOK: a visitor-supplied key bypasses the site daily budget.
+  const byok = byokFromHeaders(req)
   try {
     // Daily AI budget: when spent, pause with the same friendly copy as a drained balance.
-    if (checkSpendCap('summarize')) {
+    if (!byok && checkSpendCap('summarize')) {
       return NextResponse.json({
         error: 'Passage summaries have reached the daily AI budget. Please try again tomorrow.',
       }, { status: 503 })
@@ -102,12 +104,14 @@ Where traditions or scholars disagree. Be honest about uncertainty.
     summary = await chatCompletion([
       { role: 'system', content: systemPrompt },
       { role: 'user', content: `Please summarize ${book.name} chapter ${chapter.number}.` },
-    ])
+    ], byok ? { provider: byok } : undefined)
   } catch (apiErr: any) {
     const errMsg = apiErr?.message || String(apiErr)
     if (errMsg.includes('402') || errMsg.includes('Insufficient') || errMsg.includes('401') || errMsg.includes('429')) {
       return NextResponse.json({
-        error: 'The Xiaomi MiMo API account has a billing or auth problem. Check the Token Plan subscription to generate summaries.',
+        error: byok
+          ? 'Your API provider reported a billing or auth problem with the key you supplied. Check the key, or clear it in Study Tools to use the site AI.'
+          : 'The Xiaomi MiMo API account has a billing or auth problem. Check the Token Plan subscription to generate summaries.',
       }, { status: 503 })
     }
     throw apiErr
