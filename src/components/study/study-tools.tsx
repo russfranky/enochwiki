@@ -79,26 +79,6 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
     }
   }
 
-  async function generateFlashcards() {
-    if (!bookSlug || !chapterNum) return
-    setSummaryLoading(true)
-    try {
-      const r = await fetch('/api/flashcards', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ bookSlug, chapterNum, count: 6 }),
-      })
-      const d = await r.json()
-      if (d.cards) {
-        setFlashcards((prev) => [...d.cards, ...prev])
-        setCurrentCard(0)
-        setShowBack(false)
-      }
-    } finally {
-      setSummaryLoading(false)
-    }
-  }
-
   async function reviewCard(quality: number) {
     if (flashcards.length === 0) return
     const card = flashcards[currentCard]
@@ -206,18 +186,12 @@ export function StudyTools({ bookSlug, chapterNum }: StudyToolsProps) {
               <div className="text-xs">
                 <span className="text-muted-foreground">Due:</span> {flashcards.length}
               </div>
-              {bookSlug && chapterNum && (
-                <Button size="sm" variant="outline" onClick={generateFlashcards} disabled={summaryLoading} className="h-7 text-xs">
-                  <Sparkles className="h-3 w-3 mr-1" />
-                  Generate from {bookSlug} {chapterNum}
-                </Button>
-              )}
             </div>
             {flashcards.length === 0 ? (
               <div className="flex-1 flex items-center justify-center text-xs text-muted-foreground text-center">
                 <div>
                   <Layers3 className="h-8 w-8 mx-auto mb-2 opacity-40" />
-                  No flashcards due. Generate some from a chapter to start.
+                  No flashcards due for review.
                 </div>
               </div>
             ) : (
