@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
   if (limited) return limited
 
   const body = await req.json()
-  const { question, topK = 8, kinds: kindsIn, minCredibility, provider = 'auto' } = body as { question: string; topK?: number; kinds?: ChunkKind[]; minCredibility?: number; provider?: 'auto' | 'mimo' | 'kilo' }
+  const { question, topK = 8, kinds: kindsIn, minCredibility, provider = 'auto' } = body as { question: string; topK?: number; kinds?: ChunkKind[]; minCredibility?: number; provider?: 'auto' | 'site' | 'kilo' }
 
   if (!question || typeof question !== 'string') return NextResponse.json({ error: 'Question required' }, { status: 400 })
 
@@ -66,7 +66,7 @@ export async function POST(req: NextRequest) {
   // Step 2: citation-tagged context block.
   const context = buildContext(chunks)
 
-  // Step 3: AI grounded Q&A — Xiaomi MiMo first, kilo (free) fallback on any failure.
+  // Step 3: AI grounded Q&A — site AI provider first, kilo (free) fallback on any failure.
   // When the daily AI budget is spent, force the free kilo path directly.
   // BYOK overrides both: the visitor's key is used and the site cap does not apply.
   const byok = byokFromHeaders(req) ?? undefined
@@ -77,7 +77,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       error: byok
         ? 'Your API provider did not return an answer (check the key in Study Tools).'
-        : 'No generation provider available (MiMo unavailable and kilo CLI unavailable/failed).',
+        : 'No generation provider available (site AI unavailable and kilo CLI unavailable/failed).',
       answer: 'Retrieval succeeded, but I cannot generate a grounded answer right now. The retrieved sources are returned below so you can read them directly.',
       sources: chunks, backend,
     }, { status: 503 })

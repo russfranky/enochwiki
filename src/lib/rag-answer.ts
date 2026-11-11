@@ -1,10 +1,10 @@
 // Shared grounded-answer generation — used by the POST /api/rag route and the
 // `bun run rag:ask` CLI, so both go through the exact same prompt + provider
-// fallback chain (Xiaomi MiMo first, kilo/Tencent-Hy3 free fallback on any failure).
+// fallback chain (site AI provider first, kilo/Tencent-Hy3 free fallback on any failure).
 import { chatCompletion, type ProviderOverride } from '@/lib/ai-provider'
 import { kiloGenerate } from '@/lib/kilo'
 
-export type GeneratorProvider = 'auto' | 'mimo' | 'kilo'
+export type GeneratorProvider = 'auto' | 'site' | 'kilo'
 
 export function buildSystemPrompt(context: string): string {
   return `You are the AI study tutor for Enoch.Wiki (https://enoch.wiki) — a rigorously corroborated knowledge resource for the Ethiopian Orthodox Tewahedo Bible and its wider sacred-text tradition (1 Enoch, Jubilees, the Meqabyan, church-order and liturgical texts, plus the scholarship that corroborates them). A user asked a question, and I retrieved the most relevant items from the local corpus below.
@@ -31,10 +31,10 @@ export async function generateAnswer(
   context: string,
   provider: GeneratorProvider = 'auto',
   byok?: ProviderOverride
-): Promise<{ answer: string | null; provider: 'mimo' | 'kilo' | 'byok' | null }> {
+): Promise<{ answer: string | null; provider: 'site' | 'kilo' | 'byok' | null }> {
   const systemPrompt = buildSystemPrompt(context)
   let answer: string | null = null
-  let usedProvider: 'mimo' | 'kilo' | 'byok' | null = null
+  let usedProvider: 'site' | 'kilo' | 'byok' | null = null
 
   // BYOK: the visitor's own provider only. No site-key spend and no kilo
   // fallback (their question must not silently route to another provider).
@@ -57,13 +57,13 @@ export async function generateAnswer(
         { role: 'system', content: systemPrompt },
         { role: 'user', content: question },
       ])
-      if (answer) usedProvider = 'mimo'
+      if (answer) usedProvider = 'site'
     } catch {
-      // Any MiMo failure (unconfigured, out of quota, network) — fall through to kilo below.
+      // Any site provider failure (unconfigured, out of quota, network) — fall through to kilo below.
     }
   }
 
-  if (!answer && provider !== 'mimo') {
+  if (!answer && provider !== 'site') {
     answer = await kiloGenerate(systemPrompt, question)
     if (answer) usedProvider = 'kilo'
   }

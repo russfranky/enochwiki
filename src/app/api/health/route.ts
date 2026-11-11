@@ -1,7 +1,7 @@
 // Health check — feature-aware: AI disabled for launch is healthy, not an error
 import { NextResponse } from 'next/server'
 import { db } from '@/lib/db'
-import { checkAiHealth, mimoModel } from '@/lib/ai-provider'
+import { checkAiHealth, mimoModel, SITE_PROVIDER_NAME } from '@/lib/ai-provider'
 import { AI_ENABLED, SCRAPE_ENABLED } from '@/lib/launch'
 
 export const runtime = 'nodejs'
@@ -32,7 +32,7 @@ export async function GET() {
     ai,
     db: { ok: dbOk },
     scrape: { enabled: scrapeEnabled },
-    provider: 'xiaomi-mimo',
+    provider: SITE_PROVIDER_NAME,
     model: mimoModel(),
   })
 }

@@ -111,7 +111,7 @@ Where traditions or scholars disagree. Be honest about uncertainty.
       return NextResponse.json({
         error: byok
           ? 'Your API provider reported a billing or auth problem with the key you supplied. Check the key, or clear it in Study Tools to use the site AI.'
-          : 'The Xiaomi MiMo API account has a billing or auth problem. Check the Token Plan subscription to generate summaries.',
+          : 'The site AI provider account has a billing or auth problem. Summaries are unavailable right now.',
       }, { status: 503 })
     }
     throw apiErr
