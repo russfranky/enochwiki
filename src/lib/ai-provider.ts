@@ -1,27 +1,30 @@
-// AI provider for Enoch Wiki — Xiaomi MiMo (Token Plan subscription).
+// AI provider for Enoch Wiki — one configurable site provider.
 //
-// Owner direction 2026-09-21: use Xiaomi MiMo for all app AI (chat,
-// summaries, RAG answers). This module is the single place that talks to
-// the model; routes import chatCompletion() and never touch provider SDKs.
+// Owner direction 2026-11-11: the site AI runs on the Experiential Labs
+// free quota (deepseek-v4-flash); Xiaomi MiMo is not coming back. Visitors
+// can override the site provider per request with their own key (BYOK,
+// below). This module is the single place that talks to the model; routes
+// import chatCompletion() and never touch provider SDKs.
 //
-// Web search for the growth pipeline (src/lib/search-api.ts, scripts) runs on
-// the pay-as-you-go track's native `web_search` tool: Token Plan endpoints do
-// not support web search (verified 2026-09-21, webSearchEnabled is false).
-// Page extraction runs on the Token Plan subscription (no marginal cost).
-//
-// Env:
-//   MIMO_API_KEY   Token Plan key (tp-...). Required; never commit it.
-//   MIMO_BASE_URL  Default https://token-plan-sgp.xiaomimimo.com/v1
-//   MIMO_MODEL     Default mimo-v2.6-flash
+// Env (AI_SITE_* is the current config; MIMO_* is read as a legacy
+// fallback so an older deployment keeps working):
+//   AI_SITE_KEY       Provider key. Required; never commit it.
+//   AI_SITE_BASE_URL  Default https://token-plan-sgp.xiaomimimo.com/v1
+//   AI_SITE_MODEL     Default mimo-v2.6-flash
+//   AI_SITE_AUTH      'bearer' or 'api-key' (default 'api-key')
+//   AI_SITE_NAME      Provider label for health/error reporting
+//                     (default 'xiaomi-mimo')
 
 export interface ChatMessage {
   role: 'system' | 'user' | 'assistant'
   content: string
 }
 
-const BASE_URL = process.env.MIMO_BASE_URL || 'https://token-plan-sgp.xiaomimimo.com/v1'
-const MODEL = process.env.MIMO_MODEL || 'mimo-v2.6-flash'
-const API_KEY = process.env.MIMO_API_KEY || ''
+const BASE_URL = process.env.AI_SITE_BASE_URL || process.env.MIMO_BASE_URL || 'https://token-plan-sgp.xiaomimimo.com/v1'
+const MODEL = process.env.AI_SITE_MODEL || process.env.MIMO_MODEL || 'mimo-v2.6-flash'
+const API_KEY = process.env.AI_SITE_KEY || process.env.MIMO_API_KEY || ''
+const SITE_AUTH_STYLE: 'api-key' | 'bearer' = process.env.AI_SITE_AUTH === 'bearer' ? 'bearer' : 'api-key'
+export const SITE_PROVIDER_NAME = process.env.AI_SITE_NAME || 'xiaomi-mimo'
 
 // Pay-as-you-go track: separate billing from the Token Plan subscription.
 // Used ONLY for the native web_search tool, which Token Plan endpoints do not
@@ -67,6 +70,10 @@ function overrideAuthHeaders(o: ProviderOverride): Record<string, string> {
   return headers
 }
 
+function siteAuthHeaders(): Record<string, string> {
+  return overrideAuthHeaders({ key: API_KEY, baseUrl: BASE_URL, model: MODEL, authStyle: SITE_AUTH_STYLE })
+}
+
 const BLOCKED_HOSTS = new Set(['localhost', '127.0.0.1', '::1', '169.254.169.254'])
 
 /**
@@ -105,7 +112,7 @@ export async function chatCompletion(
   const model = o ? o.model : MODEL
   const headers: Record<string, string> = o
     ? { 'Content-Type': 'application/json', ...overrideAuthHeaders(o) }
-    : { 'Content-Type': 'application/json', 'api-key': API_KEY }
+    : { 'Content-Type': 'application/json', ...siteAuthHeaders() }
   const res = await fetch(`${baseUrl}/chat/completions`, {
     method: 'POST',
     headers,
@@ -119,7 +126,7 @@ export async function chatCompletion(
   })
   if (!res.ok) {
     const text = await res.text().catch(() => '')
-    throw new Error(`${o ? 'Provider' : 'MiMo'} chat ${res.status}: ${text.slice(0, 200)}`)
+    throw new Error(`${o ? 'Provider' : SITE_PROVIDER_NAME} chat ${res.status}: ${text.slice(0, 200)}`)
   }
   const json = await res.json()
   const content = json?.choices?.[0]?.message?.content
@@ -140,14 +147,11 @@ export async function checkAiHealth(override?: ProviderOverride): Promise<{ ok: 
       return { ok: false, error: e?.message || 'unreachable', model: override.model }
     }
   }
-  if (!API_KEY) return { ok: false, error: 'MIMO_API_KEY not set — AI features unavailable', model: MODEL }
+  if (!API_KEY) return { ok: false, error: 'Site AI key not set — AI features unavailable', model: MODEL }
   try {
-    const res = await fetch(`${BASE_URL}/models`, {
-      headers: { 'api-key': API_KEY },
-      signal: AbortSignal.timeout(15_000),
-    })
-    if (!res.ok) return { ok: false, error: `MiMo models endpoint ${res.status}`, model: MODEL }
-    return { ok: true, model: MODEL }
+    const reply = await chatCompletion([{ role: 'user', content: 'Reply with the word: ok' }], { maxTokens: 512, timeoutMs: 20_000 })
+    if (reply) return { ok: true, model: MODEL }
+    return { ok: false, error: 'Site AI provider returned an empty reply', model: MODEL }
   } catch (e: any) {
     return { ok: false, error: e?.message || 'unreachable', model: MODEL }
   }
@@ -231,10 +235,10 @@ export interface ExtractedEvidence {
 }
 
 /**
- * Extract structured evidence from fetched page text using the Token Plan
- * subscription (no marginal cost). This is the "reader intelligence" of the
+ * Extract structured evidence from fetched page text using the site AI
+ * provider. This is the "reader intelligence" of the
  * scrape pipeline: raw HTML goes in, grounded claims come out.
- * Returns null when the Token Plan key is unset or the call fails.
+ * Returns null when the site AI key is unset or the call fails.
  */
 export async function mimoExtractEvidence(url: string, pageText: string): Promise<ExtractedEvidence | null> {
   if (!API_KEY || !pageText.trim()) return null

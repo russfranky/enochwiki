@@ -115,8 +115,8 @@ export async function POST(req: NextRequest) {
           }, { status: 503 })
         }
         return NextResponse.json({
-          error: 'The Xiaomi MiMo API account has a billing or auth problem. Check the Token Plan subscription to enable AI responses.',
-          reply: 'I cannot generate a response right now because the Xiaomi MiMo API account has a billing or auth problem. Please check the subscription and try again.',
+          error: 'The site AI provider account has a billing or auth problem. AI responses are unavailable right now.',
+          reply: 'I cannot generate a response right now because the site AI provider account has a billing or auth problem. Please try again later, or add your own API key in Study Tools.',
         }, { status: 503 })
       }
       throw apiErr
