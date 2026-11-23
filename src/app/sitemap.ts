@@ -84,5 +84,31 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error('[sitemap] failed to load topic pages for sitemap:', e)
   }
 
+  // Add all scripture book indexes and chapter pages (SEO Phase 2,
+  // cycle 6). No lastModified: Chapter has no updatedAt field, and
+  // stamping the request instant would fabricate dates.
+  try {
+    const books = await db.book.findMany({
+      orderBy: { order: 'asc' },
+      include: { chapters: { orderBy: { number: 'asc' } } },
+    })
+    for (const b of books) {
+      entries.push({
+        url: `${SITE_URL}/read/${b.slug}`,
+        changeFrequency: 'monthly',
+        priority: 0.7,
+      })
+      for (const c of b.chapters) {
+        entries.push({
+          url: `${SITE_URL}/read/${b.slug}/${c.number}`,
+          changeFrequency: 'monthly',
+          priority: 0.7,
+        })
+      }
+    }
+  } catch (e) {
+    console.error('[sitemap] failed to load scripture chapters for sitemap:', e)
+  }
+
   return entries
 }
