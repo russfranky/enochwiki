@@ -23,26 +23,53 @@ export const metadata: Metadata = {
 
 const SITE_URL = 'https://enoch.wiki'
 
+// Both parts as one graph (SEO audit Phase 2, 2026-11-23). Part Two
+// carries no actor array: this page documents a shared production
+// cast, not a per-installment cast list, so reusing the nine names on
+// Part Two would be an inference, not a sourced fact.
 const movieJsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Movie',
-  name: 'The Resurrection of the Christ: Part One',
-  datePublished: '2027-05-06',
-  director: { '@type': 'Person', name: 'Mel Gibson' },
-  actor: [
-    { '@type': 'Person', name: 'Jaakko Ohtonen' },
-    { '@type': 'Person', name: 'Mariela Garriga' },
-    { '@type': 'Person', name: 'Kasia Smutniak' },
-    { '@type': 'Person', name: 'Pier Luigi Pasino' },
-    { '@type': 'Person', name: 'Riccardo Scamarcio' },
-    { '@type': 'Person', name: 'Rupert Everett' },
-    { '@type': 'Person', name: 'Lorenzo Richelmy' },
-    { '@type': 'Person', name: 'Andrea Misuraca' },
-    { '@type': 'Person', name: 'Eduardo Scarpetta' },
+  '@graph': [
+    {
+      '@type': 'Movie',
+      '@id': `${SITE_URL}/resurrection-of-the-christ#part-one`,
+      name: 'The Resurrection of the Christ: Part One',
+      datePublished: '2027-05-06',
+      director: { '@type': 'Person', name: 'Mel Gibson' },
+      actor: [
+        { '@type': 'Person', name: 'Jaakko Ohtonen' },
+        { '@type': 'Person', name: 'Mariela Garriga' },
+        { '@type': 'Person', name: 'Kasia Smutniak' },
+        { '@type': 'Person', name: 'Pier Luigi Pasino' },
+        { '@type': 'Person', name: 'Riccardo Scamarcio' },
+        { '@type': 'Person', name: 'Rupert Everett' },
+        { '@type': 'Person', name: 'Lorenzo Richelmy' },
+        { '@type': 'Person', name: 'Andrea Misuraca' },
+        { '@type': 'Person', name: 'Eduardo Scarpetta' },
+      ],
+      productionCompany: { '@type': 'Organization', name: 'Icon Productions' },
+      distributor: { '@type': 'Organization', name: 'Lionsgate' },
+      url: `${SITE_URL}/resurrection-of-the-christ`,
+    },
+    {
+      '@type': 'Movie',
+      '@id': `${SITE_URL}/resurrection-of-the-christ#part-two`,
+      name: 'The Resurrection of the Christ: Part Two',
+      datePublished: '2028-05-25',
+      director: { '@type': 'Person', name: 'Mel Gibson' },
+      author: [
+        { '@type': 'Person', name: 'Mel Gibson' },
+        { '@type': 'Person', name: 'Randall Wallace' },
+      ],
+      producer: [
+        { '@type': 'Person', name: 'Mel Gibson' },
+        { '@type': 'Person', name: 'Bruce Davey' },
+      ],
+      productionCompany: { '@type': 'Organization', name: 'Icon Productions' },
+      distributor: { '@type': 'Organization', name: 'Lionsgate' },
+      url: `${SITE_URL}/resurrection-of-the-christ`,
+    },
   ],
-  productionCompany: { '@type': 'Organization', name: 'Icon Productions' },
-  distributor: { '@type': 'Organization', name: 'Lionsgate' },
-  url: `${SITE_URL}/resurrection-of-the-christ`,
 }
 
 type Source = { label: string; href: string }

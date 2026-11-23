@@ -2,12 +2,26 @@
 // Russ curates this list. affiliateUrl stays empty until he adds his
 // affiliate links; the detail page only renders a buy button when one exists.
 // Bibliographic facts only: no invented endorsements, no invented metrics.
+export type ContributorRole = 'author' | 'editor' | 'translator'
+
+export interface Contributor {
+  name: string
+  role: ContributorRole
+}
+
 export interface Book {
   slug: string
   title: string
   /** Short display title for the small index cover placeholder. */
   shortTitle: string
   author: string
+  /**
+   * Structured contributors for schema.org output. The `author` string
+   * above stays the display form; this field carries the same people
+   * with roles, so structured data does not flatten "X and Y" into one
+   * Person or leave "(editor)" inside a name (SEO audit, 2026-11-23).
+   */
+  contributors: Contributor[]
   publisher: string
   year: number
   isbn: string
@@ -24,6 +38,7 @@ export const BOOKS: Book[] = [
     title: '1 Enoch: A New Translation',
     shortTitle: '1 Enoch',
     author: 'George W. E. Nickelsburg and James C. VanderKam',
+    contributors: [{ name: 'George W. E. Nickelsburg', role: 'author' }, { name: 'James C. VanderKam', role: 'author' }],
     publisher: 'Fortress Press',
     year: 2004,
     isbn: '978-0800636944',
@@ -42,6 +57,7 @@ export const BOOKS: Book[] = [
     title: 'The Old Testament Pseudepigrapha, Volume 1: Apocalyptic Literature and Testaments',
     shortTitle: 'Pseudepigrapha, Vol. 1',
     author: 'James H. Charlesworth (editor)',
+    contributors: [{ name: 'James H. Charlesworth', role: 'editor' }],
     publisher: 'Doubleday',
     year: 1983,
     isbn: '978-0385096216',
@@ -59,6 +75,7 @@ export const BOOKS: Book[] = [
     title: 'The Book of Enoch',
     shortTitle: 'Book of Enoch',
     author: 'R. H. Charles (translator)',
+    contributors: [{ name: 'R. H. Charles', role: 'translator' }],
     publisher: 'Oxford: Clarendon Press (public domain)',
     year: 1917,
     isbn: '',
@@ -74,6 +91,7 @@ export const BOOKS: Book[] = [
     title: '1 Enoch 1: A Commentary on the Book of 1 Enoch, Chapters 1-36; 81-108',
     shortTitle: '1 Enoch 1 (Hermeneia)',
     author: 'George W. E. Nickelsburg',
+    contributors: [{ name: 'George W. E. Nickelsburg', role: 'author' }],
     publisher: 'Fortress Press',
     year: 2001,
     isbn: '9780800660748',
@@ -91,6 +109,7 @@ export const BOOKS: Book[] = [
     title: 'The Books of Enoch: Aramaic Fragments of Qumran Cave 4',
     shortTitle: 'The Books of Enoch (Milik)',
     author: 'J. T. Milik',
+    contributors: [{ name: 'J. T. Milik', role: 'author' }],
     publisher: 'Oxford University Press',
     year: 1976,
     isbn: '9780198261612',
@@ -108,6 +127,7 @@ export const BOOKS: Book[] = [
     title: 'The Book of Jubilees: A Critical Text',
     shortTitle: 'The Book of Jubilees',
     author: 'James C. VanderKam',
+    contributors: [{ name: 'James C. VanderKam', role: 'author' }],
     publisher: 'Peeters',
     year: 1989,
     isbn: '9789042905511',
@@ -125,6 +145,7 @@ export const BOOKS: Book[] = [
     title: 'Apocalypticism in the Dead Sea Scrolls',
     shortTitle: 'Apocalypticism in the Dead Sea Scrolls',
     author: 'John J. Collins',
+    contributors: [{ name: 'John J. Collins', role: 'author' }],
     publisher: 'Routledge',
     year: 1997,
     isbn: '9780415146343',
@@ -142,6 +163,7 @@ export const BOOKS: Book[] = [
     title: 'The Encyclopedia of Apocalypticism, Volume 1: The Origins of Apocalypticism in Judaism and Christianity',
     shortTitle: 'Encyclopedia of Apocalypticism, Vol. 1',
     author: 'John J. Collins (volume editor)',
+    contributors: [{ name: 'John J. Collins', role: 'editor' }],
     publisher: 'Continuum',
     year: 1998,
     isbn: '9780826410719',
@@ -159,6 +181,7 @@ export const BOOKS: Book[] = [
     title: '1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37-82',
     shortTitle: '1 Enoch 2',
     author: 'George W. E. Nickelsburg and James C. VanderKam',
+    contributors: [{ name: 'George W. E. Nickelsburg', role: 'author' }, { name: 'James C. VanderKam', role: 'author' }],
     publisher: 'Fortress Press',
     year: 2012,
     isbn: '9780800699645',
@@ -176,6 +199,7 @@ export const BOOKS: Book[] = [
     title: 'The Book of Jubilees: A Translation and Commentary',
     shortTitle: 'The Book of Jubilees',
     author: 'James C. VanderKam',
+    contributors: [{ name: 'James C. VanderKam', role: 'author' }],
     publisher: 'Peeters',
     year: 2018,
     isbn: '',
@@ -191,6 +215,7 @@ export const BOOKS: Book[] = [
     title: 'The Dead Sea Scrolls Translated: The Qumran Texts in English',
     shortTitle: 'The Dead Sea Scrolls Translated',
     author: 'Florentino García Martínez',
+    contributors: [{ name: 'Florentino García Martínez', role: 'author' }],
     publisher: 'Brill',
     year: 1994,
     isbn: '9789004099213',
@@ -208,6 +233,7 @@ export const BOOKS: Book[] = [
     title: 'The Apocalyptic Imagination: An Introduction to Jewish Apocalyptic Literature',
     shortTitle: 'The Apocalyptic Imagination',
     author: 'John J. Collins',
+    contributors: [{ name: 'John J. Collins', role: 'author' }],
     publisher: 'Eerdmans',
     year: 1998,
     isbn: '9780802843718',

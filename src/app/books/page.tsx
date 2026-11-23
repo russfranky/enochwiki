@@ -70,6 +70,23 @@ export default function BooksIndex() {
     { label: 'Books' },
   ]
 
+  // ItemList in the same featured-first order the page displays
+  // (SEO audit Phase 2, 2026-11-23). Each item references the Book
+  // node @id emitted by the detail page.
+  const displayedBooks = featured ? [featured, ...rest] : BOOKS
+  const itemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Book Index',
+    numberOfItems: displayedBooks.length,
+    itemListElement: displayedBooks.map((b, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE_URL}/books/${b.slug}`,
+      item: { '@id': `${SITE_URL}/books/${b.slug}#book` },
+    })),
+  }
+
   return (
     <div className="min-h-screen flex flex-col parchment-bg">
       <a
@@ -83,6 +100,10 @@ export default function BooksIndex() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd(crumbs, SITE_URL)) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
         />
         <Breadcrumbs items={crumbs} />
         <h1 className="font-serif text-3xl sm:text-4xl font-bold mb-2">Book Index</h1>
