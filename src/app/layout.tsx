@@ -129,7 +129,7 @@ const jsonLd = {
       name: SITE_NAME,
       url: SITE_URL,
       description: SITE_DESCRIPTION,
-      sameAs: [],
+      logo: `${SITE_URL}/icon.svg`,
     },
     {
       "@type": "WebSite",
@@ -139,14 +139,9 @@ const jsonLd = {
       publisher: { "@id": `${SITE_URL}/#organization` },
       description: SITE_TAGLINE,
       inLanguage: "en-US",
-      potentialAction: {
-        "@type": "SearchAction",
-        target: {
-          "@type": "EntryPoint",
-          urlTemplate: `${SITE_URL}/?q={search_term_string}`,
-        },
-        "query-input": "required name=search_term_string",
-      },
+      // No SearchAction: /?q= does not run a search (the real search
+      // endpoints are JSON APIs, not a landing page) and Google retired
+      // the sitelinks search box. Removed 2026-11-23, SEO audit Phase 2.
     },
   ],
 };

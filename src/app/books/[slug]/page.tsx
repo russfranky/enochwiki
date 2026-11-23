@@ -57,11 +57,26 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
     { label: book.title },
   ]
 
+  // Structured contributors by role (SEO audit Phase 2, 2026-11-23):
+  // the display `author` string flattens joint authors into one Person
+  // and leaves "(editor)"/"(translator)" inside names.
+  const peopleByRole = (role: string) =>
+    book.contributors
+      .filter((c) => c.role === role)
+      .map((c) => ({ '@type': 'Person', name: c.name }))
+  const authors = peopleByRole('author')
+  const editors = peopleByRole('editor')
+  const translators = peopleByRole('translator')
+
   const bookJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Book',
+    '@id': `${SITE_URL}/books/${book.slug}#book`,
+    url: `${SITE_URL}/books/${book.slug}`,
     name: book.title,
-    author: { '@type': 'Person', name: book.author },
+    ...(authors.length > 0 ? { author: authors } : {}),
+    ...(editors.length > 0 ? { editor: editors } : {}),
+    ...(translators.length > 0 ? { translator: translators } : {}),
     publisher: { '@type': 'Organization', name: book.publisher },
     datePublished: String(book.year),
     ...(book.isbn ? { isbn: book.isbn } : {}),

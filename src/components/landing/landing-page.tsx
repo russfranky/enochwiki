@@ -516,9 +516,26 @@ const FAQS = [
   },
 ]
 
+// FAQPage schema generated from the same FAQS array the section
+// renders, so the structured data cannot drift from the visible copy
+// (SEO audit Phase 2, 2026-11-23).
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+}
+
 function FaqSection() {
   return (
     <section className={s.faq} id="faq" aria-labelledby="faq-h">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <div className={s.wrap}>
         <div className={s['sec-head']}>
           <h2 id="faq-h">Questions, answered plainly</h2>
