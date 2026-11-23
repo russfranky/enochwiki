@@ -1,11 +1,12 @@
 import type { NextConfig } from "next";
 
-// Security headers (SEO audit Phase 2, 2026-11-23). The CSP ships
+// Security headers (SEO audit Phase 2, 2026-11-23). The CSP shipped
 // report-only first: the app relies on inline bootstrap scripts
 // (Next.js, next-themes) and inline styles, plus the GA4 gtag script,
-// so the policy below is scoped to those inventoried surfaces. It
-// becomes enforcing after a browser verification pass; report-only
-// cannot break the site. HSTS carries includeSubDomains but not
+// so the policy below is scoped to those inventoried surfaces. It was
+// promoted to enforcing on 2026-11-23 after a browser verification
+// pass (local Chrome over /, /read, a chapter page, /books, the film
+// page and /admin) reported zero violations. HSTS carries includeSubDomains but not
 // preload: preload is sticky and subdomain HTTPS coverage is not
 // proven from this repo.
 const CONTENT_SECURITY_POLICY = [
@@ -39,7 +40,7 @@ const SECURITY_HEADERS = [
     value:
       "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()",
   },
-  { key: "Content-Security-Policy-Report-Only", value: CONTENT_SECURITY_POLICY },
+  { key: "Content-Security-Policy", value: CONTENT_SECURITY_POLICY },
 ];
 
 const nextConfig: NextConfig = {
