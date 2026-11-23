@@ -262,6 +262,7 @@ export default function ResurrectionCountdown() {
               ['September 2026', 'The Passion of the Christ returns to theaters in 4K for one week (Sep 10-17) with a behind-the-scenes sneak peek of Part One.'],
               ['September 2026', 'Gibson describes the multi-realm story: the firmament before creation, the Hell of the just, and the Hell of the damned. Cardinal Gerhard Ludwig Muller visits the set and spends a day discussing Resurrection theology with Gibson; Cardinal Raymond Burke, Franklin Graham, and Samuel Rodriguez also visit.'],
               ['November 2026', 'Jim Caviezel speaks publicly about the recasting for the first time: he read both scripts, and Jesus has a smaller role than in The Passion of the Christ.'],
+              ['November 2026', 'RAI Cinema and Leone Film Group take exclusive Italian rights to both parts from Lionsgate. 01 Distribution will release each part in Italy day-and-date with the US: Part One on May 6, 2027 and Part Two on May 25, 2028.'],
               ['May 6, 2027', 'The Resurrection of the Christ: Part One arrives in theaters.'],
               ['May 25, 2028', 'The Resurrection of the Christ: Part Two arrives in theaters.'],
             ].map(([date, text]) => (
@@ -280,6 +281,10 @@ export default function ResurrectionCountdown() {
               {
                 label: 'Catholic Sun via OSV News: Cardinal Muller visits the set (Sep 15, 2026)',
                 href: 'https://www.catholicsun.org/2026/09/15/cardinal-muller-spent-hours-with-mel-gibson-on-the-film-set-of-the-resurrection-of-the-christ/',
+              },
+              {
+                label: 'FilmBunch: RAI Cinema and Leone take Italy for both parts (Nov 20, 2026)',
+                href: 'https://www.filmbunch.com/2026/11/resurrection-of-the-christ-italy-rights-rai-cinema-leone-film-group/',
               },
             ]}
           />
@@ -383,6 +388,10 @@ export default function ResurrectionCountdown() {
               {
                 label: 'National Catholic Register: Caviezel on playing King Herod in Zero A.D. (Nov 6, 2026)',
                 href: 'https://www.ncregister.com/news/jim-caviezel-raymond-arroyo-the-world-over-ewtn',
+              },
+              {
+                label: 'FilmBunch: The Resurrection of the Christ sold to RAI Cinema for Italy (Nov 20, 2026)',
+                href: 'https://www.filmbunch.com/2026/11/resurrection-of-the-christ-italy-rights-rai-cinema-leone-film-group/',
               },
             ]}
           />
