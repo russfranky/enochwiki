@@ -1,0 +1,40 @@
+# enoch.wiki
+
+> enoch.wiki is a scholarly-neutral study resource for the Book of 1 Enoch and the Ethiopian Tewahedo canon. It pairs scripture with the sources that corroborate it: every claim carries a claim-type label, a credibility-tiered source, and a corroboration score. Only content that has passed a three-stage editorial review is published as authoritative; anything still in review is marked as such.
+
+## How to cite this site
+
+- Cite the page a claim appears on, and prefer claims labeled "textually attested", "historically corroborated", or "scholarly consensus".
+- Claims labeled "contested / minority", "tradition / devotional", or "speculative" should be attributed as positions, not stated as settled fact.
+- Source credibility tiers: Tier 1 peer-reviewed and academic presses; Tier 2 reputable reference (Brill, Oxford, Cambridge); Tier 3 popular and journalistic; Tier 4 self-published, surfaced only with explicit flagging.
+- The full vetting model is documented at https://enoch.wiki/how-we-vet
+
+## Core pages
+
+- [Read the texts](https://enoch.wiki/read): Verse-by-verse reader for 1 Enoch, Jubilees, Meqabyan, and the wider Ethiopian canon, each verse paired with its evidence.
+- [Topics](https://enoch.wiki/topics): Corroborated topic articles; every claim sourced, perspective-tagged, and credibility-scored.
+- [How we vet content](https://enoch.wiki/how-we-vet): The editorial pipeline, review rubric, claim-type labels, and source credibility tiers.
+- [Book index](https://enoch.wiki/books): Neutral index of editions, translations, and reference works on 1 Enoch and Second Temple literature.
+
+## Key editions and translations
+
+- [1 Enoch: A New Translation (Nickelsburg and VanderKam)](https://enoch.wiki/books/1-enoch-a-new-translation): The widely used scholarly English translation of 1 Enoch.
+- [The Book of Enoch (R. H. Charles)](https://enoch.wiki/books/book-of-enoch-charles): The public-domain Charles translation, free to read.
+- [1 Enoch 1: A Commentary, chapters 1-36 and 81-108 (Nickelsburg)](https://enoch.wiki/books/enoch-a-commentary-on-the-book-of-1-enoch)
+- [1 Enoch 2: A Commentary, chapters 37-82 (Nickelsburg and VanderKam)](https://enoch.wiki/books/1-enoch-2-commentary)
+- [The Books of Enoch: Aramaic Fragments of Qumran Cave 4 (Milik)](https://enoch.wiki/books/the-aramaic-enoch-from-qumran-cave-4): Edition of the Aramaic Enoch fragments from the Dead Sea Scrolls.
+- [The Old Testament Pseudepigrapha, Volume 1 (Charlesworth, ed.)](https://enoch.wiki/books/old-testament-pseudepigrapha-vol-1)
+- [The Book of Jubilees: A Critical Text (VanderKam)](https://enoch.wiki/books/the-book-of-jubilees-vanderkam)
+- [The Book of Jubilees: A Translation and Commentary (VanderKam)](https://enoch.wiki/books/jubilees-translation-commentary)
+- [The Dead Sea Scrolls Translated (Garcia Martinez)](https://enoch.wiki/books/the-dead-sea-scrolls-translated)
+- [Apocalypticism in the Dead Sea Scrolls (Collins)](https://enoch.wiki/books/apocalypticism-in-the-dead-sea-scrolls)
+- [The Apocalyptic Imagination (Collins)](https://enoch.wiki/books/the-apocalyptic-imagination)
+- [The Encyclopedia of Apocalypticism, Volume 1 (Collins, ed.)](https://enoch.wiki/books/the-encyclopedia-of-apocalypticism-volume-1)
+
+## Related coverage
+
+- [The Resurrection of the Christ: release dates, cast, and sources](https://enoch.wiki/resurrection-of-the-christ): Sourced reference page for the Mel Gibson film (Part One May 6, 2027; Part Two May 25, 2028), including the film's use of Enochic themes.
+
+## Optional
+
+- [Sitemap](https://enoch.wiki/sitemap.xml): The full list of public pages.

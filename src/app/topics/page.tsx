@@ -10,6 +10,7 @@ export const dynamic = 'force-dynamic'
 export const metadata: Metadata = {
   title: 'Topics',
   description: 'Explore corroborated topics on the Ethiopian Bible: every claim sourced, perspective-tagged, and credibility-scored.',
+  alternates: { canonical: '/topics' },
 }
 
 export default async function TopicsIndex() {
