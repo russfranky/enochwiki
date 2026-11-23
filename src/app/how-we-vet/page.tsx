@@ -12,6 +12,7 @@ export const dynamic = 'force-dynamic'
 export const metadata: Metadata = {
   title: 'How we vet content',
   description: 'Enoch.Wiki holds itself to a public-authority standard. Nothing is presented as authoritative until it clears editorial review.',
+  alternates: { canonical: '/how-we-vet' },
 }
 
 // Perspective tag colors come from the database; only allow hex colors so a

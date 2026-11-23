@@ -377,6 +377,8 @@ function HomeContent() {
           </span>
         </div>
         <div className="flex items-center gap-2 sm:gap-3 text-[10px]" style={{ fontFamily: 'var(--font-ui-stack)' }}>
+          <Link href="/resurrection-of-the-christ" className="hover:text-foreground py-1">The Resurrection of the Christ</Link>
+          <span>·</span>
           <Link href="/how-we-vet" className="hover:text-foreground py-1">How we vet content</Link>
           <span>·</span>
           <span className="font-semibold text-foreground">enoch.wiki</span>

@@ -10,40 +10,38 @@ export const dynamic = 'force-dynamic'
 const SITE_URL = 'https://enoch.wiki'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  // Static and book entries carry no lastModified: there is no stored
+  // modification date for them, and stamping the request instant made
+  // every date false (SEO audit, 2026-11-23). Topic entries below use
+  // their real updatedAt. Omit a date rather than fabricate one.
   const entries: MetadataRoute.Sitemap = [
     {
       url: SITE_URL,
-      lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 1.0,
     },
     {
       url: `${SITE_URL}/read`,
-      lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,
     },
     {
       url: `${SITE_URL}/topics`,
-      lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${SITE_URL}/how-we-vet`,
-      lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.6,
     },
     {
       url: `${SITE_URL}/books`,
-      lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${SITE_URL}/resurrection-of-the-christ`,
-      lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
@@ -55,13 +53,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (const b of BOOKS) {
       entries.push({
         url: `${SITE_URL}/books/${b.slug}`,
-        lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.7,
       })
     }
   } catch (e) {
-    // books lib missing: skip
+    // Books lib failed to load: skip, but log it. A silent catch here
+    // once made a broken sitemap indistinguishable from an empty one.
+    console.error('[sitemap] failed to load books for sitemap:', e)
   }
 
   // Add all approved topic pages
@@ -79,7 +78,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       })
     }
   } catch (e) {
-    // DB not ready: return static entries only
+    // DB query failed: return static entries only, but log it. A silent
+    // catch here made "no approved topics" and "database down" look
+    // identical from outside (SEO audit, 2026-11-23).
+    console.error('[sitemap] failed to load topic pages for sitemap:', e)
   }
 
   return entries

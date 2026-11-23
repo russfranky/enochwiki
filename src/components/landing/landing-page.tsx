@@ -588,6 +588,7 @@ function LandingFooter() {
             <a href="#vision">Vision</a>
             <a href="#faq">FAQ</a>
             <a href="/topics">Topics</a>
+            <a href="/resurrection-of-the-christ">The Resurrection of the Christ</a>
           </nav>
         </div>
         <div className={s['foot-base']}>
